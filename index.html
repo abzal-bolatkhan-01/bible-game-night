@@ -1213,7 +1213,6 @@ body::after {
   flex-shrink: 0;
   padding: 9px 16px;
   background: rgba(255,255,255,.09);
-  border: 1.5px solid rgba(212,165,116,.3);
   border-radius: 40px;
   font-family: 'Cinzel', serif;
   font-size: 11px;
@@ -2078,6 +2077,7 @@ html[data-theme="dark"] h1, html[data-theme="dark"] h2, html[data-theme="dark"] 
 html[data-theme="dark"] .stat-box { background: var(--card-bg); border-color: var(--inp-border); color: var(--ink); }
 html[data-theme="dark"] .qs-box { background: var(--card-bg); border-color: var(--inp-border); color: var(--ink); }
 html[data-theme="dark"] .setup-row { background: var(--card-bg); border-color: var(--inp-border); color: var(--ink); }
+html[data-theme="dark"] #add-p-btn { border-color: rgba(224,168,96,.2); color: var(--ink3); }
 html[data-theme="dark"] .lobby-row { background: var(--card-bg); border-color: var(--inp-border); color: var(--ink); }
 html[data-theme="dark"] .card { background: var(--card-bg); color: var(--ink); }
 html[data-theme="dark"] .br-p { background: var(--card-bg); border-color: var(--inp-border); color: var(--ink); }
@@ -2577,6 +2577,281 @@ html[data-theme="warmth"] .setup-av-btn { background: #FDF9F4; border-color: #D8
 
 /* ── Translation Badge ── */
 .trans-badge { display: inline-block; background: rgba(88,204,2,.12); color: var(--green1,#58cc02); border-radius: 6px; padding: 1px 7px; font-family: 'Nunito',sans-serif; font-weight: 800; font-size: 11px; margin-left: 6px; }
+
+/* ═══════════════════════════════════════════════════
+   COMPREHENSIVE QUALITY PASS — Missing States & Fixes
+   ═══════════════════════════════════════════════════ */
+
+/* ── Missing Hover States (light/default theme) ── */
+@media (hover: hover) {
+  .back-btn:hover { color: var(--green1); }
+  .g-quit:hover { background: rgba(255,75,75,.08); border-color: rgba(255,75,75,.3); color: var(--red); }
+  .prof-avatar:hover { box-shadow: 0 0 0 4px rgba(88,204,2,.18); transform: scale(1.03); }
+  .setup-del:hover { background: rgba(255,75,75,.08); border-color: rgba(255,75,75,.35); color: var(--red); }
+  .chat-send:hover { filter: brightness(1.1); transform: scale(1.05); }
+  .social-tab:hover:not(.active) { background: rgba(0,0,0,.04); color: var(--ink2); }
+  .conv-row:hover { background: var(--bg1); box-shadow: 0 3px 12px rgba(0,0,0,.08); }
+  .friend-btn:hover { filter: brightness(1.08); }
+  .my-code:hover { opacity: .7; }
+  .trans-btn:hover { border-color: var(--gold); background: rgba(255,150,0,.05); }
+  .theme-swatch:hover { border-color: rgba(0,0,0,.2); transform: scale(1.02); }
+  .av-item:hover:not(.sel) { background: rgba(88,204,2,.06); border-color: rgba(88,204,2,.2); transform: scale(1.05); }
+  .ach.unlocked:hover { background: rgba(255,150,0,.08); border-color: rgba(255,150,0,.4); }
+  .lb-row:hover { background: var(--bg1); }
+  .sc-row:hover { background: var(--bg1); }
+  .profile-bar:hover { background: var(--bg1); box-shadow: 0 3px 12px rgba(0,0,0,.08); }
+  .lobby-row:hover { background: var(--bg1); }
+  .room-code-box:hover { border-color: rgba(88,204,2,.45); }
+  .verse-card:hover { box-shadow: 0 4px 16px rgba(255,150,0,.12); }
+  .clan-card:hover { background: var(--bg1); }
+  .qs-box:hover { background: var(--bg1); }
+  .stat-box:hover { background: var(--bg1); }
+}
+
+/* ── Add-player button theme-aware styling ── */
+#add-p-btn {
+  font-family: 'Nunito', sans-serif;
+  font-weight: 700;
+  font-size: 12px;
+  letter-spacing: .06em;
+  border-color: rgba(0,0,0,.12);
+  transition: all .15s;
+}
+@media (hover: hover) {
+  #add-p-btn:hover { background: rgba(88,204,2,.06); border-color: rgba(88,204,2,.25); color: var(--green1); }
+}
+#add-p-btn:active { background: rgba(88,204,2,.1); transform: scale(.98); }
+
+/* ── Prof-avatar transition ── */
+.prof-avatar { transition: transform .15s, box-shadow .15s; }
+
+/* ── Focus states for interactive elements missing :focus-visible ── */
+.chat-inp:focus-visible { outline: 2px solid var(--green1); outline-offset: 2px; }
+.chat-send:focus-visible { outline: 2px solid var(--green1); outline-offset: 2px; }
+.social-tab:focus-visible { outline: 2px solid var(--green1); outline-offset: 2px; }
+.friend-btn:focus-visible { outline: 2px solid var(--green1); outline-offset: 2px; }
+.trans-btn:focus-visible { outline: 2px solid var(--green1); outline-offset: 2px; }
+.theme-swatch:focus-visible { outline: 2px solid var(--green1); outline-offset: 2px; }
+.g-quit:focus-visible { outline: 2px solid var(--red); outline-offset: 2px; }
+.setup-del:focus-visible { outline: 2px solid var(--red); outline-offset: 2px; }
+.back-btn:focus-visible { outline: 2px solid var(--green1); outline-offset: 2px; }
+.conv-row:focus-visible { outline: 2px solid var(--green1); outline-offset: 2px; }
+#add-p-btn:focus-visible { outline: 2px solid var(--green1); outline-offset: 2px; }
+
+/* ── Smooth transitions on interactive elements ── */
+.back-btn { transition: color .15s, transform .1s; }
+.g-quit { transition: all .15s; }
+.setup-del { transition: all .15s; }
+.chat-send { transition: transform .12s, filter .12s; }
+.social-tab { transition: background .15s, color .15s, box-shadow .15s; }
+.conv-row { transition: background .15s, box-shadow .15s; }
+.trans-btn { transition: border-color .15s, background .15s; }
+.theme-swatch { transition: border-color .15s, transform .12s; }
+.av-item { transition: all .15s; }
+.ach { transition: all .2s; }
+.lb-row { transition: background .15s; }
+.sc-row { transition: background .15s; }
+.profile-bar { transition: background .15s, box-shadow .15s; }
+.lobby-row { transition: background .15s; }
+.clan-card { transition: background .15s; }
+.qs-box { transition: background .15s; }
+.stat-box { transition: background .15s; }
+.verse-card { transition: box-shadow .2s; }
+
+/* ═══════════════════════════════════════════════════
+   GREEN THEME — Missing Overrides
+   ═══════════════════════════════════════════════════ */
+html[data-theme="green"] .nav { background: #F8FAF6; border-top-color: #C4CFC0; }
+html[data-theme="green"] .mbox { background: #F8FAF6; border-color: #C4CFC0; }
+html[data-theme="green"] .inp { background: #F8FAF6; border-color: #C4CFC0; color: var(--ink); }
+html[data-theme="green"] .inp:focus { border-color: #5E8A5E; box-shadow: 0 0 0 3px rgba(94,138,94,.15); }
+html[data-theme="green"] .opt { background: #F8FAF6; border-color: #C4CFC0; color: var(--ink); }
+html[data-theme="green"] .opt-key { background: #E4EAE0; border-color: #C4CFC0; color: var(--ink3); }
+html[data-theme="green"] .opt.correct { background: rgba(94,138,94,.12) !important; border-color: #5E8A5E !important; }
+html[data-theme="green"] .opt.wrong { background: rgba(200,50,50,.1) !important; border-color: #C04040 !important; }
+html[data-theme="green"] .sc-row { background: #F8FAF6; border-color: #C4CFC0; }
+html[data-theme="green"] .sc-row.top { background: rgba(94,138,94,.08); border-color: rgba(94,138,94,.3); }
+html[data-theme="green"] .sc-pts { color: #5E8A5E; }
+html[data-theme="green"] .sc-rank.g { color: #5E8A5E; }
+html[data-theme="green"] .lb-row { background: #F8FAF6; border-color: #C4CFC0; }
+html[data-theme="green"] .lb-row.me { background: rgba(94,138,94,.08); border-color: rgba(94,138,94,.25); }
+html[data-theme="green"] .lb-xpv { color: #5E8A5E; }
+html[data-theme="green"] .lobby-row { background: #F8FAF6; border-color: #C4CFC0; }
+html[data-theme="green"] .toast { background: #F8FAF6; border-color: #C4CFC0; color: var(--ink); box-shadow: 0 8px 32px rgba(0,0,0,.12); }
+html[data-theme="green"] .splash { background: rgba(239,243,237,.97); }
+html[data-theme="green"] .splash-name { color: var(--ink); }
+html[data-theme="green"] .splash-tap { color: #5E8A5E; }
+html[data-theme="green"] .qs-box { background: #F8FAF6; border-color: #C4CFC0; }
+html[data-theme="green"] .qs-val { color: #5E8A5E; }
+html[data-theme="green"] .stat-box { background: #F8FAF6; border-color: #C4CFC0; }
+html[data-theme="green"] .stat-val { color: var(--ink); }
+html[data-theme="green"] .mode-card { background: #F8FAF6; border-color: #C4CFC0; }
+html[data-theme="green"] .mode-card.sel { background: rgba(94,138,94,.1); border-color: #5E8A5E; }
+html[data-theme="green"] .profile-bar { background: #F8FAF6; border-color: #C4CFC0; }
+html[data-theme="green"] .profile-bar .plvl { color: #5E8A5E; }
+html[data-theme="green"] .profile-bar .wins-num { color: #5E8A5E; }
+html[data-theme="green"] .card-sm { background: #F8FAF6; border-color: #C4CFC0; }
+html[data-theme="green"] .mhandle { background: #C4CFC0; }
+html[data-theme="green"] .ov { background: rgba(0,0,0,.45); }
+html[data-theme="green"] .av-item { background: #E4EAE0; border-color: #C4CFC0; }
+html[data-theme="green"] .av-item.sel { border-color: #5E8A5E; background: rgba(94,138,94,.12); }
+html[data-theme="green"] .room-code-box { background: rgba(94,138,94,.06); border-color: rgba(94,138,94,.3); }
+html[data-theme="green"] .room-code { color: #5E8A5E; }
+html[data-theme="green"] .prof-avatar { border-color: #5E8A5E; background: rgba(94,138,94,.08); box-shadow: 0 0 0 4px rgba(94,138,94,.1); }
+html[data-theme="green"] .xp-fill { background: linear-gradient(90deg, #5E8A5E, #72A072); }
+html[data-theme="green"] .fb.ok { background: rgba(94,138,94,.1); border-color: rgba(94,138,94,.3); color: #4A6F4A; }
+html[data-theme="green"] .fb.no { background: rgba(200,50,50,.08); border-color: rgba(200,50,50,.25); color: #A03030; }
+html[data-theme="green"] .fb.to { background: rgba(176,120,80,.08); border-color: rgba(176,120,80,.2); color: #8F6040; }
+html[data-theme="green"] .streak-txt { color: #5E8A5E; text-shadow: 0 0 20px rgba(94,138,94,.4); }
+html[data-theme="green"] .streak-badge { background: rgba(94,138,94,.1); border-color: rgba(94,138,94,.3); color: #5E8A5E; }
+html[data-theme="green"] .g-hdr { border-bottom-color: #C4CFC0; }
+html[data-theme="green"] .g-player { background: rgba(94,138,94,.08); border-color: rgba(94,138,94,.22); }
+html[data-theme="green"] .g-nm { color: #5E8A5E; }
+html[data-theme="green"] .score-num { color: #5E8A5E; }
+html[data-theme="green"] .q-cat { background: rgba(94,138,94,.08); border-color: rgba(94,138,94,.2); color: #5E8A5E; }
+html[data-theme="green"] .verse-card { background: linear-gradient(135deg, rgba(94,138,94,.08), rgba(94,138,94,.04)); border-color: rgba(94,138,94,.25); }
+html[data-theme="green"] .card-warm { background: rgba(94,138,94,.06); border-color: rgba(94,138,94,.22); }
+html[data-theme="green"] .ach.unlocked { border-color: rgba(94,138,94,.3); background: rgba(94,138,94,.06); }
+html[data-theme="green"] .ach.unlocked .ach-nm { color: #5E8A5E; }
+html[data-theme="green"] .l-badge.host { color: #5E8A5E; border-color: rgba(94,138,94,.35); background: rgba(94,138,94,.1); }
+html[data-theme="green"] .l-badge.ready { color: #4A6F4A; border-color: rgba(74,111,74,.35); background: rgba(74,111,74,.08); }
+html[data-theme="green"] .setup-row { background: #F8FAF6; border-color: #C4CFC0; }
+html[data-theme="green"] .toggle-row { background: #F8FAF6; border-color: #C4CFC0; }
+html[data-theme="green"] .friend-row { background: #F8FAF6; }
+html[data-theme="green"] .my-code-box { background: #E4EAE0; }
+html[data-theme="green"] .social-tab.active { background: #F8FAF6; }
+html[data-theme="green"] .conv-row { background: #F8FAF6; }
+html[data-theme="green"] .chat-bubble.them { background: #E4EAE0; color: var(--ink); }
+html[data-theme="green"] .chat-bubble.me { background: #5E8A5E; color: #fff; }
+html[data-theme="green"] .chat-input-row { background: #F8FAF6; border-top-color: #C4CFC0; }
+html[data-theme="green"] .chat-inp { background: #F8FAF6; border-color: #C4CFC0; }
+html[data-theme="green"] .chat-inp:focus { border-color: #5E8A5E; }
+html[data-theme="green"] .chat-send { background: #5E8A5E; }
+html[data-theme="green"] .nb.on::before { background: #5E8A5E; }
+html[data-theme="green"] .step-val { color: #5E8A5E; }
+html[data-theme="green"] .divider::before, html[data-theme="green"] .divider::after { background: linear-gradient(90deg, transparent, #C4CFC0, transparent); }
+/* Green theme hover overrides */
+@media (hover: hover) {
+  html[data-theme="green"] .back-btn:hover { color: #5E8A5E; }
+  html[data-theme="green"] .g-quit:hover { background: rgba(200,50,50,.08); border-color: rgba(200,50,50,.3); }
+  html[data-theme="green"] .profile-bar:hover { background: #E4EAE0; }
+  html[data-theme="green"] .lb-row:hover { background: #E4EAE0; }
+  html[data-theme="green"] .sc-row:hover { background: #E4EAE0; }
+  html[data-theme="green"] .lobby-row:hover { background: #E4EAE0; }
+  html[data-theme="green"] .conv-row:hover { background: #E4EAE0; }
+  html[data-theme="green"] .av-item:hover:not(.sel) { background: rgba(94,138,94,.08); border-color: rgba(94,138,94,.2); }
+  html[data-theme="green"] .ach.unlocked:hover { background: rgba(94,138,94,.1); }
+  html[data-theme="green"] #add-p-btn:hover { background: rgba(94,138,94,.06); border-color: rgba(94,138,94,.25); color: #5E8A5E; }
+}
+
+/* ═══════════════════════════════════════════════════
+   WARMTH THEME — Missing Overrides
+   ═══════════════════════════════════════════════════ */
+html[data-theme="warmth"] .card { background: #FDF9F4; border-color: #D8CCBC; }
+html[data-theme="warmth"] .card-sm { background: #FDF9F4; border-color: #D8CCBC; }
+html[data-theme="warmth"] .nav { background: #FDF9F4; border-top-color: #D8CCBC; }
+html[data-theme="warmth"] .mbox { background: #FDF9F4; border-color: #D8CCBC; }
+html[data-theme="warmth"] .inp { background: #FDF9F4; border-color: #D8CCBC; color: var(--ink); }
+html[data-theme="warmth"] .inp:focus { border-color: #B07850; box-shadow: 0 0 0 3px rgba(176,120,80,.15); }
+html[data-theme="warmth"] .opt { background: #FDF9F4; border-color: #D8CCBC; color: var(--ink); }
+html[data-theme="warmth"] .opt-key { background: #F3EBE0; border-color: #D8CCBC; color: var(--ink3); }
+html[data-theme="warmth"] .opt.correct { background: rgba(94,138,94,.12) !important; border-color: #5E8A5E !important; }
+html[data-theme="warmth"] .opt.wrong { background: rgba(200,50,50,.1) !important; border-color: #C04040 !important; }
+html[data-theme="warmth"] .sc-row { background: #FDF9F4; border-color: #D8CCBC; }
+html[data-theme="warmth"] .sc-row.top { background: rgba(176,120,80,.08); border-color: rgba(176,120,80,.3); }
+html[data-theme="warmth"] .sc-pts { color: #B07850; }
+html[data-theme="warmth"] .sc-rank.g { color: #B07850; }
+html[data-theme="warmth"] .lb-row { background: #FDF9F4; border-color: #D8CCBC; }
+html[data-theme="warmth"] .lb-row.me { background: rgba(176,120,80,.08); border-color: rgba(176,120,80,.25); }
+html[data-theme="warmth"] .lb-xpv { color: #B07850; }
+html[data-theme="warmth"] .lobby-row { background: #FDF9F4; border-color: #D8CCBC; }
+html[data-theme="warmth"] .toast { background: #FDF9F4; border-color: #D8CCBC; color: var(--ink); box-shadow: 0 8px 32px rgba(0,0,0,.12); }
+html[data-theme="warmth"] .splash { background: rgba(250,244,237,.97); }
+html[data-theme="warmth"] .splash-name { color: var(--ink); }
+html[data-theme="warmth"] .splash-tap { color: #B07850; }
+html[data-theme="warmth"] .qs-box { background: #FDF9F4; border-color: #D8CCBC; }
+html[data-theme="warmth"] .qs-val { color: #B07850; }
+html[data-theme="warmth"] .stat-box { background: #FDF9F4; border-color: #D8CCBC; }
+html[data-theme="warmth"] .stat-val { color: var(--ink); }
+html[data-theme="warmth"] .mode-card { background: #FDF9F4; border-color: #D8CCBC; }
+html[data-theme="warmth"] .mode-card.sel { background: rgba(176,120,80,.1); border-color: #B07850; }
+html[data-theme="warmth"] .profile-bar { background: #FDF9F4; border-color: #D8CCBC; }
+html[data-theme="warmth"] .profile-bar .plvl { color: #B07850; }
+html[data-theme="warmth"] .profile-bar .wins-num { color: #B07850; }
+html[data-theme="warmth"] .mhandle { background: #D8CCBC; }
+html[data-theme="warmth"] .ov { background: rgba(0,0,0,.45); }
+html[data-theme="warmth"] .av-item { background: #F3EBE0; border-color: #D8CCBC; }
+html[data-theme="warmth"] .av-item.sel { border-color: #B07850; background: rgba(176,120,80,.12); }
+html[data-theme="warmth"] .room-code-box { background: rgba(176,120,80,.06); border-color: rgba(176,120,80,.3); }
+html[data-theme="warmth"] .room-code { color: #B07850; }
+html[data-theme="warmth"] .prof-avatar { border-color: #B07850; background: rgba(176,120,80,.08); box-shadow: 0 0 0 4px rgba(176,120,80,.1); }
+html[data-theme="warmth"] .xp-fill { background: linear-gradient(90deg, #B07850, #C48E68); }
+html[data-theme="warmth"] .fb.ok { background: rgba(94,138,94,.1); border-color: rgba(94,138,94,.3); color: #5E8A5E; }
+html[data-theme="warmth"] .fb.no { background: rgba(200,50,50,.08); border-color: rgba(200,50,50,.25); color: #A03030; }
+html[data-theme="warmth"] .fb.to { background: rgba(176,120,80,.08); border-color: rgba(176,120,80,.2); color: #8F6040; }
+html[data-theme="warmth"] .streak-txt { color: #B07850; text-shadow: 0 0 20px rgba(176,120,80,.4); }
+html[data-theme="warmth"] .streak-badge { background: rgba(176,120,80,.1); border-color: rgba(176,120,80,.3); color: #B07850; }
+html[data-theme="warmth"] .g-hdr { border-bottom-color: #D8CCBC; }
+html[data-theme="warmth"] .g-player { background: rgba(176,120,80,.08); border-color: rgba(176,120,80,.22); }
+html[data-theme="warmth"] .g-nm { color: #B07850; }
+html[data-theme="warmth"] .score-num { color: #B07850; }
+html[data-theme="warmth"] .q-cat { background: rgba(176,120,80,.08); border-color: rgba(176,120,80,.2); color: #B07850; }
+html[data-theme="warmth"] .verse-card { background: linear-gradient(135deg, rgba(176,120,80,.08), rgba(176,120,80,.04)); border-color: rgba(176,120,80,.25); }
+html[data-theme="warmth"] .card-warm { background: rgba(176,120,80,.06); border-color: rgba(176,120,80,.22); }
+html[data-theme="warmth"] .ach.unlocked { border-color: rgba(176,120,80,.3); background: rgba(176,120,80,.06); }
+html[data-theme="warmth"] .ach.unlocked .ach-nm { color: #B07850; }
+html[data-theme="warmth"] .l-badge.host { color: #B07850; border-color: rgba(176,120,80,.35); background: rgba(176,120,80,.1); }
+html[data-theme="warmth"] .l-badge.ready { color: #5E8A5E; border-color: rgba(94,138,94,.35); background: rgba(94,138,94,.08); }
+html[data-theme="warmth"] .setup-row { background: #FDF9F4; border-color: #D8CCBC; }
+html[data-theme="warmth"] .toggle-row { background: #FDF9F4; border-color: #D8CCBC; }
+html[data-theme="warmth"] .friend-row { background: #FDF9F4; }
+html[data-theme="warmth"] .my-code-box { background: #F3EBE0; }
+html[data-theme="warmth"] .my-code { color: #B07850; }
+html[data-theme="warmth"] .social-tab.active { background: #FDF9F4; }
+html[data-theme="warmth"] .conv-row { background: #FDF9F4; }
+html[data-theme="warmth"] .chat-bubble.them { background: #F3EBE0; color: var(--ink); }
+html[data-theme="warmth"] .chat-bubble.me { background: #B07850; color: #fff; }
+html[data-theme="warmth"] .chat-input-row { background: #FDF9F4; border-top-color: #D8CCBC; }
+html[data-theme="warmth"] .chat-inp { background: #FDF9F4; border-color: #D8CCBC; }
+html[data-theme="warmth"] .chat-inp:focus { border-color: #B07850; }
+html[data-theme="warmth"] .chat-send { background: #B07850; }
+html[data-theme="warmth"] .nb.on::before { background: #B07850; }
+html[data-theme="warmth"] .step-val { color: #B07850; }
+html[data-theme="warmth"] .divider::before, html[data-theme="warmth"] .divider::after { background: linear-gradient(90deg, transparent, #D8CCBC, transparent); }
+/* Warmth theme hover overrides */
+@media (hover: hover) {
+  html[data-theme="warmth"] .back-btn:hover { color: #B07850; }
+  html[data-theme="warmth"] .g-quit:hover { background: rgba(200,50,50,.08); border-color: rgba(200,50,50,.3); }
+  html[data-theme="warmth"] .profile-bar:hover { background: #F3EBE0; }
+  html[data-theme="warmth"] .lb-row:hover { background: #F3EBE0; }
+  html[data-theme="warmth"] .sc-row:hover { background: #F3EBE0; }
+  html[data-theme="warmth"] .lobby-row:hover { background: #F3EBE0; }
+  html[data-theme="warmth"] .conv-row:hover { background: #F3EBE0; }
+  html[data-theme="warmth"] .av-item:hover:not(.sel) { background: rgba(176,120,80,.08); border-color: rgba(176,120,80,.2); }
+  html[data-theme="warmth"] .ach.unlocked:hover { background: rgba(176,120,80,.1); }
+  html[data-theme="warmth"] #add-p-btn:hover { background: rgba(176,120,80,.06); border-color: rgba(176,120,80,.25); color: #B07850; }
+}
+
+/* ── Dark theme missing hover states ── */
+@media (hover: hover) {
+  html[data-theme="dark"] .back-btn:hover { color: #E0A860; }
+  html[data-theme="dark"] .g-quit:hover { background: rgba(200,50,50,.15); border-color: rgba(200,50,50,.4); color: #FF6B6B; }
+  html[data-theme="dark"] .prof-avatar:hover { box-shadow: 0 0 0 4px rgba(224,168,96,.2); }
+  html[data-theme="dark"] .setup-del:hover { background: rgba(200,50,50,.12); border-color: rgba(255,75,75,.4); color: #FF6B6B; }
+  html[data-theme="dark"] .social-tab:hover:not(.active) { background: rgba(255,255,255,.04); color: var(--ink2); }
+  html[data-theme="dark"] .conv-row:hover { background: var(--bg3); }
+  html[data-theme="dark"] .my-code:hover { opacity: .7; }
+  html[data-theme="dark"] .trans-btn:hover { border-color: #E0A860; background: rgba(224,168,96,.08); }
+  html[data-theme="dark"] .theme-swatch:hover { border-color: rgba(255,255,255,.2); }
+  html[data-theme="dark"] .av-item:hover:not(.sel) { background: rgba(224,168,96,.08); border-color: rgba(224,168,96,.2); }
+  html[data-theme="dark"] .ach.unlocked:hover { background: rgba(224,168,96,.12); }
+  html[data-theme="dark"] .lb-row:hover { background: var(--bg3); }
+  html[data-theme="dark"] .sc-row:hover { background: var(--bg3); }
+  html[data-theme="dark"] .profile-bar:hover { background: var(--bg3); }
+  html[data-theme="dark"] .lobby-row:hover { background: var(--bg3); }
+  html[data-theme="dark"] .clan-card:hover { background: var(--bg3); }
+  html[data-theme="dark"] #add-p-btn:hover { background: rgba(224,168,96,.06); border-color: rgba(224,168,96,.25); color: #E0A860; }
+}
 </style>
 </head>
 <body>
@@ -2654,7 +2929,7 @@ html[data-theme="warmth"] .setup-av-btn { background: #FDF9F4; border-color: #D8
       <div style="font-size:32px;">🔥</div>
       <div style="flex:1;">
         <div class="eyebrow" style="color:var(--gold1);">Daily Challenge</div>
-        <div style="font-family:'Playfair Display',serif;font-size:16px;color:var(--ink1);">10 Questions · Time Attack</div>
+        <div style="font-family:'Playfair Display',serif;font-size:16px;color:var(--ink);">10 Questions · Time Attack</div>
         <div id="daily-streak-info" style="font-size:11px;color:var(--ink3);margin-top:2px;">Streak: 0 days</div>
       </div>
       <div class="btn btn-gold btn-sm" style="width:auto;padding:8px 16px;">Play</div>
@@ -2662,7 +2937,7 @@ html[data-theme="warmth"] .setup-av-btn { background: #FDF9F4; border-color: #D8
 
 
     <!-- Seasonal Event Banner -->
-    <div id="seasonal-banner" class="card" style="margin-bottom:16px;padding:12px 16px;background:linear-gradient(135deg, rgba(56,189,248,0.1) 0%, rgba(13,9,6,0) 100%);border:1px solid rgba(56,189,248,0.3);display:none;" onclick="startSeasonalEvent()">
+    <div id="seasonal-banner" class="card" style="margin-bottom:16px;padding:12px 16px;background:linear-gradient(135deg, rgba(56,189,248,0.1) 0%, transparent 100%);border:1px solid rgba(56,189,248,0.3);display:none;" onclick="startSeasonalEvent()">
       <div style="display:flex;align-items:center;gap:12px;">
         <div style="font-size:24px;" id="seasonal-icon">🌟</div>
         <div style="flex:1;">
@@ -2849,7 +3124,7 @@ html[data-theme="warmth"] .setup-av-btn { background: #FDF9F4; border-color: #D8
   <div class="scroller">
     <div id="setup-list" class="gap-8" style="margin-bottom:10px;"></div>
     <button id="add-p-btn" onclick="addPlayer()"
-      style="width:100%;padding:10px;background:transparent;border:1px dashed rgba(201,145,13,.22);border-radius:var(--r1);color:var(--ink3);font-family:'Cinzel',serif;font-size:10px;letter-spacing:.2em;text-transform:uppercase;cursor:pointer;margin-bottom:14px;transition:all .15s;">
+      style="width:100%;padding:10px;background:transparent;border:1px dashed rgba(0,0,0,.15);border-radius:var(--r2);color:var(--ink3);cursor:pointer;margin-bottom:14px;">
       + Add Player
     </button>
 
@@ -3201,7 +3476,7 @@ html[data-theme="warmth"] .setup-av-btn { background: #FDF9F4; border-color: #D8
           <div style="padding:12px 16px;display:flex;justify-content:space-between;align-items:center;border-bottom:1px solid rgba(255,255,255,0.03);">
             <div style="display:flex;align-items:center;gap:10px;">
               <span>🧔</span>
-              <span style="font-size:13px;color:var(--ink1);">Elder John</span>
+              <span style="font-size:13px;color:var(--ink);">Elder John</span>
             </div>
             <div style="text-align:right;">
               <div style="font-size:13px;color:var(--gold1);">14,200 XP</div>
@@ -3211,7 +3486,7 @@ html[data-theme="warmth"] .setup-av-btn { background: #FDF9F4; border-color: #D8
           <div style="padding:12px 16px;display:flex;justify-content:space-between;align-items:center;">
             <div style="display:flex;align-items:center;gap:10px;">
               <span>👩‍🦰</span>
-              <span style="font-size:13px;color:var(--ink1);">Sister Sarah</span>
+              <span style="font-size:13px;color:var(--ink);">Sister Sarah</span>
             </div>
             <div style="text-align:right;">
               <div style="font-size:13px;color:var(--gold1);">9,850 XP</div>
@@ -3230,7 +3505,7 @@ html[data-theme="warmth"] .setup-av-btn { background: #FDF9F4; border-color: #D8
             <div style="font-size:18px;font-weight:700;">15</div>
           </div>
           <div style="flex:1;">
-            <div style="font-size:14px;color:var(--ink1);">Youth Night Trivia</div>
+            <div style="font-size:14px;color:var(--ink);">Youth Night Trivia</div>
             <div style="font-size:11px;color:var(--ink3);">7:00 PM · 24 players joined</div>
           </div>
         </div>
