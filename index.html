@@ -40616,6 +40616,11 @@ function checkURLParams(){
   const params = new URLSearchParams(window.location.search);
   const room = params.get('room');
   if(room && room.length === 6) {
+    if(!G.fbOk) {
+      // Wait for Firebase to be ready
+      setTimeout(checkURLParams, 200);
+      return;
+    }
     if(!G.profile) {
       toast('Create a profile to join room ' + room);
       go('auth');
