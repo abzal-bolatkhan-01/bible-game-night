@@ -974,6 +974,25 @@ body::after {
 }
 .setup-del:active { background: rgba(138,24,24,.15); color: var(--red1); }
 
+/* ─── CHALLENGE NOTIFICATION ─────────────────────── */
+.challenge-notif {
+  position: fixed;
+  top: calc(var(--safe-t) + 10px);
+  left: 50%;
+  transform: translateX(-50%);
+  z-index: 300;
+  width: calc(100% - 24px);
+  max-width: 420px;
+  animation: slideDown .35s cubic-bezier(.25,.8,.25,1) both;
+}
+@keyframes slideDown { from { opacity:0; transform:translateX(-50%) translateY(-30px); } to { opacity:1; transform:translateX(-50%) translateY(0); } }
+.challenge-notif-inner {
+  background: var(--bg1);
+  border: 1.5px solid rgba(196,136,10,.35);
+  border-radius: 16px;
+  padding: 14px 16px;
+  box-shadow: 0 8px 32px rgba(0,0,0,.5), 0 0 0 1px rgba(196,136,10,.1);
+}
 /* ─── MODALS ─────────────────────────────────────── */
 .ov {
   position: fixed;
@@ -3671,6 +3690,55 @@ html[data-theme="warmth"] .divider::before, html[data-theme="warmth"] .divider::
     <div class="mtitle">Settings</div>
     <div id="settings-list" style="display:flex;flex-direction:column;gap:7px;margin-bottom:16px;"></div>
     <button class="btn btn-ghost btn-sm" onclick="closeOv('ov-settings')">Done</button>
+  </div>
+</div>
+
+<!-- ── MODAL: Challenge Friend ── -->
+<div class="ov" id="ov-challenge" onclick="bgClose(event,'ov-challenge')">
+  <div class="mbox">
+    <div class="mhandle"></div>
+    <div style="text-align:center;margin-bottom:16px;">
+      <div id="ch-friend-av" style="font-size:48px;margin-bottom:4px;">😊</div>
+      <div class="mtitle" id="ch-friend-name" style="margin-bottom:0;">Friend</div>
+    </div>
+
+    <label class="label">Play Mode</label>
+    <div id="ch-mode-chips" style="display:flex;gap:8px;margin-bottom:16px;">
+      <button class="chip sel" onclick="pickChMode(this,'online')" id="ch-mode-online">🌐 Online Room</button>
+      <button class="chip" onclick="pickChMode(this,'passplay')" id="ch-mode-passplay">🤝 Pass & Play</button>
+    </div>
+    <div id="ch-mode-desc" style="font-size:12px;color:var(--ink3);margin-bottom:16px;line-height:1.5;">Both players join a Firebase room and play live from their own devices.</div>
+
+    <label class="label">Difficulty</label>
+    <div id="ch-diff-chips" style="display:flex;gap:8px;margin-bottom:20px;">
+      <button class="chip sel" onclick="pickChDiff(this,'easy')" id="ch-diff-easy">🌿 Easy</button>
+      <button class="chip" onclick="pickChDiff(this,'medium')" id="ch-diff-medium">📖 Medium</button>
+      <button class="chip" onclick="pickChDiff(this,'hard')" id="ch-diff-hard">⚔️ Hard</button>
+    </div>
+
+    <button class="btn btn-gold" onclick="sendChallenge()" id="ch-send-btn">
+      <span class="btn-icon">⚔️</span> Send Challenge
+    </button>
+    <button class="btn btn-ghost btn-sm" style="margin-top:8px;" onclick="closeOv('ov-challenge')">Cancel</button>
+  </div>
+</div>
+
+<!-- ── Challenge Notification (incoming) ── -->
+<div id="challenge-notif" class="challenge-notif" style="display:none;">
+  <div class="challenge-notif-inner">
+    <div style="display:flex;align-items:center;gap:10px;margin-bottom:10px;">
+      <span id="cn-av" style="font-size:32px;">😊</span>
+      <div style="flex:1;min-width:0;">
+        <div style="font-family:'Nunito',sans-serif;font-weight:800;font-size:14px;color:var(--ink);" id="cn-name">Friend</div>
+        <div style="font-size:11px;color:var(--ink3);" id="cn-detail">Online Room · Easy</div>
+      </div>
+      <div style="font-size:11px;color:var(--ink3);text-align:right;" id="cn-timer">30:00</div>
+    </div>
+    <div style="font-family:'Cinzel',serif;font-size:10px;letter-spacing:.15em;text-transform:uppercase;color:var(--gold1);margin-bottom:10px;text-align:center;">⚔️ Challenge Received!</div>
+    <div style="display:flex;gap:8px;">
+      <button class="btn btn-gold btn-sm" style="flex:1;" onclick="acceptChallenge()">Accept</button>
+      <button class="btn btn-ghost btn-sm" style="flex:1;" onclick="declineChallenge()">Decline</button>
+    </div>
   </div>
 </div>
 
@@ -40336,10 +40404,11 @@ function initFB(){
           go('home');
         }
         if(G.profile) pushProfile();
+        listenForChallenges(); cleanExpiredChallenges();
       } else {
         // Fall back to anonymous if no social session
         G.auth.signInAnonymously()
-          .then(c=>{ G.uid=c.user.uid; G.fbOk=true; fbDot(true); if(G.profile)pushProfile(); })
+          .then(c=>{ G.uid=c.user.uid; G.fbOk=true; fbDot(true); if(G.profile)pushProfile(); listenForChallenges(); cleanExpiredChallenges(); })
           .catch(()=>fbDot(false));
       }
     });
@@ -42868,8 +42937,240 @@ function addFriendFromFriends(){
     renderFriends();
   });
 }
+/* ══════════════════════════════════════════════════
+   CHALLENGE SYSTEM
+══════════════════════════════════════════════════ */
+let _chTargetUid=null, _chMode='online', _chDiff='easy';
+let _chListener=null, _chNotifTimer=null, _pendingChallenge=null;
+const CH_EXPIRY_MS=30*60*1000; // 30 minutes
+
 function challengeFriend(uid){
-  toast('Challenge sent! (Multiplayer lobby coming soon)');
+  if(!G.profile){ toast('Create a profile first'); return; }
+  if(!G.fbOk){ toast('Online features not available'); return; }
+  if(!uid){ toast('No friend selected'); return; }
+  sfx.tap();
+
+  _chTargetUid=uid;
+  _chMode='online';
+  _chDiff='easy';
+
+  const f=getFriendData(uid);
+  document.getElementById('ch-friend-av').textContent=f.avatar||'😊';
+  document.getElementById('ch-friend-name').textContent=f.name||'Friend';
+
+  // Reset chip selections
+  document.querySelectorAll('#ch-mode-chips .chip').forEach(c=>c.classList.remove('sel'));
+  document.getElementById('ch-mode-online').classList.add('sel');
+  document.querySelectorAll('#ch-diff-chips .chip').forEach(c=>c.classList.remove('sel'));
+  document.getElementById('ch-diff-easy').classList.add('sel');
+  _updateChModeDesc();
+
+  openOv('ov-challenge');
+}
+
+function pickChMode(el,mode){
+  sfx.tap();
+  _chMode=mode;
+  document.querySelectorAll('#ch-mode-chips .chip').forEach(c=>c.classList.remove('sel'));
+  el.classList.add('sel');
+  _updateChModeDesc();
+}
+
+function _updateChModeDesc(){
+  const el=document.getElementById('ch-mode-desc');
+  if(!el) return;
+  if(_chMode==='online'){
+    el.textContent='Both players join a Firebase room and play live from their own devices.';
+  } else {
+    el.textContent='Play together on the same device, passing it back and forth.';
+  }
+}
+
+function pickChDiff(el,diff){
+  sfx.tap();
+  _chDiff=diff;
+  document.querySelectorAll('#ch-diff-chips .chip').forEach(c=>c.classList.remove('sel'));
+  el.classList.add('sel');
+}
+
+function sendChallenge(){
+  if(!_chTargetUid||!G.fbOk||!G.uid){ toast('Cannot send challenge'); return; }
+  sfx.tap();
+
+  const challengeData={
+    senderUid:G.uid,
+    senderName:G.profile.name,
+    senderAvatar:G.profile.avatar,
+    mode:_chMode,
+    difficulty:_chDiff,
+    timestamp:Date.now(),
+    status:'pending'
+  };
+
+  if(_chMode==='online'){
+    // Create the room immediately so it's ready when they accept
+    const code=mkCode();
+    challengeData.roomCode=code;
+    const ref=G.db.ref('rooms/'+code);
+    ref.set({
+      code, host:G.uid, status:'waiting', sub:'classic', createdAt:Date.now(),
+      challenge:true, difficulty:_chDiff,
+      players:{[G.uid]:{name:G.profile.name,avatar:G.profile.avatar,ready:false,score:0,hearts:3,diff:_chDiff}}
+    }).then(()=>{
+      // Store room ref so host can listen
+      G.roomId=code; G.isHost=true; G.roomRef=ref;
+      ref.on('value',sn=>{
+        const d=sn.val(); if(!d) return;
+        if(d.status==='playing'){ ref.off(); joinFromRoom(d); }
+        // When opponent joins, update lobby if we're viewing it
+        const panel=document.getElementById('lobby-panel');
+        if(panel&&panel.style.display!=='none') updateLobbyUI(d);
+      });
+    });
+  }
+
+  // Write challenge to Firebase for the receiver
+  G.db.ref('challenges/'+_chTargetUid+'/'+G.uid).set(challengeData)
+    .then(()=>{
+      closeOv('ov-challenge');
+      if(_chMode==='online'){
+        toast('Challenge sent! Waiting in lobby...');
+        // Navigate to lobby and show the room
+        document.getElementById('rc-disp').textContent=challengeData.roomCode;
+        document.getElementById('lobby-panel').style.display='block';
+        document.getElementById('start-btn').disabled=false;
+        renderQRCode(challengeData.roomCode);
+        go('lobby');
+      } else {
+        toast('Challenge sent! They\'ll be notified.');
+      }
+    })
+    .catch(e=>toast('Failed to send: '+e.message));
+}
+
+function listenForChallenges(){
+  if(!G.fbOk||!G.uid) return;
+  if(_chListener) G.db.ref('challenges/'+G.uid).off('child_added',_chListener);
+
+  _chListener=G.db.ref('challenges/'+G.uid).on('child_added',snap=>{
+    const ch=snap.val();
+    if(!ch||ch.status!=='pending') return;
+
+    // Check expiry
+    if(Date.now()-ch.timestamp>CH_EXPIRY_MS){
+      snap.ref.remove();
+      return;
+    }
+
+    _pendingChallenge={...ch, key:snap.key, ref:snap.ref};
+    showChallengeNotif(ch);
+  });
+
+  // Also listen for removed challenges (declined/expired on other end)
+  G.db.ref('challenges/'+G.uid).on('child_removed',snap=>{
+    if(_pendingChallenge&&_pendingChallenge.key===snap.key){
+      hideChallengeNotif();
+      _pendingChallenge=null;
+    }
+  });
+}
+
+function showChallengeNotif(ch){
+  const el=document.getElementById('challenge-notif');
+  if(!el) return;
+
+  document.getElementById('cn-av').textContent=ch.senderAvatar||'😊';
+  document.getElementById('cn-name').textContent=(ch.senderName||'Someone')+' challenged you!';
+
+  const modeLabel=ch.mode==='online'?'Online Room':'Pass & Play';
+  const diffLabel=ch.difficulty==='easy'?'Easy':ch.difficulty==='medium'?'Medium':'Hard';
+  document.getElementById('cn-detail').textContent=modeLabel+' · '+diffLabel;
+
+  el.style.display='block';
+  el.style.animation='none';
+  void el.offsetWidth; // reflow
+  el.style.animation='slideDown .35s cubic-bezier(.25,.8,.25,1) both';
+
+  // Start countdown timer
+  clearInterval(_chNotifTimer);
+  _chNotifTimer=setInterval(()=>{
+    if(!_pendingChallenge) { clearInterval(_chNotifTimer); return; }
+    const remaining=CH_EXPIRY_MS-(Date.now()-_pendingChallenge.timestamp);
+    if(remaining<=0){
+      declineChallenge();
+      return;
+    }
+    const mins=Math.floor(remaining/60000);
+    const secs=Math.floor((remaining%60000)/1000);
+    document.getElementById('cn-timer').textContent=mins+':'+(secs<10?'0':'')+secs;
+  },1000);
+}
+
+function hideChallengeNotif(){
+  clearInterval(_chNotifTimer);
+  const el=document.getElementById('challenge-notif');
+  if(el) el.style.display='none';
+}
+
+function acceptChallenge(){
+  if(!_pendingChallenge){ hideChallengeNotif(); return; }
+  sfx.tap();
+  const ch=_pendingChallenge;
+
+  // Set difficulty from challenge
+  G.diff=ch.difficulty||'easy';
+  G.TIM=G.diff==='easy'?25:G.diff==='hard'?12:20;
+
+  if(ch.mode==='online'&&ch.roomCode){
+    // Join the room the sender created
+    hideChallengeNotif();
+    ch.ref.remove();
+    _pendingChallenge=null;
+    joinRoomByCode(ch.roomCode);
+  } else if(ch.mode==='passplay'){
+    // Pass & Play: start a local 2-player game with both names
+    hideChallengeNotif();
+    ch.ref.remove();
+    _pendingChallenge=null;
+
+    G.mode='local'; G.sub='classic';
+    G.players=[
+      {name:G.profile.name, avatar:G.profile.avatar},
+      {name:ch.senderName||'Friend', avatar:ch.senderAvatar||'😊'}
+    ];
+    G.pool=buildPool(); G.qi=0; G.pi=0; G.done=false; G.onlineGame=false;
+    G.scores={}; G.hearts={}; G.streaks={};
+    G.players.forEach(p=>{ G.scores[p.name]=0; G.hearts[p.name]=3; G.streaks[p.name]=0; });
+    showSplash(0,()=>{ go('game'); renderQ(); });
+  } else {
+    hideChallengeNotif();
+    ch.ref.remove();
+    _pendingChallenge=null;
+    toast('Challenge accepted!');
+  }
+}
+
+function declineChallenge(){
+  if(!_pendingChallenge){ hideChallengeNotif(); return; }
+  sfx.tap();
+  _pendingChallenge.ref.remove();
+  _pendingChallenge=null;
+  hideChallengeNotif();
+  toast('Challenge declined');
+}
+
+// Clean up expired challenges on load
+function cleanExpiredChallenges(){
+  if(!G.fbOk||!G.uid) return;
+  G.db.ref('challenges/'+G.uid).once('value').then(snap=>{
+    if(!snap.exists()) return;
+    snap.forEach(child=>{
+      const ch=child.val();
+      if(ch&&ch.timestamp&&(Date.now()-ch.timestamp>CH_EXPIRY_MS)){
+        child.ref.remove();
+      }
+    });
+  });
 }
 
 /* ══════════════════════════════════════════════════
