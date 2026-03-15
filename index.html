@@ -29,8 +29,8 @@
   --bg2:   #221608;
   --bg3:   #2c1e0f;
   --line:  rgba(200,158,72,.15);
-  --gold:  #c4880a;
-  --gold1: #e8b840;
+  --gold:  #FFB700;
+  --gold1: #FFD700;
   --gold2: rgba(196,136,10,.12);
   --amber: #f0a828;
   --ink:   #f2e8d0;
@@ -175,7 +175,7 @@ body::after {
   font-size: 9.5px;
   letter-spacing: .38em;
   text-transform: uppercase;
-  color: var(--gold);
+  color: #FFD700;
   margin-bottom: 5px;
 }
 .h1 {
@@ -1212,15 +1212,15 @@ body::after {
 .chip {
   flex-shrink: 0;
   padding: 9px 16px;
-  background: rgba(255,255,255,.042);
-  border: 1px solid rgba(180,140,60,.16);
+  background: rgba(255,255,255,.09);
+  border: 1.5px solid rgba(255,215,0,.3);
   border-radius: 40px;
   font-family: 'Cinzel', serif;
   font-size: 11px;
   font-weight: 600;
   letter-spacing: .09em;
   text-transform: uppercase;
-  color: var(--ink3);
+  color: #D0D0D0;
   cursor: pointer;
   transition: background .14s, border-color .14s, color .14s, transform .1s;
   white-space: nowrap;
@@ -1233,10 +1233,10 @@ body::after {
   border: 1px solid rgba(180,140,60,.16);
 }
 .chip.sel {
-  background: rgba(201,145,13,.15);
-  border-color: rgba(201,145,13,.55);
-  color: var(--gold1);
-  box-shadow: 0 0 0 1px rgba(201,145,13,.18);
+  background: rgba(255,215,0,.2);
+  border-color: #FFD700;
+  color: #FFD700;
+  box-shadow: 0 0 8px rgba(255,215,0,.3);
 }
 .chip:active { transform: scale(.95); opacity: .85; }
 
@@ -1515,14 +1515,14 @@ body { background: var(--bg); color: var(--ink); }
   color: #FFFFFF;
   box-shadow: none;
 }
-.btn-primary:hover:not(:disabled) { background: #E8B800; box-shadow: none; }
+.btn-primary:hover:not(:disabled) { background: #FFD700; box-shadow: none; }
 .btn-gold {
-  background: var(--green1);
-  border-bottom-color: var(--green);
-  color: #FFFFFF;
+  background: var(--gold1);
+  border-bottom-color: var(--gold);
+  color: #1a1a1a;
   box-shadow: none;
 }
-.btn-gold:hover:not(:disabled) { background: #E8B800; box-shadow: none; }
+.btn-gold:hover:not(:disabled) { background: #FFD700; filter: brightness(0.95); box-shadow: none; }
 .btn-ruby {
   background: var(--red);
   border-bottom-color: var(--red1);
@@ -1749,23 +1749,23 @@ body { background: var(--bg); color: var(--ink); }
 .mode-ds { color: var(--ink3); font-style: normal; font-family: 'Nunito', sans-serif; }
 
 /* ── Difficulty Chips ───────────────────── */
-.diff-chip { background: #FFFFFF; border: 2px solid rgba(0,0,0,.1); border-radius: var(--r3); color: var(--ink2); }
-.diff-chip.sel { background: rgba(88,204,2,.1); border-color: var(--green1); color: var(--green); }
+.diff-chip { background: #F5F5F5; border: 2px solid rgba(0,0,0,.12); border-radius: var(--r3); color: #333333; }
+.diff-chip.sel { background: #D4A017; border-color: #8B6914; color: #FFFFFF; }
 
 /* ── Chips ──────────────────────────────── */
 .chip {
-  background: #FFFFFF;
-  border: 2px solid rgba(0,0,0,.1) !important;
+  background: #F5F5F5;
+  border: 2px solid rgba(0,0,0,.12) !important;
   border-radius: var(--r3) !important;
-  color: var(--ink2);
+  color: #333333;
   font-family: 'Nunito', sans-serif;
   font-weight: 700;
 }
 .chip.sel {
-  background: rgba(88,204,2,.1);
-  border-color: var(--green1) !important;
-  color: var(--green);
-  box-shadow: none;
+  background: #D4A017;
+  border-color: #8B6914 !important;
+  color: #FFFFFF;
+  box-shadow: 0 2px 8px rgba(0,0,0,.15);
 }
 
 /* ── Quick Stats ────────────────────────── */
