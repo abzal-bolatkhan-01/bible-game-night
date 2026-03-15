@@ -39791,7 +39791,7 @@ function quitGame(){
     if(G._votesRef){G._votesRef.off();G._votesRef=null;}
     if(G._resultTimeout){clearTimeout(G._resultTimeout);G._resultTimeout=null;}
     if(G.roomRef){G.roomRef.child('gameState').off();G.roomRef.off();G.roomRef=null;}
-    G.onlineGame=false;G.roomPool=null;G.roomOrders=null;G._lastOnlineState=null;
+    G.onlineGame=false;G.roomPool=null;G.roomOrders=null;G._lastOnlineState=null;G._onlineQKey=null;
     go('home');
   }
 }
@@ -40700,7 +40700,7 @@ function joinFromRoom(d){
   players=players.map(p=>{let n=p.name,c=2;while(usedNames.has(n)){n=p.name+' '+c;c++;}usedNames.add(n);return{...p,name:n};});
   G.players=players;
   G.sub=d.sub||'classic';
-  G.qi=0;G.pi=0;G.done=false;G.onlineGame=true;G.isAnswerer=false;G._lastOnlineState=null;G.roomPool=null;G.roomOrders=null;
+  G.qi=0;G.pi=0;G.done=false;G.onlineGame=true;G.isAnswerer=false;G._lastOnlineState=null;G._onlineQKey=null;G.roomPool=null;G.roomOrders=null;
   G.scores={};G.hearts={};G.streaks={};
   G.players.forEach(p=>{G.scores[p.name]=0;G.hearts[p.name]=3;G.streaks[p.name]=0;});
 
@@ -40710,13 +40710,43 @@ function joinFromRoom(d){
     if(gs.pool&&!G.roomPool){G.roomPool=gs.pool;G.roomOrders=gs.orders;console.log('[BGN] Received pool with',G.roomPool.length,'questions');}
     if(gs.scores)Object.assign(G.scores,gs.scores);
     if(gs.hearts)Object.assign(G.hearts,gs.hearts);
+    // Fallback vote counter: if _votesRef listener failed, use gameState snapshot
+    if(!G._votesRef&&gs.phase==='question'&&gs.votes){
+      const votes=gs.votes;
+      const votedCount=Object.keys(votes).length;
+      const total=G.players.length;
+      const fb2=document.getElementById('g-fb');
+      if(fb2&&!G.done){
+        fb2.style.display='block';fb2.className='fb ok';
+        fb2.style.background='rgba(100,80,20,0.15)';fb2.style.color='var(--gold)';
+        fb2.innerHTML=`<strong>${votedCount}/${total} voted</strong>`;
+      }
+      if(G.isHost&&votedCount>=total){
+        if(G._resultTimeout){clearTimeout(G._resultTimeout);G._resultTimeout=null;}
+        stopTimers();
+        const q=G.roomPool[G.qi];
+        G.players.forEach(p=>{
+          const pVote=votes[p.uid];
+          if(pVote===q.a){G.scores[p.name]=(G.scores[p.name]||0)+1;}
+          else if(G.cfg.hearts){G.hearts[p.name]=Math.max(0,(G.hearts[p.name]!=null?G.hearts[p.name]:3)-1);}
+        });
+        const anyGameOver=G.players.some(p=>G.scores[p.name]>=(G.cfg.winScore||10)||(G.cfg.hearts&&G.hearts[p.name]<=0));
+        let nqi=G.qi+1;
+        if(nqi>=(G.roomPool?G.roomPool.length:40))nqi=0;
+        G.roomRef.child('gameState').update({
+          phase:'result',votes,correctA:q.a,scores:G.scores,hearts:G.hearts,
+          nextQi:nqi,gameOver:anyGameOver||false,t:Date.now()
+        }).catch(err=>console.error('Update gameState failed:', err));
+        return;
+      }
+    }
     const stateKey=gs.phase+':'+gs.qi+':'+(gs.t||0);
     if(stateKey===G._lastOnlineState)return;
     G._lastOnlineState=stateKey;
     console.log('[BGN] Game state changed: phase='+gs.phase+', qi='+gs.qi);
     if(gs.phase==='question'){G.qi=gs.qi;G.pi=gs.pi;G.done=false;renderOnlineQ();}
-    else if(gs.phase==='result'){showOnlineResult(gs);}
-    else if(gs.phase==='ended'){if(G.roomRef){G.roomRef.child('gameState').off();G.roomRef.off();}endGame();}
+    else if(gs.phase==='result'){G._onlineQKey=null;showOnlineResult(gs);}
+    else if(gs.phase==='ended'){G._onlineQKey=null;if(G.roomRef){G.roomRef.child('gameState').off();G.roomRef.off();}endGame();}
   });
 
   if(G.isHost){
@@ -40736,6 +40766,10 @@ function renderOnlineQ(){
   if(!G.roomPool)return;
   const q=G.roomPool[G.qi];if(!q){if(G.roomRef)G.roomRef.child('gameState').update({phase:'ended'});return;}
   const order=G.roomOrders[G.qi];
+  // Prevent re-render of the same question (guards against duplicate listener fires)
+  const qKey='q:'+G.qi;
+  if(G._onlineQKey===qKey)return;
+  G._onlineQKey=qKey;
   // Clean up old vote watcher
   if(G._votesRef){G._votesRef.off();G._votesRef=null;}
   if(G._resultTimeout){clearTimeout(G._resultTimeout);G._resultTimeout=null;}
@@ -40780,7 +40814,7 @@ function renderOnlineQ(){
   }
   // Watch votes in real time
   G._votesRef=G.roomRef.child('gameState/votes');
-  G._votesRef.on('value',sn=>{
+  const onVoteUpdate=sn=>{
     const votes=sn.val()||{};
     const votedCount=Object.keys(votes).length;
     const total=G.players.length;
@@ -40792,7 +40826,7 @@ function renderOnlineQ(){
     }
     // Host tallies when everyone has voted
     if(G.isHost&&votedCount>=total){
-      G._votesRef.off();G._votesRef=null;
+      if(G._votesRef){G._votesRef.off();G._votesRef=null;}
       if(G._resultTimeout){clearTimeout(G._resultTimeout);G._resultTimeout=null;}
       stopTimers();
       G.players.forEach(p=>{
@@ -40808,7 +40842,14 @@ function renderOnlineQ(){
         nextQi:nqi,gameOver:anyGameOver||false,t:Date.now()
       }).catch(err=>console.error('Update gameState failed:', err));
     }
-  });
+  };
+  const onVoteError=err=>{
+    console.error('Votes listener error (permission denied?):', err);
+    toast('Vote sync error — retrying...');
+    // Fallback: poll votes via the gameState listener instead
+    G._votesRef=null;
+  };
+  G._votesRef.on('value', onVoteUpdate, onVoteError);
   // Timeout fallback if host doesn't tally
   if(G._resultTimeout){clearTimeout(G._resultTimeout);}
   G._resultTimeout=setTimeout(()=>{
@@ -40845,20 +40886,26 @@ function answerOnline(btn,isOk,q,timedOut){
   document.querySelectorAll('#g-opts .opt').forEach(b=>b.disabled=true);
   if(btn)btn.classList.add('selected-vote');
   const origIdx=btn?parseInt(btn.dataset.origIdx):-1;
-  if(isOk){sfx.correct();haptic('correct');}else{sfx.wrong();haptic('wrong');}
+  const voteVal=origIdx!==-1?origIdx:-1;
+  // Write vote to Firebase FIRST, before sound effects
   if(G.roomRef&&G.uid){
-    G.roomRef.child('gameState/votes/'+G.uid).set(origIdx!==-1?origIdx:-1).catch(err=>{
-      console.error('Vote failed:', err);
-      toast('Vote failed - ' + err.message);
-      G._myVoteSubmitted=false;
-      document.querySelectorAll('#g-opts .opt').forEach(b=>b.disabled=false);
-    });
+    console.log('[BGN] Submitting vote:', voteVal, 'uid:', G.uid, 'path:', 'gameState/votes/'+G.uid);
+    G.roomRef.child('gameState/votes/'+G.uid).set(voteVal)
+      .then(()=>console.log('[BGN] Vote written successfully'))
+      .catch(err=>{
+        console.error('Vote failed:', err);
+        toast('Vote failed - ' + err.message);
+        G._myVoteSubmitted=false;
+        document.querySelectorAll('#g-opts .opt').forEach(b=>b.disabled=false);
+      });
   } else {
     console.error('Cannot submit vote - roomRef or uid missing', {roomRef: !!G.roomRef, uid: G.uid});
     toast('Vote error - not connected to room');
     G._myVoteSubmitted=false;
     document.querySelectorAll('#g-opts .opt').forEach(b=>b.disabled=false);
   }
+  // Play sound effects after vote is dispatched
+  try{if(isOk){sfx.correct();haptic('correct');}else{sfx.wrong();haptic('wrong');}}catch(e){}
 }
 
 function showOnlineResult(gs){
