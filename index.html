@@ -36,8 +36,8 @@
   --ink:   #f2e8d0;
   --ink2:  #b09068;
   --ink3:  #7a6045;
-  --green: #16693a;
-  --green1:#22b05a;
+  --green: #B8860B;
+  --green1:#D4A017;
   --red:   #8a1818;
   --red1:  #c42828;
   --blue:  #1a3870;
@@ -1413,8 +1413,8 @@ body::after {
   --ink:   #3D3D3D;
   --ink2:  #6E6E6E;
   --ink3:  #AFAFAF;
-  --green: #46A302;
-  --green1:#58CC02;
+  --green: #B8860B;
+  --green1:#D4A017;
   --red:   #FF4B4B;
   --red1:  #EA2B2B;
   --blue:  #1CB0F6;
@@ -1829,7 +1829,7 @@ body { background: var(--bg); color: var(--ink); }
 /* ── Toggles ────────────────────────────── */
 .toggle-row { background: #FFFFFF; border-color: rgba(0,0,0,.08); }
 .toggle-lbl { color: var(--ink); font-family: 'Nunito', sans-serif; font-weight: 600; }
-.toggle-btn.on  { background: rgba(88,204,2,.1); color: var(--green); border-color: rgba(88,204,2,.3); }
+.toggle-btn.on  { background: rgba(196,136,10,.12); color: var(--gold); border-color: rgba(196,136,10,.35); }
 .toggle-btn.off { background: var(--bg1); color: var(--ink3); border-color: rgba(0,0,0,.1); }
 
 /* ── Steppers ───────────────────────────── */
@@ -1992,7 +1992,7 @@ html[data-theme="dark"] {
   --ink: #F2F2F7; --ink2: #C7C7CC; --ink3: #8E8E93;
   --card-bg: #2C2C2E; --nav-bg: #1C1C1E; --nav-border: rgba(255,255,255,.12);
   --inp-bg: #3A3A3C; --inp-border: #48484A;
-  --green1: #30D158; --green2: #248A3D;
+  --green1: #FFD700; --green2: #E8B800;
 }
 html[data-theme="dark"] body { background: var(--bg); color: var(--ink); }
 html[data-theme="dark"] .screen { background: var(--bg); }
@@ -2023,11 +2023,11 @@ html[data-theme="dark"] .btn-primary { background: var(--green1); border-bottom-
 html[data-theme="dark"] .nb.on, html[data-theme="dark"] .nb.on svg { color: var(--green1); fill: var(--green1); }
 
 html[data-theme="green"] {
-  --bg: #F1F8F0; --bg2: #E3F2E0; --bg3: #C8E6C4;
-  --ink: #1B3A1A; --ink2: #2E6B2D; --ink3: #5A8A58;
+  --bg: #F5F3F0; --bg2: #EBE7E0; --bg3: #E0D5C7;
+  --ink: #3d2b1a; --ink2: #6b4c30; --ink3: #9b7a58;
   --card-bg: #FFFFFF; --nav-bg: #FFFFFF;
-  --green1: #2E7D32; --green2: #1B5E20;
-  --inp-border: #C8E6C4; --inp-bg: #FFFFFF;
+  --green1: #C4842A; --green2: #8B5E1A;
+  --inp-border: #E0D5C7; --inp-bg: #FFFFFF;
 }
 html[data-theme="green"] body { background: var(--bg); }
 html[data-theme="green"] .screen { background: var(--bg); }
@@ -2043,7 +2043,7 @@ html[data-theme="warmth"] {
   --bg: #fdf6ec; --bg2: #f9edda; --bg3: #f2e0c0;
   --ink: #3d2b1a; --ink2: #6b4c30; --ink3: #9b7a58;
   --card-bg: #fffdf8; --nav-bg: #fffdf8;
-  --green1: #8b6914; --green2: #6b5010;
+  --green1: #C4842A; --green2: #8B5E1A;
 }
 html[data-theme="warmth"] body { background: var(--bg); }
 html[data-theme="warmth"] .screen { background: var(--bg); }
@@ -2062,7 +2062,7 @@ html[data-theme="warmth"] .nb.on, html[data-theme="warmth"] .nb.on svg { color: 
   font-weight: 700; font-size: 13px; transition: border-color .15s;
   background: #f5f5f5;
 }
-.theme-swatch.active { border-color: var(--green1); }
+.theme-swatch.active { border-color: var(--gold1); }
 .theme-swatch[data-t="dark"] { background: #1e1e3a; color: #e8e8f0; }
 .theme-swatch[data-t="green"] { background: #d4edda; color: #1a3320; }
 .theme-swatch[data-t="warmth"] { background: #f2e0c0; color: #3d2b1a; }
@@ -2072,7 +2072,7 @@ html[data-theme="warmth"] .nb.on, html[data-theme="warmth"] .nb.on svg { color: 
   font-weight: 800; font-size: 14px; background: var(--card-bg,#fff);
   color: var(--ink); transition: border-color .15s, background .15s;
 }
-.trans-btn.active { border-color: var(--green1); background: rgba(88,204,2,.1); }
+.trans-btn.active { border-color: var(--gold1); background: rgba(196,136,10,.1); }
 .settings-section-title {
   font-family: 'Nunito',sans-serif; font-weight: 800; font-size: 12px;
   text-transform: uppercase; letter-spacing: .08em; color: var(--ink3);
