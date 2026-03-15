@@ -4,22 +4,32 @@
       <stop offset="0%" stop-color="#2c1e0f"/>
       <stop offset="100%" stop-color="#0d0906"/>
     </radialGradient>
-    <radialGradient id="flame" cx="50%" cy="30%" r="60%">
-      <stop offset="0%" stop-color="#fff8e0" stop-opacity="1"/>
-      <stop offset="30%" stop-color="#f0c040" stop-opacity="1"/>
-      <stop offset="70%" stop-color="#c4880a" stop-opacity="1"/>
+    <radialGradient id="flame" cx="50%" cy="25%" r="55%">
+      <stop offset="0%" stop-color="#fff8e0"/>
+      <stop offset="25%" stop-color="#ffe480"/>
+      <stop offset="55%" stop-color="#f0c040"/>
+      <stop offset="85%" stop-color="#c4880a"/>
       <stop offset="100%" stop-color="#8a3800" stop-opacity="0"/>
     </radialGradient>
-    <radialGradient id="glow" cx="50%" cy="30%" r="50%">
-      <stop offset="0%" stop-color="#f0c040" stop-opacity="0.35"/>
+    <radialGradient id="glow" cx="50%" cy="28%" r="45%">
+      <stop offset="0%" stop-color="#f0c040" stop-opacity="0.4"/>
+      <stop offset="60%" stop-color="#c4880a" stop-opacity="0.1"/>
       <stop offset="100%" stop-color="#c4880a" stop-opacity="0"/>
     </radialGradient>
-    <linearGradient id="candle" x1="0%" y1="0%" x2="100%" y2="0%">
-      <stop offset="0%" stop-color="#3a1a04"/>
-      <stop offset="30%" stop-color="#c4880a" stop-opacity="0.4"/>
-      <stop offset="50%" stop-color="#f0e8c8"/>
-      <stop offset="70%" stop-color="#c4880a" stop-opacity="0.3"/>
-      <stop offset="100%" stop-color="#2c1005"/>
+    <radialGradient id="glow-outer" cx="50%" cy="35%" r="55%">
+      <stop offset="0%" stop-color="#f0c040" stop-opacity="0.12"/>
+      <stop offset="100%" stop-color="#c4880a" stop-opacity="0"/>
+    </radialGradient>
+    <linearGradient id="lamp-body" x1="0%" y1="0%" x2="100%" y2="100%">
+      <stop offset="0%" stop-color="#d4a050"/>
+      <stop offset="25%" stop-color="#c4880a"/>
+      <stop offset="50%" stop-color="#e8c060"/>
+      <stop offset="75%" stop-color="#c4880a"/>
+      <stop offset="100%" stop-color="#8a5c1a"/>
+    </linearGradient>
+    <linearGradient id="lamp-dark" x1="0%" y1="0%" x2="0%" y2="100%">
+      <stop offset="0%" stop-color="#8a5c1a"/>
+      <stop offset="100%" stop-color="#5a3810"/>
     </linearGradient>
     <linearGradient id="gold-ring" x1="0%" y1="0%" x2="100%" y2="100%">
       <stop offset="0%" stop-color="#f0c040"/>
@@ -27,53 +37,88 @@
       <stop offset="100%" stop-color="#e8b840"/>
     </linearGradient>
     <filter id="blur-glow" x="-50%" y="-50%" width="200%" height="200%">
-      <feGaussianBlur stdDeviation="12" result="blur"/>
+      <feGaussianBlur stdDeviation="16" result="blur"/>
       <feComposite in="SourceGraphic" in2="blur" operator="over"/>
+    </filter>
+    <filter id="soft-glow" x="-30%" y="-30%" width="160%" height="160%">
+      <feGaussianBlur stdDeviation="6"/>
     </filter>
   </defs>
 
-  <!-- Background circle -->
+  <!-- Background -->
   <rect width="512" height="512" rx="112" fill="url(#bg)"/>
 
   <!-- Gold ring border -->
-  <rect x="16" y="16" width="480" height="480" rx="100" fill="none" stroke="url(#gold-ring)" stroke-width="3" opacity="0.5"/>
+  <rect x="16" y="16" width="480" height="480" rx="100" fill="none" stroke="url(#gold-ring)" stroke-width="2.5" opacity="0.4"/>
 
-  <!-- Glow behind flame -->
-  <ellipse cx="256" cy="170" rx="110" ry="120" fill="url(#glow)" filter="url(#blur-glow)"/>
+  <!-- Outer ambient glow -->
+  <ellipse cx="256" cy="190" rx="160" ry="170" fill="url(#glow-outer)" filter="url(#blur-glow)"/>
+
+  <!-- Inner glow behind flame -->
+  <ellipse cx="256" cy="155" rx="80" ry="100" fill="url(#glow)" filter="url(#blur-glow)"/>
+
+  <!-- Light rays (subtle) -->
+  <g opacity="0.06" stroke="#f0c040" stroke-width="1.5" stroke-linecap="round">
+    <line x1="256" y1="100" x2="256" y2="60"/>
+    <line x1="256" y1="100" x2="220" y2="68"/>
+    <line x1="256" y1="100" x2="292" y2="68"/>
+    <line x1="256" y1="100" x2="196" y2="88"/>
+    <line x1="256" y1="100" x2="316" y2="88"/>
+  </g>
 
   <!-- Flame outer glow -->
-  <ellipse cx="256" cy="148" rx="36" ry="52" fill="#c4880a" opacity="0.18" filter="url(#blur-glow)"/>
+  <ellipse cx="256" cy="130" rx="28" ry="42" fill="#c4880a" opacity="0.15" filter="url(#soft-glow)"/>
 
-  <!-- Flame -->
-  <path d="M256 82 C256 82 228 110 226 138 C224 162 238 175 248 178 C243 165 245 152 256 142 C267 152 269 165 264 178 C274 175 288 162 286 138 C284 110 256 82 256 82Z" fill="url(#flame)"/>
+  <!-- Flame - teardrop shape -->
+  <path d="M256 72 C256 72 232 100 230 126 C228 148 240 160 250 164 C246 153 247 140 256 130 C265 140 266 153 262 164 C272 160 284 148 282 126 C280 100 256 72 256 72Z" fill="url(#flame)"/>
 
   <!-- Inner flame highlight -->
-  <path d="M256 104 C256 104 244 120 243 138 C242 150 249 158 254 160 C251 152 252 143 256 137 C260 143 261 152 258 160 C263 158 270 150 269 138 C268 120 256 104 256 104Z" fill="#fff8e0" opacity="0.8"/>
+  <path d="M256 94 C256 94 246 108 245 124 C244 134 249 142 253 144 C251 137 252 130 256 125 C260 130 261 137 259 144 C263 142 268 134 267 124 C266 108 256 94 256 94Z" fill="#fff8e0" opacity="0.85"/>
 
   <!-- Wick -->
-  <line x1="256" y1="178" x2="256" y2="196" stroke="#3a1a04" stroke-width="4" stroke-linecap="round"/>
+  <line x1="256" y1="162" x2="256" y2="178" stroke="#3a1a04" stroke-width="3.5" stroke-linecap="round"/>
 
-  <!-- Candle body -->
-  <rect x="214" y="196" width="84" height="168" rx="6" fill="url(#candle)"/>
+  <!-- Lamp spout (nozzle where wick comes out) -->
+  <path d="M240 178 L232 188 Q228 192 234 194 L278 194 Q284 192 280 188 L272 178 Z" fill="url(#lamp-body)" stroke="#8a5c1a" stroke-width="1"/>
 
-  <!-- Candle wax drip -->
-  <path d="M214 220 Q207 228 210 238 Q213 248 214 258" fill="none" stroke="#f0e8c8" stroke-width="6" stroke-linecap="round" opacity="0.5"/>
-  <path d="M298 234 Q305 242 303 252" fill="none" stroke="#f0e8c8" stroke-width="5" stroke-linecap="round" opacity="0.4"/>
+  <!-- Oil lamp body - classic Aladdin/biblical shape -->
+  <!-- Main bowl -->
+  <ellipse cx="256" cy="240" rx="90" ry="50" fill="url(#lamp-body)" stroke="#8a5c1a" stroke-width="1.5"/>
 
-  <!-- Candle shine stripe -->
-  <rect x="240" y="200" width="14" height="158" rx="7" fill="white" opacity="0.07"/>
+  <!-- Bowl top rim -->
+  <ellipse cx="256" cy="210" rx="82" ry="18" fill="url(#lamp-body)" stroke="#8a5c1a" stroke-width="1"/>
+
+  <!-- Bowl opening (dark interior) -->
+  <ellipse cx="256" cy="210" rx="68" ry="12" fill="#1a0e04" opacity="0.7"/>
+
+  <!-- Spout connection to bowl -->
+  <path d="M234 194 Q230 200 232 210 L240 210 Q238 200 240 194 Z" fill="url(#lamp-body)"/>
+  <path d="M278 194 Q282 200 280 210 L272 210 Q274 200 272 194 Z" fill="url(#lamp-body)"/>
+
+  <!-- Handle (right side, elegant curved) -->
+  <path d="M346 230 Q370 220 368 250 Q366 290 340 280 Q350 270 348 250 Q346 235 346 230Z" fill="url(#lamp-body)" stroke="#8a5c1a" stroke-width="1.5"/>
+
+  <!-- Lamp body highlight (shine) -->
+  <ellipse cx="240" cy="235" rx="30" ry="20" fill="white" opacity="0.06"/>
+
+  <!-- Decorative band around bowl center -->
+  <ellipse cx="256" cy="240" rx="88" ry="6" fill="none" stroke="#e8c060" stroke-width="1" opacity="0.4"/>
+
+  <!-- Base/pedestal -->
+  <ellipse cx="256" cy="290" rx="50" ry="10" fill="url(#lamp-dark)"/>
+  <rect x="228" y="290" width="56" height="22" rx="4" fill="url(#lamp-dark)"/>
+  <ellipse cx="256" cy="312" rx="60" ry="12" fill="url(#lamp-dark)" stroke="#8a5c1a" stroke-width="1"/>
 
   <!-- Base plate -->
-  <rect x="196" y="362" width="120" height="14" rx="7" fill="#8a5c1a" opacity="0.7"/>
-  <rect x="188" y="372" width="136" height="8" rx="4" fill="#6a4010" opacity="0.5"/>
+  <ellipse cx="256" cy="322" rx="68" ry="10" fill="#5a3810" opacity="0.6"/>
 
-  <!-- Decorative cross lines (subtle) -->
-  <line x1="256" y1="400" x2="256" y2="440" stroke="#c4880a" stroke-width="1.5" opacity="0.3"/>
-  <line x1="236" y1="420" x2="276" y2="420" stroke="#c4880a" stroke-width="1.5" opacity="0.3"/>
+  <!-- Subtle cross engraving on lamp body -->
+  <line x1="256" y1="226" x2="256" y2="254" stroke="#e8c060" stroke-width="1" opacity="0.2"/>
+  <line x1="244" y1="240" x2="268" y2="240" stroke="#e8c060" stroke-width="1" opacity="0.2"/>
 
   <!-- Corner ornaments -->
-  <text x="60" y="92" font-size="28" opacity="0.18" fill="#c4880a" font-family="serif">✦</text>
-  <text x="424" y="92" font-size="28" opacity="0.18" fill="#c4880a" font-family="serif">✦</text>
-  <text x="60" y="462" font-size="28" opacity="0.18" fill="#c4880a" font-family="serif">✦</text>
-  <text x="424" y="462" font-size="28" opacity="0.18" fill="#c4880a" font-family="serif">✦</text>
+  <text x="60" y="92" font-size="24" opacity="0.15" fill="#c4880a" font-family="serif">&#x2726;</text>
+  <text x="424" y="92" font-size="24" opacity="0.15" fill="#c4880a" font-family="serif">&#x2726;</text>
+  <text x="60" y="440" font-size="24" opacity="0.15" fill="#c4880a" font-family="serif">&#x2726;</text>
+  <text x="424" y="440" font-size="24" opacity="0.15" fill="#c4880a" font-family="serif">&#x2726;</text>
 </svg>

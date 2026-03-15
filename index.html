@@ -2173,9 +2173,9 @@ html[data-theme="warmth"] .nb.on, html[data-theme="warmth"] .nb.on svg { color: 
       <div class="eyebrow" style="margin-bottom:2px;">Bible Trivia with Friends</div>
       <div class="h1" style="font-size:clamp(24px,6.5vw,38px);line-height:1.05;"><em>Lamp</em></div>
     </div>
-    <!-- Animated candle SVG icon -->
+    <!-- Animated oil lamp SVG icon -->
     <div style="flex-shrink:0;animation:float 3.5s ease-in-out infinite;">
-      <svg width="48" height="56" viewBox="0 0 48 56" xmlns="http://www.w3.org/2000/svg">
+      <svg width="52" height="56" viewBox="0 0 52 56" xmlns="http://www.w3.org/2000/svg">
         <defs>
           <radialGradient id="fl" cx="50%" cy="20%" r="70%">
             <stop offset="0%" stop-color="#fff8e0"/>
@@ -2186,29 +2186,36 @@ html[data-theme="warmth"] .nb.on, html[data-theme="warmth"] .nb.on svg { color: 
             <stop offset="0%" stop-color="#f0c040" stop-opacity="0.4"/>
             <stop offset="100%" stop-color="#c4880a" stop-opacity="0"/>
           </radialGradient>
-          <linearGradient id="cb" x1="0%" y1="0%" x2="100%" y2="0%">
-            <stop offset="0%" stop-color="#3a1a04"/>
-            <stop offset="35%" stop-color="#d4a050" stop-opacity="0.5"/>
-            <stop offset="50%" stop-color="#f0e8c8"/>
-            <stop offset="65%" stop-color="#d4a050" stop-opacity="0.4"/>
-            <stop offset="100%" stop-color="#2c1005"/>
+          <linearGradient id="lb" x1="0%" y1="0%" x2="100%" y2="100%">
+            <stop offset="0%" stop-color="#d4a050"/>
+            <stop offset="50%" stop-color="#c4880a"/>
+            <stop offset="100%" stop-color="#8a5c1a"/>
           </linearGradient>
         </defs>
         <!-- Flame glow -->
-        <ellipse cx="24" cy="13" rx="10" ry="12" fill="url(#fg)"/>
+        <ellipse cx="22" cy="10" rx="9" ry="11" fill="url(#fg)"/>
         <!-- Flame -->
-        <path d="M24 2 C24 2 16 10 16 17 C16 22 19 25 22 26 C20 21 21 16 24 13 C27 16 28 21 26 26 C29 25 32 22 32 17 C32 10 24 2 24 2Z" fill="url(#fl)"/>
+        <path d="M22 1 C22 1 15 8 15 14 C15 18 18 21 20 22 C19 18 19.5 14 22 11 C24.5 14 25 18 24 22 C26 21 29 18 29 14 C29 8 22 1 22 1Z" fill="url(#fl)"/>
         <!-- Wick -->
-        <line x1="24" y1="26" x2="24" y2="30" stroke="#3a1a04" stroke-width="1.5" stroke-linecap="round"/>
-        <!-- Candle body -->
-        <rect x="14" y="30" width="20" height="20" rx="2" fill="url(#cb)"/>
+        <line x1="22" y1="22" x2="22" y2="26" stroke="#3a1a04" stroke-width="1.2" stroke-linecap="round"/>
+        <!-- Spout -->
+        <path d="M17 26 L14 30 Q12 32 16 33 L28 33 Q32 32 30 30 L27 26Z" fill="url(#lb)"/>
+        <!-- Lamp bowl -->
+        <ellipse cx="26" cy="40" rx="18" ry="9" fill="url(#lb)" stroke="#8a5c1a" stroke-width="0.8"/>
+        <!-- Bowl rim -->
+        <ellipse cx="26" cy="35" rx="16" ry="4" fill="url(#lb)" stroke="#8a5c1a" stroke-width="0.5"/>
+        <!-- Bowl opening -->
+        <ellipse cx="26" cy="35" rx="12" ry="2.5" fill="#1a0e04" opacity="0.6"/>
+        <!-- Handle -->
+        <path d="M44 38 Q50 36 49 42 Q48 48 43 46 Q46 44 45 42 Q44 39 44 38Z" fill="url(#lb)" stroke="#8a5c1a" stroke-width="0.6"/>
         <!-- Shine -->
-        <rect x="20" y="31" width="3" height="18" rx="1.5" fill="white" opacity="0.08"/>
-        <!-- Wax drip -->
-        <path d="M14 36 Q11 39 12 42" fill="none" stroke="#f0e8c8" stroke-width="2" stroke-linecap="round" opacity="0.4"/>
+        <ellipse cx="22" cy="39" rx="5" ry="4" fill="white" opacity="0.06"/>
         <!-- Base -->
-        <rect x="10" y="49" width="28" height="4" rx="2" fill="#8a5c1a" opacity="0.7"/>
-        <rect x="8" y="52" width="32" height="3" rx="1.5" fill="#6a4010" opacity="0.4"/>
+        <ellipse cx="26" cy="49" rx="12" ry="3" fill="#5a3810" opacity="0.7"/>
+        <rect x="20" y="48" width="12" height="4" rx="1" fill="#5a3810" opacity="0.5"/>
+        <!-- Cross detail -->
+        <line x1="26" y1="37" x2="26" y2="43" stroke="#e8c060" stroke-width="0.5" opacity="0.2"/>
+        <line x1="23" y1="40" x2="29" y2="40" stroke="#e8c060" stroke-width="0.5" opacity="0.2"/>
       </svg>
     </div>
   </div>
@@ -2217,7 +2224,7 @@ html[data-theme="warmth"] .nb.on, html[data-theme="warmth"] .nb.on svg { color: 
 
     <!-- Daily Verse -->
     <div class="verse-card" id="daily-verse-card">
-      <div class="verse-card-label">Verse of the Day</div>
+      <div class="verse-card-label">Light for Today</div>
       <div class="verse-card-text" id="dv-text"></div>
       <div class="verse-card-ref" id="dv-ref"></div>
     </div>
@@ -41721,49 +41728,52 @@ const sfx = {
    DAILY VERSE
 ══════════════════════════════════════════════════ */
 const DAILY_VERSES=[
-  {t:'The Lord is my shepherd; I shall not want.',r:'Psalm 23:1'},
-  {t:'Be still, and know that I am God.',r:'Psalm 46:10'},
-  {t:'I can do all things through Christ who strengthens me.',r:'Philippians 4:13'},
-  {t:'For God so loved the world that he gave his one and only Son.',r:'John 3:16'},
-  {t:'Trust in the Lord with all your heart and lean not on your own understanding.',r:'Proverbs 3:5'},
-  {t:'The joy of the Lord is your strength.',r:'Nehemiah 8:10'},
-  {t:'Even youths grow tired and weary, but those who hope in the Lord will renew their strength.',r:'Isaiah 40:31'},
-  {t:'Love one another. As I have loved you, so you must love one another.',r:'John 13:34'},
-  {t:'Give thanks to the Lord, for he is good; his love endures forever.',r:'Psalm 107:1'},
+  // Core "lamp/light/guide" verses — the heart of the app's theme
   {t:'Your word is a lamp for my feet, a light on my path.',r:'Psalm 119:105'},
-  {t:'Do not be anxious about anything, but in every situation, by prayer and petition, present your requests to God.',r:'Philippians 4:6'},
-  {t:'And we know that in all things God works for the good of those who love him.',r:'Romans 8:28'},
-  {t:'Come to me, all you who are weary and burdened, and I will give you rest.',r:'Matthew 11:28'},
-  {t:'The Lord your God is with you, the Mighty Warrior who saves.',r:'Zephaniah 3:17'},
-  {t:'Cast all your anxiety on him because he cares for you.',r:'1 Peter 5:7'},
-  {t:'Be strong and courageous. Do not be afraid; do not be discouraged.',r:'Joshua 1:9'},
-  {t:'For I know the plans I have for you, plans to prosper you and not to harm you.',r:'Jeremiah 29:11'},
-  {t:'The name of the Lord is a fortified tower; the righteous run to it and are safe.',r:'Proverbs 18:10'},
-  {t:'Rejoice always, pray continually, give thanks in all circumstances.',r:'1 Thessalonians 5:16-18'},
-  {t:'But seek first his kingdom and his righteousness, and all these things will be given to you.',r:'Matthew 6:33'},
-  {t:'Love is patient, love is kind. It does not envy, it does not boast.',r:'1 Corinthians 13:4'},
-  {t:'The Lord bless you and keep you; the Lord make his face shine on you.',r:'Numbers 6:24-25'},
-  {t:'Create in me a pure heart, O God, and renew a steadfast spirit within me.',r:'Psalm 51:10'},
-  {t:'For the Spirit God gave us does not make us timid, but gives us power, love and self-discipline.',r:'2 Timothy 1:7'},
-  {t:'May the God of hope fill you with all joy and peace as you trust in him.',r:'Romans 15:13'},
-  {t:'Whatever you do, work at it with all your heart, as working for the Lord.',r:'Colossians 3:23'},
-  {t:'Let everything that has breath praise the Lord. Praise the Lord.',r:'Psalm 150:6'},
-  {t:'He gives strength to the weary and increases the power of the weak.',r:'Isaiah 40:29'},
-  {t:'Delight yourself in the Lord, and he will give you the desires of your heart.',r:'Psalm 37:4'},
-  {t:'In the beginning God created the heavens and the earth.',r:'Genesis 1:1'},
-  {t:'The Lord is close to the brokenhearted and saves those who are crushed in spirit.',r:'Psalm 34:18'},
-  {t:'We love because he first loved us.',r:'1 John 4:19'},
-  {t:'By grace you have been saved, through faith — and this is not from yourselves, it is the gift of God.',r:'Ephesians 2:8'},
-  {t:'Jesus wept.',r:'John 11:35'},
-  {t:'I am the resurrection and the life. The one who believes in me will live, even though they die.',r:'John 11:25'},
-  {t:'No one can serve two masters. You cannot serve both God and money.',r:'Matthew 6:24'},
+  {t:'The Lord is my light and my salvation — whom shall I fear?',r:'Psalm 27:1'},
+  {t:'Send me your light and your faithful care, let them lead me.',r:'Psalm 43:3'},
+  {t:'The people walking in darkness have seen a great light; on those living in the land of deep darkness a light has dawned.',r:'Isaiah 9:2'},
+  {t:'I am the light of the world. Whoever follows me will never walk in darkness, but will have the light of life.',r:'John 8:12'},
+  {t:'You are the light of the world. A town built on a hill cannot be hidden.',r:'Matthew 5:14'},
+  {t:'The unfolding of your words gives light; it gives understanding to the simple.',r:'Psalm 119:130'},
+  {t:'For you were once darkness, but now you are light in the Lord. Live as children of light.',r:'Ephesians 5:8'},
+  {t:'God is light; in him there is no darkness at all.',r:'1 John 1:5'},
+  {t:'The light shines in the darkness, and the darkness has not overcome it.',r:'John 1:5'},
+  {t:'No one lights a lamp and hides it. Instead, they put it on its stand, so that those who come in may see the light.',r:'Luke 11:33'},
+  {t:'But if we walk in the light, as he is in the light, we have fellowship with one another.',r:'1 John 1:7'},
+  {t:'He reveals deep and hidden things; he knows what lies in darkness, and light dwells with him.',r:'Daniel 2:22'},
+  {t:'Arise, shine, for your light has come, and the glory of the Lord rises upon you.',r:'Isaiah 60:1'},
+  {t:'For God, who said, "Let light shine out of darkness," made his light shine in our hearts.',r:'2 Corinthians 4:6'},
+  {t:'The commands of the Lord are radiant, giving light to the eyes.',r:'Psalm 19:8'},
+  {t:'Even the darkness will not be dark to you; the night will shine like the day, for darkness is as light to you.',r:'Psalm 139:12'},
+  {t:'But you are a chosen people, a royal priesthood, called out of darkness into his wonderful light.',r:'1 Peter 2:9'},
+  {t:'When Jesus spoke again to the people, he said, "I am the light of the world."',r:'John 9:5'},
+  {t:'The Lord will be your everlasting light, and your God will be your glory.',r:'Isaiah 60:19'},
+  {t:'He wraps himself in light as with a garment; he stretches out the heavens like a tent.',r:'Psalm 104:2'},
+  {t:'For with you is the fountain of life; in your light we see light.',r:'Psalm 36:9'},
+  {t:'The true light that gives light to everyone was coming into the world.',r:'John 1:9'},
+  {t:'Let your light shine before others, that they may see your good deeds and glorify your Father in heaven.',r:'Matthew 5:16'},
+  {t:'I have come into the world as a light, so that no one who believes in me should stay in darkness.',r:'John 12:46'},
+  {t:'He brought them out of darkness, the utter darkness, and broke away their chains.',r:'Psalm 107:14'},
+  {t:'We also have the prophetic message as something completely reliable, a light shining in a dark place.',r:'2 Peter 1:19'},
+  {t:'The path of the righteous is like the morning sun, shining ever brighter till the full light of day.',r:'Proverbs 4:18'},
+  {t:'Then your light will break forth like the dawn, and your healing will quickly appear.',r:'Isaiah 58:8'},
+  {t:'To shine on those living in darkness and in the shadow of death, to guide our feet into the path of peace.',r:'Luke 1:79'},
+  {t:'In him was life, and that life was the light of all mankind.',r:'John 1:4'},
 ];
 function initDailyVerse(){
-  const d=new Date(), idx=(d.getFullYear()*365+d.getMonth()*31+d.getDate())%DAILY_VERSES.length;
+  // UTC-based date so all users worldwide see the same verse on the same day
+  const now=new Date();
+  const utcDay=Date.UTC(now.getUTCFullYear(),now.getUTCMonth(),now.getUTCDate());
+  // Days since epoch gives a stable daily number
+  const dayNum=Math.floor(utcDay/86400000);
+  // Simple seeded shuffle: mix the day number to avoid sequential cycling
+  const seed=(dayNum*2654435761)>>>0; // Knuth multiplicative hash
+  const idx=seed%DAILY_VERSES.length;
   const v=DAILY_VERSES[idx];
   const el=document.getElementById('dv-text'), el2=document.getElementById('dv-ref');
-  if(el) el.textContent='"'+v.t+'"';
-  if(el2) el2.textContent='— '+v.r;
+  if(el) el.textContent='\u201c'+v.t+'\u201d';
+  if(el2) el2.textContent='\u2014 '+v.r;
 }
 
 /* ══════════════════════════════════════════════════
