@@ -123,7 +123,7 @@ body::after {
   width: 100%;
   margin: 0 auto;
   padding-top: calc(var(--safe-t) + 4px);
-  overflow-x: visible;
+  overflow-x: hidden;
   box-sizing: border-box;
 }
 .screen {
@@ -132,11 +132,13 @@ body::after {
   flex: 1;
   padding: 0 16px;
   min-height: 0;
+  overflow-x: hidden;
 }
 .screen.active { display: flex; animation: scrIn .28s cubic-bezier(.25,.8,.25,1) both; }
 .scroller {
   flex: 1;
   overflow-y: auto;
+  overflow-x: hidden;
   -webkit-overflow-scrolling: touch;
   scrollbar-width: none;
   padding-bottom: 8px;
@@ -608,7 +610,7 @@ body::after {
 .br-strip {
   display: flex;
   gap: 6px;
-  overflow-x: auto;
+  overflow-x: hidden;
   padding: 0 0 4px;
   flex-shrink: 0;
   margin-bottom: 10px;
@@ -1191,7 +1193,7 @@ body::after {
 .chips {
   display: flex;
   gap: 7px;
-  overflow-x: auto;
+  overflow-x: hidden;
   scrollbar-width: none;
   padding: 0 16px 4px;
   margin: 0 -16px;
