@@ -40425,6 +40425,13 @@ function initFB(){
           .catch(()=>fbDot(false));
       }
     });
+    // Handle redirect result from social sign-in (signInWithRedirect)
+    G.auth.getRedirectResult().then(result=>{
+      if(result&&result.user){
+        toast('Signed in!');
+        updateProfileSigninCard();
+      }
+    }).catch(e=>handleAuthError(e,'Sign-in failed'));
     G.db.ref('.info/connected').on('value',s=>fbDot(s.val()===true));
   }catch(e){ console.log('[BGN]',e); }
 }
@@ -42977,17 +42984,17 @@ function showFacebookAuthErrorModal(err){
 function signInWithGoogle(){
   if(!G.auth){ toast('Firebase not configured'); return; }
   const provider=new firebase.auth.GoogleAuthProvider();
-  G.auth.signInWithPopup(provider).catch(e=>handleAuthError(e,'Google sign-in failed'));
+  G.auth.signInWithRedirect(provider).catch(e=>handleAuthError(e,'Google sign-in failed'));
 }
 function signInWithFacebook(){
   if(!G.auth){ toast('Firebase not configured'); return; }
   const provider=new firebase.auth.FacebookAuthProvider();
-  G.auth.signInWithPopup(provider).catch(e=>handleAuthError(e,'Facebook sign-in failed'));
+  G.auth.signInWithRedirect(provider).catch(e=>handleAuthError(e,'Facebook sign-in failed'));
 }
 function signInWithApple(){
   if(!G.auth){ toast('Firebase not configured'); return; }
   const provider=new firebase.auth.OAuthProvider('apple.com');
-  G.auth.signInWithPopup(provider).catch(e=>handleAuthError(e,'Apple sign-in failed'));
+  G.auth.signInWithRedirect(provider).catch(e=>handleAuthError(e,'Apple sign-in failed'));
 }
 function toggleEmailAuth(){
   const f=document.getElementById('email-auth-form');
@@ -43034,25 +43041,12 @@ function profileSignIn(method){
   const currentUser=G.auth.currentUser;
   if(currentUser&&currentUser.isAnonymous){
     const credential=provider;
-    currentUser.linkWithPopup(credential).then(result=>{
-      toast('Account linked! Your progress is saved.');
-      updateProfileSigninCard();
-    }).catch(e=>{
+    currentUser.linkWithRedirect(credential).catch(e=>{
       if(e.code==='auth/unauthorized-domain'){ showDomainErrorModal(); return; }
-      if(e.code==='auth/credential-already-in-use'||e.code==='auth/email-already-in-use'){
-        G.auth.signInWithPopup(provider).then(()=>{
-          toast('Signed in! Progress synced.');
-          updateProfileSigninCard();
-        }).catch(e2=>handleAuthError(e2,'Sign-in failed'));
-      } else {
-        handleAuthError(e,'Sign-in failed');
-      }
+      handleAuthError(e,'Sign-in failed');
     });
   } else {
-    G.auth.signInWithPopup(provider).then(()=>{
-      toast('Signed in!');
-      updateProfileSigninCard();
-    }).catch(e=>handleAuthError(e,'Sign-in failed'));
+    G.auth.signInWithRedirect(provider).catch(e=>handleAuthError(e,'Sign-in failed'));
   }
 }
 function profileEmailSignIn(){
