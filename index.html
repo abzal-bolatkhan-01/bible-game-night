@@ -40720,6 +40720,20 @@ function adjWin(n){
 ══════════════════════════════════════════════════ */
 function shuf(a){ const r=[...a]; for(let i=r.length-1;i>0;i--){ const j=0|Math.random()*(i+1); [r[i],r[j]]=[r[j],r[i]]; } return r; }
 function slug(s){ return (s||'').toLowerCase().replace(/[^a-z0-9]+/g,'-').replace(/(^-|-$)/g,''); }
+function isTFQuestion(q){ return typeof q.a === 'boolean'; }
+function getOptionButtons(){ return document.querySelectorAll('#g-opts .opt, #g-opts .tf-btn'); }
+function normAnswerValue(q){ const isTF=isTFQuestion(q); return isTF?(q.a?1:0):q.a; }
+function tallyVotes(votes,q){
+  const isTF=isTFQuestion(q);
+  const correctA=normAnswerValue(q);
+  G.players.forEach(p=>{
+    const pVote=votes[p.uid];
+    const isCorrect=isTF?(pVote===1)===(q.a===true):pVote===q.a;
+    if(isCorrect){G.scores[p.name]=(G.scores[p.name]||0)+1;}
+    else if(G.cfg.hearts){G.hearts[p.name]=Math.max(0,(G.hearts[p.name]!=null?G.hearts[p.name]:3)-1);}
+  });
+  return correctA;
+}
 
 function buildPool(){
   let raw = [];
@@ -41624,14 +41638,7 @@ function renderOnlineQ(){
       if(G._votesRef){G._votesRef.off();G._votesRef=null;}
       if(G._resultTimeout){clearTimeout(G._resultTimeout);G._resultTimeout=null;}
       stopTimers();
-      const isTFQ=typeof q.a==='boolean';
-      G.players.forEach(p=>{
-        const pVote=votes[p.uid];
-        const isCorrect=isTFQ?(pVote===1)===(q.a===true):pVote===q.a;
-        if(isCorrect){G.scores[p.name]=(G.scores[p.name]||0)+1;}
-        else if(G.cfg.hearts){G.hearts[p.name]=Math.max(0,(G.hearts[p.name]!=null?G.hearts[p.name]:3)-1);}
-      });
-      const correctA=isTFQ?(q.a?1:0):q.a;
+      const correctA=tallyVotes(votes,q);
       const anyGameOver=G.players.some(p=>G.scores[p.name]>=(G.cfg.winScore||10)||(G.cfg.hearts&&G.hearts[p.name]<=0));
       let nqi=G.qi+1;
       if(nqi>=(G.roomPool?G.roomPool.length:40))nqi=0;
@@ -41659,14 +41666,7 @@ function renderOnlineQ(){
         G._votesRef.off();G._votesRef=null;
         stopTimers();
         const tq=G.roomPool[G.qi];
-        const isTFQ2=typeof tq.a==='boolean';
-        G.players.forEach(p=>{
-          const pVote=v[p.uid];
-          const isCorrect=isTFQ2?(pVote===1)===(tq.a===true):pVote===tq.a;
-          if(isCorrect){G.scores[p.name]=(G.scores[p.name]||0)+1;}
-          else if(G.cfg.hearts){G.hearts[p.name]=Math.max(0,(G.hearts[p.name]!=null?G.hearts[p.name]:3)-1);}
-        });
-        const correctA2=isTFQ2?(tq.a?1:0):tq.a;
+        const correctA2=tallyVotes(v,tq);
         let nqi=G.qi+1;
         if(nqi>=(G.roomPool?G.roomPool.length:40))nqi=0;
         const anyGameOver=G.players.some(p=>G.scores[p.name]>=(G.cfg.winScore||10)||(G.cfg.hearts&&G.hearts[p.name]<=0));
@@ -41685,7 +41685,7 @@ function renderOnlineQ(){
 function answerOnline(btn,isOk,q,timedOut){
   if(G._myVoteSubmitted)return;
   G._myVoteSubmitted=true;
-  document.querySelectorAll('#g-opts .opt, #g-opts .tf-btn').forEach(b=>b.disabled=true);
+  getOptionButtons().forEach(b=>b.disabled=true);
   if(btn)btn.classList.add('selected-vote');
   const origIdx=btn?parseInt(btn.dataset.origIdx):-1;
   const voteVal=origIdx!==-1?origIdx:-1;
@@ -41698,7 +41698,7 @@ function answerOnline(btn,isOk,q,timedOut){
         console.error('Vote failed:', err);
         toast('Vote failed - ' + err.message);
         G._myVoteSubmitted=false;
-        document.querySelectorAll('#g-opts .opt, #g-opts .tf-btn').forEach(b=>b.disabled=false);
+        getOptionButtons().forEach(b=>b.disabled=false);
       });
   } else {
     console.error('Cannot submit vote - roomRef or uid missing', {roomRef: !!G.roomRef, uid: G.uid});
@@ -41722,8 +41722,8 @@ function showOnlineResult(gs){
   document.getElementById('g-score').textContent=me?(G.scores[me.name]||0):0;
   renderHearts('g-hearts',me&&G.hearts[me.name]!=null?G.hearts[me.name]:3);
   // Highlight correct and this player's wrong answer
-  const isTF=!q.o||!q.o.length;
-  document.querySelectorAll('#g-opts .opt, #g-opts .tf-btn').forEach(b=>{
+  const isTF=isTFQuestion(q);
+  getOptionButtons().forEach(b=>{
     const orig=parseInt(b.dataset.origIdx);
     if(isTF){
       const isCorrectBtn=(orig===1)===(gs.correctA===true||gs.correctA===1);
