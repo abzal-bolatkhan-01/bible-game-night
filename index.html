@@ -40416,6 +40416,11 @@ function loadProfile(){
     renderHomeBar();
     // Apply saved theme on load
     if(typeof initTheme==='function') initTheme();
+  } else {
+    // Show auth screen instead of home
+    document.getElementById('s-home').classList.remove('active');
+    document.getElementById('s-auth').classList.add('active');
+    buildAvGrid();
   }
 }
 function saveProfile(){ try{ localStorage.setItem('bgn3',JSON.stringify(G.profile)); }catch(e){} }
