@@ -404,6 +404,8 @@ body::after {
   padding: 10px 0;
   border-bottom: 1px solid var(--line);
   flex-shrink: 0;
+  -webkit-user-select: none;
+  user-select: none;
 }
 .g-player {
   display: flex;
@@ -417,8 +419,8 @@ body::after {
   flex: 1;
 }
 .g-av   { font-size: 17px; flex-shrink: 0; }
-.g-nm   { font-family: 'Nunito', sans-serif; font-size: 12px; font-weight: 700; color: var(--gold1); max-width: 80px; overflow: hidden; text-overflow: ellipsis; white-space: nowrap; }
-.g-mid  { text-align: center; font-family: 'Nunito', sans-serif; font-size: 11px; font-weight: 600; color: var(--ink3); flex-shrink: 0; }
+.g-nm   { font-family: 'Nunito', sans-serif; font-size: 12px; font-weight: 700; color: var(--gold1); max-width: 80px; overflow: hidden; text-overflow: ellipsis; white-space: nowrap; -webkit-user-select: none; user-select: none; }
+.g-mid  { text-align: center; font-family: 'Nunito', sans-serif; font-size: 11px; font-weight: 600; color: var(--ink3); flex-shrink: 0; -webkit-user-select: none; user-select: none; }
 .g-right { display: flex; align-items: center; gap: 7px; flex-shrink: 0; }
 .score-num { font-family: 'Cormorant Garamond', serif; font-weight: 700; font-size: 22px; color: var(--gold1); }
 .hearts  { display: flex; gap: 2px; }
@@ -484,6 +486,8 @@ body::after {
   line-height: 1.45;
   color: var(--ink);
   margin-bottom: 14px;
+  -webkit-user-select: none;
+  user-select: none;
 }
 
 /* ─── ANSWER OPTIONS ─────────────────────────────── */
@@ -1174,6 +1178,9 @@ body::after {
   font-family: 'Nunito', sans-serif; font-size: 11px; font-weight: 600;
   text-transform: uppercase; color: var(--ink3);
   transition: all .2s;
+  -webkit-user-select: none;
+  user-select: none;
+  cursor: default;
 }
 .voter.voted { border-color: rgba(201,145,13,.22); color: var(--ink2); }
 .voter.cur-voter { border-color: var(--gold); background: rgba(201,145,13,.12); color: var(--gold1); animation: pulse 1.5s infinite; }
@@ -3262,7 +3269,7 @@ html[data-theme="warmth"] .divider::before, html[data-theme="warmth"] .divider::
   <div class="g-hdr">
     <button class="g-quit" onclick="quitGame()" aria-label="Quit game">✕</button>
     <div class="g-mid" id="tf-round" style="text-align:center;">Round 1</div>
-    <div id="tf-scores" style="font-family:'Cinzel',serif;font-size:11px;color:var(--gold1);flex-shrink:0;"></div>
+    <div id="tf-scores" style="font-family:'Cinzel',serif;font-size:11px;color:var(--gold1);flex-shrink:0;-webkit-user-select:none;user-select:none;"></div>
   </div>
   <div class="timer-row">
     <div class="timer-track"><div class="timer-bar" id="tf-tbar"></div></div>
@@ -3274,7 +3281,8 @@ html[data-theme="warmth"] .divider::before, html[data-theme="warmth"] .divider::
       <button class="tf-btn tf-t" id="tf-tbtn" onclick="answerTF(true)" disabled>✅ True</button>
       <button class="tf-btn tf-f" id="tf-fbtn" onclick="answerTF(false)" disabled>❌ False</button>
     </div>
-    <div id="tf-voters" style="display:flex;flex-wrap:wrap;gap:6px;margin-bottom:8px;"></div>
+    <div id="tf-voters" style="display:flex;flex-wrap:wrap;gap:6px;margin-bottom:8px;-webkit-user-select:none;user-select:none;"></div>
+    <div id="tf-hearts-strip" style="display:flex;flex-wrap:wrap;gap:8px;margin-bottom:8px;-webkit-user-select:none;user-select:none;"></div>
     <div class="fb" id="tf-fb" style="display:none;"></div>
     <button class="btn btn-ghost btn-sm" id="tf-next" style="display:none;margin-top:12px;" onclick="nextTF()">Next Round →</button>
     <div class="pb"></div>
@@ -40833,7 +40841,8 @@ function renderMCQ(q,txtId,optsId,cb){
 function renderQ(){
   G.done=false; stopTimers(); clearAutoAdvance();
   const p=G.players[G.pi];
-  if(G.qi>=G.pool.length){ G.pool=buildPool(); G.qi=0; }
+  // End game if all questions in pool exhausted
+  if(G.qi>=G.pool.length){ endGame(); return; }
   let q=G.pool[G.qi];
 
   // Mixed Difficulty: Find a question matching this player's specific diff if it differs from the room's base G.diff
@@ -41127,6 +41136,13 @@ function renderTF(){
   if(G.tfRound>=G.pool.length){ G.pool=buildPool(); G.tfRound=0; }
   const totalRounds=Math.min(20,G.pool.length);
   if(G.tfRound>=totalRounds){ showScores(true); return; }
+
+  // Check if all players are eliminated (hearts)
+  if(G.cfg.hearts){
+    const alive=G.players.filter(p=>G.hearts[p.name]>0);
+    if(alive.length<=1){ showScores(true); return; }
+  }
+
   const q=G.pool[G.tfRound]; G.seen.add(q.q); G.tfVotes={}; G.tfVoterIdx=0;
   G.done=false;
   document.getElementById('tf-round').textContent=`Round ${G.tfRound+1}/${totalRounds}`;
@@ -41135,20 +41151,43 @@ function renderTF(){
   document.getElementById('tf-fb').style.display='none';
   document.getElementById('tf-next').style.display='none';
   document.getElementById('tf-scores').textContent=G.players.map(p=>p.avatar+' '+G.scores[p.name]).join('  ');
-  // voter chips
+  // voter chips — skip eliminated players
   const vt=document.getElementById('tf-voters'); vt.innerHTML='';
-  G.players.forEach((p, i)=>{
+  const activePlayers=G.cfg.hearts?G.players.filter(p=>G.hearts[p.name]>0):G.players;
+  activePlayers.forEach((p, i)=>{
     const d=document.createElement('div'); d.className='voter' + (i===0 ? ' cur-voter' : ''); d.id='voter-'+slug(p.name);
     d.innerHTML=`<span>${p.avatar}</span><span>${p.name}</span><span>—</span>`;
     vt.appendChild(d);
   });
+  // Render hearts strip
+  renderTFHearts();
+  // Set active players reference for voting
+  G.tfVoterIdx=0;
+  G._tfActivePlayers=activePlayers;
   updateTFIndicator();
   setTimeout(()=>{ document.getElementById('tf-tbtn').disabled=false; document.getElementById('tf-fbtn').disabled=false; },200);
   if(G.cfg.timer) startTimer('tf-tbar',null,12,()=>revealTF(q));
 }
 
+function renderTFHearts(){
+  const strip=document.getElementById('tf-hearts-strip');
+  if(!strip)return;
+  if(!G.cfg.hearts){ strip.innerHTML=''; strip.style.display='none'; return; }
+  strip.style.display='flex';
+  strip.innerHTML='';
+  G.players.forEach(p=>{
+    const d=document.createElement('div');
+    d.style.cssText='display:flex;align-items:center;gap:4px;background:rgba(255,255,255,.03);border:1px solid rgba(180,130,50,.1);border-radius:8px;padding:4px 8px;';
+    const hearts=Array.from({length:3},(_,i)=>i<(G.hearts[p.name]||0)?'❤️':'🖤').join('');
+    d.innerHTML=`<span style="font-size:13px;">${p.avatar}</span><span style="font-size:10px;font-weight:600;color:var(--ink3);">${p.name}</span><span style="font-size:11px;">${hearts}</span>`;
+    if(G.hearts[p.name]<=0) d.style.opacity='0.3';
+    strip.appendChild(d);
+  });
+}
+
 function updateTFIndicator(){
-  const p = G.players[G.tfVoterIdx];
+  const activePlayers=G._tfActivePlayers||G.players;
+  const p = activePlayers[G.tfVoterIdx];
   if(!p) return;
   const fb = document.getElementById('tf-fb');
   fb.style.display = 'block';
@@ -41157,9 +41196,10 @@ function updateTFIndicator(){
 }
 
 function answerTF(ans){
-  if(G.tfVoterIdx >= G.players.length) return;
+  const activePlayers=G._tfActivePlayers||G.players;
+  if(G.tfVoterIdx >= activePlayers.length) return;
   sfx.tap();
-  const voter = G.players[G.tfVoterIdx];
+  const voter = activePlayers[G.tfVoterIdx];
   G.tfVotes[voter.name] = ans;
   const el = document.getElementById('voter-'+slug(voter.name));
   if(el) {
@@ -41168,8 +41208,8 @@ function answerTF(ans){
     el.classList.remove('cur-voter');
   }
   G.tfVoterIdx++;
-  if(G.tfVoterIdx < G.players.length){
-    const nextEl = document.getElementById('voter-'+slug(G.players[G.tfVoterIdx].name));
+  if(G.tfVoterIdx < activePlayers.length){
+    const nextEl = document.getElementById('voter-'+slug(activePlayers[G.tfVoterIdx].name));
     if(nextEl) nextEl.classList.add('cur-voter');
     updateTFIndicator();
   } else {
@@ -41182,20 +41222,47 @@ function revealTF(q){
   stopTimers();
   document.getElementById('tf-tbtn').disabled=true;
   document.getElementById('tf-fbtn').disabled=true;
-  G.players.forEach(p=>{
+  let elimMsg='';
+  const activePlayers=G._tfActivePlayers||G.players;
+  activePlayers.forEach(p=>{
     const ans=G.tfVotes[p.name];
     const ok=(ans===q.a);
-    if(ok){ G.scores[p.name]++; sfx.correct(); } else if(ans!==undefined) sfx.wrong();
+    if(ok){ G.scores[p.name]++; sfx.correct(); }
+    else {
+      if(ans!==undefined) sfx.wrong();
+      // Decrease hearts on wrong answer or timeout (no vote)
+      if(G.cfg.hearts){
+        G.hearts[p.name]=Math.max(0,(G.hearts[p.name]||0)-1);
+        if(G.hearts[p.name]===0){
+          elimMsg+=`<br><span style="color:#e08080;">${p.avatar} ${p.name} has been eliminated!</span>`;
+        }
+      }
+    }
     const el=document.getElementById('voter-'+slug(p.name));
     if(el) el.innerHTML=`<span>${p.avatar}</span><span>${p.name}</span><span style="color:${ok?'#6dda9a':ans===undefined?'var(--ink3)':'#e08080'}">${ok?'✓':ans===undefined?'—':'✗'}</span>`;
   });
+  // Update hearts display
+  renderTFHearts();
   document.getElementById('tf-scores').textContent=G.players.map(p=>p.avatar+' '+G.scores[p.name]).join('  ');
   const fb=document.getElementById('tf-fb'); fb.style.display='block';
   fb.className='fb ok';
-  fb.innerHTML=`<strong>Answer: ${q.a?'TRUE ✅':'FALSE ❌'}</strong> — ${q.e}`;
+  fb.innerHTML=`<strong>Answer: ${q.a?'TRUE ✅':'FALSE ❌'}</strong> — ${q.e}${elimMsg}`;
+
+  // Check if game should end due to eliminations
+  if(G.cfg.hearts){
+    const alive=G.players.filter(p=>G.hearts[p.name]>0);
+    if(alive.length<=1){
+      const nxt=document.getElementById('tf-next'); nxt.style.display='flex';
+      nxt.textContent='See Results →';
+      nxt.onclick=()=>{ sfx.tap(); haptic('tap'); showScores(true); };
+      return;
+    }
+  }
+
   const nxt=document.getElementById('tf-next'); nxt.style.display='flex';
   const totalRounds=Math.min(20,G.pool.length);
   nxt.textContent=G.tfRound>=totalRounds-1?'See Results →':'Next Round →';
+  nxt.onclick=()=>{ nextTF(); };
 }
 function total(){ return Math.min(20,G.pool.length); }
 function nextTF(){ sfx.tap(); haptic('tap'); G.tfRound++; renderTF(); }
