@@ -42993,6 +42993,7 @@ function signInWithGoogle(){
 function signInWithFacebook(){
   if(!G.auth){ toast('Firebase not configured'); return; }
   const provider=new firebase.auth.FacebookAuthProvider();
+  provider.setCustomParameters({ scope: 'public_profile' });
   G.auth.signInWithRedirect(provider).catch(e=>handleAuthError(e,'Facebook sign-in failed'));
 }
 function signInWithApple(){
@@ -43040,7 +43041,10 @@ function profileSignIn(method){
   if(!G.auth){ toast('Firebase not configured'); return; }
   let provider;
   if(method==='google') provider=new firebase.auth.GoogleAuthProvider();
-  else if(method==='facebook') provider=new firebase.auth.FacebookAuthProvider();
+  else if(method==='facebook') {
+    provider=new firebase.auth.FacebookAuthProvider();
+    provider.setCustomParameters({ scope: 'public_profile' });
+  }
   else if(method==='apple') provider=new firebase.auth.OAuthProvider('apple.com');
   else return;
   const currentUser=G.auth.currentUser;
