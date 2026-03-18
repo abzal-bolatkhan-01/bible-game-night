@@ -40583,15 +40583,65 @@ function getAuthRedirectPending(){
 function startGoogleRedirectSignIn(){
   if(!G.auth){ toast('Firebase not configured'); return; }
   const provider=new firebase.auth.GoogleAuthProvider();
-  setAuthRedirectPending('google');
+  provider.setCustomParameters({ prompt:'select_account' });
+  const ua=(navigator.userAgent||'').toLowerCase();
+  const preferRedirect=/iphone|ipad|ipod|android|mobile|crios|fxios/.test(ua);
   const cu=G.auth.currentUser;
+
+  const startRedirect=(pendingKey, action)=>{
+    setAuthRedirectPending(pendingKey);
+    toast('Opening Google sign-in...');
+    action().catch(e=>{
+      setAuthRedirectPending('');
+      handleAuthError(e,'Google sign-in failed');
+    });
+  };
+
+  // Keep guest progress by linking anonymous account when possible.
   if(cu && cu.isAnonymous){
-    G.auth.signOut()
-      .then(()=>G.auth.signInWithRedirect(provider))
-      .catch(e=>handleAuthError(e,'Google sign-in failed'));
+    if(preferRedirect && typeof cu.linkWithRedirect==='function'){
+      startRedirect('google-link', ()=>cu.linkWithRedirect(provider));
+      return;
+    }
+    cu.linkWithPopup(provider).then(()=>{
+      toast('Account linked! Your progress is saved.');
+      updateProfileSigninCard();
+    }).catch(e=>{
+      if(e.code==='auth/popup-blocked'||e.code==='auth/cancelled-popup-request'){
+        if(typeof cu.linkWithRedirect==='function'){
+          startRedirect('google-link', ()=>cu.linkWithRedirect(provider));
+          return;
+        }
+      }
+      if(e.code==='auth/credential-already-in-use'||e.code==='auth/email-already-in-use'){
+        if(preferRedirect){
+          startRedirect('google', ()=>G.auth.signInWithRedirect(provider));
+        }else{
+          G.auth.signInWithPopup(provider)
+            .then(()=>{ toast('Signed in with Google!'); updateProfileSigninCard(); })
+            .catch(e2=>handleAuthError(e2,'Google sign-in failed'));
+        }
+        return;
+      }
+      handleAuthError(e,'Google sign-in failed');
+    });
     return;
   }
-  G.auth.signInWithRedirect(provider).catch(e=>handleAuthError(e,'Google sign-in failed'));
+
+  if(preferRedirect){
+    startRedirect('google', ()=>G.auth.signInWithRedirect(provider));
+    return;
+  }
+  G.auth.signInWithPopup(provider).then(()=>{
+    toast('Signed in with Google!');
+    updateProfileSigninCard();
+  }).catch(e=>{
+    if(e.code==='auth/popup-blocked'||e.code==='auth/cancelled-popup-request'){
+      startRedirect('google', ()=>G.auth.signInWithRedirect(provider));
+      return;
+    }
+    handleAuthError(e,'Google sign-in failed');
+  });
 }
 
 /* ══════════════════════════════════════════════════
@@ -40645,12 +40695,14 @@ function initFB(){
       if(pending) setAuthRedirectPending('');
       if(result&&result.user){
         updateProfileSigninCard();
-        if(result.additionalUserInfo && result.additionalUserInfo.providerId==='google.com'){
+        if(pending==='google-link'){
+          toast('Account linked! Your progress is saved.');
+        } else if(result.additionalUserInfo && result.additionalUserInfo.providerId==='google.com'){
           toast('Signed in with Google!');
         } else {
           toast('Signed in!');
         }
-      } else if(pending==='google' && G.auth.currentUser && G.auth.currentUser.isAnonymous){
+      } else if((pending==='google'||pending==='google-link') && G.auth.currentUser && G.auth.currentUser.isAnonymous){
         toast('Google sign-in did not complete. Please try again.');
       } else if(!G.auth.currentUser){
         G.auth.signInAnonymously()
