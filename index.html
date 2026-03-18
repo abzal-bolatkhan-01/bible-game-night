@@ -41557,16 +41557,9 @@ function playAgain(){
     if(nbJoin) setNb(nbJoin);
     return;
   }
-  G.qi=0; G.pi=0; G.seen.clear(); G.done=false;
-  G.scores={}; G.hearts={}; G.streaks={};
-  G.players.forEach(p=>{ G.scores[p.name]=0; G.hearts[p.name]=3; G.streaks[p.name]=0; });
-  if(G.sub==='team'){
-    G.teamScores={"Team 1":0,"Team 2":0};
-  }
-  G.pool=buildPool();
-  if(G.sub==='truefalse'){ startTF(); return; }
-  if(G.sub==='lightning'){ showSplash(0,()=>startLightning(0)); return; }
-  showSplash(0,()=>{ go('game'); renderQ(); });
+  go('lobby');
+  const nbJoin=document.getElementById('nb-join');
+  if(nbJoin) setNb(nbJoin);
 }
 
 /* ══════════════════════════════════════════════════
