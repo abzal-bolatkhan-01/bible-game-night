@@ -41476,7 +41476,7 @@ function revealTF(q){
   // Check if game should end due to eliminations
   if(G.cfg.hearts){
     const alive=G.players.filter(p=>G.hearts[p.name]>0);
-    if(alive.length<=1){
+    if(G.players.length>1 && alive.length<=1){
       const nxt=document.getElementById('tf-next'); nxt.style.display='flex';
       nxt.textContent='See Results →';
       nxt.onclick=()=>{ sfx.tap(); haptic('tap'); showScores(true); };
