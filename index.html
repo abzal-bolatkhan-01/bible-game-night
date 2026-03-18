@@ -41609,7 +41609,7 @@ function createRoom(){
   const code=mkCode(); G.roomId=code; G.isHost=true;
   const ref=G.db.ref('rooms/'+code); G.roomRef=ref;
   ref.set({
-    code, host:G.uid, status:'waiting', sub:G.sub, createdAt:Date.now(),
+    code, host:G.uid, status:'waiting', sub:G.sub, difficulty:G.diff, createdAt:Date.now(),
     players:{[G.uid]:{name:G.profile.name,avatar:G.profile.avatar,ready:false,score:0,hearts:3,diff:G.diff}}
   }).then(()=>{
     document.getElementById('rc-disp').textContent=code;
@@ -41675,7 +41675,11 @@ function joinRoomByCode(code){
     const d=sn.val();
     if(!d){ toast('Room not found'); return; }
     if(d.status==='playing'){ toast('Game already in progress'); return; }
-    ref.child('players/'+G.uid).set({name:G.profile.name,avatar:G.profile.avatar,ready:false,score:0,hearts:3,diff:G.diff});
+    if(d.difficulty){
+      G.diff=d.difficulty;
+      G.TIM=G.diff==='easy'?25:G.diff==='hard'?12:20;
+    }
+    ref.child('players/'+G.uid).set({name:G.profile.name,avatar:G.profile.avatar,ready:false,score:0,hearts:3,diff:d.difficulty||G.diff});
     document.getElementById('rc-disp').textContent=code;
     document.getElementById('lobby-panel').style.display='block';
     updateLobbyModeNote(d);
@@ -42059,7 +42063,7 @@ function startNearby(){
   const code=mkCode(); G.roomId=code; G.isHost=true;
   const ref=G.db.ref('rooms/'+code); G.roomRef=ref;
   ref.set({
-    code, host:G.uid, status:'waiting', sub:G.sub, createdAt:Date.now(),
+    code, host:G.uid, status:'waiting', sub:G.sub, difficulty:G.diff, createdAt:Date.now(),
     nearby:true,
     players:{[G.uid]:{name:G.profile.name,avatar:G.profile.avatar,ready:false,score:0,hearts:3,diff:G.diff}}
   }).then(()=>{
