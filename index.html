@@ -674,10 +674,11 @@ body::after {
 .lb-row.me  { background: rgba(196,136,10,.08); border-color: rgba(196,136,10,.28); }
 .lb-row.top { border-color: rgba(196,136,10,.2); }
 .lb-rank { font-family: 'Cormorant Garamond', serif; font-size: 17px; font-weight: 700; color: var(--ink3); width: 26px; text-align: center; }
-.lb-av   { font-size: 20px; }
+.lb-av   { font-size: 20px; width: 24px; text-align: center; line-height: 1; flex-shrink: 0; }
 .lb-info { flex: 1; min-width: 0; }
 .lb-nm   { font-family: 'Nunito', sans-serif; font-size: 14px; font-weight: 600; white-space: nowrap; overflow: hidden; text-overflow: ellipsis; }
-.lb-sub  { font-family: 'Nunito', sans-serif; font-size: 10px; color: var(--ink3); }
+.lb-sub  { font-family: 'Nunito', sans-serif; font-size: 10px; color: var(--ink3); display: flex; align-items: center; gap: 4px; }
+.lb-sub .clan-emoji { width: 12px; text-align: center; flex-shrink: 0; opacity: .85; }
 .lb-xpv  { font-family: 'Cormorant Garamond', serif; font-size: 15px; font-weight: 700; color: var(--gold1); }
 .lb-lvl  { font-family: 'Nunito', sans-serif; font-size: 9px; color: var(--ink3); display: block; text-align: right; }
 
@@ -42271,7 +42272,9 @@ function displayLBRows(list, rows, tab) {
     if(tab==='clan'){
       row.innerHTML=`<div class="lb-rank">${medal}</div><div class="lb-av">${p.icon||'⛪'}</div><div class="lb-info"><div class="lb-nm">${p.name}</div><div class="lb-sub">${Object.keys(p.members||{}).length} members</div></div><div class="lb-xpv">${p.totalXp||0} XP</div>`;
     }else{
-      row.innerHTML=`<div class="lb-rank">${medal}</div><div class="lb-av">${p.avatar||'😊'}</div><div class="lb-info"><div class="lb-nm">${p.name}${isMe?' ✦':''}</div><div class="lb-sub">${p.clan||'No clan'}</div></div><div style="text-align:right;"><div class="lb-xpv">${p.xp||0} XP</div><span class="lb-lvl">${l.name}</span></div>`;
+      const clanName=(p.clan&&String(p.clan).trim())?String(p.clan):'No clan';
+      const clanEmoji=clanName==='No clan'?'•':'⛪';
+      row.innerHTML=`<div class="lb-rank">${medal}</div><div class="lb-av">${p.avatar||'😊'}</div><div class="lb-info"><div class="lb-nm">${escHtml(p.name||'Player')}${isMe?' ✦':''}</div><div class="lb-sub"><span class="clan-emoji">${clanEmoji}</span><span>${escHtml(clanName)}</span></div></div><div style="text-align:right;"><div class="lb-xpv">${p.xp||0} XP</div><span class="lb-lvl">${l.name}</span></div>`;
     }
     list.appendChild(row);
   });
