@@ -42003,9 +42003,8 @@ function showOnlineResult(gs){
 }
 function copyCode(){
   const code=document.getElementById('rc-disp').textContent;
-  const txt='Join my Lamp Bible Trivia game! Code: '+code;
-  if(navigator.clipboard) navigator.clipboard.writeText(txt).then(()=>toast('Code copied! ✦'));
-  else{ const t=document.createElement('textarea'); t.value=txt; document.body.appendChild(t); t.select(); document.execCommand('copy'); t.remove(); toast('Code copied! ✦'); }
+  if(navigator.clipboard) navigator.clipboard.writeText(code).then(()=>toast('Code copied! ✦'));
+  else{ const t=document.createElement('textarea'); t.value=code; document.body.appendChild(t); t.select(); document.execCommand('copy'); t.remove(); toast('Code copied! ✦'); }
 }
 function startNearby(){
   if(!G.profile){ go('auth'); return; }
