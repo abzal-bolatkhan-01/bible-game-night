@@ -3017,7 +3017,6 @@ html[data-theme="warmth"] .divider::before, html[data-theme="warmth"] .divider::
         <button class="chip" data-sub="truefalse" onclick="pickSub(this,'truefalse')">✅ True / False</button>
         <button class="chip" data-sub="verse" onclick="pickSub(this,'verse')">📖 Fill-in-Verse</button>
         <button class="chip" data-sub="lightning" onclick="pickSub(this,'lightning')">⚡ Lightning</button>
-        <button class="chip" id="sub-team-chip" data-sub="team" onclick="pickSub(this,'team')">👥 Team Mode</button>
       </div>
     </div>
 
@@ -3171,7 +3170,6 @@ html[data-theme="warmth"] .divider::before, html[data-theme="warmth"] .divider::
           <button class="chip" data-sub="truefalse" onclick="pickSetupSub(this,'truefalse')">✅ True / False</button>
           <button class="chip" data-sub="verse" onclick="pickSetupSub(this,'verse')">📖 Fill-in-Verse</button>
           <button class="chip" data-sub="lightning" onclick="pickSetupSub(this,'lightning')">⚡ Lightning</button>
-          <button class="chip" data-sub="team" onclick="pickSetupSub(this,'team')">👥 Team Mode</button>
         </div>
       </div>
       <div>
@@ -3768,7 +3766,6 @@ html[data-theme="warmth"] .divider::before, html[data-theme="warmth"] .divider::
       <button class="chip" onclick="pickChQType(this,'truefalse')" id="ch-qtype-truefalse">✅ True/False</button>
       <button class="chip" onclick="pickChQType(this,'verse')" id="ch-qtype-fillin">📖 Fill-in-Verse</button>
       <button class="chip" onclick="pickChQType(this,'lightning')" id="ch-qtype-lightning">⚡ Lightning</button>
-      <button class="chip" onclick="pickChQType(this,'team')" id="ch-qtype-team">👥 Team Mode</button>
     </div>
 
     <label class="label">Options</label>
@@ -40951,9 +40948,7 @@ function syncSubChipSelection(){
   });
 }
 function applyModeSubAvailability(){
-  const teamChip=document.getElementById('sub-team-chip');
-  if(teamChip) teamChip.style.display=G.mode==='practice'?'none':'';
-  if(G.mode==='practice'&&G.sub==='team') G.sub='classic';
+  if(G.sub==='team') G.sub='classic';
   syncSubChipSelection();
 }
 function pickMode(el,m){
@@ -40965,7 +40960,7 @@ function pickMode(el,m){
 }
 function pickSub(el,s){
   sfx.tap(); haptic('tap');
-  if(G.mode==='practice'&&s==='team'){ toast('Team Mode is not available in Practice.'); return; }
+  if(s==='team') s='classic';
   G.sub=s; G.seen.clear(); // Clear seen on sub change
   document.querySelectorAll('#sub-chips .chip').forEach(c=>c.classList.remove('sel'));
   el.classList.add('sel');
@@ -41041,6 +41036,7 @@ function renderSetupRoomModeChips(){
 }
 function pickSetupSub(el,s){
   sfx.tap(); haptic('tap');
+  if(s==='team') s='classic';
   G.sub=s; G.seen.clear();
   document.querySelectorAll('#setup-room-sub-chips .chip').forEach(c=>c.classList.remove('sel'));
   el.classList.add('sel');
@@ -42097,6 +42093,7 @@ function joinRoom(){
   joinRoomByCode(code);
 }
 function normalizeOnlineSub(mode){
+  if(mode==='team') return 'classic';
   if(mode==='fillin') return 'verse';
   return mode||'classic';
 }
@@ -42154,7 +42151,7 @@ function shouldEndOnlineGame(){
   return scoreReached||shouldEndByHearts();
 }
 function chQTypeLabel(qtype){
-  const qtLabels={classic:'🎯 Classic',truefalse:'✅ True/False',verse:'📖 Fill-in-Verse',fillin:'📖 Fill-in-Verse',lightning:'⚡ Lightning',team:'👥 Team Mode'};
+  const qtLabels={classic:'🎯 Classic',truefalse:'✅ True/False',verse:'📖 Fill-in-Verse',fillin:'📖 Fill-in-Verse',lightning:'⚡ Lightning'};
   return qtLabels[normalizeOnlineSub(qtype)]||'🎯 Classic';
 }
 function chDiffLabel(diff){
@@ -44129,6 +44126,7 @@ function pickChDiff(el,diff){
 
 function pickChQType(el,qtype){
   sfx.tap();
+  if(qtype==='team') qtype='classic';
   _chQType=qtype;
   document.querySelectorAll('#ch-qtype-chips .chip').forEach(c=>c.classList.remove('sel'));
   el.classList.add('sel');
