@@ -3405,14 +3405,6 @@ html[data-theme="warmth"] .divider::before, html[data-theme="warmth"] .divider::
         </div>
       </div>
       <div id="lb-list"></div>
-      <div id="friends-add-box" style="display:none;margin-top:20px;padding:0 16px;">
-        <div class="divider"><span>Add Friend</span></div>
-        <div style="display:flex;gap:10px;margin-top:15px;">
-          <input class="setup-inp" style="flex:1;" id="friend-code-inp" placeholder="Enter Friend Code" maxlength="6">
-          <button class="btn btn-gold btn-sm" style="width:auto;" onclick="addFriend()">Add</button>
-        </div>
-        <div style="font-size:11px;color:var(--ink3);margin-top:10px;text-align:center;">Your Code: <strong id="my-friend-code" style="color:var(--gold1);">------</strong></div>
-      </div>
     </div>
 
     <!-- Clans Panel -->
@@ -42696,39 +42688,7 @@ function lbTab(tab){
     const b=document.getElementById('lb-'+t);
     if(b){ b.style.borderColor=t===tab?'rgba(201,145,13,.5)':'rgba(180,140,60,.18)'; b.style.color=t===tab?'var(--gold1)':''; }
   });
-  const fab = document.getElementById('friends-add-box');
-  if(fab) {
-    fab.style.display = (tab === 'friends') ? 'block' : 'none';
-    if(tab === 'friends' && G.profile) document.getElementById('my-friend-code').textContent = G.profile.friendCode || '------';
-  }
   renderLB(tab);
-}
-
-function addFriend(){
-  const code = (document.getElementById('friend-code-inp').value||'').trim().toUpperCase();
-  if(code.length !== 6) { toast('Enter a 6-character code'); return; }
-  if(!G.fbOk) { toast('Firebase required to add friends'); return; }
-  
-  sfx.tap();
-  // Search for player with this friend code
-  G.db.ref('leaderboard').orderByChild('friendCode').equalTo(code).once('value').then(sn => {
-    if(!sn.exists()) { toast('Player not found'); return; }
-    let friendUid = null;
-    let friendData = null;
-    sn.forEach(child => { friendUid = child.key; friendData = child.val()||{}; });
-    
-    if(friendUid === G.uid) { toast('You cannot add yourself!'); return; }
-    sendFriendRequestToUid(friendUid,{name:friendData?.name,avatar:friendData?.avatar}).then(()=>{
-      document.getElementById('friend-code-inp').value = '';
-      toast('Friend request sent ✦');
-      renderLB('friends');
-    }).catch(err=>{
-      if(err&&err.message==='already') toast('Already in your friends list');
-      else if(err&&err.message==='already-sent') toast('Request already sent');
-      else if(err&&err.message==='self') toast('You cannot add yourself!');
-      else toast('Could not send request');
-    });
-  });
 }
 
 function renderLB(tab){
