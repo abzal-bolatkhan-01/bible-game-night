@@ -3108,6 +3108,10 @@ html[data-theme="warmth"] .divider::before, html[data-theme="warmth"] .divider::
         <input class="inp" id="friends-screen-code-inp" placeholder="Enter a friend's code…" style="flex:1;" maxlength="8" autocomplete="off">
         <button class="btn btn-primary" style="flex-shrink:0;width:auto;padding:0 20px;" onclick="addFriendFromFriends()">Add</button>
       </div>
+      <div class="settings-section-title">Friend Requests</div>
+      <div id="friends-requests-list" style="margin-bottom:14px;">
+        <div style="text-align:center;color:var(--ink3);padding:12px 0;font-size:13px;">No pending requests</div>
+      </div>
       <div class="settings-section-title">Your Friends</div>
       <div id="friends-list">
         <div style="text-align:center;color:var(--ink3);padding:30px 0;font-size:14px;">No friends yet — share your code!</div>
@@ -40550,6 +40554,8 @@ const G={
   tfRound:0, tfVotes:{}, tfVoterIdx:0,
   // lightning
   lScore:0, lTimId:null,
+  // friends
+  _incomingRequests:{}, _frReqRef:null, _friendsRef:null,
   // cfg
   cfg:{sound:true,timer:true,hearts:true,sudden:false,winScore:ROUND_LIMIT},
   donAmt:'$10',
@@ -40606,19 +40612,20 @@ function initFB(){
             friendCode: Math.random().toString(36).slice(2,8).toUpperCase(),
             friends:[], notifications:false
           };
+          normalizeSocialProfile();
           saveProfile();
           document.getElementById('main-nav').style.display='';
           renderHomeBar();
           go('home');
         }
         if(G.profile) pushProfile();
-        listenForChallenges(); cleanExpiredChallenges();
+        listenForChallenges(); cleanExpiredChallenges(); listenFriendRequests(); listenFriendLinks();
       } else {
         if(G._loggingOut){ G._loggingOut=false; return; }
         if(getAuthRedirectPending()) return;
         // Fall back to anonymous if no social session
         G.auth.signInAnonymously()
-          .then(c=>{ G.uid=c.user.uid; G.fbOk=true; fbDot(true); if(G.profile)pushProfile(); listenForChallenges(); cleanExpiredChallenges(); })
+          .then(c=>{ G.uid=c.user.uid; G.fbOk=true; fbDot(true); if(G.profile)pushProfile(); listenForChallenges(); cleanExpiredChallenges(); listenFriendRequests(); listenFriendLinks(); })
           .catch(()=>fbDot(false));
       }
     });
@@ -40636,7 +40643,7 @@ function initFB(){
         toast('Google sign-in did not complete. Please try again.');
       } else if(!G.auth.currentUser){
         G.auth.signInAnonymously()
-          .then(c=>{ G.uid=c.user.uid; G.fbOk=true; fbDot(true); if(G.profile)pushProfile(); listenForChallenges(); cleanExpiredChallenges(); })
+          .then(c=>{ G.uid=c.user.uid; G.fbOk=true; fbDot(true); if(G.profile)pushProfile(); listenForChallenges(); cleanExpiredChallenges(); listenFriendRequests(); listenFriendLinks(); })
           .catch(()=>fbDot(false));
       }
     }).catch(e=>{
@@ -40644,7 +40651,7 @@ function initFB(){
       handleAuthError(e,'Sign-in failed');
       if(!G.auth.currentUser){
         G.auth.signInAnonymously()
-          .then(c=>{ G.uid=c.user.uid; G.fbOk=true; fbDot(true); if(G.profile)pushProfile(); listenForChallenges(); cleanExpiredChallenges(); })
+          .then(c=>{ G.uid=c.user.uid; G.fbOk=true; fbDot(true); if(G.profile)pushProfile(); listenForChallenges(); cleanExpiredChallenges(); listenFriendRequests(); listenFriendLinks(); })
           .catch(()=>fbDot(false));
       }
     });
@@ -40663,6 +40670,7 @@ function wk(){ const d=new Date(),dt=d.getDate()-d.getDay()+(d.getDay()===0?-6:1
 ══════════════════════════════════════════════════ */
 function loadProfile(){
   try{ G.profile=JSON.parse(localStorage.getItem('bgn3')||'null'); }catch(e){}
+  normalizeSocialProfile();
   G.cfg.timer=true;
   G.cfg.winScore=clampRounds(G.cfg.winScore);
   if(G.profile){
@@ -40676,6 +40684,13 @@ function loadProfile(){
     document.getElementById('s-auth').classList.add('active');
     buildAvGrid();
   }
+}
+function normalizeSocialProfile(){
+  if(!G.profile) return;
+  const f=G.profile.friends;
+  if(Array.isArray(f)) G.profile.friends=[...new Set(f.filter(Boolean))];
+  else if(f && typeof f==='object') G.profile.friends=[...new Set(Object.keys(f).filter(Boolean))];
+  else G.profile.friends=[];
 }
 function saveProfile(){ try{ localStorage.setItem('bgn3',JSON.stringify(G.profile)); }catch(e){} }
 function pushProfile(){
@@ -40713,21 +40728,25 @@ function createProfile(){
   const church=(document.getElementById('auth-church').value||'').trim();
   G.profile={name,avatar:av,church,xp:0,wins:0,played:0,correct:0,bestStreak:0,achs:[],createdAt:Date.now(),
     tier: 'free', gamesToday: 0, lastGameDate: new Date().toISOString().split('T')[0],
-    friends: {}, friendCode: mkCode(),
+    friends: [], friendCode: mkCode(),
     theme: 'light',
     weeklyXP: 0, weeklyReset: wk()
   };
+  normalizeSocialProfile();
   if(church){ G.profile.clanName=church; autoCreateClan(church,av); }
   saveProfile();
   document.getElementById('main-nav').style.display='';
   renderHomeBar();
   initTheme();
   go('home'); toast('Welcome, '+name+'! ✦');
-  if(G.fbOk) pushProfile();
+  if(G.fbOk){ pushProfile(); listenFriendRequests(); listenFriendLinks(); }
   const pendingRoom = sessionStorage.getItem('pending_room');
   if(pendingRoom){ sessionStorage.removeItem('pending_room'); setTimeout(()=>joinRoomByCode(pendingRoom.toUpperCase()), 400); }
 }
 function logOut(){
+  if(G._frReqRef){ G._frReqRef.off(); G._frReqRef=null; }
+  if(G._friendsRef){ G._friendsRef.off(); G._friendsRef=null; }
+  G._incomingRequests={};
   localStorage.removeItem('bgn3');
   G.profile=null;
   G._loggingOut=true;
@@ -41447,7 +41466,7 @@ function nextTurn(){
   }
 
   G.pi = nextPi;
-  if(G.mode==='practice' && G.players.length===1){
+  if(G.players.length===1){
     go('game'); renderQ(); return;
   }
   showSplash(G.pi, () => { go('game'); renderQ(); });
@@ -41548,7 +41567,8 @@ function renderTFHeader(){
   renderHearts('tf-hearts',G.hearts[p.name]||0);
 }
 function renderTF(){
-  const isPracticeSolo=G.mode==='practice'&&G.players.length===1;
+  const isSolo=G.players.length===1;
+  const isPracticeSolo=G.mode==='practice'&&isSolo;
   if(G.tfRound>=G.pool.length){
     if(isPracticeSolo){ endGame(); }
     else{ showScores(true); }
@@ -41573,13 +41593,17 @@ function renderTF(){
   document.getElementById('tf-round').textContent=`Round ${G.tfRound+1}/${totalRounds}`;
   document.getElementById('tf-txt').textContent=q.q;
   const tfCat=document.getElementById('tf-cat');
-  tfCat.textContent=q.cat||q.r||'';
+  tfCat.textContent=catLabel(q.cat||q.r||'');
   tfCat.style.display=tfCat.textContent?'inline-flex':'none';
   document.getElementById('tf-fb').style.display='none';
   document.getElementById('tf-next').style.display='none';
-  document.getElementById('tf-scores').textContent=G.players.map(p=>p.avatar+' '+G.scores[p.name]).join('  ');
+  const tfScores=document.getElementById('tf-scores');
+  const tfVoters=document.getElementById('tf-voters');
+  tfScores.textContent=G.players.map(p=>p.avatar+' '+G.scores[p.name]).join('  ');
+  tfScores.style.display=isSolo?'none':'block';
+  tfVoters.style.display=isSolo?'none':'flex';
   // voter chips — skip eliminated players
-  const vt=document.getElementById('tf-voters'); vt.innerHTML='';
+  const vt=tfVoters; vt.innerHTML='';
   const activePlayers=alivePlayersNow();
   activePlayers.forEach((p, i)=>{
     const d=document.createElement('div'); d.className='voter' + (i===0 ? ' cur-voter' : ''); d.id='voter-'+slug(p.name);
@@ -41590,9 +41614,15 @@ function renderTF(){
   G.tfVoterIdx=0;
   G._tfActivePlayers=activePlayers;
   renderTFHeader();
-  updateTFIndicator();
+  if(!isSolo) updateTFIndicator();
   setTimeout(()=>{ document.getElementById('tf-tbtn').disabled=false; document.getElementById('tf-fbtn').disabled=false; },200);
-  if(G.cfg.timer) startTimer('tf-tbar',null,12,()=>revealTF(q));
+  if(G.cfg.timer){
+    const tfDur=Math.max(8,Math.min(30,G.TIM||12));
+    startTimer('tf-tbar',null,tfDur,()=>revealTF(q));
+  } else {
+    const tbar=document.getElementById('tf-tbar');
+    if(tbar){ tbar.style.transform='scaleX(1)'; tbar.className='timer-bar'; }
+  }
 }
 
 function updateTFIndicator(){
@@ -41690,6 +41720,10 @@ function nextTF(){ sfx.tap(); haptic('tap'); G.tfRound++; renderTF(); }
 /* ── Scoreboard + End ── */
 function showScores(isFinal){
   stopTimers();
+  if(isFinal && G.players.length===1){
+    endGame();
+    return;
+  }
   const sorted=[...G.players].sort((a,b)=>G.scores[b.name]-G.scores[a.name]);
   const el=document.getElementById('scores-list'); el.innerHTML='';
   sorted.forEach((p,i)=>{
@@ -41820,6 +41854,10 @@ function playAgain(){
     startPracticeGame();
     return;
   }
+  if(G.mode==='daily' || G.mode==='seasonal'){
+    go('home');
+    return;
+  }
   if((G.mode==='online'||G.mode==='nearby'||G.onlineGame) && G.roomRef && G.roomId){
     G._awaitingRematchStart=true;
     G.meReady=false;
@@ -41864,9 +41902,12 @@ function playAgain(){
     if(nbJoin) setNb(nbJoin);
     return;
   }
-  go('lobby');
-  const nbJoin=document.getElementById('nb-join');
-  if(nbJoin) setNb(nbJoin);
+  if(G.mode==='local'){
+    go('setup');
+    buildSetup();
+    return;
+  }
+  go('home');
 }
 
 /* ══════════════════════════════════════════════════
@@ -42625,21 +42666,26 @@ function addFriend(){
   G.db.ref('leaderboard').orderByChild('friendCode').equalTo(code).once('value').then(sn => {
     if(!sn.exists()) { toast('Player not found'); return; }
     let friendUid = null;
-    sn.forEach(child => { friendUid = child.key; });
+    let friendData = null;
+    sn.forEach(child => { friendUid = child.key; friendData = child.val()||{}; });
     
     if(friendUid === G.uid) { toast('You cannot add yourself!'); return; }
-    if(G.profile.friends.includes(friendUid)) { toast('Already in your friends list'); return; }
-    
-    G.profile.friends.push(friendUid);
-    saveProfile();
-    toast('Friend added! ✦');
-    document.getElementById('friend-code-inp').value = '';
-    renderLB('friends');
+    sendFriendRequestToUid(friendUid,{name:friendData?.name,avatar:friendData?.avatar}).then(()=>{
+      document.getElementById('friend-code-inp').value = '';
+      toast('Friend request sent ✦');
+      renderLB('friends');
+    }).catch(err=>{
+      if(err&&err.message==='already') toast('Already in your friends list');
+      else if(err&&err.message==='already-sent') toast('Request already sent');
+      else if(err&&err.message==='self') toast('You cannot add yourself!');
+      else toast('Could not send request');
+    });
   });
 }
 
 function renderLB(tab){
   const list=document.getElementById('lb-list');
+  normalizeSocialProfile();
   if(!G.fbOk){
     list.innerHTML=`<div class="card" style="text-align:center;padding:22px 16px;">
       <div style="font-size:34px;margin-bottom:9px;">🌐</div>
@@ -43678,6 +43724,7 @@ function switchSocialTab(tab){
     document.getElementById('stab-'+t).classList.toggle('active',t===tab);
     document.getElementById('spanel-'+t).classList.toggle('active',t===tab);
   });
+  if(tab==='friends') renderFriends();
   if(tab==='messages') renderConversations();
 }
 
@@ -43693,9 +43740,178 @@ function getFriendData(uid){
   if(G._friendCache&&G._friendCache[uid]) return G._friendCache[uid];
   return {name:'Friend',avatar:'😊',xp:0};
 }
+function hasFriend(uid){
+  return getFriendList().includes(uid);
+}
+function ensureFriend(uid){
+  if(!G.profile) return;
+  normalizeSocialProfile();
+  if(!G.profile.friends.includes(uid)){
+    G.profile.friends.push(uid);
+    saveProfile();
+  }
+}
+function removeFriend(uid){
+  if(!G.profile) return;
+  normalizeSocialProfile();
+  G.profile.friends=G.profile.friends.filter(id=>id!==uid);
+  saveProfile();
+}
+function removeFriendFromFriends(uid){
+  if(!uid||!G.profile) return;
+  if(!confirm('Remove this friend?')) return;
+  removeFriend(uid);
+  if(G._friendCache&&G._friendCache[uid]) delete G._friendCache[uid];
+  if(G._convPreviews&&G._convPreviews[uid]) delete G._convPreviews[uid];
+  renderFriends();
+  renderConversations();
+  if(!G.fbOk||!G.db||!G.uid){
+    toast('Friend removed');
+    return;
+  }
+  const updates={};
+  updates['friends/'+G.uid+'/'+uid]=null;
+  updates['friends/'+uid+'/'+G.uid]=null;
+  updates['friendRequests/'+G.uid+'/incoming/'+uid]=null;
+  updates['friendRequests/'+G.uid+'/sent/'+uid]=null;
+  updates['friendRequests/'+uid+'/incoming/'+G.uid]=null;
+  updates['friendRequests/'+uid+'/sent/'+G.uid]=null;
+  G.db.ref().update(updates).then(()=>toast('Friend removed')).catch(()=>toast('Friend removed locally'));
+}
+function listenFriendLinks(){
+  if(!G.fbOk||!G.db||!G.uid||!G.profile) return;
+  if(G._friendsRef){ G._friendsRef.off(); G._friendsRef=null; }
+  const ref=G.db.ref('friends/'+G.uid);
+  G._friendsRef=ref;
+  ref.on('value',sn=>{
+    const data=sn.val()||{};
+    const linked=Object.keys(data).filter(uid=>!!data[uid]);
+    normalizeSocialProfile();
+    const merged=[...new Set([...(G.profile.friends||[]),...linked])];
+    if(JSON.stringify(merged)!==JSON.stringify(G.profile.friends||[])){
+      G.profile.friends=merged;
+      saveProfile();
+    }
+    if(document.getElementById('s-friends')?.classList.contains('active')){
+      renderFriends();
+      renderConversations();
+    }
+  });
+}
+function listenFriendRequests(){
+  if(!G.fbOk||!G.db||!G.uid) return;
+  if(G._frReqRef){ G._frReqRef.off(); G._frReqRef=null; }
+  const ref=G.db.ref('friendRequests/'+G.uid+'/incoming');
+  G._frReqRef=ref;
+  ref.on('value',sn=>{
+    G._incomingRequests=sn.val()||{};
+    if(document.getElementById('s-friends')?.classList.contains('active')){
+      renderFriendRequests();
+    }
+  });
+}
+function renderFriendRequests(){
+  const box=document.getElementById('friends-requests-list');
+  if(!box) return;
+  if(!G.fbOk){
+    box.innerHTML='<div style="text-align:center;color:var(--ink3);padding:12px 0;font-size:13px;">Online required for requests</div>';
+    return;
+  }
+  const reqs=Object.entries(G._incomingRequests||{})
+    .filter(([,r])=>r&&r.status==='pending')
+    .sort((a,b)=>(b[1].ts||0)-(a[1].ts||0));
+  if(!reqs.length){
+    box.innerHTML='<div style="text-align:center;color:var(--ink3);padding:12px 0;font-size:13px;">No pending requests</div>';
+    return;
+  }
+  box.innerHTML=reqs.map(([uid,r])=>{
+    const nm=escHtml(r.fromName||'Player');
+    const av=escHtml(r.fromAvatar||'😊');
+    const code=escHtml(r.fromCode||'');
+    return `<div class="friend-row" style="margin-bottom:8px;">
+      <div class="friend-av">${av}</div>
+      <div class="friend-info">
+        <div class="friend-name">${nm}</div>
+        <div class="friend-xp">${code?('Code: '+code):'Wants to be your friend'}</div>
+      </div>
+      <div class="friend-actions">
+        <button class="friend-btn friend-btn-chat" onclick="acceptFriendRequest('${uid}')">Accept</button>
+        <button class="friend-btn" style="background:#4a3f35;color:#fff;" onclick="declineFriendRequest('${uid}')">Decline</button>
+      </div>
+    </div>`;
+  }).join('');
+}
+function sendFriendRequestToUid(uid,targetData){
+  if(!G.profile||!G.fbOk||!G.uid) return Promise.reject(new Error('offline'));
+  normalizeSocialProfile();
+  if(uid===G.uid) return Promise.reject(new Error('self'));
+  if(hasFriend(uid)) return Promise.reject(new Error('already'));
+  return G.db.ref('friendRequests/'+uid+'/incoming/'+G.uid).once('value').then(ex=>{
+    if(ex.exists()&&ex.val()&&ex.val().status==='pending') throw new Error('already-sent');
+    return G.db.ref('friendRequests/'+G.uid+'/incoming/'+uid).once('value');
+  }).then(back=>{
+    if(back.exists()&&back.val()&&back.val().status==='pending'){
+      return acceptFriendRequest(uid,true);
+    }
+    const now=Date.now();
+    const req={
+      fromUid:G.uid,
+      fromName:G.profile.name||'Player',
+      fromAvatar:G.profile.avatar||'😊',
+      fromCode:G.profile.friendCode||'',
+      toUid:uid,
+      status:'pending',
+      ts:now
+    };
+    const sent={...req,toName:(targetData&&targetData.name)||'Player',toAvatar:(targetData&&targetData.avatar)||'😊'};
+    const updates={};
+    updates['friendRequests/'+uid+'/incoming/'+G.uid]=req;
+    updates['friendRequests/'+G.uid+'/sent/'+uid]=sent;
+    return G.db.ref().update(updates);
+  });
+}
+function acceptFriendRequest(fromUid,silent){
+  if(!G.fbOk||!G.uid||!fromUid) return Promise.resolve();
+  const req=(G._incomingRequests&&G._incomingRequests[fromUid])||null;
+  if(req){
+    if(!G._friendCache) G._friendCache={};
+    G._friendCache[fromUid]={
+      name:req.fromName||'Friend',
+      avatar:req.fromAvatar||'😊',
+      xp:(G._friendCache[fromUid]&&G._friendCache[fromUid].xp)||0
+    };
+  }
+  const updates={};
+  updates['friends/'+G.uid+'/'+fromUid]=true;
+  updates['friends/'+fromUid+'/'+G.uid]=true;
+  updates['friendRequests/'+G.uid+'/incoming/'+fromUid]=null;
+  updates['friendRequests/'+fromUid+'/sent/'+G.uid]=null;
+  updates['friendRequests/'+G.uid+'/sent/'+fromUid]=null;
+  updates['friendRequests/'+fromUid+'/incoming/'+G.uid]=null;
+  return G.db.ref().update(updates).then(()=>{
+    ensureFriend(fromUid);
+    if(G._incomingRequests) delete G._incomingRequests[fromUid];
+    if(!silent) toast('Friend request accepted ✦');
+    renderFriendRequests();
+    renderFriends();
+    renderConversations();
+  });
+}
+function declineFriendRequest(fromUid){
+  if(!G.fbOk||!G.uid||!fromUid) return;
+  const updates={};
+  updates['friendRequests/'+G.uid+'/incoming/'+fromUid]=null;
+  updates['friendRequests/'+fromUid+'/sent/'+G.uid]=null;
+  G.db.ref().update(updates).then(()=>{
+    if(G._incomingRequests) delete G._incomingRequests[fromUid];
+    toast('Request declined');
+    renderFriendRequests();
+  });
+}
 
 function renderFriends(){
   if(!G.profile) return;
+  normalizeSocialProfile();
   if(!G.profile.friendCode){
     G.profile.friendCode=Math.random().toString(36).slice(2,8).toUpperCase();
     saveProfile();
@@ -43705,6 +43921,7 @@ function renderFriends(){
 
   const list=document.getElementById('friends-list');
   if(!list) return;
+  renderFriendRequests();
   const uids=getFriendList();
   if(!uids.length){
     list.innerHTML='<div style="text-align:center;color:var(--ink3);padding:30px 0;font-size:14px;">No friends yet — share your code!</div>';
@@ -43724,6 +43941,7 @@ function renderFriends(){
         <div class="friend-actions">
           <button class="friend-btn friend-btn-chat" onclick="openChatById('${uid}')">💬 Chat</button>
           <button class="friend-btn friend-btn-challenge" onclick="challengeFriend('${uid}')">⚔️</button>
+          <button class="friend-btn" style="background:#7a2e2e;color:#fff;" onclick="removeFriendFromFriends('${uid}')">Remove</button>
         </div>
       </div>`;
     }).join('');
@@ -43785,27 +44003,28 @@ function copyMyCode(){
 function addFriendFromFriends(){
   if(!G.profile){ toast('Create a profile first'); return; }
   if(!G.fbOk){ toast('Online not available'); return; }
+  normalizeSocialProfile();
   const code=(document.getElementById('friends-screen-code-inp').value||'').toUpperCase().trim();
   if(code.length<5){ toast('Enter a valid code'); return; }
   if(code===G.profile.friendCode){ toast("That's your own code!"); return; }
   // Search leaderboard (same as original addFriend)
   G.db.ref('leaderboard').orderByChild('friendCode').equalTo(code).once('value').then(snap=>{
     if(!snap.exists()){ toast('Player not found'); return; }
-    let uid=null; snap.forEach(c=>{ uid=c.key; });
+    let uid=null, targetData=null; snap.forEach(c=>{ uid=c.key; targetData=c.val()||{}; });
     if(uid===G.uid){ toast("That's your own code!"); return; }
-    if(!Array.isArray(G.profile.friends)) G.profile.friends=[];
-    if(G.profile.friends.includes(uid)){ toast('Already your friend!'); return; }
-    G.profile.friends.push(uid);
     // Cache friend data for display
-    snap.forEach(c=>{
-      const p=c.val();
-      if(!G._friendCache) G._friendCache={};
-      G._friendCache[uid]={name:p.name||'Friend',avatar:p.avatar||'😊',xp:p.xp||0};
+    if(!G._friendCache) G._friendCache={};
+    G._friendCache[uid]={name:targetData.name||'Friend',avatar:targetData.avatar||'😊',xp:targetData.xp||0};
+    sendFriendRequestToUid(uid,{name:targetData.name,avatar:targetData.avatar}).then(()=>{
+      document.getElementById('friends-screen-code-inp').value='';
+      toast('Friend request sent ✦');
+      renderFriends();
+    }).catch(err=>{
+      if(err&&err.message==='already') toast('Already your friend!');
+      else if(err&&err.message==='already-sent') toast('Request already sent');
+      else if(err&&err.message==='self') toast("That's your own code!");
+      else toast('Could not send request');
     });
-    saveProfile(); pushProfile();
-    document.getElementById('friends-screen-code-inp').value='';
-    toast('Friend added! 🎉');
-    renderFriends();
   });
 }
 /* ══════════════════════════════════════════════════
