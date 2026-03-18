@@ -41580,6 +41580,8 @@ function createRoom(){
   if(!G.profile){ go('auth'); return; }
   if(!G.fbOk){ toast('Configure Firebase to use online rooms.'); return; }
   sfx.tap();
+  G.meReady=false;
+  document.getElementById('ready-btn').textContent='✓ Mark Ready';
   const code=mkCode(); G.roomId=code; G.isHost=true;
   const ref=G.db.ref('rooms/'+code); G.roomRef=ref;
   ref.set({
@@ -41642,6 +41644,8 @@ function checkURLParams(){
 function joinRoomByCode(code){
   if(!G.fbOk){ toast('Configure Firebase first.'); return; }
   sfx.tap();
+  G.meReady=false;
+  document.getElementById('ready-btn').textContent='✓ Mark Ready';
   const ref=G.db.ref('rooms/'+code); G.roomRef=ref; G.roomId=code; G.isHost=false;
   ref.once('value').then(sn=>{
     const d=sn.val();
@@ -41696,6 +41700,12 @@ function updateLobbyUI(d){
     row.innerHTML=`<span style="font-size:20px;">${p.avatar}</span><span style="font-family:'Playfair Display',serif;font-size:14px;flex:1;">${p.name}${isMe?' (You)':''}</span><span class="l-badge ${isHost?'host':p.ready?'ready':'wait'}">${isHost?'Host':p.ready?'Ready':'Waiting'}</span>`;
     list.appendChild(row);
   });
+  const startBtn=document.getElementById('start-btn');
+  if(startBtn){
+    const vals=Object.values(ps);
+    const allReady=vals.length>=2 && vals.every(p=>!!p.ready);
+    startBtn.disabled=!(G.isHost && allReady);
+  }
 }
 function toggleReady(){
   if(!G.roomRef)return; sfx.tap();
@@ -41703,7 +41713,17 @@ function toggleReady(){
   G.roomRef.child('players/'+G.uid+'/ready').set(G.meReady);
   document.getElementById('ready-btn').textContent=G.meReady?'✓ Ready (click to undo)':'✓ Mark Ready';
 }
-function startOnline(){ if(!G.roomRef)return; sfx.tap(); G.roomRef.update({status:'playing'}); }
+function startOnline(){
+  if(!G.roomRef)return;
+  sfx.tap();
+  G.roomRef.once('value').then(sn=>{
+    const d=sn.val()||{};
+    const ps=Object.values(d.players||{});
+    const allReady=ps.length>=2 && ps.every(p=>!!p.ready);
+    if(!allReady){ toast('Both players must press Ready first.'); return; }
+    G.roomRef.update({status:'playing'});
+  }).catch(()=>toast('Unable to start room right now.'));
+}
 function joinFromRoom(d){
   // Keep roomRef alive for game sync
   // Set difficulty from room data so buildPool filters correctly
@@ -42010,6 +42030,8 @@ function startNearby(){
   if(!G.profile){ go('auth'); return; }
   if(!G.fbOk){ toast('Configure Firebase to use Same WiFi Play.'); return; }
   sfx.tap();
+  G.meReady=false;
+  document.getElementById('ready-btn').textContent='✓ Mark Ready';
   const code=mkCode(); G.roomId=code; G.isHost=true;
   const ref=G.db.ref('rooms/'+code); G.roomRef=ref;
   ref.set({
@@ -43425,7 +43447,7 @@ function sendChallenge(){
     challenge:true, difficulty:_chDiff, qtype:_chQType,
     challengeTarget:_chTargetUid,
     players:{
-      [G.uid]:{name:G.profile.name,avatar:G.profile.avatar,ready:true,score:0,hearts:3,diff:_chDiff},
+      [G.uid]:{name:G.profile.name,avatar:G.profile.avatar,ready:false,score:0,hearts:3,diff:_chDiff},
       [_chTargetUid]:{name:targetF.name||'Friend',avatar:targetF.avatar||'😊',ready:false,score:0,hearts:3,diff:_chDiff}
     }
   }).then(()=>{
@@ -43434,16 +43456,6 @@ function sendChallenge(){
     ref.on('value',sn=>{
       const d=sn.val(); if(!d) return;
       if(d.status==='playing'){ ref.off(); joinFromRoom(d); }
-      // When opponent joins and is ready, auto-start the game
-      if(d.status==='waiting'&&d.challenge){
-        const ps=d.players||{};
-        const allReady=Object.values(ps).every(p=>p.ready);
-        const playerCount=Object.keys(ps).length;
-        if(allReady&&playerCount>=2){
-          ref.update({status:'playing'});
-          return;
-        }
-      }
       // Update lobby if we're viewing it
       const panel=document.getElementById('lobby-panel');
       if(panel&&panel.style.display!=='none') updateLobbyUI(d);
@@ -43455,6 +43467,8 @@ function sendChallenge(){
     .then(()=>{
       closeOv('ov-challenge');
       toast('Challenge sent! Waiting for opponent...');
+      G.meReady=false;
+      document.getElementById('ready-btn').textContent='✓ Mark Ready';
       // Navigate to lobby and show the room
       document.getElementById('rc-disp').textContent=challengeData.roomCode;
       document.getElementById('lobby-panel').style.display='block';
@@ -43555,13 +43569,15 @@ function acceptChallenge(){
 function joinChallengeRoom(code,chMeta){
   if(!G.fbOk){ toast('Online features not available'); return; }
   sfx.tap();
+  G.meReady=false;
+  document.getElementById('ready-btn').textContent='✓ Mark Ready';
   const ref=G.db.ref('rooms/'+code); G.roomRef=ref; G.roomId=code; G.isHost=false;
   ref.once('value').then(sn=>{
     const d=sn.val();
     if(!d){ toast('Room not found or expired'); return; }
     if(d.status==='playing'){ toast('Game already in progress'); return; }
     // Update existing player entry to mark as ready (sender already added us)
-    ref.child('players/'+G.uid).update({name:G.profile.name,avatar:G.profile.avatar,ready:true,score:0,hearts:3,diff:G.diff});
+    ref.child('players/'+G.uid).update({name:G.profile.name,avatar:G.profile.avatar,ready:false,score:0,hearts:3,diff:G.diff});
     document.getElementById('rc-disp').textContent=code;
     document.getElementById('lobby-panel').style.display='block';
     updateLobbyModeNote({qtype:(chMeta&&chMeta.qtype)||d.qtype||d.sub,difficulty:(chMeta&&chMeta.difficulty)||d.difficulty});
