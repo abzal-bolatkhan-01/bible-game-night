@@ -41516,6 +41516,7 @@ function endGame(){
 function playAgain(){
   sfx.tap(); stopTimers(); clearAutoAdvance();
   if((G.mode==='online'||G.mode==='nearby'||G.onlineGame) && G.roomRef && G.roomId){
+    G._awaitingRematchStart=true;
     G.meReady=false;
     const readyBtn=document.getElementById('ready-btn');
     if(readyBtn) readyBtn.textContent='✓ Mark Ready';
@@ -41549,8 +41550,9 @@ function playAgain(){
     G.roomRef.off();
     G.roomRef.on('value',sn=>{
       const d=sn.val(); if(!d) return;
+      if(d.status==='waiting') G._awaitingRematchStart=false;
       updateLobbyUI(d);
-      if(d.status==='playing'){ G.roomRef.off(); joinFromRoom(d); }
+      if(d.status==='playing' && !G._awaitingRematchStart){ G.roomRef.off(); joinFromRoom(d); }
     });
     go('lobby');
     const nbJoin=document.getElementById('nb-join');
