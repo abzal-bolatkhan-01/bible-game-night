@@ -40835,6 +40835,7 @@ function communityTab(tab){
 ══════════════════════════════════════════════════ */
 let _autoAdvId=null;
 let _setupAction='local';
+let _setupUseHomeSelection=false;
 function clearAutoAdvance(){ clearTimeout(_autoAdvId); }
 function showAutoAdvance(wrapId,fillId,ms,cb){
   const wrap=document.getElementById(wrapId);
@@ -40927,12 +40928,8 @@ function pickSub(el,s){
 function onPlay(){
   sfx.tap();
   if(!G.profile){ go('auth'); buildAvGrid(); return; }
-  if(G.mode==='online' || G.mode==='nearby'){
-    go('lobby');
-    const nbJoin=document.getElementById('nb-join');
-    if(nbJoin) setNb(nbJoin);
-    return;
-  }
+  if(G.mode==='online'){ go('setup'); buildModeSetup('online',true); return; }
+  if(G.mode==='nearby'){ go('setup'); buildModeSetup('nearby',true); return; }
   if(G.mode==='practice'){ go('setup'); buildModeSetup('practice'); return; }
   go('setup'); buildSetup();
 }
@@ -40956,21 +40953,27 @@ function buildSetup(){
   ];
   renderSetup(); renderOpts();
 }
-function buildModeSetup(kind){
+function buildModeSetup(kind,fromHomeSelection){
   _setupAction=kind;
+  _setupUseHomeSelection=!!fromHomeSelection;
   document.getElementById('setup-list').innerHTML='';
   document.getElementById('setup-list').style.display='none';
   document.getElementById('add-p-btn').style.display='none';
-  document.getElementById('setup-room-mode-wrap').style.display=(kind==='online')?'block':'none';
+  const showModeDiff=(kind==='online')&&!_setupUseHomeSelection;
+  document.getElementById('setup-room-mode-wrap').style.display=showModeDiff?'block':'none';
   if(kind==='online'){
     document.getElementById('setup-eyebrow').textContent='Online Room';
     document.getElementById('setup-title').innerHTML='Game <em>Settings</em>';
-    document.getElementById('setup-subtitle').textContent='Host picks rules; joiners receive them automatically.';
+    document.getElementById('setup-subtitle').textContent=_setupUseHomeSelection
+      ?'Using game mode and difficulty from Home. Set room rules below.'
+      :'Host picks rules; joiners receive them automatically.';
     document.getElementById('setup-go-btn').innerHTML='<span class="btn-icon">🌐</span> Host Room';
   } else if(kind==='nearby'){
     document.getElementById('setup-eyebrow').textContent='Same WiFi';
     document.getElementById('setup-title').innerHTML='Game <em>Settings</em>';
-    document.getElementById('setup-subtitle').textContent='Apply rules before creating your nearby room.';
+    document.getElementById('setup-subtitle').textContent=_setupUseHomeSelection
+      ?'Using game mode and difficulty from Home. Set room rules below.'
+      :'Apply rules before creating your nearby room.';
     document.getElementById('setup-go-btn').innerHTML='<span class="btn-icon">📡</span> Start Nearby';
   } else {
     document.getElementById('setup-eyebrow').textContent='Practice';
