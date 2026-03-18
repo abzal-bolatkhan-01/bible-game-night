@@ -40371,52 +40371,42 @@ const VERSE_Q=[
 const ROUND_LIMIT=15;
 const MODE_EXTRA_QUESTIONS=500;
 const ORIGINAL_TF_FACTS=[
-  {s:'Jesus was born in Bethlehem',r:'Matthew 2:1'},
-  {s:'Moses led Israel out of Egypt',r:'Exodus 12:51'},
-  {s:'David defeated Goliath with a sling',r:'1 Samuel 17:49-50'},
-  {s:'Noah built the ark before the flood',r:'Genesis 6:13-14'},
-  {s:'The Red Sea was parted during the Exodus',r:'Exodus 14:21-22'},
-  {s:'Elijah was taken to heaven in a whirlwind',r:'2 Kings 2:11'},
-  {s:'Jonah spent three days in a great fish',r:'Jonah 1:17'},
-  {s:'Esther became queen of Persia',r:'Esther 2:17'},
-  {s:'Daniel was thrown into a lions den',r:'Daniel 6:16'},
-  {s:'Paul wrote letters to early churches',r:'Romans 1:1'},
-  {s:'Peter walked on water toward Jesus',r:'Matthew 14:29'},
-  {s:'Jesus fed five thousand with five loaves and two fish',r:'Matthew 14:17-21'},
-  {s:'Lazarus was raised from the dead by Jesus',r:'John 11:43-44'},
-  {s:'The Ten Commandments were given on Mount Sinai',r:'Exodus 31:18'},
-  {s:'Abraham was promised descendants as numerous as the stars',r:'Genesis 15:5'},
-  {s:'Joseph interpreted Pharaohs dreams in Egypt',r:'Genesis 41:25'},
-  {s:'Ruth was the great grandmother of King David',r:'Ruth 4:17'},
-  {s:'Solomon built the first temple in Jerusalem',r:'1 Kings 6:14'},
-  {s:'John the Baptist prepared the way for Jesus',r:'Matthew 3:1-3'},
-  {s:'Jesus turned water into wine at Cana',r:'John 2:9'},
-  {s:'The apostle Thomas said My Lord and my God',r:'John 20:28'},
-  {s:'The Holy Spirit came at Pentecost',r:'Acts 2:1-4'},
-  {s:'Nehemiah rebuilt Jerusalems walls',r:'Nehemiah 6:15'},
-  {s:'Job remained faithful through suffering',r:'Job 1:21-22'},
-  {s:'Samuel anointed David as king',r:'1 Samuel 16:13'},
-  {s:'Jesus taught the Sermon on the Mount',r:'Matthew 5:1-2'},
-  {s:'Paul and Silas sang hymns in prison',r:'Acts 16:25'},
-  {s:'Jesus was crucified and rose on the third day',r:'1 Corinthians 15:3-4'},
-  {s:'The Bible says God is love',r:'1 John 4:8'},
-  {s:'Revelation is the last book of the New Testament',r:'Revelation 22:21'}
-];
-const ORIGINAL_TF_TEMPLATES=[
-  'True or False: {stmt}.',
-  'Scripture teaches that {stmt}.',
-  'According to the Bible, {stmt}.',
-  'Bible check: {stmt}.',
-  'Faith fact: {stmt}.',
-  'In the biblical record, {stmt}.',
-  'Do you agree: {stmt}.',
-  'Statement: {stmt}.'
+  {t:'Jesus was born in Bethlehem.',f:'Jesus was born in Nazareth.',e:'Matthew 2:1 — Jesus was born in Bethlehem of Judea.'},
+  {t:'Moses led Israel out of Egypt.',f:'Moses led Israel out of Babylon.',e:'Exodus 12:51 — The LORD brought the Israelites out of Egypt.'},
+  {t:'David defeated Goliath with a sling and a stone.',f:'David defeated Goliath with a sword from his tent.',e:'1 Samuel 17:49-50 — David struck the Philistine with a sling and stone.'},
+  {t:'Noah built the ark before the flood.',f:'Noah built the ark after the flood began.',e:'Genesis 6:13-14 — God told Noah to build the ark before judgment came.'},
+  {t:'The Red Sea was parted during the Exodus.',f:'The Jordan River was parted during the Exodus from Egypt.',e:'Exodus 14:21-22 — The sea was divided and Israel crossed on dry ground.'},
+  {t:'Elijah was taken to heaven in a whirlwind.',f:'Elijah died in Jerusalem and was buried there.',e:'2 Kings 2:11 — Elijah went up by a whirlwind into heaven.'},
+  {t:'Jonah spent three days and three nights in a great fish.',f:'Jonah spent seven days in Nineveh before preaching.',e:'Jonah 1:17 — Jonah was in the fish three days and three nights.'},
+  {t:'Esther became queen of Persia.',f:'Esther became queen of Egypt.',e:'Esther 2:17 — The king set the royal crown on Esther.'},
+  {t:'Daniel was thrown into the lions’ den.',f:'Daniel was thrown into a furnace of fire.',e:'Daniel 6:16 — Daniel was cast into the den of lions.'},
+  {t:'Peter walked on water toward Jesus.',f:'Peter walked on water away from Jesus.',e:'Matthew 14:29 — Peter got out of the boat and walked toward Jesus.'},
+  {t:'Jesus fed five thousand with five loaves and two fish.',f:'Jesus fed five thousand with seven loaves and no fish.',e:'Matthew 14:17-21 — The miracle used five loaves and two fish.'},
+  {t:'Lazarus was raised from the dead by Jesus.',f:'Lazarus healed Jesus after the crucifixion.',e:'John 11:43-44 — Jesus called Lazarus from the tomb.'},
+  {t:'The Ten Commandments were given on Mount Sinai.',f:'The Ten Commandments were given on Mount Carmel.',e:'Exodus 31:18 — God gave Moses the tablets on Mount Sinai.'},
+  {t:'Abraham was promised descendants as numerous as the stars.',f:'Abraham was promised descendants as numerous as the sand only if he became king.',e:'Genesis 15:5 — God compared Abraham’s descendants to the stars.'},
+  {t:'Joseph interpreted Pharaoh’s dreams in Egypt.',f:'Joseph interpreted Nebuchadnezzar’s dreams in Egypt.',e:'Genesis 41:25 — Joseph interpreted Pharaoh’s dreams.'},
+  {t:'Ruth was the great-grandmother of King David.',f:'Ruth was the mother of King Saul.',e:'Ruth 4:17 — Ruth was in David’s family line through Obed and Jesse.'},
+  {t:'Solomon built the first temple in Jerusalem.',f:'Solomon built the first temple in Bethlehem.',e:'1 Kings 6:14 — Solomon finished building the temple in Jerusalem.'},
+  {t:'John the Baptist prepared the way for Jesus.',f:'John the Baptist denied that the Messiah would come.',e:'Matthew 3:1-3 — John preached to prepare the way of the Lord.'},
+  {t:'Jesus turned water into wine at Cana.',f:'Jesus turned wine into water at Cana.',e:'John 2:9 — The water that became wine was served to the guests.'},
+  {t:'Thomas said to Jesus, “My Lord and my God!”',f:'Thomas said to Jesus, “You are only a prophet.”',e:'John 20:28 — Thomas confessed Jesus as Lord and God.'},
+  {t:'The Holy Spirit came at Pentecost.',f:'The Holy Spirit came at Passover in Bethlehem.',e:'Acts 2:1-4 — The Spirit came when Pentecost arrived.'},
+  {t:'Nehemiah rebuilt Jerusalem’s walls.',f:'Nehemiah rebuilt Jericho’s walls.',e:'Nehemiah 6:15 — The wall of Jerusalem was completed in fifty-two days.'},
+  {t:'Job remained faithful through severe suffering.',f:'Job cursed God and prospered immediately.',e:'Job 1:21-22 — In all this, Job did not sin by charging God with wrong.'},
+  {t:'Samuel anointed David as king.',f:'Samuel anointed Goliath as king.',e:'1 Samuel 16:13 — Samuel anointed David in the midst of his brothers.'},
+  {t:'Jesus taught the Sermon on the Mount.',f:'Jesus taught the Sermon in Caesar’s palace.',e:'Matthew 5:1-2 — Jesus went up on a mountain and taught the crowds.'},
+  {t:'Paul and Silas sang hymns in prison.',f:'Paul and Silas escaped prison before midnight without praying.',e:'Acts 16:25 — At midnight Paul and Silas were praying and singing hymns.'},
+  {t:'Jesus was crucified and rose on the third day.',f:'Jesus was crucified and rose on the same day before sunset.',e:'1 Corinthians 15:3-4 — Christ died, was buried, and was raised on the third day.'},
+  {t:'The Bible says, “God is love.”',f:'The Bible says, “Love is God.”',e:'1 John 4:8 — Scripture says God is love.'},
+  {t:'Revelation is the last book of the New Testament.',f:'Genesis is the last book of the New Testament.',e:'Revelation 22:21 — Revelation closes the New Testament canon.'},
+  {t:'Paul wrote to the church in Philippi from prison.',f:'Paul wrote Philippians while ruling as king in Jerusalem.',e:'Philippians 1:13 — Paul speaks of his imprisonment while writing.'}
 ];
 const ORIGINAL_VERSE_SEEDS=[
   {b:'The Lord is my ',blank:'shepherd',a:'; I shall not want.',r:'Psalm 23:1'},
   {b:'Your word is a lamp to my ',blank:'feet',a:' and a light to my path.',r:'Psalm 119:105'},
   {b:'Trust in the Lord with all your ',blank:'heart',a:' and lean not on your own understanding.',r:'Proverbs 3:5'},
-  {b:'In all your ways acknowledge ',blank:'him',a:' and he will make your paths straight.',r:'Proverbs 3:6'},
+  {b:'In all your ways acknowledge ',blank:'Him',a:', and He will make your paths straight.',r:'Proverbs 3:6'},
   {b:'The fear of the Lord is the beginning of ',blank:'wisdom',a:'.',r:'Proverbs 9:10'},
   {b:'The joy of the Lord is your ',blank:'strength',a:'.',r:'Nehemiah 8:10'},
   {b:'Be still and know that I am ',blank:'God',a:'.',r:'Psalm 46:10'},
@@ -40425,21 +40415,21 @@ const ORIGINAL_VERSE_SEEDS=[
   {b:'For we walk by ',blank:'faith',a:' not by sight.',r:'2 Corinthians 5:7'},
   {b:'Pray without ',blank:'ceasing',a:'.',r:'1 Thessalonians 5:17'},
   {b:'Give thanks in all ',blank:'circumstances',a:'.',r:'1 Thessalonians 5:18'},
-  {b:'The Lord is good to all and his mercy is over all he has ',blank:'made',a:'.',r:'Psalm 145:9'},
+  {b:'The Lord is good to all, and His mercy is over all He has ',blank:'made',a:'.',r:'Psalm 145:9'},
   {b:'The name of the Lord is a strong ',blank:'tower',a:'.',r:'Proverbs 18:10'},
   {b:'Blessed are the pure in ',blank:'heart',a:' for they shall see God.',r:'Matthew 5:8'},
-  {b:'Man shall not live by bread alone but by every ',blank:'word',a:' from God.',r:'Matthew 4:4'},
+  {b:'Man shall not live by bread alone, but by every ',blank:'word',a:' from God.',r:'Matthew 4:4'},
   {b:'Seek first the kingdom of God and his ',blank:'righteousness',a:'.',r:'Matthew 6:33'},
-  {b:'Ask and it will be given to you seek and you will ',blank:'find',a:'.',r:'Matthew 7:7'},
+  {b:'Ask, and it will be given to you; seek, and you will ',blank:'find',a:'.',r:'Matthew 7:7'},
   {b:'With God all things are ',blank:'possible',a:'.',r:'Matthew 19:26'},
   {b:'I am the way and the truth and the ',blank:'life',a:'.',r:'John 14:6'},
-  {b:'I am the vine you are the ',blank:'branches',a:'.',r:'John 15:5'},
-  {b:'Greater love has no one than this to lay down his ',blank:'life',a:' for his friends.',r:'John 15:13'},
-  {b:'In this world you will have trouble but take heart I have ',blank:'overcome',a:' the world.',r:'John 16:33'},
+  {b:'I am the vine; you are the ',blank:'branches',a:'.',r:'John 15:5'},
+  {b:'Greater love has no one than this: to lay down his ',blank:'life',a:' for his friends.',r:'John 15:13'},
+  {b:'In this world you will have trouble. But take heart! I have ',blank:'overcome',a:' the world.',r:'John 16:33'},
   {b:'But you will receive ',blank:'power',a:' when the Holy Spirit comes on you.',r:'Acts 1:8'},
-  {b:'Believe in the Lord Jesus and you will be ',blank:'saved',a:'.',r:'Acts 16:31'},
-  {b:'The wages of sin is ',blank:'death',a:' but the gift of God is eternal life.',r:'Romans 6:23'},
-  {b:'If God is for us who can be ',blank:'against',a:' us.',r:'Romans 8:31'},
+  {b:'Believe in the Lord Jesus, and you will be ',blank:'saved',a:'.',r:'Acts 16:31'},
+  {b:'The wages of sin is ',blank:'death',a:', but the gift of God is eternal life.',r:'Romans 6:23'},
+  {b:'If God is for us, who can be ',blank:'against',a:' us?',r:'Romans 8:31'},
   {b:'Nothing can separate us from the love of ',blank:'God',a:'.',r:'Romans 8:39'},
   {b:'The fruit of the Spirit is love joy peace patience kindness goodness faithfulness gentleness and ',blank:'self-control',a:'.',r:'Galatians 5:22-23'},
   {b:'By grace you have been saved through ',blank:'faith',a:'.',r:'Ephesians 2:8'}
@@ -40447,16 +40437,6 @@ const ORIGINAL_VERSE_SEEDS=[
 const ORIGINAL_VERSE_WORD_BANK=['grace','truth','peace','mercy','hope','glory','light','wisdom','power','life','love','joy','faith','strength','salvation','righteousness','kindness','patience','victory','blessing','promise','kingdom','spirit','gospel','courage'];
 function questionKey(q){
   return q&& (q._id || q.q || q.r || q.b || '');
-}
-function negateStatement(s){
-  if(s.includes(' was ')) return s.replace(' was ',' was not ');
-  if(s.includes(' were ')) return s.replace(' were ',' were not ');
-  if(s.includes(' is ')) return s.replace(' is ',' is not ');
-  if(s.includes(' are ')) return s.replace(' are ',' are not ');
-  if(s.includes(' has ')) return s.replace(' has ',' has not ');
-  if(s.includes(' have ')) return s.replace(' have ',' have not ');
-  if(s.includes(' can ')) return s.replace(' can ',' can not ');
-  return 'It is not true that '+s.charAt(0).toLowerCase()+s.slice(1);
 }
 function expandModeQuestionBanks(){
   const localShuf=(a)=>{
@@ -40469,14 +40449,12 @@ function expandModeQuestionBanks(){
   };
   for(let i=0;i<MODE_EXTRA_QUESTIONS;i++){
     const fact=ORIGINAL_TF_FACTS[i%ORIGINAL_TF_FACTS.length];
-    const tpl=ORIGINAL_TF_TEMPLATES[i%ORIGINAL_TF_TEMPLATES.length];
     const isTrue=i%2===0;
-    const base=isTrue?fact.s:negateStatement(fact.s);
     TF_Q.push({
       _id:`tf-original-${i}`,
-      q:tpl.replace('{stmt}',base),
+      q:isTrue?fact.t:fact.f,
       a:isTrue,
-      e:`${fact.r} — ${isTrue?fact.s+'.':'Actually, '+fact.s+'.'}`
+      e:fact.e
     });
   }
   for(let i=0;i<MODE_EXTRA_QUESTIONS;i++){
