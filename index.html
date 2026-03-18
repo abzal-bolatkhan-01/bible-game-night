@@ -3273,8 +3273,8 @@ html[data-theme="warmth"] .divider::before, html[data-theme="warmth"] .divider::
   </div>
   <div class="scroller">
     <div style="text-align:center;padding:14px 0 10px;">
-      <div style="font-family:'Playfair Display',serif;font-size:58px;font-weight:900;color:var(--gold1);line-height:1;" id="l-clock">45</div>
-      <div style="font-family:'Cinzel',serif;font-size:9px;letter-spacing:.28em;color:var(--ink3);text-transform:uppercase;margin-top:2px;">seconds</div>
+      <div style="font-family:'Playfair Display',serif;font-size:58px;font-weight:900;color:var(--gold1);line-height:.95;" id="l-clock">45</div>
+      <div style="font-family:'Cinzel',serif;font-size:9px;letter-spacing:.28em;color:var(--ink3);text-transform:uppercase;margin-top:8px;">seconds</div>
       <div style="font-family:'Cinzel',serif;font-size:12px;letter-spacing:.12em;color:var(--gold);margin-top:5px;" id="l-streak">0 correct</div>
     </div>
     <div class="q-cat" id="l-cat"></div>
@@ -41365,7 +41365,7 @@ function renderTF(){
   // Check if all players are eliminated (hearts)
   if(G.cfg.hearts){
     const alive=G.players.filter(p=>G.hearts[p.name]>0);
-    if(alive.length<=1){ showScores(true); return; }
+    if(G.players.length>1 && alive.length<=1){ showScores(true); return; }
   }
 
   const q=G.pool[G.tfRound]; G.seen.add(questionKey(q)); G.tfVotes={}; G.tfVoterIdx=0;
