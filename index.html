@@ -41670,10 +41670,10 @@ function joinFromRoom(d){
     G.roomRef.child('gameState').set({pool:poolData,orders:ordersData,qi:0,pi:0,scores:{},hearts:{},phase:'question',t:Date.now()})
       .catch(err=>{console.error('Failed to set gameState:', err);toast('Game sync failed');});
   }
-  showSplash(0,null);
-  // Online game: auto-dismiss splash so joiner isn't blocked waiting for a tap
-  // renderOnlineQ handles navigating to game screen when gameState arrives
-  setTimeout(()=>{ if(document.getElementById('splash').classList.contains('on')) dismissSplash(); }, 1500);
+  // Skip splash in online multiplayer; jump straight into synced question flow
+  const splash=document.getElementById('splash');
+  if(splash) splash.classList.remove('on');
+  _splashCb=null;
 }
 
 function renderOnlineQ(){
@@ -41823,8 +41823,8 @@ function answerOnline(btn,isOk,q,timedOut){
     G._myVoteSubmitted=false;
     document.querySelectorAll('#g-opts .opt').forEach(b=>b.disabled=false);
   }
-  // Play sound effects after vote is dispatched
-  try{if(isOk){sfx.correct();haptic('correct');}else{sfx.wrong();haptic('wrong');}}catch(e){}
+  // Local reaction only; correctness is revealed later when both players finish
+  try{sfx.tap();haptic('tap');}catch(e){}
 }
 
 function showOnlineResult(gs){
@@ -41846,7 +41846,7 @@ function showOnlineResult(gs){
       const isCorrectBtn=(orig===1)===(gs.correctA===true||gs.correctA===1);
       if(isCorrectBtn)b.classList.add('correct');
       const myVote=me?votes[me.uid]:undefined;
-      if(myVote!==undefined&&!isCorrectBtn)b.classList.add('wrong');
+      if(myVote!==undefined&&orig===myVote&&!isCorrectBtn)b.classList.add('wrong');
     } else {
       if(orig===gs.correctA)b.classList.add('correct');
       const myVote=me?votes[me.uid]:undefined;
@@ -41854,6 +41854,15 @@ function showOnlineResult(gs){
     }
     b.disabled=true;
   });
+  // Reveal correctness feedback only now (after both players voted / result phase)
+  try{
+    const myVote=me?votes[me.uid]:undefined;
+    if(myVote!==undefined&&myVote!==-1){
+      const correctIdx=isTF?((gs.correctA===true||gs.correctA===1)?1:0):gs.correctA;
+      if(myVote===correctIdx){sfx.correct();haptic('correct');}
+      else{sfx.wrong();haptic('wrong');}
+    }
+  }catch(e){}
   // Build result summary
   const correctName=isTF?(gs.correctA===true||gs.correctA===1?'TRUE':'FALSE'):(q.o[gs.correctA]||'');
   let html=`<strong>✓ ${correctName}</strong> — ${q.e||''}<br><div style="margin-top:8px;display:flex;flex-wrap:wrap;gap:6px;">`;
