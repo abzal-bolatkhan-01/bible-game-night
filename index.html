@@ -3246,7 +3246,7 @@ html[data-theme="warmth"] .divider::before, html[data-theme="warmth"] .divider::
 <!-- ████████  GAME (Classic / Verse)  ████████ -->
 <div class="screen" id="s-game">
   <div class="g-hdr">
-    <button class="g-quit" onclick="quitGame()" aria-label="Quit game">✕</button>
+    <button class="g-quit" onclick="requestQuitGame()" aria-label="Quit game">✕</button>
     <div class="g-player">
       <span class="g-av" id="g-av">😊</span>
       <span class="g-nm" id="g-nm">Player</span>
@@ -3286,7 +3286,7 @@ html[data-theme="warmth"] .divider::before, html[data-theme="warmth"] .divider::
 <!-- ████████  LIGHTNING  ████████ -->
 <div class="screen" id="s-lightning">
   <div class="g-hdr">
-    <button class="g-quit" onclick="quitGame()" aria-label="Quit game">✕</button>
+    <button class="g-quit" onclick="requestQuitGame()" aria-label="Quit game">✕</button>
     <div class="g-player">
       <span class="g-av" id="l-av">😊</span>
       <span class="g-nm" id="l-nm">Player</span>
@@ -3314,7 +3314,7 @@ html[data-theme="warmth"] .divider::before, html[data-theme="warmth"] .divider::
 <!-- ████████  TRUE / FALSE  ████████ -->
 <div class="screen" id="s-tf">
   <div class="g-hdr">
-    <button class="g-quit" onclick="quitGame()" aria-label="Quit game">✕</button>
+    <button class="g-quit" onclick="requestQuitGame()" aria-label="Quit game">✕</button>
     <div class="g-player">
       <span class="g-av" id="tf-av">😊</span>
       <span class="g-nm" id="tf-nm">Player</span>
@@ -3727,6 +3727,19 @@ html[data-theme="warmth"] .divider::before, html[data-theme="warmth"] .divider::
     <div class="mtitle">Settings</div>
     <div id="settings-list" style="display:flex;flex-direction:column;gap:7px;margin-bottom:16px;"></div>
     <button class="btn btn-ghost btn-sm" onclick="closeOv('ov-settings')">Done</button>
+  </div>
+</div>
+
+<!-- ── MODAL: Quit game ── -->
+<div class="ov" id="ov-quit" onclick="bgClose(event,'ov-quit')">
+  <div class="mbox">
+    <div class="mhandle"></div>
+    <div class="mtitle">Quit Game?</div>
+    <div style="font-size:13px;color:var(--ink2);line-height:1.6;margin-bottom:14px;">Your current match progress will be lost.</div>
+    <div style="display:flex;gap:8px;">
+      <button class="btn btn-ghost btn-sm" style="flex:1;" onclick="closeOv('ov-quit')">Cancel</button>
+      <button class="btn btn-gold btn-sm" style="flex:1;" onclick="quitGame()">Quit</button>
+    </div>
   </div>
 </div>
 
@@ -40926,16 +40939,19 @@ function haptic(type){
 /* ══════════════════════════════════════════════════
    QUIT GAME
 ══════════════════════════════════════════════════ */
+function requestQuitGame(){
+  sfx.tap();
+  openOv('ov-quit');
+}
 function quitGame(){
+  closeOv('ov-quit');
   stopTimers();
-  if(confirm('Quit this game?')){
-    clearTimeout(G._rematchPruneTimer); G._rematchPruneTimer=null;
-    if(G._votesRef){G._votesRef.off();G._votesRef=null;}
-    if(G._resultTimeout){clearTimeout(G._resultTimeout);G._resultTimeout=null;}
-    if(G.roomRef){G.roomRef.child('gameState').off();G.roomRef.off();G.roomRef=null;}
-    G.onlineGame=false;G.roomPool=null;G.roomOrders=null;G._lastOnlineState=null;G._onlineQKey=null;
-    go('home');
-  }
+  clearTimeout(G._rematchPruneTimer); G._rematchPruneTimer=null;
+  if(G._votesRef){G._votesRef.off();G._votesRef=null;}
+  if(G._resultTimeout){clearTimeout(G._resultTimeout);G._resultTimeout=null;}
+  if(G.roomRef){G.roomRef.child('gameState').off();G.roomRef.off();G.roomRef=null;}
+  G.onlineGame=false;G.roomPool=null;G.roomOrders=null;G._lastOnlineState=null;G._onlineQKey=null;
+  go('home');
 }
 
 /* ══════════════════════════════════════════════════
