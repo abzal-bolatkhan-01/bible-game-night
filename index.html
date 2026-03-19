@@ -42181,7 +42181,7 @@ function saveMatchResult(winner, players){
   } catch(e) {}
 }
 
-function renderMatchHistory(){
+function renderMatchHistory(expanded){
   const el = document.getElementById('match-history-list');
   if(!el) return;
   try {
@@ -42190,7 +42190,9 @@ function renderMatchHistory(){
       el.innerHTML = '<div class="empty" style="padding:10px 0;">No matches played yet.</div>';
       return;
     }
-    el.innerHTML = history.map(m => `
+    const shown = expanded ? history : history.slice(0, 3);
+    const hasMore = history.length > 3;
+    el.innerHTML = shown.map(m => `
       <div class="card-sm" style="margin-bottom:8px; display:flex; align-items:center; gap:10px;">
         <span style="font-size:20px;display:flex;align-items:center;">${avatarMarkup(m.winner.avatar||'😊',m.winner.photo||'','md')}</span>
         <div style="flex:1;">
@@ -42201,7 +42203,7 @@ function renderMatchHistory(){
           ${m.scores.length} players
         </div>
       </div>
-    `).join('');
+    `).join('') + (hasMore ? `<button class="btn btn-ghost btn-sm" style="width:100%;margin-top:2px;" onclick="renderMatchHistory(${!expanded})">${expanded?'▲ Show less':'▼ Show all '+history.length+' matches'}</button>` : '');
   } catch(e) { el.innerHTML = ''; }
 }
 
@@ -43805,6 +43807,27 @@ function checkAchs(){
     }
   });
 }
+function renderAchs(expanded){
+  const ae=document.getElementById('prof-achs');
+  if(!ae||!G.profile) return;
+  const p=G.profile;
+  ae.innerHTML='';
+  const shown=expanded?ACHS:ACHS.slice(0,3);
+  shown.forEach(a=>{
+    const ok=a.chk(p);
+    const d=document.createElement('div'); d.className='ach '+(ok?'unlocked':'locked');
+    d.innerHTML=`<span class="ach-ico">${a.icon}</span><div style="flex:1;"><div class="ach-nm">${a.t}</div><div class="ach-ds">${a.d}</div></div>${ok?'<span style="color:var(--gold1);font-size:16px;">✓</span>':''}`;
+    ae.appendChild(d);
+  });
+  if(ACHS.length>3){
+    const btn=document.createElement('button');
+    btn.className='btn btn-ghost btn-sm';
+    btn.style.cssText='width:100%;margin-top:2px;';
+    btn.textContent=expanded?'▲ Show less':'▼ Show all '+ACHS.length+' achievements';
+    btn.onclick=()=>renderAchs(!expanded);
+    ae.appendChild(btn);
+  }
+}
 function renderProfile(){
   if(!G.profile){ go('auth'); buildAvGrid(); return; }
   const p=G.profile, l=lvl(p.xp||0);
@@ -43842,13 +43865,7 @@ function renderProfile(){
   const churchCta = document.getElementById('church-tools-cta');
   if(churchCta) churchCta.style.display = (p.tier === 'church') ? 'block' : 'none';
 
-  const ae=document.getElementById('prof-achs'); ae.innerHTML='';
-  ACHS.forEach(a=>{
-    const ok=a.chk(p);
-    const d=document.createElement('div'); d.className='ach '+(ok?'unlocked':'locked');
-    d.innerHTML=`<span class="ach-ico">${a.icon}</span><div style="flex:1;"><div class="ach-nm">${a.t}</div><div class="ach-ds">${a.d}</div></div>${ok?'<span style="color:var(--gold1);font-size:16px;">✓</span>':''}`;
-    ae.appendChild(d);
-  });
+  renderAchs(false);
   buildSettingsList();
   updateProfileSigninCard();
 }
