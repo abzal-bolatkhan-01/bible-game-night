@@ -41026,7 +41026,7 @@ function onPlay(){
    PLAYER SETUP
 ══════════════════════════════════════════════════ */
 let setupPs=[];
-function buildSetup(){
+function buildSetup(seedPlayers){
   _setupAction='local';
   document.getElementById('setup-eyebrow').textContent='Get Ready';
   document.getElementById('setup-title').innerHTML='Add <em>Players</em>';
@@ -41035,10 +41035,23 @@ function buildSetup(){
   document.getElementById('add-p-btn').style.display='flex';
   document.getElementById('setup-room-mode-wrap').style.display='none';
   document.getElementById('setup-go-btn').innerHTML='<span class="btn-icon">🕯️</span> Let\'s Play!';
-  setupPs=[
-    {name:G.profile.name,avatar:G.profile.avatar},
-    {name:'Player 2',avatar:AVATARS[1]||'🙂'}
-  ];
+  const seeded=Array.isArray(seedPlayers)
+    ? seedPlayers
+        .map(p=>({name:(p&&p.name)||'',avatar:(p&&p.avatar)||''}))
+        .filter(p=>p.name||p.avatar)
+        .slice(0,6)
+    : [];
+  if(seeded.length>=2){
+    setupPs=seeded.map((p,i)=>({
+      name:(p.name||`Player ${i+1}`).trim()||`Player ${i+1}`,
+      avatar:p.avatar||AVATARS[i%AVATARS.length]||'🙂'
+    }));
+  }else{
+    setupPs=[
+      {name:G.profile.name,avatar:G.profile.avatar},
+      {name:'Player 2',avatar:AVATARS[1]||'🙂'}
+    ];
+  }
   renderSetup(); renderOpts();
 }
 function buildModeSetup(kind,fromHomeSelection){
@@ -42099,7 +42112,7 @@ function playAgain(){
   }
   if(G.mode==='local'){
     go('setup');
-    buildSetup();
+    buildSetup(G.players);
     return;
   }
   go('home');
