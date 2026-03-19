@@ -42118,20 +42118,23 @@ function leaveCurrentRoom(){
   const uid=G.uid;
   const wasHost=!!G.isHost;
   clearTimeout(G._rematchPruneTimer); G._rematchPruneTimer=null;
-  Promise.resolve(ref.child('players/'+uid).remove()).then(()=>ref.once('value')).then(sn=>{
+  Promise.resolve(ref.child('players/'+uid).remove()).then(()=>{
+    if(wasHost) return ref.remove();
+    return ref.once('value').then(sn=>{
     const d=sn.val()||{};
     const ps=d.players||{};
     const uids=Object.keys(ps);
     if(!uids.length){
       return ref.remove();
     }
-    if(wasHost&&d.host===uid){
-      return ref.update({host:uids[0],status:'waiting'});
-    }
+    });
   }).catch(()=>{}).finally(()=>{
     try{ ref.off(); ref.child('gameState').off(); }catch(e){}
     G.roomRef=null; G.roomId=null; G.isHost=false; G.meReady=false; G.onlineGame=false;
     G._awaitingRematchStart=false;
+    const panel=document.getElementById('lobby-panel'); if(panel) panel.style.display='none';
+    const rc=document.getElementById('rc-disp'); if(rc) rc.textContent='------';
+    const list=document.getElementById('lobby-list'); if(list) list.innerHTML='';
     go('home');
     toast('Left room '+roomId+'.');
   });
