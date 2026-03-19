@@ -3380,9 +3380,9 @@ html[data-theme="warmth"] .divider::before, html[data-theme="warmth"] .divider::
     <div id="w-verse" style="background:rgba(201,145,13,.06);border:1px solid rgba(201,145,13,.18);border-radius:var(--r2);padding:16px 18px;margin-bottom:14px;font-style:italic;font-family:'Cormorant Garamond',serif;font-size:16px;line-height:1.8;text-align:center;color:var(--ink2);"></div>
     <div id="w-others" style="display:flex;gap:6px;flex-wrap:wrap;justify-content:center;margin-bottom:16px;"></div>
     <button class="btn btn-gold" onclick="playAgain()" style="margin-bottom:8px;">🔄 Play Again</button>
-    <button class="btn btn-share btn-sm" onclick="shareResult()" style="margin-bottom:8px;">↗ Share Result</button>
-    <button class="btn btn-ghost btn-sm" style="margin-bottom:8px;" onclick="go('home')">Home</button>
-    <button class="btn btn-ghost btn-sm" onclick="go('donation')">❤️ Support This Ministry</button>
+    <button class="btn btn-share btn-sm" onclick="postMatchShareResult()" style="margin-bottom:8px;">↗ Share Result</button>
+    <button class="btn btn-ghost btn-sm" style="margin-bottom:8px;" onclick="postMatchGoHome()">Home</button>
+    <button class="btn btn-ghost btn-sm" onclick="postMatchGoDonation()">❤️ Support This Ministry</button>
     <div class="pb"></div>
   </div>
 </div>
@@ -42106,10 +42106,14 @@ function renderLobby(){
   if(!G.profile){ go('auth'); buildAvGrid(); return; }
   fbDot(G.fbOk);
 }
-function leaveCurrentRoom(){
+function leaveCurrentRoom(opts){
+  const goHomeAfter=!(opts&&opts.goHome===false);
+  const quiet=!!(opts&&opts.quiet);
+  const after=opts&&typeof opts.after==='function'?opts.after:null;
   if(!G.roomRef||!G.roomId){
     G.onlineGame=false;
-    go('home');
+    if(goHomeAfter) go('home');
+    if(after) after();
     return;
   }
   sfx.tap();
@@ -42135,9 +42139,31 @@ function leaveCurrentRoom(){
     const panel=document.getElementById('lobby-panel'); if(panel) panel.style.display='none';
     const rc=document.getElementById('rc-disp'); if(rc) rc.textContent='------';
     const list=document.getElementById('lobby-list'); if(list) list.innerHTML='';
-    go('home');
-    toast('Left room '+roomId+'.');
+    if(goHomeAfter) go('home');
+    if(!quiet) toast('Left room '+roomId+'.');
+    if(after) after();
   });
+}
+function postMatchShareResult(){
+  if((G.mode==='online'||G.mode==='nearby'||G.onlineGame) && G.roomRef && G.roomId){
+    leaveCurrentRoom({goHome:false,quiet:true,after:()=>shareResult()});
+    return;
+  }
+  shareResult();
+}
+function postMatchGoHome(){
+  if((G.mode==='online'||G.mode==='nearby'||G.onlineGame) && G.roomRef && G.roomId){
+    leaveCurrentRoom({goHome:true,quiet:true});
+    return;
+  }
+  go('home');
+}
+function postMatchGoDonation(){
+  if((G.mode==='online'||G.mode==='nearby'||G.onlineGame) && G.roomRef && G.roomId){
+    leaveCurrentRoom({goHome:false,quiet:true,after:()=>go('donation')});
+    return;
+  }
+  go('donation');
 }
 function pruneRematchNonResponders(){
   if(!G.roomRef||!G.roomId) return;
