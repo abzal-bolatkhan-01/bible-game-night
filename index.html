@@ -40768,8 +40768,12 @@ function addXP(n){
     setTimeout(()=>{ sfx.levelUp(); toast('🎉 Level Up! '+l.name+' · Lv '+l.lv); },1500);
   }
 }
+function isXpDisabledMode(mode){
+  return mode==='practice'||mode==='local';
+}
 function canAwardAnswerXP(playerName){
   if(!G.profile || !playerName) return false;
+  if(isXpDisabledMode(G.mode)) return false;
   if(G.onlineGame) return playerName===G.profile.name;
   return true;
 }
@@ -40779,7 +40783,6 @@ function xpMultForStreak(streak){
   return 1;
 }
 function awardAnswerXPForPlayer(playerName,anchorEl){
-  if(G.mode==='practice') return;
   if(!canAwardAnswerXP(playerName)) return;
   const streak=G.streaks[playerName]||0;
   const base=10;
@@ -41958,7 +41961,7 @@ function endGame(){
 
   if(G.profile){
     G.profile.played=(G.profile.played||0)+1;
-    const xpAllowed=G.mode!=='practice';
+    const xpAllowed=!isXpDisabledMode(G.mode);
     const startCorrect=G._correctAtGameStart||0;
     const gainedCorrect=Math.max(0,(G.profile.correct||0)-startCorrect);
     const hasAnyCorrect=gainedCorrect>0;
@@ -41989,8 +41992,8 @@ function endGame(){
     }
 
     saveProfile(); if(G.fbOk)pushProfile();
-    if(G.mode==='practice'){
-      document.getElementById('w-xp-txt').textContent='✦ Practice mode · XP disabled';
+    if(isXpDisabledMode(G.mode)){
+      document.getElementById('w-xp-txt').textContent='✦ XP disabled for this mode';
     }else{
       const startXp=G._xpAtGameStart||0;
       const gained=Math.max(0,(G.profile.xp||0)-startXp);
@@ -42015,7 +42018,7 @@ function endGame(){
     wPts.textContent=(G.sub==='team' ? G.teamScores[win.name] : G.scores[win.name])+' points';
   }
   if(!G.profile){
-    if(G.mode==='practice') wXp.textContent='✦ Practice mode · XP disabled';
+    if(isXpDisabledMode(G.mode)) wXp.textContent='✦ XP disabled for this mode';
     else wXp.textContent='✦ +0 XP earned';
   }
   document.getElementById('w-verse').innerHTML=`"${v.t}"<br><span style="font-family:'Cinzel',serif;font-size:10px;letter-spacing:.2em;color:var(--gold);display:block;margin-top:8px;">— ${v.r}</span>`;
