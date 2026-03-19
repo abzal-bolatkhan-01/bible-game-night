@@ -43847,28 +43847,52 @@ function drawRoundRect(ctx,x,y,w,h,r){
   ctx.closePath();
 }
 function drawStoreBadge(ctx,x,y,w,h,platform){
-  ctx.fillStyle='rgba(0,0,0,0.45)';
+  ctx.fillStyle='rgba(0,0,0,0.52)';
   drawRoundRect(ctx,x,y,w,h,18);
   ctx.fill();
-  ctx.strokeStyle='rgba(255,255,255,0.22)';
-  ctx.lineWidth=2;
-  drawRoundRect(ctx,x,y,w,h,18);
-  ctx.stroke();
   ctx.fillStyle='rgba(246,239,228,0.95)';
   if(platform==='apple'){
-    ctx.font="800 26px 'Nunito', sans-serif";
-    ctx.fillText('',x+18,y+38);
-    ctx.font="600 14px 'Nunito', sans-serif";
-    ctx.fillText('Download on the',x+52,y+25);
-    ctx.font="800 22px 'Nunito', sans-serif";
-    ctx.fillText('App Store',x+52,y+46);
+    ctx.font="800 40px 'Nunito', sans-serif";
+    ctx.fillText('',x+20,y+55);
+    ctx.font="600 16px 'Nunito', sans-serif";
+    ctx.fillText('Download on the',x+70,y+31);
+    ctx.font="800 30px 'Nunito', sans-serif";
+    ctx.fillText('App Store',x+70,y+63);
   } else {
-    ctx.font="800 21px 'Nunito', sans-serif";
-    ctx.fillText('▶',x+18,y+38);
-    ctx.font="600 14px 'Nunito', sans-serif";
-    ctx.fillText('GET IT ON',x+52,y+24);
-    ctx.font="800 22px 'Nunito', sans-serif";
-    ctx.fillText('Google Play',x+52,y+46);
+    const px=x+20, py=y+16, iw=44, ih=50;
+    ctx.beginPath();
+    ctx.moveTo(px,py);
+    ctx.lineTo(px+iw,py+ih/2);
+    ctx.lineTo(px,py+ih);
+    ctx.closePath();
+    ctx.fillStyle='#34A853';
+    ctx.fill();
+    ctx.beginPath();
+    ctx.moveTo(px,py);
+    ctx.lineTo(px+iw*0.58,py+ih*0.33);
+    ctx.lineTo(px+iw*0.32,py+ih*0.5);
+    ctx.closePath();
+    ctx.fillStyle='#4285F4';
+    ctx.fill();
+    ctx.beginPath();
+    ctx.moveTo(px+iw*0.32,py+ih*0.5);
+    ctx.lineTo(px+iw*0.58,py+ih*0.67);
+    ctx.lineTo(px,py+ih);
+    ctx.closePath();
+    ctx.fillStyle='#EA4335';
+    ctx.fill();
+    ctx.beginPath();
+    ctx.moveTo(px+iw*0.58,py+ih*0.33);
+    ctx.lineTo(px+iw,py+ih/2);
+    ctx.lineTo(px+iw*0.58,py+ih*0.67);
+    ctx.closePath();
+    ctx.fillStyle='#FBBC05';
+    ctx.fill();
+    ctx.fillStyle='rgba(246,239,228,0.95)';
+    ctx.font="700 16px 'Nunito', sans-serif";
+    ctx.fillText('GET IT ON',x+78,y+31);
+    ctx.font="800 30px 'Nunito', sans-serif";
+    ctx.fillText('Google Play',x+78,y+63);
   }
 }
 function canvasToBlob(canvas,type='image/png',quality=0.95){
@@ -43998,8 +44022,8 @@ async function shareProfileProgress(){
   const dateStr=new Date().toLocaleDateString();
   ctx.font="600 20px 'Nunito', sans-serif";
   ctx.fillStyle='rgba(246,239,228,0.72)';
-  drawStoreBadge(ctx,110,1628,400,62,'apple');
-  drawStoreBadge(ctx,540,1628,430,62,'google');
+  drawStoreBadge(ctx,110,1606,410,84,'apple');
+  drawStoreBadge(ctx,530,1606,440,84,'google');
   ctx.fillText(`Generated ${dateStr}`,110,1760);
   ctx.fillText('Lamp - Bible Trivia Online',110,1794);
 
