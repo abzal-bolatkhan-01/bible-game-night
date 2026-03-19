@@ -2535,6 +2535,26 @@ html[data-theme="warmth"] .setup-av-btn { background: #FDF9F4; border-color: #D8
 .theme-swatch[data-t="dark"] { background: #1A1A20; color: #EDEDEC; }
 .theme-swatch[data-t="green"] { background: #EFF3ED; color: #2C3328; }
 .theme-swatch[data-t="warmth"] { background: #FAF4ED; color: #3D2E22; }
+.theme-swatch[data-t="personal"] {
+  background: linear-gradient(135deg, #2A3048, #1A1A20);
+  color: #EDEDEC;
+}
+.personal-theme-tools {
+  display: flex;
+  gap: 8px;
+  margin-top: 10px;
+}
+.personal-theme-tools .btn {
+  flex: 1;
+}
+.personal-theme-hint {
+  font-size: 11px;
+  color: var(--ink3);
+  margin-top: 6px;
+}
+html.personal-theme #ai-bg {
+  display: block !important;
+}
 .trans-btn {
   border: 2px solid var(--inp-border,#e0e0e0); border-radius: 10px; padding: 9px 6px;
   text-align: center; cursor: pointer; font-family: 'Nunito',sans-serif;
@@ -43365,9 +43385,16 @@ function buildSettingsList(){
   const thDiv=document.createElement('div');
   thDiv.innerHTML=`<div class="settings-section-title">App Theme</div>
   <div class="theme-grid">
-    ${[{t:'light',l:'☀️ Light'},{t:'dark',l:'🌙 Dark'},{t:'green',l:'🌿 Green'},{t:'warmth',l:'🏺 Warmth'}].map(th=>`
+    ${[{t:'light',l:'☀️ Light'},{t:'dark',l:'🌙 Dark'},{t:'green',l:'🌿 Green'},{t:'warmth',l:'🏺 Warmth'},{t:'personal',l:'🖼️ Personal'}].map(th=>`
     <div class="theme-swatch ${curTheme===th.t?'active':''}" data-t="${th.t}" onclick="applyTheme('${th.t}')">${th.l}</div>`).join('')}
-  </div>`;
+  </div>
+  ${curTheme==='personal' ? `
+  <div class="personal-theme-tools">
+    <button class="btn btn-ghost btn-sm" onclick="uploadPersonalThemePhoto()">Upload Photo</button>
+    <button class="btn btn-ghost btn-sm" onclick="clearPersonalThemePhoto()">Reset</button>
+  </div>
+  <div class="personal-theme-hint">Tip: landscape and portrait both work. Colors adapt automatically.</div>
+  ` : ''}`;
   el.appendChild(thDiv);
 
   // Translation picker removed - no translations implemented
@@ -44997,14 +45024,209 @@ function sendMessage(){
    THEMES
 ══════════════════════════════════════════════════ */
 function applyTheme(t){
-  document.documentElement.setAttribute('data-theme',t==='light'?'':t);
+  if(t==='personal'){
+    document.documentElement.setAttribute('data-theme','dark');
+    document.documentElement.classList.add('personal-theme');
+    applyPersonalThemeVisuals();
+  }else{
+    document.documentElement.setAttribute('data-theme',t==='light'?'':t);
+    document.documentElement.classList.remove('personal-theme');
+    clearPersonalThemeVisuals();
+  }
   if(G.profile){ G.profile.theme=t; saveProfile(); }
   // Update swatches active state
   document.querySelectorAll('.theme-swatch').forEach(s=>s.classList.toggle('active',s.dataset.t===t));
+  if(document.getElementById('s-profile')?.classList.contains('active')) buildSettingsList();
 }
 function initTheme(){
   const t=(G.profile&&G.profile.theme)||'light';
   applyTheme(t);
+}
+
+function getPersonalThemeInput(){
+  let inp=document.getElementById('personal-theme-file');
+  if(inp) return inp;
+  inp=document.createElement('input');
+  inp.id='personal-theme-file';
+  inp.type='file';
+  inp.accept='image/*';
+  inp.style.display='none';
+  inp.addEventListener('change',onPersonalThemePicked);
+  document.body.appendChild(inp);
+  return inp;
+}
+function uploadPersonalThemePhoto(){
+  const inp=getPersonalThemeInput();
+  inp.value='';
+  inp.click();
+}
+function onPersonalThemePicked(e){
+  const file=e&&e.target&&e.target.files&&e.target.files[0];
+  if(!file) return;
+  if(!file.type||!file.type.startsWith('image/')){
+    toast('Please choose an image file');
+    return;
+  }
+  const rd=new FileReader();
+  rd.onload=()=>{
+    const img=new Image();
+    img.onload=()=>{
+      const maxSide=900;
+      const scale=Math.min(1,maxSide/Math.max(img.width,img.height));
+      const w=Math.max(1,Math.round(img.width*scale));
+      const h=Math.max(1,Math.round(img.height*scale));
+      const cnv=document.createElement('canvas');
+      cnv.width=w; cnv.height=h;
+      const ctx=cnv.getContext('2d',{willReadFrequently:true});
+      if(!ctx){ toast('Could not process image'); return; }
+      ctx.drawImage(img,0,0,w,h);
+      const dataUrl=cnv.toDataURL('image/jpeg',0.82);
+      const palette=deriveThemePaletteFromCanvas(cnv);
+      if(!G.profile) return;
+      G.profile.personalThemeImage=dataUrl;
+      G.profile.personalThemePalette=palette;
+      G.profile.theme='personal';
+      saveProfile();
+      applyTheme('personal');
+      toast('Personal theme updated');
+    };
+    img.onerror=()=>toast('Could not read this image');
+    img.src=String(rd.result||'');
+  };
+  rd.onerror=()=>toast('Unable to load image');
+  rd.readAsDataURL(file);
+}
+function clearPersonalThemePhoto(){
+  if(!G.profile) return;
+  delete G.profile.personalThemeImage;
+  delete G.profile.personalThemePalette;
+  saveProfile();
+  if(G.profile.theme==='personal') applyTheme('dark');
+  toast('Personal theme reset');
+}
+function deriveThemePaletteFromCanvas(cnv){
+  const s=36;
+  const sample=document.createElement('canvas');
+  sample.width=s; sample.height=s;
+  const c=sample.getContext('2d',{willReadFrequently:true});
+  c.drawImage(cnv,0,0,s,s);
+  const dt=c.getImageData(0,0,s,s).data;
+  let best={score:-1,r:212,g:165,b:116};
+  for(let i=0;i<dt.length;i+=4){
+    const r=dt[i], g=dt[i+1], b=dt[i+2], a=dt[i+3];
+    if(a<180) continue;
+    const hsl=rgbToHsl(r,g,b);
+    if(hsl.l<0.12||hsl.l>0.88) continue;
+    const satBoost=hsl.s*0.9;
+    const midBoost=1-Math.min(1,Math.abs(hsl.l-0.5)*2);
+    const score=satBoost+midBoost*0.6;
+    if(score>best.score) best={score,r,g,b};
+  }
+  const base=normalizeAccentColor(best.r,best.g,best.b);
+  const light=lighten(base,0.18);
+  const soft=lighten(base,0.24);
+  const deep=darken(base,0.42);
+  return {
+    gold:toHex(base.r,base.g,base.b),
+    gold1:toHex(light.r,light.g,light.b),
+    blue1:toHex(soft.r,soft.g,soft.b),
+    bg2:toHex(deep.r,deep.g,deep.b)
+  };
+}
+function applyPersonalThemeVisuals(){
+  const root=document.documentElement;
+  const p=(G.profile&&G.profile.personalThemePalette)||{};
+  root.style.setProperty('--gold',p.gold||'#D4A574');
+  root.style.setProperty('--gold1',p.gold1||'#E4C08F');
+  root.style.setProperty('--blue1',p.blue1||'#83AEDD');
+  root.style.setProperty('--bg','#0E121A');
+  root.style.setProperty('--bg1','#151B26');
+  root.style.setProperty('--bg2',p.bg2||'#202838');
+  root.style.setProperty('--bg3','#262E3F');
+  root.style.setProperty('--line','rgba(255,255,255,.12)');
+  root.style.setProperty('--ink','#F5F7FB');
+  root.style.setProperty('--ink2','rgba(245,247,251,.78)');
+  root.style.setProperty('--ink3','rgba(245,247,251,.52)');
+  root.style.setProperty('--heart','#ff5c5c');
+  const meta=document.querySelector('meta[name="theme-color"]');
+  if(meta) meta.setAttribute('content',p.gold||'#D4A574');
+  const bg=document.getElementById('ai-bg');
+  if(!bg) return;
+  const img=(G.profile&&G.profile.personalThemeImage)||'';
+  if(img){
+    bg.style.background=`linear-gradient(180deg, rgba(7,10,16,.84) 0%, rgba(7,10,16,.74) 40%, rgba(7,10,16,.9) 100%), url(${img}) center top / cover no-repeat`;
+    bg.classList.add('loaded');
+  }else{
+    loadAIBackground();
+  }
+}
+function clearPersonalThemeVisuals(){
+  const root=document.documentElement;
+  ['--gold','--gold1','--blue1','--bg','--bg1','--bg2','--bg3','--line','--ink','--ink2','--ink3','--heart'].forEach(v=>root.style.removeProperty(v));
+  const meta=document.querySelector('meta[name="theme-color"]');
+  if(meta) meta.setAttribute('content','#58CC02');
+  const bg=document.getElementById('ai-bg');
+  if(!bg) return;
+  bg.classList.remove('loaded');
+  bg.style.background='';
+}
+function rgbToHsl(r,g,b){
+  const rn=r/255, gn=g/255, bn=b/255;
+  const max=Math.max(rn,gn,bn), min=Math.min(rn,gn,bn);
+  let h=0, s=0;
+  const l=(max+min)/2;
+  if(max!==min){
+    const d=max-min;
+    s=l>0.5?d/(2-max-min):d/(max+min);
+    switch(max){
+      case rn: h=(gn-bn)/d+(gn<bn?6:0); break;
+      case gn: h=(bn-rn)/d+2; break;
+      default: h=(rn-gn)/d+4; break;
+    }
+    h/=6;
+  }
+  return {h,s,l};
+}
+function hslToRgb(h,s,l){
+  if(s===0){
+    const g=Math.round(l*255);
+    return {r:g,g:g,b:g};
+  }
+  const hue2rgb=(p,q,t)=>{
+    if(t<0) t+=1;
+    if(t>1) t-=1;
+    if(t<1/6) return p+(q-p)*6*t;
+    if(t<1/2) return q;
+    if(t<2/3) return p+(q-p)*(2/3-t)*6;
+    return p;
+  };
+  const q=l<0.5?l*(1+s):l+s-l*s;
+  const p=2*l-q;
+  return {
+    r:Math.round(hue2rgb(p,q,h+1/3)*255),
+    g:Math.round(hue2rgb(p,q,h)*255),
+    b:Math.round(hue2rgb(p,q,h-1/3)*255)
+  };
+}
+function normalizeAccentColor(r,g,b){
+  const hsl=rgbToHsl(r,g,b);
+  const ns=Math.max(0.36,Math.min(0.82,hsl.s));
+  const nl=Math.max(0.43,Math.min(0.62,hsl.l));
+  return hslToRgb(hsl.h,ns,nl);
+}
+function lighten(rgb,amt){
+  const hsl=rgbToHsl(rgb.r,rgb.g,rgb.b);
+  const l=Math.max(0,Math.min(1,hsl.l+amt));
+  return hslToRgb(hsl.h,hsl.s,l);
+}
+function darken(rgb,amt){
+  const hsl=rgbToHsl(rgb.r,rgb.g,rgb.b);
+  const l=Math.max(0,Math.min(1,hsl.l-amt));
+  return hslToRgb(hsl.h,hsl.s,l);
+}
+function toHex(r,g,b){
+  const h=(n)=>Math.max(0,Math.min(255,n)).toString(16).padStart(2,'0');
+  return '#'+h(r)+h(g)+h(b);
 }
 
 /* ══════════════════════════════════════════════════
