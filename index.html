@@ -40575,39 +40575,33 @@ function setAuthRedirectPending(v){
 function getAuthRedirectPending(){
   try{ return sessionStorage.getItem('auth_redirect_pending')||''; }catch(e){ return ''; }
 }
-function signInWithGoogle(){
+function startGoogleRedirectSignIn(){
   if(!G.auth){ toast('Firebase not configured'); return; }
   const provider=new firebase.auth.GoogleAuthProvider();
   provider.setCustomParameters({ prompt:'select_account' });
   const cu=G.auth.currentUser;
 
-  const handleLink=(res)=>{
-    toast('Account linked! Your progress is saved.');
-    updateProfileSigninCard();
+  const startRedirect=(pendingKey, action)=>{
+    setAuthRedirectPending(pendingKey);
+    toast('Opening Google sign-in...');
+    action().catch(e=>{
+      setAuthRedirectPending('');
+      handleAuthError(e,'Google sign-in failed');
+      });
   };
 
+  // Keep guest progress by linking anonymous account when possible.
+  // Use redirect consistently to avoid popup completion issues on mobile/in-app browsers.
   if(cu && cu.isAnonymous){
-    cu.linkWithPopup(provider)
-      .then(handleLink)
-      .catch(e=>{
-        if(e.code==='auth/credential-already-in-use' || e.code==='auth/email-already-in-use'){
-          // Already has an account, just sign in
-          G.auth.signInWithPopup(provider)
-            .then(()=>toast('Signed in with Google!'))
-            .catch(err=>handleAuthError(err,'Google sign-in failed'));
-          return;
-        }
-        handleAuthError(e,'Google link failed');
-      });
+    if(typeof cu.linkWithRedirect==='function'){
+      startRedirect('google-link', ()=>cu.linkWithRedirect(provider));
+      return;
+    }
+    startRedirect('google', ()=>G.auth.signInWithRedirect(provider));
     return;
   }
 
-  G.auth.signInWithPopup(provider)
-    .then(res=>{
-      toast('Signed in with Google!');
-      updateProfileSigninCard();
-    })
-    .catch(e=>handleAuthError(e,'Google sign-in failed'));
+  startRedirect('google', ()=>G.auth.signInWithRedirect(provider));
 }
 
 /* ══════════════════════════════════════════════════
@@ -40652,6 +40646,42 @@ function initFB(){
         if(G._loggingOut){ G._loggingOut=false; return; }
         if(getAuthRedirectPending()) return;
         // Fall back to anonymous if no social session
+        G.auth.signInAnonymously()
+          .then(c=>{ G.uid=c.user.uid; G.fbOk=true; fbDot(true); if(G.profile)pushProfile(); listenForChallenges(); cleanExpiredChallenges(); listenFriendRequests(); listenFriendLinks(); })
+          .catch(()=>fbDot(false));
+      }
+    });
+    G.auth.getRedirectResult().then(result=>{
+      const pending=getAuthRedirectPending();
+      if(pending) setAuthRedirectPending('');
+      if(result&&result.user){
+        updateProfileSigninCard();
+        if(pending==='google-link'){
+          toast('Account linked! Your progress is saved.');
+        } else if(result.additionalUserInfo && result.additionalUserInfo.providerId==='google.com'){
+          toast('Signed in with Google!');
+        } else {
+          toast('Signed in!');
+        }
+      } else if((pending==='google'||pending==='google-link') && G.auth.currentUser && G.auth.currentUser.isAnonymous){
+        toast('Google sign-in did not complete. Please try again.');
+      } else if(!G.auth.currentUser){
+        G.auth.signInAnonymously()
+          .then(c=>{ G.uid=c.user.uid; G.fbOk=true; fbDot(true); if(G.profile)pushProfile(); listenForChallenges(); cleanExpiredChallenges(); listenFriendRequests(); listenFriendLinks(); })
+          .catch(()=>fbDot(false));
+      }
+    }).catch(e=>{
+      const pending=getAuthRedirectPending();
+      if(pending) setAuthRedirectPending('');
+      if(pending==='google-link' && (e.code==='auth/credential-already-in-use' || e.code==='auth/email-already-in-use')){
+        const provider=new firebase.auth.GoogleAuthProvider();
+        provider.setCustomParameters({ prompt:'select_account' });
+        setAuthRedirectPending('google');
+        G.auth.signInWithRedirect(provider).catch(err=>handleAuthError(err,'Google sign-in failed'));
+        return;
+      }
+      handleAuthError(e,'Sign-in failed');
+      if(!G.auth.currentUser){
         G.auth.signInAnonymously()
           .then(c=>{ G.uid=c.user.uid; G.fbOk=true; fbDot(true); if(G.profile)pushProfile(); listenForChallenges(); cleanExpiredChallenges(); listenFriendRequests(); listenFriendLinks(); })
           .catch(()=>fbDot(false));
@@ -43620,6 +43650,9 @@ function showAuthMethodDisabledModal(){
 /* ══════════════════════════════════════════════════
    SOCIAL AUTH
 ══════════════════════════════════════════════════ */
+function signInWithGoogle(){
+  startGoogleRedirectSignIn();
+}
 function signInWithApple(){
   if(!G.auth){ toast('Firebase not configured'); return; }
   const provider=new firebase.auth.OAuthProvider('apple.com');
@@ -43660,7 +43693,7 @@ function profileSignIn(method){
   if(method==='email'){ toast('Email sign-in is disabled.'); return; }
   if(!G.auth){ toast('Firebase not configured'); return; }
   if(method==='google'){
-    signInWithGoogle();
+    startGoogleRedirectSignIn();
     return;
   }
   let provider;
