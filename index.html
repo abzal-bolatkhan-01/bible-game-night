@@ -3736,19 +3736,6 @@ html[data-theme="warmth"] .divider::before, html[data-theme="warmth"] .divider::
   </div>
 </div>
 
-<!-- ── MODAL: Story Share ── -->
-<div class="ov" id="ov-story-share" onclick="bgClose(event,'ov-story-share')">
-  <div class="mbox">
-    <div class="mhandle"></div>
-    <div class="mtitle">Share To Story</div>
-    <div style="font-size:12px;color:var(--ink3);line-height:1.6;margin-bottom:12px;">Choose where to post. Your phone share sheet will open with your installed apps/accounts.</div>
-    <button class="btn btn-share btn-sm" style="margin-bottom:8px;" onclick="quickShareInstagramStory()">📸 Instagram Story</button>
-    <button class="btn btn-share btn-sm" style="margin-bottom:8px;" onclick="quickShareFacebookStory()">📘 Facebook Story</button>
-    <button class="btn btn-gold btn-sm" style="margin-bottom:8px;" onclick="quickShareMoreApps()">↗ More Apps</button>
-    <button class="btn btn-ghost btn-sm" onclick="closeStoryShareModal()">Cancel</button>
-  </div>
-</div>
-
 <!-- ── MODAL: Quit game ── -->
 <div class="ov" id="ov-quit" onclick="bgClose(event,'ov-quit')">
   <div class="mbox">
@@ -43866,63 +43853,25 @@ function canvasToBlob(canvas,type='image/png',quality=0.95){
     }catch(e){ reject(e); }
   });
 }
-let _storyShareBlob=null;
-let _storyShareCaption='';
-let _storyShareFileName='';
-let _storyShareObjectUrl='';
-function isMobileDevice(){
-  return /Android|iPhone|iPad|iPod/i.test(navigator.userAgent||'');
-}
-function closeStoryShareModal(){
-  closeOv('ov-story-share');
-  if(_storyShareObjectUrl){
-    try{ URL.revokeObjectURL(_storyShareObjectUrl); }catch(e){}
-    _storyShareObjectUrl='';
-  }
-}
-async function ensureStoryCaptionCopied(){
-  try{ if(navigator.clipboard&&_storyShareCaption) await navigator.clipboard.writeText(_storyShareCaption); }catch(e){}
-}
-function downloadStoryImageLocal(){
-  if(!_storyShareBlob) return;
-  if(_storyShareObjectUrl){
-    try{ URL.revokeObjectURL(_storyShareObjectUrl); }catch(e){}
-    _storyShareObjectUrl='';
-  }
-  const url=URL.createObjectURL(_storyShareBlob);
-  _storyShareObjectUrl=url;
-  const a=document.createElement('a');
-  a.href=url;
-  a.download=_storyShareFileName||`lamp-story-${Date.now()}.jpg`;
-  document.body.appendChild(a);
-  a.click();
-  a.remove();
-}
-async function quickShareViaSystemSheet(preferred){
-  if(!_storyShareBlob){ toast('No story image ready yet'); return; }
-  const title='Lamp - Bible Trivia Online';
-  const text=_storyShareCaption||'My progress on Lamp - Bible Trivia Online ✨';
-  const file=new File([_storyShareBlob],_storyShareFileName||`lamp-story-${Date.now()}.jpg`,{type:'image/jpeg'});
-  if(navigator.share && navigator.canShare && navigator.canShare({files:[file]})){
-    try{
-      await navigator.share({title,text,files:[file]});
-      closeStoryShareModal();
-      return;
-    }catch(e){}
-  }
-  await ensureStoryCaptionCopied();
-  downloadStoryImageLocal();
-  closeStoryShareModal();
-  toast(`${preferred} share not available here. Image saved + caption copied.`);
-}
-async function quickShareInstagramStory(){
-  await quickShareViaSystemSheet('Instagram');
-}
-async function quickShareFacebookStory(){
-  await quickShareViaSystemSheet('Facebook');
-}
-async function quickShareMoreApps(){
-  await quickShareViaSystemSheet('System');
+const PROGRESS_SHARE_THEMES=[
+  {bg:['#111528','#171d33','#22160f'],a:'#e0a860',b:'#4a6fa8'},
+  {bg:['#1b1324','#2b1a3c','#2a1a12'],a:'#e8b36b',b:'#5a78d0'},
+  {bg:['#102026','#1a2c38','#1f1b10'],a:'#e7c273',b:'#3e9db8'},
+  {bg:['#1e1520','#302030','#2d1a10'],a:'#f0bf7c',b:'#7a6fd1'},
+  {bg:['#121b31','#1a2740','#231b0f'],a:'#dcb37a',b:'#4b87c8'},
+  {bg:['#1b1b1b','#292929','#31200f'],a:'#f0c084',b:'#7a7a7a'},
+  {bg:['#141a24','#202a3b','#2a1c12'],a:'#e8af66',b:'#56a2d6'},
+  {bg:['#1a1220','#261934','#2f1d12'],a:'#f2c183',b:'#6f8de1'},
+  {bg:['#10242a','#15303a','#2a1e12'],a:'#e8be72',b:'#3f9fb0'},
+  {bg:['#1a1f2f','#242a3c','#2d2013'],a:'#edbd76',b:'#5f84c9'}
+];
+function nextProgressTheme(){
+  const key='bgn_progress_theme_idx';
+  let idx=0;
+  try{ idx=parseInt(localStorage.getItem(key)||'0',10)||0; }catch(e){}
+  const out=PROGRESS_SHARE_THEMES[Math.abs(idx)%PROGRESS_SHARE_THEMES.length];
+  try{ localStorage.setItem(key,String((idx+1)%PROGRESS_SHARE_THEMES.length)); }catch(e){}
+  return out;
 }
 async function shareProfileProgress(){
   if(!G.profile){ toast('Create a profile first'); return; }
@@ -43940,17 +43889,18 @@ async function shareProfileProgress(){
   c.width=w; c.height=h;
   const ctx=c.getContext('2d');
   if(!ctx){ toast('Unable to create image'); return; }
+  const theme=nextProgressTheme();
 
   const bg=ctx.createLinearGradient(0,0,w,h);
-  bg.addColorStop(0,'#111528');
-  bg.addColorStop(0.6,'#171d33');
-  bg.addColorStop(1,'#22160f');
+  bg.addColorStop(0,theme.bg[0]);
+  bg.addColorStop(0.6,theme.bg[1]);
+  bg.addColorStop(1,theme.bg[2]);
   ctx.fillStyle=bg;
   ctx.fillRect(0,0,w,h);
 
   ctx.globalAlpha=0.12;
   for(let i=0;i<24;i++){
-    ctx.fillStyle=i%2?'#e0a860':'#4a6fa8';
+    ctx.fillStyle=i%2?theme.a:theme.b;
     ctx.beginPath();
     ctx.arc((i*157)%w,((i*211)+180)%h,58+(i%5)*15,0,Math.PI*2);
     ctx.fill();
@@ -43960,7 +43910,7 @@ async function shareProfileProgress(){
   ctx.fillStyle='rgba(255,255,255,0.04)';
   drawRoundRect(ctx,56,70,w-112,h-140,34);
   ctx.fill();
-  ctx.strokeStyle='rgba(224,168,96,0.35)';
+  ctx.strokeStyle='rgba(255,255,255,0.2)';
   ctx.lineWidth=3;
   drawRoundRect(ctx,56,70,w-112,h-140,34);
   ctx.stroke();
@@ -43969,7 +43919,7 @@ async function shareProfileProgress(){
   ctx.fillStyle='#f6efe4';
   ctx.fillText('Lamp',110,186);
   ctx.font="600 28px 'Nunito', sans-serif";
-  ctx.fillStyle='#e0a860';
+  ctx.fillStyle=theme.a;
   ctx.fillText('Bible Trivia Online',110,228);
   ctx.font="600 20px 'Nunito', sans-serif";
   ctx.fillStyle='rgba(246,239,228,0.75)';
@@ -43979,13 +43929,13 @@ async function shareProfileProgress(){
   ctx.fillStyle='#f6efe4';
   ctx.fillText(`${p.avatar||'😊'} ${p.name||'Player'}`,110,352);
   ctx.font="700 27px 'Cinzel', serif";
-  ctx.fillStyle='#e0a860';
+  ctx.fillStyle=theme.a;
   ctx.fillText(`${l.name.toUpperCase()} · LEVEL ${l.lv}`,110,395);
 
   ctx.fillStyle='rgba(255,255,255,0.12)';
   drawRoundRect(ctx,110,440,860,24,12);
   ctx.fill();
-  ctx.fillStyle='#e0a860';
+  ctx.fillStyle=theme.a;
   drawRoundRect(ctx,110,440,Math.max(16,860*((parseFloat(l.pct)||0)/100)),24,12);
   ctx.fill();
   ctx.font="600 21px 'Nunito', sans-serif";
@@ -44008,7 +43958,7 @@ async function shareProfileProgress(){
     ctx.fillStyle='rgba(255,255,255,0.06)';
     drawRoundRect(ctx,x,y,cw,ch,22);
     ctx.fill();
-    ctx.strokeStyle='rgba(224,168,96,0.28)';
+    ctx.strokeStyle='rgba(255,255,255,0.18)';
     ctx.lineWidth=2;
     drawRoundRect(ctx,x,y,cw,ch,22);
     ctx.stroke();
@@ -44030,16 +43980,8 @@ async function shareProfileProgress(){
     const caption=`My progress on Lamp - Bible Trivia Online ✨ #LampBibleTrivia`;
     const blob=await canvasToBlob(c,'image/jpeg',0.94);
     const file=new File([blob],`lamp-story-${Date.now()}.jpg`,{type:'image/jpeg'});
-    _storyShareBlob=blob;
-    _storyShareCaption=caption;
-    _storyShareFileName=file.name;
-    if(isMobileDevice()){
-      openOv('ov-story-share');
-      return;
-    }
     if(navigator.share && navigator.canShare && navigator.canShare({files:[file]})){
       await navigator.share({title:'Lamp - Bible Trivia Online',text:caption,files:[file]});
-      toast('Choose Instagram/Facebook Stories in the share sheet ✦');
       return;
     }
     try{ if(navigator.clipboard) await navigator.clipboard.writeText(caption); }catch(e){}
