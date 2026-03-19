@@ -42082,7 +42082,8 @@ function playAgain(){
         const roomDiff=d.difficulty||G.diff||'easy';
         G.diff=roomDiff;
         G.TIM=G.diff==='easy'?25:G.diff==='hard'?12:20;
-        const upd={status:'waiting',difficulty:roomDiff,sub:roomSub,qtype:roomSub,cfg:{hearts:!!G.cfg.hearts,winScore:clampRounds(G.cfg.winScore)},rematchStartedAt:Date.now(),rematchRequestedBy:{[G.uid]:true}};
+        const existingRequests=(d&&d.rematchRequestedBy&&typeof d.rematchRequestedBy==='object')?d.rematchRequestedBy:{};
+        const upd={status:'waiting',difficulty:roomDiff,sub:roomSub,qtype:roomSub,cfg:{hearts:!!G.cfg.hearts,winScore:clampRounds(G.cfg.winScore)},rematchStartedAt:Date.now(),rematchRequestedBy:{...existingRequests,[G.uid]:true}};
         Object.keys(d.players||{}).forEach(uid=>{
           upd['players/'+uid+'/ready']=false;
           upd['players/'+uid+'/diff']=roomDiff;
