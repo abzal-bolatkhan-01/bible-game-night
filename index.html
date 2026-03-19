@@ -40925,37 +40925,32 @@ function initFB(){
         G.uid=user.uid; G.fbOk=true; fbDot(true);
         if(getAuthRedirectPending() && !user.isAnonymous) setAuthRedirectPending('');
         updateProfileSigninCard();
-        // If signed in via social, fetch remote profile and merge
+        // If signed in via social, pull full profile from Firebase and merge
         if(!user.isAnonymous && G.db){
-          G.db.ref('players/' + user.uid).once('value').then(sn=>{
-            const remote = sn.val();
-            if(!G.profile && !remote && user.displayName){
+          pullProfile().then(merged=>{
+            if(!merged && !G.profile && user.displayName){
+              // Brand new social user — create fresh profile
               G.profile={
-                name: user.displayName.split(' ')[0].slice(0,20),
-                avatar: user.photoURL ? '🧑' : '😊',
-                photo: user.photoURL||'',
-                church:'', xp:0, correct:0, bestStreak:0,
-                theme:'light',
-                weeklyXP:0, weeklyReset: wk(),
-                xpResetVersion: XP_RESET_VERSION,
-                friendCode: Math.random().toString(36).slice(2,8).toUpperCase(),
-                friends:[], notifications:false
+                name:user.displayName.split(' ')[0].slice(0,20),
+                avatar:user.photoURL?'🧑':'😊', photo:user.photoURL||'',
+                church:'', xp:0, correct:0, bestStreak:0, winStreak:0,
+                wins:0, played:0, dailyStreak:0, lastDaily:'',
+                theme:'light', weeklyXP:0, weeklyReset:wk(),
+                xpResetVersion:XP_RESET_VERSION,
+                friendCode:Math.random().toString(36).slice(2,8).toUpperCase(),
+                friends:[], achs:[], notifications:false,
+                clanName:'', clanCode:'', clanIcon:'⛪', clanPhoto:'', clanOwner:''
               };
-            } else if(remote || G.profile){
-              G.profile = mergeProfiles(remote, G.profile);
-            }
-            if(G.profile){
-              if(!G.profile.friendCode) G.profile.friendCode = Math.random().toString(36).slice(2,8).toUpperCase();
               normalizeSocialProfile();
               saveProfile();
+            }
+            if(G.profile){
               pushProfile();
               document.getElementById('main-nav').style.display='';
               renderHomeBar();
               if(document.getElementById('s-auth')?.classList.contains('active')) go('home');
             }
-          }).catch(()=>{
-            if(G.profile) pushProfile();
-          });
+          }).catch(()=>{ if(G.profile) pushProfile(); });
         } else {
           if(G.profile) pushProfile();
         }
@@ -41143,11 +41138,51 @@ function pushProfile(){
   if(!G.fbOk||!G.uid||!G.profile)return;
   try{
     const p=G.profile;
-    const d={name:p.name,avatar:p.avatar,photo:p.photo||'',xp:p.xp||0,weeklyXP:p.weeklyXP||0,weeklyReset:p.weeklyReset||wk(),xpResetVersion:p.xpResetVersion||XP_RESET_VERSION,wins:p.wins||0,clan:p.clanName||'',clanIcon:p.clanIcon||'⛪',clanPhoto:p.clanPhoto||'',ts:Date.now(),friendCode:p.friendCode||''};
-    G.db.ref('players/'+G.uid).set(d);
-    G.db.ref('leaderboard/'+G.uid).set(d);
-    G.db.ref('weekly/'+wk()+'/'+G.uid).set(d);
+    // Full profile saved to players/ — used for cross-device restore
+    const full={
+      name:p.name, avatar:p.avatar, photo:p.photo||'',
+      xp:p.xp||0, weeklyXP:p.weeklyXP||0, weeklyReset:p.weeklyReset||wk(),
+      xpResetVersion:p.xpResetVersion||XP_RESET_VERSION,
+      wins:p.wins||0, played:p.played||0, correct:p.correct||0,
+      bestStreak:p.bestStreak||0, winStreak:p.winStreak||0,
+      dailyStreak:p.dailyStreak||0, lastDaily:p.lastDaily||'',
+      church:p.church||'', achs:p.achs||[], friends:p.friends||[],
+      clanName:p.clanName||'', clanCode:p.clanCode||'',
+      clanIcon:p.clanIcon||'⛪', clanPhoto:p.clanPhoto||'', clanOwner:p.clanOwner||'',
+      friendCode:p.friendCode||'', theme:p.theme||'light',
+      notifications:!!p.notifications, ts:Date.now()
+    };
+    // Leaderboard/weekly get the display subset (rankings)
+    const lb={
+      name:p.name, avatar:p.avatar, photo:p.photo||'',
+      xp:p.xp||0, weeklyXP:p.weeklyXP||0, weeklyReset:p.weeklyReset||wk(),
+      xpResetVersion:p.xpResetVersion||XP_RESET_VERSION,
+      wins:p.wins||0, played:p.played||0, correct:p.correct||0,
+      bestStreak:p.bestStreak||0,
+      clan:p.clanName||'', clanIcon:p.clanIcon||'⛪', clanPhoto:p.clanPhoto||'',
+      friendCode:p.friendCode||'', ts:Date.now()
+    };
+    G.db.ref('players/'+G.uid).set(full);
+    G.db.ref('leaderboard/'+G.uid).set(lb);
+    G.db.ref('weekly/'+wk()+'/'+G.uid).set(lb);
+    // Keep clan member XP in sync
+    if(p.clanCode) G.db.ref('clans/'+p.clanCode+'/members/'+G.uid+'/xp').set(p.xp||0);
   }catch(e){}
+}
+function pullProfile(){
+  // Restore full profile from Firebase (called on sign-in)
+  if(!G.fbOk||!G.uid||!G.db) return Promise.resolve(null);
+  return G.db.ref('players/'+G.uid).once('value').then(sn=>{
+    const remote=sn.val();
+    if(!remote) return null;
+    // Merge with any local progress, taking the best of each
+    G.profile=mergeProfiles(remote, G.profile);
+    if(!G.profile.friendCode) G.profile.friendCode=Math.random().toString(36).slice(2,8).toUpperCase();
+    normalizeSocialProfile();
+    applyXpReset(G.profile);
+    saveProfile();
+    return G.profile;
+  }).catch(()=>null);
 }
 function lvl(xp){
   const x=xp||0, lv=Math.floor(x/XP_PER_LEVEL)+1, idx=Math.min(lv-1,LEVELS.length-1);
@@ -41193,6 +41228,7 @@ function awardAnswerXPForPlayer(playerName,anchorEl){
     G.profile.correct=(G.profile.correct||0)+1;
     if(streak>=(G.profile.bestStreak||0)) G.profile.bestStreak=streak;
     saveProfile();
+    if(G.fbOk) pushProfile();
   }
   updateComboUI(streak);
 }
@@ -43933,7 +43969,7 @@ function checkAchs(){
   if(!G.profile)return;
   ACHS.forEach(a=>{
     if(!G.profile.achs.includes(a.id)&&a.chk(G.profile)){
-      G.profile.achs.push(a.id); saveProfile();
+      G.profile.achs.push(a.id); saveProfile(); if(G.fbOk) pushProfile();
       setTimeout(()=>toast('🏆 Achievement: '+a.t+'!'),2200);
     }
   });
@@ -44791,7 +44827,7 @@ function updateDailyStreak(){
   const yesterday=new Date(Date.now()-86400000).toISOString().split('T')[0];
   // Reset streak if last play was before yesterday
   if(last && last!==today && last!==yesterday){
-    G.profile.dailyStreak=0; saveProfile();
+    G.profile.dailyStreak=0; saveProfile(); if(G.fbOk) pushProfile();
     el.textContent='Streak: 0 days — play today to start!';
     return;
   }
