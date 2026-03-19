@@ -40591,6 +40591,7 @@ const G={
   cfg:{sound:true,timer:true,hearts:true,winScore:ROUND_LIMIT},
   donAmt:'$10',
   _xpAtGameStart:0,
+  _correctAtGameStart:0,
 };
 function setAuthRedirectPending(v){
   try{
@@ -41286,6 +41287,7 @@ function beginGame(){
     return { ...p, name: finalName };
   });
   G._xpAtGameStart=G.profile?(G.profile.xp||0):0;
+  G._correctAtGameStart=G.profile?(G.profile.correct||0):0;
 
   G.pool=buildPool().slice(0,currentRounds()); G.qi=0; G.pi=0; G.done=false; G.onlineGame=false;
   G.scores={}; G.hearts={}; G.streaks={};
@@ -41310,6 +41312,7 @@ function startPracticeGame(){
   syncSubChipSelection();
   G.players=[{name:G.profile.name,avatar:G.profile.avatar}];
   G._xpAtGameStart=G.profile?(G.profile.xp||0):0;
+  G._correctAtGameStart=G.profile?(G.profile.correct||0):0;
   G.pool=buildPool().slice(0,currentRounds());
   G.qi=0; G.pi=0; G.done=false; G.onlineGame=false;
   G.scores={[G.profile.name]:0};
@@ -41956,14 +41959,17 @@ function endGame(){
   if(G.profile){
     G.profile.played=(G.profile.played||0)+1;
     const xpAllowed=G.mode!=='practice';
+    const startCorrect=G._correctAtGameStart||0;
+    const gainedCorrect=Math.max(0,(G.profile.correct||0)-startCorrect);
+    const hasAnyCorrect=gainedCorrect>0;
     if(iWon){
       G.profile.wins=(G.profile.wins||0)+1;
-      if(xpAllowed){ addXP(50); }
-    }else if(xpAllowed){
+      if(xpAllowed&&hasAnyCorrect){ addXP(50); }
+    }else if(xpAllowed&&hasAnyCorrect){
       addXP(20);
     }
 
-    if (G.mode === 'daily') {
+    if (G.mode === 'daily' && hasAnyCorrect) {
       const today = new Date().toISOString().split('T')[0];
       const yesterday = new Date(Date.now() - 86400000).toISOString().split('T')[0];
       if (G.profile.lastDaily === yesterday) {
@@ -42475,6 +42481,7 @@ function joinFromRoom(d){
   players=players.map(p=>{let n=p.name,c=2;while(usedNames.has(n)){n=p.name+' '+c;c++;}usedNames.add(n);return{...p,name:n};});
   G.players=players;
   G._xpAtGameStart=G.profile?(G.profile.xp||0):0;
+  G._correctAtGameStart=G.profile?(G.profile.correct||0):0;
   G.sub=normalizeOnlineSub((d&& (d.qtype||d.sub)) || 'classic');
   G.qi=0;G.pi=0;G.done=false;G.onlineGame=true;G.isAnswerer=false;G._lastOnlineState=null;G._onlineQKey=null;G.roomPool=null;G.roomOrders=null;
   G.scores={};G.hearts={};G.streaks={};
@@ -42928,6 +42935,7 @@ function startDailyChallenge(){
   G.mode = 'daily';
   G.sub = 'classic';
   G._xpAtGameStart=G.profile?(G.profile.xp||0):0;
+  G._correctAtGameStart=G.profile?(G.profile.correct||0):0;
   G.players = [{name: G.profile.name, avatar: G.profile.avatar}];
   G.pool = dailyPool;
   G.qi = 0; G.pi = 0;
@@ -42966,6 +42974,7 @@ function startSeasonalEvent(){
   G.mode = 'seasonal';
   G.sub = 'classic';
   G._xpAtGameStart=G.profile?(G.profile.xp||0):0;
+  G._correctAtGameStart=G.profile?(G.profile.correct||0):0;
   G.players = [{name: G.profile?.name || 'Player', avatar: G.profile?.avatar || '😊'}];
   G.pool = shuf([...currentActiveEvent.questions]).slice(0,ROUND_LIMIT);
   G.qi = 0; G.pi = 0;
