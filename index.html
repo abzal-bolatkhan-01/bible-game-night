@@ -43480,6 +43480,7 @@ function acceptClanInvite(fromUid,data){
       G.profile.clanCode=data.clanCode;
       G.profile.clanIcon=clan.icon||'⛪';
       G.profile.clanPhoto=clan.photo||'';
+      G.profile.clanOwner=clan.createdBy||'';
       saveProfile();
       G.db.ref('clanInvites/'+G.uid+'/'+fromUid).remove();
       renderClanInvites();
@@ -43644,9 +43645,9 @@ function createClan(){
   const icon=document.querySelector('#clan-icon-grid .sel-icon')?.textContent||'⛪';
   const photo=_pendingClanPhoto||'';
   const code=mkCode();
-  const save=()=>{ G.profile.clanName=name; G.profile.clanCode=code; G.profile.clanIcon=icon; G.profile.clanPhoto=photo; saveProfile(); _pendingClanPhoto=''; closeOv('ov-clan-create'); renderClans(); toast(`Congregation "${name}" created! Code: ${code}`); };
+  const save=()=>{ G.profile.clanName=name; G.profile.clanCode=code; G.profile.clanIcon=icon; G.profile.clanPhoto=photo; G.profile.clanOwner=G.uid; saveProfile(); _pendingClanPhoto=''; closeOv('ov-clan-create'); renderClans(); toast(`Congregation "${name}" created! Code: ${code}`); };
   if(G.fbOk&&G.uid){
-    G.db.ref('clans/'+code).set({name,icon,photo,code,members:{[G.uid]:{name:G.profile.name,xp:G.profile.xp||0}},totalXp:G.profile.xp||0,weeklyXp:0,createdAt:Date.now()}).then(save).catch(e=>toast('Error: '+e.message));
+    G.db.ref('clans/'+code).set({name,icon,photo,code,createdBy:G.uid,members:{[G.uid]:{name:G.profile.name,xp:G.profile.xp||0}},totalXp:G.profile.xp||0,weeklyXp:0,createdAt:Date.now()}).then(save).catch(e=>toast('Error: '+e.message));
   }else save();
 }
 function joinClan(){
@@ -43657,7 +43658,7 @@ function joinClan(){
   G.db.ref('clans/'+code).once('value').then(sn=>{
     const d=sn.val(); if(!d){ toast('Congregation not found'); return; }
     G.db.ref('clans/'+code+'/members/'+G.uid).set({name:G.profile.name,xp:G.profile.xp||0});
-    G.profile.clanName=d.name; G.profile.clanCode=code; G.profile.clanIcon=d.icon||'⛪'; G.profile.clanPhoto=d.photo||''; saveProfile();
+    G.profile.clanName=d.name; G.profile.clanCode=code; G.profile.clanIcon=d.icon||'⛪'; G.profile.clanPhoto=d.photo||''; G.profile.clanOwner=d.createdBy||''; saveProfile();
     closeOv('ov-clan-join'); renderClans(); toast('Joined '+d.name+' congregation! ✦');
   }).catch(()=>toast('Congregation not found'));
 }
@@ -43665,24 +43666,30 @@ function renderClans(){
   renderClanInvites();
   const mc=document.getElementById('my-clan');
   if(G.profile?.clanName){
+    const isOwner=G.uid&&G.profile.clanOwner&&G.uid===G.profile.clanOwner;
     mc.innerHTML=`<div class="clan-card" style="border-color:rgba(201,145,13,.32);">
       <div style="display:flex;align-items:center;gap:12px;">
-        <div style="position:relative;display:inline-block;cursor:pointer;flex-shrink:0;" onclick="openClanIconPicker()">
-          <span style="font-size:32px;display:block;">${clanBadgeMarkup(G.profile.clanIcon||'⛪',G.profile.clanPhoto||'','lg')}</span>
-          <span style="position:absolute;bottom:-2px;right:-2px;background:var(--gold1);border-radius:50%;width:17px;height:17px;display:flex;align-items:center;justify-content:center;font-size:9px;line-height:1;">✏️</span>
-        </div>
+        ${isOwner
+          ? `<div style="position:relative;display:inline-block;cursor:pointer;flex-shrink:0;" onclick="openClanIconPicker()">
+               <span style="font-size:32px;display:block;">${clanBadgeMarkup(G.profile.clanIcon||'⛪',G.profile.clanPhoto||'','lg')}</span>
+               <span style="position:absolute;bottom:-2px;right:-2px;background:var(--gold1);border-radius:50%;width:17px;height:17px;display:flex;align-items:center;justify-content:center;font-size:9px;line-height:1;">✏️</span>
+             </div>`
+          : `<span style="font-size:32px;flex-shrink:0;">${clanBadgeMarkup(G.profile.clanIcon||'⛪',G.profile.clanPhoto||'','lg')}</span>`
+        }
         <div style="flex:1;min-width:0;">
           <div class="h2">${G.profile.clanName}</div>
           <div style="font-family:'Cinzel',serif;font-size:9px;letter-spacing:.1em;color:var(--ink3);text-transform:uppercase;margin-top:2px;">Your Congregation</div>
           ${G.profile.clanCode?`<div style="display:inline-flex;align-items:center;gap:5px;background:rgba(201,145,13,.1);border:1px solid rgba(201,145,13,.22);border-radius:20px;padding:2px 9px;font-family:'Cinzel',serif;font-size:9px;letter-spacing:.1em;color:var(--gold1);margin-top:6px;">Code: ${G.profile.clanCode}</div>`:''}
-          <div style="margin-top:10px;">
+          ${isOwner?`<div style="margin-top:10px;">
             <div style="font-family:'Cinzel',serif;font-size:9px;letter-spacing:.07em;color:var(--ink3);text-transform:uppercase;margin-bottom:4px;">Invite by friend code</div>
             <div style="font-size:11px;color:var(--ink3);margin-bottom:6px;">Share your friend code (found on the Friends tab) with someone and enter theirs here to invite them.</div>
             <div class="clan-invite-row">
               <input id="clan-invite-inp" class="inp" placeholder="Friend code…" style="flex:1;font-size:12px;padding:6px 9px;" maxlength="10" oninput="this.value=this.value.toUpperCase()">
               <button class="btn btn-gold" onclick="inviteToClan()" style="font-size:11px;padding:6px 11px;white-space:nowrap;">Invite</button>
-              <button class="btn btn-ghost" onclick="requestRemoveCongregation()" style="font-size:11px;padding:6px 10px;white-space:nowrap;color:var(--ink3);">🧹 Leave</button>
             </div>
+          </div>`:''}
+          <div style="margin-top:8px;">
+            <button class="btn btn-ghost" onclick="requestRemoveCongregation()" style="font-size:11px;padding:6px 10px;white-space:nowrap;color:var(--ink3);">🧹 ${isOwner?'Delete':'Leave'} congregation</button>
           </div>
         </div>
       </div>
