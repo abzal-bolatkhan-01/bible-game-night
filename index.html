@@ -8,7 +8,7 @@
 <meta name="theme-color" content="#58CC02">
 <meta name="description" content="Lamp - Bible trivia game for families and churches. Play locally or online with friends.">
 <meta property="og:title" content="Lamp - Bible Game Night">
-<meta property="og:description" content="Test your Scripture knowledge with friends and family. Multiple game modes, achievements, and clan battles.">
+<meta property="og:description" content="Test your Scripture knowledge with friends and family. Multiple game modes, achievements, and congregation battles.">
 <meta property="og:type" content="website">
 <meta name="apple-mobile-web-app-title" content="Lamp">
 <link rel="manifest" href="manifest.json">
@@ -3123,7 +3123,7 @@ html[data-theme="warmth"] .divider::before, html[data-theme="warmth"] .divider::
       <input class="inp" id="auth-name" placeholder="Enter your name" maxlength="20" autocomplete="off">
     </div>
     <div style="margin-bottom:16px;">
-      <label class="label">Church / Clan <span style="font-style:italic;font-size:11px;">(optional)</span></label>
+      <label class="label">Church / Congregation <span style="font-style:italic;font-size:11px;">(optional)</span></label>
       <input class="inp" id="auth-church" placeholder="e.g. Grace Church Youth" autocomplete="off">
     </div>
     <button class="btn btn-gold" onclick="createProfile()">
@@ -3435,7 +3435,7 @@ html[data-theme="warmth"] .divider::before, html[data-theme="warmth"] .divider::
     <div class="h1">Connect & <em>Compete</em></div>
     <div style="display:flex;gap:7px;margin-top:11px;">
       <button class="btn btn-ghost btn-sm" style="flex:1;padding:8px;" id="comm-tab-rankings" onclick="communityTab('rankings')">🏆 Rankings</button>
-      <button class="btn btn-ghost btn-sm" style="flex:1;padding:8px;" id="comm-tab-clans" onclick="communityTab('clans')">⛪ Clans</button>
+      <button class="btn btn-ghost btn-sm" style="flex:1;padding:8px;" id="comm-tab-clans" onclick="communityTab('clans')">⛪ Congregations</button>
     </div>
   </div>
   <div class="scroller">
@@ -3445,20 +3445,20 @@ html[data-theme="warmth"] .divider::before, html[data-theme="warmth"] .divider::
         <div style="display:flex;gap:7px;margin-bottom:16px;">
           <button class="btn btn-ghost btn-sm" style="flex:1;padding:8px;" id="lb-friends" onclick="lbTab('friends')">👥 Friends</button>
           <button class="btn btn-ghost btn-sm" style="flex:1;padding:8px;" id="lb-global" onclick="lbTab('global')">🌍 Global</button>
-          <button class="btn btn-ghost btn-sm" style="flex:1;padding:8px;" id="lb-clan"   onclick="lbTab('clan')">⛪ Clan</button>
+          <button class="btn btn-ghost btn-sm" style="flex:1;padding:8px;" id="lb-clan"   onclick="lbTab('clan')">⛪ Congregation</button>
           <button class="btn btn-ghost btn-sm" style="flex:1;padding:8px;" id="lb-weekly" onclick="lbTab('weekly')">📅 Weekly</button>
         </div>
       </div>
       <div id="lb-list"></div>
     </div>
 
-    <!-- Clans Panel -->
+    <!-- Congregations Panel -->
     <div id="comm-panel-clans" style="display:none;">
       <div style="padding:0 16px;margin-bottom:12px;">
         <div id="my-clan"></div>
       </div>
       <div style="padding:0 16px;margin-bottom:9px;">
-        <div class="eyebrow">Top Clans This Week</div>
+        <div class="eyebrow">Top Congregations This Week</div>
       </div>
       <div style="padding:0 16px;">
         <div id="clan-lb"></div>
@@ -3467,7 +3467,7 @@ html[data-theme="warmth"] .divider::before, html[data-theme="warmth"] .divider::
         <div class="divider"><span>✦</span></div>
       </div>
       <div style="padding:0 16px;">
-        <button class="btn btn-gold" onclick="openOv('ov-clan-create')" style="margin-bottom:8px;width:100%;"><span class="btn-icon">⛪</span>Create a Clan</button>
+        <button class="btn btn-gold" onclick="openOv('ov-clan-create')" style="margin-bottom:8px;width:100%;"><span class="btn-icon">⛪</span>Create a Congregation</button>
         <button class="btn btn-ghost btn-sm" onclick="openOv('ov-clan-join')" style="width:100;">🔑 Join by Code</button>
       </div>
     </div>
@@ -3746,35 +3746,35 @@ html[data-theme="warmth"] .divider::before, html[data-theme="warmth"] .divider::
   </div>
 </div>
 
-<!-- ── MODAL: Clan create ── -->
+<!-- ── MODAL: Congregation create ── -->
 <div class="ov" id="ov-clan-create" onclick="bgClose(event,'ov-clan-create')">
   <div class="mbox">
     <div class="mhandle"></div>
-    <div class="mtitle">Create a Clan</div>
-    <label class="label" style="margin-bottom:6px;">Clan Name</label>
+    <div class="mtitle">Create a Congregation</div>
+    <label class="label" style="margin-bottom:6px;">Congregation Name</label>
     <input class="inp" id="clan-nm-inp" placeholder="e.g. Grace Baptist Warriors" style="margin-bottom:12px;">
-    <label class="label" style="margin-bottom:7px;">Clan Icon</label>
+    <label class="label" style="margin-bottom:7px;">Congregation Icon</label>
     <div id="clan-photo-preview" style="display:flex;align-items:center;justify-content:center;margin-bottom:10px;"></div>
     <div class="profile-avatar-tools" style="margin:0 0 10px;">
-      <button class="btn btn-ghost btn-sm" onclick="uploadClanPhoto('create')">📷 Upload Clan Pic</button>
+      <button class="btn btn-ghost btn-sm" onclick="uploadClanPhoto('create')">📷 Upload Congregation Pic</button>
       <button class="btn btn-ghost btn-sm" onclick="clearClanPhoto('create')">🗑 Remove</button>
     </div>
     <input id="clan-photo-input" type="file" accept="image/*" style="display:none;" onchange="onClanPhotoPicked(event)">
     <div id="clan-icon-grid" style="display:flex;flex-wrap:wrap;gap:8px;margin-bottom:14px;"></div>
-    <button class="btn btn-gold" onclick="createClan()"><span class="btn-icon">⛪</span>Create Clan</button>
+    <button class="btn btn-gold" onclick="createClan()"><span class="btn-icon">⛪</span>Create Congregation</button>
   </div>
 </div>
 
-<!-- ── MODAL: Clan join ── -->
+<!-- ── MODAL: Congregation join ── -->
 <div class="ov" id="ov-clan-join" onclick="bgClose(event,'ov-clan-join')">
   <div class="mbox">
     <div class="mhandle"></div>
-    <div class="mtitle">Join a Clan</div>
-    <label class="label" style="margin-bottom:6px;">Clan Code</label>
-    <input class="inp" id="clan-join-inp" placeholder="Enter clan code"
+    <div class="mtitle">Join a Congregation</div>
+    <label class="label" style="margin-bottom:6px;">Congregation Code</label>
+    <input class="inp" id="clan-join-inp" placeholder="Enter congregation code"
       style="text-transform:uppercase;letter-spacing:.18em;text-align:center;margin-bottom:14px;"
       oninput="this.value=this.value.toUpperCase()" autocomplete="off">
-    <button class="btn btn-green" onclick="joinClan()"><span class="btn-icon">✦</span>Join Clan</button>
+    <button class="btn btn-green" onclick="joinClan()"><span class="btn-icon">✦</span>Join Congregation</button>
   </div>
 </div>
 
@@ -43317,7 +43317,7 @@ function displayLBRows(list, rows, tab) {
     if(tab==='clan'){
       row.innerHTML=`<div class="lb-rank">${medal}</div><div class="lb-av">${p.icon||'⛪'}</div><div class="lb-info"><div class="lb-nm">${p.name}</div><div class="lb-sub">${Object.keys(p.members||{}).length} members</div></div><div class="lb-xpv">${p.totalXp||0} XP</div>`;
     }else{
-      const clanName=(p.clan&&String(p.clan).trim())?String(p.clan):'No clan';
+      const clanName=(p.clan&&String(p.clan).trim())?String(p.clan):'No congregation';
       const clanEmoji=(p.clanIcon&&String(p.clanIcon).trim())?String(p.clanIcon):'⛪';
       const clanMark=clanBadgeMarkup(clanEmoji,p.clanPhoto||'','sm');
       const shownXp=tab==='weekly'?(p.weeklyXP||0):(p.xp||0);
@@ -43378,7 +43378,7 @@ function onClanPhotoPicked(e){
       else{
         _pendingClanPhoto=data;
         renderClanPhotoPreview();
-        toast('Clan photo selected');
+        toast('Congregation photo selected');
       }
     };
     img.onerror=()=>toast('Could not read this image');
@@ -43395,7 +43395,7 @@ function clearClanPhoto(ctx){
   }
   _pendingClanPhoto='';
   renderClanPhotoPreview();
-  toast('Clan photo removed');
+  toast('Congregation photo removed');
 }
 function updateCurrentClanPhoto(photoData){
   if(!G.profile||!G.profile.clanCode){
@@ -43409,38 +43409,38 @@ function updateCurrentClanPhoto(photoData){
     saveProfile();
     renderClans();
     if(document.getElementById('s-profile')?.classList.contains('active')) renderProfile();
-    toast(nextPhoto?'Clan photo updated':'Clan photo removed');
+    toast(nextPhoto?'Congregation photo updated':'Congregation photo removed');
   };
   if(G.fbOk&&G.db){
-    G.db.ref('clans/'+code+'/photo').set(nextPhoto).then(applyLocal).catch(()=>toast('Could not update clan photo'));
+    G.db.ref('clans/'+code+'/photo').set(nextPhoto).then(applyLocal).catch(()=>toast('Could not update congregation photo'));
   }else{
     applyLocal();
   }
 }
 function createClan(){
   const name=(document.getElementById('clan-nm-inp').value||'').trim();
-  if(!name){ toast('Enter a clan name'); return; }
+  if(!name){ toast('Enter a congregation name'); return; }
   if(!G.profile){ toast('Create a profile first'); return; }
   sfx.tap();
   const icon=document.querySelector('#clan-icon-grid .sel-icon')?.textContent||'⛪';
   const photo=_pendingClanPhoto||'';
   const code=mkCode();
-  const save=()=>{ G.profile.clanName=name; G.profile.clanCode=code; G.profile.clanIcon=icon; G.profile.clanPhoto=photo; saveProfile(); _pendingClanPhoto=''; closeOv('ov-clan-create'); renderClans(); toast(`Clan "${name}" created! Code: ${code}`); };
+  const save=()=>{ G.profile.clanName=name; G.profile.clanCode=code; G.profile.clanIcon=icon; G.profile.clanPhoto=photo; saveProfile(); _pendingClanPhoto=''; closeOv('ov-clan-create'); renderClans(); toast(`Congregation "${name}" created! Code: ${code}`); };
   if(G.fbOk&&G.uid){
     G.db.ref('clans/'+code).set({name,icon,photo,code,members:{[G.uid]:{name:G.profile.name,xp:G.profile.xp||0}},totalXp:G.profile.xp||0,weeklyXp:0,createdAt:Date.now()}).then(save).catch(e=>toast('Error: '+e.message));
   }else save();
 }
 function joinClan(){
   const code=(document.getElementById('clan-join-inp').value||'').trim().toUpperCase();
-  if(!code){ toast('Enter a clan code'); return; }
-  if(!G.fbOk){ toast('Firebase required to join clans'); return; }
+  if(!code){ toast('Enter a congregation code'); return; }
+  if(!G.fbOk){ toast('Firebase required to join congregations'); return; }
   sfx.tap();
   G.db.ref('clans/'+code).once('value').then(sn=>{
-    const d=sn.val(); if(!d){ toast('Clan not found'); return; }
+    const d=sn.val(); if(!d){ toast('Congregation not found'); return; }
     G.db.ref('clans/'+code+'/members/'+G.uid).set({name:G.profile.name,xp:G.profile.xp||0});
     G.profile.clanName=d.name; G.profile.clanCode=code; G.profile.clanIcon=d.icon||'⛪'; G.profile.clanPhoto=d.photo||''; saveProfile();
-    closeOv('ov-clan-join'); renderClans(); toast('Joined '+d.name+'! ✦');
-  }).catch(()=>toast('Clan not found'));
+    closeOv('ov-clan-join'); renderClans(); toast('Joined '+d.name+' congregation! ✦');
+  }).catch(()=>toast('Congregation not found'));
 }
 function renderClans(){
   const mc=document.getElementById('my-clan');
@@ -43450,25 +43450,25 @@ function renderClans(){
         <span style="font-size:32px;">${clanBadgeMarkup(G.profile.clanIcon||'⛪',G.profile.clanPhoto||'','lg')}</span>
         <div style="flex:1;min-width:0;">
           <div class="h2">${G.profile.clanName}</div>
-          <div style="font-family:'Cinzel',serif;font-size:9px;letter-spacing:.1em;color:var(--ink3);text-transform:uppercase;margin-top:2px;">Your Clan</div>
+          <div style="font-family:'Cinzel',serif;font-size:9px;letter-spacing:.1em;color:var(--ink3);text-transform:uppercase;margin-top:2px;">Your Congregation</div>
           ${G.profile.clanCode?`<div style="display:inline-flex;align-items:center;gap:5px;background:rgba(201,145,13,.1);border:1px solid rgba(201,145,13,.22);border-radius:20px;padding:2px 9px;font-family:'Cinzel',serif;font-size:9px;letter-spacing:.1em;color:var(--gold1);margin-top:6px;">Code: ${G.profile.clanCode}</div>`:''}
           <div class="profile-avatar-tools" style="justify-content:flex-start;margin-top:8px;">
-            <button class="btn btn-ghost btn-sm" onclick="uploadClanPhoto('existing')">📷 Upload Clan Pic</button>
+            <button class="btn btn-ghost btn-sm" onclick="uploadClanPhoto('existing')">📷 Upload Congregation Pic</button>
             <button class="btn btn-ghost btn-sm" onclick="clearClanPhoto('existing')">🗑 Remove</button>
           </div>
         </div>
       </div>
     </div>`;
   }else{
-    mc.innerHTML='<div class="empty">You\'re not in a clan. Create or join one below.</div>';
+    mc.innerHTML='<div class="empty">You\'re not in a congregation. Create or join one below.</div>';
   }
   const clb=document.getElementById('clan-lb');
-  if(!G.fbOk){ clb.innerHTML='<div class="empty">Firebase required for clan rankings.</div>'; return; }
+  if(!G.fbOk){ clb.innerHTML='<div class="empty">Firebase required for congregation rankings.</div>'; return; }
   clb.innerHTML='<div class="loading"><span class="spin">⟳</span> Loading…</div>';
   G.db.ref('clans').orderByChild('totalXp').limitToLast(8).once('value').then(sn=>{
     const rows=[]; sn.forEach(s=>rows.unshift({...s.val()}));
     clb.innerHTML='';
-    if(!rows.length){ clb.innerHTML='<div class="empty">No clans yet. Be the first!</div>'; return; }
+    if(!rows.length){ clb.innerHTML='<div class="empty">No congregations yet. Be the first!</div>'; return; }
     rows.forEach((c,i)=>{
       const isMe=c.code===G.profile?.clanCode;
       const row=document.createElement('div'); row.className='lb-row'+(isMe?' me':'');
@@ -43532,8 +43532,8 @@ function renderProfile(){
   ci.innerHTML=p.clanName?`<div class="card-sm" style="display:flex;align-items:center;gap:10px;">
     <span style="font-size:22px;">${clanBadgeMarkup(p.clanIcon||'⛪',p.clanPhoto||'','md')}</span>
     <div><div style="font-family:'Playfair Display',serif;font-size:14px;font-weight:700;">${p.clanName}</div>
-    <div style="font-family:'Cinzel',serif;font-size:9px;letter-spacing:.1em;color:var(--ink3);text-transform:uppercase;">Your Clan · ${p.clanCode||''}</div></div></div>`:
-    `<div class="empty" style="padding:8px 0;">Not in a clan. <button onclick="go('community');communityTab('clans')" style="background:none;border:none;color:var(--gold);font-family:'Cinzel',serif;font-size:10px;letter-spacing:.08em;text-transform:uppercase;cursor:pointer;">Join one →</button></div>`;
+    <div style="font-family:'Cinzel',serif;font-size:9px;letter-spacing:.1em;color:var(--ink3);text-transform:uppercase;">Your Congregation · ${p.clanCode||''}</div></div></div>`:
+    `<div class="empty" style="padding:8px 0;">Not in a congregation. <button onclick="go('community');communityTab('clans')" style="background:none;border:none;color:var(--gold);font-family:'Cinzel',serif;font-size:10px;letter-spacing:.08em;text-transform:uppercase;cursor:pointer;">Join one →</button></div>`;
   
   const churchCta = document.getElementById('church-tools-cta');
   if(churchCta) churchCta.style.display = (p.tier === 'church') ? 'block' : 'none';
