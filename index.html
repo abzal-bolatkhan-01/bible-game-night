@@ -40593,6 +40593,7 @@ const G={
   _xpAtGameStart:0,
   _correctAtGameStart:0,
   _rematchRequestAt:0,
+  _forceRematchLobby:false,
 };
 function setAuthRedirectPending(v){
   try{
@@ -42067,6 +42068,7 @@ function playAgain(){
     if(!G.roomRef) G.roomRef=G.db.ref('rooms/'+G.roomId);
     G._awaitingRematchStart=true;
     G._rematchRequestAt=Date.now();
+    G._forceRematchLobby=true;
     G.meReady=false;
     const readyBtn=document.getElementById('ready-btn');
     if(readyBtn) readyBtn.textContent='✓ Mark Ready';
@@ -42127,6 +42129,10 @@ function playAgain(){
     G.roomRef.off();
     G.roomRef.on('value',sn=>{
       const d=sn.val(); if(!d) return;
+      if(G._forceRematchLobby){
+        if(d.status!=='waiting') return;
+        G._forceRematchLobby=false;
+      }
       if(d.status==='waiting') G._awaitingRematchStart=false;
       scheduleRematchPrune(d);
       updateLobbyUI(d);
@@ -42211,6 +42217,7 @@ function leaveCurrentRoom(opts){
     try{ ref.off(); ref.child('gameState').off(); }catch(e){}
     G.roomRef=null; G.roomId=null; G.isHost=false; G.meReady=false; G.onlineGame=false;
     G._awaitingRematchStart=false;
+    G._forceRematchLobby=false;
     const panel=document.getElementById('lobby-panel'); if(panel) panel.style.display='none';
     const rc=document.getElementById('rc-disp'); if(rc) rc.textContent='------';
     const list=document.getElementById('lobby-list'); if(list) list.innerHTML='';
