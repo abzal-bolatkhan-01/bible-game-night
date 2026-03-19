@@ -3826,6 +3826,17 @@ const WIN_VERSES=[
   {t:'I can do all this through him who gives me strength.',r:'Philippians 4:13'},
   {t:'Be strong and courageous. Do not be afraid; the LORD your God will be with you wherever you go.',r:'Joshua 1:9'},
 ];
+function nextWinVerse(){
+  try{
+    const key='bgn_win_verse_idx';
+    const cur=parseInt(localStorage.getItem(key)||'0',10)||0;
+    const v=WIN_VERSES[((cur%WIN_VERSES.length)+WIN_VERSES.length)%WIN_VERSES.length]||WIN_VERSES[0];
+    localStorage.setItem(key,String(cur+1));
+    return v;
+  }catch(e){
+    return WIN_VERSES[0];
+  }
+}
 
 /* ══════════════════════════════════════════════════
    SEASONAL EVENTS
@@ -40731,9 +40742,10 @@ function xpMultForStreak(streak){
   return 1;
 }
 function awardAnswerXPForPlayer(playerName,anchorEl){
+  if(G.mode==='practice') return;
   if(!canAwardAnswerXP(playerName)) return;
   const streak=G.streaks[playerName]||0;
-  const base=G.mode==='practice'?2:10;
+  const base=10;
   const xp=Math.round(base*xpMultForStreak(streak));
   if(anchorEl) floatScore(anchorEl,'+'+xp);
   addXP(xp);
@@ -41876,7 +41888,7 @@ function endGame(){
   // Clean up online listeners
   if(G._votesRef){G._votesRef.off();G._votesRef=null;}
   if(G._resultTimeout){clearTimeout(G._resultTimeout);G._resultTimeout=null;}
-  let win, iWon = false;
+  let win, iWon = false, topWinners=[];
   
   if (G.sub === 'team') {
     const t1 = G.teamScores["Team 1"];
@@ -41888,13 +41900,16 @@ function endGame(){
   } else {
     const sorted=[...G.players].sort((a,b)=>G.scores[b.name]-G.scores[a.name]);
     win=sorted[0];
-    iWon=win.name===G.profile?.name;
+    const topScore=win?G.scores[win.name]:0;
+    topWinners=sorted.filter(p=>(G.scores[p.name]||0)===(topScore||0));
+    iWon=topWinners.some(p=>p.name===G.profile?.name);
   }
 
   if(G.profile){
     G.profile.played=(G.profile.played||0)+1;
-    if(iWon){ G.profile.wins=(G.profile.wins||0)+1; addXP(50); }
-    else addXP(20);
+    const xpAllowed=G.mode!=='practice';
+    if(iWon){ G.profile.wins=(G.profile.wins||0)+1; if(xpAllowed) addXP(50); }
+    else if(xpAllowed) addXP(20);
 
     if (G.mode === 'daily') {
       const today = new Date().toISOString().split('T')[0];
@@ -41918,20 +41933,33 @@ function endGame(){
     saveProfile(); if(G.fbOk)pushProfile();
   }
   saveMatchResult(win, G.players);
-  const poolLen=(G.roomPool||G.pool||[]).length||1;
-  const v=WIN_VERSES[poolLen%WIN_VERSES.length]||WIN_VERSES[0];
-  document.getElementById('w-av').textContent=win.avatar;
-  document.getElementById('w-name').textContent=win.name;
-  document.getElementById('w-pts').textContent=(G.sub==='team' ? G.teamScores[win.name] : G.scores[win.name])+' points';
-  document.getElementById('w-xp-txt').textContent=iWon?'✦ +50 XP earned':'✦ +20 XP earned';
+  const v=nextWinVerse();
+  const isTie=G.sub!=='team'&&topWinners.length>1;
+  const wAv=document.getElementById('w-av');
+  const wName=document.getElementById('w-name');
+  const wPts=document.getElementById('w-pts');
+  const wXp=document.getElementById('w-xp-txt');
+  if(isTie){
+    const topScore=G.scores[topWinners[0].name]||0;
+    wAv.textContent=topWinners.map(p=>p.avatar).join(' ');
+    wName.textContent=topWinners.map(p=>p.name).join(' & ');
+    wPts.textContent=`${topScore} points each (Tie)`;
+  }else{
+    wAv.textContent=win.avatar;
+    wName.textContent=win.name;
+    wPts.textContent=(G.sub==='team' ? G.teamScores[win.name] : G.scores[win.name])+' points';
+  }
+  if(G.mode==='practice') wXp.textContent='✦ Practice mode · XP disabled';
+  else wXp.textContent=iWon?'✦ +50 XP earned':'✦ +20 XP earned';
   document.getElementById('w-verse').innerHTML=`"${v.t}"<br><span style="font-family:'Cinzel',serif;font-size:10px;letter-spacing:.2em;color:var(--gold);display:block;margin-top:8px;">— ${v.r}</span>`;
   const oth=document.getElementById('w-others'); oth.innerHTML='';
   
   const sortedPlayers = [...G.players].sort((a,b)=>G.scores[b.name]-G.scores[a.name]);
   sortedPlayers.forEach(p=>{
+    const isTopTie=isTie&&topWinners.some(w=>w.name===p.name);
     const d=document.createElement('div');
     d.style.cssText='background:rgba(255,255,255,.035);border:1px solid rgba(180,140,60,.1);border-radius:var(--r1);padding:8px 11px;text-align:center;min-width:60px;';
-    d.innerHTML=`<span style="font-size:18px;display:block;">${p.avatar}</span><span style="font-family:'Cinzel',serif;font-size:8px;letter-spacing:.07em;color:var(--ink3);text-transform:uppercase;">${p.name}</span><span style="font-family:'Cinzel',serif;font-size:14px;font-weight:700;color:var(--gold1);display:block;">${G.scores[p.name]}</span>`;
+    d.innerHTML=`<span style="font-size:18px;display:block;">${isTopTie?'👑 ':''}${p.avatar}</span><span style="font-family:'Cinzel',serif;font-size:8px;letter-spacing:.07em;color:var(--ink3);text-transform:uppercase;">${p.name}</span><span style="font-family:'Cinzel',serif;font-size:14px;font-weight:700;color:var(--gold1);display:block;">${G.scores[p.name]}</span>`;
     oth.appendChild(d);
   });
   go('winner'); sfx.win(); haptic('win'); confetti(); checkAchs();
