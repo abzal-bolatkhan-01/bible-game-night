@@ -3401,9 +3401,9 @@ html[data-theme="warmth"] .divider::before, html[data-theme="warmth"] .divider::
     <div id="comm-panel-rankings">
       <div style="padding:0 16px;">
         <div style="display:flex;gap:7px;margin-bottom:16px;">
+          <button class="btn btn-ghost btn-sm" style="flex:1;padding:8px;" id="lb-friends" onclick="lbTab('friends')">👥 Friends</button>
           <button class="btn btn-ghost btn-sm" style="flex:1;padding:8px;" id="lb-global" onclick="lbTab('global')">🌍 Global</button>
           <button class="btn btn-ghost btn-sm" style="flex:1;padding:8px;" id="lb-clan"   onclick="lbTab('clan')">⛪ Clan</button>
-          <button class="btn btn-ghost btn-sm" style="flex:1;padding:8px;" id="lb-friends" onclick="lbTab('friends')">👥 Friends</button>
           <button class="btn btn-ghost btn-sm" style="flex:1;padding:8px;" id="lb-weekly" onclick="lbTab('weekly')">📅 Weekly</button>
         </div>
       </div>
@@ -40879,7 +40879,7 @@ function communityTab(tab){
     document.getElementById('comm-tab-rankings').classList.add('active');
     document.getElementById('comm-panel-rankings').style.display='block';
     document.getElementById('comm-panel-clans').style.display='none';
-    lbTab('global');
+    lbTab('friends');
   }else if(tab==='clans'){
     document.getElementById('comm-tab-clans').classList.add('active');
     document.getElementById('comm-panel-rankings').style.display='none';
