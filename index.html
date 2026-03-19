@@ -43472,7 +43472,7 @@ function loadClanMembers(){
           ${avatarMarkup(m.avatar||'😊',m.photo||'','sm')}
           <span style="flex:1;font-size:13px;color:var(--ink);">${escHtml(m.name||'Player')}</span>
           <span style="font-size:11px;color:var(--gold1);margin-right:4px;">${m.xp||0} XP</span>
-          <button class="btn btn-ghost" onclick="kickMember('${m.uid}','${escHtml(m.name||'Player')}')" style="color:var(--ink3);">Remove</button>
+          <button class="btn btn-ghost btn-sm" onclick="kickMember('${m.uid}','${escHtml(m.name||'Player')}')" style="color:var(--ink3);">Remove</button>
         </div>`).join('');
     });
   });
