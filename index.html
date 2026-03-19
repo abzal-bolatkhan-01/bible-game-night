@@ -42104,7 +42104,11 @@ function playAgain(){
       if(d.status==='waiting') G._awaitingRematchStart=false;
       scheduleRematchPrune(d);
       updateLobbyUI(d);
-      if(d.status==='playing' && !G._awaitingRematchStart){ G.roomRef.off(); joinFromRoom(d); }
+      if(d.status==='playing'){
+        G._awaitingRematchStart=false;
+        G.roomRef.off();
+        joinFromRoom(d);
+      }
     });
     go('lobby');
     const nbJoin=document.getElementById('nb-join');
