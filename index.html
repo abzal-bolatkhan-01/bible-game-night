@@ -40768,9 +40768,23 @@ function signInWithGoogle(){
       .then(handleLink)
       .catch(e=>{
         if(e.code==='auth/credential-already-in-use' || e.code==='auth/email-already-in-use'){
-          // Already has an account, just sign in
+          const guestProfile = G.profile ? {...G.profile} : null;
           G.auth.signInWithPopup(provider)
-            .then(()=>toast('Signed in with Google!'))
+            .then(res=>{
+              const newUid = res.user.uid;
+              G.uid = newUid;
+              G.db.ref('players/' + newUid).once('value').then(sn=>{
+                const remote = sn.val();
+                G.profile = mergeProfiles(remote, guestProfile);
+                if(!G.profile.friendCode) G.profile.friendCode = Math.random().toString(36).slice(2,8).toUpperCase();
+                normalizeSocialProfile();
+                saveProfile();
+                pushProfile();
+                toast('Welcome back! Your progress has been merged.');
+                updateProfileSigninCard();
+                renderHomeBar();
+              });
+            })
             .catch(err=>handleAuthError(err,'Google sign-in failed'));
           return;
         }
@@ -40806,26 +40820,40 @@ function initFB(){
         G.uid=user.uid; G.fbOk=true; fbDot(true);
         if(getAuthRedirectPending() && !user.isAnonymous) setAuthRedirectPending('');
         updateProfileSigninCard();
-        // If signed in via social, auto-create profile from display name
-        if(!G.profile && user.displayName){
-          G.profile={
-            name: user.displayName.split(' ')[0].slice(0,20),
-            avatar: user.photoURL ? '🧑' : '😊',
-            photo: user.photoURL||'',
-            church:'', xp:0, correct:0, bestStreak:0,
-            theme:'light',
-            weeklyXP:0, weeklyReset: wk(),
-            xpResetVersion: XP_RESET_VERSION,
-            friendCode: Math.random().toString(36).slice(2,8).toUpperCase(),
-            friends:[], notifications:false
-          };
-          normalizeSocialProfile();
-          saveProfile();
-          document.getElementById('main-nav').style.display='';
-          renderHomeBar();
-          go('home');
+        // If signed in via social, fetch remote profile and merge
+        if(!user.isAnonymous && G.db){
+          G.db.ref('players/' + user.uid).once('value').then(sn=>{
+            const remote = sn.val();
+            if(!G.profile && !remote && user.displayName){
+              G.profile={
+                name: user.displayName.split(' ')[0].slice(0,20),
+                avatar: user.photoURL ? '🧑' : '😊',
+                photo: user.photoURL||'',
+                church:'', xp:0, correct:0, bestStreak:0,
+                theme:'light',
+                weeklyXP:0, weeklyReset: wk(),
+                xpResetVersion: XP_RESET_VERSION,
+                friendCode: Math.random().toString(36).slice(2,8).toUpperCase(),
+                friends:[], notifications:false
+              };
+            } else if(remote || G.profile){
+              G.profile = mergeProfiles(remote, G.profile);
+            }
+            if(G.profile){
+              if(!G.profile.friendCode) G.profile.friendCode = Math.random().toString(36).slice(2,8).toUpperCase();
+              normalizeSocialProfile();
+              saveProfile();
+              pushProfile();
+              document.getElementById('main-nav').style.display='';
+              renderHomeBar();
+              if(!document.querySelector('.screen.active')) go('home');
+            }
+          }).catch(()=>{
+            if(G.profile) pushProfile();
+          });
+        } else {
+          if(G.profile) pushProfile();
         }
-        if(G.profile) pushProfile();
         listenForChallenges(); cleanExpiredChallenges(); listenFriendRequests(); listenFriendLinks();
       } else {
         if(G._loggingOut){ G._loggingOut=false; return; }
@@ -40976,6 +41004,35 @@ function clearProfilePhoto(){
   renderHomeBar();
   if(document.getElementById('s-profile')?.classList.contains('active')) renderProfile();
   toast('Profile photo removed');
+}
+function mergeProfiles(remote, local){
+  if(!remote) return local;
+  if(!local) return remote;
+  const merged = {...remote};
+  merged.xp = Math.max(remote.xp||0, local.xp||0);
+  merged.wins = Math.max(remote.wins||0, local.wins||0);
+  merged.played = Math.max(remote.played||0, local.played||0);
+  merged.correct = Math.max(remote.correct||0, local.correct||0);
+  merged.bestStreak = Math.max(remote.bestStreak||0, local.bestStreak||0);
+  merged.winStreak = Math.max(remote.winStreak||0, local.winStreak||0);
+  merged.weeklyXP = Math.max(remote.weeklyXP||0, local.weeklyXP||0);
+  merged.achs = [...new Set([...(remote.achs||[]), ...(local.achs||[])])];
+  if(local.theme) merged.theme = local.theme;
+  if(local.name && local.name !== 'Player') merged.name = local.name;
+  if(local.avatar) merged.avatar = local.avatar;
+  if(local.photo) merged.photo = local.photo;
+  merged.friendCode = remote.friendCode || local.friendCode || Math.random().toString(36).slice(2,8).toUpperCase();
+  merged.clanName = remote.clanName || local.clanName || '';
+  merged.clanCode = remote.clanCode || local.clanCode || '';
+  merged.clanIcon = remote.clanIcon || local.clanIcon || '';
+  merged.clanPhoto = remote.clanPhoto || local.clanPhoto || '';
+  merged.clanOwner = remote.clanOwner || local.clanOwner || '';
+  merged.friends = [...new Set([...(remote.friends||[]), ...(local.friends||[])])].filter(Boolean);
+  merged.weeklyReset = remote.weeklyReset || local.weeklyReset || wk();
+  merged.xpResetVersion = Math.max(remote.xpResetVersion||0, local.xpResetVersion||0);
+  if(local.church) merged.church = local.church;
+  if(local.notifications !== undefined) merged.notifications = local.notifications;
+  return merged;
 }
 function pushProfile(){
   if(!G.fbOk||!G.uid||!G.profile)return;
@@ -44865,10 +44922,21 @@ function profileSignIn(method){
     }).catch(e=>{
       if(e.code==='auth/unauthorized-domain'){ showDomainErrorModal(); return; }
       if(e.code==='auth/credential-already-in-use'||e.code==='auth/email-already-in-use'){
-        const signInCall=G.auth.signInWithPopup(provider);
-        signInCall.then(()=>{
-          toast('Signed in! Progress synced.');
-          updateProfileSigninCard();
+        const guestProfile = G.profile ? {...G.profile} : null;
+        G.auth.signInWithPopup(provider).then(res=>{
+          const newUid = res.user.uid;
+          G.uid = newUid;
+          G.db.ref('players/' + newUid).once('value').then(sn=>{
+            const remote = sn.val();
+            G.profile = mergeProfiles(remote, guestProfile);
+            if(!G.profile.friendCode) G.profile.friendCode = Math.random().toString(36).slice(2,8).toUpperCase();
+            normalizeSocialProfile();
+            saveProfile();
+            pushProfile();
+            toast('Welcome back! Your progress has been merged.');
+            updateProfileSigninCard();
+            renderHomeBar();
+          });
         }).catch(e2=>handleAuthError(e2,'Sign-in failed'));
       } else {
         handleAuthError(e,'Sign-in failed');
