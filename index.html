@@ -43426,7 +43426,8 @@ function renderQ(){
   const scoreEl=document.getElementById('g-score');
   scoreEl.textContent=G.scores[p.name];
   const totalRounds=Math.max(1,G.pool.length||currentRounds());
-  document.getElementById('g-round').textContent=`Round ${Math.min(G.qi+1,totalRounds)}/${totalRounds}`;
+  const rndEl=document.getElementById('g-round');
+  if(G.sub==='lightning'){ rndEl.textContent=''; } else { rndEl.textContent=`Round ${Math.min(G.qi+1,totalRounds)}/${totalRounds}`; }
   renderHearts('g-hearts',G.hearts[p.name]);
   document.getElementById('g-fb').style.display='none';
   document.getElementById('g-next-row').style.display='none';
