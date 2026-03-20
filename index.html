@@ -3131,6 +3131,7 @@ html[data-theme="warmth"] .divider::before, html[data-theme="warmth"] .divider::
       <div class="label" style="margin-bottom:7px;">Play Style</div>
       <div class="chips" id="mode-chips">
         <button class="chip sel" onclick="pickMode(this,'online')">🌐 Online</button>
+        <button class="chip" onclick="pickMode(this,'nearby')">📡 Same Room</button>
         <button class="chip" onclick="pickMode(this,'local')">👥 Pass & Play</button>
         <button class="chip" onclick="pickMode(this,'practice')">🎓 Solo</button>
       </div>
@@ -3352,6 +3353,13 @@ html[data-theme="warmth"] .divider::before, html[data-theme="warmth"] .divider::
         <button class="btn btn-gold btn-sm" style="flex:1;" id="start-btn" onclick="startOnline()" disabled>▶ Start</button>
       </div>
       <button class="btn btn-ghost btn-sm" style="margin-top:8px;width:100%;" onclick="leaveCurrentRoom()">🚪 Leave Room</button>
+    </div>
+    <div class="divider"><span>or</span></div>
+    <div style="text-align:center;padding:18px 0;">
+      <div class="nearby-ring">📡</div>
+      <div class="eyebrow" style="margin-bottom:6px;">Same WiFi Play</div>
+      <p style="font-size:13px;color:var(--ink3);line-height:1.6;margin-bottom:14px;">Best for players on the same WiFi or hotspot. Share code or QR to join instantly.</p>
+      <button class="btn btn-green btn-sm" style="max-width:200px;margin:0 auto;" onclick="go('setup');buildModeSetup('nearby')"><span class="btn-icon">📡</span>Start Nearby</button>
     </div>
     <div class="pb"></div>
   </div>
@@ -42777,6 +42785,7 @@ function onPlay(){
   sfx.tap();
   if(!G.profile){ go('auth'); buildAvGrid(); return; }
   if(G.mode==='online'){ go('setup'); buildModeSetup('online',true); return; }
+  if(G.mode==='nearby'){ go('setup'); buildModeSetup('nearby',true); return; }
   if(G.mode==='practice'){ go('setup'); buildModeSetup('practice'); return; }
   go('setup'); buildSetup();
 }
@@ -42819,7 +42828,7 @@ function buildModeSetup(kind,fromHomeSelection){
   document.getElementById('setup-list').innerHTML='';
   document.getElementById('setup-list').style.display='none';
   document.getElementById('add-p-btn').style.display='none';
-  const showModeDiff=kind==='online'&&!_setupUseHomeSelection;
+  const showModeDiff=(kind==='online'||kind==='nearby')&&!_setupUseHomeSelection;
   document.getElementById('setup-room-mode-wrap').style.display=showModeDiff?'block':'none';
   if(kind==='online'){
     document.getElementById('setup-eyebrow').textContent='Online';
@@ -42828,6 +42837,13 @@ function buildModeSetup(kind,fromHomeSelection){
       ?'Using game mode and difficulty from Home. Set room rules below.'
       :'Host picks rules; joiners receive them automatically.';
     document.getElementById('setup-go-btn').innerHTML='<span class="btn-icon">🌐</span> Host Room';
+  } else if(kind==='nearby'){
+    document.getElementById('setup-eyebrow').textContent='Same WiFi';
+    document.getElementById('setup-title').innerHTML='Game <em>Settings</em>';
+    document.getElementById('setup-subtitle').textContent=_setupUseHomeSelection
+      ?'Using game mode and difficulty from Home. Set room rules below.'
+      :'Apply rules before creating your nearby room.';
+    document.getElementById('setup-go-btn').innerHTML='<span class="btn-icon">📡</span> Start Nearby';
   } else {
     document.getElementById('setup-eyebrow').textContent='Solo';
     document.getElementById('setup-title').innerHTML='Solo <em>Settings</em>';
@@ -42930,6 +42946,13 @@ function beginFromSetup(){
     const nbJoin=document.getElementById('nb-join');
     if(nbJoin) setNb(nbJoin);
     setTimeout(()=>createRoom(),0);
+    return;
+  }
+  if(_setupAction==='nearby'){
+    go('lobby');
+    const nbJoin=document.getElementById('nb-join');
+    if(nbJoin) setNb(nbJoin);
+    setTimeout(()=>startNearby(),0);
     return;
   }
   if(_setupAction==='practice'){
