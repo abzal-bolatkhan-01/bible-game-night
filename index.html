@@ -2311,7 +2311,7 @@ html[data-theme="dark"] .mode-btn.sel { background: rgba(224,168,96,.12); border
 .ps-v2-sub { font-size:11px; color:var(--ink3); margin-top:2px; font-weight:400; }
 /* V3 — segmented */
 .ps-v3-wrap { display:flex; background:rgba(0,0,0,.18); border-radius:10px; padding:3px; margin-bottom:8px; }
-.ps-v3-seg { flex:1; padding:13px 4px; background:transparent; border:none; border-radius:8px; cursor:pointer; color:var(--ink3); font-family:'Nunito',sans-serif; font-size:13px; font-weight:600; transition:all .15s; text-align:center; line-height:1.5; }
+.ps-v3-seg { flex:1; padding:14px 4px; background:transparent; border:none; border-radius:8px; cursor:pointer; color:var(--ink3); font-family:'Nunito',sans-serif; font-size:13px; font-weight:600; transition:all .15s; text-align:center; line-height:1.5; }
 .ps-v3-seg.sel { background:var(--card-bg,rgba(255,255,255,.1)); color:var(--ink); box-shadow:0 1px 4px rgba(0,0,0,.25); }
 /* V4 — dominant selected */
 .ps-v4-btn { display:flex; align-items:center; gap:7px; padding:10px 16px; background:rgba(255,255,255,.04); border:1px solid var(--line); border-radius:40px; cursor:pointer; color:var(--ink3); font-family:'Cinzel',serif; font-size:10px; font-weight:600; letter-spacing:.08em; text-transform:uppercase; opacity:.5; transition:all .2s; flex-shrink:0; }
@@ -3202,10 +3202,10 @@ html[data-theme="warmth"] .divider::before, html[data-theme="warmth"] .divider::
     <div class="chips-wrap">
       <div class="label" style="margin-bottom:10px;">Play Style</div>
       <div class="ps-v3-wrap">
-        <button class="ps-mode-btn ps-v3-seg sel" data-mode="online" onclick="pickMode(this,'online')">🌐<br><span style="display:inline-block;margin-top:4px;">Online</span></button>
-        <button class="ps-mode-btn ps-v3-seg" data-mode="nearby" onclick="pickMode(this,'nearby')">📡<br><span style="display:inline-block;margin-top:4px;">Same Room</span></button>
-        <button class="ps-mode-btn ps-v3-seg" data-mode="local" onclick="pickMode(this,'local')">👥<br><span style="display:inline-block;margin-top:4px;">Pass & Play</span></button>
-        <button class="ps-mode-btn ps-v3-seg" data-mode="practice" onclick="pickMode(this,'practice')">🎓<br><span style="display:inline-block;margin-top:4px;">Solo</span></button>
+        <button class="ps-mode-btn ps-v3-seg sel" data-mode="online" onclick="pickMode(this,'online')"><span style="font-size:32px;line-height:1;">🌐</span><br><span style="display:inline-block;margin-top:5px;">Online</span></button>
+        <button class="ps-mode-btn ps-v3-seg" data-mode="nearby" onclick="pickMode(this,'nearby')"><span style="font-size:32px;line-height:1;">📡</span><br><span style="display:inline-block;margin-top:5px;">Same Room</span></button>
+        <button class="ps-mode-btn ps-v3-seg" data-mode="local" onclick="pickMode(this,'local')"><span style="font-size:32px;line-height:1;">👥</span><br><span style="display:inline-block;margin-top:5px;">Pass & Play</span></button>
+        <button class="ps-mode-btn ps-v3-seg" data-mode="practice" onclick="pickMode(this,'practice')"><span style="font-size:32px;line-height:1;">🎓</span><br><span style="display:inline-block;margin-top:5px;">Solo</span></button>
       </div>
       <div class="ps-mode-desc" style="font-size:11px;color:var(--ink3);text-align:center;margin-top:8px;">✦ &nbsp;Compete with believers worldwide</div>
     </div>
