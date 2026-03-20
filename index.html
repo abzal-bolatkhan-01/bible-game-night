@@ -3945,40 +3945,40 @@ html[data-theme="warmth"] .divider::before, html[data-theme="warmth"] .divider::
       <div class="mtitle" id="ch-friend-name" style="margin-bottom:0;">Friend</div>
     </div>
 
-    <div class="diff-row" style="margin-bottom:16px;">
-      <button class="diff-chip sel" id="ch-mode-live" onclick="chSetMode('live')">⚡ Live Duel</button>
-      <button class="diff-chip" id="ch-mode-ghost" onclick="chSetMode('ghost')">👻 Ghost Trial</button>
+    <div class="chips-wrap" style="margin-bottom:0;">
+      <div class="chips">
+        <button class="chip sel" id="ch-mode-live" onclick="chSetMode('live')">⚡ Duel</button>
+        <button class="chip" id="ch-mode-ghost" onclick="chSetMode('ghost')">👻 Ghost</button>
+      </div>
     </div>
-    <div id="ch-ghost-desc" style="display:none;font-size:13px;color:var(--ink3);margin-bottom:16px;line-height:1.6;text-align:center;padding:10px 4px;border-top:1px solid rgba(201,145,13,.12);border-bottom:1px solid rgba(201,145,13,.12);">You play first. Your friend gets the same questions later and tries to beat your score.</div>
+    <div id="ch-mode-desc" style="font-size:13px;color:var(--ink3);margin-bottom:16px;line-height:1.6;text-align:center;padding:10px 4px;border-bottom:1px solid rgba(201,145,13,.12);">Play live against your friend in real time.</div>
 
-    <label class="label">⚔️ Choose Your Weapon</label>
-    <div id="ch-qtype-chips" style="display:flex;flex-wrap:wrap;gap:8px;margin-bottom:20px;">
-      <button class="chip sel" onclick="pickChQType(this,'classic')" id="ch-qtype-classic">🎯 Multiple Choice</button>
-      <button class="chip" onclick="pickChQType(this,'truefalse')" id="ch-qtype-truefalse">✅ True or False</button>
-      <button class="chip" onclick="pickChQType(this,'verse')" id="ch-qtype-fillin">📖 Complete the Verse</button>
-      <button class="chip" onclick="pickChQType(this,'lightning')" id="ch-qtype-lightning">⚡ Lightning</button>
-    </div>
-
-    <label class="label">🏹 Level of Trial</label>
-    <div style="margin-bottom:20px;padding:0 2px;">
-      <input type="range" id="ch-diff-slider" min="1" max="3" step="1" value="1"
-        oninput="chDiffSlider(this.value)"
-        style="width:100%;accent-color:var(--gold1);cursor:pointer;height:6px;">
-      <div style="display:flex;justify-content:space-between;margin-top:8px;">
-        <span style="font-size:12px;color:var(--ink3);">🌿 Easy</span>
-        <span style="font-size:12px;color:var(--ink3);">📖 Medium</span>
-        <span style="font-size:12px;color:var(--ink3);">⚔️ Hard</span>
+    <div class="chips-wrap">
+      <div class="label" style="margin-bottom:7px;">Game Mode</div>
+      <div class="chips" id="ch-qtype-chips">
+        <button class="chip sel" onclick="pickChQType(this,'classic')" id="ch-qtype-classic">🎯 Multiple Choice</button>
+        <button class="chip" onclick="pickChQType(this,'truefalse')" id="ch-qtype-truefalse">✅ True or False</button>
+        <button class="chip" onclick="pickChQType(this,'verse')" id="ch-qtype-fillin">📖 Complete the Verse</button>
+        <button class="chip" onclick="pickChQType(this,'lightning')" id="ch-qtype-lightning">⚡ Lightning</button>
       </div>
     </div>
 
-    <label class="label">🛡️ Match Settings</label>
-    <div id="ch-live-options" style="background:rgba(201,145,13,.07);border:1px solid rgba(201,145,13,.18);border-radius:12px;padding:12px 14px;margin-bottom:16px;">
+    <div style="margin-bottom:14px;">
+      <div class="label" style="margin-bottom:7px;">Difficulty</div>
+      <div class="diff-row">
+        <button class="diff-chip sel" onclick="pickChDiff(this,'easy')" id="ch-diff-easy">🌿 Easy</button>
+        <button class="diff-chip" onclick="pickChDiff(this,'medium')" id="ch-diff-medium">📖 Medium</button>
+        <button class="diff-chip" onclick="pickChDiff(this,'hard')" id="ch-diff-hard">⚔️ Hard</button>
+      </div>
+    </div>
+
+    <div id="ch-live-options" style="margin-bottom:16px;">
     <div class="toggle-row" style="margin-bottom:10px;">
-      <span class="toggle-lbl" style="font-size:14px;">❤️ Hearts</span>
+      <span class="toggle-lbl">❤️ Hearts</span>
       <button class="toggle-btn on" id="ch-tog-hearts" onclick="togChHearts()">ON</button>
     </div>
     <div class="toggle-row" style="margin-bottom:0;">
-      <span class="toggle-lbl" style="font-size:14px;">🏁 Rounds</span>
+      <span class="toggle-lbl">🏁 Rounds</span>
       <div class="stepper">
         <button class="step-btn" onclick="adjChRounds(-1)">−</button>
         <span class="step-val" id="ch-win-disp">15</span>
@@ -44948,13 +44948,15 @@ function chSetMode(m){
   _ghostChallengeMode=m;
   const liveBtn=document.getElementById('ch-mode-live');
   const ghostBtn=document.getElementById('ch-mode-ghost');
-  const ghostDesc=document.getElementById('ch-ghost-desc');
+  const desc=document.getElementById('ch-mode-desc');
   const sendBtn=document.getElementById('ch-send-btn');
   const sendTxt=document.getElementById('ch-send-txt');
   const isGhost=m==='ghost';
   liveBtn.classList.toggle('sel',!isGhost);
   ghostBtn.classList.toggle('sel',isGhost);
-  if(ghostDesc) ghostDesc.style.display=isGhost?'':'none';
+  if(desc) desc.textContent=isGhost
+    ?'You play first. Your friend gets the same questions later and tries to beat your score.'
+    :'Play live against your friend in real time.';
   if(sendBtn) sendBtn.querySelector('.btn-icon').textContent=isGhost?'👻':'⚔️';
   if(sendTxt) sendTxt.textContent=isGhost?' Send It!':" Let's Go!";
 }
@@ -47316,9 +47318,10 @@ function challengeFriend(uid){
   document.getElementById('ch-friend-av').innerHTML=avatarMarkup(f.avatar||'😊',f.photo||'','lg');
   document.getElementById('ch-friend-name').textContent=f.name||'Friend';
 
-  // Set difficulty slider
-  const diffSlider=document.getElementById('ch-diff-slider');
-  if(diffSlider){const diffMap={easy:1,medium:2,hard:3};diffSlider.value=diffMap[_chDiff]||1;}
+  // Reset difficulty chips
+  document.querySelectorAll('.diff-row .diff-chip[id^="ch-diff-"]').forEach(c=>c.classList.remove('sel'));
+  const diffChip=document.getElementById('ch-diff-'+_chDiff)||document.getElementById('ch-diff-easy');
+  if(diffChip) diffChip.classList.add('sel');
   document.querySelectorAll('#ch-qtype-chips .chip').forEach(c=>c.classList.remove('sel'));
   const modeChip=document.getElementById('ch-qtype-'+_chQType)||document.getElementById('ch-qtype-classic');
   if(modeChip) modeChip.classList.add('sel');
@@ -47333,10 +47336,11 @@ function challengeFriend(uid){
   openOv('ov-challenge');
 }
 
-function chDiffSlider(val){
-  const diffs=['easy','medium','hard'];
-  _chDiff=diffs[parseInt(val)-1]||'easy';
+function pickChDiff(el,diff){
   sfx.tap();
+  _chDiff=diff;
+  document.querySelectorAll('.diff-row .diff-chip[id^="ch-diff-"]').forEach(c=>c.classList.remove('sel'));
+  el.classList.add('sel');
 }
 
 function pickChQType(el,qtype){
