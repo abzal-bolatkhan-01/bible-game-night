@@ -150,7 +150,7 @@ body::after {
 @keyframes scrIn    { from { opacity:0; transform:translateY(10px) } to { opacity:1; transform:none } }
 @keyframes fadeIn   { from { opacity:0 } to { opacity:1 } }
 @keyframes slideUp  { from { opacity:0; transform:translateY(100%) } to { opacity:1; transform:none } }
-@keyframes popIn    { from { opacity:0; transform:scale(.85) } to { opacity:1; transform:scale(1) } }
+@keyframes popIn    { from { opacity:0; transform:translateX(-50%) scale(.85) } to { opacity:1; transform:translateX(-50%) scale(1) } }
 @keyframes pulse    { 0%,100%{transform:scale(1)} 50%{transform:scale(1.05)} }
 @keyframes shake    { 0%,100%{transform:translateX(0)} 25%{transform:translateX(-5px)} 75%{transform:translateX(5px)} }
 @keyframes float    { 0%,100%{transform:translateY(0)} 50%{transform:translateY(-6px)} }
@@ -45907,7 +45907,7 @@ async function shareResult(){
   let photoDrawn=false;
   if(hasPhoto){
     try{
-      const img=await loadImageFromSrc(winner.photo);
+      const img=await loadImageForCanvas(winner.photo);
       ctx.save();
       ctx.beginPath();
       ctx.arc(PAX,PAY,PAR,0,Math.PI*2);
@@ -46102,6 +46102,16 @@ function loadImageFromSrc(src){
     img.src=src;
   });
 }
+function loadImageForCanvas(src){
+  // Sets crossOrigin so external URLs (Google photos etc.) don't taint the canvas
+  return new Promise((resolve,reject)=>{
+    const img=new Image();
+    img.crossOrigin='anonymous';
+    img.onload=()=>resolve(img);
+    img.onerror=()=>reject(new Error('Image load failed'));
+    img.src=src;
+  });
+}
 const PROGRESS_SHARE_THEMES=[
   {bg:['#111528','#171d33','#22160f'],a:'#e0a860',b:'#4a6fa8'},
   {bg:['#1b1324','#2b1a3c','#2a1a12'],a:'#e8b36b',b:'#5a78d0'},
@@ -46177,7 +46187,7 @@ async function shareProfileProgress(){
   const hasProfilePhoto=typeof p.photo==='string'&&p.photo.trim().length>0;
   if(hasProfilePhoto){
     try{
-      const img=await loadImageFromSrc(p.photo);
+      const img=await loadImageForCanvas(p.photo);
       const ax=110, ay=288, as=86;
       ctx.save();
       ctx.beginPath();
