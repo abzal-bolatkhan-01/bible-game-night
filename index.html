@@ -3223,7 +3223,7 @@ html[data-theme="warmth"] .divider::before, html[data-theme="warmth"] .divider::
         <button class="btn btn-primary" style="flex-shrink:0;width:auto;padding:0 20px;" onclick="addFriendFromFriends()">Add</button>
       </div>
       <div id="async-challenges-section" style="display:none;">
-        <div class="settings-section-title">Ghost Race Challenges</div>
+        <div style="font-family:'Cinzel',serif;font-size:12px;letter-spacing:.12em;color:var(--gold1);margin-bottom:12px;padding-top:4px;">⚔️ TRIALS AWAITING</div>
         <div id="async-challenges-list" style="margin-bottom:14px;"></div>
       </div>
       <div class="settings-section-title">Friend Requests</div>
@@ -3499,23 +3499,30 @@ html[data-theme="warmth"] .divider::before, html[data-theme="warmth"] .divider::
 </div>
 
 <!-- ████████  GHOST RACE RESULT  ████████ -->
-<div id="ghost-result-ov" style="display:none;position:fixed;inset:0;background:rgba(0,0,0,.82);z-index:9000;flex-direction:column;align-items:center;justify-content:center;padding:24px;">
-  <div style="background:var(--card-bg,#1e1a14);border:1px solid rgba(201,145,13,.3);border-radius:20px;padding:28px 24px;max-width:380px;width:100%;text-align:center;">
-    <div id="gr-emoji" style="font-size:52px;margin-bottom:8px;">👻</div>
-    <div id="gr-headline" style="font-family:'Cinzel',serif;font-size:22px;font-weight:700;color:var(--gold1);margin-bottom:6px;">Ghost Race</div>
-    <div id="gr-sub" style="font-size:13px;color:var(--ink3);margin-bottom:20px;line-height:1.5;"></div>
-    <div style="display:flex;gap:12px;justify-content:center;margin-bottom:20px;">
-      <div style="background:rgba(201,145,13,.1);border:1px solid rgba(201,145,13,.22);border-radius:14px;padding:12px 20px;min-width:90px;">
-        <div style="font-size:10px;color:var(--ink3);font-family:'Cinzel',serif;letter-spacing:.08em;text-transform:uppercase;margin-bottom:4px;">You</div>
-        <div id="gr-my-score" style="font-size:26px;font-weight:800;color:var(--gold1);font-family:'Cormorant Garamond',serif;">—</div>
+<div id="ghost-result-ov" style="display:none;position:fixed;inset:0;background:rgba(0,0,0,.88);z-index:9000;flex-direction:column;align-items:center;justify-content:center;padding:20px;">
+  <div style="background:linear-gradient(160deg,#1e1710 0%,#13100c 100%);border:1px solid rgba(201,145,13,.4);border-radius:24px;padding:32px 24px 24px;max-width:380px;width:100%;text-align:center;box-shadow:0 0 60px rgba(201,145,13,.12),0 24px 60px rgba(0,0,0,.6);">
+    <!-- decorative top line -->
+    <div style="width:48px;height:2px;background:linear-gradient(90deg,transparent,var(--gold1),transparent);margin:0 auto 20px;"></div>
+    <div id="gr-emoji" style="font-size:56px;margin-bottom:10px;line-height:1;">👻</div>
+    <div style="font-family:'Cinzel',serif;font-size:9px;letter-spacing:.18em;color:var(--ink3);text-transform:uppercase;margin-bottom:4px;">Ghost Trial</div>
+    <div id="gr-headline" style="font-family:'Cinzel',serif;font-size:24px;font-weight:700;color:var(--gold1);margin-bottom:8px;">—</div>
+    <div id="gr-sub" style="font-size:12px;color:var(--ink3);margin-bottom:24px;line-height:1.6;"></div>
+    <!-- score cards -->
+    <div id="gr-op-row" style="display:flex;align-items:center;gap:10px;justify-content:center;margin-bottom:20px;">
+      <div style="flex:1;background:rgba(201,145,13,.1);border:1px solid rgba(201,145,13,.3);border-radius:16px;padding:14px 10px;">
+        <div style="font-size:9px;color:var(--ink3);font-family:'Cinzel',serif;letter-spacing:.1em;text-transform:uppercase;margin-bottom:6px;">Your Scroll</div>
+        <div id="gr-my-score" style="font-size:32px;font-weight:800;color:var(--gold1);font-family:'Cormorant Garamond',serif;line-height:1;">—</div>
       </div>
-      <div id="gr-op-row" style="background:rgba(255,255,255,.04);border:1px solid rgba(255,255,255,.08);border-radius:14px;padding:12px 20px;min-width:90px;">
-        <div id="gr-op-name" style="font-size:10px;color:var(--ink3);font-family:'Cinzel',serif;letter-spacing:.08em;text-transform:uppercase;margin-bottom:4px;">Opponent</div>
-        <div id="gr-op-score" style="font-size:26px;font-weight:800;color:var(--ink);font-family:'Cormorant Garamond',serif;">—</div>
+      <div style="font-family:'Cinzel',serif;font-size:11px;color:var(--ink3);font-weight:700;flex-shrink:0;">VS</div>
+      <div style="flex:1;background:rgba(255,255,255,.04);border:1px solid rgba(255,255,255,.1);border-radius:16px;padding:14px 10px;">
+        <div id="gr-op-name" style="font-size:9px;color:var(--ink3);font-family:'Cinzel',serif;letter-spacing:.1em;text-transform:uppercase;margin-bottom:6px;white-space:nowrap;overflow:hidden;text-overflow:ellipsis;">Rival</div>
+        <div id="gr-op-score" style="font-size:32px;font-weight:800;color:var(--ink2);font-family:'Cormorant Garamond',serif;line-height:1;">—</div>
       </div>
     </div>
-    <div id="w-xp-txt" style="font-size:13px;color:var(--gold1);margin-bottom:16px;">✦ +0 XP earned</div>
-    <button class="btn btn-gold" onclick="closeGhostResult()" style="width:100%;">Done</button>
+    <div id="gr-xp-txt" style="font-family:'Cinzel',serif;font-size:11px;letter-spacing:.1em;color:var(--gold1);margin-bottom:20px;">✦ +0 XP earned</div>
+    <button class="btn btn-gold" onclick="closeGhostResult()" style="width:100%;letter-spacing:.05em;">Return to Scrolls</button>
+    <!-- decorative bottom line -->
+    <div style="width:48px;height:1px;background:linear-gradient(90deg,transparent,rgba(201,145,13,.4),transparent);margin:18px auto 0;"></div>
   </div>
 </div>
 
@@ -3928,35 +3935,38 @@ html[data-theme="warmth"] .divider::before, html[data-theme="warmth"] .divider::
       <div class="mtitle" id="ch-friend-name" style="margin-bottom:0;">Friend</div>
     </div>
 
-    <div style="display:flex;gap:0;margin-bottom:16px;background:rgba(0,0,0,.15);border-radius:10px;padding:3px;">
-      <button id="ch-mode-live" onclick="chSetMode('live')" style="flex:1;padding:7px;border:none;border-radius:8px;background:rgba(201,145,13,.25);color:var(--gold1);font-family:'Nunito',sans-serif;font-weight:800;font-size:12px;cursor:pointer;">⚡ Live</button>
-      <button id="ch-mode-ghost" onclick="chSetMode('ghost')" style="flex:1;padding:7px;border:none;border-radius:8px;background:transparent;color:var(--ink3);font-family:'Nunito',sans-serif;font-weight:800;font-size:12px;cursor:pointer;">👻 Ghost Race</button>
+    <div style="display:flex;gap:0;margin-bottom:16px;background:rgba(0,0,0,.18);border-radius:12px;padding:4px;border:1px solid rgba(201,145,13,.15);">
+      <button id="ch-mode-live" onclick="chSetMode('live')" style="flex:1;padding:9px 6px;border:none;border-radius:9px;background:rgba(201,145,13,.28);color:var(--gold1);font-family:'Cinzel',serif;font-weight:700;font-size:11px;letter-spacing:.06em;cursor:pointer;">⚡ Live Duel</button>
+      <button id="ch-mode-ghost" onclick="chSetMode('ghost')" style="flex:1;padding:9px 6px;border:none;border-radius:9px;background:transparent;color:var(--ink3);font-family:'Cinzel',serif;font-weight:700;font-size:11px;letter-spacing:.06em;cursor:pointer;">👻 Ghost Trial</button>
     </div>
-    <div id="ch-ghost-desc" style="display:none;font-size:12px;color:var(--ink3);margin-bottom:16px;line-height:1.5;">You play first — your score is saved. Friend plays the same questions later and tries to beat you.</div>
+    <div id="ch-ghost-desc" style="display:none;font-size:12px;color:var(--ink3);margin-bottom:16px;line-height:1.6;text-align:center;font-style:italic;padding:10px 4px;border-top:1px solid rgba(201,145,13,.12);border-bottom:1px solid rgba(201,145,13,.12);">Set your mark upon the scroll — your friend must face the same scripture and surpass your score.</div>
 
     <div id="ch-category-row" style="display:none;margin-bottom:16px;">
-      <label class="label">Category</label>
-      <select id="ch-category-sel" class="inp" style="font-size:14px;padding:10px;">
-        <option value="Genesis">Genesis</option>
-        <option value="Exodus">Exodus</option>
-        <option value="Judges">Judges</option>
-        <option value="Kings">Kings</option>
-        <option value="Psalms">Psalms</option>
-        <option value="Prophets">Prophets</option>
-        <option value="Gospels">Gospels</option>
-        <option value="Parables">Parables</option>
-        <option value="Acts">Acts</option>
-        <option value="Epistles">Epistles</option>
-        <option value="Revelation">Revelation</option>
-        <option value="Who Am I?">Who Am I?</option>
-        <option value="Miracles">Miracles</option>
-        <option value="Women of the Bible">Women of the Bible</option>
-        <option value="Animals in the Bible">Animals in the Bible</option>
-        <option value="Bible Geography">Bible Geography</option>
-        <option value="Numbers &amp; Dates">Numbers &amp; Dates</option>
-        <option value="Old Testament Law">Old Testament Law</option>
-        <option value="Worship &amp; Music">Worship &amp; Music</option>
-      </select>
+      <label class="label">Scripture</label>
+      <div style="overflow-x:auto;-webkit-overflow-scrolling:touch;padding-bottom:4px;">
+        <div id="ch-category-chips" style="display:flex;gap:6px;width:max-content;">
+          <button class="chip sel" onclick="pickChCategory(this,'all')" id="ch-cat-all">✦ All Scripture</button>
+          <button class="chip" onclick="pickChCategory(this,'Genesis')">Genesis</button>
+          <button class="chip" onclick="pickChCategory(this,'Exodus')">Exodus</button>
+          <button class="chip" onclick="pickChCategory(this,'Judges')">Judges</button>
+          <button class="chip" onclick="pickChCategory(this,'Kings')">Kings</button>
+          <button class="chip" onclick="pickChCategory(this,'Psalms')">Psalms</button>
+          <button class="chip" onclick="pickChCategory(this,'Prophets')">Prophets</button>
+          <button class="chip" onclick="pickChCategory(this,'Gospels')">Gospels</button>
+          <button class="chip" onclick="pickChCategory(this,'Parables')">Parables</button>
+          <button class="chip" onclick="pickChCategory(this,'Acts')">Acts</button>
+          <button class="chip" onclick="pickChCategory(this,'Epistles')">Epistles</button>
+          <button class="chip" onclick="pickChCategory(this,'Revelation')">Revelation</button>
+          <button class="chip" onclick="pickChCategory(this,'Who Am I?')">Who Am I?</button>
+          <button class="chip" onclick="pickChCategory(this,'Miracles')">Miracles</button>
+          <button class="chip" onclick="pickChCategory(this,'Women of the Bible')">Women</button>
+          <button class="chip" onclick="pickChCategory(this,'Animals in the Bible')">Animals</button>
+          <button class="chip" onclick="pickChCategory(this,'Bible Geography')">Geography</button>
+          <button class="chip" onclick="pickChCategory(this,'Numbers &amp; Dates')">Numbers</button>
+          <button class="chip" onclick="pickChCategory(this,'Old Testament Law')">OT Law</button>
+          <button class="chip" onclick="pickChCategory(this,'Worship &amp; Music')">Worship</button>
+        </div>
+      </div>
     </div>
     <label class="label">Game Mode</label>
     <div id="ch-qtype-chips" style="display:flex;flex-wrap:wrap;gap:8px;margin-bottom:20px;">
@@ -3974,10 +3984,7 @@ html[data-theme="warmth"] .divider::before, html[data-theme="warmth"] .divider::
     </div>
 
     <div id="ch-ghost-count-row" style="display:none;margin-bottom:16px;">
-      <label class="label">Questions</label>
-      <div class="toggle-row">
-        <span class="toggle-lbl">📝 10 questions per challenge</span>
-      </div>
+      <div style="text-align:center;font-family:'Cinzel',serif;font-size:11px;letter-spacing:.1em;color:var(--gold1);padding:8px 0;">✦ 10 Trials per Challenge ✦</div>
     </div>
     <label class="label" id="ch-options-lbl">Options</label>
     <div id="ch-live-options">
@@ -44946,6 +44953,13 @@ function displayLBRows(list, rows, tab, clanMap) {
    GHOST RACE (ASYNC CHALLENGE)
 ══════════════════════════════════════════════════ */
 let _ghostChallengeMode='live'; // 'live' | 'ghost'
+let _chCategory='all';
+function pickChCategory(el,cat){
+  sfx.tap();
+  _chCategory=cat;
+  document.querySelectorAll('#ch-category-chips .chip').forEach(c=>c.classList.remove('sel'));
+  el.classList.add('sel');
+}
 function chSetMode(m){
   _ghostChallengeMode=m;
   const liveBtn=document.getElementById('ch-mode-live');
@@ -44966,7 +44980,7 @@ function chSetMode(m){
   if(lbl) lbl.style.display=isGhost?'none':'';
   if(ghostCount) ghostCount.style.display=isGhost?'':'none';
   if(sendBtn) sendBtn.querySelector('.btn-icon').textContent=isGhost?'👻':'⚔️';
-  if(sendBtn) sendBtn.childNodes[1].textContent=isGhost?' Play & Send Challenge':' Send Challenge';
+  if(sendBtn) sendBtn.childNodes[1].textContent=isGhost?' Lay Down the Gauntlet':' Send Challenge';
   // Show category only for ghost + classic
   updateGhostCategoryVisibility();
 }
@@ -45001,9 +45015,14 @@ function seededShuffle(arr,seed){
 function buildGhostPool(mode,category,difficulty,seed,count){
   let src=[];
   if(mode==='classic'||mode==='truefalse'&&false){
-    const cat=category||(Object.keys(QB)[0]);
-    src=(QB[cat]||[]).filter(q=>q&&(difficulty==='all'||!difficulty||q.d===difficulty));
-    if(!src.length) src=QB[cat]||[];
+    if(!category||category==='all'){
+      src=Object.values(QB).flat().filter(q=>q&&(difficulty==='all'||!difficulty||q.d===difficulty));
+      if(!src.length) src=Object.values(QB).flat();
+    } else {
+      const cat=category||(Object.keys(QB)[0]);
+      src=(QB[cat]||[]).filter(q=>q&&(difficulty==='all'||!difficulty||q.d===difficulty));
+      if(!src.length) src=QB[cat]||[];
+    }
   } else if(mode==='truefalse'){
     src=TF_Q.filter(q=>q&&(difficulty==='all'||!difficulty||q.d===difficulty));
   } else if(mode==='verse'||mode==='fillin'){
@@ -45018,7 +45037,7 @@ function sendGhostChallenge(){
   const diff=_chDiff||'medium';
   const count=10;
   const seed=Math.floor(Math.random()*2147483647);
-  const category=mode==='classic'?(document.getElementById('ch-category-sel')?.value||Object.keys(QB)[0]):'';
+  const category=mode==='classic'?(_chCategory||'all'):'';
   const pool=buildGhostPool(mode,category,diff,seed,count);
   if(!pool.length){ toast('Not enough questions for this selection'); return; }
   const f=getFriendData(_chTargetUid);
@@ -45089,13 +45108,13 @@ function showGhostResult(myScore,myTotal,opScore,opTotal,opName,outcome){
   const pct=n=>Math.round((n/myTotal)*100);
   let headline='', sub='', emoji='';
   if(outcome==='sent'){
-    headline='Challenge Sent!'; sub=`You scored ${myScore}/${myTotal}. Waiting for ${opName}…`; emoji='📤';
+    headline='The Scroll is Sealed'; sub=`Your mark: ${myScore}/${myTotal}. ${opName} has 48 hours to answer the call.`; emoji='📜';
   } else if(outcome==='tie'){
-    headline='It\'s a Tie!'; sub=`Both scored ${myScore}/${myTotal} (+25 XP)`; emoji='🤝';
+    headline='An Equal Contest'; sub=`Both scrolls bear the same mark — ${myScore}/${myTotal} (+25 XP)`; emoji='🤝';
   } else if(outcome==='to'){
-    headline='You Won! 🏆'; sub=`You: ${myScore}/${myTotal} vs ${opName}: ${opScore}/${opTotal} (+75 XP)`; emoji='🥇';
+    headline='Victory is Yours'; sub=`You surpassed ${opName} — ${myScore}/${myTotal} vs ${opScore}/${opTotal} (+75 XP)`; emoji='🏆';
   } else {
-    headline='You Lost'; sub=`You: ${myScore}/${myTotal} vs ${opName}: ${opScore}/${opTotal}`; emoji='😤';
+    headline='The Trial is Lost'; sub=`${opName} prevailed — ${opScore}/${opTotal} vs your ${myScore}/${myTotal}`; emoji='📖';
   }
   document.getElementById('gr-emoji').textContent=emoji;
   document.getElementById('gr-headline').textContent=headline;
@@ -45107,7 +45126,7 @@ function showGhostResult(myScore,myTotal,opScore,opTotal,opName,outcome){
     document.getElementById('gr-op-name').textContent=opName||'Opponent';
     document.getElementById('gr-op-score').textContent=opScore+'/'+opTotal;
   }
-  const xpEl=document.getElementById('w-xp-txt');
+  const xpEl=document.getElementById('gr-xp-txt');
   if(xpEl){ const startXp=G._xpAtGameStart||0; const gained=Math.max(0,(G.profile?.xp||0)-startXp); xpEl.textContent='✦ +'+gained+' XP earned'; }
   el.style.display='flex';
   sfx.win(); haptic('win'); confetti();
@@ -45141,18 +45160,19 @@ function renderAsyncChallenges(){
   if(!pending.length){ sec.style.display='none'; return; }
   sec.style.display='';
   list.innerHTML=pending.map(([id,c])=>{
-    const modeLabel=c.mode==='classic'?(c.category||'Classic'):c.mode==='truefalse'?'True/False':'Fill-in-Verse';
+    const catLabel=c.category&&c.category!=='all'?c.category:'All Scripture';
+    const modeLabel=c.mode==='classic'?catLabel:c.mode==='truefalse'?'True/False':'Fill-in-Verse';
     const diffLabel=c.difficulty?(' · '+c.difficulty.charAt(0).toUpperCase()+c.difficulty.slice(1)):'';
     const timeLeft=Math.max(0,Math.floor((c.expiresAt-now)/3600000));
-    return `<div class="friend-row" style="margin-bottom:8px;">
+    return `<div class="friend-row" style="margin-bottom:10px;border:1px solid rgba(201,145,13,.2);border-radius:14px;padding:10px 12px;background:rgba(201,145,13,.05);">
       <div class="friend-av">${avatarMarkup(c.fromAvatar||'😊',c.fromPhoto||'','md')}</div>
       <div class="friend-info">
-        <div class="friend-name">👻 ${escHtml(c.fromName||'Friend')}</div>
-        <div class="friend-xp">${escHtml(modeLabel)}${escHtml(diffLabel)} · ${c.fromScore}/${c.fromTotal} pts · ${timeLeft}h left</div>
+        <div class="friend-name" style="font-family:'Cinzel',serif;font-size:13px;">👻 ${escHtml(c.fromName||'Challenger')}</div>
+        <div class="friend-xp" style="font-size:11px;">${escHtml(modeLabel)}${escHtml(diffLabel)} · Their score: ${c.fromScore}/${c.fromTotal} · ${timeLeft}h left</div>
       </div>
       <div class="friend-actions">
-        <button class="friend-btn friend-btn-chat" onclick="acceptGhostChallenge('${id}')">Race!</button>
-        <button class="friend-btn" style="background:#4a3f35;color:#fff;" onclick="declineGhostChallenge('${id}')">✕</button>
+        <button class="friend-btn friend-btn-chat" style="font-family:'Cinzel',serif;font-size:10px;letter-spacing:.05em;" onclick="acceptGhostChallenge('${id}')">Accept Trial</button>
+        <button class="friend-btn" style="background:#3a2e26;color:var(--ink3);font-size:11px;" onclick="declineGhostChallenge('${id}')">✕</button>
       </div>
     </div>`;
   }).join('');
