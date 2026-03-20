@@ -45811,131 +45811,160 @@ async function shareResult(){
   const winner=sorted[0];
   if(!winner){ toast('No results to share'); return; }
 
-  const w=1080,h=1920;
-  const c=document.createElement('canvas');
-  c.width=w; c.height=h;
-  const ctx=c.getContext('2d');
+  const W=1080,H=1920;
+  const cv=document.createElement('canvas');
+  cv.width=W; cv.height=H;
+  const ctx=cv.getContext('2d');
   if(!ctx){ toast('Unable to create image'); return; }
 
-  // ── Background: deep midnight gradient ──────────────────────
-  const bg=ctx.createLinearGradient(0,0,w,h);
-  bg.addColorStop(0,'#08060f');
-  bg.addColorStop(0.45,'#0c0a1c');
-  bg.addColorStop(0.8,'#120808');
-  bg.addColorStop(1,'#090610');
-  ctx.fillStyle=bg; ctx.fillRect(0,0,w,h);
+  // ── STARRY NIGHT background ──────────────────────────────────
+  const sky=ctx.createLinearGradient(0,0,0,H);
+  sky.addColorStop(0,'#05071a');
+  sky.addColorStop(0.3,'#090e38');
+  sky.addColorStop(0.65,'#07092e');
+  sky.addColorStop(1,'#040614');
+  ctx.fillStyle=sky; ctx.fillRect(0,0,W,H);
 
-  // Starfield
-  ctx.globalAlpha=0.55;
-  for(let i=0;i<140;i++){
-    const sx=(i*239+71)%w, sy=(i*317+53)%h;
-    const sr=0.8+(i%4)*0.5;
-    ctx.fillStyle=i%7===0?'#f5c842':i%3===0?'rgba(200,180,255,0.9)':'#ffffff';
-    ctx.beginPath(); ctx.arc(sx,sy,sr,0,Math.PI*2); ctx.fill();
+  // Swirling cloud nebulae (Van Gogh style) — deep blue radial blobs
+  const clouds=[
+    [240,200,220,'rgba(18,48,145,0.30)'],[800,155,195,'rgba(14,40,130,0.24)'],
+    [520,460,265,'rgba(16,44,138,0.20)'],[140,620,205,'rgba(18,52,150,0.18)'],
+    [885,540,190,'rgba(14,42,132,0.22)'],[370,900,235,'rgba(16,44,138,0.16)'],
+    [720,1110,215,'rgba(18,48,145,0.14)'],[260,1310,185,'rgba(14,40,130,0.15)'],
+    [845,1460,200,'rgba(16,44,138,0.14)'],[500,1660,165,'rgba(18,52,150,0.11)'],
+  ];
+  clouds.forEach(([cx,cy,r,col])=>{
+    const g=ctx.createRadialGradient(cx,cy,0,cx,cy,r);
+    g.addColorStop(0,col); g.addColorStop(1,'rgba(0,0,0,0)');
+    ctx.fillStyle=g; ctx.fillRect(0,0,W,H);
+    // Offset sub-swirl for depth
+    const g2=ctx.createRadialGradient(cx+r*0.4,cy-r*0.25,0,cx+r*0.4,cy-r*0.25,r*0.62);
+    g2.addColorStop(0,'rgba(20,52,148,0.15)'); g2.addColorStop(1,'rgba(0,0,0,0)');
+    ctx.fillStyle=g2; ctx.fillRect(0,0,W,H);
+  });
+
+  // Big luminous stars with radial halos
+  const bigStars=[
+    [175,130,30,'#f5e060'],[835,88,25,'#e8d455'],[622,228,19,'#ffffff'],
+    [82,402,15,'#cce8ff'],[962,308,21,'#f0d850'],[438,172,13,'#ffffff'],
+    [752,372,17,'#e8d455'],[272,492,12,'#cce8ff'],[892,678,15,'#f5e060'],
+    [145,792,13,'#ffffff'],[698,832,11,'#cce8ff'],[940,1100,14,'#f5e060'],
+  ];
+  bigStars.forEach(([sx,sy,sr,sc])=>{
+    const rv=parseInt(sc.slice(1,3),16),gv=parseInt(sc.slice(3,5),16),bv=parseInt(sc.slice(5,7),16);
+    const grd=ctx.createRadialGradient(sx,sy,0,sx,sy,sr*5.5);
+    grd.addColorStop(0,`rgba(${rv},${gv},${bv},0.78)`);
+    grd.addColorStop(0.3,`rgba(${rv},${gv},${bv},0.22)`);
+    grd.addColorStop(1,`rgba(${rv},${gv},${bv},0)`);
+    ctx.fillStyle=grd; ctx.beginPath(); ctx.arc(sx,sy,sr*5.5,0,Math.PI*2); ctx.fill();
+    ctx.fillStyle=`rgba(${rv},${gv},${bv},0.95)`;
+    ctx.beginPath(); ctx.arc(sx,sy,sr*0.38,0,Math.PI*2); ctx.fill();
+  });
+
+  // Dense small-star field
+  for(let i=0;i<260;i++){
+    const sx=(i*239+71)%W, sy=(i*317+53)%H;
+    ctx.globalAlpha=0.3+(i%7)*0.08;
+    ctx.fillStyle=i%9===0?'#f5e060':i%4===0?'#c8e0ff':'#ffffff';
+    ctx.beginPath(); ctx.arc(sx,sy,0.4+(i%4)*0.38,0,Math.PI*2); ctx.fill();
   }
   ctx.globalAlpha=1;
 
-  // Radial halo behind winner area
-  const halo=ctx.createRadialGradient(w/2,620,0,w/2,620,500);
-  halo.addColorStop(0,'rgba(245,200,66,0.11)');
-  halo.addColorStop(1,'rgba(0,0,0,0)');
-  ctx.fillStyle=halo; ctx.fillRect(0,0,w,h);
+  // Warm halo behind winner zone
+  const winHalo=ctx.createRadialGradient(W/2,510,0,W/2,510,340);
+  winHalo.addColorStop(0,'rgba(245,200,66,0.10)');
+  winHalo.addColorStop(1,'rgba(0,0,0,0)');
+  ctx.fillStyle=winHalo; ctx.fillRect(0,280,W,560);
 
-  // ── Outer border frame ───────────────────────────────────────
-  ctx.strokeStyle='rgba(245,200,66,0.22)';
-  ctx.lineWidth=2;
-  drawRoundRect(ctx,50,60,w-100,h-120,44);
-  ctx.stroke();
-  // Inner glow line
-  ctx.strokeStyle='rgba(245,200,66,0.07)';
-  ctx.lineWidth=6;
-  drawRoundRect(ctx,56,66,w-112,h-132,40);
-  ctx.stroke();
+  // ── Border frame ─────────────────────────────────────────────
+  ctx.strokeStyle='rgba(245,200,66,0.24)'; ctx.lineWidth=2;
+  drawRoundRect(ctx,50,60,W-100,H-120,44); ctx.stroke();
+  ctx.strokeStyle='rgba(245,200,66,0.07)'; ctx.lineWidth=7;
+  drawRoundRect(ctx,57,67,W-114,H-134,40); ctx.stroke();
 
   // ── Branding ─────────────────────────────────────────────────
   ctx.textAlign='center';
   ctx.font="800 58px 'Playfair Display',serif";
   ctx.fillStyle='#f5c842';
-  ctx.fillText('🕯 LAMP',w/2,182);
+  ctx.fillText('🕯 LAMP',W/2,182);
   ctx.font="500 23px 'Nunito',sans-serif";
   ctx.fillStyle='rgba(245,200,66,0.65)';
-  ctx.fillText('Bible Trivia Online',w/2,220);
-
-  // Ornamental divider
-  ctx.strokeStyle='rgba(245,200,66,0.28)';
-  ctx.lineWidth=1;
-  ctx.beginPath(); ctx.moveTo(220,250); ctx.lineTo(860,250); ctx.stroke();
+  ctx.fillText('Bible Trivia Online',W/2,220);
+  ctx.strokeStyle='rgba(245,200,66,0.28)'; ctx.lineWidth=1;
+  ctx.beginPath(); ctx.moveTo(220,248); ctx.lineTo(860,248); ctx.stroke();
   ctx.fillStyle='rgba(245,200,66,0.55)';
   ctx.font='18px serif';
-  ctx.fillText('✦  MATCH RESULTS  ✦',w/2,292);
+  ctx.fillText('✦  MATCH RESULTS  ✦',W/2,290);
 
-  // ── Winner showcase ──────────────────────────────────────────
-  // Glow disc
-  const disc=ctx.createRadialGradient(w/2,500,0,w/2,500,200);
-  disc.addColorStop(0,'rgba(245,200,66,0.14)');
-  disc.addColorStop(1,'rgba(0,0,0,0)');
-  ctx.fillStyle=disc; ctx.fillRect(0,300,w,430);
+  // ── Winner crown ─────────────────────────────────────────────
+  ctx.font='76px sans-serif';
+  ctx.fillText('👑',W/2,406);
 
-  ctx.font='80px sans-serif';
-  ctx.fillText('👑',w/2,410);
+  // Winner photo (circular) or emoji fallback
+  const hasPhoto=typeof winner.photo==='string'&&winner.photo.trim().length>0;
+  const PAR=58; // radius
+  const PAX=W/2, PAY=424+PAR; // center coords
+  let photoDrawn=false;
+  if(hasPhoto){
+    try{
+      const img=await loadImageFromSrc(winner.photo);
+      ctx.save();
+      ctx.beginPath();
+      ctx.arc(PAX,PAY,PAR,0,Math.PI*2);
+      ctx.closePath(); ctx.clip();
+      ctx.drawImage(img,PAX-PAR,PAY-PAR,PAR*2,PAR*2);
+      ctx.restore();
+      ctx.strokeStyle='#f5c842'; ctx.lineWidth=4;
+      ctx.beginPath(); ctx.arc(PAX,PAY,PAR+3,0,Math.PI*2); ctx.stroke();
+      photoDrawn=true;
+    }catch(e){}
+  }
+  if(!photoDrawn){
+    ctx.font='90px sans-serif';
+    ctx.fillText(winner.avatar||'😊',W/2,540);
+  }
 
-  ctx.font='88px sans-serif';
-  ctx.fillText(winner.avatar||'😊',w/2,530);
-
+  // Name & score
+  const nameY=PAY+PAR+68;
   ctx.font="900 70px 'Nunito',sans-serif";
   ctx.fillStyle='#f6efe4';
-  // Truncate long names
   let wName=winner.name||'Player';
   while(ctx.measureText(wName).width>760&&wName.length>4) wName=wName.slice(0,-1)+'…';
-  ctx.fillText(wName,w/2,616);
-
+  ctx.fillText(wName,W/2,nameY);
   ctx.font="700 32px 'Cinzel',serif";
   ctx.fillStyle='#f5c842';
-  ctx.fillText(`${G.scores[winner.name]||0} POINTS`,w/2,666);
+  ctx.fillText(`${G.scores[winner.name]||0} POINTS`,W/2,nameY+52);
 
   // ── Leaderboard ──────────────────────────────────────────────
-  // Dashed separator
+  const sepY=nameY+92;
   ctx.save();
-  ctx.strokeStyle='rgba(245,200,66,0.18)';
-  ctx.lineWidth=1; ctx.setLineDash([5,9]);
-  ctx.beginPath(); ctx.moveTo(160,716); ctx.lineTo(920,716); ctx.stroke();
+  ctx.strokeStyle='rgba(245,200,66,0.18)'; ctx.lineWidth=1; ctx.setLineDash([5,9]);
+  ctx.beginPath(); ctx.moveTo(160,sepY); ctx.lineTo(920,sepY); ctx.stroke();
   ctx.restore();
-
   ctx.font="600 22px 'Cinzel',serif";
   ctx.fillStyle='rgba(245,200,66,0.55)';
-  ctx.fillText('LEADERBOARD',w/2,762);
+  ctx.fillText('LEADERBOARD',W/2,sepY+44);
 
   const display=sorted.slice(0,6);
   const rowH=display.length<=4?104:display.length<=5?94:84;
-  const lbStartY=796;
+  const lbStartY=sepY+64;
 
   display.forEach((p,i)=>{
-    const ry=lbStartY+i*rowH;
-    const isTop=i===0;
-    // Row bg
+    const ry=lbStartY+i*rowH, isTop=i===0;
     ctx.fillStyle=isTop?'rgba(245,200,66,0.10)':'rgba(255,255,255,0.035)';
     drawRoundRect(ctx,120,ry,840,rowH-8,18); ctx.fill();
-    if(isTop){
-      ctx.strokeStyle='rgba(245,200,66,0.35)';
-      ctx.lineWidth=1.5;
-      drawRoundRect(ctx,120,ry,840,rowH-8,18); ctx.stroke();
-    }
+    if(isTop){ ctx.strokeStyle='rgba(245,200,66,0.35)'; ctx.lineWidth=1.5; drawRoundRect(ctx,120,ry,840,rowH-8,18); ctx.stroke(); }
     const mid=ry+(rowH-8)/2+2;
-    // Rank / crown
     ctx.textAlign='left';
     ctx.font=isTop?"700 28px 'Nunito',sans-serif":"600 26px 'Nunito',sans-serif";
     ctx.fillStyle=isTop?'#f5c842':'rgba(246,239,228,0.38)';
     ctx.fillText(isTop?'👑':`${i+1}`,148,mid+10);
-    // Avatar
-    ctx.font='32px sans-serif';
-    ctx.fillText(p.avatar||'😊',208,mid+11);
-    // Name
+    ctx.font='32px sans-serif'; ctx.fillText(p.avatar||'😊',208,mid+11);
     ctx.font=isTop?"700 32px 'Nunito',sans-serif":"500 28px 'Nunito',sans-serif";
     ctx.fillStyle=isTop?'#f6efe4':'rgba(246,239,228,0.78)';
     let pn=p.name||'Player';
     while(ctx.measureText(pn).width>420&&pn.length>4) pn=pn.slice(0,-1)+'…';
     ctx.fillText(pn,268,mid+11);
-    // Score
     ctx.textAlign='right';
     ctx.font=isTop?"800 32px 'Nunito',sans-serif":"600 28px 'Nunito',sans-serif";
     ctx.fillStyle=isTop?'#f5c842':'rgba(246,239,228,0.58)';
@@ -45943,51 +45972,48 @@ async function shareResult(){
     ctx.textAlign='center';
   });
 
-  // ── Bible verse ──────────────────────────────────────────────
-  const verseY=lbStartY+display.length*rowH+40;
-  ctx.fillStyle='rgba(245,200,66,0.055)';
-  drawRoundRect(ctx,110,verseY,860,220,26); ctx.fill();
-  ctx.strokeStyle='rgba(245,200,66,0.18)';
-  ctx.lineWidth=1;
-  drawRoundRect(ctx,110,verseY,860,220,26); ctx.stroke();
-
+  // ── Bible verse (dynamic height, no gap before reference) ────
+  const verseY=lbStartY+display.length*rowH+42;
   const v=nextWinVerse();
   ctx.font="italic 500 28px 'Cormorant Garamond',serif";
-  ctx.fillStyle='rgba(246,239,228,0.82)';
-  const verseWords=`"${v.t}"`.split(' ');
-  let vLine='', vLineY=verseY+66;
-  for(const wd of verseWords){
-    const test=vLine+(vLine?' ':'')+wd;
-    if(ctx.measureText(test).width>740&&vLine){
-      ctx.fillText(vLine,w/2,vLineY); vLine=wd; vLineY+=38;
-    } else { vLine=test; }
+  const vWords=`"${v.t}"`.split(' ');
+  let vLines=[],vCur='';
+  for(const wd of vWords){
+    const t=vCur+(vCur?' ':'')+wd;
+    if(ctx.measureText(t).width>760&&vCur){ vLines.push(vCur); vCur=wd; }
+    else vCur=t;
   }
-  if(vLine) ctx.fillText(vLine,w/2,vLineY);
+  if(vCur) vLines.push(vCur);
+  const verseBoxH=vLines.length*40+88;
+  ctx.fillStyle='rgba(245,200,66,0.055)';
+  drawRoundRect(ctx,110,verseY,860,verseBoxH,26); ctx.fill();
+  ctx.strokeStyle='rgba(245,200,66,0.18)'; ctx.lineWidth=1;
+  drawRoundRect(ctx,110,verseY,860,verseBoxH,26); ctx.stroke();
+  ctx.fillStyle='rgba(246,239,228,0.82)';
+  let vLY=verseY+52;
+  vLines.forEach(ln=>{ ctx.fillText(ln,W/2,vLY); vLY+=40; });
   ctx.font="700 20px 'Cinzel',serif";
-  ctx.fillStyle='rgba(245,200,66,0.7)';
-  ctx.fillText(`— ${v.r}`,w/2,verseY+196);
+  ctx.fillStyle='rgba(245,200,66,0.78)';
+  ctx.fillText(`— ${v.r}`,W/2,vLY+10);
 
-  // ── Footer ───────────────────────────────────────────────────
-  const footY=verseY+260;
-  ctx.strokeStyle='rgba(245,200,66,0.14)';
-  ctx.lineWidth=1;
+  // ── Footer — anchored to bottom ───────────────────────────────
+  const footY=H-272;
+  ctx.strokeStyle='rgba(245,200,66,0.14)'; ctx.lineWidth=1;
   ctx.beginPath(); ctx.moveTo(160,footY); ctx.lineTo(920,footY); ctx.stroke();
-
-  ctx.font="700 24px 'Cinzel',serif";
-  ctx.fillStyle='rgba(245,200,66,0.6)';
-  ctx.fillText('aviel-bolatkhan-01.github.io/bible-game-night',w/2,footY+48);
-
-  drawStoreBadge(ctx,120,footY+72,380,78,'apple');
-  drawStoreBadge(ctx,560,footY+72,400,78,'google');
-
+  ctx.font="700 22px 'Cinzel',serif";
+  ctx.fillStyle='rgba(245,200,66,0.52)';
+  ctx.fillText('🕯 Lamp · Bible Trivia Online',W/2,footY+42);
+  // Badges — same sizing as progress share card
+  drawStoreBadge(ctx,110,footY+62,410,84,'apple');
+  drawStoreBadge(ctx,530,footY+62,440,84,'google');
   ctx.font="500 18px 'Nunito',sans-serif";
-  ctx.fillStyle='rgba(246,239,228,0.3)';
-  ctx.fillText(new Date().toLocaleDateString(),w/2,footY+192);
+  ctx.fillStyle='rgba(246,239,228,0.25)';
+  ctx.fillText(new Date().toLocaleDateString(),W/2,footY+182);
 
   // ── Export & share ───────────────────────────────────────────
   try{
     const caption=`🏆 Lamp Bible Trivia — ${winner.name} won with ${G.scores[winner.name]||0} pts! ✨ #LampBibleTrivia`;
-    const blob=await canvasToBlob(c,'image/jpeg',0.94);
+    const blob=await canvasToBlob(cv,'image/jpeg',0.94);
     const file=new File([blob],`lamp-result-${Date.now()}.jpg`,{type:'image/jpeg'});
     if(navigator.share&&navigator.canShare&&navigator.canShare({files:[file]})){
       await navigator.share({title:'Lamp - Bible Trivia Results',text:caption,files:[file]});
