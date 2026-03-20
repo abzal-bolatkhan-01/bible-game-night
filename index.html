@@ -3151,21 +3151,21 @@ html[data-theme="warmth"] .divider::before, html[data-theme="warmth"] .divider::
     <div class="chips-wrap">
       <div class="label" style="margin-bottom:10px;">Play Style</div>
       <div id="mode-chips" style="display:grid;grid-template-columns:1fr 1fr;gap:8px;margin-bottom:10px;">
-        <button class="mode-btn sel" onclick="pickMode(this,'online')">
+        <button class="chip sel" onclick="pickMode(this,'online')" style="flex-direction:column;padding:14px 8px;gap:6px;justify-content:center;align-items:center;text-align:center;">
           <span style="font-size:22px;">🌐</span>
-          <span style="font-family:'Playfair Display',serif;font-size:16px;color:var(--ink);">Online</span>
+          <span style="font-family:'Playfair Display',serif;font-size:16px;">Online</span>
         </button>
-        <button class="mode-btn" onclick="pickMode(this,'nearby')">
+        <button class="chip" onclick="pickMode(this,'nearby')" style="flex-direction:column;padding:14px 8px;gap:6px;justify-content:center;align-items:center;text-align:center;">
           <span style="font-size:22px;">📡</span>
-          <span style="font-family:'Playfair Display',serif;font-size:16px;color:var(--ink);">Same Room</span>
+          <span style="font-family:'Playfair Display',serif;font-size:16px;">Same Room</span>
         </button>
-        <button class="mode-btn" onclick="pickMode(this,'local')">
+        <button class="chip" onclick="pickMode(this,'local')" style="flex-direction:column;padding:14px 8px;gap:6px;justify-content:center;align-items:center;text-align:center;">
           <span style="font-size:22px;">👥</span>
-          <span style="font-family:'Playfair Display',serif;font-size:16px;color:var(--ink);">Pass & Play</span>
+          <span style="font-family:'Playfair Display',serif;font-size:16px;">Pass & Play</span>
         </button>
-        <button class="mode-btn" onclick="pickMode(this,'practice')">
+        <button class="chip" onclick="pickMode(this,'practice')" style="flex-direction:column;padding:14px 8px;gap:6px;justify-content:center;align-items:center;text-align:center;">
           <span style="font-size:22px;">🎓</span>
-          <span style="font-family:'Playfair Display',serif;font-size:16px;color:var(--ink);">Solo</span>
+          <span style="font-family:'Playfair Display',serif;font-size:16px;">Solo</span>
         </button>
       </div>
       <div id="mode-style-desc" style="text-align:center;font-size:12px;color:var(--ink3);letter-spacing:.01em;padding:4px 0;">✦ &nbsp;Compete with believers worldwide</div>
@@ -42781,7 +42781,7 @@ const MODE_STYLE_DESCS={
 function pickMode(el,m){
   sfx.tap(); haptic('tap');
   G.mode=m; G.seen.clear();
-  document.querySelectorAll('#mode-chips .mode-btn').forEach(c=>c.classList.remove('sel'));
+  document.querySelectorAll('#mode-chips .chip').forEach(c=>c.classList.remove('sel'));
   el.classList.add('sel');
   const descEl=document.getElementById('mode-style-desc');
   if(descEl) descEl.innerHTML=MODE_STYLE_DESCS[m]||'';
