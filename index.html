@@ -2315,7 +2315,8 @@ html[data-theme="dark"] .mode-btn.sel { background: rgba(224,168,96,.12); border
 /* V3 — segmented */
 .ps-v3-wrap { display:flex; background:rgba(0,0,0,.18); border-radius:10px; padding:3px; margin-bottom:8px; }
 .ps-v3-seg { flex:1; padding:14px 4px; background:transparent; border:none; border-radius:8px; cursor:pointer; color:var(--ink2); font-family:'Nunito',sans-serif; font-size:15px; font-weight:800; letter-spacing:.01em; transition:all .15s; text-align:center; line-height:1.5; }
-.ps-mode-btn.ps-v3-seg { font-size:14px; }
+.ps-mode-btn.ps-v3-seg { font-size:13.5px; }
+.diff-chip.ps-v3-seg { padding:9px 4px; font-size:13px; }
 .ps-v3-seg.ps-inline { padding:9px 4px; display:flex; align-items:center; justify-content:center; gap:6px; line-height:1; }
 .ps-v3-seg.sel, .ps-v3-seg.active { background:#fff; color:var(--ink); box-shadow:0 2px 8px rgba(0,0,0,.14); }
 .ps-v3-seg:active { transform:scale(.96); opacity:.82; }
@@ -3446,10 +3447,10 @@ html.feat-bigQuestion #g-txt { font-size: 19px !important; line-height: 1.45; }
       </div>
       <div>
         <div class="label" style="margin-bottom:7px;">Difficulty</div>
-        <div class="diff-row" id="setup-room-diff-chips">
-          <button class="diff-chip sel" data-diff="easy" onclick="pickSetupDiff(this,'easy')">🌿 Easy</button>
-          <button class="diff-chip" data-diff="medium" onclick="pickSetupDiff(this,'medium')">📖 Medium</button>
-          <button class="diff-chip" data-diff="hard" onclick="pickSetupDiff(this,'hard')">⚔️ Hard</button>
+        <div class="ps-v3-wrap" id="setup-room-diff-chips" style="margin-bottom:0;">
+          <button class="diff-chip ps-v3-seg sel" data-diff="easy" onclick="pickSetupDiff(this,'easy')">🌿 Easy</button>
+          <button class="diff-chip ps-v3-seg" data-diff="medium" onclick="pickSetupDiff(this,'medium')">📖 Medium</button>
+          <button class="diff-chip ps-v3-seg" data-diff="hard" onclick="pickSetupDiff(this,'hard')">⚔️ Hard</button>
         </div>
       </div>
     </div>
@@ -4108,10 +4109,10 @@ html.feat-bigQuestion #g-txt { font-size: 19px !important; line-height: 1.45; }
 
     <div style="margin-bottom:14px;">
       <div class="label" style="margin-bottom:7px;">Difficulty</div>
-      <div class="diff-row">
-        <button class="diff-chip sel" onclick="pickChDiff(this,'easy')" id="ch-diff-easy">🌿 Easy</button>
-        <button class="diff-chip" onclick="pickChDiff(this,'medium')" id="ch-diff-medium">📖 Medium</button>
-        <button class="diff-chip" onclick="pickChDiff(this,'hard')" id="ch-diff-hard">⚔️ Hard</button>
+      <div class="ps-v3-wrap diff-row" style="margin-bottom:0;">
+        <button class="diff-chip ps-v3-seg sel" onclick="pickChDiff(this,'easy')" id="ch-diff-easy">🌿 Easy</button>
+        <button class="diff-chip ps-v3-seg" onclick="pickChDiff(this,'medium')" id="ch-diff-medium">📖 Medium</button>
+        <button class="diff-chip ps-v3-seg" onclick="pickChDiff(this,'hard')" id="ch-diff-hard">⚔️ Hard</button>
       </div>
     </div>
 
@@ -44636,7 +44637,7 @@ function renderOnlineQ(){
   document.getElementById('g-nm').textContent=me?me.name+' (You)':'';
   document.getElementById('g-score').textContent=me?(G.scores[me.name]||0):0;
   const totalOnline=Math.max(1,(G.roomPool&&G.roomPool.length)||currentRounds());
-  document.getElementById('g-round').textContent=`Round ${Math.min(G.qi+1,totalOnline)}/${totalOnline}`;
+  document.getElementById('g-round').textContent=G.sub==='lightning'?'':`Round ${Math.min(G.qi+1,totalOnline)}/${totalOnline}`;
   renderHearts('g-hearts',me&&G.hearts[me.name]!=null?G.hearts[me.name]:3);
   setCategoryBadge('g-cat',q.kind==='truefalse'?'True or False':(q.cat||q.r||''));
   const fb=document.getElementById('g-fb');
