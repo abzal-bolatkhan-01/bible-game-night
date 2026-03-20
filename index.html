@@ -44911,7 +44911,7 @@ function setClanIcon(emoji){
   if(!G.profile||!G.profile.clanCode){toast('No congregation');return;}
   G.profile.clanIcon=emoji;
   saveProfile();
-  if(G.fbOk) G.db.ref('clans/'+G.profile.clanCode+'/icon').set(emoji);
+  if(G.fbOk){ G.db.ref('clans/'+G.profile.clanCode+'/icon').set(emoji); pushProfile(); }
   closeOv('ov-clan-icon');
   renderClans();
   toast('Congregation icon updated');
@@ -45093,6 +45093,7 @@ function updateCurrentClanPhoto(photoData){
   const applyLocal=()=>{
     G.profile.clanPhoto=nextPhoto;
     saveProfile();
+    if(G.fbOk) pushProfile();
     renderClans();
     if(document.getElementById('s-profile')?.classList.contains('active')) renderProfile();
     toast(nextPhoto?'Congregation photo updated':'Congregation photo removed');
@@ -45194,11 +45195,10 @@ function renderClans(){
         <div style="min-width:0;">
           <div class="h2">${G.profile.clanName}</div>
           <div style="font-family:'Cinzel',serif;font-size:9px;letter-spacing:.1em;color:var(--ink3);text-transform:uppercase;margin-top:2px;">Your Congregation</div>
-          ${G.profile.clanCode?`<div style="display:inline-flex;align-items:center;gap:5px;background:rgba(201,145,13,.1);border:1px solid rgba(201,145,13,.22);border-radius:20px;padding:2px 9px;font-family:'Cinzel',serif;font-size:9px;letter-spacing:.1em;color:var(--gold1);margin-top:6px;">Code: ${G.profile.clanCode}</div>`:''}
+          ${G.profile.clanCode?`<div onclick="navigator.clipboard.writeText('${G.profile.clanCode}').then(()=>toast('Code copied!')).catch(()=>toast('${G.profile.clanCode}'))" style="display:inline-flex;align-items:center;gap:5px;background:rgba(201,145,13,.1);border:1px solid rgba(201,145,13,.22);border-radius:20px;padding:2px 9px;font-family:'Cinzel',serif;font-size:9px;letter-spacing:.1em;color:var(--gold1);margin-top:6px;cursor:pointer;user-select:none;">Code: ${G.profile.clanCode} 📋</div>`:''}
         </div>
       </div>
-      ${isOwner?`<div style="font-size:11px;color:var(--ink3);margin-bottom:6px;">Your code: <span style="color:var(--gold1);font-weight:700;letter-spacing:.08em;">${G.profile.friendCode||'—'}</span> · Share it or enter a friend's code to invite them.</div>
-      <input id="clan-invite-inp" class="inp" placeholder="Enter friend's code…" style="margin-bottom:8px;font-size:14px;" maxlength="10" oninput="this.value=this.value.toUpperCase()">
+      ${isOwner?`<input id="clan-invite-inp" class="inp" placeholder="Enter friend's code to invite…" style="margin-bottom:8px;font-size:14px;" maxlength="10" oninput="this.value=this.value.toUpperCase()">
       <div style="display:flex;gap:8px;">
         <button class="btn btn-gold" onclick="inviteToClan()" style="flex:1;">Invite</button>
         <button class="btn btn-ghost" onclick="requestRemoveCongregation()" style="flex:1;color:var(--ink3);">🧹 Delete</button>
