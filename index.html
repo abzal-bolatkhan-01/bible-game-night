@@ -1503,6 +1503,12 @@ html[data-theme="warmth"] .challenge-notif-inner {
 }
 
 /* ─── RESPONSIVE ─────────────────────────────── */
+@media (min-width: 601px) {
+  .lb-sub-btn { white-space: nowrap; }
+}
+@media (max-width: 600px) {
+  .lb-sub-btn { flex-direction: column; gap: 2px; font-size: 11px; padding: 7px 4px !important; white-space: normal; }
+}
 @media (max-width: 380px) {
   .screen { padding: 0 13px; }
   .chip { padding: 8px 13px; font-size: 10px; }
@@ -3502,10 +3508,10 @@ html[data-theme="warmth"] .divider::before, html[data-theme="warmth"] .divider::
     <!-- Rankings Panel -->
     <div id="comm-panel-rankings">
       <div style="display:flex;gap:7px;margin-bottom:16px;">
-        <button class="btn btn-ghost btn-sm" style="flex:1;padding:8px;white-space:nowrap;" id="lb-friends" onclick="lbTab('friends')">👥 Friends</button>
-        <button class="btn btn-ghost btn-sm" style="flex:1;padding:8px;white-space:nowrap;" id="lb-global" onclick="lbTab('global')">🌍 Global</button>
-        <button class="btn btn-ghost btn-sm" style="flex:1;padding:8px;white-space:nowrap;" id="lb-clan"   onclick="lbTab('clan')">⛪ Congreg.</button>
-        <button class="btn btn-ghost btn-sm" style="flex:1;padding:8px;white-space:nowrap;" id="lb-weekly" onclick="lbTab('weekly')">📅 Weekly</button>
+        <button class="btn btn-ghost btn-sm lb-sub-btn" style="flex:1;padding:8px;display:inline-flex;align-items:center;justify-content:center;gap:4px;" id="lb-friends" onclick="lbTab('friends')">👥 Friends</button>
+        <button class="btn btn-ghost btn-sm lb-sub-btn" style="flex:1;padding:8px;display:inline-flex;align-items:center;justify-content:center;gap:4px;" id="lb-global" onclick="lbTab('global')">🌍 Global</button>
+        <button class="btn btn-ghost btn-sm lb-sub-btn" style="flex:1;padding:8px;display:inline-flex;align-items:center;justify-content:center;gap:4px;" id="lb-clan"   onclick="lbTab('clan')">⛪ Congreg.</button>
+        <button class="btn btn-ghost btn-sm lb-sub-btn" style="flex:1;padding:8px;display:inline-flex;align-items:center;justify-content:center;gap:4px;" id="lb-weekly" onclick="lbTab('weekly')">📅 Weekly</button>
       </div>
       <div id="lb-list"></div>
     </div>
