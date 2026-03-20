@@ -159,6 +159,7 @@ body::after {
 @keyframes confettiFall { 0%{transform:translateY(-8px) rotate(0);opacity:1} 100%{transform:translateY(105vh) rotate(640deg);opacity:0} }
 @keyframes streakPop { 0%{transform:scale(.3) rotate(-5deg);opacity:0} 55%{transform:scale(1.18);opacity:1} 100%{transform:none;opacity:1} }
 @keyframes hrtBreak { 0%{transform:scale(1)} 30%{transform:scale(1.5)} 100%{transform:scale(1);filter:grayscale(1) brightness(.2)} }
+@keyframes pulse-badge { 0%,100%{transform:scale(1);box-shadow:0 0 0 0 rgba(231,76,60,.7)} 50%{transform:scale(1.15);box-shadow:0 0 0 4px rgba(231,76,60,0)} }
 @keyframes elimFade { 0%{opacity:0;transform:scale(1.1)} 15%{opacity:1;transform:none} 80%{opacity:1} 100%{opacity:0} }
 @keyframes xpIn     { from{width:0} to{width:var(--pct)} }
 @keyframes blink    { 0%,100%{opacity:1} 50%{opacity:.28} }
@@ -3372,6 +3373,8 @@ html.feat-gameHeader .g-nm { font-weight: 800 !important; max-width: 100px; over
     <button class="btn btn-gold" onclick="onPlay()" style="margin-bottom:8px;">
       ▶ Play
     </button>
+    <button class="btn btn-ghost btn-sm" onclick="go('friends');switchSocialTab('friends');setTimeout(()=>document.getElementById('friends-screen-code-inp')&&document.getElementById('friends-screen-code-inp').focus(),200)" style="margin-bottom:8px;background:rgba(201,145,13,.08);border:1.5px solid rgba(201,145,13,.3);color:var(--gold1);font-size:13px;">⚡ Challenge a Friend</button>
+    <div id="sunday-bowl-banner" style="display:none;margin-bottom:8px;"></div>
     <button class="btn btn-ghost btn-sm" onclick="go('donation')" style="font-size:12px;">❤️ Support This Ministry</button>
     <div class="pb"></div>
   </div>
@@ -3434,6 +3437,10 @@ html.feat-gameHeader .g-nm { font-weight: 800 !important; max-width: 100px; over
   <div class="scroller">
     <!-- ── Friends panel ── -->
     <div class="social-panel active" id="spanel-friends">
+      <div id="async-challenges-section" style="display:none;margin-bottom:4px;">
+        <div style="font-family:'Cinzel',serif;font-size:12px;letter-spacing:.12em;color:var(--gold1);margin-bottom:10px;padding-top:2px;">⚡ CHALLENGES AWAITING</div>
+        <div id="async-challenges-list" style="margin-bottom:14px;"></div>
+      </div>
       <div class="my-code-box">
         <div style="font-family:'Nunito',sans-serif;font-weight:700;font-size:11px;color:var(--ink3);text-transform:uppercase;letter-spacing:.08em;margin-bottom:5px;">Your Invite Code</div>
         <div class="my-code" id="my-friend-code" onclick="copyMyCode()">—</div>
@@ -3442,10 +3449,6 @@ html.feat-gameHeader .g-nm { font-weight: 800 !important; max-width: 100px; over
       <div style="display:flex;gap:8px;margin-bottom:18px;">
         <input class="inp" id="friends-screen-code-inp" placeholder="Enter a friend's code…" style="flex:1;" maxlength="8" autocomplete="off">
         <button class="btn btn-primary" style="flex-shrink:0;width:auto;padding:0 20px;" onclick="addFriendFromFriends()">Add</button>
-      </div>
-      <div id="async-challenges-section" style="display:none;">
-        <div style="font-family:'Cinzel',serif;font-size:12px;letter-spacing:.12em;color:var(--gold1);margin-bottom:12px;padding-top:4px;">⚔️ TRIALS AWAITING</div>
-        <div id="async-challenges-list" style="margin-bottom:14px;"></div>
       </div>
       <div class="settings-section-title">Friend Requests</div>
       <div id="friends-requests-list" style="margin-bottom:14px;">
@@ -3509,6 +3512,7 @@ html.feat-gameHeader .g-nm { font-weight: 800 !important; max-width: 100px; over
           <button class="chip" data-sub="truefalse" onclick="pickSetupSub(this,'truefalse')">✅ True or False</button>
           <button class="chip" data-sub="verse" onclick="pickSetupSub(this,'verse')">📖 Complete the Verse</button>
           <button class="chip" data-sub="lightning" onclick="pickSetupSub(this,'lightning')">⚡ Lightning</button>
+          <button class="chip" data-sub="team" id="chip-team" style="display:none;" onclick="pickSetupSub(this,'team')">👥 Team Mode</button>
         </div>
       </div>
       <div>
@@ -3983,11 +3987,12 @@ html.feat-gameHeader .g-nm { font-weight: 800 !important; max-width: 100px; over
     </svg>
     Community
   </button>
-  <button class="nb" id="nb-friends" onclick="go('friends');setNb(this)">
+  <button class="nb" id="nb-friends" onclick="go('friends');setNb(this)" style="position:relative;">
     <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round">
       <circle cx="9" cy="7" r="3"/><path d="M3 20c0-3.3 2.7-6 6-6s6 2.7 6 6"/><circle cx="19" cy="8" r="2"/><path d="M19 13c2.2 0 4 1.8 4 4"/><line x1="17" y1="5" x2="21" y2="5"/><line x1="19" y1="3" x2="19" y2="7"/>
     </svg>
     Friends
+    <span id="friends-challenge-badge" style="display:none;position:absolute;top:4px;right:4px;background:#e74c3c;color:#fff;border-radius:50%;width:16px;height:16px;font-size:10px;font-weight:800;line-height:16px;text-align:center;animation:pulse-badge 1.2s infinite;"></span>
   </button>
   <button class="nb on" id="nb-home" onclick="go('home');setNb(this)">
     <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round">
@@ -4289,6 +4294,242 @@ const SEASONAL_EVENTS = [
     ]
   }
 ];
+
+
+/* ══════════════════════════════════════════════════
+   SEASONAL QUESTION PACKS
+══════════════════════════════════════════════════ */
+const SEASONAL_Q=[
+  // ── Christmas (15) ──
+  {q:"Which prophet foretold that a virgin would give birth to a son named Immanuel?",o:["Isaiah","Jeremiah","Ezekiel","Micah"],a:0,e:"Isaiah 7:14 — 'The virgin will conceive and give birth to a son, and will call him Immanuel.'",d:"easy",season:"christmas"},
+  {q:"In which city was Jesus born?",o:["Nazareth","Jerusalem","Bethlehem","Jericho"],a:2,e:"Luke 2:4-7 — Joseph went to Bethlehem, the town of David, where Jesus was born.",d:"easy",season:"christmas"},
+  {q:"What did the angel tell the shepherds they would find as a sign?",o:["A star in the east","A baby wrapped in cloths lying in a manger","A bright light in the sky","A child in a palace"],a:1,e:"Luke 2:12 — The angel said: 'You will find a baby wrapped in cloths and lying in a manger.'",d:"easy",season:"christmas"},
+  {q:"Which prophet predicted the Messiah would be born in Bethlehem?",o:["Isaiah","Amos","Micah","Zechariah"],a:2,e:"Micah 5:2 — 'But you, Bethlehem Ephrathah... out of you will come for me one who will be ruler over Israel.'",d:"medium",season:"christmas"},
+  {q:"What gifts did the Magi bring to Jesus?",o:["Gold, frankincense, and myrrh","Silver, oil, and spices","Gold, silver, and bronze","Bread, wine, and oil"],a:0,e:"Matthew 2:11 — The Magi presented gifts of gold, frankincense, and myrrh.",d:"easy",season:"christmas"},
+  {q:"Who was the Roman emperor when Jesus was born?",o:["Nero","Herod","Augustus","Tiberius"],a:2,e:"Luke 2:1 — A decree went out from Caesar Augustus that all the world should be registered.",d:"medium",season:"christmas"},
+  {q:"What does the name 'Immanuel' mean?",o:["Son of God","God with us","Savior of the world","King of kings"],a:1,e:"Matthew 1:23 — 'Immanuel' means 'God with us.'",d:"easy",season:"christmas"},
+  {q:"How did John describe the Word (Jesus) coming into the world in John 1?",o:["The Word appeared as thunder","The Word became flesh and dwelt among us","The Word was spoken from heaven","The Word descended as a dove"],a:1,e:"John 1:14 — 'The Word became flesh and made his dwelling among us.'",d:"medium",season:"christmas"},
+  {q:"What did the angel Gabriel tell Mary before Jesus' birth?",o:["She would be a prophetess","She would give birth to the Son of the Most High","She would lead Israel","She would build a temple"],a:1,e:"Luke 1:32 — The angel said her son 'will be called the Son of the Most High.'",d:"easy",season:"christmas"},
+  {q:"Which Old Testament passage is quoted in Matthew 2 about Rachel weeping for her children?",o:["Isaiah 9","Jeremiah 31","Psalm 22","Hosea 11"],a:1,e:"Matthew 2:18 quotes Jeremiah 31:15 about Rachel weeping for her children.",d:"hard",season:"christmas"},
+  {q:"What was the name of the prophetess who recognized the infant Jesus at the temple?",o:["Miriam","Deborah","Anna","Huldah"],a:2,e:"Luke 2:36-38 — Anna, an 84-year-old prophetess, gave thanks and spoke about Jesus.",d:"hard",season:"christmas"},
+  {q:"Isaiah 9:6 gives Jesus four titles. Which of these is NOT one of them?",o:["Wonderful Counselor","Mighty God","King of Peace","Prince of Peace"],a:2,e:"Isaiah 9:6 says Wonderful Counselor, Mighty God, Everlasting Father, Prince of Peace — 'King of Peace' is not in the text.",d:"hard",season:"christmas"},
+  {q:"What did Simeon say he could now do after seeing the infant Jesus?",o:["Go to Jerusalem","Depart in peace","Begin his ministry","Proclaim to the nations"],a:1,e:"Luke 2:29 — Simeon said: 'Sovereign Lord, you may now dismiss your servant in peace.'",d:"medium",season:"christmas"},
+  {q:"Which Gospel does NOT contain a nativity or birth narrative of Jesus?",o:["Matthew","Luke","Mark","None — all four have one"],a:2,e:"Mark begins with John the Baptist and Jesus' baptism — it contains no birth story.",d:"medium",season:"christmas"},
+  {q:"Where did Joseph, Mary, and Jesus flee to escape King Herod?",o:["Syria","Babylon","Egypt","Persia"],a:2,e:"Matthew 2:13-14 — An angel told Joseph to flee to Egypt to escape Herod's plan to kill Jesus.",d:"easy",season:"christmas"},
+  // ── Easter (15) ──
+  {q:"On what day of the week did Jesus rise from the dead?",o:["Saturday","Sunday","Friday","Monday"],a:1,e:"Matthew 28:1 — After the Sabbath, at dawn on the first day of the week, Jesus rose from the dead.",d:"easy",season:"easter"},
+  {q:"Who was the first person to see the risen Jesus according to John's Gospel?",o:["Peter","James","Mary Magdalene","The disciples"],a:2,e:"John 20:14-16 — Mary Magdalene was the first to see the risen Jesus.",d:"easy",season:"easter"},
+  {q:"What did Jesus say to Thomas when Thomas doubted the resurrection?",o:["You should have believed the others","Because you have seen me, you have believed; blessed are those who have not seen","Blessed are those who mourn","Go and tell my brothers"],a:1,e:"John 20:29 — Jesus said: 'Because you have seen me, you have believed; blessed are those who have not seen and yet have believed.'",d:"medium",season:"easter"},
+  {q:"On the road to Emmaus, why did the two disciples not recognize Jesus?",o:["It was dark","Jesus was disguised","Their eyes were kept from recognizing him","Jesus had changed his appearance"],a:2,e:"Luke 24:16 — 'They were kept from recognizing him.'",d:"medium",season:"easter"},
+  {q:"What did Jesus do to prove to the disciples he was not a ghost after the resurrection?",o:["He walked through a wall","He ate a piece of broiled fish","He appeared and disappeared","He spoke in a loud voice"],a:1,e:"Luke 24:42-43 — Jesus ate a piece of broiled fish in front of the disciples to show he had a real body.",d:"medium",season:"easter"},
+  {q:"How many days after his resurrection did Jesus ascend into heaven?",o:["3 days","7 days","40 days","50 days"],a:2,e:"Acts 1:3 — Jesus appeared to the disciples over a period of forty days before ascending.",d:"medium",season:"easter"},
+  {q:"Which Old Testament Psalm does Jesus quote from the cross — 'My God, my God, why have you forsaken me?'",o:["Psalm 22","Psalm 51","Psalm 69","Psalm 110"],a:0,e:"Matthew 27:46 quotes Psalm 22:1 — 'My God, my God, why have you forsaken me?'",d:"hard",season:"easter"},
+  {q:"Who helped Jesus carry the cross to Golgotha?",o:["John","Barabbas","Simon of Cyrene","Nicodemus"],a:2,e:"Matthew 27:32 — A man named Simon of Cyrene was forced to carry Jesus' cross.",d:"easy",season:"easter"},
+  {q:"What happened to the temple curtain when Jesus died on the cross?",o:["It caught fire","It was torn in two from top to bottom","It fell to the ground","It turned white"],a:1,e:"Matthew 27:51 — The curtain of the temple was torn in two from top to bottom at the moment of Jesus' death.",d:"easy",season:"easter"},
+  {q:"What was written on the sign placed above Jesus on the cross?",o:["This man claims to be God","King of the Jews","Son of God, Savior","Jesus of Nazareth, the Prophet"],a:1,e:"John 19:19 — The sign read: 'Jesus of Nazareth, the King of the Jews.'",d:"easy",season:"easter"},
+  {q:"In 1 Corinthians 15, Paul says that if Christ has not been raised, what is true?",o:["The church is unnecessary","Our faith is futile and we are still in our sins","God does not exist","The Old Testament is false"],a:1,e:"1 Corinthians 15:17 — 'If Christ has not been raised, your faith is futile; you are still in your sins.'",d:"hard",season:"easter"},
+  {q:"Who asked Pilate for Jesus' body after the crucifixion?",o:["Nicodemus","John","Joseph of Arimathea","Mary Magdalene"],a:2,e:"Matthew 27:57-58 — Joseph of Arimathea asked Pilate for Jesus' body and placed it in his own new tomb.",d:"medium",season:"easter"},
+  {q:"What does the Hebrew word 'Hallelujah' mean?",o:["God is near","Praise the Lord","He is risen","Thanks be to God"],a:1,e:"Hallelujah is Hebrew for 'Praise the Lord' (Praise Yah/Yahweh) — used throughout Psalms and Revelation.",d:"easy",season:"easter"},
+  {q:"In Romans 6, Paul connects baptism to what aspect of Christ's death and resurrection?",o:["Dying to the law","Being buried and raised with Christ","Receiving the Holy Spirit","Becoming a new creation"],a:1,e:"Romans 6:4 — 'We were buried with him through baptism into death in order that, just as Christ was raised, we too may live a new life.'",d:"hard",season:"easter"},
+  {q:"At the empty tomb, who did the women first meet according to Matthew?",o:["Jesus himself","Two angels","One angel","The disciples"],a:2,e:"Matthew 28:2-5 — An angel of the Lord descended from heaven, rolled back the stone, and spoke to the women.",d:"medium",season:"easter"},
+  // ── Pentecost (15) ──
+  {q:"How many days after the Passover did Pentecost occur?",o:["7 days","30 days","40 days","50 days"],a:3,e:"Leviticus 23:16 — Pentecost (Feast of Weeks) occurred 50 days after the Feast of Firstfruits, which followed Passover.",d:"easy",season:"pentecost"},
+  {q:"What sound accompanied the coming of the Holy Spirit at Pentecost?",o:["Thunder and lightning","A mighty rushing wind","A still small voice","A trumpet blast"],a:1,e:"Acts 2:2 — 'Suddenly a sound like the blowing of a violent wind came from heaven and filled the whole house.'",d:"easy",season:"pentecost"},
+  {q:"How many people were baptized after Peter's sermon at Pentecost?",o:["120","500","3,000","5,000"],a:2,e:"Acts 2:41 — About three thousand were added to their number that day.",d:"easy",season:"pentecost"},
+  {q:"Which Old Testament prophet did Peter quote in his Pentecost sermon to explain the gift of the Spirit?",o:["Isaiah","Jeremiah","Joel","Amos"],a:2,e:"Acts 2:16-17 — Peter quoted Joel 2:28: 'In the last days, God says, I will pour out my Spirit on all people.'",d:"medium",season:"pentecost"},
+  {q:"What appeared over the heads of the disciples at Pentecost?",o:["Crowns of gold","Tongues of fire","White doves","Halos of light"],a:1,e:"Acts 2:3 — Tongues of fire appeared and separated, resting on each of them.",d:"easy",season:"pentecost"},
+  {q:"Where were the disciples gathered when the Holy Spirit came at Pentecost?",o:["The temple","The Garden of Gethsemane","An upper room","The Mount of Olives"],a:2,e:"Acts 2:1-2 — The disciples were all together in one place (traditionally the upper room from Acts 1:13).",d:"medium",season:"pentecost"},
+  {q:"In Galatians 5, which of these is NOT listed as a fruit of the Spirit?",o:["Peace","Patience","Courage","Self-control"],a:2,e:"Galatians 5:22-23 lists: love, joy, peace, patience, kindness, goodness, faithfulness, gentleness, self-control. Courage is not on the list.",d:"medium",season:"pentecost"},
+  {q:"What did the crowd accuse the disciples of when they heard them speaking in tongues?",o:["Being prophets","Being drunk on wine","Performing magic","Speaking blasphemy"],a:1,e:"Acts 2:13 — Some mocked them and said: 'They have had too much wine.'",d:"easy",season:"pentecost"},
+  {q:"How many people were in the upper room waiting for the Holy Spirit, according to Acts 1?",o:["12","72","120","500"],a:2,e:"Acts 1:15 — About a hundred and twenty people were gathered in the upper room.",d:"medium",season:"pentecost"},
+  {q:"In John 16, what does Jesus say the Holy Spirit will guide believers into?",o:["All truth","All nations","Perfect peace","Eternal life"],a:0,e:"John 16:13 — 'When he, the Spirit of truth, comes, he will guide you into all the truth.'",d:"medium",season:"pentecost"},
+  {q:"What does Jesus promise in Acts 1:8 that the Holy Spirit will give the disciples?",o:["Wisdom and wealth","Healing and prophecy","Power to be his witnesses","Peace and long life"],a:2,e:"Acts 1:8 — 'You will receive power when the Holy Spirit comes on you; and you will be my witnesses.'",d:"easy",season:"pentecost"},
+  {q:"Paul writes that the Holy Spirit intercedes for believers with what kind of groans?",o:["Audible groans","Wordless groans","Joyful groans","Thunderous groans"],a:1,e:"Romans 8:26 — 'The Spirit himself intercedes for us through wordless groans.'",d:"hard",season:"pentecost"},
+  {q:"What does Jesus call the Holy Spirit in John 14:16?",o:["Comforter/Advocate (Paraclete)","Spirit of prophecy","Breath of heaven","Voice of God"],a:0,e:"John 14:16 — Jesus says the Father will give 'another advocate (Paraclete/Comforter)' — the Holy Spirit.",d:"medium",season:"pentecost"},
+  {q:"In 1 Corinthians 12, Paul says the gifts of the Spirit are given for what purpose?",o:["Personal blessing","The common good","Signs to unbelievers","Building up the apostles"],a:1,e:"1 Corinthians 12:7 — 'Now to each one the manifestation of the Spirit is given for the common good.'",d:"hard",season:"pentecost"},
+  {q:"What did the early church devote themselves to after Pentecost, according to Acts 2?",o:["Fasting and silence","The apostles' teaching, fellowship, breaking of bread, and prayer","Traveling to other cities","Building a new temple"],a:1,e:"Acts 2:42 — 'They devoted themselves to the apostles' teaching and to fellowship, to the breaking of bread and to prayer.'",d:"medium",season:"pentecost"},
+  // ── Reformation Week (15) ──
+  {q:"On what date did Martin Luther reportedly post his 95 Theses?",o:["October 31, 1517","November 1, 1517","October 31, 1521","December 25, 1517"],a:0,e:"Martin Luther is traditionally said to have posted his 95 Theses on October 31, 1517.",d:"easy",season:"reformation"},
+  {q:"What Latin phrase means 'Scripture alone' — one of the five Reformation solas?",o:["Sola Fide","Sola Gratia","Sola Scriptura","Soli Deo Gloria"],a:2,e:"Sola Scriptura means 'Scripture alone' — the Reformation principle that the Bible is the sole authority for Christian faith.",d:"easy",season:"reformation"},
+  {q:"What does 'Sola Fide' mean?",o:["Grace alone","Scripture alone","Faith alone","Christ alone"],a:2,e:"Sola Fide means 'faith alone' — the teaching that justification is by faith alone, not by works.",d:"easy",season:"reformation"},
+  {q:"Which verse did Martin Luther call the 'gate of paradise' that sparked his understanding of justification?",o:["John 3:16","Romans 1:17","Ephesians 2:8","Galatians 2:16"],a:1,e:"Romans 1:17 — 'The righteous will live by faith.' Luther said this verse opened the gates of paradise for him.",d:"hard",season:"reformation"},
+  {q:"Which Reformation sola means 'to God alone be glory'?",o:["Sola Scriptura","Sola Fide","Solus Christus","Soli Deo Gloria"],a:3,e:"Soli Deo Gloria means 'to God alone be glory' — the teaching that all glory belongs to God alone.",d:"medium",season:"reformation"},
+  {q:"At the Diet of Worms in 1521, what did Martin Luther refuse to do?",o:["Pay his debts","Recant his writings","Leave Germany","Join a monastery"],a:1,e:"At the Diet of Worms, Luther refused to recant his writings, saying: 'Here I stand; I can do no other. God help me.'",d:"medium",season:"reformation"},
+  {q:"What does 'Sola Gratia' mean?",o:["Faith alone","Scripture alone","Grace alone","Christ alone"],a:2,e:"Sola Gratia means 'grace alone' — the teaching that salvation is entirely by God's grace, not human merit.",d:"easy",season:"reformation"},
+  {q:"Which Reformer is associated with the city of Geneva and the doctrine of predestination?",o:["Martin Luther","Ulrich Zwingli","John Calvin","John Knox"],a:2,e:"John Calvin led the Reformation in Geneva and is most associated with the doctrine of predestination.",d:"medium",season:"reformation"},
+  {q:"What does Ephesians 2:8-9 say about how we are saved?",o:["By keeping the commandments","By faith, not by works — it is a gift of God","By good deeds and sincere belief","By baptism and repentance"],a:1,e:"Ephesians 2:8-9 — 'For it is by grace you have been saved, through faith — and this is not from yourselves, it is the gift of God — not by works.'",d:"easy",season:"reformation"},
+  {q:"What was Martin Luther's primary objection to indulgences?",o:["They were too expensive","They gave false assurance of forgiveness without true repentance","They were not approved by the king","They were practiced by Protestants"],a:1,e:"Luther argued that indulgences gave false assurance of forgiveness and undermined the biblical teaching of repentance and grace.",d:"medium",season:"reformation"},
+  {q:"Which Reformer translated the New Testament into English and was burned at the stake for it?",o:["John Wycliffe","William Tyndale","Miles Coverdale","John Huss"],a:1,e:"William Tyndale translated the New Testament into English and was burned at the stake in 1536 for doing so.",d:"hard",season:"reformation"},
+  {q:"What does 'Solus Christus' mean?",o:["Scripture alone","God alone","Christ alone","Faith alone"],a:2,e:"Solus Christus means 'Christ alone' — the teaching that Christ is the only mediator between God and man.",d:"easy",season:"reformation"},
+  {q:"Which book of the Bible did Luther controversially call 'an epistle of straw'?",o:["Hebrews","Revelation","James","Acts"],a:2,e:"Luther controversially called James 'an epistle of straw' because of its emphasis on works (James 2:24), which he felt conflicted with Sola Fide.",d:"hard",season:"reformation"},
+  {q:"The Reformation principle that every believer has direct access to God without a human mediator is called what?",o:["The Great Commission","The priesthood of all believers","The apostolic succession","The doctrine of sanctification"],a:1,e:"The 'priesthood of all believers' (1 Peter 2:9) was a key Reformation teaching — every Christian has direct access to God.",d:"medium",season:"reformation"},
+  {q:"Which verse did the Reformers use to support the idea that Scripture interprets Scripture?",o:["2 Peter 1:20-21","Matthew 16:18","Acts 15:15","1 Corinthians 2:13"],a:0,e:"2 Peter 1:20-21 — 'No prophecy of Scripture came about by the prophet's own interpretation... but prophets spoke from God as they were carried along by the Holy Spirit.'",d:"hard",season:"reformation"},
+  // ── Thanksgiving (15) ──
+  {q:"Which Psalm begins with 'Give thanks to the Lord, for he is good; his love endures forever'?",o:["Psalm 23","Psalm 100","Psalm 107","Psalm 136"],a:2,e:"Psalm 107:1 — 'Give thanks to the Lord, for he is good; his love endures forever.'",d:"medium",season:"thanksgiving"},
+  {q:"In Philippians 4:6, what should accompany every prayer according to Paul?",o:["Fasting","Thanksgiving","Silence","Confession"],a:1,e:"Philippians 4:6 — 'In every situation, by prayer and petition, with thanksgiving, present your requests to God.'",d:"easy",season:"thanksgiving"},
+  {q:"How many lepers did Jesus heal, and how many returned to thank him?",o:["5 healed, 1 returned","10 healed, 3 returned","10 healed, 1 returned","7 healed, 2 returned"],a:2,e:"Luke 17:17 — Jesus healed ten lepers, but only one returned to give thanks.",d:"easy",season:"thanksgiving"},
+  {q:"Which Psalm says 'Enter his gates with thanksgiving and his courts with praise'?",o:["Psalm 23","Psalm 100","Psalm 150","Psalm 91"],a:1,e:"Psalm 100:4 — 'Enter his gates with thanksgiving and his courts with praise; give thanks to him and praise his name.'",d:"easy",season:"thanksgiving"},
+  {q:"Paul tells the Thessalonians to give thanks in all circumstances because this is what?",o:["A sign of maturity","God's will for you in Christ Jesus","A requirement for blessing","The mark of a true disciple"],a:1,e:"1 Thessalonians 5:18 — 'Give thanks in all circumstances; for this is God's will for you in Christ Jesus.'",d:"easy",season:"thanksgiving"},
+  {q:"In the parable of the Prodigal Son, what did the father do when he saw his son returning?",o:["He waited at the door","He ran to meet him and embraced him","He sent a servant to greet him","He called his neighbors"],a:1,e:"Luke 15:20 — 'While he was still a long way off, his father saw him and was filled with compassion; he ran to his son.'",d:"easy",season:"thanksgiving"},
+  {q:"Which book of the Bible records Hannah's prayer of thanksgiving after the birth of Samuel?",o:["Ruth","1 Samuel","1 Kings","Psalms"],a:1,e:"1 Samuel 2:1-10 — Hannah prayed a prayer of thanksgiving to God for giving her a son.",d:"medium",season:"thanksgiving"},
+  {q:"What does Psalm 136 repeat after every verse as a refrain of gratitude?",o:["The Lord is my shepherd","His love endures forever","Give thanks to the Lord","Great is the Lord"],a:1,e:"Psalm 136 repeats 'His love endures forever' after each of its 26 verses.",d:"medium",season:"thanksgiving"},
+  {q:"In Daniel 6, how many times a day did Daniel kneel and pray, giving thanks to God?",o:["Once","Twice","Three times","Seven times"],a:2,e:"Daniel 6:10 — Daniel got down on his knees three times a day to pray and give thanks to God.",d:"medium",season:"thanksgiving"},
+  {q:"Jesus gave thanks before multiplying the loaves and fish. What does the Greek word 'eucharisteo' mean?",o:["To bless","To give thanks","To break bread","To pray"],a:1,e:"'Eucharisteo' means 'to give thanks' (from which 'Eucharist' comes). Jesus gave thanks before breaking the bread.",d:"hard",season:"thanksgiving"},
+  {q:"According to Romans 1:21, what is one mark of those who reject God?",o:["They deny miracles","They neither glorify God nor give thanks to him","They refuse to pray","They worship idols only"],a:1,e:"Romans 1:21 — 'Although they knew God, they neither glorified him as God nor gave thanks to him.'",d:"hard",season:"thanksgiving"},
+  {q:"In which letter does Paul write: 'Thanks be to God for his indescribable gift!'?",o:["Romans","Ephesians","2 Corinthians","Galatians"],a:2,e:"2 Corinthians 9:15 — 'Thanks be to God for his indescribable gift!' — referring to the grace of giving and God's gift of Christ.",d:"hard",season:"thanksgiving"},
+  {q:"What did Nehemiah and the Israelites do when the wall of Jerusalem was completed?",o:["Held a feast for three days","Dedicated it with songs of thanksgiving and two great choirs","Offered a thousand sacrifices","Proclaimed a fast"],a:1,e:"Nehemiah 12:27,31 — The Israelites dedicated the wall with songs of thanksgiving and two great choirs.",d:"hard",season:"thanksgiving"},
+  {q:"Colossians 3:17 says to do everything in the name of Jesus while doing what?",o:["Fasting","Giving thanks to God the Father through him","Serving your neighbor","Praying without ceasing"],a:1,e:"Colossians 3:17 — 'Whatever you do, whether in word or deed, do it all in the name of the Lord Jesus, giving thanks to God the Father through him.'",d:"medium",season:"thanksgiving"},
+  {q:"Which Psalm is an acrostic poem that ends with the declaration that every creature should praise the Lord?",o:["Psalm 119","Psalm 145","Psalm 150","Psalm 103"],a:1,e:"Psalm 145 is an acrostic psalm attributed to David that ends: 'Let every creature praise his holy name for ever and ever.'",d:"hard",season:"thanksgiving"},
+];
+
+function getCurrentSeason(){
+  const now=new Date();
+  const month=now.getMonth()+1;
+  const day=now.getDate();
+  if(month===12&&day<=25) return 'christmas';
+  if(month===3&&day>=22) return 'easter';
+  if(month===4&&day<=19) return 'easter';
+  if(month===5&&day>=14&&day<=31) return 'pentecost';
+  if(month===10&&day>=25) return 'reformation';
+  if(month===11){
+    let count=0;
+    for(let d=1;d<=30;d++){
+      if(new Date(now.getFullYear(),10,d).getDay()===4) count++;
+      if(count===4){
+        if(day>=d&&day<=d+3) return 'thanksgiving';
+        break;
+      }
+    }
+  }
+  return null;
+}
+
+function renderSeasonalBanner(){
+  const season=getCurrentSeason();
+  const banner=document.getElementById('seasonal-banner');
+  if(!banner) return;
+  if(!season){ banner.style.display='none'; return; }
+  const info={
+    christmas:{icon:'\u2B50',label:'Christmas Season',color:'#c0392b'},
+    easter:{icon:'\u271D\uFE0F',label:'Easter Season',color:'#8B6914'},
+    pentecost:{icon:'\uD83D\uDD25',label:'Pentecost',color:'#e67e22'},
+    reformation:{icon:'\uD83D\uDCDA',label:'Reformation Week',color:'#2c3e50'},
+    thanksgiving:{icon:'\uD83D\uDE4F',label:'Thanksgiving',color:'#795548'}
+  }[season];
+  banner.style.display='block';
+  banner.innerHTML='<div style="background:'+info.color+';color:#fff;padding:14px 18px;border-radius:14px;margin:10px 0;display:flex;align-items:center;gap:12px;cursor:pointer" onclick="playSeasonalQuestions(\''+season+'\')"><span style="font-size:28px">'+info.icon+'</span><div><div style="font-weight:800;font-size:15px">'+info.label+'</div><div style="font-size:12px;opacity:.85">Special questions unlocked \u2192</div></div></div>';
+}
+
+function playSeasonalQuestions(season){
+  if(!G.profile){ go('auth'); buildAvGrid(); return; }
+  sfx.tap();
+  const pool=shuf(SEASONAL_Q.filter(q=>q.season===season)).slice(0,10);
+  if(!pool.length){ toast('No questions for this season'); return; }
+  G.mode='practice'; G.sub='classic';
+  G._xpAtGameStart=G.profile?(G.profile.xp||0):0;
+  G._correctAtGameStart=G.profile?(G.profile.correct||0):0;
+  G.players=[{name:G.profile.name||'Player',avatar:G.profile.avatar||'\uD83D\uDE0A',photo:G.profile.photo||''}];
+  G.pool=pool; G.qi=0; G.pi=0; G.done=false;
+  G.scores={[G.players[0].name]:0};
+  G.hearts={[G.players[0].name]:3};
+  G.streaks={[G.players[0].name]:0};
+  G.cfg.winScore=pool.length;
+  showSplash(0,()=>{ go('game'); renderQ(); });
+}
+
+/* ══════════════════════════════════════════════════
+   SUNDAY BIBLE BOWL
+══════════════════════════════════════════════════ */
+function getISOWeek(date){
+  const d=new Date(Date.UTC(date.getFullYear(),date.getMonth(),date.getDate()));
+  const dayNum=d.getUTCDay()||7;
+  d.setUTCDate(d.getUTCDate()+4-dayNum);
+  const yearStart=new Date(Date.UTC(d.getUTCFullYear(),0,1));
+  return d.getUTCFullYear()+'-W'+Math.ceil((((d-yearStart)/86400000)+1)/7);
+}
+function isSundayBowlActive(){
+  const now=new Date();
+  return now.getDay()===0&&now.getHours()>=18;
+}
+function renderSundayBowl(){
+  const banner=document.getElementById('sunday-bowl-banner');
+  if(!banner||!G.profile) return;
+  const week=getISOWeek(new Date());
+  const completedThisWeek=G.profile.bowlWeek===week;
+  const isActive=isSundayBowlActive();
+  if(!isActive&&!completedThisWeek){ banner.style.display='none'; return; }
+  banner.style.display='block';
+  if(completedThisWeek){
+    banner.innerHTML=`<div style="background:linear-gradient(135deg,#1a237e,#283593);color:#fff;padding:14px 18px;border-radius:14px;display:flex;align-items:center;gap:12px;">
+      <span style="font-size:28px">🏆</span>
+      <div style="flex:1;">
+        <div style="font-weight:800;font-size:15px;">Sunday Bible Bowl</div>
+        <div style="font-size:12px;opacity:.85;">Your score this week: ${G.profile.bowlScore||0}/15</div>
+      </div>
+      <button class="btn btn-ghost btn-sm" style="width:auto;padding:6px 14px;color:#fff;border-color:rgba(255,255,255,.4);" onclick="loadSundayBowlLeaderboard()">Leaderboard</button>
+    </div>`;
+  } else {
+    banner.innerHTML=`<div style="background:linear-gradient(135deg,#1a237e,#283593);color:#fff;padding:14px 18px;border-radius:14px;display:flex;align-items:center;gap:12px;cursor:pointer;" onclick="startSundayBowl()">
+      <span style="font-size:28px">🏛️</span>
+      <div style="flex:1;">
+        <div style="font-weight:800;font-size:15px;">Sunday Bible Bowl</div>
+        <div style="font-size:12px;opacity:.85;">Live now — 15 questions, 15 seconds each</div>
+      </div>
+      <div class="btn btn-gold btn-sm" style="width:auto;padding:8px 16px;">Play Now</div>
+    </div>`;
+  }
+}
+function startSundayBowl(){
+  if(!G.profile){ go('auth'); buildAvGrid(); return; }
+  sfx.tap();
+  // Build mixed pool from QB + TF_Q
+  const mcq=shuf(Object.values(QB).flat()).slice(0,10).map(q=>({...q,kind:'mcq'}));
+  const tfqs=shuf(TF_Q).slice(0,5).map(q=>({...q,kind:'truefalse'}));
+  const pool=shuf([...mcq,...tfqs]);
+  G.mode='sunday_bowl'; G.sub='classic';
+  G._xpAtGameStart=G.profile?(G.profile.xp||0):0;
+  G._correctAtGameStart=G.profile?(G.profile.correct||0):0;
+  G.players=[{name:G.profile.name||'Player',avatar:G.profile.avatar||'😊',photo:G.profile.photo||''}];
+  G.pool=pool; G.qi=0; G.pi=0; G.done=false;
+  G.scores={[G.players[0].name]:0};
+  G.hearts={[G.players[0].name]:Infinity};
+  G.streaks={[G.players[0].name]:0};
+  G.cfg.winScore=pool.length;
+  G.cfg.hearts=false;
+  G.TIM=15;
+  showSplash(0,()=>{ go('game'); renderQ(); });
+}
+function finishSundayBowl(score,total){
+  if(!G.profile) return;
+  const week=getISOWeek(new Date());
+  G.profile.completedBowl=true;
+  G.profile.bowlWeek=week;
+  G.profile.bowlScore=score;
+  saveProfile();
+  if(G.fbOk&&G.uid){
+    G.db.ref('sundayBowl/'+week+'/'+G.uid).set({
+      name:G.profile.name||'Player',
+      avatar:G.profile.avatar||'😊',
+      score,total,ts:Date.now()
+    });
+  }
+  // Show share option
+  const shareText=`I scored ${score}/${total} on this week's Lamp Sunday Bible Bowl! Can you beat me? 📖⚡`;
+  if(navigator.clipboard){
+    navigator.clipboard.writeText(shareText).then(()=>toast('Score copied! Share with friends 📋')).catch(()=>{});
+  }
+}
+function loadSundayBowlLeaderboard(){
+  if(!G.fbOk||!G.db){ toast('Leaderboard requires online access'); return; }
+  const week=getISOWeek(new Date());
+  G.db.ref('sundayBowl/'+week).orderByChild('score').limitToLast(10).once('value',sn=>{
+    const data=sn.val()||{};
+    const entries=Object.values(data).sort((a,b)=>b.score-a.score).slice(0,10);
+    if(!entries.length){ toast('No scores this week yet'); return; }
+    const lines=entries.map((e,i)=>`${i+1}. ${e.avatar||'😊'} ${e.name||'Player'} — ${e.score}/${e.total||15}`).join('\n');
+    toast('🏆 This Week\'s Bowl\n'+lines.slice(0,200));
+  });
+}
 
 /* ══════════════════════════════════════════════════
    QUESTION BANKS
@@ -41754,7 +41995,7 @@ function addXP(n){
   }
 }
 function isXpDisabledMode(mode){
-  return mode==='practice'||mode==='local';
+  return mode==='practice'||mode==='local'||mode==='sunday_bowl';
 }
 function canAwardAnswerXP(playerName){
   if(!G.profile || !playerName) return false;
@@ -41777,6 +42018,16 @@ function awardAnswerXPForPlayer(playerName,anchorEl){
   if(G.profile){
     G.profile.correct=(G.profile.correct||0)+1;
     if(streak>=(G.profile.bestStreak||0)) G.profile.bestStreak=streak;
+    // Track category-specific correct answers
+    const curQ=G.pool&&G.pool[G.qi];
+    if(curQ&&curQ.cat){
+      if(!G.profile.catCorrect) G.profile.catCorrect={};
+      G.profile.catCorrect[curQ.cat]=(G.profile.catCorrect[curQ.cat]||0)+1;
+    }
+    // Track fast answer (< 3 seconds)
+    if(G._qStartTime&&(Date.now()-G._qStartTime)<3000){
+      G.profile.fastAnswer=true;
+    }
     saveProfile();
     if(G.fbOk) pushProfile();
   }
@@ -42088,9 +42339,12 @@ function renderSetupRoomModeChips(){
   const subWrap=document.getElementById('setup-room-sub-chips');
   const diffWrap=document.getElementById('setup-room-diff-chips');
   if(subWrap){
-    subWrap.querySelectorAll('.chip').forEach(c=>c.classList.toggle('sel',c.dataset.sub===G.sub));
+    const effectiveSub=(G.sub==='team')?'team':G.sub;
+    subWrap.querySelectorAll('.chip').forEach(c=>c.classList.toggle('sel',c.dataset.sub===effectiveSub));
     const lightChip=subWrap.querySelector('.chip[data-sub="lightning"]');
     if(lightChip) lightChip.style.display=(G.mode==='local')?'none':'';
+    const teamChip=document.getElementById('chip-team');
+    if(teamChip) teamChip.style.display=(G.mode==='local')?'':'none';
   }
   if(diffWrap){
     diffWrap.querySelectorAll('.diff-chip').forEach(c=>c.classList.toggle('sel',c.dataset.diff===G.diff));
@@ -42099,7 +42353,7 @@ function renderSetupRoomModeChips(){
 function pickSetupSub(el,s){
   sfx.tap(); haptic('tap');
   if(G.mode==='local'&&s==='lightning'){ toast('Lightning is not available in Pass & Play.'); return; }
-  if(s==='team') s='classic';
+  if(s==='team'&&G.mode!=='local'){ toast('Team mode is for group play only (Pass & Play).'); return; }
   G.sub=s; G.seen.clear();
   if(s==='lightning') G.cfg.hearts=false;
   document.querySelectorAll('#setup-room-sub-chips .chip').forEach(c=>c.classList.remove('sel'));
@@ -42332,10 +42586,16 @@ function beginGame(){
   G.players.forEach(p=>{ G.scores[p.name]=0; G.hearts[p.name]=3; G.streaks[p.name]=0; });
 
   if (G.sub === 'team') {
-    G.teamScores = { "Team 1": 0, "Team 2": 0 };
+    const teamNames=['Team A','Team B'];
+    G.teamScores = { 'Team A': 0, 'Team B': 0 };
     G.players.forEach((p, i) => {
-      p.team = (i % 2 === 0) ? "Team 1" : "Team 2";
+      p.team = (i % 2 === 0) ? 'Team A' : 'Team B';
     });
+    // Re-key teamScores in endGame references — also update g-team-scores labels
+    const t1lbl=document.querySelector('#g-team-scores .team-score-box:first-child .team-lbl');
+    const t2lbl=document.querySelector('#g-team-scores .team-score-box:last-child .team-lbl');
+    if(t1lbl) t1lbl.textContent='Team A';
+    if(t2lbl) t2lbl.textContent='Team B';
   }
 
   if(G.sub==='truefalse'){ startTF(); return; }
@@ -42449,8 +42709,13 @@ function renderQ(){
   const tsEl = document.getElementById('g-team-scores');
   if(G.sub === 'team') {
     tsEl.style.display = 'flex';
-    document.getElementById('g-t1-score').textContent = G.teamScores["Team 1"];
-    document.getElementById('g-t2-score').textContent = G.teamScores["Team 2"];
+    const teamKeys=Object.keys(G.teamScores||{'Team A':0,'Team B':0});
+    document.getElementById('g-t1-score').textContent = G.teamScores[teamKeys[0]]||0;
+    document.getElementById('g-t2-score').textContent = G.teamScores[teamKeys[1]]||0;
+    const t1lbl=document.querySelector('#g-team-scores .team-score-box:first-child .team-lbl');
+    const t2lbl=document.querySelector('#g-team-scores .team-score-box:last-child .team-lbl');
+    if(t1lbl) t1lbl.textContent=teamKeys[0]||'Team A';
+    if(t2lbl) t2lbl.textContent=teamKeys[1]||'Team B';
   } else {
     tsEl.style.display = 'none';
   }
@@ -42465,6 +42730,7 @@ function renderQ(){
   else renderMCQ(q,'g-txt','g-opts',answerQ);
   updateProgress();
 
+  G._qStartTime=Date.now();
   if(G.cfg.timer) {
     const pTim = p.diff==='easy'?25 : p.diff==='hard'?12 : 20;
     startTimer('g-tbar','g-tsecs',pTim,()=>timeOut(q,'g'));
@@ -42518,7 +42784,9 @@ function answerQ(btn,isOk,q,order){
     G.streaks[p.name]++;
     if (p.team) {
       G.teamScores[p.team]++;
-      document.getElementById(p.team === "Team 1" ? 'g-t1-score' : 'g-t2-score').textContent = G.teamScores[p.team];
+      const teamKeys=Object.keys(G.teamScores||{});
+      const tIdx=teamKeys.indexOf(p.team);
+      document.getElementById(tIdx===0?'g-t1-score':'g-t2-score').textContent = G.teamScores[p.team];
     }
     const scoreEl=document.getElementById('g-score'); scoreEl.textContent=G.scores[p.name];
     const _tbadge=typeof getTranslationBadge==='function'?getTranslationBadge():'';
@@ -42989,12 +43257,15 @@ function endGame(){
   let win, iWon = false, topWinners=[];
   
   if (G.sub === 'team') {
-    const t1 = G.teamScores["Team 1"];
-    const t2 = G.teamScores["Team 2"];
-    const winTeam = t1 >= t2 ? "Team 1" : "Team 2";
-    win = { name: winTeam, avatar: "👥", team: winTeam };
+    const teams=Object.keys(G.teamScores||{'Team A':0,'Team B':0});
+    const scores=teams.map(t=>({t,s:G.teamScores[t]||0}));
+    scores.sort((a,b)=>b.s-a.s);
+    const topTeamScore=scores[0]?.s||0;
+    const tiedTeams=scores.filter(x=>x.s===topTeamScore);
+    const winTeam=tiedTeams.length>1?null:scores[0].t;
+    win = winTeam ? { name: winTeam, avatar: "👥", team: winTeam } : { name: "Tie", avatar: "🤝", team: null };
     const myTeam = G.players.find(p => p.name === G.profile?.name)?.team;
-    iWon = myTeam === winTeam;
+    iWon = !!(winTeam && myTeam === winTeam);
   } else {
     const sorted=[...G.players].sort((a,b)=>G.scores[b.name]-G.scores[a.name]);
     win=sorted[0];
@@ -43035,6 +43306,19 @@ function endGame(){
       G.profile.winStreak = 0;
     }
 
+    // Achievement flags
+    if(new Date().getDay()===0) G.profile.playedOnSunday=true;
+    if(G.sub==='truefalse') G.profile.completedTF=true;
+    if(G.sub==='verse') G.profile.completedVerse=true;
+    if(G.sub==='lightning') G.profile.completedLightning=true;
+    // Perfect game: won solo without any wrong answers
+    if(iWon&&G.players.length===1&&!(G._wrongCount)) G.profile.perfectGame=true;
+    // No heart loss: won and still has full hearts
+    if(iWon&&G.cfg.hearts&&G.profile&&G.players.length===1){
+      const pName=G.players[0].name;
+      if((G.hearts[pName]||0)>=3) G.profile.noHeartLoss=true;
+    }
+
     saveProfile(); if(G.fbOk)pushProfile();
     if(isXpDisabledMode(G.mode)){
       document.getElementById('w-xp-txt').textContent='✦ XP disabled for this mode';
@@ -43053,12 +43337,23 @@ function endGame(){
   }
   saveMatchResult(win, G.players);
   const v=nextWinVerse();
-  const isTie=G.sub!=='team'&&topWinners.length>1;
+  const isTie=(G.sub!=='team'&&topWinners.length>1)||(G.sub==='team'&&win.name==='Tie');
   const wAv=document.getElementById('w-av');
   const wName=document.getElementById('w-name');
   const wPts=document.getElementById('w-pts');
   const wXp=document.getElementById('w-xp-txt');
-  if(isTie){
+  if(G.sub==='team'){
+    if(isTie){
+      wAv.innerHTML='🤝';
+      wName.textContent="It's a Tie!";
+      wPts.textContent='Both teams played brilliantly';
+    }else{
+      wAv.innerHTML='🏆';
+      wName.textContent=win.name+' Wins!';
+      const winMembers=G.players.filter(p=>p.team===win.name).map(p=>p.name).join(', ');
+      wPts.textContent='Your group: '+winMembers+' · '+(G.teamScores[win.name]||0)+' points';
+    }
+  }else if(isTie){
     const topScore=G.scores[topWinners[0].name]||0;
     wAv.innerHTML=topWinners.map(p=>avatarMarkup(p.avatar,resolvePlayerPhoto(p),'lg')).join(' ');
     wName.textContent=topWinners.map(p=>p.name).join(' & ');
@@ -43066,7 +43361,7 @@ function endGame(){
   }else{
     wAv.innerHTML=avatarMarkup(win.avatar,resolvePlayerPhoto(win),'lg');
     wName.textContent=win.name;
-    wPts.textContent=(G.sub==='team' ? G.teamScores[win.name] : G.scores[win.name])+' points';
+    wPts.textContent=G.scores[win.name]+' points';
   }
   if(!G.profile){
     if(isXpDisabledMode(G.mode)) wXp.textContent='✦ XP disabled for this mode';
@@ -43106,6 +43401,13 @@ function playAgain(){
     return;
   }
   if(G.mode==='daily' || G.mode==='seasonal'){
+    go('home');
+    return;
+  }
+  if(G.mode==='sunday_bowl'){
+    const bowlScore=G.scores[G.players[0]?.name]||0;
+    finishSundayBowl(bowlScore,G.pool.length||15);
+    checkAchs();
     go('home');
     return;
   }
@@ -44290,6 +44592,7 @@ function sendGhostChallenge(){
   G.streaks={[G.profile.name||'Player']:0};
   G.cfg.winScore=count;
   G.cfg.hearts=!!_chCfg.hearts;
+  if(G.profile){ G.profile.sentGhostChallenge=true; saveProfile(); }
   closeOv('ov-challenge');
   showSplash(0,()=>{ go('game'); renderQ(); });
 }
@@ -44329,6 +44632,7 @@ function finishGhostRace(){
     // Award bonus XP
     const bonus=isTie?25:iWon?75:0;
     if(bonus>0){ addXP(bonus); toast(isTie?'Tie! +25 XP bonus':'You won! +75 XP bonus 🏆'); }
+    if(iWon&&G.profile){ G.profile.wonGhostRace=true; saveProfile(); }
     showGhostResult(myScore,myTotal,src.fromScore,src.fromTotal,src.fromName,winner);
   }
   checkAchs();
@@ -44375,6 +44679,11 @@ function listenAsyncChallenges(){
   G._asyncChalRef=ref;
   ref.on('value',sn=>{
     G._pendingAsyncChallenges=sn.val()||{};
+    // Always update nav badge count
+    const now=Date.now();
+    const pendingCount=Object.values(G._pendingAsyncChallenges).filter(c=>c&&c.status==='pending'&&c.expiresAt>now).length;
+    const badge=document.getElementById('friends-challenge-badge');
+    if(badge){ badge.textContent=pendingCount||''; badge.style.display=pendingCount?'':'none'; }
     if(document.getElementById('s-friends')?.classList.contains('active')){
       renderAsyncChallenges();
     }
@@ -44388,27 +44697,51 @@ function renderAsyncChallenges(){
   const now=Date.now();
   // Pending = sent to me, not yet played, not expired
   const pending=Object.entries(all).filter(([,c])=>c&&c.status==='pending'&&c.expiresAt>now);
-  if(!pending.length){ sec.style.display='none'; return; }
+  // Update nav badge
+  const badge=document.getElementById('friends-challenge-badge');
+  if(badge){ badge.textContent=pending.length||''; badge.style.display=pending.length?'':'none'; }
+  if(!pending.length){ sec.style.display='none'; renderFriendsEmptyState(); return; }
   sec.style.display='';
   list.innerHTML=pending.map(([id,c])=>{
     const catLabel=c.category&&c.category!=='all'?c.category:'All Scripture';
     const modeLabel=c.mode==='classic'?catLabel:c.mode==='truefalse'?'True or False':'Complete the Verse';
     const diffLabel=c.difficulty?(' · '+c.difficulty.charAt(0).toUpperCase()+c.difficulty.slice(1)):'';
     const timeLeft=Math.max(0,Math.floor((c.expiresAt-now)/3600000));
-    return `<div class="friend-row" style="margin-bottom:10px;border:1px solid rgba(201,145,13,.2);border-radius:14px;padding:10px 12px;background:rgba(201,145,13,.05);">
+    return `<div class="friend-row" style="margin-bottom:10px;border:2px solid rgba(201,145,13,.35);border-radius:14px;padding:12px 14px;background:linear-gradient(135deg,rgba(201,145,13,.1) 0%,rgba(201,145,13,.03) 100%);">
       <div class="friend-av">${avatarMarkup(c.fromAvatar||'😊',c.fromPhoto||'','md')}</div>
       <div class="friend-info">
-        <div class="friend-name" style="font-family:'Cinzel',serif;font-size:13px;">👻 ${escHtml(c.fromName||'Challenger')}</div>
+        <div class="friend-name" style="font-family:'Cinzel',serif;font-size:13px;">⚡ ${escHtml(c.fromName||'Challenger')}</div>
         <div class="friend-xp" style="font-size:11px;">${escHtml(modeLabel)}${escHtml(diffLabel)} · Their score: ${c.fromScore}/${c.fromTotal} · ${timeLeft}h left</div>
       </div>
       <div class="friend-actions">
-        <button class="friend-btn friend-btn-chat" style="font-family:'Cinzel',serif;font-size:10px;letter-spacing:.05em;" onclick="acceptGhostChallenge('${id}')">Accept Trial</button>
+        <button class="friend-btn friend-btn-chat" style="font-family:'Cinzel',serif;font-size:10px;letter-spacing:.05em;background:var(--gold1);color:#fff;" onclick="acceptGhostChallenge('${id}')">Beat their score →</button>
         <button class="friend-btn friend-btn-decline" onclick="declineGhostChallenge('${id}')">✕</button>
       </div>
     </div>`;
   }).join('');
   G._asyncChallengeMap={};
   pending.forEach(([id,c])=>G._asyncChallengeMap[id]=c);
+}
+function renderFriendsEmptyState(){
+  const fl=document.getElementById('friends-list');
+  if(!fl) return;
+  const hasFriends=G.profile&&G.profile.friends&&G.profile.friends.length>0;
+  const hasFriendRows=fl.querySelectorAll('.friend-row').length>0;
+  const empty=document.getElementById('friends-empty-state');
+  if(!hasFriends&&!hasFriendRows){
+    if(!empty){
+      const div=document.createElement('div');
+      div.id='friends-empty-state';
+      div.style.cssText='border:1.5px dashed rgba(201,145,13,.3);border-radius:16px;padding:22px 18px;text-align:center;margin-bottom:16px;';
+      div.innerHTML=`<div style="font-size:32px;margin-bottom:8px;">✝️</div>
+        <div style="font-family:\'Playfair Display\',serif;font-size:15px;font-weight:700;color:var(--ink);margin-bottom:6px;">Challenge a friend to a Bible match</div>
+        <div style="font-size:12px;color:var(--ink3);margin-bottom:14px;">They play whenever they\'re ready — no need to be online at the same time.</div>
+        <button class="btn btn-gold btn-sm" style="width:auto;padding:8px 20px;" onclick="document.getElementById(\'friends-screen-code-inp\')&&document.getElementById(\'friends-screen-code-inp\').focus()">Add a Friend</button>`;
+      fl.parentNode.insertBefore(div,fl);
+    }
+  }else{
+    if(empty) empty.remove();
+  }
 }
 function acceptGhostChallenge(id){
   const c=G._asyncChallengeMap?.[id];
@@ -44874,6 +45207,50 @@ const ACHS=[
   {id:'xp500', icon:'✝️',t:'Faithful Servant',  d:'Earn 500 XP',                 chk:p=>(p.xp||0)>=500},
   {id:'c100',  icon:'📖',t:'Word Scholar',      d:'Answer 100 correctly',        chk:p=>(p.correct||0)>=100},
   {id:'lv5',   icon:'👑',t:'Sage of Faith',     d:'Reach Level 5',               chk:p=>lvl(p.xp||0).lv>=5},
+  // Knowledge Depth
+  {id:'gospelStudent',   icon:'📖',t:'Gospel Student',       d:'Answer 10 correctly from Gospels',    chk:p=>(p.catCorrect&&p.catCorrect['Gospels']||0)>=10},
+  {id:'psalmist',        icon:'🎵',t:'Psalmist',             d:'Answer 10 correctly from Psalms',     chk:p=>(p.catCorrect&&p.catCorrect['Psalms']||0)>=10},
+  {id:'letterReader',    icon:'✉️',t:'Letter Reader',        d:'Answer 10 correctly from Epistles',   chk:p=>(p.catCorrect&&p.catCorrect['Epistles']||0)>=10},
+  {id:'endTimes',        icon:'🌟',t:'End Times Scholar',    d:'Answer 10 correctly from Revelation', chk:p=>(p.catCorrect&&p.catCorrect['Revelation']||0)>=10},
+  {id:'inTheBeginning',  icon:'🌍',t:'In the Beginning',     d:'Answer 10 correctly from Genesis',    chk:p=>(p.catCorrect&&p.catCorrect['Genesis']||0)>=10},
+  {id:'delivered',       icon:'✨',t:'Delivered',            d:'Answer 10 correctly from Exodus',     chk:p=>(p.catCorrect&&p.catCorrect['Exodus']||0)>=10},
+  // Streak & Performance
+  {id:'onFire',          icon:'🔥',t:'On Fire',              d:'3-answer streak',                     chk:p=>p.bestStreak>=3},
+  {id:'sevenfold',       icon:'⚡',t:'Sevenfold',            d:'7-answer streak',                     chk:p=>p.bestStreak>=7},
+  {id:'unstoppable',     icon:'👑',t:'Unstoppable',          d:'15-answer streak',                    chk:p=>p.bestStreak>=15},
+  {id:'threePeat',       icon:'🏅',t:'Three-Peat',           d:'Win 3 games in a row',                chk:p=>p.winStreak>=3},
+  {id:'mightyInSpirit',  icon:'💪',t:'Mighty in Spirit',     d:'Win 10 games in a row',               chk:p=>p.winStreak>=10},
+  {id:'swiftAsEagles',   icon:'🦅',t:'Swift as Eagles',      d:'Answer correctly in under 3 seconds', chk:p=>!!p.fastAnswer},
+  {id:'blameless',       icon:'✝️',t:'Blameless',            d:'Perfect score in a game',             chk:p=>!!p.perfectGame},
+  {id:'fullArmor',       icon:'⚔️',t:'Full Armor',           d:'Win without losing a heart',          chk:p=>!!p.noHeartLoss},
+  // Progression
+  {id:'committed',       icon:'📅',t:'Committed',            d:'Play 25 games',                       chk:p=>p.played>=25},
+  {id:'faithful',        icon:'✝️',t:'Faithful',             d:'Play 50 games',                       chk:p=>p.played>=50},
+  {id:'devoted',         icon:'🙏',t:'Devoted',              d:'Play 100 games',                      chk:p=>p.played>=100},
+  {id:'overcomer',       icon:'🏆',t:'Overcomer',            d:'Win 10 games',                        chk:p=>p.wins>=10},
+  {id:'moreThanConquerors',icon:'👑',t:'More Than Conquerors',d:'Win 25 games',                       chk:p=>p.wins>=25},
+  {id:'growingInFaith',  icon:'🌱',t:'Growing in Faith',     d:'Reach Level 3',                       chk:p=>lvl(p.xp||0).lv>=3},
+  {id:'elder',           icon:'🕊️',t:'Elder',               d:'Reach Level 7',                       chk:p=>lvl(p.xp||0).lv>=7},
+  {id:'diligent',        icon:'⭐',t:'Diligent',             d:'Earn 1000 XP',                        chk:p=>(p.xp||0)>=1000},
+  {id:'treasureInHeaven',icon:'💎',t:'Treasure in Heaven',   d:'Earn 5000 XP',                        chk:p=>(p.xp||0)>=5000},
+  // Social
+  {id:'twoAreBetter',    icon:'🤝',t:'Two Are Better Than One',d:'Add your first friend',             chk:p=>((p.friends&&p.friends.length)||0)>=1},
+  {id:'ironSharpens',    icon:'⚔️',t:'Iron Sharpens Iron',   d:'Challenge a friend to Ghost Race',    chk:p=>!!p.sentGhostChallenge},
+  {id:'victorsCrown',    icon:'🌿',t:"Victor's Crown",       d:'Win a Ghost Race challenge',          chk:p=>!!p.wonGhostRace},
+  {id:'partOfTheBody',   icon:'⛪',t:'Part of the Body',      d:'Join a congregation',                 chk:p=>!!(p.clanName||p.clanCode)},
+  {id:'unitedWeStand',   icon:'🏛️',t:'United We Stand',      d:'Win a congregation leaderboard week', chk:p=>!!p.wonClanWeek},
+  {id:'encourager',      icon:'💬',t:'Encourager',           d:'Send 10 chat messages',               chk:p=>(p.chatsSent||0)>=10},
+  // Daily & Consistency
+  {id:'dailyBread',      icon:'🍞',t:'Daily Bread',          d:'Complete your first daily challenge', chk:p=>!!(p.lastDaily)},
+  {id:'sabbathKeeper',   icon:'📖',t:'Sabbath Keeper',       d:'7-day daily streak',                  chk:p=>(p.dailyStreak||0)>=7},
+  {id:'monthOfFaith',    icon:'🌟',t:'Month of Faithfulness', d:'30-day daily streak',                chk:p=>(p.dailyStreak||0)>=30},
+  {id:'sabbathPlayer',   icon:'☀️',t:'Sabbath Player',       d:'Play on a Sunday',                    chk:p=>!!p.playedOnSunday},
+  {id:'bowlChampion',    icon:'🏆',t:'Bowl Champion',        d:'Complete the Sunday Bible Bowl',      chk:p=>!!p.completedBowl},
+  // Modes
+  {id:'yesAndAmen',      icon:'✅',t:'Yes and Amen',         d:'Complete a True/False game',          chk:p=>!!p.completedTF},
+  {id:'wordMemorizer',   icon:'📜',t:'Word Memorizer',       d:'Complete a Verse fill-in game',       chk:p=>!!p.completedVerse},
+  {id:'tonguesOfFire',   icon:'🔥',t:'Tongues of Fire',      d:'Complete a Lightning round',          chk:p=>!!p.completedLightning},
+  {id:'fullScripture',   icon:'📖',t:'Full Scripture',       d:'Play all 4 question types',           chk:p=>!!p.completedTF&&!!p.completedVerse&&!!p.completedLightning&&(p.played||0)>=1},
 ];
 function checkAchs(){
   if(!G.profile)return;
@@ -45951,6 +46328,8 @@ function initGreeting(){
   el.textContent=name?greet+', '+name+'!':greet+'!';
   updateDailyStreak();
   checkSeasonalEvents();
+  renderSeasonalBanner();
+  renderSundayBowl();
 }
 function updateDailyStreak(){
   const el=document.getElementById('daily-streak-info');
@@ -46481,9 +46860,11 @@ function renderFriends(){
       if(!G._friendCache) G._friendCache={};
       snaps.forEach(s=>{ if(s.exists()){ const v=s.val(); G._friendCache[s.key]={name:v.name||'Friend',avatar:v.avatar||'😊',photo:v.photo||'',xp:v.xp||0}; } });
       renderRows(G._friendCache);
+      renderFriendsEmptyState();
     });
   } else {
     renderRows(G._friendCache||{});
+    renderFriendsEmptyState();
   }
 }
 
@@ -46903,6 +47284,7 @@ function sendMessage(){
   G.db.ref('chats/'+pair+'/messages').push({from:G.uid,text,ts});
   if(!G._convPreviews) G._convPreviews={};
   G._convPreviews[_chatUid]={text,ts};
+  if(G.profile){ G.profile.chatsSent=(G.profile.chatsSent||0)+1; saveProfile(); }
   inp.value='';
 }
 
