@@ -44926,7 +44926,26 @@ function kickMember(uid,name){
 }
 function loadClanMembers(){
   const el=document.getElementById('clan-members-list');
+  const rqEl=document.getElementById('clan-join-requests');
   if(!el||!G.fbOk||!G.profile?.clanCode) return;
+  // Load pending join requests for owner
+  if(rqEl){
+    G.db.ref('clanJoinRequests/'+G.profile.clanCode).once('value').then(rqSn=>{
+      const reqs=[];
+      rqSn.forEach(c=>{ const v=c.val(); if(v&&v.status==='pending') reqs.push({uid:c.key,...v}); });
+      if(!reqs.length){rqEl.innerHTML='';return;}
+      rqEl.innerHTML='<div style="font-family:\'Cinzel\',serif;font-size:9px;letter-spacing:.07em;color:var(--gold1);text-transform:uppercase;margin-bottom:6px;">Join Requests</div>'+
+        reqs.map(r=>`<div class="friend-row" style="margin-bottom:8px;">
+          <div class="friend-av">${avatarMarkup(r.fromAvatar||'😊',r.fromPhoto||'','md')}</div>
+          <div class="friend-info"><div class="friend-name">${escHtml(r.fromName||'Player')}</div><div class="friend-xp">Wants to join</div></div>
+          <div class="friend-actions">
+            <button class="friend-btn friend-btn-chat" onclick="acceptClanJoinRequest('${r.uid}',G._pendingJoinReqs['${r.uid}'])">Accept</button>
+            <button class="friend-btn" style="background:#4a3f35;color:#fff;" onclick="declineClanJoinRequest('${r.uid}')">Decline</button>
+          </div>
+        </div>`).join('');
+      G._pendingJoinReqs={}; reqs.forEach(r=>G._pendingJoinReqs[r.uid]=r);
+    }).catch(()=>{});
+  }
   G.db.ref('clans/'+G.profile.clanCode+'/members').once('value').then(sn=>{
     const others=[];
     sn.forEach(c=>{ if(c.key!==G.uid) others.push({uid:c.key,...c.val()}); });
@@ -45164,16 +45183,51 @@ function joinClan(){
   const code=(document.getElementById('clan-join-inp').value||'').trim().toUpperCase();
   if(!code){ toast('Enter a congregation code'); return; }
   if(!G.fbOk){ toast('Firebase required to join congregations'); return; }
+  if(!G.profile||!G.uid){ toast('Create a profile first'); return; }
   sfx.tap();
   G.db.ref('clans/'+code).once('value').then(sn=>{
     const d=sn.val(); if(!d){ toast('Congregation not found'); return; }
-    G.db.ref('clans/'+code+'/members/'+G.uid).set({name:G.profile.name,xp:G.profile.xp||0});
-    G.profile.clanName=d.name; G.profile.clanCode=code; G.profile.clanIcon=d.icon||'⛪'; G.profile.clanPhoto=d.photo||''; G.profile.clanOwner=d.createdBy||''; saveProfile();
-    closeOv('ov-clan-join'); renderClans(); toast('Joined '+d.name+' congregation! ✦');
+    // Send a join request instead of joining directly
+    const req={fromUid:G.uid,fromName:G.profile.name||'Player',fromAvatar:G.profile.avatar||'😊',fromPhoto:G.profile.photo||'',ts:Date.now(),status:'pending',clanCode:code,clanName:d.name};
+    G.db.ref('clanJoinRequests/'+code+'/'+G.uid).set(req).then(()=>{
+      document.getElementById('clan-join-inp').value='';
+      closeOv('ov-clan-join');
+      toast('Join request sent to '+d.name+'! ✦');
+    }).catch(()=>toast('Could not send request'));
   }).catch(()=>toast('Congregation not found'));
+}
+function acceptClanJoinRequest(uid,data){
+  if(!G.profile?.clanCode||!G.fbOk) return;
+  const code=G.profile.clanCode;
+  G.db.ref('clans/'+code+'/members/'+uid).set({name:data.fromName,xp:0}).then(()=>{
+    // Notify the requester via clanJoinAccepted so their profile updates
+    const note={clanCode:code,clanName:G.profile.clanName||'',clanIcon:G.profile.clanIcon||'⛪',clanPhoto:G.profile.clanPhoto||'',createdBy:G.uid,ts:Date.now()};
+    G.db.ref('clanJoinAccepted/'+uid).set(note);
+    G.db.ref('clanJoinRequests/'+code+'/'+uid).remove();
+    loadClanMembers();
+    toast(data.fromName+' added to congregation ✦');
+  }).catch(()=>toast('Could not add member'));
+}
+function declineClanJoinRequest(uid){
+  if(!G.profile?.clanCode||!G.fbOk) return;
+  G.db.ref('clanJoinRequests/'+G.profile.clanCode+'/'+uid).remove().then(()=>{ loadClanMembers(); toast('Request declined'); });
+}
+function checkClanJoinAccepted(){
+  if(!G.fbOk||!G.uid||G.profile?.clanCode) return;
+  G.db.ref('clanJoinAccepted/'+G.uid).once('value').then(sn=>{
+    const d=sn.val(); if(!d) return;
+    G.profile.clanName=d.clanName||''; G.profile.clanCode=d.clanCode||'';
+    G.profile.clanIcon=d.clanIcon||'⛪'; G.profile.clanPhoto=d.clanPhoto||'';
+    G.profile.clanOwner=d.createdBy||'';
+    saveProfile(); pushProfile();
+    G.db.ref('clanJoinAccepted/'+G.uid).remove();
+    renderClans();
+    toast('You joined '+d.clanName+'! ✦');
+  }).catch(()=>{});
 }
 function renderClans(){
   renderClanInvites();
+  checkClanJoinAccepted();
   // If user has a clan and Firebase is available, verify ownership from source of truth
   if(G.profile?.clanCode && G.fbOk && G.uid && G.profile.clanOwner !== G.uid){
     G.db.ref('clans/'+G.profile.clanCode+'/createdBy').once('value').then(sn=>{
@@ -45198,7 +45252,8 @@ function renderClans(){
           ${G.profile.clanCode?`<div onclick="navigator.clipboard.writeText('${G.profile.clanCode}').then(()=>toast('Code copied!')).catch(()=>toast('${G.profile.clanCode}'))" style="display:inline-flex;align-items:center;gap:5px;background:rgba(201,145,13,.1);border:1px solid rgba(201,145,13,.22);border-radius:20px;padding:2px 9px;font-family:'Cinzel',serif;font-size:9px;letter-spacing:.1em;color:var(--gold1);margin-top:6px;cursor:pointer;user-select:none;">Code: ${G.profile.clanCode} 📋</div>`:''}
         </div>
       </div>
-      ${isOwner?`<input id="clan-invite-inp" class="inp" placeholder="Enter friend's code to invite…" style="margin-bottom:8px;font-size:14px;" maxlength="10" oninput="this.value=this.value.toUpperCase()">
+      ${isOwner?`<div id="clan-join-requests" style="margin-bottom:8px;"></div>
+      <input id="clan-invite-inp" class="inp" placeholder="Enter friend's code to invite…" style="margin-bottom:8px;font-size:14px;" maxlength="10" oninput="this.value=this.value.toUpperCase()">
       <div style="display:flex;gap:8px;">
         <button class="btn btn-gold" onclick="inviteToClan()" style="flex:1;">Invite</button>
         <button class="btn btn-ghost" onclick="requestRemoveCongregation()" style="flex:1;color:var(--ink3);">🧹 Delete</button>
