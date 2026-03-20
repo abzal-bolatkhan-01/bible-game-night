@@ -3148,8 +3148,12 @@ html[data-theme="warmth"] .divider::before, html[data-theme="warmth"] .divider::
     </div>
 
     <!-- Play Style -->
-    <div class="chips-wrap">
-      <div class="label" style="margin-bottom:10px;">Play Style</div>
+    <div style="background:rgba(196,136,10,.06);border:1px solid rgba(196,136,10,.18);border-radius:var(--r2);padding:16px;margin-bottom:8px;">
+      <div style="display:flex;align-items:center;gap:8px;margin-bottom:12px;">
+        <div style="flex:1;height:1px;background:rgba(196,136,10,.2);"></div>
+        <div style="font-family:'Cinzel',serif;font-size:11px;letter-spacing:.14em;color:var(--gold1);">HOW DO YOU WANT TO PLAY?</div>
+        <div style="flex:1;height:1px;background:rgba(196,136,10,.2);"></div>
+      </div>
       <div id="mode-chips" style="display:grid;grid-template-columns:1fr 1fr;gap:8px;margin-bottom:10px;">
         <button class="mode-btn sel" onclick="pickMode(this,'online')">
           <span style="font-size:22px;">🌐</span>
@@ -3168,12 +3172,11 @@ html[data-theme="warmth"] .divider::before, html[data-theme="warmth"] .divider::
           <span style="font-family:'Playfair Display',serif;font-size:16px;color:var(--ink);">Solo</span>
         </button>
       </div>
-      <div id="mode-style-desc" style="background:rgba(196,136,10,.07);border:1px solid rgba(196,136,10,.2);border-radius:var(--r2);padding:8px 14px;text-align:center;font-size:12px;color:var(--ink2);letter-spacing:.01em;">✦ &nbsp;Compete with believers worldwide</div>
+      <div id="mode-style-desc" style="text-align:center;font-size:12px;color:var(--ink3);letter-spacing:.01em;margin-bottom:12px;">✦ &nbsp;Compete with believers worldwide</div>
+      <button class="btn btn-gold" onclick="onPlay()" style="width:100%;margin-bottom:0;">
+        ▶ Start Game
+      </button>
     </div>
-
-    <button class="btn btn-gold" onclick="onPlay()" style="margin-bottom:8px;">
-      ▶ Start Game
-    </button>
     <button class="btn btn-ghost btn-sm" onclick="go('donation')" style="font-size:12px;">❤️ Support This Ministry</button>
     <div class="pb"></div>
   </div>
