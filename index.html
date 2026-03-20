@@ -3947,8 +3947,8 @@ html[data-theme="warmth"] .divider::before, html[data-theme="warmth"] .divider::
     </div>
 
     <div style="display:flex;gap:8px;margin-bottom:0;">
-      <button class="chip sel" id="ch-mode-live" onclick="chSetMode('live')" style="flex:1;">⚡ Duel</button>
-      <button class="chip" id="ch-mode-ghost" onclick="chSetMode('ghost')" style="flex:1;">👻 Ghost</button>
+      <button class="chip sel" id="ch-mode-live" onclick="chSetMode('live')" style="flex:1;border-radius:12px;justify-content:center;text-align:center;">⚡ Duel</button>
+      <button class="chip" id="ch-mode-ghost" onclick="chSetMode('ghost')" style="flex:1;border-radius:12px;justify-content:center;text-align:center;">👻 Ghost</button>
     </div>
     <div id="ch-mode-desc" style="font-size:13px;color:var(--ink3);margin-bottom:16px;line-height:1.6;text-align:center;padding:10px 4px;border-bottom:1px solid rgba(201,145,13,.12);">Play live against your friend in real time.</div>
 
@@ -43295,8 +43295,8 @@ function answerQ(btn,isOk,q,order){
       if(G.scores[p.name]>=G.cfg.winScore){ setTimeout(endGame,1100); return; }
     }
 
-    // Auto-advance on correct for single-player
-    if(G.players.length===1){
+    // Auto-advance on correct (all modes except Pass & Play)
+    if(G.mode!=='local'&&!G.onlineGame){
       showAutoAdvance('g-auto-bar','g-auto-fill',1800,()=>nextTurn());
       return;
     }
@@ -43335,7 +43335,7 @@ function answerQ(btn,isOk,q,order){
     sb.style.display='';
     sb.classList.add('streak-pulse');
   }
-  const autoSolo=(G.players.length===1)&&(G.mode==='practice'||G.mode==='daily');
+  const autoSolo=G.mode!=='local'&&!G.onlineGame;
   if(autoSolo){
     showAutoAdvance('g-auto-bar','g-auto-fill',1100,()=>nextTurn());
     return;
@@ -43361,7 +43361,7 @@ function timeOut(q,pfx){
       if(shouldEndByHearts()){ setTimeout(endGame, 1500); return; }
     }
   }
-  const autoSolo=(G.players.length===1)&&(G.mode==='practice'||G.mode==='daily');
+  const autoSolo=G.mode!=='local'&&!G.onlineGame;
   if(autoSolo){
     showAutoAdvance('g-auto-bar','g-auto-fill',1100,()=>nextTurn());
     return;
