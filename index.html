@@ -3149,26 +3149,13 @@ html[data-theme="warmth"] .divider::before, html[data-theme="warmth"] .divider::
 
     <!-- Play Style -->
     <div class="chips-wrap">
-      <div class="label" style="margin-bottom:10px;">Play Style</div>
-      <div id="mode-chips" style="display:grid;grid-template-columns:1fr 1fr;gap:8px;margin-bottom:10px;">
-        <button class="chip sel" onclick="pickMode(this,'online')" style="flex-direction:column;padding:14px 8px;gap:6px;justify-content:center;align-items:center;text-align:center;">
-          <span style="font-size:22px;">🌐</span>
-          <span style="font-family:'Playfair Display',serif;font-size:16px;">Online</span>
-        </button>
-        <button class="chip" onclick="pickMode(this,'nearby')" style="flex-direction:column;padding:14px 8px;gap:6px;justify-content:center;align-items:center;text-align:center;">
-          <span style="font-size:22px;">📡</span>
-          <span style="font-family:'Playfair Display',serif;font-size:16px;">Same Room</span>
-        </button>
-        <button class="chip" onclick="pickMode(this,'local')" style="flex-direction:column;padding:14px 8px;gap:6px;justify-content:center;align-items:center;text-align:center;">
-          <span style="font-size:22px;">👥</span>
-          <span style="font-family:'Playfair Display',serif;font-size:16px;">Pass & Play</span>
-        </button>
-        <button class="chip" onclick="pickMode(this,'practice')" style="flex-direction:column;padding:14px 8px;gap:6px;justify-content:center;align-items:center;text-align:center;">
-          <span style="font-size:22px;">🎓</span>
-          <span style="font-family:'Playfair Display',serif;font-size:16px;">Solo</span>
-        </button>
+      <div class="label" style="margin-bottom:7px;">Play Style</div>
+      <div class="chips" id="mode-chips">
+        <button class="chip sel" onclick="pickMode(this,'online')">🌐 Online</button>
+        <button class="chip" onclick="pickMode(this,'nearby')">📡 Same Room</button>
+        <button class="chip" onclick="pickMode(this,'local')">👥 Pass & Play</button>
+        <button class="chip" onclick="pickMode(this,'practice')">🎓 Solo</button>
       </div>
-      <div id="mode-style-desc" style="text-align:center;font-size:12px;color:var(--ink3);letter-spacing:.01em;padding:4px 0;">✦ &nbsp;Compete with believers worldwide</div>
     </div>
 
     <button class="btn btn-gold" onclick="onPlay()" style="margin-bottom:8px;">
@@ -42772,19 +42759,11 @@ function applyModeSubAvailability(){
   if(G.sub==='team') G.sub='classic';
   syncSubChipSelection();
 }
-const MODE_STYLE_DESCS={
-  online:'✦ &nbsp;Compete with believers worldwide',
-  nearby:'✦ &nbsp;Same WiFi, same spirit',
-  local:'✦ &nbsp;One device, take turns together',
-  practice:'✦ &nbsp;Sharpen your faith, go at your own pace'
-};
 function pickMode(el,m){
   sfx.tap(); haptic('tap');
   G.mode=m; G.seen.clear();
   document.querySelectorAll('#mode-chips .chip').forEach(c=>c.classList.remove('sel'));
   el.classList.add('sel');
-  const descEl=document.getElementById('mode-style-desc');
-  if(descEl) descEl.innerHTML=MODE_STYLE_DESCS[m]||'';
   applyModeSubAvailability();
 }
 function pickSub(el,s){
