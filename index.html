@@ -3156,6 +3156,7 @@ html[data-theme="warmth"] .divider::before, html[data-theme="warmth"] .divider::
         <button class="chip" onclick="pickMode(this,'local')">👥 Pass & Play</button>
         <button class="chip" onclick="pickMode(this,'practice')">🎓 Solo</button>
       </div>
+      <div id="mode-style-desc" style="font-size:12px;color:var(--ink3);margin-top:8px;line-height:1.5;">Compete with believers worldwide.</div>
     </div>
 
     <button class="btn btn-gold" onclick="onPlay()" style="margin-bottom:8px;">
@@ -42759,11 +42760,19 @@ function applyModeSubAvailability(){
   if(G.sub==='team') G.sub='classic';
   syncSubChipSelection();
 }
+const MODE_STYLE_DESCS={
+  online:'Compete with believers worldwide.',
+  nearby:'Gather in one place — same WiFi, same spirit.',
+  local:'Take turns on one device. Perfect for family night.',
+  practice:'Go at your own pace. Sharpen your knowledge solo.'
+};
 function pickMode(el,m){
   sfx.tap(); haptic('tap');
   G.mode=m; G.seen.clear();
   document.querySelectorAll('#mode-chips .chip').forEach(c=>c.classList.remove('sel'));
   el.classList.add('sel');
+  const d=document.getElementById('mode-style-desc');
+  if(d) d.textContent=MODE_STYLE_DESCS[m]||'';
   applyModeSubAvailability();
 }
 function pickSub(el,s){
