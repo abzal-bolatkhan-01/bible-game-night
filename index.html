@@ -46039,6 +46039,8 @@ function drawRoundRect(ctx,x,y,w,h,r){
   ctx.closePath();
 }
 function drawStoreBadge(ctx,x,y,w,h,platform){
+  ctx.save();
+  ctx.textAlign='left';
   ctx.fillStyle='rgba(0,0,0,0.52)';
   drawRoundRect(ctx,x,y,w,h,18);
   ctx.fill();
@@ -46086,6 +46088,7 @@ function drawStoreBadge(ctx,x,y,w,h,platform){
     ctx.font="800 30px 'Nunito', sans-serif";
     ctx.fillText('Google Play',x+78,y+63);
   }
+  ctx.restore();
 }
 function canvasToBlob(canvas,type='image/png',quality=0.95){
   return new Promise((resolve,reject)=>{
