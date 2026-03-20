@@ -3189,6 +3189,61 @@ html.feat-bigQuestion #g-txt { font-size: 19px !important; line-height: 1.45; }
   letter-spacing: .06em;
 }
 
+/* feat-answerBadge: distinct pill letter badges */
+html.feat-answerBadge .opt { align-items: center; }
+html.feat-answerBadge .opt-key {
+  width: 26px; height: 26px; border-radius: 8px;
+  font-size: 12px; font-weight: 900; letter-spacing: 0;
+  display: flex; align-items: center; justify-content: center;
+  flex-shrink: 0; padding: 0; margin-top: 0; line-height: 1;
+  background: var(--bg2); border: 2px solid rgba(0,0,0,.1); color: var(--ink2);
+}
+html.feat-answerBadge .opt.correct .opt-key { background: rgba(88,204,2,.15); border-color: var(--green1); color: var(--green1); }
+html.feat-answerBadge .opt.wrong .opt-key { background: rgba(255,75,75,.12); border-color: var(--red); color: var(--red); }
+html.feat-answerBadge .opt.reveal .opt-key { background: rgba(88,204,2,.1); border-color: rgba(88,204,2,.4); color: var(--green1); }
+html[data-theme="dark"].feat-answerBadge .opt-key { background: var(--bg3); border-color: var(--inp-border); color: var(--ink2); }
+
+/* feat-correctCheck: checkmark pop on correct answer */
+@keyframes check-pop {
+  0%   { transform: translateY(-50%) scale(0) rotate(-20deg); opacity: 0; }
+  65%  { transform: translateY(-50%) scale(1.25) rotate(5deg); opacity: 1; }
+  100% { transform: translateY(-50%) scale(1) rotate(0); opacity: 1; }
+}
+html.feat-correctCheck .opt.correct { position: relative; overflow: visible; }
+html.feat-correctCheck .opt.correct::after {
+  content: '✓'; position: absolute; right: 14px; top: 50%;
+  transform: translateY(-50%) scale(0);
+  animation: check-pop .35s .05s cubic-bezier(.34,1.56,.64,1) forwards;
+  font-size: 20px; font-weight: 900; color: var(--green1); pointer-events: none;
+}
+
+/* feat-categoryBadge: prominent pill above question */
+html.feat-categoryBadge #g-cat { display: flex !important; justify-content: center !important; padding: 0 !important; }
+html.feat-categoryBadge .q-cat {
+  font-family: 'Cinzel', serif !important; font-size: 10px !important;
+  letter-spacing: .12em !important; text-transform: uppercase;
+  padding: 5px 14px !important; background: var(--bg2) !important;
+  border: 1.5px solid var(--line) !important; border-radius: 999px !important;
+  color: var(--ink3) !important; display: inline-block !important; margin-bottom: 12px !important;
+}
+
+/* feat-lightningVibe: electric identity */
+html.feat-lightningVibe #s-game.lightning-mode { background: linear-gradient(180deg,rgba(255,150,0,.06) 0%,transparent 28%); }
+html.feat-lightningVibe #s-game.lightning-mode .g-hdr { border-bottom: 1.5px solid rgba(255,150,0,.25); }
+html.feat-lightningVibe #s-game.lightning-mode .timer-bar { background: linear-gradient(90deg,#FF9600,#FFD700) !important; box-shadow: 0 0 8px rgba(255,150,0,.35) !important; }
+html.feat-lightningVibe #s-game.lightning-mode .score-num { color: #FF9600; }
+html.feat-lightningVibe #s-game.lightning-mode .q-text { color: var(--ink); }
+
+/* feat-emptyStates */
+.empty-state { text-align: center; padding: 36px 20px; }
+.empty-state-icon { font-size: 42px; display: block; margin-bottom: 10px; opacity: .75; }
+.empty-state-title { font-family: 'Nunito', sans-serif; font-weight: 800; font-size: 15px; color: var(--ink2); margin-bottom: 5px; }
+.empty-state-sub { font-size: 13px; color: var(--ink3); line-height: 1.55; }
+
+/* feat-gameHeader: cleaner header */
+html.feat-gameHeader .score-num { font-size: 22px !important; font-weight: 900 !important; }
+html.feat-gameHeader .g-nm { font-weight: 800 !important; max-width: 100px; overflow: hidden; text-overflow: ellipsis; white-space: nowrap; }
+
 /* feat-confetti */
 .confetti-p {
   position: fixed; pointer-events: none; z-index: 9999;
@@ -42279,13 +42334,20 @@ expandModeQuestionBanks();
    Set any to false to remove it completely.
 ══════════════════════════════════════════════════ */
 const FEATURES = {
-  answerAnim:  true,  // Pulse glow on correct answer button
-  verseRef:    true,  // Show verse reference under correct answer
-  dailyTopic:  false, // "Today: [Book]" on the daily challenge card
-  lastPlayed:  false, // Quick replay shortcut on home screen
-  navBounce:   true,  // Nav icons bounce when tapped
-  confetti:    true,  // Confetti burst on a perfect round
-  bigQuestion: true,  // Slightly larger question text in game
+  answerAnim:    true,  // Pulse glow on correct answer button
+  verseRef:      true,  // Show verse reference under correct answer
+  dailyTopic:    false, // "Today: [Book]" on the daily challenge card
+  lastPlayed:    false, // Quick replay shortcut on home screen
+  navBounce:     true,  // Nav icons bounce when tapped
+  confetti:      true,  // Confetti burst on a perfect round
+  bigQuestion:   true,  // Slightly larger question text in game
+  answerBadge:   true,  // Distinct pill-style A/B/C/D letter badges
+  correctCheck:  true,  // Checkmark pop animation on correct answer
+  categoryBadge: true,  // Prominent category label above question
+  lightningVibe: true,  // Electric visual identity for lightning mode
+  emptyStates:   true,  // Illustrated empty state messages
+  xpCountUp:     true,  // XP count-up animation on end screen
+  gameHeader:    true,  // Cleaner game header (bigger score, bold name)
 };
 (function(){
   Object.keys(FEATURES).forEach(f=>document.documentElement.classList.toggle('feat-'+f,!!FEATURES[f]));
@@ -42348,6 +42410,12 @@ function confettiBurst(){
     wrap.appendChild(p);
   }
   setTimeout(()=>wrap.remove(),4500);
+}
+
+/* Empty state helper */
+function mkEmpty(icon,title,sub){
+  if(!FEATURES.emptyStates) return `<div class="empty">${title}</div>`;
+  return `<div class="empty-state"><span class="empty-state-icon">${icon}</span><div class="empty-state-title">${title}</div><div class="empty-state-sub">${sub}</div></div>`;
 }
 
 /* ══════════════════════════════════════════════════
@@ -43407,6 +43475,7 @@ function renderTFQ(q){
 function renderQ(){
   G.done=false; stopTimers(); clearAutoAdvance();
   if(G.qi===0) G._wrongCount=0;
+  document.getElementById('s-game').classList.toggle('lightning-mode', FEATURES.lightningVibe&&G.sub==='lightning');
   const p=G.players[G.pi];
   // End game if all questions in pool exhausted
   if(G.qi>=G.pool.length){ endGame(); return; }
@@ -44039,7 +44108,14 @@ function endGame(){
     }else{
       const startXp=G._xpAtGameStart||0;
       const gained=Math.max(0,(G.profile.xp||0)-startXp);
-      document.getElementById('w-xp-txt').textContent=`✦ +${gained} XP earned`;
+      if(FEATURES.xpCountUp&&gained>0){
+        const xpEl=document.getElementById('w-xp-txt'); let c=0;
+        xpEl.textContent='✦ +0 XP earned';
+        const step=Math.max(1,Math.ceil(gained/25));
+        const t=setInterval(()=>{ c=Math.min(c+step,gained); xpEl.textContent=`✦ +${c} XP earned`; if(c>=gained)clearInterval(t); },40);
+      } else {
+        document.getElementById('w-xp-txt').textContent=`✦ +${gained} XP earned`;
+      }
     }
   }
   saveMatchResult(win, G.players);
@@ -45097,7 +45173,7 @@ function renderLB(tab){
   
   if (tab === 'friends') {
     if (!G.profile || !G.profile.friends || G.profile.friends.length === 0) {
-      list.innerHTML = '<div class="empty">No friends added yet. Share your code!</div>';
+      list.innerHTML = mkEmpty('👥','No friends yet','Add friends using your code\nand compete together!');
       return;
     }
     // Fetch specifically the friends' data
@@ -45161,7 +45237,7 @@ function renderLB(tab){
 
 function displayLBRows(list, rows, tab, clanMap) {
   list.innerHTML='';
-  if(!rows.length){ list.innerHTML='<div class="empty">No rankings yet. Play to appear!</div>'; return; }
+  if(!rows.length){ list.innerHTML=mkEmpty('🏆','No rankings yet','Play a game to appear\non the leaderboard!'); return; }
   rows.forEach((p,i)=>{
     const isMe=tab!=='clan'&&p.id===G.uid;
     const l=lvl(p.xp||0);
@@ -47444,7 +47520,7 @@ function renderFriends(){
   renderFriendRequests();
   const uids=getFriendList();
   if(!uids.length){
-    list.innerHTML='<div style="text-align:center;color:var(--ink3);padding:30px 0;font-size:14px;">No friends yet — share your code!</div>';
+    list.innerHTML=mkEmpty('👥','No friends yet','Share your code to invite\nfriends and challenge them!');
     return;
   }
 
