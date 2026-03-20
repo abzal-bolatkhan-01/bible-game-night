@@ -44799,7 +44799,8 @@ function renderLB(tab){
     // Also include self
     promises.push(G.db.ref('leaderboard/' + G.uid).once('value'));
     
-    Promise.all(promises).then(snapshots => {
+    Promise.all([Promise.all(promises), G.db.ref('clans').once('value')]).then(([snapshots, clanSn])=>{
+      const clanMap={}; clanSn.forEach(c=>{ const v=c.val()||{}; clanMap[v.code||c.key]={icon:v.icon||'⛪',photo:v.photo||''}; });
       const rows = snapshots.filter(s => s.exists()).map(s => ({...s.val(), id: s.key}));
       if(G.profile&&G.uid){
         const meIdx=rows.findIndex(r=>r.id===G.uid);
@@ -44808,7 +44809,7 @@ function renderLB(tab){
         else rows.push(meData);
       }
       rows.sort((a,b) => (b.xp||0) - (a.xp||0));
-      displayLBRows(list, rows, tab);
+      displayLBRows(list, rows, tab, clanMap);
     });
     return;
   }
@@ -44831,7 +44832,8 @@ function renderLB(tab){
     return;
   }
 
-  G.db.ref('players').once('value').then(playersSnap=>{
+  Promise.all([G.db.ref('players').once('value'), G.db.ref('clans').once('value')]).then(([playersSnap, clanSn])=>{
+    const clanMap={}; clanSn.forEach(c=>{ const v=c.val()||{}; clanMap[v.code||c.key]={icon:v.icon||'⛪',photo:v.photo||''}; });
     const thisWeek=wk();
     let rows=[];
     playersSnap.forEach(s=>{
@@ -44847,11 +44849,11 @@ function renderLB(tab){
     }
     if(tab==='weekly') rows.sort((a,b)=>(b.weeklyXP||0)-(a.weeklyXP||0));
     else rows.sort((a,b)=>(b.xp||0)-(a.xp||0));
-    displayLBRows(list, rows, tab);
+    displayLBRows(list, rows, tab, clanMap);
   }).catch(()=>{ list.innerHTML='<div class="empty">Error loading ranks.</div>'; });
 }
 
-function displayLBRows(list, rows, tab) {
+function displayLBRows(list, rows, tab, clanMap) {
   list.innerHTML='';
   if(!rows.length){ list.innerHTML='<div class="empty">No rankings yet. Play to appear!</div>'; return; }
   rows.forEach((p,i)=>{
@@ -44866,8 +44868,11 @@ function displayLBRows(list, rows, tab) {
       row.innerHTML=`<div class="lb-rank">${medal}</div><div class="lb-av">${clanBadgeMarkup(p.icon||'⛪',p.photo||'','sm')}</div><div class="lb-info"><div class="lb-nm">${escHtml(p.name||'')}${isMeClan?' ✦':''}</div><div class="lb-sub">${p.memberCount||Object.keys(p.members||{}).length} member${(p.memberCount||1)!==1?'s':''}</div></div><div class="lb-xpv">${p.totalXp||0} XP</div>`;
     }else{
       const clanName=(p.clan||p.clanName||'').trim()||'No congregation';
-      const clanEmoji=(p.clanIcon&&String(p.clanIcon).trim())?String(p.clanIcon):'⛪';
-      const clanMark=clanBadgeMarkup(clanEmoji,p.clanPhoto||'','sm');
+      const clanCode=p.clanCode||'';
+      const canonical=clanMap&&clanCode?clanMap[clanCode]:null;
+      const clanEmoji=canonical?canonical.icon:((p.clanIcon&&String(p.clanIcon).trim())?String(p.clanIcon):'⛪');
+      const clanPhoto=canonical?canonical.photo:(p.clanPhoto||'');
+      const clanMark=clanBadgeMarkup(clanEmoji,clanPhoto,'sm');
       const shownXp=tab==='weekly'?(p.weeklyXP||0):(p.xp||0);
       row.innerHTML=`<div class="lb-rank">${medal}</div><div class="lb-av">${avatarMarkup(p.avatar||'😊',p.photo||'','sm')}</div><div class="lb-info"><div class="lb-nm">${escHtml(p.name||'Player')}${isMe?' ✦':''}</div><div class="lb-sub lb-clan-sub"><span class="clan-emoji">${clanMark}</span><span class="clan-name">${escHtml(clanName)}</span></div></div><div style="text-align:right;"><div class="lb-xpv">${shownXp} XP</div><span class="lb-lvl">${l.name}</span></div>`;
     }
