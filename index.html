@@ -3937,24 +3937,22 @@ html[data-theme="warmth"] .divider::before, html[data-theme="warmth"] .divider::
   </div>
 </div>
 
-<!-- ████████  DUEL SETUP  ████████ -->
-<div class="screen" id="s-duel-setup">
-  <div style="padding:16px 0 12px;flex-shrink:0;">
-    <button class="back-btn" onclick="go('friends')">← Back</button>
-    <div class="eyebrow">Challenge</div>
-    <div style="display:flex;flex-direction:column;align-items:center;margin-top:8px;gap:4px;">
-      <div id="ch-friend-av" style="font-size:48px;line-height:1;">😊</div>
-      <div class="h1" id="ch-friend-name" style="margin:0;">Friend</div>
+<!-- ── MODAL: Challenge Friend ── -->
+<div class="ov" id="ov-challenge" onclick="bgClose(event,'ov-challenge')">
+  <div class="mbox">
+    <div class="mhandle"></div>
+    <div style="text-align:center;margin-bottom:16px;">
+      <div id="ch-friend-av" style="font-size:48px;margin-bottom:4px;">😊</div>
+      <div class="mtitle" id="ch-friend-name" style="margin-bottom:0;">Friend</div>
     </div>
-  </div>
-  <div class="scroller">
+
     <div class="chips-wrap" style="margin-bottom:0;">
       <div class="chips">
         <button class="chip sel" id="ch-mode-live" onclick="chSetMode('live')">⚡ Duel</button>
         <button class="chip" id="ch-mode-ghost" onclick="chSetMode('ghost')">👻 Ghost</button>
       </div>
     </div>
-    <div id="ch-mode-desc" style="font-size:13px;color:var(--ink3);margin-bottom:16px;line-height:1.6;padding:10px 0 10px;border-bottom:1px solid rgba(201,145,13,.12);">Play live against your friend in real time.</div>
+    <div id="ch-mode-desc" style="font-size:13px;color:var(--ink3);margin-bottom:16px;line-height:1.6;text-align:center;padding:10px 4px;border-bottom:1px solid rgba(201,145,13,.12);">Play live against your friend in real time.</div>
 
     <div class="chips-wrap">
       <div class="label" style="margin-bottom:7px;">Game Mode</div>
@@ -3978,24 +3976,23 @@ html[data-theme="warmth"] .divider::before, html[data-theme="warmth"] .divider::
     <div id="ch-mode-desc-settings" style="font-size:12px;color:var(--ink3);margin-bottom:8px;line-height:1.5;">Pick the right answer from 4 options.</div>
     <div class="eyebrow" style="margin-bottom:9px;">Options</div>
     <div id="ch-live-options" style="margin-bottom:16px;">
-      <div class="toggle-row" style="margin-bottom:10px;">
-        <span class="toggle-lbl">❤️ Hearts</span>
-        <button class="toggle-btn on" id="ch-tog-hearts" onclick="togChHearts()">ON</button>
-      </div>
-      <div class="toggle-row" id="ch-rounds-row" style="margin-bottom:0;">
-        <span class="toggle-lbl">🏁 Rounds</span>
-        <div class="stepper">
-          <button class="step-btn" onclick="adjChRounds(-1)">−</button>
-          <span class="step-val" id="ch-win-disp">15</span>
-          <button class="step-btn" onclick="adjChRounds(1)">+</button>
-        </div>
+    <div class="toggle-row" style="margin-bottom:10px;">
+      <span class="toggle-lbl">❤️ Hearts</span>
+      <button class="toggle-btn on" id="ch-tog-hearts" onclick="togChHearts()">ON</button>
+    </div>
+    <div class="toggle-row" id="ch-rounds-row" style="margin-bottom:0;">
+      <span class="toggle-lbl">🏁 Rounds</span>
+      <div class="stepper">
+        <button class="step-btn" onclick="adjChRounds(-1)">−</button>
+        <span class="step-val" id="ch-win-disp">15</span>
+        <button class="step-btn" onclick="adjChRounds(1)">+</button>
       </div>
     </div>
+    </div><!-- end ch-live-options -->
     <button class="btn btn-gold" onclick="chModeSubmit()" id="ch-send-btn">
       <span class="btn-icon">⚔️</span><span id="ch-send-txt"> Let's Go!</span>
     </button>
-    <button class="btn btn-ghost btn-sm" style="margin-top:8px;" onclick="go('friends')">Never mind</button>
-    <div class="pb"></div>
+    <button class="btn btn-ghost btn-sm" style="margin-top:8px;" onclick="closeOv('ov-challenge')">Never mind</button>
   </div>
 </div>
 
@@ -45044,7 +45041,7 @@ function sendGhostChallenge(){
   G.streaks={[G.profile.name||'Player']:0};
   G.cfg.winScore=count;
   G.cfg.hearts=!!_chCfg.hearts;
-  go('friends');
+  closeOv('ov-challenge');
   showSplash(0,()=>{ go('game'); renderQ(); });
 }
 function finishGhostRace(){
@@ -47353,7 +47350,7 @@ function challengeFriend(uid){
   const roundsEl=document.getElementById('ch-win-disp');
   if(roundsEl) roundsEl.textContent=clampRounds(_chCfg.winScore);
 
-  go('duel-setup');
+  openOv('ov-challenge');
 }
 
 function pickChDiff(el,diff){
@@ -47450,7 +47447,7 @@ function sendChallenge(){
   // Write challenge to Firebase for the receiver
   G.db.ref('challenges/'+_chTargetUid+'/'+G.uid).set(challengeData)
     .then(()=>{
-      go('friends');
+      closeOv('ov-challenge');
       toast('Challenge sent! Waiting for opponent...');
       G.meReady=false;
       document.getElementById('ready-btn').textContent='✓ Mark Ready';
