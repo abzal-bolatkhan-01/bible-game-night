@@ -47633,6 +47633,7 @@ function renderMatchHistory(expanded) {
   let html = '';
   for (let i = 0; i < show; i++) {
     const m = history[i];
+    if (!m || typeof m !== 'object') continue;
     const myName = m.myName;
     const iWon = myName && m.winner && m.winner.name === myName;
     const iPlayed = myName && m.scores && m.scores.some(s => s.name === myName);
@@ -47651,15 +47652,19 @@ function renderMatchHistory(expanded) {
     const cat = m.category ? ' · ' + esc(m.category) : '';
     const subLabel = [mLabel, diff].filter(Boolean).join(' · ') + cat;
     const scoreStr = m.scores ? m.scores.map(s => esc(s.name || '?') + ' ' + (s.score || 0)).join(' · ') : '';
-    const expandedDetail = m.scores ? m.scores.map(s => {
-      const sImg = s.photo
-        ? '<img src="' + esc(s.photo) + '" style="width:20px;height:20px;border-radius:50%;object-fit:cover;vertical-align:middle;margin-right:4px;">'
-        : '<span style="font-size:14px;margin-right:4px;">' + esc(s.avatar || '👤') + '</span>';
-      return '<div style="display:flex;align-items:center;justify-content:space-between;padding:3px 0;">' +
-        '<span>' + sImg + '<span style="font-size:12px;">' + esc(s.name || '?') + '</span></span>' +
-        '<span style="font-size:12px;font-weight:700;color:var(--gold1);">' + (s.score || 0) + '</span>' +
-        '</div>';
-    }).join('') : '';
+    let expandedDetail = '';
+    try {
+      expandedDetail = Array.isArray(m.scores) ? m.scores.map(s => {
+        if (!s || typeof s !== 'object') return '';
+        const sImg = s.photo
+          ? '<img src="' + esc(s.photo) + '" style="width:20px;height:20px;border-radius:50%;object-fit:cover;vertical-align:middle;margin-right:4px;">'
+          : '<span style="font-size:14px;margin-right:4px;">' + esc(s.avatar || '👤') + '</span>';
+        return '<div style="display:flex;align-items:center;justify-content:space-between;padding:3px 0;">' +
+          '<span>' + sImg + '<span style="font-size:12px;">' + esc(s.name || '?') + '</span></span>' +
+          '<span style="font-size:12px;font-weight:700;color:var(--gold1);">' + (s.score || 0) + '</span>' +
+          '</div>';
+      }).join('') : '';
+    } catch(e) {}
     html += '<div class="card-sm" style="margin-bottom:8px;cursor:pointer;" onclick="toggleMatchDetail(this)">' +
       '<div style="display:flex;align-items:center;gap:10px;">' +
         '<span style="display:flex;align-items:center;">' + winnerImg + '</span>' +
@@ -47826,12 +47831,6 @@ function endGame(){
   }
   if(G.mode==='async_challenge'){ finishGhostRace(); return; }
   go('winner'); sfx.win(); haptic('win'); confetti(); checkAchs();
-  if(G.mode==='daily'){
-    setTimeout(()=>{
-      const sw=document.getElementById('s-winner');
-      if(sw&&sw.classList.contains('active')) go('home');
-    },2200);
-  }
 }
 
 function playAgain(){
@@ -49748,7 +49747,7 @@ function renderProfile(){
   if(summary){
     summary.textContent=`${wins} wins in ${played} games · ${correct} correct answers total`;
   }
-  renderMatchHistory();
+  try { renderMatchHistory(); } catch(e) {}
   // Merge Firebase match history with localStorage
   if (G.uid && db) {
     try {
@@ -49761,7 +49760,7 @@ function renderProfile(){
           local.sort((a, b) => b.id - a.id);
           local = local.slice(0, 50);
           localStorage.setItem('bgn_history', JSON.stringify(local));
-          renderMatchHistory(false);
+          try { renderMatchHistory(false); } catch(e) {}
         }
       });
     } catch(e) {}
