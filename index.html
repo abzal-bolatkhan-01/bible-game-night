@@ -49704,22 +49704,27 @@ function renderAchs(expanded){
   const ae=document.getElementById('prof-achs');
   if(!ae||!G.profile) return;
   const p=G.profile;
-  ae.innerHTML='';
   const shown=expanded?ACHS:ACHS.slice(0,3);
+  let html='';
   shown.forEach(a=>{
-    const ok=a.chk(p);
-    const d=document.createElement('div'); d.className='ach '+(ok?'unlocked':'locked');
-    d.innerHTML=`<span class="ach-ico">${a.icon}</span><div style="flex:1;"><div class="ach-nm">${a.t}</div><div class="ach-ds">${a.d}</div></div>${ok?'<span style="color:var(--gold1);font-size:16px;">✓</span>':''}`;
-    ae.appendChild(d);
+    let ok=false;
+    try{ ok=!!a.chk(p); }catch(e){}
+    const border=ok?'rgba(196,136,10,.4)':'rgba(0,0,0,.12)';
+    const bg=ok?'rgba(196,136,10,.07)':'transparent';
+    const op=ok?'1':'0.55';
+    html+=`<div style="display:flex;align-items:center;gap:11px;padding:11px 13px;border-radius:10px;border:1.5px solid ${border};background:${bg};margin-bottom:7px;opacity:${op};">
+      <span style="font-size:22px;flex-shrink:0;">${a.icon}</span>
+      <div style="flex:1;">
+        <div style="font-size:11px;font-weight:700;text-transform:uppercase;letter-spacing:.04em;">${a.t}</div>
+        <div style="font-size:12px;font-style:italic;opacity:.75;">${a.d}</div>
+      </div>
+      ${ok?'<span style="color:#c4842a;font-size:16px;font-weight:700;">✓</span>':''}
+    </div>`;
   });
   if(ACHS.length>3){
-    const btn=document.createElement('button');
-    btn.className='btn btn-ghost btn-sm';
-    btn.style.cssText='width:100%;margin-top:2px;';
-    btn.textContent=expanded?'Show less':'Show all';
-    btn.onclick=()=>renderAchs(!expanded);
-    ae.appendChild(btn);
+    html+=`<button class="btn btn-ghost btn-sm" style="width:100%;margin-top:2px;" onclick="renderAchs(${!expanded})">${expanded?'Show less':'Show all '+(ACHS.length-3)+' more'}</button>`;
   }
+  ae.innerHTML=html;
 }
 function renderProfile(){
   if(!G.profile){ go('auth'); buildAvGrid(); return; }
