@@ -47611,9 +47611,9 @@ function saveMatchResult(winner, players) {
     history.unshift(match);
     localStorage.setItem('bgn_history', JSON.stringify(history.slice(0, 50)));
     // Sync to Firebase if signed in
-    if (G.uid && db) {
+    if (G.uid && G.db) {
       try {
-        db.ref('players/' + G.uid + '/matchHistory').set(history.slice(0, 50));
+        G.db.ref('players/' + G.uid + '/matchHistory').set(history.slice(0, 50));
       } catch(e) {}
     }
   } catch(e) {}
@@ -49754,9 +49754,9 @@ function renderProfile(){
   }
   try { renderMatchHistory(); } catch(e) {}
   // Merge Firebase match history with localStorage
-  if (G.uid && db) {
+  if (G.uid && G.db) {
     try {
-      db.ref('players/' + G.uid + '/matchHistory').once('value', function(snap) {
+      G.db.ref('players/' + G.uid + '/matchHistory').once('value', function(snap) {
         if (snap.exists()) {
           const fbHistory = snap.val() || [];
           let local = JSON.parse(localStorage.getItem('bgn_history') || '[]');
