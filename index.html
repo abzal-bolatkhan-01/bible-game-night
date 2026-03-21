@@ -3502,6 +3502,7 @@ html.feat-gameHeader .g-nm { font-weight: 800 !important; max-width: 100px; over
       style="width:100%;padding:10px;background:transparent;border:1px dashed rgba(0,0,0,.15);border-radius:var(--r2);color:var(--ink3);cursor:pointer;margin-bottom:14px;">
       + Add Player
     </button>
+    <div id="team-picker" style="display:none;margin-bottom:14px;"></div>
 
     <div id="setup-room-mode-wrap" style="display:none;margin-bottom:14px;">
       <div class="chips-wrap" style="margin-bottom:12px;">
@@ -46742,9 +46743,11 @@ function pickSetupSub(el,s){
   if(s==='team'&&G.mode!=='local'){ toast('Team mode is for group play only (Pass & Play).'); return; }
   G.sub=s; G.seen.clear();
   if(s==='lightning') G.cfg.hearts=false;
+  if(s==='team') setupPs.forEach((p,i)=>{ p.team=(i%2===0)?'Team A':'Team B'; });
   document.querySelectorAll('#setup-room-sub-chips .chip').forEach(c=>c.classList.remove('sel'));
   el.classList.add('sel');
   renderOpts();
+  renderTeamPicker();
 }
 function pickSetupDiff(el,d){
   sfx.tap(); haptic('tap');
@@ -46768,6 +46771,48 @@ function renderSetup(){
     el.appendChild(row);
   });
   document.getElementById('add-p-btn').style.display=setupPs.length>=6?'none':'flex';
+  renderTeamPicker();
+}
+function renderTeamPicker(){
+  const el=document.getElementById('team-picker');
+  if(!el) return;
+  if(G.sub!=='team'){ el.style.display='none'; return; }
+  // Initialize teams if not set
+  setupPs.forEach((p,i)=>{ if(!p.team) p.team=(i%2===0)?'Team A':'Team B'; });
+  const teamA=setupPs.map((p,i)=>({p,i})).filter(({p})=>p.team==='Team A');
+  const teamB=setupPs.map((p,i)=>({p,i})).filter(({p})=>p.team==='Team B');
+  const card=({p,i})=>`<div style="display:flex;align-items:center;gap:7px;padding:7px 9px;background:var(--bg2);border-radius:8px;margin-bottom:5px;">
+    <span style="font-size:16px;">${p.avatar}</span>
+    <span style="font-size:12px;font-weight:700;flex:1;overflow:hidden;text-overflow:ellipsis;white-space:nowrap;">${p.name||'Player '+(i+1)}</span>
+    <button onclick="switchTeam(${i})" style="background:none;border:1px solid rgba(0,0,0,.18);border-radius:6px;padding:2px 8px;font-size:10px;font-weight:700;cursor:pointer;color:var(--ink2);white-space:nowrap;">switch →</button>
+  </div>`;
+  el.style.display='block';
+  el.innerHTML=`<div style="display:flex;justify-content:space-between;align-items:center;margin-bottom:8px;">
+    <span style="font-family:'Cinzel',serif;font-size:10px;letter-spacing:.1em;color:var(--ink3);text-transform:uppercase;">Pick Teams</span>
+    <button onclick="shuffleTeams()" style="display:flex;align-items:center;gap:4px;background:none;border:1px solid rgba(0,0,0,.15);border-radius:8px;padding:4px 10px;font-size:11px;font-weight:700;cursor:pointer;color:var(--ink2);">🔀 Shuffle</button>
+  </div>
+  <div style="display:grid;grid-template-columns:1fr 1fr;gap:10px;">
+    <div>
+      <div style="font-size:10px;font-weight:800;text-transform:uppercase;letter-spacing:.06em;color:#c4842a;margin-bottom:6px;">🔶 Team A <span style="opacity:.6;font-weight:400;">(${teamA.length})</span></div>
+      ${teamA.map(card).join('')||'<div style="font-size:11px;color:var(--ink3);padding:4px 0;font-style:italic;">Empty</div>'}
+    </div>
+    <div>
+      <div style="font-size:10px;font-weight:800;text-transform:uppercase;letter-spacing:.06em;color:#4a80c4;margin-bottom:6px;">🔷 Team B <span style="opacity:.6;font-weight:400;">(${teamB.length})</span></div>
+      ${teamB.map(card).join('')||'<div style="font-size:11px;color:var(--ink3);padding:4px 0;font-style:italic;">Empty</div>'}
+    </div>
+  </div>`;
+}
+function switchTeam(i){
+  sfx.tap();
+  setupPs[i].team=setupPs[i].team==='Team A'?'Team B':'Team A';
+  renderTeamPicker();
+}
+function shuffleTeams(){
+  sfx.tap();
+  const idxs=setupPs.map((_,i)=>i);
+  for(let i=idxs.length-1;i>0;i--){ const j=Math.floor(Math.random()*(i+1)); [idxs[i],idxs[j]]=[idxs[j],idxs[i]]; }
+  idxs.forEach((idx,pos)=>{ setupPs[idx].team=pos<Math.ceil(setupPs.length/2)?'Team A':'Team B'; });
+  renderTeamPicker();
 }
 function cycleAv(i){
   sfx.tap();
@@ -46782,7 +46827,13 @@ function addPlayer(){
 }
 function removeP(i){
   if(setupPs.length<=2){ toast('Need at least 2 players'); return; }
-  sfx.tap(); setupPs.splice(i,1); renderSetup();
+  sfx.tap(); setupPs.splice(i,1);
+  // Re-balance teams if in team mode so no team ends up empty
+  if(G.sub==='team'){
+    const hasA=setupPs.some(p=>p.team==='Team A'), hasB=setupPs.some(p=>p.team==='Team B');
+    if(!hasA||!hasB) setupPs.forEach((p,idx)=>{ p.team=(idx%2===0)?'Team A':'Team B'; });
+  }
+  renderSetup();
 }
 const MODE_DESCS={
   classic:'Pick the right answer from 4 options.',
@@ -46972,12 +47023,10 @@ function beginGame(){
   G.players.forEach(p=>{ G.scores[p.name]=0; G.hearts[p.name]=3; G.streaks[p.name]=0; });
 
   if (G.sub === 'team') {
-    const teamNames=['Team A','Team B'];
+    const hasA=setupPs.some(p=>p.team==='Team A'), hasB=setupPs.some(p=>p.team==='Team B');
+    if(!hasA||!hasB){ toast('Each team needs at least one player.'); return; }
     G.teamScores = { 'Team A': 0, 'Team B': 0 };
-    G.players.forEach((p, i) => {
-      p.team = (i % 2 === 0) ? 'Team A' : 'Team B';
-    });
-    // Re-key teamScores in endGame references — also update g-team-scores labels
+    G.players.forEach((p, i) => { p.team = setupPs[i]?.team || (i%2===0?'Team A':'Team B'); });
     const t1lbl=document.querySelector('#g-team-scores .team-score-box:first-child .team-lbl');
     const t2lbl=document.querySelector('#g-team-scores .team-score-box:last-child .team-lbl');
     if(t1lbl) t1lbl.textContent='Team A';
