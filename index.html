@@ -46783,12 +46783,12 @@ function renderTeamPicker(){
   const card=({p,i})=>`<div class="setup-row" style="margin-bottom:6px;padding:8px 10px;">
     <span style="font-size:18px;line-height:1;">${p.avatar}</span>
     <span style="font-size:13px;font-weight:700;flex:1;overflow:hidden;text-overflow:ellipsis;white-space:nowrap;color:var(--ink1);">${p.name||'Player '+(i+1)}</span>
-    <button class="btn btn-ghost btn-sm" onclick="switchTeam(${i})" style="padding:4px 10px;font-size:11px;">→</button>
+    <button class="btn btn-ghost btn-sm" onclick="switchTeam(${i})" style="padding:2px 7px;font-size:10px;min-height:0;">→</button>
   </div>`;
   el.style.display='block';
   el.innerHTML=`<div style="display:flex;align-items:center;justify-content:space-between;margin-bottom:10px;">
     <div class="eyebrow" style="margin-bottom:0;">Teams</div>
-    <button class="btn btn-ghost btn-sm" onclick="shuffleTeams()" style="font-size:11px;">🔀 Shuffle</button>
+    <button class="btn btn-ghost btn-sm" onclick="shuffleTeams()" style="padding:3px 10px;font-size:11px;min-height:0;">🔀 Shuffle</button>
   </div>
   <div style="display:grid;grid-template-columns:1fr 1fr;gap:8px;">
     <div>
