@@ -47635,15 +47635,13 @@ function renderMatchHistory(expanded) {
     const m = history[i];
     if (!m || typeof m !== 'object') continue;
     const myName = m.myName;
-    const iWon = myName && m.winner && m.winner.name === myName;
-    const iPlayed = myName && m.scores && m.scores.some(s => s.name === myName);
     const tied = m.scores && m.scores.length > 1 && m.scores.every(s => s.score === m.scores[0].score);
+    const iWon = !tied && m.winner && (!myName || m.winner.name === myName);
+    const iLost = myName && m.winner && m.winner.name !== myName && !tied;
     let badge = '';
-    if (iPlayed) {
-      if (tied) badge = '<span style="background:var(--ink3);color:#fff;font-size:9px;font-weight:800;padding:2px 6px;border-radius:20px;margin-left:6px;">T</span>';
-      else if (iWon) badge = '<span style="background:#38a800;color:#fff;font-size:9px;font-weight:800;padding:2px 6px;border-radius:20px;margin-left:6px;">W</span>';
-      else badge = '<span style="background:#e05050;color:#fff;font-size:9px;font-weight:800;padding:2px 6px;border-radius:20px;margin-left:6px;">L</span>';
-    }
+    if (tied) badge = '<span style="background:var(--ink3);color:#fff;font-size:9px;font-weight:800;padding:2px 6px;border-radius:20px;margin-left:6px;">T</span>';
+    else if (iWon) badge = '<span style="background:#38a800;color:#fff;font-size:9px;font-weight:800;padding:2px 6px;border-radius:20px;margin-left:6px;">W</span>';
+    else if (iLost) badge = '<span style="background:#e05050;color:#fff;font-size:9px;font-weight:800;padding:2px 6px;border-radius:20px;margin-left:6px;">L</span>';
     const winnerImg = m.winner && m.winner.photo
       ? '<img src="' + esc(m.winner.photo) + '" style="width:32px;height:32px;border-radius:50%;object-fit:cover;">'
       : '<span style="font-size:22px;">' + esc(m.winner ? m.winner.avatar || '🎮' : '🎮') + '</span>';
