@@ -46126,7 +46126,7 @@ function signInWithGoogle(){
   const cu=G.auth.currentUser;
   if(cu && cu.isAnonymous){
     cu.linkWithPopup(provider)
-      .then(()=>{ toast('Account linked!'); updateProfileSigninCard(); if(document.getElementById('s-auth')?.classList.contains('active')) go('home'); })
+      .then(res=>{ toast('Signed in with Google!'); document.getElementById('main-nav').style.display=''; renderHomeBar(); go('home'); updateProfileSigninCard(); })
       .catch(e=>{
         if(e.code==='auth/popup-blocked'||e.code==='auth/cancelled-popup-request'){
           setAuthRedirectPending('google-link'); cu.linkWithRedirect(provider);
