@@ -46162,6 +46162,21 @@ function signInWithGoogle(){
       .catch(e=>{
         if(e.code==='auth/popup-blocked'||e.code==='auth/cancelled-popup-request'){
           setAuthRedirectPending('google-link'); cu.linkWithRedirect(provider);
+        } else if(e.code==='auth/credential-already-in-use'){
+          // Google account already exists — sign in directly instead of linking
+          G.auth.signInWithCredential(e.credential).then(res=>{
+            const u=res.user;
+            G.uid=u.uid; G.fbOk=true;
+            pullProfile().then(()=>{
+              if(!G.profile && u.displayName){
+                G.profile={name:u.displayName.split(' ')[0].slice(0,20),avatar:'🧑',photo:u.photoURL||'',church:'',xp:0,correct:0,bestStreak:0,winStreak:0,wins:0,played:0,dailyStreak:0,lastDaily:'',theme:'light',weeklyXP:0,weeklyReset:wk(),xpResetVersion:XP_RESET_VERSION,friendCode:Math.random().toString(36).slice(2,8).toUpperCase(),friends:[],achs:[],notifications:false,clanName:'',clanCode:'',clanIcon:'⛪',clanPhoto:'',clanOwner:''};
+                normalizeSocialProfile(); saveProfile();
+              }
+              if(G.fbOk){ pushProfile(); listenFriendRequests(); listenFriendLinks(); listenAsyncChallenges(); }
+              document.getElementById('main-nav').style.display=''; renderHomeBar(); go('home');
+              toast('Signed in with Google!');
+            });
+          }).catch(()=>handleAuthError(e,'Google sign-in failed'));
         } else { handleAuthError(e,'Google sign-in failed'); }
       });
     return;
