@@ -46125,12 +46125,22 @@ function signInWithGoogle(){
   provider.setCustomParameters({ prompt:'select_account' });
   const cu=G.auth.currentUser;
   if(cu && cu.isAnonymous){
-    setAuthRedirectPending('google-link');
-    cu.linkWithRedirect(provider);
+    cu.linkWithPopup(provider)
+      .then(()=>{ toast('Account linked!'); updateProfileSigninCard(); if(document.getElementById('s-auth')?.classList.contains('active')) go('home'); })
+      .catch(e=>{
+        if(e.code==='auth/popup-blocked'||e.code==='auth/cancelled-popup-request'){
+          setAuthRedirectPending('google-link'); cu.linkWithRedirect(provider);
+        } else { handleAuthError(e,'Google sign-in failed'); }
+      });
     return;
   }
-  setAuthRedirectPending('google');
-  G.auth.signInWithRedirect(provider);
+  G.auth.signInWithPopup(provider)
+    .then(res=>{ toast('Signed in with Google!'); updateProfileSigninCard(); document.getElementById('main-nav').style.display=''; renderHomeBar(); go('home'); })
+    .catch(e=>{
+      if(e.code==='auth/popup-blocked'||e.code==='auth/cancelled-popup-request'){
+        setAuthRedirectPending('google'); G.auth.signInWithRedirect(provider);
+      } else { handleAuthError(e,'Google sign-in failed'); }
+    });
 }
 
 /* ══════════════════════════════════════════════════
@@ -51124,8 +51134,13 @@ function showAuthMethodDisabledModal(){
 function signInWithApple(){
   if(!G.auth){ toast('Firebase not configured'); return; }
   const provider=new firebase.auth.OAuthProvider('apple.com');
-  setAuthRedirectPending('apple');
-  G.auth.signInWithRedirect(provider);
+  G.auth.signInWithPopup(provider)
+    .then(res=>{ toast('Signed in with Apple!'); updateProfileSigninCard(); document.getElementById('main-nav').style.display=''; renderHomeBar(); go('home'); })
+    .catch(e=>{
+      if(e.code==='auth/popup-blocked'||e.code==='auth/cancelled-popup-request'){
+        setAuthRedirectPending('apple'); G.auth.signInWithRedirect(provider);
+      } else { handleAuthError(e,'Apple sign-in failed'); }
+    });
 }
 function toggleEmailAuth(){
   const f=document.getElementById('email-auth-form');
