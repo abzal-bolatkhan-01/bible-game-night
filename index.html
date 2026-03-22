@@ -3420,6 +3420,12 @@ html.feat-gameHeader .g-nm { font-weight: 800 !important; max-width: 100px; over
     <button class="btn btn-gold" onclick="createProfile()">
       <span class="btn-icon">✦</span> Play as Guest
     </button>
+    <p style="font-size:11px;color:var(--ink3);text-align:center;margin-top:16px;line-height:1.8;">
+      By signing in you agree to our
+      <span onclick="go('terms')" style="color:var(--gold);cursor:pointer;text-decoration:underline;">Terms of Service</span>
+      and
+      <span onclick="go('privacy')" style="color:var(--gold);cursor:pointer;text-decoration:underline;">Privacy Policy</span>
+    </p>
     <div class="pb"></div>
   </div>
 </div>
@@ -3979,6 +3985,84 @@ html.feat-gameHeader .g-nm { font-weight: 800 !important; max-width: 100px; over
     <button class="btn btn-gold" onclick="openDonate()" style="margin-bottom:8px;"><span class="btn-icon">❤️</span>Donate</button>
     <p class="small dim" style="text-align:center;margin-bottom:12px;">100% goes to the developer</p>
     <button class="btn btn-ghost btn-sm" onclick="go('home')">← Back</button>
+    <div class="pb"></div>
+  </div>
+</div>
+
+<!-- ████████  TERMS OF SERVICE  ████████ -->
+<div class="screen" id="s-terms">
+  <div class="scroller" style="padding:20px 16px;">
+    <button class="btn btn-ghost btn-sm" onclick="go('home')" style="margin-bottom:16px;">← Back</button>
+    <div class="h1" style="margin-bottom:4px;">Terms of Service</div>
+    <p class="small dim" style="margin-bottom:20px;">Last updated: March 2026</p>
+
+    <div class="card" style="margin-bottom:14px;">
+      <div style="font-weight:700;margin-bottom:6px;">1. Acceptance</div>
+      <p class="small" style="color:var(--ink2);line-height:1.7;">By using The Lamp Game ("the game"), you agree to these terms. If you do not agree, please do not use the game.</p>
+    </div>
+    <div class="card" style="margin-bottom:14px;">
+      <div style="font-weight:700;margin-bottom:6px;">2. The Service</div>
+      <p class="small" style="color:var(--ink2);line-height:1.7;">The Lamp Game is a free Bible trivia game for families and churches. We reserve the right to modify or discontinue the service at any time without notice.</p>
+    </div>
+    <div class="card" style="margin-bottom:14px;">
+      <div style="font-weight:700;margin-bottom:6px;">3. User Accounts</div>
+      <p class="small" style="color:var(--ink2);line-height:1.7;">You may sign in with Google or Apple. You are responsible for maintaining the security of your account. We do not store your Google or Apple passwords.</p>
+    </div>
+    <div class="card" style="margin-bottom:14px;">
+      <div style="font-weight:700;margin-bottom:6px;">4. Acceptable Use</div>
+      <p class="small" style="color:var(--ink2);line-height:1.7;">You agree not to misuse the game, attempt to hack or disrupt the service, or use it for any unlawful purpose.</p>
+    </div>
+    <div class="card" style="margin-bottom:14px;">
+      <div style="font-weight:700;margin-bottom:6px;">5. Donations</div>
+      <p class="small" style="color:var(--ink2);line-height:1.7;">Donations are voluntary and non-refundable. They support the development and maintenance of the game.</p>
+    </div>
+    <div class="card" style="margin-bottom:14px;">
+      <div style="font-weight:700;margin-bottom:6px;">6. Disclaimer</div>
+      <p class="small" style="color:var(--ink2);line-height:1.7;">The game is provided "as is" without warranties of any kind. We are not liable for any damages arising from use of the game.</p>
+    </div>
+    <div class="card" style="margin-bottom:24px;">
+      <div style="font-weight:700;margin-bottom:6px;">7. Contact</div>
+      <p class="small" style="color:var(--ink2);line-height:1.7;">Questions? Reach us via Ko-fi at ko-fi.com/lampbible</p>
+    </div>
+    <div class="pb"></div>
+  </div>
+</div>
+
+<!-- ████████  PRIVACY POLICY  ████████ -->
+<div class="screen" id="s-privacy">
+  <div class="scroller" style="padding:20px 16px;">
+    <button class="btn btn-ghost btn-sm" onclick="go('home')" style="margin-bottom:16px;">← Back</button>
+    <div class="h1" style="margin-bottom:4px;">Privacy Policy</div>
+    <p class="small dim" style="margin-bottom:20px;">Last updated: March 2026</p>
+
+    <div class="card" style="margin-bottom:14px;">
+      <div style="font-weight:700;margin-bottom:6px;">1. What We Collect</div>
+      <p class="small" style="color:var(--ink2);line-height:1.7;">When you sign in with Google or Apple, we receive your name and email address. We also store your game progress (score, XP, achievements) in our database.</p>
+    </div>
+    <div class="card" style="margin-bottom:14px;">
+      <div style="font-weight:700;margin-bottom:6px;">2. How We Use It</div>
+      <p class="small" style="color:var(--ink2);line-height:1.7;">Your information is used solely to provide the game experience — saving your progress, displaying your name on leaderboards, and enabling multiplayer features.</p>
+    </div>
+    <div class="card" style="margin-bottom:14px;">
+      <div style="font-weight:700;margin-bottom:6px;">3. Data Storage</div>
+      <p class="small" style="color:var(--ink2);line-height:1.7;">Your data is stored securely using Google Firebase. We do not sell, trade, or share your personal information with third parties.</p>
+    </div>
+    <div class="card" style="margin-bottom:14px;">
+      <div style="font-weight:700;margin-bottom:6px;">4. Third-Party Services</div>
+      <p class="small" style="color:var(--ink2);line-height:1.7;">We use Google Firebase for authentication and data storage, and Google/Apple for sign-in. Their privacy policies apply to their respective services.</p>
+    </div>
+    <div class="card" style="margin-bottom:14px;">
+      <div style="font-weight:700;margin-bottom:6px;">5. Your Rights</div>
+      <p class="small" style="color:var(--ink2);line-height:1.7;">You can delete your account and data at any time by contacting us. Guest play is available without creating an account.</p>
+    </div>
+    <div class="card" style="margin-bottom:14px;">
+      <div style="font-weight:700;margin-bottom:6px;">6. Children</div>
+      <p class="small" style="color:var(--ink2);line-height:1.7;">The game is suitable for all ages. We do not knowingly collect personal information from children under 13 without parental consent.</p>
+    </div>
+    <div class="card" style="margin-bottom:24px;">
+      <div style="font-weight:700;margin-bottom:6px;">7. Contact</div>
+      <p class="small" style="color:var(--ink2);line-height:1.7;">Questions about your privacy? Reach us at ko-fi.com/lampbible</p>
+    </div>
     <div class="pb"></div>
   </div>
 </div>
