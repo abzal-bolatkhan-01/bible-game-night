@@ -51158,40 +51158,11 @@ function profileSignIn(method){
   else return;
   const currentUser=G.auth.currentUser;
   if(currentUser&&currentUser.isAnonymous){
-    const credential=provider;
-    const linkCall=currentUser.linkWithPopup(credential);
-    linkCall.then(result=>{
-      toast('Account linked! Your progress is saved.');
-      updateProfileSigninCard();
-    }).catch(e=>{
-      if(e.code==='auth/unauthorized-domain'){ showDomainErrorModal(); return; }
-      if(e.code==='auth/credential-already-in-use'||e.code==='auth/email-already-in-use'){
-        const guestProfile = G.profile ? {...G.profile} : null;
-        G.auth.signInWithRedirect(provider).then(res=>{
-          const newUid = res.user.uid;
-          G.uid = newUid;
-          G.db.ref('players/' + newUid).once('value').then(sn=>{
-            const remote = sn.val();
-            G.profile = mergeProfiles(remote, guestProfile);
-            if(!G.profile.friendCode) G.profile.friendCode = Math.random().toString(36).slice(2,8).toUpperCase();
-            normalizeSocialProfile();
-            saveProfile();
-            pushProfile();
-            toast('Welcome back! Your progress has been merged.');
-            updateProfileSigninCard();
-            renderHomeBar();
-          });
-        }).catch(e2=>handleAuthError(e2,'Sign-in failed'));
-      } else {
-        handleAuthError(e,'Sign-in failed');
-      }
-    });
+    setAuthRedirectPending('apple-link');
+    currentUser.linkWithRedirect(provider);
   } else {
-    const signInCall=G.auth.signInWithRedirect(provider);
-    signInCall.then(()=>{
-      toast('Signed in!');
-      updateProfileSigninCard();
-    }).catch(e=>handleAuthError(e,'Sign-in failed'));
+    setAuthRedirectPending('apple');
+    G.auth.signInWithRedirect(provider);
   }
 }
 function profileEmailSignIn(){
