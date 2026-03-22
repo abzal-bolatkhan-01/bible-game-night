@@ -15,6 +15,7 @@
 <link rel="icon" type="image/png" href="icon.png">
 <link rel="apple-touch-icon" href="icon.png">
 <title>Lamp - Bible Trivia Online</title>
+<noscript><a href="https://thelampgame.com/#privacy">Privacy Policy</a> | <a href="https://thelampgame.com/#terms">Terms of Service</a></noscript>
 <link rel="preconnect" href="https://fonts.googleapis.com">
 <link href="https://fonts.googleapis.com/css2?family=Nunito:wght@400;500;600;700;800;900&family=Cormorant+Garamond:ital,wght@0,600;0,700;1,600;1,700&family=Cinzel:wght@500;600&family=Playfair+Display:wght@700;900&display=swap" rel="stylesheet">
 <script src="https://www.gstatic.com/firebasejs/9.22.2/firebase-app-compat.js"></script>
@@ -46302,9 +46303,7 @@ function loadProfile(){
     // Apply saved theme on load
     if(typeof initTheme==='function') initTheme();
   } else {
-    // Show auth screen instead of home
-    document.getElementById('s-home').classList.remove('active');
-    document.getElementById('s-auth').classList.add('active');
+    // Guests land on home — auth triggers when they try to play
     buildAvGrid();
   }
 }
