@@ -49199,12 +49199,12 @@ function buildGhostPool(mode,category,difficulty,seed,count){
   let src=[];
   if(mode==='classic'||mode==='lightning'||mode==='truefalse'&&false){
     if(!category||category==='all'){
-      src=Object.values(QB).flat().filter(q=>q&&(difficulty==='all'||!difficulty||q.d===difficulty));
-      if(!src.length) src=Object.values(QB).flat();
+      src=Object.entries(QB).flatMap(([cat,qs])=>qs.filter(q=>q&&(difficulty==='all'||!difficulty||q.d===difficulty)).map(q=>({...q,cat})));
+      if(!src.length) src=Object.entries(QB).flatMap(([cat,qs])=>qs.map(q=>({...q,cat})));
     } else {
       const cat=category||(Object.keys(QB)[0]);
-      src=(QB[cat]||[]).filter(q=>q&&(difficulty==='all'||!difficulty||q.d===difficulty));
-      if(!src.length) src=QB[cat]||[];
+      src=(QB[cat]||[]).filter(q=>q&&(difficulty==='all'||!difficulty||q.d===difficulty)).map(q=>({...q,cat}));
+      if(!src.length) src=(QB[cat]||[]).map(q=>({...q,cat}));
     }
   } else if(mode==='truefalse'){
     src=TF_Q.filter(q=>q&&(difficulty==='all'||!difficulty||q.d===difficulty));
