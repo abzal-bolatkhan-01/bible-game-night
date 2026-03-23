@@ -46139,63 +46139,44 @@ function setAuthRedirectPending(v){
 function getAuthRedirectPending(){
   try{ return sessionStorage.getItem('auth_redirect_pending')||''; }catch(e){ return ''; }
 }
+function _isMobile(){ return /Mobi|Android|iPhone|iPad|iPod/i.test(navigator.userAgent) || ('ontouchstart' in window); }
+function _afterSignIn(u, providerName){
+  G.uid=u.uid; G.fbOk=true;
+  return pullProfile().then(()=>{
+    if(!G.profile && u.displayName){
+      G.profile={name:u.displayName.split(' ')[0].slice(0,20),avatar:'🧑',photo:u.photoURL||'',church:'',xp:0,correct:0,bestStreak:0,winStreak:0,wins:0,played:0,dailyStreak:0,lastDaily:'',theme:'light',weeklyXP:0,weeklyReset:wk(),xpResetVersion:XP_RESET_VERSION,friendCode:Math.random().toString(36).slice(2,8).toUpperCase(),friends:[],achs:[],notifications:false,clanName:'',clanCode:'',clanIcon:'⛪',clanPhoto:'',clanOwner:''};
+      normalizeSocialProfile(); saveProfile();
+    }
+    if(G.fbOk){ pushProfile(); listenFriendRequests(); listenFriendLinks(); listenAsyncChallenges(); }
+    updateProfileSigninCard();
+    document.getElementById('main-nav').style.display=''; renderHomeBar(); go('home');
+    toast('Signed in with '+providerName+'!');
+  });
+}
 function signInWithGoogle(){
   if(!G.auth){ toast('Firebase not configured'); return; }
   const provider=new firebase.auth.GoogleAuthProvider();
   provider.setCustomParameters({ prompt:'select_account' });
+  if(_isMobile()){
+    setAuthRedirectPending('google'); G.auth.signInWithRedirect(provider); return;
+  }
   const cu=G.auth.currentUser;
   if(cu && cu.isAnonymous){
     cu.linkWithPopup(provider)
-      .then(res=>{
-        const u=res.user;
-        G.uid=u.uid; G.fbOk=true;
-        pullProfile().then(merged=>{
-          if(!G.profile && u.displayName){
-            G.profile={name:u.displayName.split(' ')[0].slice(0,20),avatar:'🧑',photo:u.photoURL||'',church:'',xp:0,correct:0,bestStreak:0,winStreak:0,wins:0,played:0,dailyStreak:0,lastDaily:'',theme:'light',weeklyXP:0,weeklyReset:wk(),xpResetVersion:XP_RESET_VERSION,friendCode:Math.random().toString(36).slice(2,8).toUpperCase(),friends:[],achs:[],notifications:false,clanName:'',clanCode:'',clanIcon:'⛪',clanPhoto:'',clanOwner:''};
-            normalizeSocialProfile(); saveProfile();
-          }
-          if(G.fbOk){ pushProfile(); listenFriendRequests(); listenFriendLinks(); listenAsyncChallenges(); }
-          document.getElementById('main-nav').style.display=''; renderHomeBar(); go('home');
-          toast('Signed in with Google!');
-        });
-      })
+      .then(res=>_afterSignIn(res.user,'Google'))
       .catch(e=>{
         if(e.code==='auth/popup-blocked'||e.code==='auth/cancelled-popup-request'){
           setAuthRedirectPending('google-link'); cu.linkWithRedirect(provider);
         } else if(e.code==='auth/credential-already-in-use'){
-          // Google account already exists — sign in directly instead of linking
-          G.auth.signInWithCredential(e.credential).then(res=>{
-            const u=res.user;
-            G.uid=u.uid; G.fbOk=true;
-            pullProfile().then(()=>{
-              if(!G.profile && u.displayName){
-                G.profile={name:u.displayName.split(' ')[0].slice(0,20),avatar:'🧑',photo:u.photoURL||'',church:'',xp:0,correct:0,bestStreak:0,winStreak:0,wins:0,played:0,dailyStreak:0,lastDaily:'',theme:'light',weeklyXP:0,weeklyReset:wk(),xpResetVersion:XP_RESET_VERSION,friendCode:Math.random().toString(36).slice(2,8).toUpperCase(),friends:[],achs:[],notifications:false,clanName:'',clanCode:'',clanIcon:'⛪',clanPhoto:'',clanOwner:''};
-                normalizeSocialProfile(); saveProfile();
-              }
-              if(G.fbOk){ pushProfile(); listenFriendRequests(); listenFriendLinks(); listenAsyncChallenges(); }
-              document.getElementById('main-nav').style.display=''; renderHomeBar(); go('home');
-              toast('Signed in with Google!');
-            });
-          }).catch(()=>handleAuthError(e,'Google sign-in failed'));
+          G.auth.signInWithCredential(e.credential)
+            .then(res=>_afterSignIn(res.user,'Google'))
+            .catch(()=>handleAuthError(e,'Google sign-in failed'));
         } else { handleAuthError(e,'Google sign-in failed'); }
       });
     return;
   }
   G.auth.signInWithPopup(provider)
-    .then(res=>{
-      const u=res.user;
-      G.uid=u.uid; G.fbOk=true;
-      pullProfile().then(()=>{
-        if(!G.profile && u.displayName){
-          G.profile={name:u.displayName.split(' ')[0].slice(0,20),avatar:'🧑',photo:u.photoURL||'',church:'',xp:0,correct:0,bestStreak:0,winStreak:0,wins:0,played:0,dailyStreak:0,lastDaily:'',theme:'light',weeklyXP:0,weeklyReset:wk(),xpResetVersion:XP_RESET_VERSION,friendCode:Math.random().toString(36).slice(2,8).toUpperCase(),friends:[],achs:[],notifications:false,clanName:'',clanCode:'',clanIcon:'⛪',clanPhoto:'',clanOwner:''};
-          normalizeSocialProfile(); saveProfile();
-        }
-        if(G.fbOk) pushProfile();
-        updateProfileSigninCard();
-        document.getElementById('main-nav').style.display=''; renderHomeBar(); go('home');
-        toast('Signed in with Google!');
-      });
-    })
+    .then(res=>_afterSignIn(res.user,'Google'))
     .catch(e=>{
       if(e.code==='auth/popup-blocked'||e.code==='auth/cancelled-popup-request'){
         setAuthRedirectPending('google'); G.auth.signInWithRedirect(provider);
@@ -51242,8 +51223,11 @@ function showAuthMethodDisabledModal(){
 function signInWithApple(){
   if(!G.auth){ toast('Firebase not configured'); return; }
   const provider=new firebase.auth.OAuthProvider('apple.com');
+  if(_isMobile()){
+    setAuthRedirectPending('apple'); G.auth.signInWithRedirect(provider); return;
+  }
   G.auth.signInWithPopup(provider)
-    .then(res=>{ toast('Signed in with Apple!'); updateProfileSigninCard(); document.getElementById('main-nav').style.display=''; renderHomeBar(); go('home'); })
+    .then(res=>_afterSignIn(res.user,'Apple'))
     .catch(e=>{
       if(e.code==='auth/popup-blocked'||e.code==='auth/cancelled-popup-request'){
         setAuthRedirectPending('apple'); G.auth.signInWithRedirect(provider);
