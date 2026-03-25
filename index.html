@@ -366,34 +366,41 @@ body::after {
 
 /* ─── BOTTOM NAV ─────────────────────────────────── */
 .nav {
-  position: sticky;
+  position: fixed;
   bottom: 0;
+  left: 0;
+  right: 0;
   background: rgba(13,9,6,.96);
   backdrop-filter: blur(20px) saturate(1.6);
   -webkit-backdrop-filter: blur(20px) saturate(1.6);
   border-top: 1px solid rgba(200,158,72,.12);
   display: grid;
   grid-template-columns: repeat(5, 1fr);
-  padding-bottom: var(--safe-b);
-  z-index: 50;
+  padding-bottom: max(var(--safe-b), 12px);
+  z-index: 500;
   flex-shrink: 0;
 }
 .nb {
-  padding: 9px 4px 8px;
+  padding: 12px 4px 10px;
   background: transparent;
   border: none;
   cursor: pointer;
   font-family: 'Nunito', sans-serif;
-  font-size: 9px;
-  font-weight: 600;
+  font-size: 10px;
+  font-weight: 700;
   letter-spacing: .04em;
   color: var(--ink3);
   text-align: center;
-  transition: color .15s;
+  transition: color .15s, transform .1s;
   -webkit-user-select: none;
   user-select: none;
   position: relative;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
 }
+.nb:active { transform: scale(0.92); opacity: 0.8; }
 .nb svg { display: block; margin: 0 auto 3px; width: 20px; height: 20px; transition: transform .2s; }
 .nb.on { color: var(--gold1); }
 .nb.on svg { transform: scale(1.08); }
@@ -1133,7 +1140,7 @@ html[data-theme="warmth"] .challenge-notif-inner {
 .ov {
   position: fixed;
   inset: 0;
-  z-index: 200;
+  z-index: 1000;
   background: rgba(0,0,0,.68);
   backdrop-filter: blur(8px);
   display: none;
@@ -3368,7 +3375,7 @@ html.feat-gameHeader .g-nm { font-weight: 800 !important; max-width: 100px; over
         <button class="ps-mode-btn ps-v3-seg sel" data-mode="online" onclick="pickMode(this,'online')"><span style="font-size:25px;line-height:1;">🌐</span><br><span style="display:inline-block;margin-top:5px;">Online</span></button>
         <button class="ps-mode-btn ps-v3-seg" data-mode="nearby" onclick="pickMode(this,'nearby')"><span style="font-size:25px;line-height:1;">📡</span><br><span style="display:inline-block;margin-top:5px;">Nearby</span></button>
         <button class="ps-mode-btn ps-v3-seg" data-mode="local" onclick="pickMode(this,'local')"><span style="font-size:25px;line-height:1;">👥</span><br><span style="display:inline-block;margin-top:5px;">Pass & Play</span></button>
-        <button class="ps-mode-btn ps-v3-seg" data-mode="practice" onclick="pickMode(this,'practice')"><span style="font-size:25px;line-height:1;">🎓</span><br><span style="display:inline-block;margin-top:5px;">Solo</span></button>
+        <button class="ps-mode-btn ps-v3-seg" data-mode="practice" onclick="pickMode(this,'practice')"><span style="font-size:25px;line-height:1;">🎓</span><br><span style="display:inline-block;margin-top:5px;">Practice</span></button>
       </div>
       <div class="ps-mode-desc" style="font-size:11px;color:var(--ink3);text-align:center;margin-top:8px;">✦ &nbsp;Compete with believers worldwide</div>
     </div>
@@ -4264,6 +4271,19 @@ html.feat-gameHeader .g-nm { font-weight: 800 !important; max-width: 100px; over
   </div>
 </div>
 
+<!-- ── MODAL: Delete Profile ── -->
+<div class="ov" id="ov-delete-profile" onclick="bgClose(event,'ov-delete-profile')">
+  <div class="mbox">
+    <div class="mhandle"></div>
+    <div class="mtitle" style="color:var(--red1);">Delete Profile?</div>
+    <div style="font-size:13px;color:var(--ink2);line-height:1.6;margin-bottom:14px;">Are you absolutely sure? This will delete all your points, achievements, and history forever. This cannot be undone.</div>
+    <div style="display:flex;gap:8px;">
+      <button class="btn btn-ghost btn-sm" style="flex:1;" onclick="closeOv('ov-delete-profile')">Cancel</button>
+      <button class="btn btn-ruby btn-sm" style="flex:1;" onclick="deleteProfileFinal()">Delete Forever</button>
+    </div>
+  </div>
+</div>
+
 <!-- ── MODAL: Challenge Friend ── -->
 <div class="ov" id="ov-challenge" onclick="bgClose(event,'ov-challenge')">
   <div class="mbox">
@@ -4538,14 +4558,26 @@ function playSeasonalQuestions(season){
   const today=new Date().toISOString().split('T')[0];
   if(G.profile.lastSeasonalDate===today){ toast('You\'ve already played today — come back tomorrow!'); return; }
   sfx.tap();
-  G.profile.lastSeasonalDate=today;
-  saveProfile();
-  const pool=shuf(SEASONAL_Q.filter(q=>q.season===season)).slice(0,10);
+  
+  // Daily rotating questions: use today's date as a seed for consistent selection for everyone
+  const dateSeed = today.split('-').join('');
+  const seasonQs = SEASONAL_Q.filter(q=>q.season===season);
+  
+  // Simple seeded shuffle
+  let seed = parseInt(dateSeed);
+  const seededRandom = () => {
+    seed = (seed * 9301 + 49297) % 233280;
+    return seed / 233280;
+  };
+  
+  const shuffled = [...seasonQs].sort(() => seededRandom() - 0.5);
+  const pool = shuffled.slice(0, 10);
+
   if(!pool.length){ toast('No questions for this season'); return; }
   G.mode='practice'; G.sub='classic'; G._seasonalMode=true;
   G._xpAtGameStart=G.profile?(G.profile.xp||0):0;
   G._correctAtGameStart=G.profile?(G.profile.correct||0):0;
-  G.players=[{name:G.profile.name||'Player',avatar:G.profile.avatar||'\uD83D\uDE0A',photo:G.profile.photo||''}];
+  G.players=[{name:G.profile.name||'Player',avatar:G.profile.avatar||'😊',photo:G.profile.photo||''}];
   G.pool=pool; G.qi=0; G.pi=0; G.done=false;
   G.scores={[G.players[0].name]:0};
   G.hearts={[G.players[0].name]:Infinity};
@@ -4553,6 +4585,25 @@ function playSeasonalQuestions(season){
   G.cfg.winScore=pool.length;
   G.cfg.hearts=false;
   showSplash(0,()=>{ go('game'); renderQ(); });
+}
+
+function finishSeasonalGame(score, total){
+  if(!G.profile) return;
+  const today=new Date().toISOString().split('T')[0];
+  G.profile.lastSeasonalDate=today;
+  
+  // Award bonus XP for seasonal participation
+  const bonus = seasonBonusXP(score, total);
+  addXP(bonus);
+  saveProfile();
+  if(G.fbOk) pushProfile();
+  
+  toast(`🌟 Seasonal Challenge Complete! +${bonus} XP`);
+}
+
+function seasonBonusXP(score, total){
+  // 50 base XP + 10 XP per correct answer
+  return 50 + (score * 10);
 }
 
 /* ══════════════════════════════════════════════════
@@ -46050,7 +46101,7 @@ function renderDailyMeta(){
 /* Last played helpers */
 function saveLastPlayed(){
   if(!FEATURES.lastPlayed) return;
-  const ML={online:'Online',nearby:'Nearby',local:'Pass & Play',practice:'Solo'};
+  const ML={online:'Online',nearby:'Nearby',local:'Pass & Play',practice:'Practice'};
   const SL={classic:'Multiple Choice',truefalse:'True / False',verse:'Complete the Verse',lightning:'Lightning'};
   try{ localStorage.setItem('bgn3_lp',JSON.stringify({mode:G.mode,sub:G.sub,ml:ML[G.mode]||G.mode,sl:SL[G.sub]||G.sub})); }catch(e){}
 }
@@ -46476,6 +46527,12 @@ function pullProfile(){
     // Merge with any local progress, taking the best of each
     G.profile=mergeProfiles(remote, G.profile);
     if(!G.profile.friendCode) G.profile.friendCode=Math.random().toString(36).slice(2,8).toUpperCase();
+    
+    // Sync match history if remote has it
+    if(remote.matchHistory) {
+      localStorage.setItem('bgn_history', JSON.stringify(remote.matchHistory));
+    }
+
     normalizeSocialProfile();
     applyXpReset(G.profile);
     saveProfile();
@@ -46514,6 +46571,7 @@ function addXP(n){
   }
 }
 function isXpDisabledMode(mode){
+  if(G._seasonalMode) return false;
   return mode==='practice'||mode==='local'||mode==='sunday_bowl';
 }
 function canAwardAnswerXP(playerName){
@@ -46583,6 +46641,7 @@ function logOut(){
   if(G._friendsRef){ G._friendsRef.off(); G._friendsRef=null; }
   G._incomingRequests={};
   localStorage.removeItem('bgn3');
+  localStorage.removeItem('bgn_history');
   G.profile=null;
   G._loggingOut=true;
   document.getElementById('main-nav').style.display='none';
@@ -46846,10 +46905,10 @@ function buildModeSetup(kind,fromHomeSelection){
     document.getElementById('setup-subtitle').textContent='Apply rules before creating your nearby room.';
     document.getElementById('setup-go-btn').innerHTML='<span class="btn-icon">📡</span> Start Nearby';
   } else {
-    document.getElementById('setup-eyebrow').textContent='Solo';
-    document.getElementById('setup-title').innerHTML='Solo <em>Settings</em>';
+    document.getElementById('setup-eyebrow').textContent='Practice';
+    document.getElementById('setup-title').innerHTML='Practice <em>Settings</em>';
     document.getElementById('setup-subtitle').textContent='Single-player with selected game mode and rules.';
-    document.getElementById('setup-go-btn').innerHTML='<span class="btn-icon">🎓</span> Start Solo';
+    document.getElementById('setup-go-btn').innerHTML='<span class="btn-icon">🎓</span> Start Practice';
   }
   renderOpts();
   renderSetupRoomModeChips();
@@ -47374,9 +47433,9 @@ function answerQ(btn,isOk,q,order){
       }
     }
 
-    // Auto-advance on correct (all modes except Pass & Play)
-    if(G.mode!=='local'&&!G.onlineGame){
-      showAutoAdvance('g-auto-bar','g-auto-fill',1800,()=>nextTurn());
+    // Auto-advance (3.33 seconds for all modes)
+    if(!G.onlineGame){
+      showAutoAdvance('g-auto-bar','g-auto-fill',3330,()=>nextTurn());
       return;
     }
   }else{
@@ -47414,9 +47473,8 @@ function answerQ(btn,isOk,q,order){
     sb.style.display='';
     sb.classList.add('streak-pulse');
   }
-  const autoSolo=G.mode!=='local'&&!G.onlineGame;
-  if(autoSolo){
-    showAutoAdvance('g-auto-bar','g-auto-fill',1100,()=>nextTurn());
+  if(!G.onlineGame){
+    showAutoAdvance('g-auto-bar','g-auto-fill',3330,()=>nextTurn());
     return;
   }
   document.getElementById('g-next-row').style.display='flex';
@@ -47440,9 +47498,8 @@ function timeOut(q,pfx){
       if(shouldEndByHearts()){ setTimeout(endGame, 1500); return; }
     }
   }
-  const autoSolo=G.mode!=='local'&&!G.onlineGame;
-  if(autoSolo){
-    showAutoAdvance('g-auto-bar','g-auto-fill',1100,()=>nextTurn());
+  if(!G.onlineGame){
+    showAutoAdvance('g-auto-bar','g-auto-fill',3330,()=>nextTurn());
     return;
   }
   const nxt=pfx==='g'?document.getElementById('g-next-row'):document.getElementById(`${pfx}-next`);
@@ -47809,7 +47866,7 @@ function renderMatchHistory(expanded) {
     return;
   }
   const show = expanded ? history.length : Math.min(3, history.length);
-  const modeLabel = { classic: 'Classic MCQ', truefalse: 'True/False', fillinverse: 'Fill-in-Verse', lightning: 'Lightning', solo: 'Solo', multiplayer: 'Multiplayer' };
+  const modeLabel = { classic: 'Classic MCQ', truefalse: 'True/False', fillinverse: 'Fill-in-Verse', lightning: 'Lightning', solo: 'Practice', practice: 'Practice', multiplayer: 'Multiplayer' };
   const esc = s => String(s||'').replace(/&/g,'&amp;').replace(/</g,'&lt;').replace(/>/g,'&gt;').replace(/"/g,'&quot;');
   let html = '';
   for (let i = 0; i < show; i++) {
@@ -47924,6 +47981,15 @@ function endGame(){
       toast(`☀️ Daily Challenge Complete! +100 XP`);
     }
 
+    const wasSeasonal = G._seasonalMode;
+    if (G._seasonalMode) {
+      const pName = G.players[0].name;
+      const score = G.scores[pName] || 0;
+      const total = G.pool.length;
+      finishSeasonalGame(score, total);
+      G._seasonalMode = false;
+    }
+
     if (iWon) {
       G.profile.winStreak = (G.profile.winStreak || 0) + 1;
     } else {
@@ -47944,7 +48010,7 @@ function endGame(){
     }
 
     saveProfile(); if(G.fbOk)pushProfile();
-    if(isXpDisabledMode(G.mode)){
+    if(isXpDisabledMode(G.mode) && !wasSeasonal){
       document.getElementById('w-xp-txt').textContent='✦ XP disabled for this mode';
     }else{
       const startXp=G._xpAtGameStart||0;
@@ -47988,7 +48054,7 @@ function endGame(){
     wPts.textContent=G.scores[win.name]+' points';
   }
   if(!G.profile){
-    if(isXpDisabledMode(G.mode)) wXp.textContent='✦ XP disabled for this mode';
+    if(isXpDisabledMode(G.mode) && !wasSeasonal) wXp.textContent='✦ XP disabled for this mode';
     else wXp.textContent='✦ +0 XP earned';
   }
   document.getElementById('w-verse').innerHTML=`"${v.t}"<br><span style="font-family:'Cinzel',serif;font-size:10px;letter-spacing:.2em;color:var(--gold);display:block;margin-top:8px;">— ${v.r}</span>`;
@@ -49358,7 +49424,7 @@ function renderFriendsEmptyState(){
       div.innerHTML=`<div style="font-size:32px;margin-bottom:8px;">✝️</div>
         <div style="font-family:\'Playfair Display\',serif;font-size:15px;font-weight:700;color:var(--ink);margin-bottom:6px;">Challenge a friend to a Bible match</div>
         <div style="font-size:12px;color:var(--ink3);margin-bottom:14px;">They play whenever they\'re ready — no need to be online at the same time.</div>
-        <button class="btn btn-gold btn-sm" style="width:auto;padding:8px 20px;" onclick="document.getElementById(\'friends-screen-code-inp\')&&document.getElementById(\'friends-screen-code-inp\').focus()">Add a Friend</button>`;
+        <button class="btn btn-gold btn-sm" style="width:auto;padding:8px 20px;margin:0 auto;" onclick="document.getElementById(\'friends-screen-code-inp\')&&document.getElementById(\'friends-screen-code-inp\').focus()">Add a Friend</button>`;
       fl.parentNode.insertBefore(div,fl);
     }
   }else{
@@ -50046,6 +50112,28 @@ function buildSettingsList(){
   el.appendChild(thDiv);
 
   // Translation picker removed - no translations implemented
+
+  // Delete Profile
+  const delDiv=document.createElement('div');
+  delDiv.innerHTML=`<div class="settings-section-title" style="color:var(--red1);margin-top:16px;">Danger Zone</div>
+  <p style="font-size:11px;color:var(--ink3);margin-bottom:8px;">This will permanently delete your local progress, history, and achievements. This cannot be undone.</p>
+  <button class="btn btn-ruby btn-sm" style="width:100%;" onclick="confirmDeleteProfile()">Delete My Profile</button>`;
+  el.appendChild(delDiv);
+}
+
+function confirmDeleteProfile(){
+  sfx.tap();
+  openOv('ov-delete-profile');
+}
+
+function deleteProfileFinal(){
+  sfx.tap();
+  localStorage.clear();
+  if(G.auth && G.auth.currentUser) {
+    G.auth.signOut().then(()=>location.reload()).catch(()=>location.reload());
+  } else {
+    location.reload();
+  }
 }
 function togGlobal(k){
   if(k==='timer') return;
