@@ -3530,7 +3530,7 @@ html.feat-gameHeader .g-nm { font-weight: 800 !important; max-width: 100px; over
         <div class="label" style="margin-bottom:7px;">Game Mode</div>
         <div class="chips" id="setup-room-sub-chips">
           <button class="chip" data-sub="mix" onclick="pickSetupSub(this,'mix')">🔀 Multi-verse</button>
-          <button class="chip sel" data-sub="classic" onclick="pickSetupSub(this,'classic')">🎯 Multiple Choice</button>
+          <button class="chip sel" data-sub="classic" onclick="pickSetupSub(this,'classic')">🎯 Classic</button>
           <button class="chip" data-sub="truefalse" onclick="pickSetupSub(this,'truefalse')">✅ True or False</button>
           <button class="chip" data-sub="verse" onclick="pickSetupSub(this,'verse')">📖 Complete the Verse</button>
           <button class="chip" data-sub="lightning" onclick="pickSetupSub(this,'lightning')">⚡ Lightning</button>
@@ -4304,7 +4304,7 @@ html.feat-gameHeader .g-nm { font-weight: 800 !important; max-width: 100px; over
       <div class="label" style="margin-bottom:7px;">Game Mode</div>
       <div class="chips" id="ch-qtype-chips">
         <button class="chip" onclick="pickChQType(this,'mix')" id="ch-qtype-mix">🔀 Multi-verse</button>
-        <button class="chip sel" onclick="pickChQType(this,'classic')" id="ch-qtype-classic">🎯 Multiple Choice</button>
+        <button class="chip sel" onclick="pickChQType(this,'classic')" id="ch-qtype-classic">🎯 Classic</button>
         <button class="chip" onclick="pickChQType(this,'truefalse')" id="ch-qtype-truefalse">✅ True or False</button>
         <button class="chip" onclick="pickChQType(this,'verse')" id="ch-qtype-fillin">📖 Complete the Verse</button>
         <button class="chip" onclick="pickChQType(this,'lightning')" id="ch-qtype-lightning">⚡ Lightning</button>
@@ -46113,7 +46113,7 @@ function renderDailyMeta(){
 function saveLastPlayed(){
   if(!FEATURES.lastPlayed) return;
   const ML={online:'Online',nearby:'Nearby',local:'Pass & Play',practice:'Practice'};
-  const SL={mix:'Multi-verse',classic:'Multiple Choice',truefalse:'True / False',verse:'Complete the Verse',lightning:'Lightning'};
+  const SL={mix:'Multi-verse',classic:'Classic',truefalse:'True / False',verse:'Complete the Verse',lightning:'Lightning'};
   try{ localStorage.setItem('bgn3_lp',JSON.stringify({mode:G.mode,sub:G.sub,ml:ML[G.mode]||G.mode,sl:SL[G.sub]||G.sub})); }catch(e){}
 }
 function renderLastPlayed(){
@@ -47038,7 +47038,7 @@ function removeP(i){
   renderSetup();
 }
 const MODE_DESCS={
-  mix:'A variety of question types: Multiple Choice, True/False, and Verse completion.',
+  mix:'A variety of question types: Classic, True/False, and Verse completion.',
   classic:'Pick the right answer from 4 options.',
   truefalse:'Decide if each statement is true or false.',
   verse:'Fill in the missing word from scripture.',
@@ -48470,7 +48470,7 @@ function shouldEndOnlineGame(){
   return scoreReached||shouldEndByHearts();
 }
 function chQTypeLabel(qtype){
-  const qtLabels={mix:'🔀 Multi-verse',classic:'🎯 Multiple Choice',truefalse:'✅ True or False',verse:'📖 Complete the Verse',fillin:'📖 Complete the Verse',lightning:'⚡ Lightning'};
+  const qtLabels={mix:'🔀 Multi-verse',classic:'🎯 Classic',truefalse:'✅ True or False',verse:'📖 Complete the Verse',fillin:'📖 Complete the Verse',lightning:'⚡ Lightning'};
   return qtLabels[normalizeOnlineSub(qtype)]||'🎯 Classic';
 }
 function chDiffLabel(diff){
