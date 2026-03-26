@@ -47968,151 +47968,166 @@ function toggleMatchDetail(card) {
 }
 
 function endGame(){
-  stopTimers();
-  // Clean up online listeners
-  if(G._votesRef){G._votesRef.off();G._votesRef=null;}
-  if(G._resultTimeout){clearTimeout(G._resultTimeout);G._resultTimeout=null;}
-  let win, iWon = false, topWinners=[];
-  
-  if (G.sub === 'team') {
-    const teams=Object.keys(G.teamScores||{'Team A':0,'Team B':0});
-    const scores=teams.map(t=>({t,s:G.teamScores[t]||0}));
-    scores.sort((a,b)=>b.s-a.s);
-    const topTeamScore=scores[0]?.s||0;
-    const tiedTeams=scores.filter(x=>x.s===topTeamScore);
-    const winTeam=tiedTeams.length>1?null:scores[0].t;
-    win = winTeam ? { name: winTeam, avatar: "👥", team: winTeam } : { name: "Tie", avatar: "🤝", team: null };
-    const myTeam = G.players.find(p => p.name === G.profile?.name)?.team;
-    iWon = !!(winTeam && myTeam === winTeam);
-  } else {
-    const sorted=[...G.players].sort((a,b)=>G.scores[b.name]-G.scores[a.name]);
-    win=sorted[0];
-    const topScore=win?G.scores[win.name]:0;
-    topWinners=sorted.filter(p=>(G.scores[p.name]||0)===(topScore||0));
-    iWon=topWinners.some(p=>p.name===G.profile?.name);
-  }
-
-  if(G.profile){
-    G.profile.played=(G.profile.played||0)+1;
-    const xpAllowed=!isXpDisabledMode(G.mode);
-    const startCorrect=G._correctAtGameStart||0;
-    const gainedCorrect=Math.max(0,(G.profile.correct||0)-startCorrect);
-    const hasAnyCorrect=gainedCorrect>0;
-    if(iWon){
-      G.profile.wins=(G.profile.wins||0)+1;
-      if(xpAllowed&&hasAnyCorrect){ addXP(50); }
-    }else if(xpAllowed&&hasAnyCorrect){
-      addXP(20);
-    }
-
-    if (G.mode === 'daily' && hasAnyCorrect) {
-      const today = new Date().toISOString().split('T')[0];
-      const yesterday = new Date(Date.now() - 86400000).toISOString().split('T')[0];
-      if (G.profile.lastDaily === yesterday) {
-        G.profile.dailyStreak = (G.profile.dailyStreak || 0) + 1;
-      } else {
-        G.profile.dailyStreak = 1;
-      }
-      G.profile.lastDaily = today;
-      addXP(100); // Daily bonus
-      toast(`☀️ Daily Challenge Complete! +100 XP`);
-    }
-
-    const wasSeasonal = G._seasonalMode;
-    if (G._seasonalMode) {
-      const pName = G.players[0].name;
-      const score = G.scores[pName] || 0;
-      const total = G.pool.length;
-      finishSeasonalGame(score, total);
-      G._seasonalMode = false;
-    }
-
-    if (iWon) {
-      G.profile.winStreak = (G.profile.winStreak || 0) + 1;
+  try {
+    stopTimers();
+    // Clean up online listeners
+    if(G._votesRef){G._votesRef.off();G._votesRef=null;}
+    if(G._resultTimeout){clearTimeout(G._resultTimeout);G._resultTimeout=null;}
+    let win, iWon = false, topWinners=[];
+    
+    if (G.sub === 'team') {
+      const teams=Object.keys(G.teamScores||{'Team A':0,'Team B':0});
+      const scores=teams.map(t=>({t,s:G.teamScores[t]||0}));
+      scores.sort((a,b)=>b.s-a.s);
+      const topTeamScore=scores[0]?.s||0;
+      const tiedTeams=scores.filter(x=>x.s===topTeamScore);
+      const winTeam=tiedTeams.length>1?null:scores[0].t;
+      win = winTeam ? { name: winTeam, avatar: "👥", team: winTeam } : { name: "Tie", avatar: "🤝", team: null };
+      const myTeam = G.players.find(p => p.name === G.profile?.name)?.team;
+      iWon = !!(winTeam && myTeam === winTeam);
     } else {
-      G.profile.winStreak = 0;
+      const sorted=[...G.players].sort((a,b)=>G.scores[b.name]-G.scores[a.name]);
+      win=sorted[0];
+      const topScore=win?G.scores[win.name]:0;
+      topWinners=sorted.filter(p=>(G.scores[p.name]||0)===(topScore||0));
+      iWon=topWinners.some(p=>p.name===G.profile?.name);
     }
 
-    // Achievement flags
-    if(new Date().getDay()===0) G.profile.playedOnSunday=true;
-    if(G.sub==='truefalse') G.profile.completedTF=true;
-    if(G.sub==='verse') G.profile.completedVerse=true;
-    if(G.sub==='lightning') G.profile.completedLightning=true;
-    // Perfect game: won solo without any wrong answers
-    if(iWon&&G.players.length===1&&!(G._wrongCount)) G.profile.perfectGame=true;
-    // No heart loss: won and still has full hearts
-    if(iWon&&G.cfg.hearts&&G.profile&&G.players.length===1){
-      const pName=G.players[0].name;
-      if((G.hearts[pName]||0)>=3) G.profile.noHeartLoss=true;
-    }
+    if(G.profile){
+      G.profile.played=(G.profile.played||0)+1;
+      const xpAllowed=!isXpDisabledMode(G.mode);
+      const startCorrect=G._correctAtGameStart||0;
+      const gainedCorrect=Math.max(0,(G.profile.correct||0)-startCorrect);
+      const hasAnyCorrect=gainedCorrect>0;
+      if(iWon){
+        G.profile.wins=(G.profile.wins||0)+1;
+        if(xpAllowed&&hasAnyCorrect){ addXP(50); }
+      }else if(xpAllowed&&hasAnyCorrect){
+        addXP(20);
+      }
 
-    saveProfile(); if(G.fbOk)pushProfile();
-    if(isXpDisabledMode(G.mode) && !wasSeasonal){
-      document.getElementById('w-xp-txt').textContent='✦ XP disabled for this mode';
-    }else{
-      const startXp=G._xpAtGameStart||0;
-      const gained=Math.max(0,(G.profile.xp||0)-startXp);
-      if(FEATURES.xpCountUp&&gained>0){
-        const xpEl=document.getElementById('w-xp-txt'); let c=0;
-        xpEl.textContent='✦ +0 XP earned';
-        const step=Math.max(1,Math.ceil(gained/25));
-        const t=setInterval(()=>{ c=Math.min(c+step,gained); xpEl.textContent=`✦ +${c} XP earned`; if(c>=gained)clearInterval(t); },40);
+      if (G.mode === 'daily' && hasAnyCorrect) {
+        const today = new Date().toISOString().split('T')[0];
+        const yesterday = new Date(Date.now() - 86400000).toISOString().split('T')[0];
+        if (G.profile.lastDaily === yesterday) {
+          G.profile.dailyStreak = (G.profile.dailyStreak || 0) + 1;
+        } else {
+          G.profile.dailyStreak = 1;
+        }
+        G.profile.lastDaily = today;
+        addXP(100); // Daily bonus
+        toast(`☀️ Daily Challenge Complete! +100 XP`);
+      }
+
+      const wasSeasonal = G._seasonalMode;
+      if (G._seasonalMode) {
+        const pName = G.players[0].name;
+        const score = G.scores[pName] || 0;
+        const total = G.pool.length;
+        finishSeasonalGame(score, total);
+        G._seasonalMode = false;
+      }
+
+      if (iWon) {
+        G.profile.winStreak = (G.profile.winStreak || 0) + 1;
       } else {
-        document.getElementById('w-xp-txt').textContent=`✦ +${gained} XP earned`;
+        G.profile.winStreak = 0;
+      }
+
+      // Achievement flags
+      if(new Date().getDay()===0) G.profile.playedOnSunday=true;
+      if(G.sub==='truefalse') G.profile.completedTF=true;
+      if(G.sub==='verse') G.profile.completedVerse=true;
+      if(G.sub==='lightning') G.profile.completedLightning=true;
+      // Perfect game: won solo without any wrong answers
+      if(iWon&&G.players.length===1&&!(G._wrongCount)) G.profile.perfectGame=true;
+      // No heart loss: won and still has full hearts
+      if(iWon&&G.cfg.hearts&&G.profile&&G.players.length===1){
+        const pName=G.players[0].name;
+        if((G.hearts[pName]||0)>=3) G.profile.noHeartLoss=true;
+      }
+
+      saveProfile(); if(G.fbOk)pushProfile();
+      if(isXpDisabledMode(G.mode) && !wasSeasonal){
+        const xpEl=document.getElementById('w-xp-txt');
+        if(xpEl) xpEl.textContent='✦ XP disabled for this mode';
+      }else{
+        const startXp=G._xpAtGameStart||0;
+        const gained=Math.max(0,(G.profile.xp||0)-startXp);
+        const xpEl=document.getElementById('w-xp-txt');
+        if(xpEl){
+          if(FEATURES.xpCountUp&&gained>0){
+            let c=0;
+            xpEl.textContent='✦ +0 XP earned';
+            const step=Math.max(1,Math.ceil(gained/25));
+            const t=setInterval(()=>{ c=Math.min(c+step,gained); xpEl.textContent=`✦ +${c} XP earned`; if(c>=gained)clearInterval(t); },40);
+          } else {
+            xpEl.textContent=`✦ +${gained} XP earned`;
+          }
+        }
       }
     }
-  }
-  saveMatchResult(win, G.players);
-  const v=nextWinVerse();
-  const isTie=(G.sub!=='team'&&topWinners.length>1)||(G.sub==='team'&&win.name==='Tie');
-  const wAv=document.getElementById('w-av');
-  const wName=document.getElementById('w-name');
-  const wPts=document.getElementById('w-pts');
-  const wXp=document.getElementById('w-xp-txt');
-  if(G.sub==='team'){
-    if(isTie){
-      wAv.innerHTML='🤝';
-      wName.textContent="It's a Tie!";
-      wPts.textContent='Both teams played brilliantly';
+    saveMatchResult(win, G.players);
+    const v=nextWinVerse();
+    const isTie=(G.sub!=='team'&&topWinners.length>1)||(G.sub==='team'&&win.name==='Tie');
+    const wAv=document.getElementById('w-av');
+    const wName=document.getElementById('w-name');
+    const wPts=document.getElementById('w-pts');
+    const wXp=document.getElementById('w-xp-txt');
+    const wasSeasonal = G._seasonalMode || (G.pool && G.pool[0] && G.pool[0].season);
+
+    if(G.sub==='team'){
+      if(isTie){
+        if(wAv) wAv.innerHTML='🤝';
+        if(wName) wName.textContent="It's a Tie!";
+        if(wPts) wPts.textContent='Both teams played brilliantly';
+      }else{
+        if(wAv) wAv.innerHTML='🏆';
+        if(wName) wName.textContent=win.name+' Wins!';
+        const winMembers=G.players.filter(p=>p.team===win.name).map(p=>p.name).join(', ');
+        if(wPts) wPts.textContent='Your group: '+winMembers+' · '+(G.teamScores[win.name]||0)+' points';
+      }
+    }else if(isTie){
+      const topScore=G.scores[topWinners[0].name]||0;
+      if(wAv) wAv.innerHTML=topWinners.map(p=>avatarMarkup(p.avatar,resolvePlayerPhoto(p),'lg')).join(' ');
+      if(wName) wName.textContent=topWinners.map(p=>p.name).join(' & ');
+      if(wPts) wPts.textContent=`${topScore} points each (Tie)`;
     }else{
-      wAv.innerHTML='🏆';
-      wName.textContent=win.name+' Wins!';
-      const winMembers=G.players.filter(p=>p.team===win.name).map(p=>p.name).join(', ');
-      wPts.textContent='Your group: '+winMembers+' · '+(G.teamScores[win.name]||0)+' points';
+      if(wAv) wAv.innerHTML=avatarMarkup(win.avatar,resolvePlayerPhoto(win),'lg');
+      if(wName) wName.textContent=win.name;
+      if(wPts) wPts.textContent=G.scores[win.name]+' points';
     }
-  }else if(isTie){
-    const topScore=G.scores[topWinners[0].name]||0;
-    wAv.innerHTML=topWinners.map(p=>avatarMarkup(p.avatar,resolvePlayerPhoto(p),'lg')).join(' ');
-    wName.textContent=topWinners.map(p=>p.name).join(' & ');
-    wPts.textContent=`${topScore} points each (Tie)`;
-  }else{
-    wAv.innerHTML=avatarMarkup(win.avatar,resolvePlayerPhoto(win),'lg');
-    wName.textContent=win.name;
-    wPts.textContent=G.scores[win.name]+' points';
+    if(!G.profile && wXp){
+      if(isXpDisabledMode(G.mode) && !wasSeasonal) wXp.textContent='✦ XP disabled for this mode';
+      else wXp.textContent='✦ +0 XP earned';
+    }
+    const wvEl=document.getElementById('w-verse');
+    if(wvEl) wvEl.innerHTML=`"${v.t}"<br><span style="font-family:'Cinzel',serif;font-size:10px;letter-spacing:.2em;color:var(--gold);display:block;margin-top:8px;">— ${v.r}</span>`;
+    const oth=document.getElementById('w-others'); 
+    if(oth){
+      oth.innerHTML='';
+      const sortedPlayers = [...G.players].sort((a,b)=>G.scores[b.name]-G.scores[a.name]);
+      sortedPlayers.forEach(p=>{
+        const isTopTie=isTie&&topWinners.some(w=>w.name===p.name);
+        const d=document.createElement('div');
+        d.style.cssText='background:rgba(255,255,255,.035);border:1px solid rgba(180,140,60,.1);border-radius:var(--r1);padding:8px 11px;text-align:center;min-width:60px;';
+        d.innerHTML=`<span style="font-size:18px;display:flex;justify-content:center;align-items:center;gap:4px;">${isTopTie?'<span>👑</span>':''}${avatarMarkup(p.avatar,resolvePlayerPhoto(p),'sm')}</span><span style="font-family:'Cinzel',serif;font-size:8px;letter-spacing:.07em;color:var(--ink3);text-transform:uppercase;">${p.name}</span><span style="font-family:'Cinzel',serif;font-size:14px;font-weight:700;color:var(--gold1);display:block;">${G.scores[p.name]}</span>`;
+        oth.appendChild(d);
+      });
+    }
+    const playAgainBtn=document.getElementById('w-play-again');
+    if(playAgainBtn) playAgainBtn.style.display=(G.mode==='daily'||wasSeasonal)?'none':'';
+    if(G.mode==='daily' && G._dailyPrevHearts!==null){
+      G.cfg.hearts=!!G._dailyPrevHearts;
+      G._dailyPrevHearts=null;
+    }
+    if(G.mode==='async_challenge'){ finishGhostRace(); return; }
+    go('winner'); sfx.win(); haptic('win'); confetti(); checkAchs();
+  } catch(e) {
+    console.error("endGame Error:", e);
+    // Fallback: at least try to show the winner screen
+    go('winner');
   }
-  if(!G.profile){
-    if(isXpDisabledMode(G.mode) && !wasSeasonal) wXp.textContent='✦ XP disabled for this mode';
-    else wXp.textContent='✦ +0 XP earned';
-  }
-  document.getElementById('w-verse').innerHTML=`"${v.t}"<br><span style="font-family:'Cinzel',serif;font-size:10px;letter-spacing:.2em;color:var(--gold);display:block;margin-top:8px;">— ${v.r}</span>`;
-  const oth=document.getElementById('w-others'); oth.innerHTML='';
-  
-  const sortedPlayers = [...G.players].sort((a,b)=>G.scores[b.name]-G.scores[a.name]);
-  sortedPlayers.forEach(p=>{
-    const isTopTie=isTie&&topWinners.some(w=>w.name===p.name);
-    const d=document.createElement('div');
-    d.style.cssText='background:rgba(255,255,255,.035);border:1px solid rgba(180,140,60,.1);border-radius:var(--r1);padding:8px 11px;text-align:center;min-width:60px;';
-    d.innerHTML=`<span style="font-size:18px;display:flex;justify-content:center;align-items:center;gap:4px;">${isTopTie?'<span>👑</span>':''}${avatarMarkup(p.avatar,resolvePlayerPhoto(p),'sm')}</span><span style="font-family:'Cinzel',serif;font-size:8px;letter-spacing:.07em;color:var(--ink3);text-transform:uppercase;">${p.name}</span><span style="font-family:'Cinzel',serif;font-size:14px;font-weight:700;color:var(--gold1);display:block;">${G.scores[p.name]}</span>`;
-    oth.appendChild(d);
-  });
-  const playAgainBtn=document.getElementById('w-play-again');
-  if(playAgainBtn) playAgainBtn.style.display=(G.mode==='daily'||wasSeasonal)?'none':'';
-  if(G.mode==='daily' && G._dailyPrevHearts!==null){
-    G.cfg.hearts=!!G._dailyPrevHearts;
-    G._dailyPrevHearts=null;
-  }
-  if(G.mode==='async_challenge'){ finishGhostRace(); return; }
-  go('winner'); sfx.win(); haptic('win'); confetti(); checkAchs();
 }
 
 function playAgain(){
@@ -49983,17 +49998,23 @@ const ACHS=[
 ];
 function checkAchs(){
   if(!G.profile)return;
-  ACHS.forEach(a=>{
-    if(!G.profile.achs.includes(a.id)&&a.chk(G.profile)){
-      G.profile.achs.push(a.id); saveProfile(); if(G.fbOk) pushProfile();
-      setTimeout(()=>toast('🏆 Achievement: '+a.t+'!'),2200);
-    }
-  });
+  if(!Array.isArray(G.profile.achs)) G.profile.achs = [];
+  try {
+    ACHS.forEach(a=>{
+      if(!G.profile.achs.includes(a.id) && a.chk(G.profile)){
+        G.profile.achs.push(a.id); 
+        saveProfile(); 
+        if(G.fbOk) pushProfile();
+        setTimeout(()=>toast('🏆 Achievement: '+a.t+'!'), 2200);
+      }
+    });
+  } catch(e) { console.error("checkAchs error:", e); }
 }
 function renderAchs(expanded){
   const ae=document.getElementById('prof-achs');
   if(!ae||!G.profile) return;
   const p=G.profile;
+  if(!Array.isArray(p.achs)) p.achs = [];
   const shown=expanded?ACHS:ACHS.slice(0,3);
   let html='';
   shown.forEach(a=>{
@@ -50012,9 +50033,10 @@ function renderAchs(expanded){
     </div>`;
   });
   if(ACHS.length>3){
-    html+=`<button class="btn btn-ghost btn-sm" style="width:100%;margin-top:2px;" onclick="renderAchs(${!expanded})">${expanded?'Show less':'Show all '+(ACHS.length-3)+' more'}</button>`;
+    const nextState = !expanded;
+    html+=`<button class="btn btn-ghost btn-sm" style="width:100%;margin-top:2px;" onclick="renderAchs(${nextState})">${expanded?'Show less':'Show all '+(ACHS.length-3)+' more'}</button>`;
   }
-  ae.innerHTML=html;
+  ae.innerHTML = html;
 }
 function startEditName(){
   if(!G.profile){ toast('Sign in first'); return; }
@@ -50165,11 +50187,39 @@ function confirmDeleteProfile(){
 
 function deleteProfileFinal(){
   sfx.tap();
-  localStorage.clear();
-  if(G.auth && G.auth.currentUser) {
-    G.auth.signOut().then(()=>location.reload()).catch(()=>location.reload());
+  const uid = G.uid;
+  const clanCode = G.profile ? G.profile.clanCode : null;
+
+  const cleanup = () => {
+    localStorage.clear();
+    // Delete Auth Account if signed in
+    if(G.auth && G.auth.currentUser) {
+      G.auth.currentUser.delete().then(() => {
+        location.reload();
+      }).catch(err => {
+        console.warn("Auth deletion failed (likely needs recent login):", err);
+        // If delete fails (requires fresh login), at least sign out
+        G.auth.signOut().finally(() => location.reload());
+      });
+    } else {
+      location.reload();
+    }
+  };
+
+  if (G.fbOk && uid && G.db) {
+    const week = wk();
+    const updates = {};
+    updates['players/' + uid] = null;
+    updates['leaderboard/' + uid] = null;
+    updates['weekly/' + week + '/' + uid] = null;
+    updates['friends/' + uid] = null;
+    updates['friendRequests/' + uid] = null;
+    updates['asyncChallenges/' + uid] = null;
+    if (clanCode) updates['clans/' + clanCode + '/members/' + uid] = null;
+
+    G.db.ref().update(updates).then(cleanup).catch(cleanup);
   } else {
-    location.reload();
+    cleanup();
   }
 }
 function togGlobal(k){
