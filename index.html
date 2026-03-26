@@ -47450,6 +47450,12 @@ function answerQ(btn,isOk,q,order){
       }
     }
 
+    // If it was the last question in the pool, end game
+    if (G.qi >= G.pool.length - 1) {
+      setTimeout(endGame, 1500);
+      return;
+    }
+
     // Auto-advance (3.33 seconds for all modes)
     if(!G.onlineGame){
       showAutoAdvance('g-auto-bar','g-auto-fill',3330,()=>nextTurn());
@@ -47490,6 +47496,13 @@ function answerQ(btn,isOk,q,order){
     sb.style.display='';
     sb.classList.add('streak-pulse');
   }
+
+  // If it was the last question in the pool, end game
+  if (G.qi >= G.pool.length - 1) {
+    setTimeout(endGame, 1500);
+    return;
+  }
+
   if(!G.onlineGame){
     showAutoAdvance('g-auto-bar','g-auto-fill',3330,()=>nextTurn());
     return;
@@ -47515,6 +47528,13 @@ function timeOut(q,pfx){
       if(shouldEndByHearts()){ setTimeout(endGame, 1500); return; }
     }
   }
+
+  // If it was the last question in the pool, end game
+  if (G.qi >= G.pool.length - 1) {
+    setTimeout(endGame, 1500);
+    return;
+  }
+
   if(!G.onlineGame){
     showAutoAdvance('g-auto-bar','g-auto-fill',3330,()=>nextTurn());
     return;
