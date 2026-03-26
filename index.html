@@ -46202,18 +46202,54 @@ function getAuthRedirectPending(){
   try{ return sessionStorage.getItem('auth_redirect_pending')||''; }catch(e){ return ''; }
 }
 function _isMobile(){ return /Mobi|Android|iPhone|iPad|iPod/i.test(navigator.userAgent) || ('ontouchstart' in window); }
+function isNameTaken(name, excludeUid = null) {
+  if (!G.fbOk || !G.db) return Promise.resolve(false);
+  const clean = (name || "").trim().toLowerCase();
+  if (!clean) return Promise.resolve(false);
+  return G.db.ref("players").orderByChild("name").equalTo((name || "").trim()).once("value").then(sn => {
+    const data = sn.val();
+    if (!data) return false;
+    const uids = Object.keys(data);
+    if (excludeUid) {
+      return uids.some(uid => uid !== excludeUid);
+    }
+    return uids.length > 0;
+  });
+}
 function _makeProfile(u){
   const displayName=u.displayName||(u.email?u.email.split('@')[0]:'Player');
   return {name:displayName.split(' ')[0].slice(0,20),avatar:u.photoURL?'🧑':'😊',photo:u.photoURL||'',church:'',xp:0,correct:0,bestStreak:0,winStreak:0,wins:0,played:0,dailyStreak:0,lastDaily:'',theme:'light',weeklyXP:0,weeklyReset:wk(),xpResetVersion:XP_RESET_VERSION,friendCode:Math.random().toString(36).slice(2,8).toUpperCase(),friends:[],achs:[],notifications:false,clanName:'',clanCode:'',clanIcon:'⛪',clanPhoto:'',clanOwner:''};
 }
+function getUniqueName(baseName, uid) {
+  if (!G.fbOk || !G.db) return Promise.resolve(baseName);
+  return isNameTaken(baseName, uid).then(taken => {
+    if (!taken) return baseName;
+    const suffix = Math.floor(1000 + Math.random() * 9000);
+    const newName = baseName.slice(0, 15) + suffix;
+    return getUniqueName(newName, uid);
+  });
+}
 function _afterSignIn(u, providerName){
   G.uid=u.uid; G.fbOk=true;
   return pullProfile().then(()=>{
-    if(!G.profile){ G.profile=_makeProfile(u); normalizeSocialProfile(); saveProfile(); }
-    if(G.fbOk){ pushProfile(); listenFriendRequests(); listenFriendLinks(); listenAsyncChallenges(); }
-    updateProfileSigninCard();
-    document.getElementById('main-nav').style.display=''; renderHomeBar(); go('home');
-    toast('Signed in with '+providerName+'!');
+    if(!G.profile){ 
+      const p = _makeProfile(u);
+      return getUniqueName(p.name, G.uid).then(uniqueName => {
+        p.name = uniqueName;
+        G.profile = p;
+        normalizeSocialProfile(); 
+        saveProfile();
+        if(G.fbOk){ pushProfile(); listenFriendRequests(); listenFriendLinks(); listenAsyncChallenges(); }
+        updateProfileSigninCard();
+        document.getElementById('main-nav').style.display=''; renderHomeBar(); go('home');
+        toast('Signed in with '+providerName+'!');
+      });
+    } else {
+      if(G.fbOk){ pushProfile(); listenFriendRequests(); listenFriendLinks(); listenAsyncChallenges(); }
+      updateProfileSigninCard();
+      document.getElementById('main-nav').style.display=''; renderHomeBar(); go('home');
+      toast('Signed in with '+providerName+'!');
+    }
   });
 }
 function signInWithGoogle(){
@@ -46624,11 +46660,20 @@ function awardAnswerXPForPlayer(playerName,anchorEl){
 function resetComboUIForPlayer(playerName){
   if(canAwardAnswerXP(playerName)) updateComboUI(0);
 }
-function createProfile(){
+async function createProfile(){
   const name=(document.getElementById('auth-name').value||'').trim();
   if(!name){ toast('Please enter your name'); return; }
   const av=document.getElementById('auth-av').textContent;
   const church=(document.getElementById('auth-church').value||'').trim();
+
+  if (G.fbOk && G.db) {
+    const taken = await isNameTaken(name);
+    if (taken) {
+      toast('That name is already taken! Please choose another.');
+      return;
+    }
+  }
+
   G.profile={name,avatar:av,church,xp:0,wins:0,played:0,correct:0,bestStreak:0,achs:[],createdAt:Date.now(),
     tier: 'free', gamesToday: 0, lastGameDate: new Date().toISOString().split('T')[0],
     friends: [], friendCode: mkCode(),
@@ -50053,10 +50098,20 @@ function cancelEditName(){
   document.getElementById('prof-name-editor').style.display='none';
   document.getElementById('prof-name-edit-btn').textContent='✏️';
 }
-function saveEditName(){
+async function saveEditName(){
   const inp=document.getElementById('prof-name-input');
   const trimmed=(inp.value||'').trim().slice(0,20);
   if(!trimmed){ toast('Name cannot be empty'); inp.focus(); return; }
+  
+  if (G.fbOk && G.db) {
+    const taken = await isNameTaken(trimmed, G.uid);
+    if (taken) {
+      toast('That name is already taken! Please choose another.');
+      inp.focus();
+      return;
+    }
+  }
+
   G.profile.name=trimmed;
   saveProfile();
   if(G.fbOk) pushProfile();
