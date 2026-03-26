@@ -48086,7 +48086,7 @@ function endGame(){
     oth.appendChild(d);
   });
   const playAgainBtn=document.getElementById('w-play-again');
-  if(playAgainBtn) playAgainBtn.style.display=(G.mode==='daily'||G._seasonalMode)?'none':'';
+  if(playAgainBtn) playAgainBtn.style.display=(G.mode==='daily'||wasSeasonal)?'none':'';
   if(G.mode==='daily' && G._dailyPrevHearts!==null){
     G.cfg.hearts=!!G._dailyPrevHearts;
     G._dailyPrevHearts=null;
