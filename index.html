@@ -3383,16 +3383,7 @@ html.feat-gameHeader .g-nm { font-weight: 800 !important; max-width: 100px; over
 
 
     <!-- Seasonal Event Banner -->
-    <div id="seasonal-banner" class="card" style="margin-bottom:16px;padding:12px 16px;background:linear-gradient(135deg, rgba(56,189,248,0.1) 0%, transparent 100%);border:1px solid rgba(56,189,248,0.3);display:none;" onclick="startSeasonalEvent()">
-      <div style="display:flex;align-items:center;gap:12px;">
-        <div style="font-size:24px;" id="seasonal-icon">🌟</div>
-        <div style="flex:1;">
-          <div style="font-family:'Cinzel',serif;font-size:12px;color:var(--blue);letter-spacing:0.1em;" id="seasonal-name">Seasonal Event</div>
-          <div style="font-size:11px;color:var(--ink3);">Limited time special rewards!</div>
-        </div>
-        <div class="btn btn-blue btn-sm" style="width:auto;padding:5px 12px;">Join</div>
-      </div>
-    </div>
+    <div id="seasonal-banner" style="display:none;margin-bottom:16px;"></div>
 
     <!-- Weekly Tournament Banner -->
     <div id="weekly-tournament-banner" style="display:none;margin-bottom:16px;"></div>
@@ -4581,18 +4572,19 @@ function renderSeasonalBanner(){
   if(!banner) return;
   if(!season){ banner.style.display='none'; return; }
   const info={
-    christmas:{icon:'\u2B50',label:'Christmas Season',color:'#c0392b'},
-    easter:{icon:'\u271D\uFE0F',label:'Easter Season',color:'#8B6914'},
-    pentecost:{icon:'\uD83D\uDD25',label:'Pentecost',color:'#e67e22'},
-    reformation:{icon:'\uD83D\uDCDA',label:'Reformation Week',color:'#2c3e50'},
-    thanksgiving:{icon:'\uD83D\uDE4F',label:'Thanksgiving',color:'#795548'}
+    christmas:{icon:'\u2B50',label:'Christmas Season',color:'#c0392b',unit:'Manger Stories'},
+    easter:{icon:'\u271D\uFE0F',label:'Easter Season',color:'#8B6914',unit:'Risen Moments'},
+    pentecost:{icon:'\uD83D\uDD25',label:'Pentecost',color:'#e67e22',unit:'Flames of Faith'},
+    reformation:{icon:'\uD83D\uDCDA',label:'Reformation Week',color:'#2c3e50',unit:'Scrolls'},
+    thanksgiving:{icon:'\uD83D\uDE4F',label:'Thanksgiving',color:'#795548',unit:'Blessings'}
   }[season];
   const today=new Date().toISOString().split('T')[0];
   if(G.profile&&G.profile.lastSeasonalDate===today){ banner.style.display='none'; return; }
   banner.style.display='block';
   const seasonQCount=SEASONAL_Q.filter(q=>q.season===season).length;
-  const seasonQLabel=seasonQCount?('This season: <strong>'+info.label+'</strong> · 10 questions'):'Special questions unlocked →';
-  banner.innerHTML='<div style="background:'+info.color+';color:#fff;padding:14px 18px;border-radius:14px;margin:10px 0;display:flex;align-items:center;gap:12px;cursor:pointer" onclick="playSeasonalQuestions(\''+season+'\')"><span style="font-size:28px">'+info.icon+'</span><div style="flex:1"><div style="font-weight:800;font-size:15px">'+info.label+'</div><div style="font-size:12px;opacity:.85">'+seasonQLabel+'</div></div><div style="background:rgba(255,255,255,.2);border-radius:8px;padding:6px 14px;font-size:13px;font-weight:800;">Play</div></div>';
+  const seasonPlayCount=Math.min(seasonQCount,7);
+  const subLabel=seasonQCount?(seasonPlayCount+' '+(info.unit||'Questions')):'Special questions unlocked \u2192';
+  banner.innerHTML='<div style="background:'+info.color+';color:#fff;padding:14px 18px;border-radius:14px;margin:0;display:flex;align-items:center;gap:12px;cursor:pointer" onclick="playSeasonalQuestions(\''+season+'\')"><span style="font-size:28px">'+info.icon+'</span><div><div style="font-weight:800;font-size:15px">'+info.label+'</div><div style="font-size:12px;opacity:.85">'+subLabel+'</div></div></div>';
 }
 
 function playSeasonalQuestions(season){
@@ -4609,7 +4601,7 @@ function playSeasonalQuestions(season){
   const utcDay=Math.floor(Date.now()/86400000);
   const FSEED=0x5EED5EED; // fixed ordering seed — stable, never changes
   const seasonLabel=(season.charAt(0).toUpperCase()+season.slice(1))+' Season';
-  const total=10, mcqCount=5, tfCount=3, verseCount=2;
+  const total=7, mcqCount=4, tfCount=2, verseCount=1;
 
   // Stable ordering (fixed seed) so daily paging is predictable
   const allMCQ=seededShuf(seasonQs.map(q=>({...q,cat:seasonLabel})),FSEED);
@@ -4828,7 +4820,7 @@ function getWeeklyTournamentPool(){
     while(opts.length<4) opts.push('—');
     return {_id:`wt-v-${i}`,kind:'verse',b:q.b||'',blank,a:q.a||'',r:q.r||'',o:opts.slice(0,4),cat:'Fill Verse'};
   });
-  const total=20, tfCount=Math.round(total*0.25), verseCount=Math.round(total*0.25), mcqCount=total-tfCount-verseCount;
+  const total=24, tfCount=Math.round(total*0.25), verseCount=Math.round(total*0.25), mcqCount=total-tfCount-verseCount;
   return seededShuf([
     ...seededShuf(mcqAll,seed).slice(0,mcqCount),
     ...seededShuf(tfAll,seed+1).slice(0,tfCount),
@@ -4898,7 +4890,7 @@ function renderWeeklyTournament(){
         <span style="font-size:28px">${icon}</span>
         <div style="flex:1;">
           <div style="font-weight:800;font-size:15px;">Weekly Tournament ${streakBadge}</div>
-          <div style="font-size:12px;opacity:.85;">This week: <strong>${category}</strong> · 20 questions</div>
+          <div style="font-size:12px;opacity:.85;">This week: <strong>${category}</strong> · 24 questions</div>
           <div style="font-size:11px;opacity:.65;margin-top:2px;" id="wt-countdown">Ends in ${fmtCountdown(msLeft)}</div>
         </div>
         <div class="btn btn-gold btn-sm" style="width:auto;padding:8px 16px;">Play</div>
@@ -49563,24 +49555,15 @@ function renderLB(tab){
   if(tab==='weekly'){
     const {week,category}=getWeeklyTournamentInfo();
     const icon=WT_ICONS[category]||'🏟️';
-    list.innerHTML=`<div style="margin-bottom:10px;padding:10px 12px;background:linear-gradient(135deg,rgba(13,59,13,.5),rgba(27,94,32,.3));border:1px solid rgba(40,160,60,.25);border-radius:10px;display:flex;align-items:center;gap:10px;">
-      <span style="font-size:22px;">${icon}</span>
-      <div><div style="font-weight:700;font-size:13px;">This Week: ${category}</div><div style="font-size:11px;color:var(--ink3);">Top 20-question scores worldwide</div></div>
-    </div><div class="loading"><span class="spin">⟳</span> Loading…</div>`;
+    list.innerHTML=`<div class="loading"><span class="spin">⟳</span> Loading…</div>`;
     G.db.ref('weeklyTournament/'+week).orderByChild('score').limitToLast(50).once('value',sn=>{
       const data=sn.val()||{};
       const rows=Object.entries(data).map(([uid,v])=>({...v,id:uid})).filter(r=>!isReservedName(r.name)).sort((a,b)=>b.score-a.score);
       if(!rows.length){
-        list.innerHTML=`<div style="margin-bottom:10px;padding:10px 12px;background:linear-gradient(135deg,rgba(13,59,13,.5),rgba(27,94,32,.3));border:1px solid rgba(40,160,60,.25);border-radius:10px;display:flex;align-items:center;gap:10px;">
-          <span style="font-size:22px;">${icon}</span>
-          <div><div style="font-weight:700;font-size:13px;">This Week: ${category}</div><div style="font-size:11px;color:var(--ink3);">No scores yet — be the first! 🏆</div></div>
-        </div>`;
+        list.innerHTML=mkEmpty('🏆','No scores yet','Be the first to complete this week\'s tournament!');
         return;
       }
-      let html=`<div style="margin-bottom:10px;padding:10px 12px;background:linear-gradient(135deg,rgba(13,59,13,.5),rgba(27,94,32,.3));border:1px solid rgba(40,160,60,.25);border-radius:10px;display:flex;align-items:center;gap:10px;">
-        <span style="font-size:22px;">${icon}</span>
-        <div><div style="font-weight:700;font-size:13px;">This Week: ${category}</div><div style="font-size:11px;color:var(--ink3);">${rows.length} player${rows.length!==1?'s':''} competed</div></div>
-      </div>`;
+      let html=``;
       rows.forEach((p,i)=>{
         const isMe=p.id===G.uid;
         const medal=i===0?'👑':i===1?'🥈':i===2?'🥉':`#${i+1}`;
