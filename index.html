@@ -4832,22 +4832,23 @@ let _wtCountdownTimer=null;
 function renderWeeklyTournament(){
   const banner=document.getElementById('weekly-tournament-banner');
   if(!banner) return;
-  if(!G.profile){ banner.style.display='none'; return; }
 
   // End-of-week ceremony: if last week was completed and ceremony not yet shown
-  const prevWeek=getPrevWTWeekKey();
-  const curWeek=getWTWeekKey();
-  if(G.profile.tournamentWeek===prevWeek && G.profile.tournamentCeremonyShown!==curWeek){
-    G.profile.tournamentCeremonyShown=curWeek;
-    saveProfile();
-    setTimeout(()=>showWTCeremony(prevWeek),600);
+  if(G.profile){
+    const prevWeek=getPrevWTWeekKey();
+    const curWeek=getWTWeekKey();
+    if(G.profile.tournamentWeek===prevWeek && G.profile.tournamentCeremonyShown!==curWeek){
+      G.profile.tournamentCeremonyShown=curWeek;
+      saveProfile();
+      setTimeout(()=>showWTCeremony(prevWeek),600);
+    }
   }
 
   const {week,category}=getWeeklyTournamentInfo();
-  const done=G.profile.tournamentWeek===week;
+  const done=G.profile&&G.profile.tournamentWeek===week;
   const icon=WT_ICONS[category]||'🏟️';
   const msLeft=msToNextSundayUTC();
-  const streak=G.profile.tournamentStreak||0;
+  const streak=G.profile?.tournamentStreak||0;
   const streakBadge=streak>=2?`<span style="background:rgba(255,200,0,.18);border:1px solid rgba(255,200,0,.35);border-radius:10px;padding:1px 7px;font-size:10px;font-weight:700;color:#ffd700;">🔥 ${streak}-week streak</span>`:'';
 
   // Category preview: 24h before reset, show upcoming category
