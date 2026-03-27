@@ -4590,7 +4590,9 @@ function renderSeasonalBanner(){
   const today=new Date().toISOString().split('T')[0];
   if(G.profile&&G.profile.lastSeasonalDate===today){ banner.style.display='none'; return; }
   banner.style.display='block';
-  banner.innerHTML='<div style="background:'+info.color+';color:#fff;padding:14px 18px;border-radius:14px;margin:10px 0;display:flex;align-items:center;gap:12px;cursor:pointer" onclick="playSeasonalQuestions(\''+season+'\')"><span style="font-size:28px">'+info.icon+'</span><div><div style="font-weight:800;font-size:15px">'+info.label+'</div><div style="font-size:12px;opacity:.85">Special questions unlocked →</div></div></div>';
+  const seasonQCount=SEASONAL_Q.filter(q=>q.season===season).length;
+  const seasonQLabel=seasonQCount?('This season: <strong>'+info.label+'</strong> · 10 questions'):'Special questions unlocked →';
+  banner.innerHTML='<div style="background:'+info.color+';color:#fff;padding:14px 18px;border-radius:14px;margin:10px 0;display:flex;align-items:center;gap:12px;cursor:pointer" onclick="playSeasonalQuestions(\''+season+'\')"><span style="font-size:28px">'+info.icon+'</span><div style="flex:1"><div style="font-weight:800;font-size:15px">'+info.label+'</div><div style="font-size:12px;opacity:.85">'+seasonQLabel+'</div></div><div style="background:rgba(255,255,255,.2);border-radius:8px;padding:6px 14px;font-size:13px;font-weight:800;">Play</div></div>';
 }
 
 function playSeasonalQuestions(season){
@@ -4826,7 +4828,7 @@ function getWeeklyTournamentPool(){
     while(opts.length<4) opts.push('—');
     return {_id:`wt-v-${i}`,kind:'verse',b:q.b||'',blank,a:q.a||'',r:q.r||'',o:opts.slice(0,4),cat:'Fill Verse'};
   });
-  const total=10, tfCount=Math.round(total*0.25), verseCount=Math.round(total*0.25), mcqCount=total-tfCount-verseCount;
+  const total=20, tfCount=Math.round(total*0.25), verseCount=Math.round(total*0.25), mcqCount=total-tfCount-verseCount;
   return seededShuf([
     ...seededShuf(mcqAll,seed).slice(0,mcqCount),
     ...seededShuf(tfAll,seed+1).slice(0,tfCount),
@@ -4883,7 +4885,7 @@ function renderWeeklyTournament(){
     if(G.fbOk&&G.db){
       G.db.ref('weeklyTournament/'+week).orderByChild('score').limitToLast(3).once('value',sn=>{
         const el=document.getElementById('wt-lb-preview'); if(!el) return;
-        const rows=Object.values(sn.val()||{}).sort((a,b)=>b.score-a.score).slice(0,3);
+        const rows=Object.values(sn.val()||{}).filter(r=>!isReservedName(r.name)).sort((a,b)=>b.score-a.score).slice(0,3);
         if(!rows.length){ el.textContent='No other scores yet.'; return; }
         el.innerHTML=rows.map((r,i)=>`${['🥇','🥈','🥉'][i]} ${escHtml(r.name||'Player')} ${r.score}/10`).join(' &nbsp;·&nbsp; ');
       });
@@ -4896,7 +4898,7 @@ function renderWeeklyTournament(){
         <span style="font-size:28px">${icon}</span>
         <div style="flex:1;">
           <div style="font-weight:800;font-size:15px;">Weekly Tournament ${streakBadge}</div>
-          <div style="font-size:12px;opacity:.85;">This week: <strong>${category}</strong> · 10 questions</div>
+          <div style="font-size:12px;opacity:.85;">This week: <strong>${category}</strong> · 20 questions</div>
           <div style="font-size:11px;opacity:.65;margin-top:2px;" id="wt-countdown">Ends in ${fmtCountdown(msLeft)}</div>
         </div>
         <div class="btn btn-gold btn-sm" style="width:auto;padding:8px 16px;">Play</div>
@@ -4916,7 +4918,7 @@ function showWTCeremony(week){
   if(!G.fbOk||!G.db){ _doWTCeremony(week,[]); return; }
   const {category}=getWeeklyTournamentInfo(week);
   G.db.ref('weeklyTournament/'+week).orderByChild('score').limitToLast(10).once('value',sn=>{
-    const rows=Object.values(sn.val()||{}).sort((a,b)=>b.score-a.score).slice(0,10);
+    const rows=Object.values(sn.val()||{}).filter(r=>!isReservedName(r.name)).sort((a,b)=>b.score-a.score).slice(0,10);
     _doWTCeremony(week,rows,category);
   });
 }
