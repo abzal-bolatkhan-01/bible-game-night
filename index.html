@@ -4603,28 +4603,38 @@ function playSeasonalQuestions(season){
   const dateSeed = today.split('-').join('');
   const seasonQs = SEASONAL_Q.filter(q=>q.season===season);
   
-  // Simple seeded shuffle
-  let seed = parseInt(dateSeed);
-  const seededRandom = () => {
-    seed = (seed * 9301 + 49297) % 233280;
-    return seed / 233280;
-  };
-  
-  const shuffleSeeded = (arr) => [...arr].sort(() => seededRandom() - 0.5);
-  const total=10;
-  const mcqCount=Math.round(total*0.5);
-  const tfCount=Math.round(total*0.25);
-  const verseCount=total-mcqCount-tfCount;
-  const mcqPick=shuffleSeeded(seasonQs).slice(0,mcqCount);
-  const tfPick=shuffleSeeded(TF_Q).slice(0,tfCount).map((q,i)=>({_id:`seas-tf-${i}`,kind:'truefalse',q:q.q,a:!!q.a,e:q.e||'',cat:'True/False'}));
-  const versePick=shuffleSeeded(VERSE_Q).slice(0,verseCount).map((q,i)=>{
+  // UTC day index — same for all players worldwide on the same day
+  const utcDay=Math.floor(Date.now()/86400000);
+  const FSEED=0x5EED5EED; // fixed ordering seed — stable, never changes
+  const seasonLabel=(season.charAt(0).toUpperCase()+season.slice(1))+' Season';
+  const total=10, mcqCount=5, tfCount=3, verseCount=2;
+
+  // Stable ordering (fixed seed) so daily paging is predictable
+  const allMCQ=seededShuf(seasonQs.map(q=>({...q,cat:seasonLabel})),FSEED);
+  const allTF=seededShuf(TF_Q.map((q,i)=>({_id:`seas-tf-${i}`,kind:'truefalse',q:q.q,a:!!q.a,e:q.e||'',cat:'True/False'})),FSEED+1);
+  const allVerse=seededShuf(VERSE_Q.map((q,i)=>{
     const blank=String(q.blank||'').trim();
     const opts=(Array.isArray(q.o)?q.o:[]).map(o=>String(o||'').trim()).filter(Boolean);
     if(blank&&!opts.some(o=>o.toLowerCase()===blank.toLowerCase())) opts.unshift(blank);
     while(opts.length<4) opts.push('—');
     return {_id:`seas-v-${i}`,kind:'verse',b:q.b||'',blank,a:q.a||'',r:q.r||'',o:opts.slice(0,4),cat:'Fill Verse'};
-  });
-  const pool=shuffleSeeded([...mcqPick,...tfPick,...versePick]).slice(0,total);
+  }),FSEED+2);
+
+  // Cycling slice: advances by `count` each day, wraps around the full pool
+  const cyclicSlice=(arr,count,day)=>{
+    if(!arr.length) return [];
+    const start=(day*count)%arr.length;
+    const end=start+count;
+    return end<=arr.length?arr.slice(start,end):[...arr.slice(start),...arr.slice(0,end-arr.length)];
+  };
+
+  // Final pool shuffled with today's seed so order varies day-to-day
+  const combined=[
+    ...cyclicSlice(allMCQ,mcqCount,utcDay),
+    ...cyclicSlice(allTF,tfCount,utcDay),
+    ...cyclicSlice(allVerse,verseCount,utcDay),
+  ];
+  const pool=seededShuf(combined,parseInt(dateSeed)).slice(0,total);
 
   if(!pool.length){ toast('No questions for this season'); return; }
   G.mode='practice'; G.sub='classic'; G._seasonalMode=true;
