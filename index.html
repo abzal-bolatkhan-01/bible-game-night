@@ -4765,6 +4765,7 @@ function loadSundayBowlLeaderboard(){
 
 /* ══════════════════════════════════════════════════
    WEEKLY TOURNAMENT
+   Resets: Sunday 00:00 UTC each week
 ══════════════════════════════════════════════════ */
 const WT_CATEGORIES=['Genesis','Exodus','Judges','Kings','Psalms','Prophets','Gospels','Parables','Acts','Epistles','Revelation','Miracles','Women of the Bible','Animals in the Bible','Bible Geography','Numbers & Dates','Old Testament Law','Worship & Music','Who Am I?'];
 const WT_ICONS={Genesis:'📖',Exodus:'🏺',Judges:'⚔️',Kings:'👑',Psalms:'🎵',Prophets:'🔥',Gospels:'✝️',Parables:'🌾',Acts:'⚡',Epistles:'📜',Revelation:'🌟',Miracles:'✨',['Women of the Bible']:'👩',['Animals in the Bible']:'🦁',['Bible Geography']:'🗺️',['Numbers & Dates']:'🔢',['Old Testament Law']:'📋',['Worship & Music']:'🎶',['Who Am I?']:'🤔'};
@@ -4777,12 +4778,39 @@ function seededShuf(arr,seed){
   }
   return r;
 }
-function getWeeklyTournamentInfo(){
-  const week=getISOWeek(new Date());
-  const parts=week.split('-W');
-  const yearNum=parseInt(parts[0],10);
-  const weekNum=parseInt(parts[1],10);
-  const seed=(((yearNum*53+weekNum)*2654435761)>>>0);
+
+// Returns 'YYYY-SMMDDD' key for the Sunday that started the current week
+function getWTWeekKey(date){
+  const d=new Date(date||Date.now());
+  const day=d.getUTCDay(); // 0=Sun
+  const sun=new Date(Date.UTC(d.getUTCFullYear(),d.getUTCMonth(),d.getUTCDate()-day));
+  return sun.getUTCFullYear()+'-S'+(sun.getUTCMonth()+1+'').padStart(2,'0')+(sun.getUTCDate()+'').padStart(2,'0');
+}
+function getPrevWTWeekKey(){ return getWTWeekKey(Date.now()-7*86400000); }
+function getNextWTWeekKey(){ return getWTWeekKey(Date.now()+7*86400000); }
+
+// ms until next Sunday 00:00 UTC
+function msToNextSundayUTC(){
+  const now=new Date();
+  const day=now.getUTCDay();
+  const daysLeft=(7-day)%7||7;
+  const next=new Date(Date.UTC(now.getUTCFullYear(),now.getUTCMonth(),now.getUTCDate()+daysLeft));
+  return next.getTime()-now.getTime();
+}
+function fmtCountdown(ms){
+  const d=Math.floor(ms/86400000);
+  const h=Math.floor((ms%86400000)/3600000);
+  const m=Math.floor((ms%3600000)/60000);
+  if(d>0) return `${d}d ${h}h`;
+  if(h>0) return `${h}h ${m}m`;
+  return `${m}m`;
+}
+
+function getWeeklyTournamentInfo(weekKey){
+  const week=weekKey||getWTWeekKey();
+  const parts=week.replace('-S','').split('-');
+  const numericKey=parseInt(parts[0]+parts[1],10);
+  const seed=((numericKey*2654435761)>>>0);
   const catIdx=seed%WT_CATEGORIES.length;
   const category=WT_CATEGORIES[catIdx];
   return {week,seed,category};
@@ -4798,48 +4826,138 @@ function getWeeklyTournamentPool(){
     while(opts.length<4) opts.push('—');
     return {_id:`wt-v-${i}`,kind:'verse',b:q.b||'',blank,a:q.a||'',r:q.r||'',o:opts.slice(0,4),cat:'Fill Verse'};
   });
-  const total=10;
-  const tfCount=Math.round(total*0.25);
-  const verseCount=Math.round(total*0.25);
-  const mcqCount=total-tfCount-verseCount;
-  const combined=[
+  const total=10, tfCount=Math.round(total*0.25), verseCount=Math.round(total*0.25), mcqCount=total-tfCount-verseCount;
+  return seededShuf([
     ...seededShuf(mcqAll,seed).slice(0,mcqCount),
     ...seededShuf(tfAll,seed+1).slice(0,tfCount),
     ...seededShuf(verseAll,seed+2).slice(0,verseCount),
-  ];
-  return seededShuf(combined,seed+3);
+  ],seed+3);
 }
+
+let _wtCountdownTimer=null;
 function renderWeeklyTournament(){
   const banner=document.getElementById('weekly-tournament-banner');
   if(!banner) return;
   if(!G.profile){ banner.style.display='none'; return; }
+
+  // End-of-week ceremony: if last week was completed and ceremony not yet shown
+  const prevWeek=getPrevWTWeekKey();
+  const curWeek=getWTWeekKey();
+  if(G.profile.tournamentWeek===prevWeek && G.profile.tournamentCeremonyShown!==curWeek){
+    G.profile.tournamentCeremonyShown=curWeek;
+    saveProfile();
+    setTimeout(()=>showWTCeremony(prevWeek),600);
+  }
+
   const {week,category}=getWeeklyTournamentInfo();
   const done=G.profile.tournamentWeek===week;
   const icon=WT_ICONS[category]||'🏟️';
+  const msLeft=msToNextSundayUTC();
+  const streak=G.profile.tournamentStreak||0;
+  const streakBadge=streak>=2?`<span style="background:rgba(255,200,0,.18);border:1px solid rgba(255,200,0,.35);border-radius:10px;padding:1px 7px;font-size:10px;font-weight:700;color:#ffd700;">🔥 ${streak}-week streak</span>`:'';
+
+  // Category preview: 24h before reset, show upcoming category
+  const nextInfo=getWeeklyTournamentInfo(getNextWTWeekKey());
+  const showPreview=!done&&msLeft<86400000; // <24h left
+
   banner.style.display='block';
   if(done){
-    banner.innerHTML=`<div style="background:linear-gradient(135deg,#0d3b0d,#1b5e20);color:#fff;padding:14px 18px;border-radius:14px;display:flex;align-items:center;gap:12px;">
-      <span style="font-size:28px">${icon}</span>
-      <div style="flex:1;">
-        <div style="font-weight:800;font-size:15px;">Weekly Tournament</div>
-        <div style="font-size:12px;opacity:.85;">Your score: ${G.profile.tournamentScore||0}/20 · ${category}</div>
+    const score=G.profile.tournamentScore||0;
+    banner.innerHTML=`<div style="background:linear-gradient(135deg,#0d3b0d,#1b5e20);color:#fff;padding:14px 18px;border-radius:14px;">
+      <div style="display:flex;align-items:center;gap:12px;margin-bottom:10px;">
+        <span style="font-size:28px">${icon}</span>
+        <div style="flex:1;">
+          <div style="font-weight:800;font-size:15px;">Weekly Tournament ${streakBadge}</div>
+          <div style="font-size:12px;opacity:.85;">Your score: <strong>${score}/10</strong> · ${category}</div>
+          <div style="font-size:11px;opacity:.65;margin-top:2px;">Resets in ${fmtCountdown(msLeft)}</div>
+        </div>
       </div>
-      <button class="btn btn-ghost btn-sm" style="width:auto;padding:6px 14px;color:#fff;border-color:rgba(255,255,255,.4);" onclick="loadWeeklyTournamentLeaderboard()">Leaderboard</button>
-    </div>`;
-  }else{
-    const pool=getWeeklyTournamentPool();
-    banner.innerHTML=`<div style="background:linear-gradient(135deg,#0d3b0d,#1b5e20);color:#fff;padding:14px 18px;border-radius:14px;display:flex;align-items:center;gap:12px;cursor:pointer;" onclick="startWeeklyTournament()">
-      <span style="font-size:28px">${icon}</span>
-      <div style="flex:1;">
-        <div style="font-weight:800;font-size:15px;">Weekly Tournament</div>
-        <div style="font-size:12px;opacity:.85;">This week: <strong>${category}</strong> · ${pool.length} questions</div>
+      <div id="wt-lb-preview" style="font-size:11px;opacity:.7;margin-bottom:8px;">Loading standings…</div>
+      <div style="display:flex;gap:8px;">
+        <button class="btn btn-ghost btn-sm" style="flex:1;color:#fff;border-color:rgba(255,255,255,.35);" onclick="go('community');communityTab('rankings');lbTab('weekly')">📊 Full Leaderboard</button>
+        <button class="btn btn-ghost btn-sm" style="flex:1;color:#fff;border-color:rgba(255,255,255,.35);" onclick="wtShare()">📤 Share Score</button>
       </div>
-      <div class="btn btn-gold btn-sm" style="width:auto;padding:8px 16px;">Play</div>
+      ${showPreview?`<div style="margin-top:10px;padding:8px 10px;background:rgba(255,255,255,.08);border-radius:8px;font-size:11px;">⏭️ Coming up: <strong>${WT_ICONS[nextInfo.category]||'🏟️'} ${nextInfo.category}</strong> in ${fmtCountdown(msLeft)}</div>`:''}
     </div>`;
+    // Load top 3 preview inline
+    if(G.fbOk&&G.db){
+      G.db.ref('weeklyTournament/'+week).orderByChild('score').limitToLast(3).once('value',sn=>{
+        const el=document.getElementById('wt-lb-preview'); if(!el) return;
+        const rows=Object.values(sn.val()||{}).sort((a,b)=>b.score-a.score).slice(0,3);
+        if(!rows.length){ el.textContent='No other scores yet.'; return; }
+        el.innerHTML=rows.map((r,i)=>`${['🥇','🥈','🥉'][i]} ${escHtml(r.name||'Player')} ${r.score}/10`).join(' &nbsp;·&nbsp; ');
+      });
+    } else {
+      const el=document.getElementById('wt-lb-preview'); if(el) el.style.display='none';
+    }
+  } else {
+    banner.innerHTML=`<div style="background:linear-gradient(135deg,#0d3b0d,#1b5e20);color:#fff;padding:14px 18px;border-radius:14px;">
+      <div style="display:flex;align-items:center;gap:12px;cursor:pointer;" onclick="startWeeklyTournament()">
+        <span style="font-size:28px">${icon}</span>
+        <div style="flex:1;">
+          <div style="font-weight:800;font-size:15px;">Weekly Tournament ${streakBadge}</div>
+          <div style="font-size:12px;opacity:.85;">This week: <strong>${category}</strong> · 10 questions</div>
+          <div style="font-size:11px;opacity:.65;margin-top:2px;" id="wt-countdown">Ends in ${fmtCountdown(msLeft)}</div>
+        </div>
+        <div class="btn btn-gold btn-sm" style="width:auto;padding:8px 16px;">Play</div>
+      </div>
+      ${showPreview?`<div style="margin-top:10px;padding:8px 10px;background:rgba(255,255,255,.08);border-radius:8px;font-size:11px;">⏭️ Coming up next week: <strong>${WT_ICONS[nextInfo.category]||'🏟️'} ${nextInfo.category}</strong></div>`:''}
+    </div>`;
+    // Live countdown tick
+    if(_wtCountdownTimer) clearInterval(_wtCountdownTimer);
+    _wtCountdownTimer=setInterval(()=>{
+      const el=document.getElementById('wt-countdown'); if(!el){ clearInterval(_wtCountdownTimer); return; }
+      el.textContent='Ends in '+fmtCountdown(msToNextSundayUTC());
+    },60000);
   }
 }
+
+function showWTCeremony(week){
+  if(!G.fbOk||!G.db){ _doWTCeremony(week,[]); return; }
+  const {category}=getWeeklyTournamentInfo(week);
+  G.db.ref('weeklyTournament/'+week).orderByChild('score').limitToLast(10).once('value',sn=>{
+    const rows=Object.values(sn.val()||{}).sort((a,b)=>b.score-a.score).slice(0,10);
+    _doWTCeremony(week,rows,category);
+  });
+}
+function _doWTCeremony(week,rows,category){
+  confetti();
+  const winner=rows[0];
+  const isMe=winner&&G.uid&&rows.find(r=>r.name===G.profile?.name);
+  const podium=rows.slice(0,3).map((r,i)=>`<div style="text-align:center;padding:8px 12px;background:rgba(255,255,255,.06);border-radius:10px;"><div style="font-size:20px">${['🥇','🥈','🥉'][i]}</div><div style="font-size:13px;font-weight:700;">${escHtml(r.name||'Player')}</div><div style="font-size:11px;opacity:.7;">${r.score}/10</div></div>`).join('');
+  const myRow=rows.find(r=>r.name===G.profile?.name);
+  const myRank=myRow?rows.indexOf(myRow)+1:null;
+  const html=`<div id="wt-ceremony" style="position:fixed;inset:0;z-index:9000;background:rgba(0,0,0,.82);display:flex;align-items:center;justify-content:center;padding:24px;" onclick="document.getElementById('wt-ceremony').remove()">
+    <div style="background:linear-gradient(135deg,#0d3b0d,#1b5e20);border-radius:20px;padding:24px;max-width:360px;width:100%;text-align:center;color:#fff;" onclick="event.stopPropagation()">
+      <div style="font-size:42px;margin-bottom:4px;">🏆</div>
+      <div style="font-family:'Cinzel',serif;font-size:11px;letter-spacing:.2em;opacity:.7;margin-bottom:4px;">TOURNAMENT CLOSED</div>
+      <div style="font-size:20px;font-weight:800;margin-bottom:4px;">${category||'Weekly Tournament'}</div>
+      ${myRank?`<div style="font-size:13px;opacity:.8;margin-bottom:14px;">You finished #${myRank} with ${myRow.score}/10</div>`:'<div style="margin-bottom:14px;"></div>'}
+      <div style="display:flex;gap:8px;justify-content:center;margin-bottom:18px;">${podium}</div>
+      <div style="display:flex;gap:8px;">
+        <button class="btn btn-gold btn-sm" style="flex:1;" onclick="wtShare();document.getElementById('wt-ceremony').remove()">📤 Share Result</button>
+        <button class="btn btn-ghost btn-sm" style="flex:1;color:#fff;border-color:rgba(255,255,255,.35);" onclick="document.getElementById('wt-ceremony').remove()">Close</button>
+      </div>
+    </div>
+  </div>`;
+  document.body.insertAdjacentHTML('beforeend',html);
+}
+
+function wtShare(){
+  const week=getWTWeekKey();
+  const {category}=getWeeklyTournamentInfo();
+  const score=G.profile?.tournamentScore||0;
+  const streak=G.profile?.tournamentStreak||0;
+  const streakTxt=streak>=2?` (${streak}-week streak 🔥)`:'';
+  const txt=`I scored ${score}/10 on this week's Lamp Weekly Tournament — ${category}!${streakTxt} Can you beat me? 📖 thelampgame.com`;
+  if(navigator.share){ navigator.share({title:'Lamp Weekly Tournament',text:txt}).catch(()=>{}); }
+  else if(navigator.clipboard){ navigator.clipboard.writeText(txt).then(()=>toast('Score copied! 📋')); }
+}
+
 function startWeeklyTournament(){
   if(!G.profile){ go('auth'); buildAvGrid(); return; }
+  const week=getWTWeekKey();
+  if(G.profile.tournamentWeek===week){ toast('You already played this week! Come back next Sunday. 🏆'); return; }
   sfx.tap();
   const pool=getWeeklyTournamentPool();
   if(!pool.length){ toast('No questions available for this category'); return; }
@@ -4859,6 +4977,10 @@ function startWeeklyTournament(){
 function finishWeeklyTournament(score,total){
   if(!G.profile) return;
   const {week,category}=getWeeklyTournamentInfo();
+  // Streak tracking
+  const prevWeek=getPrevWTWeekKey();
+  const wasStreaking=G.profile.tournamentWeek===prevWeek;
+  G.profile.tournamentStreak=wasStreaking?(G.profile.tournamentStreak||0)+1:1;
   G.profile.tournamentWeek=week;
   G.profile.tournamentScore=score;
   saveProfile();
@@ -4869,20 +4991,15 @@ function finishWeeklyTournament(score,total){
       score,total,category,ts:Date.now()
     });
   }
-  const bonus=100+score*5;
+  // XP: base + per-correct + streak bonus
+  const streakBonus=Math.min((G.profile.tournamentStreak-1)*25,150);
+  const bonus=100+score*5+streakBonus;
   addXP(bonus);
-  toast(`🏟️ Tournament done! +${bonus} XP`);
+  const streakMsg=streakBonus>0?` · 🔥 ${G.profile.tournamentStreak}-week streak +${streakBonus} XP`:'';
+  toast(`🏟️ Tournament done! +${bonus} XP${streakMsg}`);
 }
 function loadWeeklyTournamentLeaderboard(){
-  if(!G.fbOk||!G.db){ toast('Leaderboard requires online access'); return; }
-  const {week,category}=getWeeklyTournamentInfo();
-  G.db.ref('weeklyTournament/'+week).orderByChild('score').limitToLast(10).once('value',sn=>{
-    const data=sn.val()||{};
-    const entries=Object.values(data).sort((a,b)=>b.score-a.score).slice(0,10);
-    if(!entries.length){ toast('No scores this week yet — be the first! 🏆'); return; }
-    const lines=entries.map((e,i)=>`${i+1}. ${e.avatar||'😊'} ${e.name||'Player'} — ${e.score}/${e.total||20}`).join('\n');
-    toast('🏟️ '+category+'\n'+lines.slice(0,200));
-  });
+  go('community'); communityTab('rankings'); lbTab('weekly');
 }
 
 /* ══════════════════════════════════════════════════
@@ -46379,10 +46496,14 @@ function getAuthRedirectPending(){
   try{ return sessionStorage.getItem('auth_redirect_pending')||''; }catch(e){ return ''; }
 }
 function _isMobile(){ return /Mobi|Android|iPhone|iPad|iPod/i.test(navigator.userAgent) || ('ontouchstart' in window); }
+const RESERVED_NAMES=['tester','test','guest','admin','moderator','mod','system','bot','lamp','anonymous','anon'];
+function isReservedName(name){ return RESERVED_NAMES.includes((name||'').trim().toLowerCase()); }
+
 function isNameTaken(name, excludeUid = null) {
   if (!G.fbOk || !G.db) return Promise.resolve(false);
   const clean = (name || "").trim().toLowerCase();
   if (!clean) return Promise.resolve(false);
+  if(isReservedName(name)) return Promise.resolve(true);
   return G.db.ref("players").orderByChild("name").equalTo((name || "").trim()).once("value").then(sn => {
     const data = sn.val();
     if (!data) return false;
@@ -49446,7 +49567,7 @@ function renderLB(tab){
     </div><div class="loading"><span class="spin">⟳</span> Loading…</div>`;
     G.db.ref('weeklyTournament/'+week).orderByChild('score').limitToLast(50).once('value',sn=>{
       const data=sn.val()||{};
-      const rows=Object.entries(data).map(([uid,v])=>({...v,id:uid})).sort((a,b)=>b.score-a.score);
+      const rows=Object.entries(data).map(([uid,v])=>({...v,id:uid})).filter(r=>!isReservedName(r.name)).sort((a,b)=>b.score-a.score);
       if(!rows.length){
         list.innerHTML=`<div style="margin-bottom:10px;padding:10px 12px;background:linear-gradient(135deg,rgba(13,59,13,.5),rgba(27,94,32,.3));border:1px solid rgba(40,160,60,.25);border-radius:10px;display:flex;align-items:center;gap:10px;">
           <span style="font-size:22px;">${icon}</span>
@@ -49513,6 +49634,7 @@ function renderLB(tab){
 
 function displayLBRows(list, rows, tab, clanMap) {
   list.innerHTML='';
+  rows=rows.filter(p=>!isReservedName(p.name));
   if(!rows.length){ list.innerHTML=mkEmpty('🏆','No rankings yet','Play a game to appear\non the leaderboard!'); return; }
   rows.forEach((p,i)=>{
     const isMe=tab!=='clan'&&p.id===G.uid;
@@ -50375,7 +50497,8 @@ async function saveEditName(){
   const inp=document.getElementById('prof-name-input');
   const trimmed=(inp.value||'').trim().slice(0,20);
   if(!trimmed){ toast('Name cannot be empty'); inp.focus(); return; }
-  
+  if(isReservedName(trimmed)){ toast('That name is reserved — please choose another.'); inp.focus(); return; }
+
   if (G.fbOk && G.db) {
     const taken = await isNameTaken(trimmed, G.uid);
     if (taken) {
