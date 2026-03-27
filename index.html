@@ -3394,6 +3394,9 @@ html.feat-gameHeader .g-nm { font-weight: 800 !important; max-width: 100px; over
       </div>
     </div>
 
+    <!-- Weekly Tournament Banner -->
+    <div id="weekly-tournament-banner" style="display:none;margin-bottom:16px;"></div>
+
     <!-- Sunday Bible Bowl Banner -->
     <div id="sunday-bowl-banner" style="display:none;margin-bottom:16px;"></div>
 
@@ -4734,6 +4737,111 @@ function loadSundayBowlLeaderboard(){
     if(!entries.length){ toast('No scores this week yet'); return; }
     const lines=entries.map((e,i)=>`${i+1}. ${e.avatar||'😊'} ${e.name||'Player'} — ${e.score}/${e.total||15}`).join('\n');
     toast('🏆 This Week\'s Bowl\n'+lines.slice(0,200));
+  });
+}
+
+/* ══════════════════════════════════════════════════
+   WEEKLY TOURNAMENT
+══════════════════════════════════════════════════ */
+const WT_CATEGORIES=['Genesis','Exodus','Judges','Kings','Psalms','Prophets','Gospels','Parables','Acts','Epistles','Revelation','Miracles','Women of the Bible','Animals in the Bible','Bible Geography','Numbers & Dates','Old Testament Law','Worship & Music','Who Am I?'];
+const WT_ICONS={Genesis:'📖',Exodus:'🏺',Judges:'⚔️',Kings:'👑',Psalms:'🎵',Prophets:'🔥',Gospels:'✝️',Parables:'🌾',Acts:'⚡',Epistles:'📜',Revelation:'🌟',Miracles:'✨',['Women of the Bible']:'👩',['Animals in the Bible']:'🦁',['Bible Geography']:'🗺️',['Numbers & Dates']:'🔢',['Old Testament Law']:'📋',['Worship & Music']:'🎶',['Who Am I?']:'🤔'};
+
+function seededShuf(arr,seed){
+  const r=[...arr]; let s=seed>>>0;
+  for(let i=r.length-1;i>0;i--){
+    s=(Math.imul(s,1664525)+1013904223)>>>0;
+    const j=s%(i+1); [r[i],r[j]]=[r[j],r[i]];
+  }
+  return r;
+}
+function getWeeklyTournamentInfo(){
+  const week=getISOWeek(new Date());
+  const parts=week.split('-W');
+  const yearNum=parseInt(parts[0],10);
+  const weekNum=parseInt(parts[1],10);
+  const seed=(((yearNum*53+weekNum)*2654435761)>>>0);
+  const catIdx=seed%WT_CATEGORIES.length;
+  const category=WT_CATEGORIES[catIdx];
+  return {week,seed,category};
+}
+function getWeeklyTournamentPool(){
+  const {seed,category}=getWeeklyTournamentInfo();
+  const qs=(QB[category]||[]).map(q=>({...q,kind:'mcq',cat:category}));
+  return seededShuf(qs,seed).slice(0,Math.min(20,qs.length));
+}
+function renderWeeklyTournament(){
+  const banner=document.getElementById('weekly-tournament-banner');
+  if(!banner) return;
+  if(!G.profile){ banner.style.display='none'; return; }
+  const {week,category}=getWeeklyTournamentInfo();
+  const done=G.profile.tournamentWeek===week;
+  const icon=WT_ICONS[category]||'🏟️';
+  banner.style.display='block';
+  if(done){
+    banner.innerHTML=`<div style="background:linear-gradient(135deg,#0d3b0d,#1b5e20);color:#fff;padding:14px 18px;border-radius:14px;display:flex;align-items:center;gap:12px;">
+      <span style="font-size:28px">${icon}</span>
+      <div style="flex:1;">
+        <div style="font-weight:800;font-size:15px;">Weekly Tournament</div>
+        <div style="font-size:12px;opacity:.85;">Your score: ${G.profile.tournamentScore||0}/20 · ${category}</div>
+      </div>
+      <button class="btn btn-ghost btn-sm" style="width:auto;padding:6px 14px;color:#fff;border-color:rgba(255,255,255,.4);" onclick="loadWeeklyTournamentLeaderboard()">Leaderboard</button>
+    </div>`;
+  }else{
+    const pool=getWeeklyTournamentPool();
+    banner.innerHTML=`<div style="background:linear-gradient(135deg,#0d3b0d,#1b5e20);color:#fff;padding:14px 18px;border-radius:14px;display:flex;align-items:center;gap:12px;cursor:pointer;" onclick="startWeeklyTournament()">
+      <span style="font-size:28px">${icon}</span>
+      <div style="flex:1;">
+        <div style="font-weight:800;font-size:15px;">Weekly Tournament</div>
+        <div style="font-size:12px;opacity:.85;">This week: <strong>${category}</strong> · ${pool.length} questions</div>
+      </div>
+      <div class="btn btn-gold btn-sm" style="width:auto;padding:8px 16px;">Play</div>
+    </div>`;
+  }
+}
+function startWeeklyTournament(){
+  if(!G.profile){ go('auth'); buildAvGrid(); return; }
+  sfx.tap();
+  const pool=getWeeklyTournamentPool();
+  if(!pool.length){ toast('No questions available for this category'); return; }
+  G.mode='weekly_tournament'; G.sub='classic';
+  G._xpAtGameStart=G.profile?(G.profile.xp||0):0;
+  G._correctAtGameStart=G.profile?(G.profile.correct||0):0;
+  G.players=[{name:G.profile.name||'Player',avatar:G.profile.avatar||'😊',photo:G.profile.photo||''}];
+  G.pool=pool; G.qi=0; G.pi=0; G.done=false;
+  G.scores={[G.players[0].name]:0};
+  G.hearts={[G.players[0].name]:Infinity};
+  G.streaks={[G.players[0].name]:0};
+  G.cfg.winScore=pool.length;
+  G.cfg.hearts=false;
+  G.TIM=20;
+  showSplash(0,()=>{ go('game'); renderQ(); });
+}
+function finishWeeklyTournament(score,total){
+  if(!G.profile) return;
+  const {week,category}=getWeeklyTournamentInfo();
+  G.profile.tournamentWeek=week;
+  G.profile.tournamentScore=score;
+  saveProfile();
+  if(G.fbOk&&G.uid){
+    G.db.ref('weeklyTournament/'+week+'/'+G.uid).set({
+      name:G.profile.name||'Player',
+      avatar:G.profile.avatar||'😊',
+      score,total,category,ts:Date.now()
+    });
+  }
+  const bonus=100+score*5;
+  addXP(bonus);
+  toast(`🏟️ Tournament done! +${bonus} XP`);
+}
+function loadWeeklyTournamentLeaderboard(){
+  if(!G.fbOk||!G.db){ toast('Leaderboard requires online access'); return; }
+  const {week,category}=getWeeklyTournamentInfo();
+  G.db.ref('weeklyTournament/'+week).orderByChild('score').limitToLast(10).once('value',sn=>{
+    const data=sn.val()||{};
+    const entries=Object.values(data).sort((a,b)=>b.score-a.score).slice(0,10);
+    if(!entries.length){ toast('No scores this week yet — be the first! 🏆'); return; }
+    const lines=entries.map((e,i)=>`${i+1}. ${e.avatar||'😊'} ${e.name||'Player'} — ${e.score}/${e.total||20}`).join('\n');
+    toast('🏟️ '+category+'\n'+lines.slice(0,200));
   });
 }
 
@@ -46662,7 +46770,7 @@ function addXP(n){
 }
 function isXpDisabledMode(mode){
   if(G._seasonalMode) return false;
-  return mode==='practice'||mode==='local'||mode==='sunday_bowl';
+  return mode==='practice'||mode==='local'||mode==='sunday_bowl'||mode==='weekly_tournament';
 }
 function canAwardAnswerXP(playerName){
   if(!G.profile || !playerName) return false;
@@ -46805,7 +46913,7 @@ function go(id){
   const sc=el&&el.querySelector('.scroller');
   if(sc) sc.scrollTop=0;
   // hooks
-  if(id==='home'){ initGreeting(); renderDailyMeta(); renderLastPlayed(); }
+  if(id==='home'){ initGreeting(); renderDailyMeta(); renderLastPlayed(); renderWeeklyTournament(); }
   if(id==='community') communityTab('rankings');
   if(id==='profile') renderProfile();
   if(id==='lobby') renderLobby();
@@ -48261,6 +48369,13 @@ function playAgain(){
     go('home');
     return;
   }
+  if(G.mode==='weekly_tournament'){
+    const wtScore=G.scores[G.players[0]?.name]||0;
+    finishWeeklyTournament(wtScore,G.pool.length||20);
+    checkAchs();
+    go('home');
+    return;
+  }
   if((G.mode==='online'||G.mode==='nearby'||G.onlineGame) && G.roomId && G.fbOk && G.db){
     clearTimeout(G._rematchPruneTimer); G._rematchPruneTimer=null;
     const savedRoomId=G.roomId;
@@ -49281,6 +49396,42 @@ function renderLB(tab){
     return;
   }
 
+  if(tab==='weekly'){
+    const {week,category}=getWeeklyTournamentInfo();
+    const icon=WT_ICONS[category]||'🏟️';
+    list.innerHTML=`<div style="margin-bottom:10px;padding:10px 12px;background:linear-gradient(135deg,rgba(13,59,13,.5),rgba(27,94,32,.3));border:1px solid rgba(40,160,60,.25);border-radius:10px;display:flex;align-items:center;gap:10px;">
+      <span style="font-size:22px;">${icon}</span>
+      <div><div style="font-weight:700;font-size:13px;">This Week: ${category}</div><div style="font-size:11px;color:var(--ink3);">Top 20-question scores worldwide</div></div>
+    </div><div class="loading"><span class="spin">⟳</span> Loading…</div>`;
+    G.db.ref('weeklyTournament/'+week).orderByChild('score').limitToLast(50).once('value',sn=>{
+      const data=sn.val()||{};
+      const rows=Object.entries(data).map(([uid,v])=>({...v,id:uid})).sort((a,b)=>b.score-a.score);
+      if(!rows.length){
+        list.innerHTML=`<div style="margin-bottom:10px;padding:10px 12px;background:linear-gradient(135deg,rgba(13,59,13,.5),rgba(27,94,32,.3));border:1px solid rgba(40,160,60,.25);border-radius:10px;display:flex;align-items:center;gap:10px;">
+          <span style="font-size:22px;">${icon}</span>
+          <div><div style="font-weight:700;font-size:13px;">This Week: ${category}</div><div style="font-size:11px;color:var(--ink3);">No scores yet — be the first! 🏆</div></div>
+        </div>`;
+        return;
+      }
+      let html=`<div style="margin-bottom:10px;padding:10px 12px;background:linear-gradient(135deg,rgba(13,59,13,.5),rgba(27,94,32,.3));border:1px solid rgba(40,160,60,.25);border-radius:10px;display:flex;align-items:center;gap:10px;">
+        <span style="font-size:22px;">${icon}</span>
+        <div><div style="font-weight:700;font-size:13px;">This Week: ${category}</div><div style="font-size:11px;color:var(--ink3);">${rows.length} player${rows.length!==1?'s':''} competed</div></div>
+      </div>`;
+      rows.forEach((p,i)=>{
+        const isMe=p.id===G.uid;
+        const medal=i===0?'👑':i===1?'🥈':i===2?'🥉':`#${i+1}`;
+        html+=`<div class="lb-row${i<3?' top':''}${isMe?' me':''}" style="${isMe?'border-color:var(--gold);':''}">
+          <div class="lb-rank">${medal}</div>
+          <div class="lb-av">${p.avatar||'😊'}</div>
+          <div class="lb-info"><div class="lb-nm">${escHtml(p.name||'Player')}${isMe?' ✦':''}</div><div class="lb-sub">${p.category||category}</div></div>
+          <div class="lb-xpv" style="color:var(--green1);font-weight:800;">${p.score||0}<span style="font-size:10px;color:var(--ink3);font-weight:500;">/${p.total||20}</span></div>
+        </div>`;
+      });
+      list.innerHTML=html;
+    });
+    return;
+  }
+
   if(tab==='clan'){
     Promise.all([G.db.ref('clans').once('value'), G.db.ref('leaderboard').once('value')]).then(([clanSn,lbSn])=>{
       const lbMap={};
@@ -49314,8 +49465,7 @@ function renderLB(tab){
       if(meIdx>=0) rows[meIdx]={...rows[meIdx],...meData};
       else rows.push(meData);
     }
-    if(tab==='weekly') rows.sort((a,b)=>(b.weeklyXP||0)-(a.weeklyXP||0));
-    else rows.sort((a,b)=>(b.xp||0)-(a.xp||0));
+    rows.sort((a,b)=>(b.xp||0)-(a.xp||0));
     displayLBRows(list, rows, tab, clanMap);
   }).catch(()=>{ list.innerHTML='<div class="empty">Error loading ranks.</div>'; });
 }
