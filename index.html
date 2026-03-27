@@ -3374,7 +3374,7 @@ html.feat-gameHeader .g-nm { font-weight: 800 !important; max-width: 100px; over
         <div style="font-size:32px;">🔥</div>
       <div style="flex:1;">
         <div class="eyebrow" style="color:var(--gold1);">Daily Challenge</div>
-        <div style="font-family:'Playfair Display',serif;font-size:16px;color:var(--ink);">10 Trials · <span style="font-size:13px;color:var(--gold1);font-family:'Nunito',sans-serif;font-weight:700;">⭐ +100 XP</span></div>
+        <div style="font-family:'Playfair Display',serif;font-size:16px;color:var(--ink);">10 Trials · <span style="font-size:13px;color:var(--gold1);font-family:'Nunito',sans-serif;font-weight:700;">⭐ XP per correct</span></div>
         <div id="daily-streak-info" style="font-size:11px;color:var(--ink3);margin-top:2px;">Streak: 0 days</div>
         <div id="daily-topic-info"></div>
       </div>
@@ -4417,8 +4417,102 @@ const FB_CFG={
 ══════════════════════════════════════════════════ */
 const AVATARS=['😊','🧑','👦','👧','👨','👩','🧔','👴','👵','🤴','👸','🙏','✝️','📖','🕊️','🌟','🔥','👑','🦁','🐑','🎺','⚔️','🏆','🌿','🕯️','🌈','🐟','🍞','🎵','✨'];
 const CLAN_ICONS=['⛪','🕍','🔔','✝️','🌿','🕊️','🏛️','📖','🙏','🌟','🔥','👑','🦁','🌈','⚔️','🎺'];
-const LEVELS=['Seeker','Believer','Disciple','Apostle','Elder','Deacon','Prophet','Bishop','Patriarch','Sage of Faith'];
-const XP_PER_LEVEL=120;
+const LEVEL_NAMES=[
+  // 1–11: The Seeking
+  'New Seeker','Curious Heart','Truth Seeker','Light Finder','Word Curious',
+  'Questioner','Open Mind','Humble Soul','Wanderer','Lamp Seeker','Awakened One',
+  // 12–22: The Learner
+  'Scripture Reader','Morning Reader','Word Student','Verse Keeper','Gospel Learner',
+  'Faith Sprout','Seed Planter','Root Grower','Soil Tiller','Promise Holder','Word Keeper',
+  // 23–33: The Disciple
+  'Young Disciple','Follower of the Way','Footstep Walker','Kingdom Seeker','Bread Taster',
+  'Living Water Drinker','Vine Branch','Lamp Holder','Salt Bearer','City on a Hill','Light Carrier',
+  // 34–44: The Faithful
+  'Called One','Set Apart','Covenant Keeper','Faith Walker','Grace Receiver',
+  'Mercy Seeker','Hope Carrier','Love Servant','Peace Bearer','Joy Keeper','Faithful Student',
+  // 45–55: The Prayer Warrior
+  'Scripture Dweller','Psalm Singer','Prayer Warrior','Fast Keeper','Tithe Giver',
+  'Sabbath Keeper','Commandment Keeper','Beatitude Liver','Sermon Keeper','Altar Builder','Incense Burner',
+  // 56–66: The Servant
+  'Willing Servant','Foot Washer','Table Setter','Door Opener','Well Digger',
+  'Field Worker','Harvest Helper','Net Caster','Fisher of Men','Bread Breaker','Cup Bearer',
+  // 67–77: The Worshiper
+  'Praise Raiser','Worship Leader','Song Writer','Harp Player','Trumpet Sounder',
+  'Joyful Dancer','Choir Member','Voice of Praise','Joyful Noise Maker','Tabernacle Worshiper','Throne Room Visitor',
+  // 78–88: The Intercessor
+  'Intercessor','Night Watcher','Morning Seeker','Midnight Prayer','Persistent Asker',
+  'Bold Petitioner','Thankful Heart','Grateful Soul','Bowing Knee','Uplifted Hands','Burden Bearer',
+  // 89–99: The Peacemaker
+  'Peacemaker','Reconciler','Bridge Builder','Forgiver','Restorer',
+  'Healer of Wounds','Truth Speaker','Gentle Corrector','Wise Counselor','Trusted Advisor','Pure in Heart',
+  // 100–110: The Wise
+  'Centurion of Faith','Man of Wisdom','Woman of Wisdom','Understanding Heart','Discerning Spirit',
+  'Tested One','Refined by Fire','Gold Tried','Mountain Mover','Stone Turner','Ancient Wisdom',
+  // 111–121: The Herald
+  'Herald of Truth','Proclaimer','Good News Bearer','Evangelist','Sent One',
+  'Ambassador of Grace','Message Carrier','Faithful Witness','Testimony Speaker','Voice in the Desert','Crier at the Gates',
+  // 122–132: The Shepherd
+  'Shepherd in Training','Flock Keeper','Lost Sheep Finder','Pasture Guide','Still Waters Leader',
+  'Rod and Staff Holder','Anointed Shepherd','Valley Walker','Righteous Path Keeper','Green Pasture Dweller','Shadow Walker',
+  // 133–143: The Elder
+  'Elder in Training','Church Pillar','Wisdom Giver','Gray-Haired Guide','Council Member',
+  'Respected Voice','Seasoned Believer','Mature in Faith','Steady Oak','Ancient Path Walker','Stone of Remembrance',
+  // 144–154: The Overcomer
+  'Overcomer','Conqueror','More Than Conqueror','Giant Slayer','Valley Crosser',
+  'Shield of Faith Carrier','Sword of Spirit Wielder','Armor Bearer','Battle Tested','Victorious One','Champion of Truth',
+  // 155–165: The Anointed
+  'Anointed in Training','Oil Poured Out','Spirit Filled','Touched by the King','Set Apart Servant',
+  'Consecrated One','Holy Vessel','Purified Gold','Chosen Instrument','Sanctified Soul','Fragrant Offering',
+  // 166–176: The Chosen
+  'Chosen Generation','Royal Priesthood','Holy Nation','Special Treasure','Called by Name',
+  'Known by God','Written in the Book','Sealed by the Spirit','Marked for Glory','Destined One','Elect of God',
+  // 177–187: The Called
+  'Called to Purpose','Sent with Power','Gifted for Service','Equipped Saint','Furnished Fully',
+  'Ready Worker','Able Servant','Approved Worker','Faithful Steward','Wise Servant','Entrusted with Much',
+  // 188–198: The Light Bearer
+  'Salt of the Earth','Light of the World','City Set High','Lamp on a Stand','Bright Shining Light',
+  'Lighthouse Keeper','Torch Bearer','Star in the Night','Daybreak Bringer','Morning Star Follower','Illuminated One',
+  // 199–209: The Fruit Bearer
+  'Fruit Bearer','Good Tree','Root in Good Soil','Abundant Harvest','Vine Branch Abider',
+  'Pruned for More','Love Fruit','Joy Fruit','Peace Fruit','Faithfulness Fruit','Self-Control Keeper',
+  // 210–220: The Vine Dweller
+  'Vine Dweller','Branch in the Vine','Connected to Source','Living Water Carrier','Wellspring of Life',
+  'Flowing River','Spring Never Dry','Fountain of Truth','Deep Well Digger','Cistern Builder','Water of Life Keeper',
+  // 221–231: The Temple
+  'Living Temple','Holy of Holies Seeker','Mercy Seat Kneeler','Tabernacle Builder','Foundation Layer',
+  'Cornerstone Placer','Pillar of the Church','Doorkeeper of the House','Court Dweller','Inner Court Keeper','Veil Passer',
+  // 232–242: The Holy One
+  'Wholly Holy','Set-Apart One','Blameless Walker','Spotless Lamb','White Robe Wearer',
+  'Clean Hands Lifter','Pure Heart Keeper','Overcoming Sin','Holy Life Liver','Consecrated Vessel','Firstfruit Offering',
+  // 243–253: The Prophet
+  'Prophetic Voice','Seer','Dream Interpreter','Vision Receiver','Word of the Lord Carrier',
+  'Watchman on the Wall','Trumpet to the Nations','Burden Bearer for the Lost','Intercessory Prophet',"Thus Says the Lord",'Heaven\'s Mouthpiece',
+  // 254–264: The Apostle
+  'Sent Apostle','Church Planter','Kingdom Expander','Gospel Pioneer','Mission Carrier',
+  'World Changer','Culture Shaker','Kingdom Bringer','Breakthrough Carrier','Signs and Wonders Walker','Apostolic Father',
+  // 265–275: The Saint
+  'Enrolled Saint','Numbered Among the Holy','Washed in the Blood','Justified Fully','Adopted Child of the King',
+  'Heir of the Kingdom','Fellow Citizen','Household of God','Crown of Life Awaiter','Eternal Inheritance Holder','Glorified in Christ',
+  // 276–286: The Pillar
+  'Pillar of Faith','Unshakeable One','Deep Root Grower','Storm Survivor','Flood Walker',
+  'Fire Resistant','Tested and Approved','Iron Sharpener','Solid Rock Stander','Immovable Mountain','Foundation of Ages',
+  // 287–297: The Crown Wearer
+  'Crown Wearer','Victor\'s Wreath Holder','Crown of Righteousness','Crown of Life Keeper','Crown of Glory',
+  'Incorruptible Crown','Many Crowns','Diadem of Beauty','Jewel in the Crown','Glorious Diadem','Wreath of Eternity',
+  // 298–308: The Living Stone
+  'Living Stone','Spiritual House Builder','Chosen Stone','Precious Cornerstone','Tried Foundation',
+  'Sure Footing','Eternal Rock','Cleft of the Rock Hider','Stone of Help','Ebenezer Setter','Rock of Salvation',
+  // 309–319: The Eternal Flame
+  'Eternal Flame','Unquenchable Fire','Burning Bush Witness','Pillar of Fire Follower','Spirit Fire Receiver',
+  'Refiner\'s Fire Survivor','Burning Heart','Zeal for the House','Consuming Fire Dweller','Living Flame','Firebrand of Righteousness',
+  // 320–330: The Righteous
+  'Righteous One','Just and True','Upright in Heart','Blameless Path Walker','Perfect in His Sight',
+  'Counted as Righteous','Righteousness of God','Living Right','True to the Word','Ancient of Days Follower','Eternal Righteousness',
+  // 331–333: Legendary
+  'The Anointed','The Chosen One','The Light of the World'
+];
+function xpForLevel(n){ if(n<=1) return 0; return Math.round(100*Math.pow(n-1,1.4)); }
+const XP_PER_LEVEL=120; // kept for legacy compatibility
 const XP_RESET_VERSION=1;
 const REMATCH_RESPONSE_MS=20000;
 const WIN_VERSES=[
@@ -46917,8 +47011,28 @@ function pullProfile(){
   }).catch(()=>null);
 }
 function lvl(xp){
-  const x=xp||0, lv=Math.floor(x/XP_PER_LEVEL)+1, idx=Math.min(lv-1,LEVELS.length-1);
-  return{ lv, name:LEVELS[idx], pct:((x%XP_PER_LEVEL)/XP_PER_LEVEL*100).toFixed(1), xp:x };
+  const x=Math.max(0,xp||0);
+  const max=LEVEL_NAMES.length;
+  // Binary search for highest level whose threshold <= x
+  let lo=1,hi=max;
+  while(lo<hi){ const mid=Math.floor((lo+hi+1)/2); if(xpForLevel(mid)<=x) lo=mid; else hi=mid-1; }
+  const lv=lo;
+  const curXP=xpForLevel(lv);
+  const nextXP=xpForLevel(lv+1);
+  const pct=lv>=max?100:((x-curXP)/(nextXP-curXP)*100).toFixed(1);
+  const name=LEVEL_NAMES[lv-1]||LEVEL_NAMES[max-1];
+  return{lv,name,pct,xp:x,curXP,nextXP};
+}
+function baseXpForDiff(){
+  const d=G.diff||'medium';
+  return d==='easy'?10:d==='hard'?25:15;
+}
+function modeXpMult(){
+  const s=G.sub;
+  if(s==='truefalse') return 0.8;
+  if(s==='verse') return 1.2;
+  if(s==='lightning') return 0.5;
+  return 1.0;
 }
 function addXP(n){
   if(!G.profile)return;
@@ -46953,8 +47067,8 @@ function xpMultForStreak(streak){
 function awardAnswerXPForPlayer(playerName,anchorEl){
   if(!canAwardAnswerXP(playerName)) return;
   const streak=G.streaks[playerName]||0;
-  const base=10;
-  const xp=Math.round(base*xpMultForStreak(streak));
+  const base=baseXpForDiff();
+  const xp=Math.round(base*modeXpMult()*xpMultForStreak(streak));
   if(anchorEl) floatScore(anchorEl,'+'+xp);
   addXP(xp);
   if(G.profile){
@@ -48428,8 +48542,17 @@ function endGame(){
           G.profile.dailyStreak = 1;
         }
         G.profile.lastDaily = today;
-        addXP(100); // Daily bonus
-        toast(`☀️ Daily Challenge Complete! +100 XP`);
+        // Score-based completion bonus (per-correct XP was already awarded during the game)
+        const pName = G.players[0]?.name || G.profile.name;
+        const score = G.scores[pName] || 0;
+        const diff = G.diff || 'medium';
+        const perQ = diff === 'easy' ? 5 : diff === 'hard' ? 15 : 10;
+        const completionBonus = 50 + score * perQ;
+        const streakBonus = Math.min((G.profile.dailyStreak - 1) * 5, 50);
+        const totalBonus = completionBonus + streakBonus;
+        addXP(totalBonus);
+        const streakMsg = streakBonus > 0 ? ` 🔥 ${G.profile.dailyStreak}-day streak +${streakBonus}` : '';
+        toast(`☀️ Daily Complete! ${score}/10 correct · +${totalBonus} XP${streakMsg}`);
       }
 
       const wasSeasonal = G._seasonalMode;
@@ -50542,11 +50665,12 @@ function renderProfile(){
   const p=G.profile, l=lvl(p.xp||0);
   setAvatarEl(document.getElementById('prof-av'),p.avatar,p.photo);
   document.getElementById('prof-name').textContent=p.name;
-  document.getElementById('prof-level').textContent=l.name+' · Level '+l.lv;
+  document.getElementById('prof-level').textContent=l.name+' · Level '+l.lv+' / 333';
   const fill=document.getElementById('prof-xp-fill');
   fill.style.setProperty('--pct',l.pct+'%'); fill.style.width=l.pct+'%';
-  document.getElementById('prof-xp-cur').textContent=(p.xp||0)+' XP';
-  document.getElementById('prof-xp-nxt').textContent='next: '+(l.lv*XP_PER_LEVEL)+' XP';
+  document.getElementById('prof-xp-cur').textContent=(p.xp||0).toLocaleString()+' XP';
+  const xpToNext=l.lv>=LEVEL_NAMES.length?0:(l.nextXP-l.xp);
+  document.getElementById('prof-xp-nxt').textContent=l.lv>=LEVEL_NAMES.length?'⭐ MAX LEVEL':'next level: '+xpToNext.toLocaleString()+' XP';
   const played=p.played||0;
   const wins=p.wins||0;
   const winRate=played>0?Math.round((wins/played)*100):0;
