@@ -4610,8 +4610,21 @@ function playSeasonalQuestions(season){
     return seed / 233280;
   };
   
-  const shuffled = [...seasonQs].sort(() => seededRandom() - 0.5);
-  const pool = shuffled.slice(0, 10);
+  const shuffleSeeded = (arr) => [...arr].sort(() => seededRandom() - 0.5);
+  const total=10;
+  const mcqCount=Math.round(total*0.5);
+  const tfCount=Math.round(total*0.25);
+  const verseCount=total-mcqCount-tfCount;
+  const mcqPick=shuffleSeeded(seasonQs).slice(0,mcqCount);
+  const tfPick=shuffleSeeded(TF_Q).slice(0,tfCount).map((q,i)=>({_id:`seas-tf-${i}`,kind:'truefalse',q:q.q,a:!!q.a,e:q.e||'',cat:'True/False'}));
+  const versePick=shuffleSeeded(VERSE_Q).slice(0,verseCount).map((q,i)=>{
+    const blank=String(q.blank||'').trim();
+    const opts=(Array.isArray(q.o)?q.o:[]).map(o=>String(o||'').trim()).filter(Boolean);
+    if(blank&&!opts.some(o=>o.toLowerCase()===blank.toLowerCase())) opts.unshift(blank);
+    while(opts.length<4) opts.push('—');
+    return {_id:`seas-v-${i}`,kind:'verse',b:q.b||'',blank,a:q.a||'',r:q.r||'',o:opts.slice(0,4),cat:'Fill Verse'};
+  });
+  const pool=shuffleSeeded([...mcqPick,...tfPick,...versePick]).slice(0,total);
 
   if(!pool.length){ toast('No questions for this season'); return; }
   G.mode='practice'; G.sub='classic'; G._seasonalMode=true;
@@ -4766,8 +4779,25 @@ function getWeeklyTournamentInfo(){
 }
 function getWeeklyTournamentPool(){
   const {seed,category}=getWeeklyTournamentInfo();
-  const qs=(QB[category]||[]).map(q=>({...q,kind:'mcq',cat:category}));
-  return seededShuf(qs,seed).slice(0,Math.min(20,qs.length));
+  const mcqAll=(QB[category]||[]).map(q=>({...q,kind:'mcq',cat:category}));
+  const tfAll=TF_Q.map((q,i)=>({_id:`wt-tf-${i}`,kind:'truefalse',q:q.q,a:!!q.a,e:q.e||'',cat:'True/False'}));
+  const verseAll=VERSE_Q.map((q,i)=>{
+    const blank=String(q.blank||'').trim();
+    const opts=(Array.isArray(q.o)?q.o:[]).map(o=>String(o||'').trim()).filter(Boolean);
+    if(blank&&!opts.some(o=>o.toLowerCase()===blank.toLowerCase())) opts.unshift(blank);
+    while(opts.length<4) opts.push('—');
+    return {_id:`wt-v-${i}`,kind:'verse',b:q.b||'',blank,a:q.a||'',r:q.r||'',o:opts.slice(0,4),cat:'Fill Verse'};
+  });
+  const total=10;
+  const tfCount=Math.round(total*0.25);
+  const verseCount=Math.round(total*0.25);
+  const mcqCount=total-tfCount-verseCount;
+  const combined=[
+    ...seededShuf(mcqAll,seed).slice(0,mcqCount),
+    ...seededShuf(tfAll,seed+1).slice(0,tfCount),
+    ...seededShuf(verseAll,seed+2).slice(0,verseCount),
+  ];
+  return seededShuf(combined,seed+3);
 }
 function renderWeeklyTournament(){
   const banner=document.getElementById('weekly-tournament-banner');
