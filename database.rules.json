@@ -2,7 +2,7 @@
   "rules": {
 
     "players": {
-      ".read": false,
+      ".read": "auth != null",
       "$uid": {
         ".read": "$uid === auth.uid",
         ".write": "auth != null && $uid === auth.uid",
