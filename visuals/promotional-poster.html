@@ -1,0 +1,100 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Lamp - Promotional Poster</title>
+  <style>
+    :root { --bg: #1A1A20; --gold: #E0A860; --gold-soft: #f2c57a; --white: #f7f4ee; --muted: #A8A8A4; }
+    * { box-sizing: border-box; }
+    body {
+      margin: 0; min-height: 100vh; display: grid; place-items: center;
+      background: radial-gradient(circle at 50% 10%, rgba(224,168,96,0.18), transparent 28%), radial-gradient(circle at 50% 28%, rgba(224,168,96,0.1), transparent 36%), linear-gradient(180deg, #211d23 0%, var(--bg) 42%, #141419 100%);
+      font-family: Georgia, "Times New Roman", serif; color: var(--white);
+    }
+    .poster {
+      position: relative; width: 800px; height: 1200px; overflow: hidden;
+      background: radial-gradient(circle at 50% 16%, rgba(246,194,106,0.2), transparent 19%), radial-gradient(circle at 50% 18%, rgba(246,194,106,0.1), transparent 34%), linear-gradient(180deg, rgba(255,255,255,0.03), rgba(255,255,255,0)), var(--bg);
+      border: 1px solid rgba(224,168,96,0.18);
+      box-shadow: 0 40px 120px rgba(0,0,0,0.55), inset 0 0 80px rgba(255,255,255,0.02), inset 0 0 140px rgba(224,168,96,0.05);
+    }
+    .poster::before, .poster::after { content: ""; position: absolute; inset: 18px; pointer-events: none; border: 1px solid rgba(224,168,96,0.08); }
+    .poster::after { inset: 34px; border-color: rgba(255,255,255,0.04); }
+    .hero { position: relative; height: 45%; display: flex; align-items: center; justify-content: center; }
+    .rays, .rays::before, .rays::after { content: ""; position: absolute; left: 50%; top: 47%; transform: translate(-50%, -50%); border-radius: 50%; pointer-events: none; }
+    .rays {
+      width: 540px; height: 540px;
+      background: repeating-conic-gradient(from 0deg, rgba(224,168,96,0.22) 0deg 5deg, rgba(224,168,96,0) 5deg 16deg);
+      filter: blur(2px); opacity: 0.9;
+      mask: radial-gradient(circle, rgba(0,0,0,0.92) 0 18%, rgba(0,0,0,0.4) 48%, transparent 78%);
+      animation: pulse 5.5s ease-in-out infinite;
+    }
+    .rays::before { width: 410px; height: 410px; background: radial-gradient(circle, rgba(246,199,116,0.5), rgba(246,199,116,0.08) 46%, transparent 72%); filter: blur(10px); }
+    .rays::after { width: 220px; height: 220px; background: radial-gradient(circle, rgba(255,240,200,0.95), rgba(255,214,130,0.55) 35%, transparent 72%); filter: blur(14px); box-shadow: 0 0 45px rgba(255,215,140,0.75), 0 0 110px rgba(224,168,96,0.45); }
+    .lamp-wrap { position: relative; width: 360px; height: 360px; display: grid; place-items: center; filter: drop-shadow(0 0 14px rgba(255,216,132,0.45)) drop-shadow(0 0 32px rgba(224,168,96,0.42)) drop-shadow(0 0 70px rgba(224,168,96,0.2)); }
+    .lamp-wrap::before { content: ""; position: absolute; width: 300px; height: 110px; bottom: 56px; border-radius: 50%; background: radial-gradient(circle, rgba(224,168,96,0.32), transparent 70%); filter: blur(14px); }
+    .lamp { width: 320px; height: 320px; overflow: visible; }
+    .content { position: relative; z-index: 1; display: flex; flex-direction: column; align-items: center; text-align: center; padding: 10px 72px 0; }
+    .title { margin: 8px 0 0; font-size: 120px; line-height: 0.95; font-weight: 800; letter-spacing: 0.03em; color: var(--gold); text-shadow: 0 0 18px rgba(224,168,96,0.24), 0 4px 20px rgba(0,0,0,0.45); }
+    .subtitle { margin-top: 12px; font-family: "Trebuchet MS", "Segoe UI", sans-serif; font-size: 28px; line-height: 1.2; letter-spacing: 0.34em; text-transform: uppercase; color: var(--white); }
+    .divider { width: 280px; height: 2px; margin: 28px 0 30px; border: 0; background: linear-gradient(90deg, transparent, var(--gold), transparent); box-shadow: 0 0 14px rgba(224,168,96,0.35); }
+    .headline { margin: 0; font-family: "Trebuchet MS", "Segoe UI", sans-serif; font-size: 36px; line-height: 1.2; font-weight: 800; letter-spacing: 0.06em; text-transform: uppercase; color: var(--white); }
+    .subline { margin: 18px 0 0; max-width: 620px; font-family: "Trebuchet MS", "Segoe UI", sans-serif; font-size: 22px; line-height: 1.45; color: var(--muted); }
+    .badges { display: flex; gap: 18px; margin: 38px 0 0; flex-wrap: wrap; justify-content: center; }
+    .badge { padding: 12px 24px; border: 1.5px solid rgba(224,168,96,0.7); border-radius: 999px; background: rgba(255,255,255,0.02); color: var(--gold-soft); font-family: "Trebuchet MS", "Segoe UI", sans-serif; font-size: 18px; font-weight: 700; letter-spacing: 0.08em; text-transform: uppercase; }
+    .cta-wrap { position: absolute; left: 0; right: 0; bottom: 86px; display: flex; justify-content: center; padding: 0 72px; }
+    .cta { display: inline-flex; align-items: center; justify-content: center; min-width: 560px; min-height: 92px; padding: 20px 40px; border: 2px solid rgba(255,233,187,0.38); border-radius: 999px; background: linear-gradient(180deg, #f0c27d 0%, #d99b49 48%, #b9792a 100%); color: #23170c; font-family: "Trebuchet MS", "Segoe UI", sans-serif; font-size: 32px; font-weight: 800; text-decoration: none; box-shadow: 0 16px 34px rgba(0,0,0,0.4), 0 0 30px rgba(224,168,96,0.28), inset 0 1px 0 rgba(255,248,225,0.7); }
+    @keyframes pulse { 0%, 100% { transform: translate(-50%,-50%) scale(1); opacity: 0.82; } 50% { transform: translate(-50%,-50%) scale(1.04); opacity: 1; } }
+  </style>
+</head>
+<body>
+  <main class="poster" aria-label="Promotional poster for Lamp - Bible Trivia Online">
+    <section class="hero" aria-hidden="true">
+      <div class="rays"></div>
+      <div class="lamp-wrap">
+        <svg class="lamp" viewBox="0 0 320 320" fill="none" xmlns="http://www.w3.org/2000/svg">
+          <defs>
+            <linearGradient id="goldStroke" x1="35" y1="65" x2="280" y2="250" gradientUnits="userSpaceOnUse">
+              <stop stop-color="#FFE1A8"/><stop offset="0.45" stop-color="#E0A860"/><stop offset="1" stop-color="#8F5E27"/>
+            </linearGradient>
+            <linearGradient id="goldFill" x1="80" y1="110" x2="235" y2="250" gradientUnits="userSpaceOnUse">
+              <stop stop-color="#F7D69E"/><stop offset="0.48" stop-color="#D99B49"/><stop offset="1" stop-color="#8F5A25"/>
+            </linearGradient>
+            <radialGradient id="flameCore" cx="0" cy="0" r="1" gradientUnits="userSpaceOnUse" gradientTransform="translate(162 84) rotate(90) scale(72 40)">
+              <stop stop-color="#FFF8D6"/><stop offset="0.38" stop-color="#FFD78A"/><stop offset="0.7" stop-color="#FFAF4E"/><stop offset="1" stop-color="#FF7D1A"/>
+            </radialGradient>
+            <filter id="softGlow" x="-50%" y="-50%" width="200%" height="200%">
+              <feGaussianBlur stdDeviation="9" result="blur"/>
+              <feMerge><feMergeNode in="blur"/><feMergeNode in="SourceGraphic"/></feMerge>
+            </filter>
+          </defs>
+          <path d="M159 126C141 114 138 92 152 72C161 58 171 42 170 24C193 44 202 68 196 89C191 107 176 118 159 126Z" fill="url(#flameCore)" filter="url(#softGlow)"/>
+          <path d="M162 118C153 109 152 96 159 83C166 71 170 60 169 49C179 62 183 76 179 88C176 100 169 109 162 118Z" fill="#FFF6D8"/>
+          <path d="M72 189C73 164 93 144 118 144H197C227 144 252 165 254 194C255 220 234 241 208 242H105C84 242 67 224 68 202C68 197 69 193 72 189Z" fill="url(#goldFill)"/>
+          <path d="M102 146H198C228 146 252 167 254 195C255 220 234 242 208 242H105C84 242 67 224 68 202C68 169 87 146 102 146Z" stroke="url(#goldStroke)" stroke-width="9" stroke-linejoin="round"/>
+          <path d="M200 170C222 168 241 181 247 199C255 222 240 246 217 251" stroke="url(#goldStroke)" stroke-width="8" stroke-linecap="round"/>
+          <path d="M115 144C119 124 138 110 160 110C182 110 201 123 205 144" stroke="url(#goldStroke)" stroke-width="8" stroke-linecap="round"/>
+          <path d="M89 243H228" stroke="#6E451D" stroke-width="10" stroke-linecap="round" opacity="0.55"/>
+          <ellipse cx="156" cy="177" rx="26" ry="16" fill="#6A3F16" opacity="0.75"/>
+          <path d="M130 184C143 176 175 176 189 184" stroke="#FFE1A8" stroke-width="4" stroke-linecap="round" opacity="0.75"/>
+        </svg>
+      </div>
+    </section>
+    <section class="content">
+      <h1 class="title">LAMP</h1>
+      <div class="subtitle">Bible Trivia Online</div>
+      <hr class="divider">
+      <h2 class="headline">Ignite Your Bible Knowledge!</h2>
+      <p class="subline">Test your faith, sharpen your mind &mdash; play now!</p>
+      <div class="badges">
+        <div class="badge">Classic MCQ</div>
+        <div class="badge">True/False</div>
+        <div class="badge">Fill-in-Verse</div>
+      </div>
+    </section>
+    <div class="cta-wrap">
+      <a class="cta" href="https://thelampgame.com">Play Free at thelampgame.com</a>
+    </div>
+  </main>
+</body>
+</html>

@@ -1,0 +1,109 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Lamp - Bible Trivia Online Instagram Post</title>
+  <style>
+    :root {
+      --bg: #1A1A20;
+      --gold: #E0A860;
+      --gold-muted: #b88a4f;
+      --white: #ffffff;
+      --white-soft: rgba(255, 255, 255, 0.8);
+      --badge-bg: #23232b;
+    }
+    * { box-sizing: border-box; }
+    body {
+      margin: 0;
+      min-height: 100vh;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      background: #ffffff;
+      font-family: Georgia, "Times New Roman", serif;
+      padding: 24px;
+    }
+    .post {
+      position: relative;
+      width: 1080px;
+      height: 1080px;
+      background: var(--bg);
+      overflow: hidden;
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+      justify-content: space-between;
+      padding: 88px 72px 64px;
+    }
+    .glow {
+      position: absolute;
+      top: 64px;
+      left: 50%;
+      width: 520px;
+      height: 520px;
+      transform: translateX(-50%);
+      border-radius: 50%;
+      background: radial-gradient(circle, rgba(224, 168, 96, 0.34) 0%, rgba(224, 168, 96, 0.16) 28%, rgba(224, 168, 96, 0.06) 48%, rgba(26, 26, 32, 0) 72%);
+      filter: blur(8px);
+      pointer-events: none;
+    }
+    .top, .middle, .bottom {
+      position: relative;
+      z-index: 1;
+      width: 100%;
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+      text-align: center;
+    }
+    .top { min-height: 280px; justify-content: center; }
+    .lamp {
+      width: 176px;
+      height: 176px;
+      filter: drop-shadow(0 0 18px rgba(224, 168, 96, 0.65)) drop-shadow(0 0 42px rgba(224, 168, 96, 0.35));
+    }
+    .middle { gap: 22px; margin-top: -30px; }
+    h1 { margin: 0; color: var(--gold); font-size: 72px; line-height: 1.05; font-weight: 700; letter-spacing: -0.02em; }
+    .subhead { margin: 0; color: var(--white); font-size: 28px; line-height: 1.35; font-family: "Trebuchet MS", Arial, sans-serif; font-weight: 600; }
+    .detail { margin: 0; color: var(--white-soft); font-size: 24px; line-height: 1.35; font-family: "Trebuchet MS", Arial, sans-serif; font-weight: 500; }
+    .bottom { gap: 34px; }
+    .badges { display: flex; align-items: center; justify-content: center; gap: 18px; flex-wrap: wrap; }
+    .badge { padding: 16px 28px; border: 2px solid var(--gold); border-radius: 999px; background: var(--badge-bg); color: var(--gold); font-family: "Trebuchet MS", Arial, sans-serif; font-size: 26px; font-weight: 700; }
+    .footer { color: var(--gold-muted); font-size: 24px; letter-spacing: 0.08em; text-transform: lowercase; font-family: "Trebuchet MS", Arial, sans-serif; }
+  </style>
+</head>
+<body>
+  <div class="post">
+    <div class="glow" aria-hidden="true"></div>
+    <section class="top">
+      <svg class="lamp" viewBox="0 0 128 128" aria-label="Lamp icon" role="img">
+        <defs>
+          <linearGradient id="goldGradient" x1="0%" y1="0%" x2="0%" y2="100%">
+            <stop offset="0%" stop-color="#f4c885"></stop>
+            <stop offset="100%" stop-color="#d29143"></stop>
+          </linearGradient>
+        </defs>
+        <path fill="url(#goldGradient)" d="M70 13c8 4 14 12 15 22 1 6-1 13-5 18l-8 11c-2 3-3 6-3 10v2h6c6 0 11 5 11 11v2H42v-2c0-6 5-11 11-11h6v-2c0-4-1-7-3-10l-8-11c-4-5-6-12-5-18 1-10 7-18 15-22 4-2 8-3 12-3s8 1 12 3Z"></path>
+        <path fill="#f8e1b5" opacity="0.95" d="M64 22c8 0 15 6 17 14 1 5 0 10-3 14l-7 10c-3 4-4 9-4 14v2h-6v-2c0-5-1-10-4-14l-7-10c-3-4-4-9-3-14 2-8 9-14 17-14Z"></path>
+        <rect x="47" y="88" width="34" height="10" rx="5" fill="#c98333"></rect>
+        <path fill="#e0a860" d="M50 98h28l8 14c1 2 0 4-2 4H44c-2 0-3-2-2-4l8-14Z"></path>
+        <path fill="#fff2c5" opacity="0.9" d="M64 0c5 9 6 16 1 22-5-2-8-7-7-12 1-4 3-7 6-10Z"></path>
+      </svg>
+    </section>
+    <section class="middle">
+      <h1>Ignite Your Spirit.</h1>
+      <p class="subhead">Master 3,000+ questions in 6 epic modes.</p>
+      <p class="detail">Challenge the world in Ghost Race multiplayer.</p>
+    </section>
+    <section class="bottom">
+      <div class="badges" aria-label="Game modes">
+        <div class="badge">Classic</div>
+        <div class="badge">True/False</div>
+        <div class="badge">Fill-in-Verse</div>
+      </div>
+      <div class="footer">thelampgame.com</div>
+    </section>
+  </div>
+</body>
+</html>
