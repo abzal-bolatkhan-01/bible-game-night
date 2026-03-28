@@ -22,5 +22,8 @@ open('/tmp/game_script.js','w').write('\n'.join(scripts))
 " && node --check /tmp/game_script.js && echo "JS OK"
 ```
 
-## Context Budget
-~30 messages: update STATUS.md + CONTEXT.md, tell user to start fresh session.
+## Auto-Maintenance (no user prompting needed)
+- Update STATUS.md after every deploy, new feature, or fix — immediately, not at session end
+- Update memory files the moment new project info or user feedback is learned
+- Stop hook syncs STATUS.md → CONTEXT.md automatically
+- ~30 messages: update STATUS.md, suggest fresh session

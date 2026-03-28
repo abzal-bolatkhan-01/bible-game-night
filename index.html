@@ -47025,11 +47025,10 @@ async function createProfile(){
   const church=(document.getElementById('auth-church').value||'').trim();
 
   if (G.fbOk && G.db) {
-    const taken = await isNameTaken(name);
-    if (taken) {
-      toast('That name is already taken! Please choose another.');
-      return;
-    }
+    try {
+      const taken = await isNameTaken(name);
+      if (taken) { toast('That name is already taken! Please choose another.'); return; }
+    } catch(e) {}
   }
 
   G.profile={name,avatar:av,church,xp:0,wins:0,played:0,correct:0,bestStreak:0,achs:[],createdAt:Date.now(),
