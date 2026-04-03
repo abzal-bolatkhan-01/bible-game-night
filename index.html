@@ -50705,7 +50705,7 @@ function buildSettingsList(){
   const el=document.getElementById('settings-list'); if(!el)return; el.innerHTML='';
 
   // Toggles
-  [{k:'sound',l:'🔔 Sound Effects'},{k:'hearts',l:'❤️ Hearts / Lives'}].forEach(o=>{
+  [{k:'sound',l:'🔔 Sound Effects'}].forEach(o=>{
     const row=document.createElement('div'); row.className='toggle-row';
     row.innerHTML=`<span class="toggle-lbl">${o.l}</span><button class="toggle-btn ${G.cfg[o.k]?'on':'off'}" id="stog-${o.k}" onclick="togGlobal('${o.k}')">${G.cfg[o.k]?'ON':'OFF'}</button>`;
     el.appendChild(row);
