@@ -47116,6 +47116,12 @@ function go(id){
   if(el) el.classList.add('active');
   const showNav=!GAME_SCREENS.includes(id)&&!!G.profile;
   document.getElementById('main-nav').style.display=showNav?'':'none';
+  // activate the matching bottom nav tab
+  const NAV_MAP={home:'nb-home',community:'nb-community',friends:'nb-friends',lobby:'nb-join',profile:'nb-profile'};
+  if(showNav && NAV_MAP[id]){
+    const nb=document.getElementById(NAV_MAP[id]);
+    if(nb) setNb(nb);
+  }
   // scroll to top of new screen
   const sc=el&&el.querySelector('.scroller');
   if(sc) sc.scrollTop=0;
@@ -47188,6 +47194,7 @@ function requestQuitGame(){
 function quitGame(){
   closeOv('ov-quit');
   stopTimers();
+  clearAutoAdvance();
   if(G.mode==='daily' && G._dailyPrevHearts!==null){
     G.cfg.hearts=!!G._dailyPrevHearts;
     G._dailyPrevHearts=null;
@@ -47865,7 +47872,7 @@ function answerQ(btn,isOk,q,order){
     const scoreEl=document.getElementById('g-score'); scoreEl.textContent=G.scores[p.name];
     const _tbadge=typeof getTranslationBadge==='function'?getTranslationBadge():'';
     const _ref=(FEATURES.verseRef&&q.r)?`<span class="fb-ref">— ${q.r}</span>`:'';
-    fb.className='fb ok'; fb.innerHTML=`<strong>✓ Correct!</strong> ${q.e}${_tbadge}${_ref}`;
+    fb.className='fb ok'; fb.innerHTML=`<strong>✓ Correct!</strong> ${q.e||''}${_tbadge}${_ref}`;
     sfx.correct(); haptic('correct');
     awardAnswerXPForPlayer(p.name,btn);
 
@@ -50698,7 +50705,7 @@ function buildSettingsList(){
   const el=document.getElementById('settings-list'); if(!el)return; el.innerHTML='';
 
   // Toggles
-  [{k:'sound',l:'🔔 Sound Effects'}].forEach(o=>{
+  [{k:'sound',l:'🔔 Sound Effects'},{k:'hearts',l:'❤️ Hearts / Lives'}].forEach(o=>{
     const row=document.createElement('div'); row.className='toggle-row';
     row.innerHTML=`<span class="toggle-lbl">${o.l}</span><button class="toggle-btn ${G.cfg[o.k]?'on':'off'}" id="stog-${o.k}" onclick="togGlobal('${o.k}')">${G.cfg[o.k]?'ON':'OFF'}</button>`;
     el.appendChild(row);
