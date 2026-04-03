@@ -2188,6 +2188,93 @@ body { background: var(--bg); color: var(--ink); }
   margin-bottom: 2px;
 }
 
+/* ─── HOME SCREEN REDESIGN v3 ─────────────────── */
+.home-hero-btn {
+  width: 100%;
+  padding: 26px 20px;
+  border-radius: 20px;
+  border: none;
+  background: linear-gradient(135deg, #9a6012 0%, #C4842A 50%, #E0A860 100%);
+  cursor: pointer;
+  text-align: center;
+  position: relative;
+  overflow: hidden;
+  margin-bottom: 12px;
+  box-shadow: 0 4px 20px rgba(196,132,42,.35);
+  -webkit-tap-highlight-color: transparent;
+}
+.home-hero-btn::before {
+  content: '';
+  position: absolute;
+  inset: 0;
+  background: radial-gradient(ellipse 70% 50% at 50% -10%, rgba(255,255,255,.18) 0%, transparent 60%);
+  pointer-events: none;
+}
+.home-hero-btn:active { transform: scale(.98); opacity: .9; }
+.home-streaks-grid {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  gap: 8px;
+  margin-bottom: 14px;
+}
+.home-streak-card {
+  padding: 14px 12px;
+  background: var(--card);
+  border-radius: 14px;
+  border: 1px solid rgba(0,0,0,.08);
+  text-align: center;
+}
+.home-streak-val {
+  font-family: 'Nunito', sans-serif;
+  font-size: 20px;
+  font-weight: 800;
+  color: var(--gold1);
+  line-height: 1.1;
+  margin-bottom: 2px;
+}
+.home-streak-lbl {
+  font-size: 10px;
+  color: var(--ink3);
+  text-transform: uppercase;
+  letter-spacing: .08em;
+  font-weight: 600;
+}
+.home-mode-grid {
+  display: grid;
+  grid-template-columns: 1fr 1fr 1fr;
+  gap: 8px;
+  margin-bottom: 14px;
+}
+.home-mode-card {
+  padding: 14px 6px;
+  border-radius: 14px;
+  background: var(--card);
+  border: 1px solid rgba(0,0,0,.08);
+  text-align: center;
+  cursor: pointer;
+  transition: all .15s;
+  -webkit-tap-highlight-color: transparent;
+}
+.home-mode-card:active { transform: scale(.96); opacity: .85; }
+.home-mode-title {
+  font-family: 'Nunito', sans-serif;
+  font-size: 11px;
+  font-weight: 700;
+  color: var(--ink);
+  margin-bottom: 2px;
+  display: block;
+}
+.home-mode-sub {
+  font-size: 10px;
+  color: var(--ink3);
+  display: block;
+}
+html[data-theme="dark"] .home-streak-card,
+html[data-theme="dark"] .home-mode-card {
+  background: rgba(255,255,255,.05);
+  border-color: rgba(255,255,255,.07);
+}
+
 /* ─── SMOOTH SCREEN TRANSITIONS ─────────────── */
 .screen.active {
   animation: scrIn .32s cubic-bezier(.22,1,.36,1) both;
@@ -3344,57 +3431,36 @@ html.feat-gameHeader .g-nm { font-weight: 800 !important; max-width: 100px; over
 
 <!-- ████████  HOME  ████████ -->
 <div class="screen active" id="s-home">
-  <div style="padding:14px 0 10px;flex-shrink:0;display:flex;align-items:center;gap:10px;">
-    <div style="flex:1;">
+  <!-- Compact header -->
+  <div style="padding:10px 0 8px;flex-shrink:0;display:flex;align-items:center;justify-content:space-between;gap:10px;">
+    <div style="flex:1;min-width:0;">
       <div class="home-greeting" id="home-greeting"></div>
-      <div class="h1" style="font-size:clamp(24px,6.5vw,38px);line-height:1.05;"><em>Lamp</em></div>
+      <div style="font-family:'Playfair Display',serif;font-size:22px;font-weight:700;color:var(--ink);line-height:1.1;"><em>Lamp</em></div>
     </div>
-    <!-- Animated oil lamp SVG icon -->
-    <div style="flex-shrink:0;animation:float 3.5s ease-in-out infinite;">
-      <svg width="52" height="56" viewBox="0 0 52 56" xmlns="http://www.w3.org/2000/svg">
+    <div style="flex-shrink:0;opacity:0.75;animation:float 3.5s ease-in-out infinite;">
+      <svg width="40" height="43" viewBox="0 0 52 56" xmlns="http://www.w3.org/2000/svg">
         <defs>
-          <radialGradient id="fl" cx="50%" cy="20%" r="70%">
-            <stop offset="0%" stop-color="#fff8e0"/>
-            <stop offset="40%" stop-color="#f0c040"/>
-            <stop offset="100%" stop-color="#c4880a" stop-opacity="0"/>
-          </radialGradient>
-          <radialGradient id="fg" cx="50%" cy="20%" r="60%">
-            <stop offset="0%" stop-color="#f0c040" stop-opacity="0.4"/>
-            <stop offset="100%" stop-color="#c4880a" stop-opacity="0"/>
-          </radialGradient>
-          <linearGradient id="lb" x1="0%" y1="0%" x2="100%" y2="100%">
-            <stop offset="0%" stop-color="#d4a050"/>
-            <stop offset="50%" stop-color="#c4880a"/>
-            <stop offset="100%" stop-color="#8a5c1a"/>
-          </linearGradient>
+          <radialGradient id="fl" cx="50%" cy="20%" r="70%"><stop offset="0%" stop-color="#fff8e0"/><stop offset="40%" stop-color="#f0c040"/><stop offset="100%" stop-color="#c4880a" stop-opacity="0"/></radialGradient>
+          <radialGradient id="fg" cx="50%" cy="20%" r="60%"><stop offset="0%" stop-color="#f0c040" stop-opacity="0.4"/><stop offset="100%" stop-color="#c4880a" stop-opacity="0"/></radialGradient>
+          <linearGradient id="lb" x1="0%" y1="0%" x2="100%" y2="100%"><stop offset="0%" stop-color="#d4a050"/><stop offset="50%" stop-color="#c4880a"/><stop offset="100%" stop-color="#8a5c1a"/></linearGradient>
         </defs>
-        <!-- Flame glow -->
         <ellipse cx="22" cy="10" rx="9" ry="11" fill="url(#fg)"/>
-        <!-- Flame -->
         <path d="M22 1 C22 1 15 8 15 14 C15 18 18 21 20 22 C19 18 19.5 14 22 11 C24.5 14 25 18 24 22 C26 21 29 18 29 14 C29 8 22 1 22 1Z" fill="url(#fl)"/>
-        <!-- Wick -->
         <line x1="22" y1="22" x2="22" y2="26" stroke="#3a1a04" stroke-width="1.2" stroke-linecap="round"/>
-        <!-- Spout -->
         <path d="M17 26 L14 30 Q12 32 16 33 L28 33 Q32 32 30 30 L27 26Z" fill="url(#lb)"/>
-        <!-- Lamp bowl -->
         <ellipse cx="26" cy="40" rx="18" ry="9" fill="url(#lb)" stroke="#8a5c1a" stroke-width="0.8"/>
-        <!-- Bowl rim -->
         <ellipse cx="26" cy="35" rx="16" ry="4" fill="url(#lb)" stroke="#8a5c1a" stroke-width="0.5"/>
-        <!-- Bowl opening -->
         <ellipse cx="26" cy="35" rx="12" ry="2.5" fill="#1a0e04" opacity="0.6"/>
-        <!-- Handle -->
         <path d="M44 38 Q50 36 49 42 Q48 48 43 46 Q46 44 45 42 Q44 39 44 38Z" fill="url(#lb)" stroke="#8a5c1a" stroke-width="0.6"/>
-        <!-- Shine -->
         <ellipse cx="22" cy="39" rx="5" ry="4" fill="white" opacity="0.06"/>
-        <!-- Base -->
         <ellipse cx="26" cy="49" rx="12" ry="3" fill="#5a3810" opacity="0.7"/>
         <rect x="20" y="48" width="12" height="4" rx="1" fill="#5a3810" opacity="0.5"/>
-        <!-- Cross detail -->
         <line x1="26" y1="37" x2="26" y2="43" stroke="#e8c060" stroke-width="0.5" opacity="0.2"/>
         <line x1="23" y1="40" x2="29" y2="40" stroke="#e8c060" stroke-width="0.5" opacity="0.2"/>
       </svg>
     </div>
   </div>
+
   <div class="scroller">
     <div id="home-profile-bar" style="display:none;"></div>
     <div id="home-last-played" style="display:none;" class="lp-card" onclick="resumeLastPlayed()"></div>
@@ -3406,18 +3472,27 @@ html.feat-gameHeader .g-nm { font-weight: 800 !important; max-width: 100px; over
       <div class="verse-card-ref" id="dv-ref"></div>
     </div>
 
-    <!-- Daily Challenge -->
-    <div class="card" style="margin-bottom:16px;padding:16px;display:flex;align-items:center;gap:15px;cursor:pointer;" onclick="startDailyChallenge()">
-        <div style="font-size:32px;">🔥</div>
-      <div style="flex:1;">
-        <div class="eyebrow" style="color:var(--gold1);">Daily Challenge</div>
-        <div style="font-family:'Playfair Display',serif;font-size:16px;color:var(--ink);">10 Trials</div>
-        <div id="daily-streak-info" style="font-size:11px;color:var(--ink3);margin-top:2px;">Streak: 0 days</div>
-        <div id="daily-topic-info"></div>
-      </div>
-      <div class="btn btn-gold btn-sm" style="width:auto;padding:8px 16px;">Start</div>
-    </div>
+    <!-- Hero CTA: Daily Challenge -->
+    <button class="home-hero-btn" onclick="startDailyChallenge()">
+      <div style="font-size:36px;margin-bottom:6px;position:relative;line-height:1;">🔥</div>
+      <div style="font-family:'Playfair Display',serif;font-size:20px;font-weight:700;color:#fff;position:relative;">Daily Challenge</div>
+      <div id="daily-streak-info" style="font-size:12px;color:rgba(255,255,255,0.65);margin-top:5px;position:relative;font-family:'Nunito',sans-serif;">Play today to build your streak</div>
+      <div id="daily-topic-info" style="position:relative;"></div>
+    </button>
 
+    <!-- Streak cards -->
+    <div class="home-streaks-grid">
+      <div class="home-streak-card">
+        <div style="font-size:22px;margin-bottom:4px;">🔥</div>
+        <div class="home-streak-val" id="home-streak-daily-val">0</div>
+        <div class="home-streak-lbl">Day Streak</div>
+      </div>
+      <div class="home-streak-card">
+        <div style="font-size:22px;margin-bottom:4px;">⭐</div>
+        <div class="home-streak-val" id="home-streak-weekly-val">0 / 7</div>
+        <div class="home-streak-lbl">Week Progress</div>
+      </div>
+    </div>
 
     <!-- Seasonal Event Banner -->
     <div id="seasonal-banner" class="card" style="margin-bottom:16px;padding:12px 16px;background:linear-gradient(135deg, rgba(56,189,248,0.1) 0%, transparent 100%);border:1px solid rgba(56,189,248,0.3);display:none;" onclick="startSeasonalEvent()">
@@ -3437,21 +3512,46 @@ html.feat-gameHeader .g-nm { font-weight: 800 !important; max-width: 100px; over
     <!-- Sunday Bible Bowl Banner -->
     <div id="sunday-bowl-banner" style="display:none;margin-bottom:16px;"></div>
 
-    <!-- Play Style -->
-    <div class="chips-wrap">
-      <div class="label" style="margin-bottom:10px;">Play Style</div>
-      <div class="ps-v3-wrap">
-        <button class="ps-mode-btn ps-v3-seg sel" data-mode="online" onclick="pickMode(this,'online')"><span style="font-size:25px;line-height:1;">🌐</span><br><span style="display:inline-block;margin-top:5px;">Online</span></button>
-        <button class="ps-mode-btn ps-v3-seg" data-mode="nearby" onclick="pickMode(this,'nearby')"><span style="font-size:25px;line-height:1;">📡</span><br><span style="display:inline-block;margin-top:5px;">Nearby</span></button>
-        <button class="ps-mode-btn ps-v3-seg" data-mode="local" onclick="pickMode(this,'local')"><span style="font-size:25px;line-height:1;">👥</span><br><span style="display:inline-block;margin-top:5px;">Pass & Play</span></button>
-        <button class="ps-mode-btn ps-v3-seg" data-mode="practice" onclick="pickMode(this,'practice')"><span style="font-size:25px;line-height:1;">🎓</span><br><span style="display:inline-block;margin-top:5px;">Practice</span></button>
-      </div>
-      <div class="ps-mode-desc" style="font-size:11px;color:var(--ink3);text-align:center;margin-top:8px;">✦ &nbsp;Compete with believers worldwide</div>
+    <!-- Challenges awaiting (home version) -->
+    <div id="home-challenges-section" style="display:none;margin-bottom:14px;">
+      <div class="eyebrow" style="color:var(--gold1);margin-bottom:8px;font-size:11px;">⚡ Challenges Awaiting</div>
+      <div id="home-challenges-list"></div>
     </div>
 
-    <button class="btn btn-gold" onclick="onPlay()" style="margin-bottom:8px;">
-      ▶ Play
-    </button>
+    <!-- Other ways to play -->
+    <div class="eyebrow" style="color:var(--ink3);font-size:10px;margin-bottom:8px;letter-spacing:.1em;">Other ways to play</div>
+    <div class="home-mode-grid">
+      <button class="home-mode-card" onclick="playMode('online')">
+        <div style="font-size:22px;margin-bottom:4px;">🌐</div>
+        <div class="home-mode-title">Online</div>
+        <div class="home-mode-sub">2–6 players</div>
+      </button>
+      <button class="home-mode-card" onclick="playMode('local')">
+        <div style="font-size:22px;margin-bottom:4px;">👥</div>
+        <div class="home-mode-title">Pass &amp; Play</div>
+        <div class="home-mode-sub">Local battle</div>
+      </button>
+      <button class="home-mode-card" onclick="playMode('practice')">
+        <div style="font-size:22px;margin-bottom:4px;">🎓</div>
+        <div class="home-mode-title">Practice</div>
+        <div class="home-mode-sub">Solo mode</div>
+      </button>
+    </div>
+
+    <!-- Hidden mode picker (required for pickMode() JS internals) -->
+    <div style="display:none;" aria-hidden="true">
+      <div class="chips-wrap">
+        <div class="ps-v3-wrap">
+          <button class="ps-mode-btn ps-v3-seg sel" data-mode="online" onclick="pickMode(this,'online')"><span>🌐</span><br>Online</button>
+          <button class="ps-mode-btn ps-v3-seg" data-mode="nearby" onclick="pickMode(this,'nearby')"><span>📡</span><br>Nearby</button>
+          <button class="ps-mode-btn ps-v3-seg" data-mode="local" onclick="pickMode(this,'local')"><span>👥</span><br>Pass &amp; Play</button>
+          <button class="ps-mode-btn ps-v3-seg" data-mode="practice" onclick="pickMode(this,'practice')"><span>🎓</span><br>Practice</button>
+        </div>
+        <div class="ps-mode-desc" style="font-size:11px;color:var(--ink3);text-align:center;margin-top:8px;">✦ &nbsp;Compete with believers worldwide</div>
+      </div>
+      <button class="btn btn-gold" id="home-play-hidden-btn" onclick="onPlay()" style="margin-bottom:8px;">▶ Play</button>
+    </div>
+
     <button class="btn btn-ghost btn-sm" onclick="go('friends');switchSocialTab('friends');setTimeout(()=>document.getElementById('friends-screen-code-inp')&&document.getElementById('friends-screen-code-inp').focus(),200)" style="margin-bottom:8px;background:rgba(201,145,13,.08);border:1.5px solid rgba(201,145,13,.3);color:var(--gold1);font-size:13px;">⚡ Challenge a Friend</button>
     <button class="btn btn-ghost btn-sm" onclick="go('donation')" style="font-size:12px;">❤️ Support This Ministry</button>
     <div style="text-align:center;padding:10px 0 4px;font-size:11px;color:var(--ink3);">
@@ -47126,7 +47226,7 @@ function go(id){
   const sc=el&&el.querySelector('.scroller');
   if(sc) sc.scrollTop=0;
   // hooks
-  if(id==='home'){ initGreeting(); renderDailyMeta(); renderLastPlayed(); renderWeeklyTournament(); renderSeasonalBanner(); }
+  if(id==='home'){ initGreeting(); renderDailyMeta(); renderLastPlayed(); renderWeeklyTournament(); renderSeasonalBanner(); renderHomeAsyncChallenges(); }
   if(id==='community') communityTab('rankings');
   if(id==='profile') renderProfile();
   if(id==='lobby') renderLobby();
@@ -51750,6 +51850,35 @@ function initGreeting(){
   renderSeasonalBanner();
   renderSundayBowl();
 }
+function playMode(mode){
+  const btn=document.querySelector('.ps-mode-btn[data-mode="'+mode+'"]');
+  if(btn) pickMode(btn,mode);
+  onPlay();
+}
+function renderHomeAsyncChallenges(){
+  const sec=document.getElementById('home-challenges-section');
+  const list=document.getElementById('home-challenges-list');
+  if(!sec||!list)return;
+  const all=G._pendingAsyncChallenges||{};
+  const now=Date.now();
+  const pending=Object.entries(all).filter(([,c])=>c&&c.status==='pending'&&c.expiresAt>now);
+  if(!pending.length){sec.style.display='none';return;}
+  sec.style.display='';
+  list.innerHTML=pending.map(([id,c])=>{
+    const timeLeft=Math.max(0,Math.floor((c.expiresAt-now)/3600000));
+    return '<div class="friend-row" style="margin-bottom:8px;border:1.5px solid rgba(201,145,13,.3);border-radius:14px;padding:10px 12px;background:linear-gradient(135deg,rgba(201,145,13,.08) 0%,transparent 100%);">'+
+      '<div class="friend-av">'+avatarMarkup(c.fromAvatar||'😊',c.fromPhoto||'','md')+'</div>'+
+      '<div class="friend-info">'+
+        '<div class="friend-name" style="font-size:13px;font-weight:700;">⚡ '+escHtml(c.fromName||'Challenger')+'</div>'+
+        '<div class="friend-xp" style="font-size:11px;">'+timeLeft+'h left · Score: '+c.fromScore+'/'+c.fromTotal+'</div>'+
+      '</div>'+
+      '<div class="friend-actions">'+
+        '<button class="friend-btn friend-btn-chat" style="background:var(--gold1);color:#fff;font-size:10px;letter-spacing:.02em;" onclick="acceptGhostChallenge(\''+id+'\')">Accept →</button>'+
+        '<button class="friend-btn friend-btn-decline" onclick="declineGhostChallenge(\''+id+'\')">✕</button>'+
+      '</div>'+
+    '</div>';
+  }).join('');
+}
 function updateDailyStreak(){
   const el=document.getElementById('daily-streak-info');
   if(!el||!G.profile) return;
@@ -51769,6 +51898,10 @@ function updateDailyStreak(){
   el.style.color=streak>0?'var(--gold1)':'var(--ink3)';
   el.style.fontSize=streak>0?'13px':'11px';
   el.style.fontWeight=streak>0?'700':'400';
+  const dailyCard=document.getElementById('home-streak-daily-val');
+  if(dailyCard) dailyCard.textContent=streak;
+  const weekCard=document.getElementById('home-streak-weekly-val');
+  if(weekCard) weekCard.textContent=Math.min(streak,7)+' / 7';
 }
 
 /* ══════════════════════════════════════════════════
