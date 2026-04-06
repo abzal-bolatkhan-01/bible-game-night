@@ -1,0 +1,34986 @@
+const QB={
+  "Genesis": [
+    {
+      "q": "In the beginning, what did God create first?",
+      "o": [
+        "Man",
+        "The heavens and the earth",
+        "The sun and moon",
+        "Animals"
+      ],
+      "a": 1,
+      "e": "Genesis 1:1 — In the beginning God created the heavens and the earth.",
+      "d": "easy"
+    },
+    {
+      "q": "On which day did God create light?",
+      "o": [
+        "Day 1",
+        "Day 2",
+        "Day 3",
+        "Day 4"
+      ],
+      "a": 0,
+      "e": "Genesis 1:3-5 — God said, 'Let there be light,' on the first day.",
+      "d": "easy"
+    },
+    {
+      "q": "What did God call the expanse that separated the waters from the waters?",
+      "o": [
+        "Sea",
+        "Sky (Heaven)",
+        "Cloud",
+        "Void"
+      ],
+      "a": 1,
+      "e": "Genesis 1:8 — And God called the expanse Heaven.",
+      "d": "medium"
+    },
+    {
+      "q": "On which day were the sun, moon, and stars created?",
+      "o": [
+        "Day 3",
+        "Day 4",
+        "Day 5",
+        "Day 6"
+      ],
+      "a": 1,
+      "e": "Genesis 1:14-19 — God made the lights in the expanse of the heavens on the fourth day.",
+      "d": "medium"
+    },
+    {
+      "q": "What was the first command God gave to humans?",
+      "o": [
+        "Do not eat the fruit",
+        "Be fruitful and multiply",
+        "Build an altar",
+        "Name the animals"
+      ],
+      "a": 1,
+      "e": "Genesis 1:28 — God blessed them and said, 'Be fruitful and increase in number.'",
+      "d": "medium"
+    },
+    {
+      "q": "What did God use to form the first man?",
+      "o": [
+        "Dust of the ground",
+        "Rib of an angel",
+        "Water and clay",
+        "Breath of life alone"
+      ],
+      "a": 0,
+      "e": "Genesis 2:7 — Then the LORD God formed a man from the dust of the ground.",
+      "d": "easy"
+    },
+    {
+      "q": "Where did God plant a garden for the man to live?",
+      "o": [
+        "Zion",
+        "Sinai",
+        "Eden",
+        "Havilah"
+      ],
+      "a": 2,
+      "e": "Genesis 2:8 — Now the LORD God had planted a garden in the east, in Eden.",
+      "d": "easy"
+    },
+    {
+      "q": "Which two specific trees were in the middle of the Garden of Eden?",
+      "o": [
+        "The tree of knowledge and the tree of wisdom",
+        "The tree of life and the tree of knowledge of good and evil",
+        "The tree of peace and the tree of life",
+        "The tree of truth and the tree of lies"
+      ],
+      "a": 1,
+      "e": "Genesis 2:9 — In the middle of the garden were the tree of life and the tree of the knowledge of good and evil.",
+      "d": "medium"
+    },
+    {
+      "q": "What river flowed out of Eden to water the garden and then separated into four headwaters?",
+      "o": [
+        "Nile",
+        "Jordan",
+        "Euphrates",
+        "No name given for the main river"
+      ],
+      "a": 3,
+      "e": "Genesis 2:10 — A river watering the garden flowed from Eden; from there it was separated into four headwaters.",
+      "d": "hard"
+    },
+    {
+      "q": "What was the name of the third river mentioned in Genesis 2, which flows east of Asshur?",
+      "o": [
+        "Pishon",
+        "Gihon",
+        "Tigris (Hiddekel)",
+        "Euphrates"
+      ],
+      "a": 2,
+      "e": "Genesis 2:14 — The name of the third river is the Tigris; it runs along the east side of Ashur.",
+      "d": "hard"
+    },
+    {
+      "q": "What did Adam name his wife because she would be the mother of all living?",
+      "o": [
+        "Sarah",
+        "Eve",
+        "Mary",
+        "Adah"
+      ],
+      "a": 1,
+      "e": "Genesis 3:20 — Adam named his wife Eve, because she would be the mother of all the living.",
+      "d": "easy"
+    },
+    {
+      "q": "What did God use to make garments for Adam and Eve after they sinned?",
+      "o": [
+        "Fig leaves",
+        "Skins of animals",
+        "Wool",
+        "Linen"
+      ],
+      "a": 1,
+      "e": "Genesis 3:21 — The LORD God made garments of skin for Adam and his wife and clothed them.",
+      "d": "medium"
+    },
+    {
+      "q": "Who was the first son born to Adam and Eve?",
+      "o": [
+        "Abel",
+        "Seth",
+        "Cain",
+        "Enosh"
+      ],
+      "a": 2,
+      "e": "Genesis 4:1 — Adam made love to his wife Eve, and she became pregnant and gave birth to Cain.",
+      "d": "easy"
+    },
+    {
+      "q": "What was Abel's occupation?",
+      "o": [
+        "Farmer",
+        "Shepherd",
+        "Hunter",
+        "Carpenter"
+      ],
+      "a": 1,
+      "e": "Genesis 4:2 — Now Abel kept flocks, and Cain worked the soil.",
+      "d": "medium"
+    },
+    {
+      "q": "Why did Cain kill Abel?",
+      "o": [
+        "Abel stole his inheritance",
+        "God favored Abel's sacrifice over Cain's",
+        "Cain wanted to be the only son",
+        "Abel insulted Cain's wife"
+      ],
+      "a": 1,
+      "e": "Genesis 4:3-8 — Cain was angry because the LORD looked with favor on Abel and his offering, but on Cain and his offering he did not look with favor.",
+      "d": "easy"
+    },
+    {
+      "q": "What was the name of the son born to Adam and Eve after Abel's death, to replace him?",
+      "o": [
+        "Enosh",
+        "Seth",
+        "Enoch",
+        "Lamech"
+      ],
+      "a": 1,
+      "e": "Genesis 4:25 — Eve gave birth to a son and named him Seth, saying, 'God has granted me another child in place of Abel.'",
+      "d": "medium"
+    },
+    {
+      "q": "How old was Methuselah when he died?",
+      "o": [
+        "930",
+        "950",
+        "969",
+        "999"
+      ],
+      "a": 2,
+      "e": "Genesis 5:27 — Altogether, Methuselah lived a total of 969 years, and then he died.",
+      "d": "easy"
+    },
+    {
+      "q": "Which descendant of Seth 'walked faithfully with God; then he was no more, because God took him away'?",
+      "o": [
+        "Enoch",
+        "Noah",
+        "Jared",
+        "Mahalalel"
+      ],
+      "a": 0,
+      "e": "Genesis 5:24 — Enoch walked faithfully with God; then he was no more, because God took him away.",
+      "d": "medium"
+    },
+    {
+      "q": "Who were the three sons of Noah?",
+      "o": [
+        "Cain, Abel, and Seth",
+        "Shem, Ham, and Japheth",
+        "Abraham, Isaac, and Jacob",
+        "Reuben, Simeon, and Levi"
+      ],
+      "a": 1,
+      "e": "Genesis 6:10 — Noah had three sons: Shem, Ham and Japheth.",
+      "d": "easy"
+    },
+    {
+      "q": "What did God instruct Noah to use to seal the ark, both inside and out?",
+      "o": [
+        "Mud",
+        "Pitch",
+        "Wax",
+        "Sap"
+      ],
+      "a": 1,
+      "e": "Genesis 6:14 — So make yourself an ark of cypress wood; make rooms in it and coat it with pitch inside and out.",
+      "d": "medium"
+    },
+    {
+      "q": "How many of each kind of 'clean' animal was Noah told to take onto the ark?",
+      "o": [
+        "Two",
+        "Seven pairs",
+        "Ten",
+        "Twelve"
+      ],
+      "a": 1,
+      "e": "Genesis 7:2 — Take with you seven pairs of every kind of clean animal.",
+      "d": "medium"
+    },
+    {
+      "q": "How many days and nights did it rain during the Great Flood?",
+      "o": [
+        "7",
+        "12",
+        "40",
+        "150"
+      ],
+      "a": 2,
+      "e": "Genesis 7:12 — And rain fell on the earth forty days and forty nights.",
+      "d": "easy"
+    },
+    {
+      "q": "How old was Noah when the floodwaters came on the earth?",
+      "o": [
+        "100",
+        "500",
+        "600",
+        "950"
+      ],
+      "a": 2,
+      "e": "Genesis 7:6 — Noah was six hundred years old when the floodwaters came on the earth.",
+      "d": "medium"
+    },
+    {
+      "q": "On which mountains did the ark come to rest after the flood?",
+      "o": [
+        "Sinai",
+        "Ararat",
+        "Nebo",
+        "Zion"
+      ],
+      "a": 1,
+      "e": "Genesis 8:4 — and on the seventeenth day of the seventh month the ark came to rest on the mountains of Ararat.",
+      "d": "easy"
+    },
+    {
+      "q": "What was the second bird Noah sent out to see if the water had receded?",
+      "o": [
+        "Raven",
+        "Dove",
+        "Sparrow",
+        "Eagle"
+      ],
+      "a": 1,
+      "e": "Genesis 8:8 — Then he sent out a dove to see if the water had receded from the surface of the ground.",
+      "d": "easy"
+    },
+    {
+      "q": "What did the dove bring back to Noah, indicating that the waters had receded?",
+      "o": [
+        "A grape",
+        "A wheat stalk",
+        "A freshly plucked olive leaf",
+        "A twig of cedar"
+      ],
+      "a": 2,
+      "e": "Genesis 8:11 — When the dove returned to him in the evening, there in its bill was a freshly plucked olive leaf!",
+      "d": "easy"
+    },
+    {
+      "q": "What did Noah build immediately after leaving the ark?",
+      "o": [
+        "A house",
+        "A city",
+        "An altar to the LORD",
+        "A vineyard"
+      ],
+      "a": 2,
+      "e": "Genesis 8:20 — Then Noah built an altar to the LORD.",
+      "d": "medium"
+    },
+    {
+      "q": "What was the sign of the covenant God made with Noah to never destroy the earth with a flood again?",
+      "o": [
+        "A rainbow",
+        "A circumcision",
+        "A pillar of cloud",
+        "A burning bush"
+      ],
+      "a": 0,
+      "e": "Genesis 9:13 — I have set my rainbow in the clouds, and it will be the sign of the covenant between me and the earth.",
+      "d": "easy"
+    },
+    {
+      "q": "Which son of Noah was the father of Canaan and was cursed for seeing his father's nakedness?",
+      "o": [
+        "Shem",
+        "Ham",
+        "Japheth",
+        "Canaan himself"
+      ],
+      "a": 1,
+      "e": "Genesis 9:22-25 — Ham, the father of Canaan, saw his father's nakedness... cursed be Canaan!",
+      "d": "medium"
+    },
+    {
+      "q": "Who was described as a 'mighty hunter before the LORD'?",
+      "o": [
+        "Esau",
+        "Nimrod",
+        "Ishmael",
+        "Cain"
+      ],
+      "a": 1,
+      "e": "Genesis 10:9 — He was a mighty hunter before the LORD; that is why it is said, 'Like Nimrod, a mighty hunter before the LORD.'",
+      "d": "hard"
+    },
+    {
+      "q": "Where did the people try to build a tower that reached the heavens?",
+      "o": [
+        "Babel",
+        "Ur",
+        "Nineveh",
+        "Sodom"
+      ],
+      "a": 0,
+      "e": "Genesis 11:4-9 — They said, 'Come, let us build ourselves a city, with a tower that reaches to the heavens'... and the LORD confused the language of the whole world.",
+      "d": "easy"
+    },
+    {
+      "q": "What was Abraham's name before God changed it?",
+      "o": [
+        "Abimelek",
+        "Abram",
+        "Abner",
+        "Absalom"
+      ],
+      "a": 1,
+      "e": "Genesis 17:5 — No longer will you be called Abram; your name will be Abraham.",
+      "d": "easy"
+    },
+    {
+      "q": "From which city did Terah take Abram, Sarai, and Lot to go toward Canaan?",
+      "o": [
+        "Harun",
+        "Ur of the Chaldeans",
+        "Babylon",
+        "Nineveh"
+      ],
+      "a": 1,
+      "e": "Genesis 11:31 — Terah took his son Abram... from Ur of the Chaldeans to go to Canaan.",
+      "d": "medium"
+    },
+    {
+      "q": "How old was Abram when he left Haran to follow God's call?",
+      "o": [
+        "40",
+        "75",
+        "99",
+        "100"
+      ],
+      "a": 1,
+      "e": "Genesis 12:4 — Abram was seventy-five years old when he set out from Haran.",
+      "d": "medium"
+    },
+    {
+      "q": "To which country did Abram go when there was a famine in the land of Canaan?",
+      "o": [
+        "Egypt",
+        "Assyria",
+        "Babylonia",
+        "Moab"
+      ],
+      "a": 0,
+      "e": "Genesis 12:10 — Now there was a famine in the land, and Abram went down to Egypt to live there for a while.",
+      "d": "easy"
+    },
+    {
+      "q": "Who was Abram's nephew who traveled with him?",
+      "o": [
+        "Isaac",
+        "Lot",
+        "Ishmael",
+        "Jacob"
+      ],
+      "a": 1,
+      "e": "Genesis 12:5 — He took his wife Sarai, his nephew Lot... and they set out for the land of Canaan.",
+      "d": "easy"
+    },
+    {
+      "q": "Why did Abram and Lot separate their herds and move to different areas?",
+      "o": [
+        "They had a fight",
+        "Their possessions were so great that the land could not support them both",
+        "God told them to go separate ways",
+        "Lot wanted to go to Egypt"
+      ],
+      "a": 1,
+      "e": "Genesis 13:6 — But the land could not support them while they stayed together, for their possessions were so great that they were not able to stay together.",
+      "d": "medium"
+    },
+    {
+      "q": "Which city did Lot choose to live near after separating from Abram?",
+      "o": [
+        "Jericho",
+        "Sodom",
+        "Hebron",
+        "Salem"
+      ],
+      "a": 1,
+      "e": "Genesis 13:12 — Lot lived among the cities of the plain and pitched his tents near Sodom.",
+      "d": "easy"
+    },
+    {
+      "q": "Who was the King of Salem and Priest of God Most High who blessed Abram?",
+      "o": [
+        "Abimelek",
+        "Melchizedek",
+        "Chedorlaomer",
+        "Bera"
+      ],
+      "a": 1,
+      "e": "Genesis 14:18 — Then Melchizedek king of Salem brought out bread and wine. He was priest of God Most High.",
+      "d": "hard"
+    },
+    {
+      "q": "What percentage of the spoils did Abram give to Melchizedek?",
+      "o": [
+        "A tenth",
+        "A half",
+        "All of it",
+        "None"
+      ],
+      "a": 0,
+      "e": "Genesis 14:20 — Then Abram gave him a tenth of everything.",
+      "d": "medium"
+    },
+    {
+      "q": "What was the name of Abram's Egyptian servant who bore his first son?",
+      "o": [
+        "Hagar",
+        "Keturah",
+        "Zilpah",
+        "Bilhah"
+      ],
+      "a": 0,
+      "e": "Genesis 16:1-3 — So Sarai... took her Egyptian slave Hagar and gave her to her husband to be his wife.",
+      "d": "easy"
+    },
+    {
+      "q": "What was the name of Hagar's son?",
+      "o": [
+        "Isaac",
+        "Ishmael",
+        "Esau",
+        "Jacob"
+      ],
+      "a": 1,
+      "e": "Genesis 16:15 — So Hagar bore Abram a son, and Abram gave the name Ishmael to the son she had borne.",
+      "d": "easy"
+    },
+    {
+      "q": "What was the physical sign of the covenant God made with Abraham and his descendants?",
+      "o": [
+        "Sacrifice",
+        "Circumcision",
+        "A special robe",
+        "A marking on the forehead"
+      ],
+      "a": 1,
+      "e": "Genesis 17:10-11 — Every male among you shall be circumcised... it will be the sign of the covenant between me and you.",
+      "d": "medium"
+    },
+    {
+      "q": "What was Sarah's name before God changed it?",
+      "o": [
+        "Sarai",
+        "Sarene",
+        "Salome",
+        "Saphira"
+      ],
+      "a": 0,
+      "e": "Genesis 17:15 — God also said to Abraham, 'As for Sarai your wife, you are no longer to call her Sarai; her name will be Sarah.'",
+      "d": "easy"
+    },
+    {
+      "q": "What did Sarah do when she heard she would have a son in her old age?",
+      "o": [
+        "Cried",
+        "Laughed",
+        "Danced",
+        "Fainted"
+      ],
+      "a": 1,
+      "e": "Genesis 18:12 — So Sarah laughed to herself as she thought, 'After I am worn out and my lord is old, will I now have this pleasure?'",
+      "d": "easy"
+    },
+    {
+      "q": "How many righteous people did Abraham eventually ask God to find in Sodom to spare the city?",
+      "o": [
+        "50",
+        "30",
+        "20",
+        "10"
+      ],
+      "a": 3,
+      "e": "Genesis 18:32 — Then he said, 'May the Lord not be angry, but let me speak just once more. What if only ten can be found there?' He answered, 'For the sake of ten, I will not destroy it.'",
+      "d": "medium"
+    },
+    {
+      "q": "Who were the two daughters of Lot?",
+      "o": [
+        "Adah and Zillah",
+        "No names are given",
+        "Milcah and Iscah",
+        "Rachel and Leah"
+      ],
+      "a": 1,
+      "e": "Genesis 19:30 — Lot and his two daughters left Zoar... he and his two daughters lived in a cave.",
+      "d": "hard"
+    },
+    {
+      "q": "What did Lot's wife turn into when she looked back at Sodom?",
+      "o": [
+        "A stone",
+        "A pillar of salt",
+        "A tree",
+        "Dust"
+      ],
+      "a": 1,
+      "e": "Genesis 19:26 — But Lot's wife looked back, and she became a pillar of salt.",
+      "d": "easy"
+    },
+    {
+      "q": "Who were the ancestors of the Moabites and Ammonites?",
+      "o": [
+        "The sons of Ishmael",
+        "The sons of Lot",
+        "The sons of Esau",
+        "The sons of Laban"
+      ],
+      "a": 1,
+      "e": "Genesis 19:37-38 — The older daughter had a son, and she named him Moab... The younger daughter also had a son, and she named him Ben-Ammi (father of the Ammonites).",
+      "d": "hard"
+    },
+    {
+      "q": "Which king of Gerar took Sarah into his harem because Abraham said she was his sister?",
+      "o": [
+        "Pharaoh",
+        "Abimelek",
+        "Chedorlaomer",
+        "Sihon"
+      ],
+      "a": 1,
+      "e": "Genesis 20:2 — and Abraham said of his wife Sarah, 'She is my sister.' Then Abimelek king of Gerar sent for Sarah and took her.",
+      "d": "hard"
+    },
+    {
+      "q": "What does the name Isaac mean?",
+      "o": [
+        "God hears",
+        "He laughs",
+        "Gift of God",
+        "He who struggles"
+      ],
+      "a": 1,
+      "e": "Genesis 21:6 — Sarah said, 'God has brought me laughter, and everyone who hears about this will laugh with me.' (Isaac means 'he laughs')",
+      "d": "medium"
+    },
+    {
+      "q": "How old was Abraham when Isaac was born?",
+      "o": [
+        "75",
+        "90",
+        "99",
+        "100"
+      ],
+      "a": 3,
+      "e": "Genesis 21:5 — Abraham was a hundred years old when his son Isaac was born to him.",
+      "d": "easy"
+    },
+    {
+      "q": "In which desert did Hagar and Ishmael wander after being sent away by Abraham?",
+      "o": [
+        "Sinai",
+        "Beersheba",
+        "Zin",
+        "Paran"
+      ],
+      "a": 1,
+      "e": "Genesis 21:14 — She went on her way and wandered in the Desert of Beersheba.",
+      "d": "hard"
+    },
+    {
+      "q": "Where did God tell Abraham to go to sacrifice his son Isaac?",
+      "o": [
+        "Mount Sinai",
+        "Mount Zion",
+        "Region of Moriah",
+        "Mount Nebo"
+      ],
+      "a": 2,
+      "e": "Genesis 22:2 — Then God said, 'Take your son... and go to the region of Moriah. Sacrifice him there.'",
+      "d": "medium"
+    },
+    {
+      "q": "What did Abraham sacrifice instead of Isaac?",
+      "o": [
+        "A lamb",
+        "A ram caught in a thicket",
+        "A bull",
+        "A goat"
+      ],
+      "a": 1,
+      "e": "Genesis 22:13 — Abraham looked up and there in a thicket he saw a ram caught by its horns. He went over and took the ram and sacrificed it.",
+      "d": "easy"
+    },
+    {
+      "q": "What did Abraham name the place where he was about to sacrifice Isaac?",
+      "o": [
+        "Bethel",
+        "The LORD Will Provide (Jehovah Jireh)",
+        "Peniel",
+        "Beersheba"
+      ],
+      "a": 1,
+      "e": "Genesis 22:14 — So Abraham called that place The LORD Will Provide.",
+      "d": "medium"
+    },
+    {
+      "q": "How many years did Sarah live?",
+      "o": [
+        "110",
+        "120",
+        "127",
+        "175"
+      ],
+      "a": 2,
+      "e": "Genesis 23:1 — Sarah lived to be a hundred and twenty-seven years old.",
+      "d": "hard"
+    },
+    {
+      "q": "Where was Sarah buried?",
+      "o": [
+        "Ur",
+        "The cave of Machpelah",
+        "Bethel",
+        "Jerusalem"
+      ],
+      "a": 1,
+      "e": "Genesis 23:19 — Afterward Abraham buried his wife Sarah in the cave in the field of Machpelah near Mamre.",
+      "d": "medium"
+    },
+    {
+      "q": "Whom did Abraham send to find a wife for Isaac?",
+      "o": [
+        "Lot",
+        "Ishmael",
+        "His senior servant (Eliezer)",
+        "Jacob"
+      ],
+      "a": 2,
+      "e": "Genesis 24:2 — He said to the senior servant in his household... 'Go to my country and my own relatives and get a wife for my son Isaac.'",
+      "d": "medium"
+    },
+    {
+      "q": "Where did Abraham's servant find Rebekah?",
+      "o": [
+        "In a field",
+        "At a well",
+        "In a palace",
+        "At a market"
+      ],
+      "a": 1,
+      "e": "Genesis 24:11-15 — He had the camels kneel down near the well outside the town... before he had finished praying, Rebekah came out.",
+      "d": "easy"
+    },
+    {
+      "q": "Who was Rebekah's brother who welcomed Abraham's servant?",
+      "o": [
+        "Bethuel",
+        "Laban",
+        "Esau",
+        "Nahor"
+      ],
+      "a": 1,
+      "e": "Genesis 24:29 — Now Rebekah had a brother named Laban, and he hurried out to the man at the spring.",
+      "d": "medium"
+    },
+    {
+      "q": "Who was Isaac's wife?",
+      "o": [
+        "Sarah",
+        "Rebekah",
+        "Rachel",
+        "Leah"
+      ],
+      "a": 1,
+      "e": "Genesis 24:67 — Isaac brought her into the tent of his mother Sarah, and he married Rebekah.",
+      "d": "easy"
+    },
+    {
+      "q": "Abraham took another wife after Sarah's death. What was her name?",
+      "o": [
+        "Keturah",
+        "Hagar",
+        "Zilpah",
+        "Bilhah"
+      ],
+      "a": 0,
+      "e": "Genesis 25:1 — Abraham had taken another wife, whose name was Keturah.",
+      "d": "hard"
+    },
+    {
+      "q": "How old was Abraham when he died?",
+      "o": [
+        "120",
+        "147",
+        "175",
+        "180"
+      ],
+      "a": 2,
+      "e": "Genesis 25:7 — Abraham lived a total of a hundred and seventy-five years.",
+      "d": "medium"
+    },
+    {
+      "q": "Who were the twin sons of Isaac and Rebekah?",
+      "o": [
+        "Cain and Abel",
+        "Jacob and Esau",
+        "Ephraim and Manasseh",
+        "Pharez and Zerah"
+      ],
+      "a": 1,
+      "e": "Genesis 25:24-26 — When the time came for her to give birth, there were twin boys in her womb... The first to come out was red... after this, his brother came out.",
+      "d": "easy"
+    },
+    {
+      "q": "What did Esau sell to Jacob for some lentil stew?",
+      "o": [
+        "His inheritance",
+        "His birthright",
+        "His favorite bow",
+        "His wife"
+      ],
+      "a": 1,
+      "e": "Genesis 25:31-34 — Jacob replied, 'First sell me your birthright.' ... So he swore an oath to him, selling his birthright to Jacob.",
+      "d": "easy"
+    },
+    {
+      "q": "Which son did Isaac favor because he liked to eat wild game?",
+      "o": [
+        "Jacob",
+        "Esau",
+        "Ishmael",
+        "Joseph"
+      ],
+      "a": 1,
+      "e": "Genesis 25:28 — Isaac, who had a taste for wild game, loved Esau, but Rebekah loved Jacob.",
+      "d": "medium"
+    },
+    {
+      "q": "How did Jacob deceive his father Isaac to get the blessing?",
+      "o": [
+        "He wore Esau's clothes and put goat skins on his hands",
+        "He disguised his voice",
+        "He bribed his father",
+        "He told a flat-out lie without a disguise"
+      ],
+      "a": 0,
+      "e": "Genesis 27:15-16 — Then Rebekah took the best clothes of Esau... She also covered his hands and the smooth part of his neck with the goat skins.",
+      "d": "easy"
+    },
+    {
+      "q": "To where did Jacob flee to escape Esau's anger?",
+      "o": [
+        "Egypt",
+        "Haran",
+        "Sodom",
+        "Ur"
+      ],
+      "a": 1,
+      "e": "Genesis 27:43 — Now then, my son, do what I say: Flee at once to my brother Laban in Haran.",
+      "d": "medium"
+    },
+    {
+      "q": "What did Jacob see in his dream at Bethel?",
+      "o": [
+        "A burning bush",
+        "A stairway (ladder) reaching to heaven",
+        "A chariot of fire",
+        "Twelve stars bowing"
+      ],
+      "a": 1,
+      "e": "Genesis 28:12 — He had a dream in which he saw a stairway resting on the earth, with its top reaching to heaven.",
+      "d": "easy"
+    },
+    {
+      "q": "What did Jacob name the place where he had the dream of the ladder?",
+      "o": [
+        "Peniel",
+        "Bethel",
+        "Beersheba",
+        "Hebron"
+      ],
+      "a": 1,
+      "e": "Genesis 28:19 — He called that place Bethel, though the city used to be called Luz.",
+      "d": "easy"
+    },
+    {
+      "q": "Who were Laban's two daughters?",
+      "o": [
+        "Adah and Zillah",
+        "Leah and Rachel",
+        "Bilhah and Zilpah",
+        "Milcah and Iscah"
+      ],
+      "a": 1,
+      "e": "Genesis 29:16 — Now Laban had two daughters; the name of the older was Leah, and the name of the younger was Rachel.",
+      "d": "easy"
+    },
+    {
+      "q": "How many years did Jacob serve Laban for Rachel the first time?",
+      "o": [
+        "3",
+        "7",
+        "10",
+        "14"
+      ],
+      "a": 1,
+      "e": "Genesis 29:18 — Jacob was in love with Rachel and said, 'I'll work for you seven years in return for your younger daughter Rachel.'",
+      "d": "easy"
+    },
+    {
+      "q": "Who did Laban give to Jacob first, deceiving him on the wedding night?",
+      "o": [
+        "Rachel",
+        "Leah",
+        "Bilhah",
+        "Zilpah"
+      ],
+      "a": 1,
+      "e": "Genesis 29:23 — But when evening came, he took his daughter Leah and brought her to Jacob, and Jacob made love to her.",
+      "d": "easy"
+    },
+    {
+      "q": "How many total years did Jacob work for Laban to marry both Leah and Rachel?",
+      "o": [
+        "7",
+        "10",
+        "14",
+        "20"
+      ],
+      "a": 2,
+      "e": "Genesis 29:27-30 — Finish this daughter's bridal week; then we will give you the younger one also, in return for another seven years of work.",
+      "d": "easy"
+    },
+    {
+      "q": "Who was the first son born to Leah?",
+      "o": [
+        "Reuben",
+        "Simeon",
+        "Levi",
+        "Judah"
+      ],
+      "a": 0,
+      "e": "Genesis 29:32 — Leah became pregnant and gave birth to a son. She named him Reuben.",
+      "d": "medium"
+    },
+    {
+      "q": "Who was the first son born to Rachel?",
+      "o": [
+        "Benjamin",
+        "Joseph",
+        "Dan",
+        "Naphtali"
+      ],
+      "a": 1,
+      "e": "Genesis 30:22-24 — Then God remembered Rachel... she became pregnant and gave birth to a son... She named him Joseph.",
+      "d": "easy"
+    },
+    {
+      "q": "How many sons did Jacob have in total?",
+      "o": [
+        "7",
+        "10",
+        "12",
+        "13"
+      ],
+      "a": 2,
+      "e": "Genesis 35:22 — Jacob had twelve sons.",
+      "d": "easy"
+    },
+    {
+      "q": "What was the name of Jacob's only named daughter?",
+      "o": [
+        "Dinah",
+        "Tamar",
+        "Asenath",
+        "Zipporah"
+      ],
+      "a": 0,
+      "e": "Genesis 30:21 — Sometime later she gave birth to a daughter and named her Dinah.",
+      "d": "medium"
+    },
+    {
+      "q": "With whom did Jacob wrestle until daybreak?",
+      "o": [
+        "Esau",
+        "Laban",
+        "A man (God/Angel)",
+        "His son Joseph"
+      ],
+      "a": 2,
+      "e": "Genesis 32:24 — So Jacob was left alone, and a man wrestled with him till daybreak.",
+      "d": "medium"
+    },
+    {
+      "q": "What new name did God give to Jacob after he wrestled at Peniel?",
+      "o": [
+        "Abraham",
+        "Isaac",
+        "Israel",
+        "Judah"
+      ],
+      "a": 2,
+      "e": "Genesis 32:28 — Then the man said, 'Your name will no longer be Jacob, but Israel.'",
+      "d": "easy"
+    },
+    {
+      "q": "Where did Jacob and Esau finally reconcile?",
+      "o": [
+        "Bethel",
+        "Shechem",
+        "Peniel",
+        "Mahanaim"
+      ],
+      "a": 1,
+      "e": "Genesis 33:1-18 — Esau ran to meet Jacob and embraced him... Jacob arrived safely at the city of Shechem.",
+      "d": "hard"
+    },
+    {
+      "q": "Which son of Jacob died during the birth of Benjamin?",
+      "o": [
+        "Leah",
+        "Rachel",
+        "Bilhah",
+        "Zilpah"
+      ],
+      "a": 1,
+      "e": "Genesis 35:18-19 — As she breathed her last—for she was dying—she named her son Ben-Oni. But his father named him Benjamin. So Rachel died.",
+      "d": "medium"
+    },
+    {
+      "q": "How old was Isaac when he died?",
+      "o": [
+        "120",
+        "147",
+        "175",
+        "180"
+      ],
+      "a": 3,
+      "e": "Genesis 35:28 — Isaac lived a hundred and eighty years.",
+      "d": "hard"
+    },
+    {
+      "q": "Which son of Jacob was his favorite, for whom he made a richly ornamented robe?",
+      "o": [
+        "Reuben",
+        "Judah",
+        "Joseph",
+        "Benjamin"
+      ],
+      "a": 2,
+      "e": "Genesis 37:3 — Now Israel loved Joseph more than any of his other sons... and he made an ornate robe for him.",
+      "d": "easy"
+    },
+    {
+      "q": "In Joseph's first dream, what were his brothers' sheaves doing?",
+      "o": [
+        "Burning",
+        "Bowing down to his sheaf",
+        "Flying away",
+        "Multiplying"
+      ],
+      "a": 1,
+      "e": "Genesis 37:7 — Your sheaves gathered around mine and bowed down to it.",
+      "d": "medium"
+    },
+    {
+      "q": "In Joseph's second dream, what bowed down to him?",
+      "o": [
+        "The sun, moon and eleven stars",
+        "Twelve angels",
+        "The birds of the air",
+        "The beasts of the field"
+      ],
+      "a": 0,
+      "e": "Genesis 37:9 — I had another dream, and this time the sun and moon and eleven stars were bowing down to me.",
+      "d": "medium"
+    },
+    {
+      "q": "Which brother suggested that they should not kill Joseph but throw him into a cistern?",
+      "o": [
+        "Judah",
+        "Simeon",
+        "Reuben",
+        "Levi"
+      ],
+      "a": 2,
+      "e": "Genesis 37:21-22 — When Reuben heard this, he tried to rescue him... 'Don't shed any blood. Throw him into this cistern.'",
+      "d": "hard"
+    },
+    {
+      "q": "To whom did Joseph's brothers sell him?",
+      "o": [
+        "Egyptians",
+        "Ishmaelite/Midianite traders",
+        "Assyrians",
+        "Philistines"
+      ],
+      "a": 1,
+      "e": "Genesis 37:28 — So when the Midianite merchants came by, his brothers pulled Joseph up out of the cistern and sold him for twenty shekels of silver to the Ishmaelites.",
+      "d": "easy"
+    },
+    {
+      "q": "What did the brothers use to stain Joseph's robe to deceive their father?",
+      "o": [
+        "Red dye",
+        "Goat's blood",
+        "Grape juice",
+        "Mud"
+      ],
+      "a": 1,
+      "e": "Genesis 37:31 — Then they got Joseph's robe, slaughtered a goat and dipped the robe in the blood.",
+      "d": "easy"
+    },
+    {
+      "q": "Who bought Joseph in Egypt?",
+      "o": [
+        "Pharaoh",
+        "Potiphar",
+        "The Chief Baker",
+        "The Captain of the Guard"
+      ],
+      "a": 1,
+      "e": "Genesis 39:1 — Now Joseph had been taken down to Egypt. Potiphar, an Egyptian who was one of Pharaoh’s officials... bought him.",
+      "d": "easy"
+    },
+    {
+      "q": "Why was Joseph sent to prison in Egypt?",
+      "o": [
+        "He stole from Potiphar",
+        "He was falsely accused by Potiphar's wife",
+        "He tried to escape",
+        "He couldn't interpret a dream"
+      ],
+      "a": 1,
+      "e": "Genesis 39:7-20 — Potiphar's wife falsely accused him of attempted rape, and his master took him and put him in prison.",
+      "d": "easy"
+    },
+    {
+      "q": "Which two of Pharaoh's officials did Joseph meet in prison?",
+      "o": [
+        "The Chief Priest and the Chief Scribe",
+        "The Cupbearer and the Baker",
+        "The General and the Admiral",
+        "The Guard and the Warden"
+      ],
+      "a": 1,
+      "e": "Genesis 40:1-3 — Pharaoh was angry with his two officials, the chief cupbearer and the chief baker, and put them in custody.",
+      "d": "easy"
+    },
+    {
+      "q": "What was the meaning of the cupbearer's dream?",
+      "o": [
+        "He would be executed",
+        "He would be restored to his position in three days",
+        "He would become a king",
+        "He would stay in prison forever"
+      ],
+      "a": 1,
+      "e": "Genesis 40:12-13 — This is what it means... Within three days Pharaoh will lift up your head and restore you to your position.",
+      "d": "medium"
+    },
+    {
+      "q": "What happened to the chief baker after three days?",
+      "o": [
+        "He was restored",
+        "He was executed (hanged)",
+        "He escaped",
+        "He died of old age"
+      ],
+      "a": 1,
+      "e": "Genesis 40:19-22 — Pharaoh... impaled the chief baker on a pole.",
+      "d": "medium"
+    },
+    {
+      "q": "How many years passed after the cupbearer's release before Joseph was called to Pharaoh?",
+      "o": [
+        "1",
+        "2",
+        "7",
+        "10"
+      ],
+      "a": 1,
+      "e": "Genesis 41:1 — When two full years had passed, Pharaoh had a dream.",
+      "d": "hard"
+    },
+    {
+      "q": "In Pharaoh's dream, how many thin cows ate how many fat cows?",
+      "o": [
+        "3 thin ate 3 fat",
+        "7 thin ate 7 fat",
+        "12 thin ate 12 fat",
+        "7 fat ate 7 thin"
+      ],
+      "a": 1,
+      "e": "Genesis 41:1-4 — Seven cows, sleek and fat... after them, seven other cows, ugly and gaunt... The cows that were ugly and gaunt ate up the seven sleek, fat cows.",
+      "d": "easy"
+    },
+    {
+      "q": "What did Pharaoh's dreams of cows and grain signify?",
+      "o": [
+        "Seven years of war followed by seven years of peace",
+        "Seven years of abundance followed by seven years of famine",
+        "Seven years of rain followed by seven years of drought",
+        "Seven years of plague"
+      ],
+      "a": 1,
+      "e": "Genesis 41:25-30 — The seven good cows are seven years... Seven years of great abundance are coming, but seven years of famine will follow them.",
+      "d": "easy"
+    },
+    {
+      "q": "What position did Pharaoh give Joseph after he interpreted the dreams?",
+      "o": [
+        "Chief Baker",
+        "Slave",
+        "Second-in-command over all Egypt",
+        "Prison Warden"
+      ],
+      "a": 2,
+      "e": "Genesis 41:41-43 — So Pharaoh said to Joseph, 'I hereby put you in charge of the whole land of Egypt.'",
+      "d": "easy"
+    },
+    {
+      "q": "How old was Joseph when he entered the service of Pharaoh?",
+      "o": [
+        "17",
+        "30",
+        "40",
+        "110"
+      ],
+      "a": 1,
+      "e": "Genesis 41:46 — Joseph was thirty years old when he entered the service of Pharaoh king of Egypt.",
+      "d": "hard"
+    },
+    {
+      "q": "What were the names of Joseph's two sons born in Egypt?",
+      "o": [
+        "Ephraim and Manasseh",
+        "Cain and Abel",
+        "Jacob and Esau",
+        "Reuben and Judah"
+      ],
+      "a": 0,
+      "e": "Genesis 41:51-52 — Joseph named his firstborn Manasseh... The second son he named Ephraim.",
+      "d": "medium"
+    },
+    {
+      "q": "Why did Joseph's brothers go to Egypt the first time?",
+      "o": [
+        "To find Joseph",
+        "To buy grain because of the famine",
+        "To escape a war",
+        "To pay taxes"
+      ],
+      "a": 1,
+      "e": "Genesis 42:1-3 — When Jacob learned that there was grain in Egypt... ten of Joseph's brothers went down to buy grain.",
+      "d": "easy"
+    },
+    {
+      "q": "Which brother did Joseph keep in prison while the others went back to fetch Benjamin?",
+      "o": [
+        "Reuben",
+        "Simeon",
+        "Judah",
+        "Levi"
+      ],
+      "a": 1,
+      "e": "Genesis 42:24 — He had Simeon taken from them and bound before their eyes.",
+      "d": "hard"
+    },
+    {
+      "q": "What did Joseph have hidden in Benjamin's sack to test his brothers?",
+      "o": [
+        "Gold coins",
+        "His silver cup",
+        "A stolen idol",
+        "A map"
+      ],
+      "a": 1,
+      "e": "Genesis 44:1-2 — Then put my silver cup in the mouth of the youngest one's sack.",
+      "d": "medium"
+    },
+    {
+      "q": "Which brother offered himself as a slave in place of Benjamin?",
+      "o": [
+        "Reuben",
+        "Simeon",
+        "Judah",
+        "Levi"
+      ],
+      "a": 2,
+      "e": "Genesis 44:33 — Now then, please let your servant remain here as my lord's slave in place of the boy.",
+      "d": "hard"
+    },
+    {
+      "q": "How many people from Jacob's family went down to Egypt in total?",
+      "o": [
+        "12",
+        "40",
+        "70",
+        "144"
+      ],
+      "a": 2,
+      "e": "Genesis 46:27 — With the two sons who had been born to Joseph in Egypt, the members of Jacob’s family, which went to Egypt, were seventy in all.",
+      "d": "hard"
+    },
+    {
+      "q": "In which region of Egypt did Jacob's family settle?",
+      "o": [
+        "Goshen",
+        "Cairo",
+        "Alexandria",
+        "Thebes"
+      ],
+      "a": 0,
+      "e": "Genesis 47:27 — Now the Israelites settled in Egypt in the region of Goshen.",
+      "d": "medium"
+    },
+    {
+      "q": "How old was Jacob when he died in Egypt?",
+      "o": [
+        "120",
+        "130",
+        "147",
+        "180"
+      ],
+      "a": 2,
+      "e": "Genesis 47:28 — Jacob lived in Egypt seventeen years, and the years of his life were 147.",
+      "d": "hard"
+    },
+    {
+      "q": "Where did Joseph insist he be buried after his death, once God led the people out of Egypt?",
+      "o": [
+        "Egypt",
+        "Canaan",
+        "Sinai",
+        "Midian"
+      ],
+      "a": 1,
+      "e": "Genesis 50:24-25 — Then Joseph made the Israelites swear an oath and said, 'God will surely come to your aid, and then you must carry my bones up from this place.'",
+      "d": "medium"
+    },
+    {
+      "q": "How old was Joseph when he died?",
+      "o": [
+        "100",
+        "110",
+        "120",
+        "147"
+      ],
+      "a": 1,
+      "e": "Genesis 50:26 — So Joseph died at the age of a hundred and ten.",
+      "d": "hard"
+    }
+  ],
+  "Exodus": [
+    {
+      "q": "How many years did the Israelites live in Egypt according to Exodus?",
+      "o": [
+        "40",
+        "100",
+        "430",
+        "70"
+      ],
+      "a": 2,
+      "e": "Exodus 12:40 — Now the length of time the Israelite people lived in Egypt was 430 years.",
+      "d": "medium"
+    },
+    {
+      "q": "Why did the new Pharaoh in Egypt oppress the Israelites?",
+      "o": [
+        "They were stealing his land",
+        "They had become too numerous and he feared they would join his enemies",
+        "They refused to pay taxes",
+        "They were worshiping other gods"
+      ],
+      "a": 1,
+      "e": "Exodus 1:8-10 — 'Look,' he said to his people, 'the Israelites have become far too numerous for us... let us deal shrewdly with them.'",
+      "d": "easy"
+    },
+    {
+      "q": "What were the names of the two Hebrew midwives who defied Pharaoh's order to kill baby boys?",
+      "o": [
+        "Adah and Zillah",
+        "Shiphrah and Puah",
+        "Miriam and Jochebed",
+        "Rachel and Leah"
+      ],
+      "a": 1,
+      "e": "Exodus 1:15 — The king of Egypt said to the Hebrew midwives, whose names were Shiphrah and Puah...",
+      "d": "hard"
+    },
+    {
+      "q": "How did Moses' mother hide him when he was a baby?",
+      "o": [
+        "In a cave",
+        "In a basket made of papyrus in the reeds of the Nile",
+        "In a secret room in the palace",
+        "In a shepherd's hut"
+      ],
+      "a": 1,
+      "e": "Exodus 2:3 — She got a papyrus basket for him and coated it with tar and pitch... and placed it among the reeds along the bank of the Nile.",
+      "d": "easy"
+    },
+    {
+      "q": "Who found baby Moses in the river?",
+      "o": [
+        "A shepherd",
+        "Pharaoh's daughter",
+        "A Hebrew slave",
+        "Miriam"
+      ],
+      "a": 1,
+      "e": "Exodus 2:5 — Pharaoh’s daughter went down to the Nile to bathe... she saw the basket among the reeds.",
+      "d": "easy"
+    },
+    {
+      "q": "Who was Moses' biological sister who watched him in the basket?",
+      "o": [
+        "Sarah",
+        "Miriam",
+        "Esther",
+        "Ruth"
+      ],
+      "a": 1,
+      "e": "Exodus 2:4 — His sister stood at a distance to see what would happen to him.",
+      "d": "medium"
+    },
+    {
+      "q": "Why did Moses flee from Egypt to Midian?",
+      "o": [
+        "He wanted to be a shepherd",
+        "He killed an Egyptian who was beating a Hebrew",
+        "Pharaoh died and he was no longer welcome",
+        "He was called by God in a dream"
+      ],
+      "a": 1,
+      "e": "Exodus 2:11-15 — Moses killed an Egyptian... When Pharaoh heard of this, he tried to kill Moses, but Moses fled from Pharaoh and went to live in Midian.",
+      "d": "easy"
+    },
+    {
+      "q": "Who was Moses' wife?",
+      "o": [
+        "Miriam",
+        "Zipporah",
+        "Asenath",
+        "Keturah"
+      ],
+      "a": 1,
+      "e": "Exodus 2:21 — Moses agreed to stay with the man (Reuel/Jethro), who gave his daughter Zipporah to Moses in marriage.",
+      "d": "medium"
+    },
+    {
+      "q": "What was the name of Moses' first son?",
+      "o": [
+        "Eliezer",
+        "Gershom",
+        "Isaac",
+        "Aaron"
+      ],
+      "a": 1,
+      "e": "Exodus 2:22 — Zipporah gave birth to a son, and Moses named him Gershom.",
+      "d": "medium"
+    },
+    {
+      "q": "Where was Moses when God spoke to him from a burning bush?",
+      "o": [
+        "Mount Zion",
+        "Mount Sinai (Horeb)",
+        "Mount Nebo",
+        "The Nile Delta"
+      ],
+      "a": 1,
+      "e": "Exodus 3:1-2 — Moses... came to Horeb, the mountain of God. There the angel of the LORD appeared to him in flames of fire from within a bush.",
+      "d": "easy"
+    },
+    {
+      "q": "What name did God call Himself when Moses asked who should he say sent him?",
+      "o": [
+        "The Almighty",
+        "I AM WHO I AM",
+        "The God of Wonders",
+        "Adonai"
+      ],
+      "a": 1,
+      "e": "Exodus 3:14 — God said to Moses, 'I AM WHO I AM. This is what you are to say to the Israelites: I AM has sent me to you.'",
+      "d": "easy"
+    },
+    {
+      "q": "What were the three signs God gave Moses to show the Israelites he was sent by God?",
+      "o": [
+        "Staff to snake, leprous hand, water to blood",
+        "Burning bush, pillars of fire, mana from heaven",
+        "Split the sea, ten plagues, thunder",
+        "Floating axe head, oil multiplication, fire from sky"
+      ],
+      "a": 0,
+      "e": "Exodus 4:1-9 — God gave signs of the staff, the hand, and the water from the Nile turning to blood.",
+      "d": "medium"
+    },
+    {
+      "q": "Who did God appoint to be Moses' spokesperson because Moses was 'slow of speech'?",
+      "o": [
+        "Joshua",
+        "Caleb",
+        "Aaron",
+        "Hur"
+      ],
+      "a": 2,
+      "e": "Exodus 4:14 — 'What about your brother, Aaron the Levite? I know he can speak well.'",
+      "d": "easy"
+    },
+    {
+      "q": "What did Aaron's staff do when he threw it down before Pharaoh?",
+      "o": [
+        "Turned into a lion",
+        "Turned into a snake",
+        "Turned into a river",
+        "Turned into a tree"
+      ],
+      "a": 1,
+      "e": "Exodus 7:10 — Aaron threw his staff down in front of Pharaoh and his officials, and it became a snake.",
+      "d": "easy"
+    },
+    {
+      "q": "What was the first plague God brought upon Egypt?",
+      "o": [
+        "Frogs",
+        "Gnats",
+        "Water turned to blood",
+        "Lice"
+      ],
+      "a": 2,
+      "e": "Exodus 7:20 — All the water in the Nile was changed into blood.",
+      "d": "easy"
+    },
+    {
+      "q": "What was the second plague?",
+      "o": [
+        "Lice",
+        "Flies",
+        "Frogs",
+        "Boils"
+      ],
+      "a": 2,
+      "e": "Exodus 8:6 — So Aaron stretched out his hand over the waters of Egypt, and the frogs came up and covered the land.",
+      "d": "medium"
+    },
+    {
+      "q": "Which plague were Pharaoh's magicians unable to replicate, saying 'This is the finger of God'?",
+      "o": [
+        "Blood",
+        "Frogs",
+        "Gnats (Lice)",
+        "Darkness"
+      ],
+      "a": 2,
+      "e": "Exodus 8:18-19 — But when the magicians tried to produce gnats... they could not. The magicians said to Pharaoh, 'This is the finger of God.'",
+      "d": "hard"
+    },
+    {
+      "q": "What was the fourth plague?",
+      "o": [
+        "Lice",
+        "Flies",
+        "Hail",
+        "Locusts"
+      ],
+      "a": 1,
+      "e": "Exodus 8:24 — Dense swarms of flies poured into Pharaoh’s palace and into the houses of his officials.",
+      "d": "medium"
+    },
+    {
+      "q": "Which of these was the seventh plague?",
+      "o": [
+        "Boils",
+        "Hail",
+        "Locusts",
+        "Darkness"
+      ],
+      "a": 1,
+      "e": "Exodus 9:23 — The LORD sent thunder and hail, and lightning flashed down to the ground.",
+      "d": "medium"
+    },
+    {
+      "q": "For how many days was there total darkness in Egypt during the ninth plague?",
+      "o": [
+        "1 day",
+        "3 days",
+        "7 days",
+        "40 days"
+      ],
+      "a": 1,
+      "e": "Exodus 10:22-23 — Total darkness covered all Egypt for three days.",
+      "d": "medium"
+    },
+    {
+      "q": "What was the final (tenth) plague?",
+      "o": [
+        "Locusts",
+        "Hail",
+        "Death of the firstborn",
+        "Turning the Nile to blood"
+      ],
+      "a": 2,
+      "e": "Exodus 11:5 — Every firstborn son in Egypt will die.",
+      "d": "easy"
+    },
+    {
+      "q": "What were the Israelites to put on their doorposts so the angel of death would pass over them?",
+      "o": [
+        "Lamb's blood",
+        "Oil",
+        "Water",
+        "Wine"
+      ],
+      "a": 0,
+      "e": "Exodus 12:7 — Then they are to take some of the blood and put it on the sides and tops of the doorframes of the houses.",
+      "d": "easy"
+    },
+    {
+      "q": "How was the lamb for the Passover to be prepared?",
+      "o": [
+        "Boiled in water",
+        "Roasted over fire",
+        "Eaten raw",
+        "Stewed with vegetables"
+      ],
+      "a": 1,
+      "e": "Exodus 12:8-9 — Do not eat the meat raw or boiled in water, but roast it over a fire.",
+      "d": "medium"
+    },
+    {
+      "q": "What kind of bread were the Israelites to eat during the Passover?",
+      "o": [
+        "Leavened bread",
+        "Unleavened bread",
+        "Barley bread",
+        "Honey bread"
+      ],
+      "a": 1,
+      "e": "Exodus 12:15 — For seven days you are to eat bread made without yeast.",
+      "d": "easy"
+    },
+    {
+      "q": "How many men (not counting women and children) left Egypt in the Exodus?",
+      "o": [
+        "About 6,000",
+        "About 60,000",
+        "About 600,000",
+        "About 6,000,000"
+      ],
+      "a": 2,
+      "e": "Exodus 12:37 — The Israelites journeyed from Rameses to Sukkoth. There were about six hundred thousand men on foot, besides women and children.",
+      "d": "medium"
+    },
+    {
+      "q": "Whose bones did Moses take with him when they left Egypt?",
+      "o": [
+        "Abraham's",
+        "Isaac's",
+        "Jacob's",
+        "Joseph's"
+      ],
+      "a": 3,
+      "e": "Exodus 13:19 — Moses took the bones of Joseph with him because Joseph had made the Israelites swear an oath.",
+      "d": "medium"
+    },
+    {
+      "q": "How did God lead the Israelites by day and by night?",
+      "o": [
+        "By a map and a compass",
+        "By a pillar of cloud by day and a pillar of fire by night",
+        "By a prophet and a priest",
+        "By the stars and the moon"
+      ],
+      "a": 1,
+      "e": "Exodus 13:21 — By day the LORD went ahead of them in a pillar of cloud... and by night in a pillar of fire.",
+      "d": "easy"
+    },
+    {
+      "q": "Through which body of water did the Israelites pass on dry ground?",
+      "o": [
+        "The Jordan River",
+        "The Sea of Galilee",
+        "The Red Sea (Sea of Reeds)",
+        "The Mediterranean Sea"
+      ],
+      "a": 2,
+      "e": "Exodus 14:21-22 — Then Moses stretched out his hand over the sea... and the Israelites went through the sea on dry ground.",
+      "d": "easy"
+    },
+    {
+      "q": "What happened to Pharaoh's army when they tried to follow the Israelites through the sea?",
+      "o": [
+        "They got stuck in the mud",
+        "The water flowed back and covered them",
+        "They were struck by lightning",
+        "They turned back in fear"
+      ],
+      "a": 1,
+      "e": "Exodus 14:28 — The water flowed back and covered the chariots and horsemen—the entire army of Pharaoh.",
+      "d": "easy"
+    },
+    {
+      "q": "What was the name of the place where the water was bitter, and Moses threw a piece of wood into it to make it sweet?",
+      "o": [
+        "Elim",
+        "Marah",
+        "Sinai",
+        "Rephidim"
+      ],
+      "a": 1,
+      "e": "Exodus 15:23-25 — When they came to Marah, they could not drink its water because it was bitter... the LORD showed him a piece of wood. He threw it into the water, and the water became fit to drink.",
+      "d": "medium"
+    },
+    {
+      "q": "What did the Israelites eat in the morning and evening in the desert?",
+      "o": [
+        "Fish and bread",
+        "Manna in the morning and quail in the evening",
+        "Milk and honey",
+        "Fruit and nuts"
+      ],
+      "a": 1,
+      "e": "Exodus 16:12-13 — 'At twilight you will eat meat, and in the morning you will be filled with bread.' ... quails came and covered the camp... and in the morning... thin flakes like frost (manna) appeared.",
+      "d": "easy"
+    },
+    {
+      "q": "What does the word 'Manna' mean?",
+      "o": [
+        "Bread from heaven",
+        "What is it?",
+        "Gift of God",
+        "Sweet seed"
+      ],
+      "a": 1,
+      "e": "Exodus 16:15 — When the Israelites saw it, they said to each other, 'What is it?' For they did not know what it was. (Manna sounds like 'What is it?' in Hebrew)",
+      "d": "medium"
+    },
+    {
+      "q": "How many days a week were the Israelites to gather manna?",
+      "o": [
+        "5",
+        "6",
+        "7",
+        "Daily forever"
+      ],
+      "a": 1,
+      "e": "Exodus 16:26 — Six days you are to gather it, but on the seventh day, the Sabbath, there will not be any.",
+      "d": "medium"
+    },
+    {
+      "q": "Where did Moses strike a rock to bring forth water for the people?",
+      "o": [
+        "Marah",
+        "Elim",
+        "Rephidim (Massah and Meribah)",
+        "Mount Sinai"
+      ],
+      "a": 2,
+      "e": "Exodus 17:1-7 — He called the place Massah and Meribah... there was no water for the people to drink... Strike the rock, and water will come out of it.",
+      "d": "medium"
+    },
+    {
+      "q": "Which tribe attacked the Israelites at Rephidim?",
+      "o": [
+        "Philistines",
+        "Amalekites",
+        "Midianites",
+        "Moabites"
+      ],
+      "a": 1,
+      "e": "Exodus 17:8 — The Amalekites came and attacked the Israelites at Rephidim.",
+      "d": "medium"
+    },
+    {
+      "q": "Who held up Moses' hands during the battle against the Amalekites?",
+      "o": [
+        "Joshua and Caleb",
+        "Aaron and Hur",
+        "Jethro and Aaron",
+        "Miriam and Zipporah"
+      ],
+      "a": 1,
+      "e": "Exodus 17:12 — Aaron and Hur held his hands up—one on one side, one on the other.",
+      "d": "medium"
+    },
+    {
+      "q": "Who was Moses' father-in-law, the priest of Midian?",
+      "o": [
+        "Aaron",
+        "Jethro (Reuel)",
+        "Melchizedek",
+        "Laban"
+      ],
+      "a": 1,
+      "e": "Exodus 18:1 — Now Jethro, the priest of Midian and father-in-law of Moses, heard of everything God had done.",
+      "d": "medium"
+    },
+    {
+      "q": "What advice did Jethro give Moses regarding judging the people?",
+      "o": [
+        "Judge everyone yourself",
+        "Appoint capable men as officials over thousands, hundreds, fifties and tens",
+        "Let the people decide for themselves",
+        "Go back to Egypt"
+      ],
+      "a": 1,
+      "e": "Exodus 18:17-22 — Jethro advised Moses to select capable men... to serve as judges for the smaller matters.",
+      "d": "medium"
+    },
+    {
+      "q": "On which mountain did God give the Ten Commandments?",
+      "o": [
+        "Mount Nebo",
+        "Mount Sinai",
+        "Mount Zion",
+        "Mount Carmel"
+      ],
+      "a": 1,
+      "e": "Exodus 19:20 — The LORD descended to the top of Mount Sinai and called Moses to the top of the mountain.",
+      "d": "easy"
+    },
+    {
+      "q": "What is the first commandment?",
+      "o": [
+        "You shall not steal",
+        "Honor your father and mother",
+        "You shall have no other gods before me",
+        "Remember the Sabbath"
+      ],
+      "a": 2,
+      "e": "Exodus 20:3 — You shall have no other gods before me.",
+      "d": "easy"
+    },
+    {
+      "q": "What is the fifth commandment?",
+      "o": [
+        "You shall not murder",
+        "Honor your father and your mother",
+        "You shall not commit adultery",
+        "You shall not covet"
+      ],
+      "a": 1,
+      "e": "Exodus 20:12 — Honor your father and your mother, so that you may live long in the land the LORD your God is giving you.",
+      "d": "medium"
+    },
+    {
+      "q": "Which commandment forbids making idols?",
+      "o": [
+        "1st",
+        "2nd",
+        "3rd",
+        "4th"
+      ],
+      "a": 1,
+      "e": "Exodus 20:4 — You shall not make for yourself an image in the form of anything in heaven above or on the earth beneath.",
+      "d": "medium"
+    },
+    {
+      "q": "Which commandment says 'You shall not murder'?",
+      "o": [
+        "5th",
+        "6th",
+        "7th",
+        "8th"
+      ],
+      "a": 1,
+      "e": "Exodus 20:13 — You shall not murder.",
+      "d": "medium"
+    },
+    {
+      "q": "How many years was a Hebrew servant to serve before being set free?",
+      "o": [
+        "3",
+        "6",
+        "7",
+        "10"
+      ],
+      "a": 1,
+      "e": "Exodus 21:2 — If you buy a Hebrew servant, he is to serve you for six years. But in the seventh year, he shall go free.",
+      "d": "hard"
+    },
+    {
+      "q": "According to Exodus 21, what was the penalty for kidnapping a person?",
+      "o": [
+        "A fine of silver",
+        "Slavery",
+        "Death",
+        "Exile"
+      ],
+      "a": 2,
+      "e": "Exodus 21:16 — Anyone who kidnaps someone is to be put to death.",
+      "d": "hard"
+    },
+    {
+      "q": "How many days and nights did Moses stay on the mountain with God?",
+      "o": [
+        "7",
+        "12",
+        "40",
+        "100"
+      ],
+      "a": 2,
+      "e": "Exodus 24:18 — And he stayed on the mountain forty days and forty nights.",
+      "d": "medium"
+    },
+    {
+      "q": "What was the Ark of the Covenant made of?",
+      "o": [
+        "Gold only",
+        "Cedar wood",
+        "Acacia wood overlaid with gold",
+        "Stone"
+      ],
+      "a": 2,
+      "e": "Exodus 25:10-11 — Have them make an ark of acacia wood... overlay it with pure gold.",
+      "d": "medium"
+    },
+    {
+      "q": "What were the two gold figures on the lid (Mercy Seat) of the Ark?",
+      "o": [
+        "Lions",
+        "Cherubim",
+        "Eagles",
+        "Oxen"
+      ],
+      "a": 1,
+      "e": "Exodus 25:18 — And make two cherubim out of hammered gold at the ends of the cover.",
+      "d": "medium"
+    },
+    {
+      "q": "What was to be kept on the Table in the Tabernacle at all times?",
+      "o": [
+        "Incense",
+        "The Bread of the Presence",
+        "The Golden Lampstand",
+        "The high priest's robe"
+      ],
+      "a": 1,
+      "e": "Exodus 25:30 — Put the Bread of the Presence on this table to be before me at all times.",
+      "d": "hard"
+    },
+    {
+      "q": "How many branches did the golden lampstand (Menorah) have?",
+      "o": [
+        "3",
+        "5",
+        "7",
+        "12"
+      ],
+      "a": 2,
+      "e": "Exodus 25:32 — Six branches are to extend from the sides of the lampstand—three on one side and three on the other (plus the center shaft makes 7).",
+      "d": "medium"
+    },
+    {
+      "q": "What color were the curtains of the Tabernacle?",
+      "o": [
+        "Blue, purple, and scarlet",
+        "White and gold",
+        "Black and grey",
+        "Green and yellow"
+      ],
+      "a": 0,
+      "e": "Exodus 26:1 — Make the tabernacle with ten curtains of finely twisted linen and blue, purple and scarlet yarn.",
+      "d": "medium"
+    },
+    {
+      "q": "What kind of wood was used for the Altar of Burnt Offering?",
+      "o": [
+        "Oak",
+        "Acacia",
+        "Cedar",
+        "Gopher wood"
+      ],
+      "a": 1,
+      "e": "Exodus 27:1 — Build an altar of acacia wood.",
+      "d": "hard"
+    },
+    {
+      "q": "Who were the first two sons of Aaron named in Exodus?",
+      "o": [
+        "Nadab and Abihu",
+        "Eleazar and Ithamar",
+        "Phinehas and Hophni",
+        "Cain and Abel"
+      ],
+      "a": 0,
+      "e": "Exodus 28:1 — Bring your brother Aaron and his sons, Nadab and Abihu, Eleazar and Ithamar...",
+      "d": "hard"
+    },
+    {
+      "q": "What was engraved on the gold plate attached to the high priest's turban?",
+      "o": [
+        "The Ten Commandments",
+        "Holy to the LORD",
+        "The Name of God",
+        "The Tribe of Levi"
+      ],
+      "a": 1,
+      "e": "Exodus 28:36 — Make a plate of pure gold and engrave on it as on a seal: HOLY TO THE LORD.",
+      "d": "hard"
+    },
+    {
+      "q": "How many stones were on the high priest's breastpiece, representing the tribes of Israel?",
+      "o": [
+        "7",
+        "10",
+        "12",
+        "40"
+      ],
+      "a": 2,
+      "e": "Exodus 28:21 — There were to be twelve stones, one for each of the names of the sons of Israel.",
+      "d": "medium"
+    },
+    {
+      "q": "What items were placed in the breastpiece of the high priest for determining God's will?",
+      "o": [
+        "Urim and Thummim",
+        "The Ten Commandments",
+        "Manna",
+        "The golden bells"
+      ],
+      "a": 0,
+      "e": "Exodus 28:30 — Also put the Urim and the Thummim in the breastpiece.",
+      "d": "hard"
+    },
+    {
+      "q": "What did Aaron make for the people to worship while Moses was on the mountain?",
+      "o": [
+        "A silver calf",
+        "A golden calf",
+        "A bronze serpent",
+        "A stone altar"
+      ],
+      "a": 1,
+      "e": "Exodus 32:4 — He took what they handed him and made it into an idol cast in the shape of a calf.",
+      "d": "easy"
+    },
+    {
+      "q": "What did Moses do when he saw the people worshiping the golden calf?",
+      "o": [
+        "He joined them",
+        "He broke the two stone tablets",
+        "He fainted",
+        "He went back to Egypt"
+      ],
+      "a": 1,
+      "e": "Exodus 32:19 — When Moses approached the camp and saw the calf and the dancing, his anger burned and he threw the tablets out of his hands, breaking them.",
+      "d": "easy"
+    },
+    {
+      "q": "Which tribe stood with Moses after the golden calf incident?",
+      "o": [
+        "Judah",
+        "Benjamin",
+        "Levi",
+        "Reuben"
+      ],
+      "a": 2,
+      "e": "Exodus 32:26 — Moses said, 'Whoever is for the LORD, come to me.' And all the Levites rallied to him.",
+      "d": "medium"
+    },
+    {
+      "q": "How many people died because of the golden calf sin?",
+      "o": [
+        "300",
+        "3,000",
+        "30,000",
+        "All of them"
+      ],
+      "a": 1,
+      "e": "Exodus 32:28 — The Levites did as Moses commanded, and that day about three thousand of the people died.",
+      "d": "hard"
+    },
+    {
+      "q": "What happened to Moses' face after he spent time with God on the mountain?",
+      "o": [
+        "It was covered in dust",
+        "It was radiant/glowing",
+        "It was scarred",
+        "It turned white"
+      ],
+      "a": 1,
+      "e": "Exodus 34:29-30 — When Moses came down from Mount Sinai... he was not aware that his face was radiant because he had spoken with the LORD.",
+      "d": "medium"
+    },
+    {
+      "q": "Who were the two men God specifically gifted with wisdom to build the Tabernacle?",
+      "o": [
+        "Joshua and Caleb",
+        "Bezalel and Oholiab",
+        "Nadab and Abihu",
+        "Aaron and Hur"
+      ],
+      "a": 1,
+      "e": "Exodus 31:1-6 — The LORD said to Moses, 'See, I have chosen Bezalel... and I have appointed Oholiab... to help him.'",
+      "d": "hard"
+    },
+    {
+      "q": "What did Moses use to veil his face because it was too bright for the people?",
+      "o": [
+        "A cloth",
+        "A veil",
+        "His hands",
+        "A mask"
+      ],
+      "a": 1,
+      "e": "Exodus 34:33 — When Moses finished speaking to them, he put a veil over his face.",
+      "d": "medium"
+    },
+    {
+      "q": "How was the Tabernacle funded?",
+      "o": [
+        "Through taxes",
+        "Through a census fee",
+        "Through voluntary offerings from the people",
+        "By selling treasures from Egypt"
+      ],
+      "a": 2,
+      "e": "Exodus 35:21 — And everyone who was willing and whose heart moved him came and brought an offering to the LORD for the work on the Tent of Meeting.",
+      "d": "medium"
+    },
+    {
+      "q": "What filled the Tabernacle once it was completed and set up?",
+      "o": [
+        "Smoke",
+        "Water",
+        "The glory of the LORD (Cloud)",
+        "A great light"
+      ],
+      "a": 2,
+      "e": "Exodus 40:34 — Then the cloud covered the Tent of Meeting, and the glory of the LORD filled the tabernacle.",
+      "d": "easy"
+    },
+    {
+      "q": "How did the Israelites know when to set out on their journey after the Tabernacle was built?",
+      "o": [
+        "Moses blew a trumpet",
+        "The cloud lifted from above the tabernacle",
+        "The sun rose",
+        "They heard a voice from heaven"
+      ],
+      "a": 1,
+      "e": "Exodus 40:36 — In all the travels of the Israelites, whenever the cloud lifted from above the tabernacle, they would set out.",
+      "d": "medium"
+    },
+    {
+      "q": "Who was Moses' father?",
+      "o": [
+        "Amram",
+        "Levi",
+        "Kohath",
+        "Aaron"
+      ],
+      "a": 0,
+      "e": "Exodus 6:20 — Amram married his father's sister Jochebed, who bore him Aaron and Moses.",
+      "d": "hard"
+    },
+    {
+      "q": "Who was Moses' mother?",
+      "o": [
+        "Miriam",
+        "Jochebed",
+        "Sarah",
+        "Zipporah"
+      ],
+      "a": 1,
+      "e": "Exodus 6:20 — Amram married his father's sister Jochebed, who bore him Aaron and Moses.",
+      "d": "hard"
+    },
+    {
+      "q": "How many years did Moses live in total according to the Bible (though not all in Exodus)?",
+      "o": [
+        "70",
+        "80",
+        "110",
+        "120"
+      ],
+      "a": 3,
+      "e": "Deuteronomy 34:7 (Context of Exodus life) — Moses was a hundred and twenty years old when he died.",
+      "d": "medium"
+    },
+    {
+      "q": "How old was Moses when he first stood before Pharaoh?",
+      "o": [
+        "40",
+        "60",
+        "80",
+        "100"
+      ],
+      "a": 2,
+      "e": "Exodus 7:7 — Moses was eighty years old and Aaron eighty-three when they spoke to Pharaoh.",
+      "d": "medium"
+    },
+    {
+      "q": "What did the Egyptians give the Israelites as they were leaving Egypt?",
+      "o": [
+        "Nothing but their lives",
+        "Articles of silver and gold and clothing",
+        "Chariots and horses",
+        "Food for the journey"
+      ],
+      "a": 1,
+      "e": "Exodus 12:35-36 — The Israelites did as Moses instructed... they asked the Egyptians for articles of silver and gold and for clothing... so they plundered the Egyptians.",
+      "d": "medium"
+    },
+    {
+      "q": "Where did the Israelites camp where there were twelve springs and seventy palm trees?",
+      "o": [
+        "Marah",
+        "Elim",
+        "Sinai",
+        "Kadesh"
+      ],
+      "a": 1,
+      "e": "Exodus 15:27 — Then they came to Elim, where there were twelve springs and seventy palm trees.",
+      "d": "hard"
+    },
+    {
+      "q": "What did the Israelites call the place where they complained about lack of water, meaning 'Testing' and 'Quarreling'?",
+      "o": [
+        "Elim and Marah",
+        "Massah and Meribah",
+        "Sinai and Horeb",
+        "Goshen and Egypt"
+      ],
+      "a": 1,
+      "e": "Exodus 17:7 — And he called the place Massah and Meribah because the Israelites quarreled and because they tested the LORD.",
+      "d": "hard"
+    },
+    {
+      "q": "What was the name of the 'mountain of God'?",
+      "o": [
+        "Zion",
+        "Nebo",
+        "Horeb (Sinai)",
+        "Hermon"
+      ],
+      "a": 2,
+      "e": "Exodus 3:1 — Moses... came to Horeb, the mountain of God.",
+      "d": "medium"
+    },
+    {
+      "q": "Which plague involved 'boils' breaking out on people and animals?",
+      "o": [
+        "4th",
+        "5th",
+        "6th",
+        "7th"
+      ],
+      "a": 2,
+      "e": "Exodus 9:8-10 — Festering boils will break out on people and animals throughout Egypt.",
+      "d": "medium"
+    },
+    {
+      "q": "During the plague of hail, which crop was destroyed because it was in bloom?",
+      "o": [
+        "Wheat",
+        "Barley and flax",
+        "Olives",
+        "Grapes"
+      ],
+      "a": 1,
+      "e": "Exodus 9:31 — (The flax and barley were destroyed, since the barley was in ear and the flax was in bloom.)",
+      "d": "hard"
+    },
+    {
+      "q": "Which plague was so severe that 'nothing green remained on tree or plant in all the land of Egypt'?",
+      "o": [
+        "Gnats",
+        "Flies",
+        "Hail",
+        "Locusts"
+      ],
+      "a": 3,
+      "e": "Exodus 10:15 — They covered all the ground... Nothing green remained on tree or plant in all the land of Egypt.",
+      "d": "medium"
+    },
+    {
+      "q": "Which sea did Moses divide?",
+      "o": [
+        "The Dead Sea",
+        "The Sea of Galilee",
+        "The Red Sea",
+        "The Mediterranean Sea"
+      ],
+      "a": 2,
+      "e": "Exodus 14:21 — Moses stretched out his hand over the sea, and all that night the LORD drove the sea back with a strong east wind.",
+      "d": "easy"
+    },
+    {
+      "q": "What did Moses take with him as a symbol of God's power?",
+      "o": [
+        "A sword",
+        "A crown",
+        "The staff of God",
+        "A stone tablet"
+      ],
+      "a": 2,
+      "e": "Exodus 4:20 — So Moses took his wife and sons... and he took the staff of God in his hand.",
+      "d": "medium"
+    },
+    {
+      "q": "What kind of meat did God provide in the desert in the evenings?",
+      "o": [
+        "Beef",
+        "Lamb",
+        "Quail",
+        "Fish"
+      ],
+      "a": 2,
+      "e": "Exodus 16:13 — That evening quail came and covered the camp.",
+      "d": "medium"
+    },
+    {
+      "q": "What did the Israelites have to do on the sixth day regarding the manna?",
+      "o": [
+        "Gather none",
+        "Gather a double portion",
+        "Gather only for the morning",
+        "Eat it all immediately"
+      ],
+      "a": 1,
+      "e": "Exodus 16:22 — On the sixth day, they gathered twice as much.",
+      "d": "medium"
+    },
+    {
+      "q": "How many years did the Israelites eat manna?",
+      "o": [
+        "7",
+        "12",
+        "40",
+        "100"
+      ],
+      "a": 2,
+      "e": "Exodus 16:35 — The Israelites ate manna forty years, until they came to a land that was settled.",
+      "d": "easy"
+    },
+    {
+      "q": "Who was the military leader who led the Israelites in battle against Amalek?",
+      "o": [
+        "Caleb",
+        "Joshua",
+        "Aaron",
+        "Gideon"
+      ],
+      "a": 1,
+      "e": "Exodus 17:9 — Moses said to Joshua, 'Choose some of our men and go out to fight the Amalekites.'",
+      "d": "medium"
+    },
+    {
+      "q": "What did God promise the Israelites they would be if they obeyed Him?",
+      "o": [
+        "A kingdom of priests and a holy nation",
+        "The richest nation on earth",
+        "Masters of Egypt",
+        "Invisible to their enemies"
+      ],
+      "a": 0,
+      "e": "Exodus 19:6 — 'you will be for me a kingdom of priests and a holy nation.'",
+      "d": "medium"
+    },
+    {
+      "q": "What happened to anyone who touched Mount Sinai while God was on it?",
+      "o": [
+        "They were blessed",
+        "They were to be put to death",
+        "They became blind",
+        "They were healed"
+      ],
+      "a": 1,
+      "e": "Exodus 19:12 — 'Whoever touches the mountain is to be put to death.'",
+      "d": "hard"
+    },
+    {
+      "q": "What did the Ten Commandments represent?",
+      "o": [
+        "A map to the promised land",
+        "The terms of God's covenant with Israel",
+        "A history of Egypt",
+        "A collection of proverbs"
+      ],
+      "a": 1,
+      "e": "Exodus 34:28 — And he wrote on the tablets the words of the covenant—the Ten Commandments.",
+      "d": "medium"
+    },
+    {
+      "q": "Which commandment forbids taking the LORD's name in vain?",
+      "o": [
+        "1st",
+        "2nd",
+        "3rd",
+        "4th"
+      ],
+      "a": 2,
+      "e": "Exodus 20:7 — You shall not misuse the name of the LORD your God.",
+      "d": "medium"
+    },
+    {
+      "q": "Which commandment says 'Remember the Sabbath day by keeping it holy'?",
+      "o": [
+        "2nd",
+        "3rd",
+        "4th",
+        "5th"
+      ],
+      "a": 2,
+      "e": "Exodus 20:8 — Remember the Sabbath day by keeping it holy.",
+      "d": "medium"
+    },
+    {
+      "q": "Which commandment says 'You shall not steal'?",
+      "o": [
+        "7th",
+        "8th",
+        "9th",
+        "10th"
+      ],
+      "a": 1,
+      "e": "Exodus 20:15 — You shall not steal.",
+      "d": "medium"
+    },
+    {
+      "q": "Which commandment says 'You shall not give false testimony'?",
+      "o": [
+        "8th",
+        "9th",
+        "10th",
+        "3rd"
+      ],
+      "a": 1,
+      "e": "Exodus 20:16 — You shall not give false testimony against your neighbor.",
+      "d": "medium"
+    },
+    {
+      "q": "What was the purpose of the Laver in the Tabernacle?",
+      "o": [
+        "For sacrifices",
+        "For the priests to wash their hands and feet",
+        "To hold the bread",
+        "To burn incense"
+      ],
+      "a": 1,
+      "e": "Exodus 30:18-19 — Make a bronze basin... Aaron and his sons are to wash their hands and feet with water from it.",
+      "d": "hard"
+    },
+    {
+      "q": "What kind of oil was used for the light in the Tabernacle?",
+      "o": [
+        "Olive oil",
+        "Animal fat",
+        "Seed oil",
+        "Myrrh oil"
+      ],
+      "a": 0,
+      "e": "Exodus 27:20 — Command the Israelites to bring you clear oil of pressed olives for the light.",
+      "d": "hard"
+    },
+    {
+      "q": "Who was Bezalel's grandfather?",
+      "o": [
+        "Aaron",
+        "Hur",
+        "Caleb",
+        "Joshua"
+      ],
+      "a": 1,
+      "e": "Exodus 31:2 — 'See, I have chosen Bezalel son of Uri, the son of Hur.'",
+      "d": "hard"
+    },
+    {
+      "q": "What did Moses do with the golden calf?",
+      "o": [
+        "Hid it in a cave",
+        "Burnt it, ground it to powder, and made the people drink it",
+        "Gave it to the Levites",
+        "Melted it into the Ark"
+      ],
+      "a": 1,
+      "e": "Exodus 32:20 — And he took the calf the people had made and burned it in the fire; then he ground it to powder, scattered it on the water and made the Israelites drink it.",
+      "d": "medium"
+    },
+    {
+      "q": "Why did God not go with the people personally at first after the calf incident?",
+      "o": [
+        "He was too busy",
+        "He might destroy them on the way because they were stiff-necked",
+        "He wanted them to learn a lesson",
+        "He had gone back to heaven"
+      ],
+      "a": 1,
+      "e": "Exodus 33:3 — 'But I will not go with you, because you are a stiff-necked people and I might destroy you on the way.'",
+      "d": "hard"
+    },
+    {
+      "q": "Where did Moses meet with God 'face to face' outside the camp?",
+      "o": [
+        "In a cave",
+        "On the mountain top",
+        "In the Tent of Meeting",
+        "By the river"
+      ],
+      "a": 2,
+      "e": "Exodus 33:7-11 — Moses used to take a tent and pitch it outside the camp... The LORD would speak to Moses face to face, as one speaks to a friend.",
+      "d": "medium"
+    },
+    {
+      "q": "What did Moses ask to see of God?",
+      "o": [
+        "His face",
+        "His hands",
+        "His glory",
+        "His throne"
+      ],
+      "a": 2,
+      "e": "Exodus 33:18 — Then Moses said, 'Now show me your glory.'",
+      "d": "medium"
+    },
+    {
+      "q": "What part of God was Moses allowed to see?",
+      "o": [
+        "His face",
+        "His feet",
+        "His back",
+        "His shadow"
+      ],
+      "a": 2,
+      "e": "Exodus 33:23 — 'Then I will remove my hand and you will see my back; but my face must not be seen.'",
+      "d": "hard"
+    },
+    {
+      "q": "What was the name of the place where Moses' father-in-law lived?",
+      "o": [
+        "Egypt",
+        "Midian",
+        "Canaan",
+        "Moab"
+      ],
+      "a": 1,
+      "e": "Exodus 2:15 — (Moses) went to live in Midian.",
+      "d": "easy"
+    },
+    {
+      "q": "How many plagues did God send in total?",
+      "o": [
+        "7",
+        "10",
+        "12",
+        "40"
+      ],
+      "a": 1,
+      "e": "Exodus 7-11 — There were ten plagues starting with blood and ending with the death of the firstborn.",
+      "d": "easy"
+    },
+    {
+      "q": "What was the name of the first month of the year for the Israelites after the Exodus?",
+      "o": [
+        "Nisan (Abib)",
+        "Tishri",
+        "Adar",
+        "Tammuz"
+      ],
+      "a": 0,
+      "e": "Exodus 12:2 — 'This month is to be for you the first month, the first month of your year.' (Called Abib in Exodus 13:4)",
+      "d": "hard"
+    },
+    {
+      "q": "How did Moses sweeten the waters of Marah?",
+      "o": [
+        "Adding sugar",
+        "Adding salt",
+        "Throwing in a piece of wood",
+        "Praying over it"
+      ],
+      "a": 2,
+      "e": "Exodus 15:25 — Then the LORD showed him a piece of wood. He threw it into the water, and the water became fit to drink.",
+      "d": "medium"
+    },
+    {
+      "q": "What did the Israelites complain about at Rephidim?",
+      "o": [
+        "Food",
+        "Water",
+        "Moses' leadership",
+        "The weather"
+      ],
+      "a": 1,
+      "e": "Exodus 17:1-3 — But there was no water for the people to drink. So they quarreled with Moses.",
+      "d": "easy"
+    },
+    {
+      "q": "Who led the praise of God with a timbrel after crossing the Red Sea?",
+      "o": [
+        "Moses",
+        "Aaron",
+        "Miriam",
+        "Zipporah"
+      ],
+      "a": 2,
+      "e": "Exodus 15:20 — Then Miriam the prophet, Aaron’s sister, took a timbrel in her hand.",
+      "d": "medium"
+    },
+    {
+      "q": "What kind of perfume was used for the Altar of Incense?",
+      "o": [
+        "Myrrh and Aloes",
+        "A blend of spices: stacte, onycha, galbanum, and pure frankincense",
+        "Lavender and Rose",
+        "Cinnamon and Cassia"
+      ],
+      "a": 1,
+      "e": "Exodus 30:34 — Then the LORD said to Moses, 'Take fragrant spices—gum resin, onycha and galbanum—and pure frankincense...'",
+      "d": "hard"
+    },
+    {
+      "q": "How many tablets of the Covenant did God give Moses initially?",
+      "o": [
+        "1",
+        "2",
+        "10",
+        "12"
+      ],
+      "a": 1,
+      "e": "Exodus 31:18 — When the LORD finished speaking to Moses on Mount Sinai, he gave him the two tablets of the covenant law.",
+      "d": "easy"
+    },
+    {
+      "q": "What did Moses do with the second set of tablets?",
+      "o": [
+        "God wrote on them again",
+        "Moses wrote on them",
+        "Aaron wrote on them",
+        "They were left blank"
+      ],
+      "a": 0,
+      "e": "Exodus 34:1 — The LORD said to Moses, 'Chisel out two stone tablets like the first ones, and I will write on them...'",
+      "d": "medium"
+    },
+    {
+      "q": "How many years did the Israelites wander in the wilderness (as mentioned later but started in Exodus)?",
+      "o": [
+        "10",
+        "20",
+        "40",
+        "70"
+      ],
+      "a": 2,
+      "e": "Exodus 16:35 — The Israelites ate manna forty years.",
+      "d": "easy"
+    },
+    {
+      "q": "Which tribe was set apart for the service of the Tabernacle?",
+      "o": [
+        "Judah",
+        "Benjamin",
+        "Levi",
+        "Reuben"
+      ],
+      "a": 2,
+      "e": "Exodus 32:26-29 — All the Levites rallied to him... they were set apart to the LORD.",
+      "d": "medium"
+    },
+    {
+      "q": "What was the name of the place where God's presence stayed over the Tabernacle?",
+      "o": [
+        "The Holy of Holies",
+        "The Courtyard",
+        "The Tent of Meeting",
+        "The Camp"
+      ],
+      "a": 2,
+      "e": "Exodus 40:34 — Then the cloud covered the Tent of Meeting, and the glory of the LORD filled the tabernacle.",
+      "d": "medium"
+    }
+  ],
+  "Judges": [
+    {
+      "q": "After the death of Joshua, which tribe was chosen by God to lead the attack against the Canaanites first?",
+      "o": [
+        "Benjamin",
+        "Judah",
+        "Simeon",
+        "Ephraim"
+      ],
+      "a": 1,
+      "e": "Judges 1:1-2 — The Israelites asked the LORD, 'Who of us shall go up first to fight against the Canaanites?' The LORD answered, 'Judah shall go up.'",
+      "d": "medium"
+    },
+    {
+      "q": "What did the Israelites fail to do that led to the period of the Judges?",
+      "o": [
+        "They did not build enough altars",
+        "They failed to drive out the inhabitants of the land completely",
+        "They forgot the Law of Moses",
+        "They went back to Egypt"
+      ],
+      "a": 1,
+      "e": "Judges 1:21-33 — Many tribes, including Benjamin, Manasseh, and Ephraim, failed to drive out the Canaanites.",
+      "d": "medium"
+    },
+    {
+      "q": "Who was the first judge of Israel mentioned in the book?",
+      "o": [
+        "Ehud",
+        "Othniel",
+        "Shamgar",
+        "Deborah"
+      ],
+      "a": 1,
+      "e": "Judges 3:9 — The LORD raised up for them a deliverer, Othniel son of Kenaz, Caleb’s younger brother.",
+      "d": "medium"
+    },
+    {
+      "q": "Othniel delivered Israel from the king of which country?",
+      "o": [
+        "Moab",
+        "Aram Naharaim (Mesopotamia)",
+        "Canaan",
+        "Midian"
+      ],
+      "a": 1,
+      "e": "Judges 3:8 — The LORD... sold them into the hands of Cushan-Rishathaim king of Aram Naharaim.",
+      "d": "hard"
+    },
+    {
+      "q": "Who was the second judge, a left-handed man from the tribe of Benjamin?",
+      "o": [
+        "Shamgar",
+        "Ehud",
+        "Gideon",
+        "Jair"
+      ],
+      "a": 1,
+      "e": "Judges 3:15 — The LORD gave them a deliverer—Ehud, a left-handed man, the son of Gera the Benjamite.",
+      "d": "easy"
+    },
+    {
+      "q": "How did Ehud kill Eglon, the king of Moab?",
+      "o": [
+        "With a bow and arrow",
+        "With a double-edged sword hidden on his right thigh",
+        "By pushing him off a roof",
+        "With a sling stone"
+      ],
+      "a": 1,
+      "e": "Judges 3:16-21 — Ehud made a double-edged sword... He reached with his left hand, drew the sword from his right thigh and plunged it into the king's belly.",
+      "d": "medium"
+    },
+    {
+      "q": "Which judge killed 600 Philistines with an oxgoad?",
+      "o": [
+        "Ehud",
+        "Shamgar",
+        "Samson",
+        "Tola"
+      ],
+      "a": 1,
+      "e": "Judges 3:31 — After Ehud came Shamgar son of Anath, who struck down six hundred Philistines with an oxgoad.",
+      "d": "medium"
+    },
+    {
+      "q": "Who was the only female judge mentioned in the Book of Judges?",
+      "o": [
+        "Jael",
+        "Deborah",
+        "Delilah",
+        "Naomi"
+      ],
+      "a": 1,
+      "e": "Judges 4:4 — Now Deborah, a prophet, the wife of Lappidoth, was leading Israel at that time.",
+      "d": "easy"
+    },
+    {
+      "q": "Where did Deborah sit to judge the people?",
+      "o": [
+        "At the city gate",
+        "Under the Palm of Deborah",
+        "In the Tabernacle",
+        "On Mount Tabor"
+      ],
+      "a": 1,
+      "e": "Judges 4:5 — She held court under the Palm of Deborah between Ramah and Bethel.",
+      "d": "medium"
+    },
+    {
+      "q": "Who was the commander of the Israelite army called by Deborah to fight against Sisera?",
+      "o": [
+        "Joshua",
+        "Barak",
+        "Gideon",
+        "Jephthah"
+      ],
+      "a": 1,
+      "e": "Judges 4:6 — She sent for Barak son of Abinoam... and said to him, 'The LORD... commands you: Go, take with you ten thousand men.'",
+      "d": "medium"
+    },
+    {
+      "q": "Who was the commander of the Canaanite army that oppressed Israel during Deborah's time?",
+      "o": [
+        "Eglon",
+        "Jabin",
+        "Sisera",
+        "Zebah"
+      ],
+      "a": 2,
+      "e": "Judges 4:2 — The LORD sold them into the hands of Jabin king of Canaan... The commander of his army was Sisera.",
+      "d": "medium"
+    },
+    {
+      "q": "How many iron chariots did Sisera have?",
+      "o": [
+        "100",
+        "300",
+        "600",
+        "900"
+      ],
+      "a": 3,
+      "e": "Judges 4:3 — Because he had nine hundred chariots fitted with iron and had cruelly oppressed the Israelites for twenty years.",
+      "d": "hard"
+    },
+    {
+      "q": "How did Sisera die?",
+      "o": [
+        "Barak killed him in battle",
+        "He fell on his own sword",
+        "Jael drove a tent peg through his temple",
+        "Deborah struck him with a stone"
+      ],
+      "a": 2,
+      "e": "Judges 4:21 — But Jael, Heber’s wife, picked up a tent peg and a hammer... she drove the peg through his temple into the ground.",
+      "d": "easy"
+    },
+    {
+      "q": "Who sang a famous song of victory after the defeat of Sisera?",
+      "o": [
+        "Barak alone",
+        "Deborah and Barak",
+        "The daughters of Israel",
+        "The Levites"
+      ],
+      "a": 1,
+      "e": "Judges 5:1 — On that day Deborah and Barak son of Abinoam sang this song.",
+      "d": "medium"
+    },
+    {
+      "q": "Which tribe was Gideon from?",
+      "o": [
+        "Judah",
+        "Manasseh",
+        "Ephraim",
+        "Benjamin"
+      ],
+      "a": 1,
+      "e": "Judges 6:15 — 'My clan is the weakest in Manasseh, and I am the least in my family.'",
+      "d": "hard"
+    },
+    {
+      "q": "What was Gideon doing when the angel of the LORD appeared to him?",
+      "o": [
+        "Plowing a field",
+        "Threshing wheat in a winepress",
+        "Shepherding sheep",
+        "Building an altar"
+      ],
+      "a": 1,
+      "e": "Judges 6:11 — Gideon was threshing wheat in a winepress to keep it from the Midianites.",
+      "d": "easy"
+    },
+    {
+      "q": "What did the angel of the LORD call Gideon?",
+      "o": [
+        "Least of my people",
+        "Mighty warrior",
+        "Faithful servant",
+        "Judge of Israel"
+      ],
+      "a": 1,
+      "e": "Judges 6:12 — When the angel of the LORD appeared to Gideon, he said, 'The LORD is with you, mighty warrior.'",
+      "d": "medium"
+    },
+    {
+      "q": "What was the first task God gave Gideon?",
+      "o": [
+        "Attack the Midianites",
+        "Tear down his father's altar to Baal",
+        "Gather an army",
+        "Build a temple"
+      ],
+      "a": 1,
+      "e": "Judges 6:25 — 'Take the second bull from your father’s herd... Tear down your father’s altar to Baal and cut down the Asherah pole beside it.'",
+      "d": "medium"
+    },
+    {
+      "q": "What name was given to Gideon after he destroyed the altar of Baal?",
+      "o": [
+        "Abimelek",
+        "Jerub-Baal",
+        "Gaddiel",
+        "Barak"
+      ],
+      "a": 1,
+      "e": "Judges 6:32 — So because Gideon broke down Baal’s altar, they gave him the name Jerub-Baal that day.",
+      "d": "medium"
+    },
+    {
+      "q": "What two signs did Gideon ask of God using a fleece of wool?",
+      "o": [
+        "Fleece wet/ground dry, then fleece dry/ground wet",
+        "Fleece turned red, then fleece turned white",
+        "Fleece disappeared, then fleece reappeared",
+        "Fleece on fire, then fleece frozen"
+      ],
+      "a": 0,
+      "e": "Judges 6:36-40 — First he asked for the fleece to be wet and the ground dry, then the reverse.",
+      "d": "easy"
+    },
+    {
+      "q": "How many men did Gideon originally have in his army?",
+      "o": [
+        "300",
+        "10,000",
+        "22,000",
+        "32,000"
+      ],
+      "a": 3,
+      "e": "Judges 7:3 — Twenty-two thousand men left, while ten thousand remained (total original 32,000).",
+      "d": "hard"
+    },
+    {
+      "q": "Why did God want Gideon to reduce the size of his army?",
+      "o": [
+        "They were not well-trained",
+        "Israel would boast that their own strength had saved them",
+        "There wasn't enough food",
+        "The Midianites were too few"
+      ],
+      "a": 1,
+      "e": "Judges 7:2 — The LORD said to Gideon, 'You have too many men... In order that Israel may not boast against me that her own strength has saved her.'",
+      "d": "easy"
+    },
+    {
+      "q": "How did God finally choose the 300 men who would fight with Gideon?",
+      "o": [
+        "By their height",
+        "By how they drank water from the stream",
+        "By their skill with the sword",
+        "By their age"
+      ],
+      "a": 1,
+      "e": "Judges 7:5-7 — Those who lapped the water with their tongues like a dog were chosen (300 men).",
+      "d": "medium"
+    },
+    {
+      "q": "What items did Gideon's 300 men carry into battle?",
+      "o": [
+        "Swords, shields, and spears",
+        "Trumpets, empty jars, and torches",
+        "Slings and stones",
+        "Bows and arrows"
+      ],
+      "a": 1,
+      "e": "Judges 7:16 — He divided the three hundred men into three companies; he placed trumpets and empty jars in the hands of all of them, with torches inside.",
+      "d": "easy"
+    },
+    {
+      "q": "What did Gideon's men shout when they attacked the Midianites?",
+      "o": [
+        "For God and for Israel!",
+        "Victory to Gideon!",
+        "A sword for the LORD and for Gideon!",
+        "Death to Midian!"
+      ],
+      "a": 2,
+      "e": "Judges 7:20 — Grasping the torches in their left hands and holding in their right hands the trumpets they were to blow, they shouted, 'A sword for the LORD and for Gideon!'",
+      "d": "medium"
+    },
+    {
+      "q": "Who was Gideon's son who killed 70 of his brothers to become king?",
+      "o": [
+        "Jotham",
+        "Abimelek",
+        "Gaal",
+        "Zebul"
+      ],
+      "a": 1,
+      "e": "Judges 9:1-5 — Abimelek... killed his seventy brothers... on one stone.",
+      "d": "medium"
+    },
+    {
+      "q": "How did Abimelek die?",
+      "o": [
+        "A soldier killed him",
+        "He fell on his sword",
+        "A woman dropped a millstone on his head",
+        "He was struck by lightning"
+      ],
+      "a": 2,
+      "e": "Judges 9:53 — A woman dropped an upper millstone on his head and cracked his skull.",
+      "d": "medium"
+    },
+    {
+      "q": "Who was the judge who made a rash vow to sacrifice whatever came out of his house first?",
+      "o": [
+        "Gideon",
+        "Jephthah",
+        "Samson",
+        "Ibzan"
+      ],
+      "a": 1,
+      "e": "Judges 11:30-31 — Jephthah made a vow to the LORD... 'whatever comes out of the door of my house to meet me... I will sacrifice it.'",
+      "d": "medium"
+    },
+    {
+      "q": "Who was the first to come out of Jephthah's house?",
+      "o": [
+        "His servant",
+        "His dog",
+        "His only daughter",
+        "His wife"
+      ],
+      "a": 2,
+      "e": "Judges 11:34 — When Jephthah returned to his home in Mizpah, who should come out to meet him but his daughter, dancing to the sound of timbrels!",
+      "d": "easy"
+    },
+    {
+      "q": "What password did the Gileadites use to identify the Ephraimites at the fords of the Jordan?",
+      "o": [
+        "Jerusalem",
+        "Shibboleth",
+        "Sinai",
+        "Mizpah"
+      ],
+      "a": 1,
+      "e": "Judges 12:5-6 — If he said, 'Sibboleth,' because he could not pronounce the word (Shibboleth) correctly, they seized him and killed him.",
+      "d": "hard"
+    },
+    {
+      "q": "How many years did Samson judge Israel?",
+      "o": [
+        "10",
+        "20",
+        "30",
+        "40"
+      ],
+      "a": 1,
+      "e": "Judges 15:20 — Samson led Israel for twenty years in the days of the Philistines.",
+      "d": "medium"
+    },
+    {
+      "q": "Samson was set apart from birth as what?",
+      "o": [
+        "A Priest",
+        "A King",
+        "A Nazirite",
+        "A Prophet"
+      ],
+      "a": 2,
+      "e": "Judges 13:5 — 'the boy is to be a Nazirite, dedicated to God from the womb.'",
+      "d": "easy"
+    },
+    {
+      "q": "What were the rules for a Nazirite like Samson?",
+      "o": [
+        "No wine, no cutting hair, no touching dead bodies",
+        "No eating meat, no marriage, no travel",
+        "No talking, no sleeping, no wealth",
+        "No fighting, no singing, no dancing"
+      ],
+      "a": 0,
+      "e": "Judges 13:4-5 and Numbers 6 — Nazirites were not to drink fermented drink, cut their hair, or touch dead bodies.",
+      "d": "medium"
+    },
+    {
+      "q": "What was the first feat of strength Samson performed?",
+      "o": [
+        "Killing a lion with his bare hands",
+        "Killing 1,000 Philistines",
+        "Carrying the gates of Gaza",
+        "Breaking the temple pillars"
+      ],
+      "a": 0,
+      "e": "Judges 14:5-6 — A young lion came roaring toward him... he tore the lion apart with his bare hands.",
+      "d": "easy"
+    },
+    {
+      "q": "What riddle did Samson tell at his wedding feast?",
+      "o": [
+        "What is stronger than a lion?",
+        "Out of the eater, something to eat; out of the strong, something sweet",
+        "What has four legs in the morning?",
+        "Who is the judge of Israel?"
+      ],
+      "a": 1,
+      "e": "Judges 14:14 — He said to them, 'Out of the eater, something to eat; out of the strong, something sweet.'",
+      "d": "medium"
+    },
+    {
+      "q": "How did the Philistines find out the answer to Samson's riddle?",
+      "o": [
+        "They guessed it",
+        "They threatened Samson's wife",
+        "They spied on him",
+        "God told them"
+      ],
+      "a": 1,
+      "e": "Judges 14:15 — On the fourth day, they said to Samson's wife, 'Coax your husband into explaining the riddle for us.'",
+      "d": "medium"
+    },
+    {
+      "q": "What did Samson use to kill 1,000 Philistines at Lehi?",
+      "o": [
+        "A sword",
+        "A spear",
+        "A fresh jawbone of a donkey",
+        "His bare hands"
+      ],
+      "a": 2,
+      "e": "Judges 15:15 — Finding a fresh jawbone of a donkey, he grabbed it and struck down a thousand men.",
+      "d": "easy"
+    },
+    {
+      "q": "What did Samson do to the Philistines' grain fields after his wife was given to another?",
+      "o": [
+        "He burned them with 300 foxes with torches tied to their tails",
+        "He trampled them with oxen",
+        "He flooded them",
+        "He stole the harvest"
+      ],
+      "a": 0,
+      "e": "Judges 15:4-5 — He caught three hundred foxes and tied them tail to tail in pairs... he lit the torches and let the foxes loose into the standing grain.",
+      "d": "medium"
+    },
+    {
+      "q": "Whom did Samson love in the valley of Sorek who eventually betrayed him?",
+      "o": [
+        "Jael",
+        "Delilah",
+        "Rahab",
+        "Ruth"
+      ],
+      "a": 1,
+      "e": "Judges 16:4 — Sometime later, he fell in love with a woman in the Valley of Sorek whose name was Delilah.",
+      "d": "easy"
+    },
+    {
+      "q": "What did Delilah want to know from Samson?",
+      "o": [
+        "Who his parents were",
+        "The secret of his great strength",
+        "Where he hid his gold",
+        "How to defeat the Israelites"
+      ],
+      "a": 1,
+      "e": "Judges 16:6 — So Delilah said to Samson, 'Tell me the secret of your great strength.'",
+      "d": "easy"
+    },
+    {
+      "q": "What were the three things Samson lied to Delilah about regarding his strength?",
+      "o": [
+        "New ropes, fresh bowstrings, weaving his hair",
+        "Lack of sleep, hunger, thirst",
+        "Special oil, blessed sword, magic ring",
+        "Praying, fasting, singing"
+      ],
+      "a": 0,
+      "e": "Judges 16:7-14 — He mentioned seven fresh bowstrings, then new ropes, then weaving seven locks of his hair.",
+      "d": "medium"
+    },
+    {
+      "q": "What was the actual secret of Samson's strength?",
+      "o": [
+        "A magic belt",
+        "His long hair (as a sign of his Nazirite vow)",
+        "A special diet",
+        "A secret prayer"
+      ],
+      "a": 1,
+      "e": "Judges 16:17 — 'No razor has ever been used on my head... If my head were shaved, my strength would leave me.'",
+      "d": "easy"
+    },
+    {
+      "q": "What did the Philistines do to Samson after they captured him?",
+      "o": [
+        "Gouged out his eyes and made him grind grain in prison",
+        "Killed him immediately",
+        "Exiled him to Egypt",
+        "Made him their king"
+      ],
+      "a": 0,
+      "e": "Judges 16:21 — Then the Philistines seized him, gouged out his eyes... and set him to grinding grain in the prison.",
+      "d": "easy"
+    },
+    {
+      "q": "What was the name of the Philistine god whose temple Samson destroyed?",
+      "o": [
+        "Baal",
+        "Asherah",
+        "Dagon",
+        "Molech"
+      ],
+      "a": 2,
+      "e": "Judges 16:23 — Now the rulers of the Philistines assembled to offer a great sacrifice to Dagon their god.",
+      "d": "medium"
+    },
+    {
+      "q": "How did Samson die?",
+      "o": [
+        "He was executed",
+        "He died of old age",
+        "He pushed over the pillars of the temple, killing himself and thousands of Philistines",
+        "He died in battle"
+      ],
+      "a": 2,
+      "e": "Judges 16:29-30 — Samson reached toward the two central pillars... 'Let me die with the Philistines!' Then he pushed with all his might, and down came the temple.",
+      "d": "easy"
+    },
+    {
+      "q": "In the days of the Judges, what phrase is repeated to describe the spiritual state of Israel?",
+      "o": [
+        "Everyone followed the Law",
+        "In those days there was no king in Israel; everyone did as he saw fit",
+        "The people were always faithful",
+        "The Levites ruled with wisdom"
+      ],
+      "a": 1,
+      "e": "Judges 17:6 & 21:25 — In those days Israel had no king; everyone did as they saw fit.",
+      "d": "medium"
+    },
+    {
+      "q": "Who was the mother of Samson?",
+      "o": [
+        "The wife of Manoah",
+        "Deborah",
+        "Hannah",
+        "Elizabeth"
+      ],
+      "a": 0,
+      "e": "Judges 13:2 — A certain man of Zorah, named Manoah... his wife was childless.",
+      "d": "hard"
+    },
+    {
+      "q": "Which judge was the son of a prostitute and had been driven away by his brothers?",
+      "o": [
+        "Gideon",
+        "Jephthah",
+        "Samson",
+        "Elon"
+      ],
+      "a": 1,
+      "e": "Judges 11:1-2 — Jephthah the Gileadite was a mighty warrior. His father was Gilead; his mother was a prostitute.",
+      "d": "hard"
+    },
+    {
+      "q": "How many brothers did Gideon have that were killed by Abimelek?",
+      "o": [
+        "12",
+        "40",
+        "70",
+        "100"
+      ],
+      "a": 2,
+      "e": "Judges 9:5 — (Abimelek) killed his seventy brothers, the sons of Jerub-Baal.",
+      "d": "hard"
+    },
+    {
+      "q": "Who was the youngest son of Gideon who escaped Abimelek's slaughter?",
+      "o": [
+        "Jotham",
+        "Zebul",
+        "Gaal",
+        "Abner"
+      ],
+      "a": 0,
+      "e": "Judges 9:5 — but Jotham, the youngest son of Jerub-Baal, escaped by hiding.",
+      "d": "hard"
+    },
+    {
+      "q": "What parable did Jotham tell to the people of Shechem?",
+      "o": [
+        "The Parable of the Sower",
+        "The Parable of the Trees choosing a king",
+        "The Parable of the Prodigal Son",
+        "The Parable of the Lost Sheep"
+      ],
+      "a": 1,
+      "e": "Judges 9:7-15 — Jotham told a story about trees going out to anoint a king for themselves.",
+      "d": "hard"
+    },
+    {
+      "q": "Which judge followed Othniel and Ehud, but is only mentioned in one verse?",
+      "o": [
+        "Shamgar",
+        "Tola",
+        "Jair",
+        "Ibzan"
+      ],
+      "a": 0,
+      "e": "Judges 3:31 — After Ehud came Shamgar son of Anath...",
+      "d": "medium"
+    },
+    {
+      "q": "How many years did the Israelites wander in the wilderness before the Judges (context from Jephthah's speech)?",
+      "o": [
+        "40",
+        "100",
+        "300",
+        "430"
+      ],
+      "a": 2,
+      "e": "Judges 11:26 — 'For three hundred years Israel occupied Heshbon, Aroer...'",
+      "d": "hard"
+    },
+    {
+      "q": "Who was the father of Samson?",
+      "o": [
+        "Manoah",
+        "Elkanah",
+        "Jesse",
+        "Boaz"
+      ],
+      "a": 0,
+      "e": "Judges 13:2 — A certain man of Zorah, named Manoah...",
+      "d": "medium"
+    },
+    {
+      "q": "What did Samson's parents offer to the LORD after the angel appeared?",
+      "o": [
+        "A bull",
+        "A young goat and a grain offering",
+        "Two pigeons",
+        "A lamb"
+      ],
+      "a": 1,
+      "e": "Judges 13:19 — Then Manoah took a young goat, together with the grain offering, and sacrificed it on a rock.",
+      "d": "hard"
+    },
+    {
+      "q": "Where did Samson find the honey he ate?",
+      "o": [
+        "In a beehive in a tree",
+        "In the carcass of the lion he had killed",
+        "At his wedding feast",
+        "In the desert"
+      ],
+      "a": 1,
+      "e": "Judges 14:8-9 — he turned aside to look at the lion’s carcass, and in it he saw a swarm of bees and some honey.",
+      "d": "medium"
+    },
+    {
+      "q": "How many Philistine men were killed by Samson to pay off his wedding debt?",
+      "o": [
+        "30",
+        "300",
+        "1,000",
+        "3,000"
+      ],
+      "a": 0,
+      "e": "Judges 14:19 — He went down to Ashkelon, struck down thirty of their men, stripped them of everything and gave their clothes to those who had explained the riddle.",
+      "d": "hard"
+    },
+    {
+      "q": "What did Samson carry to the top of a hill facing Hebron?",
+      "o": [
+        "The pillars of a temple",
+        "The gates of the city of Gaza",
+        "A giant shield",
+        "The Ark of the Covenant"
+      ],
+      "a": 1,
+      "e": "Judges 16:3 — Samson... took hold of the doors of the city gate, together with the two posts, and tore them loose... He carried them to the top of the hill that faces Hebron.",
+      "d": "medium"
+    },
+    {
+      "q": "How much silver did each of the Philistine rulers promise Delilah to betray Samson?",
+      "o": [
+        "30 pieces",
+        "100 shekels",
+        "1,100 shekels",
+        "5,000 shekels"
+      ],
+      "a": 2,
+      "e": "Judges 16:5 — 'Each one of us will give you eleven hundred shekels of silver.'",
+      "d": "hard"
+    },
+    {
+      "q": "Which judge was from the tribe of Issachar and led Israel for 23 years?",
+      "o": [
+        "Tola",
+        "Jair",
+        "Ibzan",
+        "Elon"
+      ],
+      "a": 0,
+      "e": "Judges 10:1-2 — After the time of Abimelek, a man of Issachar named Tola... led Israel twenty-three years.",
+      "d": "hard"
+    },
+    {
+      "q": "Which judge had thirty sons who rode thirty donkeys and controlled thirty towns?",
+      "o": [
+        "Jair",
+        "Ibzan",
+        "Abdon",
+        "Elon"
+      ],
+      "a": 0,
+      "e": "Judges 10:3-4 — He (Jair) was followed by Jair of Gilead, who led Israel twenty-two years. He had thirty sons, who rode thirty donkeys. They controlled thirty towns...",
+      "d": "hard"
+    },
+    {
+      "q": "Which judge had thirty sons and thirty daughters, and brought in thirty daughters from outside for his sons?",
+      "o": [
+        "Ibzan",
+        "Elon",
+        "Abdon",
+        "Tola"
+      ],
+      "a": 0,
+      "e": "Judges 12:8-9 — After him, Ibzan of Bethlehem led Israel. He had thirty sons and thirty daughters.",
+      "d": "hard"
+    },
+    {
+      "q": "Which judge had forty sons and thirty grandsons, who rode on seventy donkeys?",
+      "o": [
+        "Abdon",
+        "Elon",
+        "Ibzan",
+        "Jair"
+      ],
+      "a": 0,
+      "e": "Judges 12:13-14 — After him, Abdon son of Hillel... led Israel. He had forty sons and thirty grandsons, who rode on seventy donkeys.",
+      "d": "hard"
+    },
+    {
+      "q": "In the story of Micah, what did he steal from his mother and then return?",
+      "o": [
+        "Gold jewelry",
+        "1,100 shekels of silver",
+        "A flock of sheep",
+        "A sacred robe"
+      ],
+      "a": 1,
+      "e": "Judges 17:1-2 — Micah said to his mother, 'The eleven hundred shekels of silver that were taken from you... I have the silver.'",
+      "d": "hard"
+    },
+    {
+      "q": "What did Micah make with the silver returned to him?",
+      "o": [
+        "A crown",
+        "An idol (an image and an idol)",
+        "An altar",
+        "A trumpet"
+      ],
+      "a": 1,
+      "e": "Judges 17:4 — His mother took two hundred shekels of silver and gave them to a silversmith, who used them to make the idol.",
+      "d": "hard"
+    },
+    {
+      "q": "Which tribe migrated to Laish and stole Micah's idols and his priest?",
+      "o": [
+        "Dan",
+        "Benjamin",
+        "Judah",
+        "Simeon"
+      ],
+      "a": 0,
+      "e": "Judges 18:1-27 — The Danites... took what Micah had made, and his priest, and went on to Laish.",
+      "d": "hard"
+    },
+    {
+      "q": "The final chapters of Judges describe a civil war against which tribe?",
+      "o": [
+        "Benjamin",
+        "Ephraim",
+        "Judah",
+        "Dan"
+      ],
+      "a": 0,
+      "e": "Judges 20:1 — Then all the Israelites from Dan to Beersheba... came out as one man... to fight against Benjamin.",
+      "d": "medium"
+    },
+    {
+      "q": "Why did the other tribes of Israel go to war against the tribe of Benjamin?",
+      "o": [
+        "Because of the crime committed at Gibeah",
+        "Because Benjamin refused to pay taxes",
+        "Because Benjamin worshiped Baal",
+        "Because Benjamin attacked Judah"
+      ],
+      "a": 0,
+      "e": "Judges 19-20 — A Levite's concubine was abused and killed in the Benjamite city of Gibeah.",
+      "d": "medium"
+    },
+    {
+      "q": "How many Benjamite men survived the final battle of the civil war?",
+      "o": [
+        "6",
+        "60",
+        "600",
+        "6,000"
+      ],
+      "a": 2,
+      "e": "Judges 20:47 — But six hundred of them turned and fled into the wilderness to the rock of Rimmon.",
+      "d": "hard"
+    },
+    {
+      "q": "What was the name of the place where the Benjamites snatched wives from among the dancers?",
+      "o": [
+        "Jerusalem",
+        "Shiloh",
+        "Bethel",
+        "Mizpah"
+      ],
+      "a": 1,
+      "e": "Judges 21:19-23 — 'Go and hide in the vineyards and watch. When the young women of Shiloh come out to join in the dancing, rush out...'",
+      "d": "hard"
+    },
+    {
+      "q": "Who was the father of Gideon?",
+      "o": [
+        "Joash",
+        "Abiezer",
+        "Manoah",
+        "Jesse"
+      ],
+      "a": 0,
+      "e": "Judges 6:11 — Gideon son of Joash was threshing wheat in a winepress.",
+      "d": "hard"
+    },
+    {
+      "q": "What was the name of the place where the angel of the LORD sat under an oak tree to talk to Gideon?",
+      "o": [
+        "Ophrah",
+        "Bethel",
+        "Mizpah",
+        "Shechem"
+      ],
+      "a": 0,
+      "e": "Judges 6:11 — The angel of the LORD came and sat down under the oak in Ophrah that belonged to Joash.",
+      "d": "hard"
+    },
+    {
+      "q": "How many years of peace did Israel have after Gideon defeated Midian?",
+      "o": [
+        "20",
+        "40",
+        "80",
+        "100"
+      ],
+      "a": 1,
+      "e": "Judges 8:28 — Thus Midian was subdued before the Israelites... During Gideon’s lifetime, the land had peace forty years.",
+      "d": "medium"
+    },
+    {
+      "q": "What did Gideon make from the gold earrings taken from the Midianites that became a snare to Israel?",
+      "o": [
+        "A golden calf",
+        "An ephod",
+        "A crown",
+        "A sword"
+      ],
+      "a": 1,
+      "e": "Judges 8:27 — Gideon made the gold into an ephod, which he placed in Ophrah... it became a snare to Gideon and his family.",
+      "d": "hard"
+    },
+    {
+      "q": "Which judge was the son of Gilead?",
+      "o": [
+        "Jephthah",
+        "Samson",
+        "Othniel",
+        "Ehud"
+      ],
+      "a": 0,
+      "e": "Judges 11:1 — Jephthah the Gileadite... His father was Gilead.",
+      "d": "medium"
+    },
+    {
+      "q": "How long did Jephthah's daughter ask for to roam the hills and weep before her sacrifice?",
+      "o": [
+        "One month",
+        "Two months",
+        "Three months",
+        "Forty days"
+      ],
+      "a": 1,
+      "e": "Judges 11:37 — 'But grant me this one request,' she said. 'Give me two months to roam the hills and weep with my friends...'",
+      "d": "hard"
+    },
+    {
+      "q": "How many years did Jephthah lead Israel?",
+      "o": [
+        "6",
+        "10",
+        "20",
+        "40"
+      ],
+      "a": 0,
+      "e": "Judges 12:7 — Jephthah led Israel six years.",
+      "d": "hard"
+    },
+    {
+      "q": "How many Philistines did Samson kill at his death?",
+      "o": [
+        "About 300",
+        "About 1,000",
+        "More when he died than while he lived",
+        "All of them"
+      ],
+      "a": 2,
+      "e": "Judges 16:30 — Thus he killed many more when he died than while he lived.",
+      "d": "medium"
+    },
+    {
+      "q": "Which judge was known for his strength being tied to his hair?",
+      "o": [
+        "Gideon",
+        "Barak",
+        "Samson",
+        "Jephthah"
+      ],
+      "a": 2,
+      "e": "Judges 16 — Samson's strength was linked to his Nazirite vow, symbolized by his hair.",
+      "d": "easy"
+    },
+    {
+      "q": "Who was the woman who killed Sisera?",
+      "o": [
+        "Deborah",
+        "Jael",
+        "Delilah",
+        "Rahab"
+      ],
+      "a": 1,
+      "e": "Judges 4:21 — But Jael, Heber’s wife... drove the peg through his temple.",
+      "d": "easy"
+    },
+    {
+      "q": "Which judge had the shortest tenure specifically mentioned (not including Shamgar)?",
+      "o": [
+        "Ibzan",
+        "Elon",
+        "Abdon",
+        "Jephthah"
+      ],
+      "a": 3,
+      "e": "Judges 12:7 — Jephthah led Israel six years. (Other judges had 7, 8, 10, etc.)",
+      "d": "hard"
+    },
+    {
+      "q": "Who was the King of Canaan who reigned in Hazor during Deborah's time?",
+      "o": [
+        "Sisera",
+        "Jabin",
+        "Eglon",
+        "Cushan-Rishathaim"
+      ],
+      "a": 1,
+      "e": "Judges 4:2 — The LORD sold them into the hands of Jabin king of Canaan, who reigned in Hazor.",
+      "d": "hard"
+    },
+    {
+      "q": "What did the angel of the LORD do to the food Gideon prepared?",
+      "o": [
+        "Ate it",
+        "Touched it with his staff and fire flared from the rock",
+        "Multiplied it",
+        "Turned it into gold"
+      ],
+      "a": 1,
+      "e": "Judges 6:21 — With the tip of the staff that was in his hand, the angel of the LORD touched the meat and the unleavened bread. Fire flared from the rock, consuming the meat and the bread.",
+      "d": "medium"
+    },
+    {
+      "q": "How many years did Midian oppress Israel before Gideon was called?",
+      "o": [
+        "3",
+        "7",
+        "18",
+        "20"
+      ],
+      "a": 1,
+      "e": "Judges 6:1 — For seven years he gave them into the hands of the Midianites.",
+      "d": "hard"
+    },
+    {
+      "q": "What did Gideon's 300 men do with their jars?",
+      "o": [
+        "Filled them with water",
+        "Smashed them",
+        "Gave them to the enemy",
+        "Drank from them"
+      ],
+      "a": 1,
+      "e": "Judges 7:20 — The three companies blew the trumpets and smashed the jars.",
+      "d": "easy"
+    },
+    {
+      "q": "What did Samson see on his way to Timnah?",
+      "o": [
+        "A burning bush",
+        "A vineyard",
+        "A young lion",
+        "A group of Philistines"
+      ],
+      "a": 2,
+      "e": "Judges 14:5 — Samson went down to Timnah... a young lion came roaring toward him.",
+      "d": "easy"
+    },
+    {
+      "q": "What was the source of the water Samson drank after killing the 1,000 Philistines?",
+      "o": [
+        "A well",
+        "The jawbone of the donkey",
+        "A hollow place in Lehi (the ground)",
+        "A river"
+      ],
+      "a": 2,
+      "e": "Judges 15:19 — Then God opened up the hollow place in Lehi, and water came out of it.",
+      "d": "hard"
+    },
+    {
+      "q": "Who was the ruler of Shechem who helped Abimelek?",
+      "o": [
+        "Zebul",
+        "Gaal",
+        "The citizens of Shechem",
+        "Jabin"
+      ],
+      "a": 2,
+      "e": "Judges 9:1-6 — The citizens of Shechem... gathered beside the great tree at the pillar in Shechem to crown Abimelek king.",
+      "d": "hard"
+    },
+    {
+      "q": "How many years did Elon of Zebulun lead Israel?",
+      "o": [
+        "7",
+        "8",
+        "10",
+        "22"
+      ],
+      "a": 2,
+      "e": "Judges 12:11 — After him, Elon the Zebulunite led Israel ten years.",
+      "d": "hard"
+    },
+    {
+      "q": "How many years did Abdon son of Hillel lead Israel?",
+      "o": [
+        "7",
+        "8",
+        "10",
+        "40"
+      ],
+      "a": 1,
+      "e": "Judges 12:14 — He (Abdon) led Israel eight years.",
+      "d": "hard"
+    },
+    {
+      "q": "Where was Samson buried?",
+      "o": [
+        "Gaza",
+        "Timnah",
+        "Between Zorah and Eshtaol in the tomb of Manoah",
+        "In the valley of Sorek"
+      ],
+      "a": 2,
+      "e": "Judges 16:31 — Then his brothers and his father’s whole family... buried him between Zorah and Eshtaol in the tomb of Manoah his father.",
+      "d": "medium"
+    },
+    {
+      "q": "In the period of the Judges, what cycle did Israel repeatedly follow?",
+      "o": [
+        "Sin, Slavery, Sorrow, Salvation",
+        "Success, Wealth, Pride, Fall",
+        "Building, Growing, Fighting, Winning",
+        "Praying, Fasting, Sacrifice, Peace"
+      ],
+      "a": 0,
+      "e": "The Book of Judges repeatedly shows Israel sinning, being oppressed, crying out to God, and being delivered.",
+      "d": "medium"
+    },
+    {
+      "q": "Which tribe was Samson from?",
+      "o": [
+        "Judah",
+        "Levi",
+        "Dan",
+        "Benjamin"
+      ],
+      "a": 2,
+      "e": "Judges 13:2 — A certain man of Zorah, named Manoah, from the clan of the Danites.",
+      "d": "medium"
+    },
+    {
+      "q": "How did the Israelites get across the Jordan in the days of the Judges (not usually mentioned)?",
+      "o": [
+        "They swam",
+        "They used the fords of the Jordan",
+        "The water stopped",
+        "They used boats"
+      ],
+      "a": 1,
+      "e": "Judges 3:28, 12:5 — The Israelites took control of the fords of the Jordan.",
+      "d": "hard"
+    },
+    {
+      "q": "Who was the king of the Moabites that Ehud killed?",
+      "o": [
+        "Balak",
+        "Eglon",
+        "Mesha",
+        "Hadad"
+      ],
+      "a": 1,
+      "e": "Judges 3:12-17 — The LORD gave Eglon king of Moab power over Israel... Ehud presented the tribute to Eglon king of Moab.",
+      "d": "medium"
+    },
+    {
+      "q": "What did Ehud say he had for King Eglon to get him alone?",
+      "o": [
+        "A gift",
+        "A secret message from God",
+        "A warning of war",
+        "A tax payment"
+      ],
+      "a": 1,
+      "e": "Judges 3:19 — He said, 'I have a secret message for you, O king.' (Later in v20: 'I have a message from God for you.')",
+      "d": "medium"
+    },
+    {
+      "q": "How many years did Othniel lead Israel in peace?",
+      "o": [
+        "10",
+        "20",
+        "40",
+        "80"
+      ],
+      "a": 2,
+      "e": "Judges 3:11 — So the land had peace for forty years, until Othniel son of Kenaz died.",
+      "d": "medium"
+    },
+    {
+      "q": "How many years did Ehud lead Israel (or how long was the peace after him)?",
+      "o": [
+        "40",
+        "80",
+        "20",
+        "10"
+      ],
+      "a": 1,
+      "e": "Judges 3:30 — That day Moab was made subject to Israel, and the land had peace for eighty years.",
+      "d": "medium"
+    },
+    {
+      "q": "Who was the father of Barak?",
+      "o": [
+        "Abinoam",
+        "Lappidoth",
+        "Heber",
+        "Jabin"
+      ],
+      "a": 0,
+      "e": "Judges 4:6 — She sent for Barak son of Abinoam.",
+      "d": "hard"
+    },
+    {
+      "q": "What did Gideon's father say to the crowd who wanted to kill Gideon for destroying the altar of Baal?",
+      "o": [
+        "'He is right'",
+        "'Let Baal plead his own cause'",
+        "'He must die'",
+        "'God told him to do it'"
+      ],
+      "a": 1,
+      "e": "Judges 6:31 — Joash replied... 'If Baal really is a god, he can defend himself when someone breaks down his altar.'",
+      "d": "hard"
+    },
+    {
+      "q": "What did Gideon see in a dream of a Midianite man that gave him confidence?",
+      "o": [
+        "A lion eating a sheep",
+        "A round loaf of barley bread tumbling into the Midianite camp",
+        "A giant sword in the sky",
+        "A flood of water"
+      ],
+      "a": 1,
+      "e": "Judges 7:13 — Gideon arrived just as a man was telling a friend his dream. 'A round loaf of barley bread came tumbling into the Midianite camp...' его друг ответил: 'Это ничто иное, как меч Гедеона'.",
+      "d": "hard"
+    },
+    {
+      "q": "Who were the two Midianite leaders captured and killed by the men of Ephraim?",
+      "o": [
+        "Zebah and Zalmunna",
+        "Oreb and Zeeb",
+        "Sihon and Og",
+        "Balak and Balaam"
+      ],
+      "a": 1,
+      "e": "Judges 7:25 — They also captured two of the Midianite leaders, Oreb and Zeeb.",
+      "d": "hard"
+    },
+    {
+      "q": "Who were the two kings of Midian pursued and killed by Gideon himself?",
+      "o": [
+        "Oreb and Zeeb",
+        "Zebah and Zalmunna",
+        "Eglon and Jabin",
+        "Cushan and Rishathaim"
+      ],
+      "a": 1,
+      "e": "Judges 8:5 — 'I am pursuing Zebah and Zalmunna, the kings of Midian.'",
+      "d": "hard"
+    },
+    {
+      "q": "How many years did Gideon judge Israel?",
+      "o": [
+        "20",
+        "40",
+        "60",
+        "80"
+      ],
+      "a": 1,
+      "e": "Judges 8:28 — During Gideon’s lifetime, the land had peace forty years.",
+      "d": "medium"
+    },
+    {
+      "q": "Who was the father of Jephthah?",
+      "o": [
+        "Gilead",
+        "Manasseh",
+        "Joash",
+        "Manoah"
+      ],
+      "a": 0,
+      "e": "Judges 11:1 — His father was Gilead.",
+      "d": "medium"
+    },
+    {
+      "q": "What did the Spirit of the LORD do to Samson when he went to Timnah?",
+      "o": [
+        "Made him sleep",
+        "Came powerfully upon him",
+        "Gave him a vision",
+        "Spoke to him"
+      ],
+      "a": 1,
+      "e": "Judges 14:6 — The Spirit of the LORD came powerfully upon him so that he tore the lion apart.",
+      "d": "medium"
+    },
+    {
+      "q": "How many Philistine men did Samson kill after they used his wife to find the answer to the riddle?",
+      "o": [
+        "30",
+        "300",
+        "1,000",
+        "3,000"
+      ],
+      "a": 0,
+      "e": "Judges 14:19 — He went down to Ashkelon, struck down thirty of their men...",
+      "d": "medium"
+    },
+    {
+      "q": "Where did the angel of the LORD appear to Samson's mother?",
+      "o": [
+        "In the field",
+        "In the temple",
+        "In her house",
+        "By the river"
+      ],
+      "a": 0,
+      "e": "Judges 13:9 — God listened to Manoah, and the angel of God came again to the woman while she was out in the field.",
+      "d": "hard"
+    },
+    {
+      "q": "How many silver shekels were given to Abimelek from the temple of Baal-Berith?",
+      "o": [
+        "30",
+        "70",
+        "1,100",
+        "5,000"
+      ],
+      "a": 1,
+      "e": "Judges 9:4 — They gave him seventy shekels of silver from the temple of Baal-Berith.",
+      "d": "hard"
+    }
+  ],
+  "Kings": [
+    {
+      "q": "Who was the first king of Israel?",
+      "o": [
+        "David",
+        "Saul",
+        "Solomon",
+        "Samuel"
+      ],
+      "a": 1,
+      "e": "1 Samuel 10:1",
+      "d": "easy"
+    },
+    {
+      "q": "Which king defeated Goliath?",
+      "o": [
+        "Saul",
+        "David",
+        "Solomon",
+        "Joash"
+      ],
+      "a": 1,
+      "e": "1 Samuel 17",
+      "d": "easy"
+    },
+    {
+      "q": "Which king was known for his wisdom?",
+      "o": [
+        "David",
+        "Hezekiah",
+        "Solomon",
+        "Josiah"
+      ],
+      "a": 2,
+      "e": "1 Kings 3",
+      "d": "easy"
+    },
+    {
+      "q": "Which king built the first Temple?",
+      "o": [
+        "David",
+        "Solomon",
+        "Hezekiah",
+        "Josiah"
+      ],
+      "a": 1,
+      "e": "1 Kings 6",
+      "d": "easy"
+    },
+    {
+      "q": "Who was David's father?",
+      "o": [
+        "Jesse",
+        "Eli",
+        "Samuel",
+        "Boaz"
+      ],
+      "a": 0,
+      "e": "1 Samuel 16:1",
+      "d": "easy"
+    },
+    {
+      "q": "Which king was a shepherd before he was anointed?",
+      "o": [
+        "Saul",
+        "Solomon",
+        "David",
+        "Josiah"
+      ],
+      "a": 2,
+      "e": "1 Samuel 16",
+      "d": "easy"
+    },
+    {
+      "q": "Who was Saul's son and David's friend?",
+      "o": [
+        "Jonathan",
+        "Ish-Bosheth",
+        "Abner",
+        "Mephibosheth"
+      ],
+      "a": 0,
+      "e": "1 Samuel 18:1",
+      "d": "easy"
+    },
+    {
+      "q": "Which king married Jezebel?",
+      "o": [
+        "Omri",
+        "Ahab",
+        "Jehu",
+        "Joram"
+      ],
+      "a": 1,
+      "e": "1 Kings 16:31",
+      "d": "easy"
+    },
+    {
+      "q": "Which king saw the handwriting on the wall?",
+      "o": [
+        "Nebuchadnezzar",
+        "Belshazzar",
+        "Darius",
+        "Cyrus"
+      ],
+      "a": 1,
+      "e": "Daniel 5",
+      "d": "medium"
+    },
+    {
+      "q": "Which king was given 15 more years of life?",
+      "o": [
+        "Josiah",
+        "Hezekiah",
+        "David",
+        "Asa"
+      ],
+      "a": 1,
+      "e": "2 Kings 20:6",
+      "d": "medium"
+    },
+    {
+      "q": "Which king of Judah found the Book of the Law?",
+      "o": [
+        "Hezekiah",
+        "Josiah",
+        "Joash",
+        "Asa"
+      ],
+      "a": 1,
+      "e": "2 Kings 22:8",
+      "d": "easy"
+    },
+    {
+      "q": "Which king was only 8 years old when he began to reign?",
+      "o": [
+        "Joash",
+        "Josiah",
+        "Manasseh",
+        "Hezekiah"
+      ],
+      "a": 1,
+      "e": "2 Kings 22:1",
+      "d": "easy"
+    },
+    {
+      "q": "Which king of Israel made two golden calves?",
+      "o": [
+        "Jeroboam",
+        "Rehoboam",
+        "Ahab",
+        "Jehu"
+      ],
+      "a": 0,
+      "e": "1 Kings 12:28",
+      "d": "medium"
+    },
+    {
+      "q": "Which king was known for his furious chariot driving?",
+      "o": [
+        "Ahab",
+        "Jehu",
+        "Joram",
+        "Jehu's father"
+      ],
+      "a": 1,
+      "e": "2 Kings 9:20",
+      "d": "medium"
+    },
+    {
+      "q": "Who was the last king of Judah?",
+      "o": [
+        "Jehoiakim",
+        "Jehoiachin",
+        "Zedekiah",
+        "Josiah"
+      ],
+      "a": 2,
+      "e": "2 Kings 24:18",
+      "d": "medium"
+    },
+    {
+      "q": "Which king of Babylon destroyed Jerusalem in 586 BC?",
+      "o": [
+        "Belshazzar",
+        "Nebuchadnezzar",
+        "Cyrus",
+        "Darius"
+      ],
+      "a": 1,
+      "e": "2 Kings 25",
+      "d": "easy"
+    },
+    {
+      "q": "Which king of Persia allowed the Jews to return?",
+      "o": [
+        "Cyrus",
+        "Darius",
+        "Artaxerxes",
+        "Xerxes"
+      ],
+      "a": 0,
+      "e": "Ezra 1:1",
+      "d": "medium"
+    },
+    {
+      "q": "Which king was struck with leprosy?",
+      "o": [
+        "Uzziah",
+        "Ahaz",
+        "Manasseh",
+        "Hezekiah"
+      ],
+      "a": 0,
+      "e": "2 Chronicles 26:19",
+      "d": "medium"
+    },
+    {
+      "q": "Which king committed suicide in a burning palace?",
+      "o": [
+        "Zimri",
+        "Omri",
+        "Baasha",
+        "Shallum"
+      ],
+      "a": 0,
+      "e": "1 Kings 16:18",
+      "d": "hard"
+    },
+    {
+      "q": "Who was the king of Tyre who helped Solomon?",
+      "o": [
+        "Hiram",
+        "Ethbaal",
+        "Ben-Hadad",
+        "Sihon"
+      ],
+      "a": 0,
+      "e": "1 Kings 5:1",
+      "d": "medium"
+    },
+    {
+      "q": "Which queen was Joash's grandmother who tried to kill him?",
+      "o": [
+        "Jezebel",
+        "Athaliah",
+        "Esther",
+        "Sheba"
+      ],
+      "a": 1,
+      "e": "2 Kings 11:1",
+      "d": "medium"
+    },
+    {
+      "q": "Which king of Israel built Samaria?",
+      "o": [
+        "Omri",
+        "Ahab",
+        "Jehu",
+        "Jeroboam"
+      ],
+      "a": 0,
+      "e": "1 Kings 16:24",
+      "d": "hard"
+    },
+    {
+      "q": "Which king reigned for only 7 days?",
+      "o": [
+        "Zimri",
+        "Shallum",
+        "Zechariah",
+        "Nadab"
+      ],
+      "a": 0,
+      "e": "1 Kings 16:15",
+      "d": "hard"
+    },
+    {
+      "q": "Which king had 700 wives and 300 concubines?",
+      "o": [
+        "David",
+        "Solomon",
+        "Saul",
+        "Rehoboam"
+      ],
+      "a": 1,
+      "e": "1 Kings 11:3",
+      "d": "easy"
+    },
+    {
+      "q": "Which king of Judah was Hezekiah's son and very wicked?",
+      "o": [
+        "Manasseh",
+        "Amon",
+        "Josiah",
+        "Ahaz"
+      ],
+      "a": 0,
+      "e": "2 Kings 21:1",
+      "d": "medium"
+    },
+    {
+      "q": "Which king of Judah died at Megiddo?",
+      "o": [
+        "Josiah",
+        "Hezekiah",
+        "Ahaz",
+        "Jehoahaz"
+      ],
+      "a": 0,
+      "e": "2 Kings 23:29",
+      "d": "medium"
+    },
+    {
+      "q": "Which king of Israel was Ahab's son and fell through a lattice?",
+      "o": [
+        "Ahaziah",
+        "Joram",
+        "Jehu",
+        "Jehoahaz"
+      ],
+      "a": 0,
+      "e": "2 Kings 1:2",
+      "d": "hard"
+    },
+    {
+      "q": "Which king of Judah was the grandson of David and saw the kingdom split?",
+      "o": [
+        "Rehoboam",
+        "Jeroboam",
+        "Asa",
+        "Abijah"
+      ],
+      "a": 0,
+      "e": "1 Kings 12",
+      "d": "easy"
+    },
+    {
+      "q": "Which king was blinded by Nebuchadnezzar?",
+      "o": [
+        "Zedekiah",
+        "Jehoiachin",
+        "Jehoiakim",
+        "Manasseh"
+      ],
+      "a": 0,
+      "e": "2 Kings 25:7",
+      "d": "medium"
+    },
+    {
+      "q": "Which king of Babylon ate grass like an ox?",
+      "o": [
+        "Nebuchadnezzar",
+        "Belshazzar",
+        "Evil-Merodach",
+        "Nabonidus"
+      ],
+      "a": 0,
+      "e": "Daniel 4:33",
+      "d": "medium"
+    },
+    {
+      "q": "Which king of Persia was Esther's husband?",
+      "o": [
+        "Xerxes",
+        "Cyrus",
+        "Darius",
+        "Artaxerxes"
+      ],
+      "a": 0,
+      "e": "Esther 1-2",
+      "d": "easy"
+    },
+    {
+      "q": "Which king of Israel killed Ahab's family?",
+      "o": [
+        "Jehu",
+        "Jeroboam II",
+        "Hoshea",
+        "Menahem"
+      ],
+      "a": 0,
+      "e": "2 Kings 9-10",
+      "d": "medium"
+    },
+    {
+      "q": "Which king of Judah was the father of Josiah?",
+      "o": [
+        "Amon",
+        "Manasseh",
+        "Hezekiah",
+        "Ahaz"
+      ],
+      "a": 0,
+      "e": "2 Kings 21:26",
+      "d": "hard"
+    },
+    {
+      "q": "Which king of Egypt took the gold shields from Jerusalem?",
+      "o": [
+        "Shishak",
+        "Necho",
+        "So",
+        "Tirhakah"
+      ],
+      "a": 0,
+      "e": "1 Kings 14:25",
+      "d": "hard"
+    },
+    {
+      "q": "Which king of Moab sacrificed his son on the wall?",
+      "o": [
+        "Mesha",
+        "Balak",
+        "Eglon",
+        "Hadadezer"
+      ],
+      "a": 0,
+      "e": "2 Kings 3:27",
+      "d": "hard"
+    },
+    {
+      "q": "Which king was known for his ivory house?",
+      "o": [
+        "Ahab",
+        "Solomon",
+        "Jehu",
+        "Jeroboam II"
+      ],
+      "a": 0,
+      "e": "1 Kings 22:39",
+      "d": "hard"
+    },
+    {
+      "q": "Which king of Israel reigned for only one month?",
+      "o": [
+        "Shallum",
+        "Zimri",
+        "Zechariah",
+        "Pekahiah"
+      ],
+      "a": 0,
+      "e": "2 Kings 15:13",
+      "d": "hard"
+    },
+    {
+      "q": "Which king of Judah was hidden in the Temple?",
+      "o": [
+        "Joash",
+        "Josiah",
+        "Hezekiah",
+        "Uzziah"
+      ],
+      "a": 0,
+      "e": "2 Kings 11",
+      "d": "medium"
+    },
+    {
+      "q": "Which king of Judah had his life extended after praying?",
+      "o": [
+        "Hezekiah",
+        "Josiah",
+        "David",
+        "Asa"
+      ],
+      "a": 0,
+      "e": "2 Kings 20",
+      "d": "easy"
+    },
+    {
+      "q": "Which king of Israel was the son of Nebat?",
+      "o": [
+        "Jeroboam",
+        "Rehoboam",
+        "Ahab",
+        "Jehu"
+      ],
+      "a": 0,
+      "e": "1 Kings 11:26",
+      "d": "medium"
+    },
+    {
+      "q": "Which king of Judah was the son of Solomon?",
+      "o": [
+        "Rehoboam",
+        "Jeroboam",
+        "Abijah",
+        "Asa"
+      ],
+      "a": 0,
+      "e": "1 Kings 11:43",
+      "d": "easy"
+    },
+    {
+      "q": "Which king of Israel was challenged by Elijah?",
+      "o": [
+        "Ahab",
+        "Jehu",
+        "Joram",
+        "Hoshea"
+      ],
+      "a": 0,
+      "e": "1 Kings 18",
+      "d": "easy"
+    },
+    {
+      "q": "Which king was David's son who rebelled?",
+      "o": [
+        "Absalom",
+        "Adonijah",
+        "Solomon",
+        "Amnon"
+      ],
+      "a": 0,
+      "e": "2 Samuel 15",
+      "d": "easy"
+    },
+    {
+      "q": "Which king was the father of Jonathan?",
+      "o": [
+        "Saul",
+        "Abner",
+        "Jesse",
+        "Eliab"
+      ],
+      "a": 0,
+      "e": "1 Samuel 14:1",
+      "d": "easy"
+    },
+    {
+      "q": "Which king of Israel was the son of Jehu?",
+      "o": [
+        "Jehoahaz",
+        "Jehoash",
+        "Jeroboam II",
+        "Zechariah"
+      ],
+      "a": 0,
+      "e": "2 Kings 13:1",
+      "d": "hard"
+    },
+    {
+      "q": "Which king of Judah was the son of Hezekiah?",
+      "o": [
+        "Manasseh",
+        "Amon",
+        "Josiah",
+        "Ahaz"
+      ],
+      "a": 0,
+      "e": "2 Kings 20:21",
+      "d": "medium"
+    },
+    {
+      "q": "Which king of Assyria besieged Jerusalem in 701 BC?",
+      "o": [
+        "Sennacherib",
+        "Sargon",
+        "Shalmaneser",
+        "Tiglath-Pileser"
+      ],
+      "a": 0,
+      "e": "2 Kings 18:13",
+      "d": "medium"
+    },
+    {
+      "q": "Which king of Israel was the last before the exile?",
+      "o": [
+        "Hoshea",
+        "Pekah",
+        "Menahem",
+        "Zechariah"
+      ],
+      "a": 0,
+      "e": "2 Kings 17:1",
+      "d": "hard"
+    },
+    {
+      "q": "Which king of Judah was the father of Hezekiah?",
+      "o": [
+        "Ahaz",
+        "Jotham",
+        "Uzziah",
+        "Manasseh"
+      ],
+      "a": 0,
+      "e": "2 Kings 16:20",
+      "d": "hard"
+    },
+    {
+      "q": "Which king of Babylon released Jehoiachin from prison?",
+      "o": [
+        "Evil-Merodach",
+        "Nebuchadnezzar",
+        "Belshazzar",
+        "Cyrus"
+      ],
+      "a": 0,
+      "e": "2 Kings 25:27",
+      "d": "hard"
+    },
+    {
+      "q": "Which king of Judah was the son of Rehoboam?",
+      "o": [
+        "Abijah",
+        "Asa",
+        "Jehoshaphat",
+        "Jehoram"
+      ],
+      "a": 0,
+      "e": "1 Kings 14:31",
+      "d": "hard"
+    },
+    {
+      "q": "Which king of Israel was the son of Omri?",
+      "o": [
+        "Ahab",
+        "Ahaziah",
+        "Joram",
+        "Jehu"
+      ],
+      "a": 0,
+      "e": "1 Kings 16:28",
+      "d": "easy"
+    },
+    {
+      "q": "Which king of Judah was the son of Jehoshaphat?",
+      "o": [
+        "Jehoram",
+        "Ahaziah",
+        "Joash",
+        "Amaziah"
+      ],
+      "a": 0,
+      "e": "1 Kings 22:50",
+      "d": "hard"
+    },
+    {
+      "q": "Which king of Israel was the son of Ahab?",
+      "o": [
+        "Ahaziah",
+        "Joram",
+        "Jehu",
+        "Jehoahaz"
+      ],
+      "a": 0,
+      "e": "1 Kings 22:40",
+      "d": "medium"
+    },
+    {
+      "q": "Which king of Judah was the son of Jehoram?",
+      "o": [
+        "Ahaziah",
+        "Joash",
+        "Amaziah",
+        "Uzziah"
+      ],
+      "a": 0,
+      "e": "2 Kings 8:24",
+      "d": "hard"
+    },
+    {
+      "q": "Which king of Israel was the son of Menahem?",
+      "o": [
+        "Pekahiah",
+        "Pekah",
+        "Hoshea",
+        "Shallum"
+      ],
+      "a": 0,
+      "e": "2 Kings 15:22",
+      "d": "hard"
+    },
+    {
+      "q": "Which king of Judah was the son of Amaziah?",
+      "o": [
+        "Uzziah",
+        "Jotham",
+        "Ahaz",
+        "Hezekiah"
+      ],
+      "a": 0,
+      "e": "2 Kings 14:21",
+      "d": "hard"
+    },
+    {
+      "q": "Which king of Israel was the son of Jehoash?",
+      "o": [
+        "Jeroboam II",
+        "Zechariah",
+        "Shallum",
+        "Menahem"
+      ],
+      "a": 0,
+      "e": "2 Kings 14:16",
+      "d": "hard"
+    },
+    {
+      "q": "Which king of Judah was the son of Uzziah?",
+      "o": [
+        "Jotham",
+        "Ahaz",
+        "Hezekiah",
+        "Manasseh"
+      ],
+      "a": 0,
+      "e": "2 Kings 15:7",
+      "d": "hard"
+    },
+    {
+      "q": "Which king of Israel was the son of Jeroboam?",
+      "o": [
+        "Nadab",
+        "Baasha",
+        "Elah",
+        "Omri"
+      ],
+      "a": 0,
+      "e": "1 Kings 14:20",
+      "d": "hard"
+    },
+    {
+      "q": "Which king of Judah was the son of Asa?",
+      "o": [
+        "Jehoshaphat",
+        "Jehoram",
+        "Ahaziah",
+        "Joash"
+      ],
+      "a": 0,
+      "e": "1 Kings 15:24",
+      "d": "hard"
+    },
+    {
+      "q": "Which king of Israel was the second son of Ahab to reign?",
+      "o": [
+        "Joram",
+        "Ahaziah",
+        "Jehu",
+        "Jehoahaz"
+      ],
+      "a": 0,
+      "e": "2 Kings 3:1",
+      "d": "hard"
+    },
+    {
+      "q": "Which king of Judah was the son of Ahaziah?",
+      "o": [
+        "Joash",
+        "Amaziah",
+        "Uzziah",
+        "Jotham"
+      ],
+      "a": 0,
+      "e": "2 Kings 11:2",
+      "d": "hard"
+    },
+    {
+      "q": "Which king of Israel was the son of Jehoahaz?",
+      "o": [
+        "Jehoash",
+        "Jeroboam II",
+        "Zechariah",
+        "Shallum"
+      ],
+      "a": 0,
+      "e": "2 Kings 13:9",
+      "d": "hard"
+    },
+    {
+      "q": "Which king of Judah was the son of Jotham?",
+      "o": [
+        "Ahaz",
+        "Hezekiah",
+        "Manasseh",
+        "Amon"
+      ],
+      "a": 0,
+      "e": "2 Kings 15:38",
+      "d": "hard"
+    },
+    {
+      "q": "Which king of Israel was the son of Baasha?",
+      "o": [
+        "Elah",
+        "Zimri",
+        "Omri",
+        "Tibni"
+      ],
+      "a": 0,
+      "e": "1 Kings 16:6",
+      "d": "hard"
+    },
+    {
+      "q": "Which king of Judah was the father of Amon?",
+      "o": [
+        "Manasseh",
+        "Josiah",
+        "Hezekiah",
+        "Ahaz"
+      ],
+      "a": 0,
+      "e": "2 Kings 21:18",
+      "d": "hard"
+    },
+    {
+      "q": "Which king of Israel was the son of Jeroboam II?",
+      "o": [
+        "Zechariah",
+        "Shallum",
+        "Menahem",
+        "Pekah"
+      ],
+      "a": 0,
+      "e": "2 Kings 15:8",
+      "d": "hard"
+    },
+    {
+      "q": "Which king of Judah was the father of Zedekiah?",
+      "o": [
+        "Josiah",
+        "Jehoiakim",
+        "Jehoiachin",
+        "Amon"
+      ],
+      "a": 0,
+      "e": "2 Kings 24:17",
+      "d": "hard"
+    },
+    {
+      "q": "Which king of Israel was the son of Menahem and reigned 2 years?",
+      "o": [
+        "Pekahiah",
+        "Pekah",
+        "Hoshea",
+        "Shallum"
+      ],
+      "a": 0,
+      "e": "2 Kings 15:23",
+      "d": "hard"
+    },
+    {
+      "q": "Which king of Judah was the son of Abijah?",
+      "o": [
+        "Asa",
+        "Jehoshaphat",
+        "Jehoram",
+        "Ahaziah"
+      ],
+      "a": 0,
+      "e": "1 Kings 15:8",
+      "d": "hard"
+    },
+    {
+      "q": "Which king of Israel was the son of Jeroboam and reigned 2 years?",
+      "o": [
+        "Nadab",
+        "Baasha",
+        "Elah",
+        "Omri"
+      ],
+      "a": 0,
+      "e": "1 Kings 15:25",
+      "d": "hard"
+    },
+    {
+      "q": "Which king of Judah was the son of Amaziah and reigned 52 years?",
+      "o": [
+        "Uzziah",
+        "Jotham",
+        "Ahaz",
+        "Hezekiah"
+      ],
+      "a": 0,
+      "e": "2 Kings 15:2",
+      "d": "hard"
+    },
+    {
+      "q": "Which king of Israel was the son of Jehoash and reigned 41 years?",
+      "o": [
+        "Jeroboam II",
+        "Zechariah",
+        "Shallum",
+        "Menahem"
+      ],
+      "a": 0,
+      "e": "2 Kings 14:23",
+      "d": "hard"
+    },
+    {
+      "q": "Which king of Judah was the son of Jehoshaphat and reigned 8 years?",
+      "o": [
+        "Jehoram",
+        "Ahaziah",
+        "Joash",
+        "Amaziah"
+      ],
+      "a": 0,
+      "e": "2 Kings 8:17",
+      "d": "hard"
+    },
+    {
+      "q": "Which king of Israel was the son of Omri and reigned 22 years?",
+      "o": [
+        "Ahab",
+        "Ahaziah",
+        "Joram",
+        "Jehu"
+      ],
+      "a": 0,
+      "e": "1 Kings 16:29",
+      "d": "hard"
+    },
+    {
+      "q": "Which king of Judah was the son of Rehoboam and reigned 3 years?",
+      "o": [
+        "Abijah",
+        "Asa",
+        "Jehoshaphat",
+        "Jehoram"
+      ],
+      "a": 0,
+      "e": "1 Kings 15:2",
+      "d": "hard"
+    },
+    {
+      "q": "Which king of Israel was the son of Baasha and reigned 2 years?",
+      "o": [
+        "Elah",
+        "Zimri",
+        "Omri",
+        "Tibni"
+      ],
+      "a": 0,
+      "e": "1 Kings 16:8",
+      "d": "hard"
+    },
+    {
+      "q": "Which king of Judah was the son of Josiah and reigned 11 years?",
+      "o": [
+        "Jehoiakim",
+        "Jehoahaz",
+        "Jehoiachin",
+        "Zedekiah"
+      ],
+      "a": 0,
+      "e": "2 Kings 23:36",
+      "d": "hard"
+    },
+    {
+      "q": "Which king of Israel was the son of Jeroboam and reigned 22 years?",
+      "o": [
+        "Jeroboam",
+        "Nadab",
+        "Baasha",
+        "Elah"
+      ],
+      "a": 0,
+      "e": "1 Kings 14:20",
+      "d": "hard"
+    },
+    {
+      "q": "Which king of Judah was the son of Joash and reigned 29 years?",
+      "o": [
+        "Amaziah",
+        "Uzziah",
+        "Jotham",
+        "Ahaz"
+      ],
+      "a": 0,
+      "e": "2 Kings 14:2",
+      "d": "hard"
+    },
+    {
+      "q": "Which king of Israel was the son of Ahab and reigned 12 years?",
+      "o": [
+        "Joram",
+        "Ahaziah",
+        "Jehu",
+        "Jehoahaz"
+      ],
+      "a": 0,
+      "e": "2 Kings 3:1",
+      "d": "hard"
+    },
+    {
+      "q": "Which king of Judah was the son of Jotham and reigned 16 years?",
+      "o": [
+        "Ahaz",
+        "Hezekiah",
+        "Manasseh",
+        "Amon"
+      ],
+      "a": 0,
+      "e": "2 Kings 16:2",
+      "d": "hard"
+    },
+    {
+      "q": "Which king of Israel was the son of Jehoahaz and reigned 16 years?",
+      "o": [
+        "Jehoash",
+        "Jeroboam II",
+        "Zechariah",
+        "Shallum"
+      ],
+      "a": 0,
+      "e": "2 Kings 13:10",
+      "d": "hard"
+    },
+    {
+      "q": "Which king of Judah was the son of Hezekiah and reigned 55 years?",
+      "o": [
+        "Manasseh",
+        "Amon",
+        "Josiah",
+        "Ahaz"
+      ],
+      "a": 0,
+      "e": "2 Kings 21:1",
+      "d": "hard"
+    },
+    {
+      "q": "Which king of Israel was the son of Jeroboam II and reigned 6 months?",
+      "o": [
+        "Zechariah",
+        "Shallum",
+        "Menahem",
+        "Pekah"
+      ],
+      "a": 0,
+      "e": "2 Kings 15:8",
+      "d": "hard"
+    },
+    {
+      "q": "Which king of Judah was the son of Amon and reigned 31 years?",
+      "o": [
+        "Josiah",
+        "Jehoahaz",
+        "Jehoiakim",
+        "Zedekiah"
+      ],
+      "a": 0,
+      "e": "2 Kings 22:1",
+      "d": "hard"
+    },
+    {
+      "q": "Which king of Israel was the son of Omri and reigned 12 years?",
+      "o": [
+        "Omri",
+        "Ahab",
+        "Ahaziah",
+        "Joram"
+      ],
+      "a": 0,
+      "e": "1 Kings 16:23",
+      "d": "hard"
+    },
+    {
+      "q": "Which king of Judah was the son of Uzziah and reigned 16 years?",
+      "o": [
+        "Jotham",
+        "Ahaz",
+        "Hezekiah",
+        "Manasseh"
+      ],
+      "a": 0,
+      "e": "2 Kings 15:33",
+      "d": "hard"
+    },
+    {
+      "q": "Which king of Israel was the son of Ahab and reigned 2 years?",
+      "o": [
+        "Ahaziah",
+        "Joram",
+        "Jehu",
+        "Jehoahaz"
+      ],
+      "a": 0,
+      "e": "1 Kings 22:51",
+      "d": "hard"
+    },
+    {
+      "q": "Which king of Judah was the son of Jehoram and reigned 1 year?",
+      "o": [
+        "Ahaziah",
+        "Joash",
+        "Amaziah",
+        "Uzziah"
+      ],
+      "a": 0,
+      "e": "2 Kings 8:26",
+      "d": "hard"
+    },
+    {
+      "q": "Which king of Israel was the son of Jehu and reigned 17 years?",
+      "o": [
+        "Jehoahaz",
+        "Jehoash",
+        "Jeroboam II",
+        "Zechariah"
+      ],
+      "a": 0,
+      "e": "2 Kings 13:1",
+      "d": "hard"
+    },
+    {
+      "q": "Which king of Judah was the son of Asa and reigned 25 years?",
+      "o": [
+        "Jehoshaphat",
+        "Jehoram",
+        "Ahaziah",
+        "Joash"
+      ],
+      "a": 0,
+      "e": "1 Kings 22:42",
+      "d": "hard"
+    },
+    {
+      "q": "Which king of Judah was the son of Abijah and reigned 41 years?",
+      "o": [
+        "Asa",
+        "Jehoshaphat",
+        "Jehoram",
+        "Ahaziah"
+      ],
+      "a": 0,
+      "e": "1 Kings 15:10",
+      "d": "hard"
+    },
+    {
+      "q": "Which king of Israel was the son of Baasha and reigned 24 years?",
+      "o": [
+        "Baasha",
+        "Elah",
+        "Zimri",
+        "Omri"
+      ],
+      "a": 0,
+      "e": "1 Kings 15:33",
+      "d": "hard"
+    },
+    {
+      "q": "Which king of Judah was the son of Josiah and reigned 3 months?",
+      "o": [
+        "Jehoahaz",
+        "Jehoiakim",
+        "Jehoiachin",
+        "Zedekiah"
+      ],
+      "a": 0,
+      "e": "2 Kings 23:31",
+      "d": "hard"
+    },
+    {
+      "q": "Which king of Judah was the son of Jehoiakim and reigned 3 months?",
+      "o": [
+        "Jehoiachin",
+        "Zedekiah",
+        "Jehoahaz",
+        "Josiah"
+      ],
+      "a": 0,
+      "e": "2 Kings 24:8",
+      "d": "hard"
+    },
+    {
+      "q": "Which king of Israel was the son of Pekahiah and reigned 20 years? (Wait, Pekah killed him). Who reigned 20 years?",
+      "o": [
+        "Pekah",
+        "Hoshea",
+        "Menahem",
+        "Shallum"
+      ],
+      "a": 0,
+      "e": "2 Kings 15:27",
+      "d": "hard"
+    },
+    {
+      "q": "Who was the first king of Israel?",
+      "o": [
+        "David",
+        "Solomon",
+        "Saul",
+        "Samuel"
+      ],
+      "a": 2,
+      "e": "1 Samuel 10:1 — Samuel anointed Saul as king of Israel.",
+      "d": "easy"
+    },
+    {
+      "q": "Which king built the first temple in Jerusalem?",
+      "o": [
+        "David",
+        "Solomon",
+        "Hezekiah",
+        "Josiah"
+      ],
+      "a": 1,
+      "e": "1 Kings 6:1 — In the fourth year of Solomon's reign over Israel, he began to build the temple of the LORD.",
+      "d": "easy"
+    },
+    {
+      "q": "David was from which tribe of Israel?",
+      "o": [
+        "Benjamin",
+        "Levi",
+        "Judah",
+        "Ephraim"
+      ],
+      "a": 2,
+      "e": "1 Samuel 17:12 — David was the son of an Ephrathite named Jesse, who was from Bethlehem in Judah.",
+      "d": "easy"
+    },
+    {
+      "q": "What was the relationship between King Saul and David before David became king?",
+      "o": [
+        "They were brothers",
+        "Saul was David's father-in-law",
+        "David was Saul's son",
+        "They were cousins"
+      ],
+      "a": 1,
+      "e": "1 Samuel 18:27 — Saul gave him his daughter Michal in marriage, making Saul David's father-in-law.",
+      "d": "easy"
+    },
+    {
+      "q": "Which king of Israel was known for his great wisdom?",
+      "o": [
+        "David",
+        "Solomon",
+        "Hezekiah",
+        "Asa"
+      ],
+      "a": 1,
+      "e": "1 Kings 4:29 — God gave Solomon wisdom and very great insight, and a breadth of understanding as measureless as the sand on the seashore.",
+      "d": "easy"
+    },
+    {
+      "q": "What did King Saul do that caused God to reject him as king?",
+      "o": [
+        "He married a foreign woman",
+        "He offered a sacrifice he was not supposed to and disobeyed God's command",
+        "He built an altar to Baal",
+        "He refused to fight the Philistines"
+      ],
+      "a": 1,
+      "e": "1 Samuel 13:13-14; 15:23 — Samuel said, 'You have not kept the command the LORD your God gave you.' Saul's disobedience regarding the Amalekites also led to his rejection.",
+      "d": "easy"
+    },
+    {
+      "q": "Who anointed David as king of all Israel after Saul's death?",
+      "o": [
+        "Samuel (after rising from the dead)",
+        "Nathan the prophet",
+        "The elders of all Israel",
+        "God directly without a human agent"
+      ],
+      "a": 2,
+      "e": "2 Samuel 5:3 — When all the elders of Israel had come to King David at Hebron, the king made a covenant with them, and they anointed David king over Israel.",
+      "d": "easy"
+    },
+    {
+      "q": "Who was the prophet God sent to confront David about his sin with Bathsheba?",
+      "o": [
+        "Samuel",
+        "Elijah",
+        "Nathan",
+        "Gad"
+      ],
+      "a": 2,
+      "e": "2 Samuel 12:1 — The LORD sent Nathan to David. When he came to him, he said, 'There were two men in a certain town.'",
+      "d": "easy"
+    },
+    {
+      "q": "Rehoboam and Jeroboam are associated with what major event in Israel's history?",
+      "o": [
+        "The conquest of Canaan",
+        "The division of the kingdom into northern and southern kingdoms",
+        "The return from Babylonian exile",
+        "The building of the temple"
+      ],
+      "a": 1,
+      "e": "1 Kings 12:19-20 — So Israel has been in rebellion against the house of David...when all the Israelites heard that Jeroboam had returned, they sent and called him to the assembly and made him king over all Israel.",
+      "d": "easy"
+    },
+    {
+      "q": "Which king of Israel was known for introducing Baal worship through his wife Jezebel?",
+      "o": [
+        "Jeroboam",
+        "Omri",
+        "Ahab",
+        "Manasseh"
+      ],
+      "a": 2,
+      "e": "1 Kings 16:31 — He not only considered it trivial to commit the sins of Jeroboam son of Nebat, but he also married Jezebel daughter of Ethbaal king of the Sidonians, and began to serve Baal and worship him.",
+      "d": "easy"
+    },
+    {
+      "q": "Which king of Judah is praised for destroying the high places and the bronze snake Moses made?",
+      "o": [
+        "Josiah",
+        "Asa",
+        "Jehoshaphat",
+        "Hezekiah"
+      ],
+      "a": 3,
+      "e": "2 Kings 18:4 — He removed the high places, smashed the sacred stones and cut down the Asherah poles. He broke into pieces the bronze snake Moses had made, for up to that time the Israelites had been burning incense to it.",
+      "d": "easy"
+    },
+    {
+      "q": "Which king found the Book of the Law during temple repairs, leading to a great religious reform?",
+      "o": [
+        "Hezekiah",
+        "Jehoshaphat",
+        "Josiah",
+        "Joash"
+      ],
+      "a": 2,
+      "e": "2 Kings 22:8 — Hilkiah the high priest said to Shaphan the secretary, 'I have found the Book of the Law in the temple of the LORD.'",
+      "d": "easy"
+    },
+    {
+      "q": "Who was the queen who ruled Judah for six years after killing all of David's heirs?",
+      "o": [
+        "Jezebel",
+        "Michal",
+        "Athaliah",
+        "Bathsheba"
+      ],
+      "a": 2,
+      "e": "2 Kings 11:1-3 — When Athaliah the mother of Ahaziah saw that her son was dead, she proceeded to destroy the whole royal family.",
+      "d": "easy"
+    },
+    {
+      "q": "How many years did Solomon reign as king of Israel?",
+      "o": [
+        "20",
+        "40",
+        "30",
+        "50"
+      ],
+      "a": 1,
+      "e": "1 Kings 11:42 — Solomon reigned in Jerusalem over all Israel forty years.",
+      "d": "easy"
+    },
+    {
+      "q": "Which king of Judah lived fifteen extra years after praying to God when he was told he would die?",
+      "o": [
+        "Josiah",
+        "Jehoshaphat",
+        "Joash",
+        "Hezekiah"
+      ],
+      "a": 3,
+      "e": "2 Kings 20:6 — I will add fifteen years to your life. And I will deliver you and this city from the hand of the king of Assyria.",
+      "d": "easy"
+    },
+    {
+      "q": "What happened to Israel during the reign of King Saul's son Ish-Bosheth?",
+      "o": [
+        "The kingdom prospered greatly",
+        "There was a long war between Ish-Bosheth's forces and David's forces",
+        "The Assyrians invaded",
+        "The temple was built"
+      ],
+      "a": 1,
+      "e": "2 Samuel 3:1 — The war between the house of Saul and the house of David lasted a long time. David grew stronger and stronger, while the house of Saul grew weaker and weaker.",
+      "d": "easy"
+    },
+    {
+      "q": "What is David's hometown, also called the City of David?",
+      "o": [
+        "Jerusalem",
+        "Hebron",
+        "Bethlehem",
+        "Jericho"
+      ],
+      "a": 2,
+      "e": "1 Samuel 16:1 — Go to Jesse of Bethlehem, for I have chosen one of his sons to be king.",
+      "d": "easy"
+    },
+    {
+      "q": "Who was the last king of Judah before Jerusalem fell to Babylon?",
+      "o": [
+        "Jehoiakim",
+        "Jehoiachin",
+        "Zedekiah",
+        "Manasseh"
+      ],
+      "a": 2,
+      "e": "2 Kings 24:18; 25:7 — Zedekiah was twenty-one years old when he became king...The king of Babylon slaughtered the sons of Zedekiah before his eyes.",
+      "d": "easy"
+    },
+    {
+      "q": "Which king of Israel reigned the longest?",
+      "o": [
+        "Ahab",
+        "Omri",
+        "Jeroboam II",
+        "Baasha"
+      ],
+      "a": 2,
+      "e": "2 Kings 14:23 — Jeroboam son of Jehoash king of Israel became king in Samaria, and he reigned forty-one years — the longest reign of any northern king.",
+      "d": "easy"
+    },
+    {
+      "q": "What city did David capture and make his capital?",
+      "o": [
+        "Hebron",
+        "Bethlehem",
+        "Shiloh",
+        "Jerusalem (Jebus)"
+      ],
+      "a": 3,
+      "e": "2 Samuel 5:6-7 — The king and his men marched to Jerusalem to attack the Jebusites...David captured the fortress of Zion—which is the City of David.",
+      "d": "easy"
+    }
+  ],
+  "Psalms": [
+    {
+      "q": "How many Psalms are there in the standard biblical book?",
+      "o": [
+        "120",
+        "150",
+        "100",
+        "73"
+      ],
+      "a": 1,
+      "e": "The Book of Psalms contains 150 individual songs and prayers.",
+      "d": "easy"
+    },
+    {
+      "q": "Which Psalm begins with 'The LORD is my shepherd; I shall not want'?",
+      "o": [
+        "Psalm 1",
+        "Psalm 91",
+        "Psalm 23",
+        "Psalm 100"
+      ],
+      "a": 2,
+      "e": "Psalm 23 is perhaps the most famous of all Psalms.",
+      "d": "easy"
+    },
+    {
+      "q": "What is the longest Psalm in the Bible?",
+      "o": [
+        "Psalm 117",
+        "Psalm 119",
+        "Psalm 78",
+        "Psalm 150"
+      ],
+      "a": 1,
+      "e": "Psalm 119 has 176 verses.",
+      "d": "easy"
+    },
+    {
+      "q": "What is the shortest Psalm in the Bible?",
+      "o": [
+        "Psalm 1",
+        "Psalm 117",
+        "Psalm 133",
+        "Psalm 150"
+      ],
+      "a": 1,
+      "e": "Psalm 117 has only two verses.",
+      "d": "easy"
+    },
+    {
+      "q": "Who is credited with writing the largest number of Psalms?",
+      "o": [
+        "Solomon",
+        "Asaph",
+        "Moses",
+        "David"
+      ],
+      "a": 3,
+      "e": "David is traditionally credited with 73 of the Psalms.",
+      "d": "easy"
+    },
+    {
+      "q": "Which Psalm is known as the 'Psalm of Repentance' written by David after his sin with Bathsheba?",
+      "o": [
+        "Psalm 23",
+        "Psalm 32",
+        "Psalm 51",
+        "Psalm 103"
+      ],
+      "a": 2,
+      "e": "Psalm 51:1 — 'Have mercy on me, O God...'",
+      "d": "medium"
+    },
+    {
+      "q": "Which Psalm is a prayer of Moses?",
+      "o": [
+        "Psalm 88",
+        "Psalm 89",
+        "Psalm 90",
+        "Psalm 91"
+      ],
+      "a": 2,
+      "e": "Psalm 90 is titled 'A prayer of Moses the man of God.'",
+      "d": "medium"
+    },
+    {
+      "q": "Which Psalm says, 'Your word is a lamp to my feet and a light to my path'?",
+      "o": [
+        "Psalm 1",
+        "Psalm 19",
+        "Psalm 119",
+        "Psalm 27"
+      ],
+      "a": 2,
+      "e": "Psalm 119:105.",
+      "d": "easy"
+    },
+    {
+      "q": "Which Psalm begins with 'Bless the LORD, O my soul; and all that is within me, bless his holy name'?",
+      "o": [
+        "Psalm 100",
+        "Psalm 103",
+        "Psalm 104",
+        "Psalm 145"
+      ],
+      "a": 1,
+      "e": "Psalm 103:1.",
+      "d": "medium"
+    },
+    {
+      "q": "Which Psalm starts with 'The heavens declare the glory of God; the skies proclaim the work of his hands'?",
+      "o": [
+        "Psalm 8",
+        "Psalm 19",
+        "Psalm 24",
+        "Psalm 29"
+      ],
+      "a": 1,
+      "e": "Psalm 19:1.",
+      "d": "medium"
+    },
+    {
+      "q": "Which Psalm says, 'Make a joyful noise unto the LORD, all ye lands'?",
+      "o": [
+        "Psalm 95",
+        "Psalm 100",
+        "Psalm 148",
+        "Psalm 150"
+      ],
+      "a": 1,
+      "e": "Psalm 100:1.",
+      "d": "easy"
+    },
+    {
+      "q": "Which Psalm begins with 'As the deer pants for streams of water, so my soul pants for you, my God'?",
+      "o": [
+        "Psalm 42",
+        "Psalm 63",
+        "Psalm 84",
+        "Psalm 143"
+      ],
+      "a": 0,
+      "e": "Psalm 42:1.",
+      "d": "medium"
+    },
+    {
+      "q": "Which Psalm did Jesus quote on the cross: 'My God, my God, why have you forsaken me?'",
+      "o": [
+        "Psalm 2",
+        "Psalm 16",
+        "Psalm 22",
+        "Psalm 110"
+      ],
+      "a": 2,
+      "e": "Psalm 22:1.",
+      "d": "medium"
+    },
+    {
+      "q": "Which Psalm says, 'He who dwells in the shelter of the Most High will rest in the shadow of the Almighty'?",
+      "o": [
+        "Psalm 27",
+        "Psalm 46",
+        "Psalm 91",
+        "Psalm 121"
+      ],
+      "a": 2,
+      "e": "Psalm 91:1.",
+      "d": "medium"
+    },
+    {
+      "q": "Which Psalm says, 'I lift up my eyes to the mountains—where does my help come from?'",
+      "o": [
+        "Psalm 120",
+        "Psalm 121",
+        "Psalm 122",
+        "Psalm 125"
+      ],
+      "a": 1,
+      "e": "Psalm 121:1.",
+      "d": "medium"
+    },
+    {
+      "q": "Which Psalm says, 'This is the day the LORD has made; let us rejoice and be glad in it'?",
+      "o": [
+        "Psalm 118",
+        "Psalm 100",
+        "Psalm 150",
+        "Psalm 148"
+      ],
+      "a": 0,
+      "e": "Psalm 118:24.",
+      "d": "medium"
+    },
+    {
+      "q": "Which Psalm says, 'Children are a heritage from the LORD, offspring a reward from him'?",
+      "o": [
+        "Psalm 127",
+        "Psalm 128",
+        "Psalm 133",
+        "Psalm 139"
+      ],
+      "a": 0,
+      "e": "Psalm 127:3.",
+      "d": "medium"
+    },
+    {
+      "q": "Which Psalm says, 'How good and pleasant it is when God’s people live together in unity!'?",
+      "o": [
+        "Psalm 103",
+        "Psalm 133",
+        "Psalm 134",
+        "Psalm 136"
+      ],
+      "a": 1,
+      "e": "Psalm 133:1.",
+      "d": "medium"
+    },
+    {
+      "q": "Which Psalm says, 'For you created my inmost being; you knit me together in my mother’s womb'?",
+      "o": [
+        "Psalm 8",
+        "Psalm 104",
+        "Psalm 139",
+        "Psalm 144"
+      ],
+      "a": 2,
+      "e": "Psalm 139:13.",
+      "d": "medium"
+    },
+    {
+      "q": "The final Psalm in the book (150) ends with what instruction?",
+      "o": [
+        "Praise the LORD",
+        "Amen and Amen",
+        "Hallelujah",
+        "Let everything that has breath praise the LORD"
+      ],
+      "a": 3,
+      "e": "Psalm 150:6.",
+      "d": "easy"
+    },
+    {
+      "q": "What is the common Hebrew musical or liturgical term found 71 times in the Psalms?",
+      "o": [
+        "Hallelujah",
+        "Amen",
+        "Selah",
+        "Hosanna"
+      ],
+      "a": 2,
+      "e": "Selah is likely a musical pause or a call to reflect.",
+      "d": "easy"
+    },
+    {
+      "q": "Which group of Psalms (120-134) were sung by pilgrims traveling to Jerusalem?",
+      "o": [
+        "Psalms of David",
+        "Psalms of Solomon",
+        "Songs of Ascents (Degrees)",
+        "Songs of the Temple"
+      ],
+      "a": 2,
+      "e": "They are also called Pilgrim Songs.",
+      "d": "medium"
+    },
+    {
+      "q": "Who was the chief musician appointed by David to whom 12 Psalms are attributed?",
+      "o": [
+        "Asaph",
+        "Heman",
+        "Jeduthun",
+        "Ethan"
+      ],
+      "a": 0,
+      "e": "Asaph was a leader of choral worship.",
+      "d": "medium"
+    },
+    {
+      "q": "Which Psalm says, 'The fool says in his heart, \"There is no God\"'?",
+      "o": [
+        "Psalm 1",
+        "Psalm 14",
+        "Psalm 19",
+        "Psalm 119"
+      ],
+      "a": 1,
+      "e": "Psalm 14:1 (and Psalm 53:1).",
+      "d": "medium"
+    },
+    {
+      "q": "Which Psalm says, 'God is our refuge and strength, an ever-present help in trouble'?",
+      "o": [
+        "Psalm 27",
+        "Psalm 46",
+        "Psalm 62",
+        "Psalm 91"
+      ],
+      "a": 1,
+      "e": "Psalm 46:1.",
+      "d": "medium"
+    },
+    {
+      "q": "Which Psalm says, 'Be still, and know that I am God'?",
+      "o": [
+        "Psalm 23",
+        "Psalm 37",
+        "Psalm 46",
+        "Psalm 62"
+      ],
+      "a": 2,
+      "e": "Psalm 46:10.",
+      "d": "medium"
+    },
+    {
+      "q": "Which Psalm says, 'Taste and see that the LORD is good; blessed is the one who takes refuge in him'?",
+      "o": [
+        "Psalm 23",
+        "Psalm 34",
+        "Psalm 63",
+        "Psalm 84"
+      ],
+      "a": 1,
+      "e": "Psalm 34:8.",
+      "d": "medium"
+    },
+    {
+      "q": "Which Psalm says, 'The LORD is close to the brokenhearted and saves those who are crushed in spirit'?",
+      "o": [
+        "Psalm 34",
+        "Psalm 51",
+        "Psalm 103",
+        "Psalm 147"
+      ],
+      "a": 0,
+      "e": "Psalm 34:18.",
+      "d": "medium"
+    },
+    {
+      "q": "Which Psalm says, 'O LORD, our Lord, how majestic is your name in all the earth!'?",
+      "o": [
+        "Psalm 8",
+        "Psalm 24",
+        "Psalm 145",
+        "Psalm 148"
+      ],
+      "a": 0,
+      "e": "Psalm 8:1.",
+      "d": "medium"
+    },
+    {
+      "q": "Which Psalm says, 'Create in me a pure heart, O God, and renew a steadfast spirit within me'?",
+      "o": [
+        "Psalm 19",
+        "Psalm 25",
+        "Psalm 51",
+        "Psalm 119"
+      ],
+      "a": 2,
+      "e": "Psalm 51:10.",
+      "d": "medium"
+    },
+    {
+      "q": "Which Psalm says, 'By the rivers of Babylon we sat and wept when we remembered Zion'?",
+      "o": [
+        "Psalm 79",
+        "Psalm 102",
+        "Psalm 126",
+        "Psalm 137"
+      ],
+      "a": 3,
+      "e": "Psalm 137:1.",
+      "d": "medium"
+    },
+    {
+      "q": "Which Psalm repeats the refrain 'His love endures forever' in every verse?",
+      "o": [
+        "Psalm 100",
+        "Psalm 107",
+        "Psalm 118",
+        "Psalm 136"
+      ],
+      "a": 3,
+      "e": "Psalm 136 has 26 verses, each ending with this refrain.",
+      "d": "easy"
+    },
+    {
+      "q": "Which Psalm says, 'I praise you because I am fearfully and wonderfully made'?",
+      "o": [
+        "Psalm 8",
+        "Psalm 103",
+        "Psalm 139",
+        "Psalm 145"
+      ],
+      "a": 2,
+      "e": "Psalm 139:14.",
+      "d": "easy"
+    },
+    {
+      "q": "Which Psalm says, 'Unless the LORD builds the house, the builders labor in vain'?",
+      "o": [
+        "Psalm 121",
+        "Psalm 127",
+        "Psalm 128",
+        "Psalm 131"
+      ],
+      "a": 1,
+      "e": "Psalm 127:1.",
+      "d": "medium"
+    },
+    {
+      "q": "Which Psalm says, 'Better is one day in your courts than a thousand elsewhere'?",
+      "o": [
+        "Psalm 27",
+        "Psalm 63",
+        "Psalm 84",
+        "Psalm 100"
+      ],
+      "a": 2,
+      "e": "Psalm 84:10.",
+      "d": "medium"
+    },
+    {
+      "q": "Which Psalm says, 'The earth is the LORD’s, and everything in it'?",
+      "o": [
+        "Psalm 8",
+        "Psalm 24",
+        "Psalm 50",
+        "Psalm 104"
+      ],
+      "a": 1,
+      "e": "Psalm 24:1.",
+      "d": "medium"
+    },
+    {
+      "q": "Which Psalm says, 'Out of the depths I cry to you, LORD'?",
+      "o": [
+        "Psalm 42",
+        "Psalm 102",
+        "Psalm 130",
+        "Psalm 142"
+      ],
+      "a": 2,
+      "e": "Psalm 130:1 (De Profundis).",
+      "d": "medium"
+    },
+    {
+      "q": "Which Psalm says, 'He heals the brokenhearted and binds up their wounds'?",
+      "o": [
+        "Psalm 34",
+        "Psalm 103",
+        "Psalm 147",
+        "Psalm 145"
+      ],
+      "a": 2,
+      "e": "Psalm 147:3.",
+      "d": "medium"
+    },
+    {
+      "q": "Which Psalm says, 'The LORD is my light and my salvation—whom shall I fear?'?",
+      "o": [
+        "Psalm 23",
+        "Psalm 27",
+        "Psalm 62",
+        "Psalm 91"
+      ],
+      "a": 1,
+      "e": "Psalm 27:1.",
+      "d": "medium"
+    },
+    {
+      "q": "Which Psalm says, 'Blessed is the one who does not walk in step with the wicked'?",
+      "o": [
+        "Psalm 1",
+        "Psalm 15",
+        "Psalm 112",
+        "Psalm 119"
+      ],
+      "a": 0,
+      "e": "Psalm 1:1.",
+      "d": "easy"
+    },
+    {
+      "q": "Which Psalm says, 'Those who sow with tears will reap with songs of joy'?",
+      "o": [
+        "Psalm 126",
+        "Psalm 121",
+        "Psalm 130",
+        "Psalm 147"
+      ],
+      "a": 0,
+      "e": "Psalm 126:5.",
+      "d": "medium"
+    },
+    {
+      "q": "Which Psalm says, 'Your rod and your staff, they comfort me'?",
+      "o": [
+        "Psalm 23",
+        "Psalm 80",
+        "Psalm 119",
+        "Psalm 27"
+      ],
+      "a": 0,
+      "e": "Psalm 23:4.",
+      "d": "easy"
+    },
+    {
+      "q": "Which Psalm says, 'Who may ascend the mountain of the LORD? Who may stand in his holy place?'?",
+      "o": [
+        "Psalm 15",
+        "Psalm 24",
+        "Psalm 43",
+        "Psalm 121"
+      ],
+      "a": 1,
+      "e": "Psalm 24:3.",
+      "d": "medium"
+    },
+    {
+      "q": "Which Psalm says, 'Wait for the LORD; be strong and take heart and wait for the LORD'?",
+      "o": [
+        "Psalm 27",
+        "Psalm 31",
+        "Psalm 37",
+        "Psalm 40"
+      ],
+      "a": 0,
+      "e": "Psalm 27:14.",
+      "d": "medium"
+    },
+    {
+      "q": "Which Psalm says, 'Deep calls to deep in the roar of your waterfalls'?",
+      "o": [
+        "Psalm 29",
+        "Psalm 42",
+        "Psalm 93",
+        "Psalm 107"
+      ],
+      "a": 1,
+      "e": "Psalm 42:7.",
+      "d": "hard"
+    },
+    {
+      "q": "Which Psalm says, 'Search me, God, and know my heart; test me and know my anxious thoughts'?",
+      "o": [
+        "Psalm 26",
+        "Psalm 51",
+        "Psalm 139",
+        "Psalm 143"
+      ],
+      "a": 2,
+      "e": "Psalm 139:23.",
+      "d": "medium"
+    },
+    {
+      "q": "Which Psalm says, 'Commit your way to the LORD; trust in him and he will do this'?",
+      "o": [
+        "Psalm 1",
+        "Psalm 34",
+        "Psalm 37",
+        "Psalm 40"
+      ],
+      "a": 2,
+      "e": "Psalm 37:5.",
+      "d": "medium"
+    },
+    {
+      "q": "Which Psalm says, 'What is mankind that you are mindful of them, human beings that you care for them?'?",
+      "o": [
+        "Psalm 8",
+        "Psalm 144",
+        "Psalm 139",
+        "Psalm 103"
+      ],
+      "a": 0,
+      "e": "Psalm 8:4.",
+      "d": "medium"
+    },
+    {
+      "q": "Which Psalm says, 'I was glad when they said unto me, Let us go into the house of the LORD'?",
+      "o": [
+        "Psalm 84",
+        "Psalm 100",
+        "Psalm 122",
+        "Psalm 126"
+      ],
+      "a": 2,
+      "e": "Psalm 122:1.",
+      "d": "medium"
+    },
+    {
+      "q": "Which Psalm says, 'Precious in the sight of the LORD is the death of his faithful servants'?",
+      "o": [
+        "Psalm 23",
+        "Psalm 116",
+        "Psalm 72",
+        "Psalm 91"
+      ],
+      "a": 1,
+      "e": "Psalm 116:15.",
+      "d": "medium"
+    },
+    {
+      "q": "Which Psalm says, 'He will cover you with his feathers, and under his wings you will find refuge'?",
+      "o": [
+        "Psalm 17",
+        "Psalm 61",
+        "Psalm 91",
+        "Psalm 36"
+      ],
+      "a": 2,
+      "e": "Psalm 91:4.",
+      "d": "medium"
+    },
+    {
+      "q": "Which Psalm says, 'The LORD is my rock, my fortress and my deliverer'?",
+      "o": [
+        "Psalm 18",
+        "Psalm 27",
+        "Psalm 62",
+        "Psalm 144"
+      ],
+      "a": 0,
+      "e": "Psalm 18:2.",
+      "d": "medium"
+    },
+    {
+      "q": "Which Psalm says, 'Keep me as the apple of your eye; hide me in the shadow of your wings'?",
+      "o": [
+        "Psalm 17",
+        "Psalm 36",
+        "Psalm 57",
+        "Psalm 63"
+      ],
+      "a": 0,
+      "e": "Psalm 17:8.",
+      "d": "medium"
+    },
+    {
+      "q": "Which Psalm says, 'May the words of my mouth and this meditation of my heart be pleasing in your sight'?",
+      "o": [
+        "Psalm 1",
+        "Psalm 19",
+        "Psalm 51",
+        "Psalm 119"
+      ],
+      "a": 1,
+      "e": "Psalm 19:14.",
+      "d": "medium"
+    },
+    {
+      "q": "Which Psalm says, 'You will show me the path of life; in your presence is fullness of joy'?",
+      "o": [
+        "Psalm 16",
+        "Psalm 23",
+        "Psalm 27",
+        "Psalm 121"
+      ],
+      "a": 0,
+      "e": "Psalm 16:11.",
+      "d": "medium"
+    },
+    {
+      "q": "Which Psalm says, 'He leads me beside quiet waters, he refreshes my soul'?",
+      "o": [
+        "Psalm 23",
+        "Psalm 42",
+        "Psalm 46",
+        "Psalm 104"
+      ],
+      "a": 0,
+      "e": "Psalm 23:2-3.",
+      "d": "easy"
+    },
+    {
+      "q": "Which Psalm says, 'Even though I walk through the darkest valley, I will fear no evil'?",
+      "o": [
+        "Psalm 23",
+        "Psalm 27",
+        "Psalm 91",
+        "Psalm 121"
+      ],
+      "a": 0,
+      "e": "Psalm 23:4.",
+      "d": "easy"
+    },
+    {
+      "q": "Which Psalm says, 'Lord, you have been our dwelling place throughout all generations'?",
+      "o": [
+        "Psalm 23",
+        "Psalm 90",
+        "Psalm 91",
+        "Psalm 121"
+      ],
+      "a": 1,
+      "e": "Psalm 90:1.",
+      "d": "medium"
+    },
+    {
+      "q": "Which Psalm says, 'Teach us to number our days, that we may gain a heart of wisdom'?",
+      "o": [
+        "Psalm 39",
+        "Psalm 90",
+        "Psalm 103",
+        "Psalm 119"
+      ],
+      "a": 1,
+      "e": "Psalm 90:12.",
+      "d": "medium"
+    },
+    {
+      "q": "Which Psalm says, 'Satisfy us in the morning with your unfailing love'?",
+      "o": [
+        "Psalm 5",
+        "Psalm 51",
+        "Psalm 90",
+        "Psalm 143"
+      ],
+      "a": 2,
+      "e": "Psalm 90:14.",
+      "d": "medium"
+    },
+    {
+      "q": "Which Psalm says, 'For he will command his angels concerning you to guard you in all your ways'?",
+      "o": [
+        "Psalm 34",
+        "Psalm 91",
+        "Psalm 103",
+        "Psalm 148"
+      ],
+      "a": 1,
+      "e": "Psalm 91:11.",
+      "d": "medium"
+    },
+    {
+      "q": "Which Psalm says, 'The righteous will flourish like a palm tree'?",
+      "o": [
+        "Psalm 1",
+        "Psalm 52",
+        "Psalm 92",
+        "Psalm 104"
+      ],
+      "a": 2,
+      "e": "Psalm 92:12.",
+      "d": "medium"
+    },
+    {
+      "q": "Which Psalm says, 'The LORD reigns, he is robed in majesty'?",
+      "o": [
+        "Psalm 93",
+        "Psalm 96",
+        "Psalm 97",
+        "Psalm 99"
+      ],
+      "a": 0,
+      "e": "Psalm 93:1.",
+      "d": "medium"
+    },
+    {
+      "q": "Which Psalm says, 'Come, let us bow down in worship, let us kneel before the LORD our Maker'?",
+      "o": [
+        "Psalm 95",
+        "Psalm 96",
+        "Psalm 99",
+        "Psalm 100"
+      ],
+      "a": 0,
+      "e": "Psalm 95:6.",
+      "d": "medium"
+    },
+    {
+      "q": "Which Psalm says, 'Sing to the LORD a new song; sing to the LORD, all the earth'?",
+      "o": [
+        "Psalm 33",
+        "Psalm 96",
+        "Psalm 98",
+        "Psalm 149"
+      ],
+      "a": 1,
+      "e": "Psalm 96:1.",
+      "d": "medium"
+    },
+    {
+      "q": "Which Psalm says, 'Worship the LORD in the splendor of his holiness'?",
+      "o": [
+        "Psalm 29",
+        "Psalm 96",
+        "Psalm 99",
+        "Psalm 114"
+      ],
+      "a": 1,
+      "e": "Psalm 96:9.",
+      "d": "medium"
+    },
+    {
+      "q": "Which Psalm says, 'Light shines on the righteous and joy on the upright in heart'?",
+      "o": [
+        "Psalm 1",
+        "Psalm 32",
+        "Psalm 97",
+        "Psalm 112"
+      ],
+      "a": 2,
+      "e": "Psalm 97:11.",
+      "d": "medium"
+    },
+    {
+      "q": "Which Psalm says, 'Know that the LORD is God. It is he who made us, and we are his'?",
+      "o": [
+        "Psalm 23",
+        "Psalm 95",
+        "Psalm 100",
+        "Psalm 115"
+      ],
+      "a": 2,
+      "e": "Psalm 100:3.",
+      "d": "easy"
+    },
+    {
+      "q": "Which Psalm says, 'Enter his gates with thanksgiving and his courts with praise'?",
+      "o": [
+        "Psalm 84",
+        "Psalm 100",
+        "Psalm 118",
+        "Psalm 122"
+      ],
+      "a": 1,
+      "e": "Psalm 100:4.",
+      "d": "easy"
+    },
+    {
+      "q": "Which Psalm says, 'I will lift up the cup of salvation and call on the name of the LORD'?",
+      "o": [
+        "Psalm 22",
+        "Psalm 51",
+        "Psalm 116",
+        "Psalm 118"
+      ],
+      "a": 2,
+      "e": "Psalm 116:13.",
+      "d": "hard"
+    },
+    {
+      "q": "Which Psalm says, 'The stone the builders rejected has become the cornerstone'?",
+      "o": [
+        "Psalm 2",
+        "Psalm 22",
+        "Psalm 110",
+        "Psalm 118"
+      ],
+      "a": 3,
+      "e": "Psalm 118:22.",
+      "d": "medium"
+    },
+    {
+      "q": "Which Psalm says, 'Open my eyes that I may see wonderful things in your law'?",
+      "o": [
+        "Psalm 1",
+        "Psalm 19",
+        "Psalm 119",
+        "Psalm 25"
+      ],
+      "a": 2,
+      "e": "Psalm 119:18.",
+      "d": "medium"
+    },
+    {
+      "q": "Which Psalm says, 'I have hidden your word in my heart that I might not sin against you'?",
+      "o": [
+        "Psalm 1",
+        "Psalm 119",
+        "Psalm 37",
+        "Psalm 40"
+      ],
+      "a": 1,
+      "e": "Psalm 119:11.",
+      "d": "easy"
+    },
+    {
+      "q": "Which Psalm says, 'Your word is settled in heaven forever'?",
+      "o": [
+        "Psalm 119",
+        "Psalm 19",
+        "Psalm 147",
+        "Psalm 89"
+      ],
+      "a": 0,
+      "e": "Psalm 119:89.",
+      "d": "medium"
+    },
+    {
+      "q": "Which Psalm says, 'Seven times a day I praise you for your righteous laws'?",
+      "o": [
+        "Psalm 119",
+        "Psalm 103",
+        "Psalm 145",
+        "Psalm 150"
+      ],
+      "a": 0,
+      "e": "Psalm 119:164.",
+      "d": "hard"
+    },
+    {
+      "q": "Which Psalm says, 'Great peace have those who love your law, and nothing can make them stumble'?",
+      "o": [
+        "Psalm 1",
+        "Psalm 119",
+        "Psalm 37",
+        "Psalm 112"
+      ],
+      "a": 1,
+      "e": "Psalm 119:165.",
+      "d": "medium"
+    },
+    {
+      "q": "Which Psalm says, 'My help comes from the LORD, the Maker of heaven and earth'?",
+      "o": [
+        "Psalm 121",
+        "Psalm 124",
+        "Psalm 146",
+        "Psalm 121"
+      ],
+      "a": 0,
+      "e": "Psalm 121:2.",
+      "d": "easy"
+    },
+    {
+      "q": "Which Psalm says, 'The LORD will keep your going out and your coming in'?",
+      "o": [
+        "Psalm 23",
+        "Psalm 91",
+        "Psalm 121",
+        "Psalm 139"
+      ],
+      "a": 2,
+      "e": "Psalm 121:8.",
+      "d": "medium"
+    },
+    {
+      "q": "Which Psalm says, 'Pray for the peace of Jerusalem'?",
+      "o": [
+        "Psalm 122",
+        "Psalm 125",
+        "Psalm 128",
+        "Psalm 137"
+      ],
+      "a": 0,
+      "e": "Psalm 122:6.",
+      "d": "medium"
+    },
+    {
+      "q": "Which Psalm says, 'As the mountains surround Jerusalem, so the LORD surrounds his people'?",
+      "o": [
+        "Psalm 121",
+        "Psalm 125",
+        "Psalm 131",
+        "Psalm 133"
+      ],
+      "a": 1,
+      "e": "Psalm 125:2.",
+      "d": "medium"
+    },
+    {
+      "q": "Which Psalm says, 'He who goes out weeping, carrying seed to sow, will return with songs of joy'?",
+      "o": [
+        "Psalm 126",
+        "Psalm 127",
+        "Psalm 128",
+        "Psalm 129"
+      ],
+      "a": 0,
+      "e": "Psalm 126:6.",
+      "d": "medium"
+    },
+    {
+      "q": "Which Psalm says, 'Your wife will be like a fruitful vine within your house; your children will be like olive shoots around your table'?",
+      "o": [
+        "Psalm 127",
+        "Psalm 128",
+        "Psalm 131",
+        "Psalm 133"
+      ],
+      "a": 1,
+      "e": "Psalm 128:3.",
+      "d": "hard"
+    },
+    {
+      "q": "Which Psalm says, 'If you, LORD, kept a record of sins, LORD, who could stand?'?",
+      "o": [
+        "Psalm 51",
+        "Psalm 103",
+        "Psalm 130",
+        "Psalm 143"
+      ],
+      "a": 2,
+      "e": "Psalm 130:3.",
+      "d": "medium"
+    },
+    {
+      "q": "Which Psalm says, 'But with you there is forgiveness, so that we can, with reverence, serve you'?",
+      "o": [
+        "Psalm 51",
+        "Psalm 130",
+        "Psalm 32",
+        "Psalm 86"
+      ],
+      "a": 1,
+      "e": "Psalm 130:4.",
+      "d": "medium"
+    },
+    {
+      "q": "Which Psalm says, 'I have calmed and quieted myself, I am like a weaned child with its mother'?",
+      "o": [
+        "Psalm 131",
+        "Psalm 133",
+        "Psalm 139",
+        "Psalm 23"
+      ],
+      "a": 0,
+      "e": "Psalm 131:2.",
+      "d": "hard"
+    },
+    {
+      "q": "Which Psalm says, 'Praise the name of the LORD; praise him, you servants of the LORD'?",
+      "o": [
+        "Psalm 113",
+        "Psalm 134",
+        "Psalm 135",
+        "Psalm 145"
+      ],
+      "a": 2,
+      "e": "Psalm 135:1.",
+      "d": "medium"
+    },
+    {
+      "q": "Which Psalm says, 'Give thanks to the LORD, for he is good. His love endures forever'?",
+      "o": [
+        "Psalm 106",
+        "Psalm 107",
+        "Psalm 118",
+        "Psalm 136"
+      ],
+      "a": 3,
+      "e": "Psalm 136:1 (This Psalm is famous for this refrain).",
+      "d": "easy"
+    },
+    {
+      "q": "Which Psalm says, 'If I forget you, Jerusalem, may my right hand forget its skill'?",
+      "o": [
+        "Psalm 122",
+        "Psalm 126",
+        "Psalm 137",
+        "Psalm 102"
+      ],
+      "a": 2,
+      "e": "Psalm 137:5.",
+      "d": "medium"
+    },
+    {
+      "q": "Which Psalm says, 'Though I walk in the midst of trouble, you preserve my life'?",
+      "o": [
+        "Psalm 23",
+        "Psalm 138",
+        "Psalm 142",
+        "Psalm 143"
+      ],
+      "a": 1,
+      "e": "Psalm 138:7.",
+      "d": "hard"
+    },
+    {
+      "q": "Which Psalm says, 'Where can I go from your Spirit? Where can I flee from your presence?'?",
+      "o": [
+        "Psalm 23",
+        "Psalm 91",
+        "Psalm 139",
+        "Psalm 143"
+      ],
+      "a": 2,
+      "e": "Psalm 139:7.",
+      "d": "medium"
+    },
+    {
+      "q": "Which Psalm says, 'If I rise on the wings of the dawn, if I settle on the far side of the sea, even there your hand will guide me'?",
+      "o": [
+        "Psalm 139",
+        "Psalm 104",
+        "Psalm 107",
+        "Psalm 147"
+      ],
+      "a": 0,
+      "e": "Psalm 139:9-10.",
+      "d": "medium"
+    },
+    {
+      "q": "Which Psalm says, 'Your eyes saw my unformed body; all the days ordained for me were written in your book'?",
+      "o": [
+        "Psalm 139",
+        "Psalm 8",
+        "Psalm 103",
+        "Psalm 104"
+      ],
+      "a": 0,
+      "e": "Psalm 139:16.",
+      "d": "medium"
+    },
+    {
+      "q": "Which Psalm says, 'Set a guard over my mouth, LORD; keep watch over the door of my lips'?",
+      "o": [
+        "Psalm 19",
+        "Psalm 119",
+        "Psalm 141",
+        "Psalm 39"
+      ],
+      "a": 2,
+      "e": "Psalm 141:3.",
+      "d": "hard"
+    },
+    {
+      "q": "Which Psalm says, 'I cry aloud to the LORD; I lift up my voice to the LORD for mercy'?",
+      "o": [
+        "Psalm 142",
+        "Psalm 143",
+        "Psalm 77",
+        "Psalm 102"
+      ],
+      "a": 0,
+      "e": "Psalm 142:1.",
+      "d": "hard"
+    },
+    {
+      "q": "Which Psalm says, 'Let the morning bring me word of your unfailing love, for I have put my trust in you'?",
+      "o": [
+        "Psalm 5",
+        "Psalm 90",
+        "Psalm 143",
+        "Psalm 147"
+      ],
+      "a": 2,
+      "e": "Psalm 143:8.",
+      "d": "medium"
+    },
+    {
+      "q": "Which Psalm says, 'Teach me to do your will, for you are my God; may your good Spirit lead me on level ground'?",
+      "o": [
+        "Psalm 25",
+        "Psalm 119",
+        "Psalm 143",
+        "Psalm 86"
+      ],
+      "a": 2,
+      "e": "Psalm 143:10.",
+      "d": "medium"
+    },
+    {
+      "q": "Which Psalm says, 'The LORD is gracious and compassionate, slow to anger and rich in love'?",
+      "o": [
+        "Psalm 103",
+        "Psalm 145",
+        "Psalm 86",
+        "Psalm 111"
+      ],
+      "a": 1,
+      "e": "Psalm 145:8 (also Psalm 103:8).",
+      "d": "medium"
+    },
+    {
+      "q": "Which Psalm says, 'The LORD is good to all; he has compassion on all he has made'?",
+      "o": [
+        "Psalm 145",
+        "Psalm 100",
+        "Psalm 104",
+        "Psalm 107"
+      ],
+      "a": 0,
+      "e": "Psalm 145:9.",
+      "d": "medium"
+    },
+    {
+      "q": "Which Psalm says, 'The LORD is near to all who call on him, to all who call on him in truth'?",
+      "o": [
+        "Psalm 34",
+        "Psalm 145",
+        "Psalm 146",
+        "Psalm 27"
+      ],
+      "a": 1,
+      "e": "Psalm 145:18.",
+      "d": "medium"
+    },
+    {
+      "q": "Which Psalm says, 'Do not put your trust in princes, in human beings, who cannot save'?",
+      "o": [
+        "Psalm 118",
+        "Psalm 146",
+        "Psalm 20",
+        "Psalm 121"
+      ],
+      "a": 1,
+      "e": "Psalm 146:3.",
+      "d": "hard"
+    },
+    {
+      "q": "Which Psalm says, 'The LORD sets prisoners free, the LORD gives sight to the blind'?",
+      "o": [
+        "Psalm 146",
+        "Psalm 103",
+        "Psalm 107",
+        "Psalm 147"
+      ],
+      "a": 0,
+      "e": "Psalm 146:7-8.",
+      "d": "hard"
+    },
+    {
+      "q": "Which Psalm says, 'He determines the number of the stars and calls them each by name'?",
+      "o": [
+        "Psalm 8",
+        "Psalm 19",
+        "Psalm 147",
+        "Psalm 104"
+      ],
+      "a": 2,
+      "e": "Psalm 147:4.",
+      "d": "medium"
+    },
+    {
+      "q": "Which Psalm says, 'Praise the LORD from the heavens; praise him in the heights above'?",
+      "o": [
+        "Psalm 148",
+        "Psalm 149",
+        "Psalm 150",
+        "Psalm 103"
+      ],
+      "a": 0,
+      "e": "Psalm 148:1.",
+      "d": "medium"
+    },
+    {
+      "q": "Which Psalm says, 'Sing to the LORD a new song, his praise in the assembly of his faithful people'?",
+      "o": [
+        "Psalm 96",
+        "Psalm 98",
+        "Psalm 149",
+        "Psalm 150"
+      ],
+      "a": 2,
+      "e": "Psalm 149:1.",
+      "d": "medium"
+    },
+    {
+      "q": "The Book of Psalms is divided into how many 'books'?",
+      "o": [
+        "3",
+        "5",
+        "7",
+        "12"
+      ],
+      "a": 1,
+      "e": "The Psalms are organized into five books, each ending with a doxology.",
+      "d": "hard"
+    },
+    {
+      "q": "Which Psalm is the only one titled as 'A Psalm for giving grateful praise'?",
+      "o": [
+        "Psalm 100",
+        "Psalm 103",
+        "Psalm 107",
+        "Psalm 136"
+      ],
+      "a": 0,
+      "e": "Psalm 100 is uniquely titled this way.",
+      "d": "hard"
+    },
+    {
+      "q": "Which Psalm is called the 'Shepherd Psalm'?",
+      "o": [
+        "Psalm 1",
+        "Psalm 23",
+        "Psalm 80",
+        "Psalm 100"
+      ],
+      "a": 1,
+      "e": "Psalm 23 is universally known as the Shepherd Psalm.",
+      "d": "easy"
+    },
+    {
+      "q": "Which Psalm says, 'He who goes out weeping, bearing seed for sowing, shall come home with shouts of joy'?",
+      "o": [
+        "Psalm 126",
+        "Psalm 121",
+        "Psalm 130",
+        "Psalm 147"
+      ],
+      "a": 0,
+      "e": "Psalm 126:6.",
+      "d": "medium"
+    },
+    {
+      "q": "Which Psalm is a praise for God's creation, following the order of Genesis 1?",
+      "o": [
+        "Psalm 8",
+        "Psalm 19",
+        "Psalm 104",
+        "Psalm 148"
+      ],
+      "a": 2,
+      "e": "Psalm 104 describes God's creation and care for the world.",
+      "d": "hard"
+    },
+    {
+      "q": "In Psalm 22, the psalmist says 'they divide my garments among them and cast lots for my clothing.' What is significant about this verse?",
+      "o": [
+        "It predicts the destruction of the temple",
+        "It is fulfilled at the crucifixion of Jesus",
+        "It describes David's humiliation by enemies",
+        "It refers to Israelite captivity in Babylon"
+      ],
+      "a": 1,
+      "e": "Psalm 22:18; John 19:24 — This is quoted in John as fulfilled when soldiers cast lots for Jesus's garments.",
+      "d": "hard"
+    },
+    {
+      "q": "Which psalm begins with 'The earth is the Lord's, and everything in it, the world, and all who live in it'?",
+      "o": [
+        "Psalm 8",
+        "Psalm 24",
+        "Psalm 50",
+        "Psalm 96"
+      ],
+      "a": 1,
+      "e": "Psalm 24:1 — The earth is the Lord's, and everything in it, the world, and all who live in it.",
+      "d": "hard"
+    },
+    {
+      "q": "Psalm 119 is an acrostic poem organized by what?",
+      "o": [
+        "The names of the twelve tribes",
+        "The 22 letters of the Hebrew alphabet",
+        "The ten commandments",
+        "The seven days of creation"
+      ],
+      "a": 1,
+      "e": "Psalm 119 has 22 sections, each beginning with a successive letter of the Hebrew alphabet, with 8 verses per section.",
+      "d": "hard"
+    },
+    {
+      "q": "Which psalm is known as the 'Song of Ascents' and is the most often read of its collection?",
+      "o": [
+        "Psalm 130",
+        "Psalm 121",
+        "Psalm 122",
+        "Psalm 120"
+      ],
+      "a": 1,
+      "e": "Psalm 121 is one of the most beloved of the 15 Songs of Ascents (120–134), known for its declaration that help comes from the LORD.",
+      "d": "hard"
+    },
+    {
+      "q": "In Psalm 51, what does David ask God to create in him?",
+      "o": [
+        "A willing spirit",
+        "A pure heart and a steadfast spirit",
+        "Wisdom and understanding",
+        "A heart of flesh"
+      ],
+      "a": 1,
+      "e": "Psalm 51:10 — Create in me a pure heart, O God, and renew a steadfast spirit within me.",
+      "d": "hard"
+    },
+    {
+      "q": "What does Psalm 2 declare about the Messiah?",
+      "o": [
+        "He will be born in Bethlehem",
+        "You are my son; today I have become your father",
+        "He will suffer for the sins of many",
+        "He will reign from Jerusalem forever"
+      ],
+      "a": 1,
+      "e": "Psalm 2:7 — He said to me, 'You are my son; today I have become your father.'",
+      "d": "hard"
+    },
+    {
+      "q": "In Psalm 46, what does the psalmist say even if?",
+      "o": [
+        "Even if war breaks out, I will be calm",
+        "Even if the earth gives way and the mountains fall into the sea",
+        "Even if famine and plague come",
+        "Even if my enemies surround me"
+      ],
+      "a": 1,
+      "e": "Psalm 46:2 — Therefore we will not fear, though the earth give way and the mountains fall into the heart of the sea.",
+      "d": "hard"
+    },
+    {
+      "q": "Psalm 110 is quoted more in the New Testament than any other Old Testament passage. What is its primary content?",
+      "o": [
+        "A hymn of praise for creation",
+        "A royal psalm declaring the Lord's word to 'my lord' to sit at his right hand",
+        "A lament over Babylon",
+        "A wisdom poem about the righteous life"
+      ],
+      "a": 1,
+      "e": "Psalm 110:1 — The LORD says to my lord: 'Sit at my right hand until I make your enemies a footstool for your feet.' This is extensively quoted and applied to Jesus.",
+      "d": "hard"
+    },
+    {
+      "q": "Which psalm is titled 'A Prayer of Moses the man of God'?",
+      "o": [
+        "Psalm 88",
+        "Psalm 90",
+        "Psalm 91",
+        "Psalm 95"
+      ],
+      "a": 1,
+      "e": "Psalm 90:1 — A prayer of Moses the man of God.",
+      "d": "hard"
+    },
+    {
+      "q": "In Psalm 23, what does the psalmist say about enemies?",
+      "o": [
+        "God will destroy them",
+        "God prepares a table before me in the presence of my enemies",
+        "I will overcome them through God's strength",
+        "My enemies will become my friends"
+      ],
+      "a": 1,
+      "e": "Psalm 23:5 — You prepare a table before me in the presence of my enemies.",
+      "d": "hard"
+    },
+    {
+      "q": "What is the central theme of Psalm 119?",
+      "o": [
+        "The glory of God in creation",
+        "Love for and devotion to the law/word of God",
+        "Confession of sin and forgiveness",
+        "The eternal reign of the Messiah"
+      ],
+      "a": 1,
+      "e": "Psalm 119 is entirely devoted to meditating on the law, statutes, commands, and word of God in every one of its 176 verses.",
+      "d": "hard"
+    },
+    {
+      "q": "In Psalm 139, what does the psalmist say about being formed in the womb?",
+      "o": [
+        "God knew him from before time",
+        "God knit me together in my mother's womb and I am fearfully and wonderfully made",
+        "God breathed life into him like Adam",
+        "God chose him before the foundations of the world"
+      ],
+      "a": 1,
+      "e": "Psalm 139:13-14 — For you created my inmost being; you knit me together in my mother's womb. I praise you because I am fearfully and wonderfully made.",
+      "d": "hard"
+    },
+    {
+      "q": "What does Psalm 1 say about the man who meditates on God's law day and night?",
+      "o": [
+        "He will be given wisdom surpassing Solomon",
+        "He is like a tree planted by streams of water, yielding fruit in season",
+        "He will prosper in all his financial dealings",
+        "He will never face hardship or suffering"
+      ],
+      "a": 1,
+      "e": "Psalm 1:3 — That person is like a tree planted by streams of water, which yields its fruit in season and whose leaf does not wither—whatever they do prospers.",
+      "d": "hard"
+    },
+    {
+      "q": "Which psalm contains the words 'The stone the builders rejected has become the cornerstone'?",
+      "o": [
+        "Psalm 22",
+        "Psalm 118",
+        "Psalm 72",
+        "Psalm 89"
+      ],
+      "a": 1,
+      "e": "Psalm 118:22 — The stone the builders rejected has become the cornerstone. This is quoted by Jesus and the apostles.",
+      "d": "hard"
+    },
+    {
+      "q": "Psalm 22 opens with what cry that Jesus quoted from the cross?",
+      "o": [
+        "Into your hands I commit my spirit",
+        "My God, my God, why have you forsaken me?",
+        "How long, O LORD?",
+        "Arise and save me"
+      ],
+      "a": 1,
+      "e": "Psalm 22:1; Matthew 27:46 — My God, my God, why have you forsaken me? — Jesus quoted this from the cross.",
+      "d": "hard"
+    },
+    {
+      "q": "In Psalm 8, what does the psalmist say God has done regarding human beings in relation to the rest of creation?",
+      "o": [
+        "Made them in God's own image",
+        "Made them a little lower than the angels and crowned them with glory",
+        "Given them dominion over the angels",
+        "Created them last among all living things"
+      ],
+      "a": 1,
+      "e": "Psalm 8:5 — You have made them a little lower than the angels and crowned them with glory and honor.",
+      "d": "hard"
+    },
+    {
+      "q": "What does Psalm 103 say God does with our transgressions?",
+      "o": [
+        "Covers them with his mercy",
+        "Removes them as far as the east is from the west",
+        "Forgets them as if they never were",
+        "Buries them in the depths of the sea"
+      ],
+      "a": 1,
+      "e": "Psalm 103:12 — as far as the east is from the west, so far has he removed our transgressions from us.",
+      "d": "hard"
+    },
+    {
+      "q": "In Psalm 82, who is God said to judge?",
+      "o": [
+        "The nations of the earth",
+        "The gods (rulers or heavenly beings)",
+        "The wicked among Israel",
+        "The false prophets"
+      ],
+      "a": 1,
+      "e": "Psalm 82:1,6 — God presides in the great assembly; he renders judgment among the 'gods.'",
+      "d": "hard"
+    },
+    {
+      "q": "Which psalm is a lament with the repeated refrain 'His love endures forever'?",
+      "o": [
+        "Psalm 136",
+        "Psalm 100",
+        "Psalm 117",
+        "Psalm 145"
+      ],
+      "a": 0,
+      "e": "Psalm 136 repeats 'His love endures forever' in every one of its 26 verses.",
+      "d": "hard"
+    },
+    {
+      "q": "What does Psalm 16 say that David will not experience, quoted by Peter at Pentecost?",
+      "o": [
+        "Defeat at the hands of enemies",
+        "His body decaying in the grave",
+        "Abandonment in Sheol",
+        "Sorrow forever"
+      ],
+      "a": 2,
+      "e": "Psalm 16:10; Acts 2:27 — because you will not abandon me to the realm of the dead, nor will you let your faithful one see decay.",
+      "d": "hard"
+    },
+    {
+      "q": "In Psalm 73, the psalmist Asaph nearly slips because of what?",
+      "o": [
+        "His own sin",
+        "Envy at the prosperity of the wicked",
+        "The suffering of the righteous",
+        "Fear of enemies"
+      ],
+      "a": 1,
+      "e": "Psalm 73:2-3 — But as for me, my feet had almost slipped; I had nearly lost my foothold. For I envied the arrogant when I saw the prosperity of the wicked.",
+      "d": "hard"
+    },
+    {
+      "q": "Which collection of psalms is specifically designated for 'the director of music'?",
+      "o": [
+        "The Psalms of Ascent",
+        "Many individual psalms in the Psalter are titled 'For the director of music'",
+        "The Psalms of Korah",
+        "The Psalms of Asaph"
+      ],
+      "a": 1,
+      "e": "Many psalms bear the superscription 'For the director of music,' indicating they were intended for worship leaders.",
+      "d": "hard"
+    },
+    {
+      "q": "In Psalm 40, what does the psalmist say God does not desire?",
+      "o": [
+        "Prayer and fasting",
+        "Sacrifice and offering, but an open ear",
+        "Gold and silver offerings",
+        "Public confession of sin"
+      ],
+      "a": 1,
+      "e": "Psalm 40:6 — Sacrifice and offering you did not desire—but my ears you have opened.",
+      "d": "hard"
+    },
+    {
+      "q": "Psalm 45 is described as what type of psalm?",
+      "o": [
+        "A psalm of lament",
+        "A royal wedding psalm",
+        "A creation hymn",
+        "A psalm of ascent"
+      ],
+      "a": 1,
+      "e": "Psalm 45:1 — My heart is stirred by a noble theme as I recite my verses for the king. This is a royal psalm composed for a king's wedding.",
+      "d": "hard"
+    },
+    {
+      "q": "What does Psalm 37:4 promise to those who delight in the Lord?",
+      "o": [
+        "Long life and health",
+        "He will give them the desires of their heart",
+        "They will be delivered from enemies",
+        "They will never lack any good thing"
+      ],
+      "a": 1,
+      "e": "Psalm 37:4 — Take delight in the LORD, and he will give you the desires of your heart.",
+      "d": "hard"
+    },
+    {
+      "q": "In Psalm 100, what does the psalmist say about the Lord?",
+      "o": [
+        "He reigns above all gods",
+        "He made us and we are his; we are his people, the sheep of his pasture",
+        "He will judge the earth in righteousness",
+        "His majesty is above the heavens"
+      ],
+      "a": 1,
+      "e": "Psalm 100:3 — Know that the LORD is God. It is he who made us, and we are his; we are his people, the sheep of his pasture.",
+      "d": "hard"
+    },
+    {
+      "q": "Which psalm describes the exile's grief with the phrase 'By the rivers of Babylon'?",
+      "o": [
+        "Psalm 126",
+        "Psalm 137",
+        "Psalm 80",
+        "Psalm 44"
+      ],
+      "a": 1,
+      "e": "Psalm 137:1 — By the rivers of Babylon we sat and wept when we remembered Zion.",
+      "d": "hard"
+    },
+    {
+      "q": "What does Psalm 91 promise about God's protection?",
+      "o": [
+        "No harm will befall you, no disaster will come near your tent",
+        "You will be taken up in a chariot",
+        "God will fight your battles in the open field",
+        "Angels will remove all obstacles from your path"
+      ],
+      "a": 0,
+      "e": "Psalm 91:10 — then no harm will befall you, no disaster will come near your tent.",
+      "d": "hard"
+    },
+    {
+      "q": "In which psalm does the psalmist describe waking in the night to meditate on God?",
+      "o": [
+        "Psalm 4",
+        "Psalm 63",
+        "Psalm 42",
+        "Psalm 55"
+      ],
+      "a": 1,
+      "e": "Psalm 63:6 — On my bed I remember you; I think of you through the watches of the night.",
+      "d": "hard"
+    },
+    {
+      "q": "What does Psalm 34 say about the brokenhearted?",
+      "o": [
+        "God will test them with suffering",
+        "The LORD is close to the brokenhearted and saves those who are crushed in spirit",
+        "God strengthens them with his right hand",
+        "They will be comforted in the last day"
+      ],
+      "a": 1,
+      "e": "Psalm 34:18 — The LORD is close to the brokenhearted and saves those who are crushed in spirit.",
+      "d": "hard"
+    },
+    {
+      "q": "Which psalm ends with 'Let everything that has breath praise the LORD'?",
+      "o": [
+        "Psalm 145",
+        "Psalm 148",
+        "Psalm 150",
+        "Psalm 149"
+      ],
+      "a": 2,
+      "e": "Psalm 150:6 — Let everything that has breath praise the LORD. Praise the LORD.",
+      "d": "hard"
+    },
+    {
+      "q": "What does Psalm 19 say is sweeter than honey?",
+      "o": [
+        "The name of the LORD",
+        "The ordinances of God",
+        "The love of God",
+        "The salvation of God"
+      ],
+      "a": 1,
+      "e": "Psalm 19:10 — They are sweeter than honey, than honey from the honeycomb — referring to the statutes and ordinances of God.",
+      "d": "hard"
+    },
+    {
+      "q": "In Psalm 95, what warning does the psalmist give?",
+      "o": [
+        "Do not delay your offering",
+        "Do not harden your hearts as at Meribah",
+        "Do not sing praises before cleansing",
+        "Do not forget the Sabbath"
+      ],
+      "a": 1,
+      "e": "Psalm 95:8 — Do not harden your hearts as you did at Meribah, as you did that day at Massah in the wilderness. This warning is also cited in Hebrews 3.",
+      "d": "hard"
+    },
+    {
+      "q": "In Psalm 22, what two postures does the congregation adopt in response to the psalmist's praise?",
+      "o": [
+        "Weeping and fasting",
+        "Future generations will proclaim his righteousness to a people yet unborn",
+        "Standing and kneeling",
+        "Singing and shouting"
+      ],
+      "a": 1,
+      "e": "Psalm 22:30-31 — Future generations will be told about the Lord. They will proclaim his righteousness, declaring to a people yet unborn: He has done it!",
+      "d": "hard"
+    },
+    {
+      "q": "In Psalm 51, what does David say about his sinful condition at birth?",
+      "o": [
+        "He was ignorant of God from birth",
+        "Surely I was sinful at birth, sinful from the time my mother conceived me",
+        "He had no knowledge of right and wrong",
+        "He was born into a family of sinners"
+      ],
+      "a": 1,
+      "e": "Psalm 51:5 — Surely I was sinful at birth, sinful from the time my mother conceived me.",
+      "d": "hard"
+    },
+    {
+      "q": "What term does Psalm 23 use for the path of righteousness in Hebrew tradition?",
+      "o": [
+        "Path of light",
+        "Right paths (or paths of righteousness)",
+        "The narrow way",
+        "The highway of holiness"
+      ],
+      "a": 1,
+      "e": "Psalm 23:3 — He guides me along the right paths for his name's sake.",
+      "d": "hard"
+    },
+    {
+      "q": "Which psalm contains the words 'Yea, though I walk through the valley of the shadow of death' in the KJV?",
+      "o": [
+        "Psalm 22",
+        "Psalm 23",
+        "Psalm 121",
+        "Psalm 91"
+      ],
+      "a": 1,
+      "e": "Psalm 23:4 (KJV) — Yea, though I walk through the valley of the shadow of death, I will fear no evil.",
+      "d": "hard"
+    },
+    {
+      "q": "In Psalm 78, Asaph recounts the history of Israel. What does he call the purpose of this telling?",
+      "o": [
+        "To ensure the next generation does not forget God's deeds and keeps his commands",
+        "To memorialize David's victories",
+        "To explain why the temple was built",
+        "To justify Solomon's reign"
+      ],
+      "a": 0,
+      "e": "Psalm 78:6-7 — so the next generation would know them, even the children yet to be born, and they in turn would tell their children. Then they would put their trust in God.",
+      "d": "hard"
+    },
+    {
+      "q": "Psalm 110 says the Lord has sworn and will not change his mind. What is the content of this oath?",
+      "o": [
+        "That David's line will rule forever",
+        "You are a priest forever in the order of Melchizedek",
+        "That the LORD will give his people the promised land",
+        "That Israel will be gathered from the nations"
+      ],
+      "a": 1,
+      "e": "Psalm 110:4 — The LORD has sworn and will not change his mind: 'You are a priest forever, in the order of Melchizedek.'",
+      "d": "hard"
+    },
+    {
+      "q": "What does Psalm 115 say about idols?",
+      "o": [
+        "They are abominations to the Lord",
+        "They have mouths but cannot speak, eyes but cannot see",
+        "They are merely wood and stone with no power",
+        "They belong to the nations who reject God"
+      ],
+      "a": 1,
+      "e": "Psalm 115:5 — They have mouths, but cannot speak, eyes, but cannot see.",
+      "d": "hard"
+    },
+    {
+      "q": "In Psalm 30, what does the psalmist say about God's anger and favor?",
+      "o": [
+        "His anger lasts forever, but his favor grants life",
+        "For his anger lasts only a moment, but his favor lasts a lifetime; weeping may stay for the night, but rejoicing comes in the morning",
+        "His favor is new every morning",
+        "His anger is reserved for the enemies of Israel"
+      ],
+      "a": 1,
+      "e": "Psalm 30:5 — For his anger lasts only a moment, but his favor lasts a lifetime; weeping may stay for the night, but rejoicing comes in the morning.",
+      "d": "hard"
+    }
+  ],
+  "Prophets": [
+    {
+      "q": "Which prophet saw the Lord seated on a throne, high and exalted, in the year King Uzziah died?",
+      "o": [
+        "Jeremiah",
+        "Isaiah",
+        "Ezekiel",
+        "Daniel"
+      ],
+      "a": 1,
+      "e": "Isaiah 6:1",
+      "d": "easy"
+    },
+    {
+      "q": "Which prophet was told to go to the potter's house to receive a message?",
+      "o": [
+        "Isaiah",
+        "Jeremiah",
+        "Amos",
+        "Hosea"
+      ],
+      "a": 1,
+      "e": "Jeremiah 18:1-2",
+      "d": "medium"
+    },
+    {
+      "q": "Which prophet was among the exiles by the Kebar River when he saw visions of God?",
+      "o": [
+        "Daniel",
+        "Ezekiel",
+        "Habakkuk",
+        "Zechariah"
+      ],
+      "a": 1,
+      "e": "Ezekiel 1:1",
+      "d": "medium"
+    },
+    {
+      "q": "Which prophet was asked by God, 'Can these bones live?'",
+      "o": [
+        "Isaiah",
+        "Jeremiah",
+        "Ezekiel",
+        "Joel"
+      ],
+      "a": 2,
+      "e": "Ezekiel 37:3",
+      "d": "easy"
+    },
+    {
+      "q": "Which prophet was given the name Belteshazzar in Babylon?",
+      "o": [
+        "Daniel",
+        "Shadrach",
+        "Meshach",
+        "Abednego"
+      ],
+      "a": 0,
+      "e": "Daniel 1:7",
+      "d": "easy"
+    },
+    {
+      "q": "Which prophet was commanded to marry a woman named Gomer?",
+      "o": [
+        "Hosea",
+        "Amos",
+        "Micah",
+        "Joel"
+      ],
+      "a": 0,
+      "e": "Hosea 1:2-3",
+      "d": "easy"
+    },
+    {
+      "q": "Which prophet predicted the outpouring of the Holy Spirit on all people (quoted by Peter at Pentecost)?",
+      "o": [
+        "Joel",
+        "Amos",
+        "Isaiah",
+        "Zechariah"
+      ],
+      "a": 0,
+      "e": "Joel 2:28 / Acts 2:17",
+      "d": "medium"
+    },
+    {
+      "q": "Which prophet was a shepherd of Tekoa?",
+      "o": [
+        "Amos",
+        "Micah",
+        "Malachi",
+        "Haggai"
+      ],
+      "a": 0,
+      "e": "Amos 1:1",
+      "d": "medium"
+    },
+    {
+      "q": "Which prophet wrote a very short book (1 chapter) against the nation of Edom?",
+      "o": [
+        "Obadiah",
+        "Nahum",
+        "Habakkuk",
+        "Zephaniah"
+      ],
+      "a": 0,
+      "e": "Obadiah 1:1",
+      "d": "medium"
+    },
+    {
+      "q": "Which prophet fled to Tarshish instead of going to Nineveh?",
+      "o": [
+        "Jonah",
+        "Isaiah",
+        "Elijah",
+        "Nahum"
+      ],
+      "a": 0,
+      "e": "Jonah 1:3",
+      "d": "easy"
+    },
+    {
+      "q": "Which prophet said the Messiah would be born in Bethlehem?",
+      "o": [
+        "Isaiah",
+        "Jeremiah",
+        "Micah",
+        "Malachi"
+      ],
+      "a": 2,
+      "e": "Micah 5:2",
+      "d": "easy"
+    },
+    {
+      "q": "Which prophet wrote about the fall of Nineveh (besides Jonah's message)?",
+      "o": [
+        "Nahum",
+        "Zephaniah",
+        "Haggai",
+        "Habakkuk"
+      ],
+      "a": 0,
+      "e": "Nahum 1:1",
+      "d": "hard"
+    },
+    {
+      "q": "Which prophet complained to God about the success of the wicked and was told the 'righteous will live by his faith'?",
+      "o": [
+        "Habakkuk",
+        "Malachi",
+        "Jeremiah",
+        "Job"
+      ],
+      "a": 0,
+      "e": "Habakkuk 2:4",
+      "d": "medium"
+    },
+    {
+      "q": "Which prophet's name means 'My Messenger' and wrote the last book of the OT?",
+      "o": [
+        "Malachi",
+        "Zechariah",
+        "Haggai",
+        "Micah"
+      ],
+      "a": 0,
+      "e": "Malachi means 'my messenger'.",
+      "d": "medium"
+    },
+    {
+      "q": "Which prophet encouraged the rebuilding of the Temple during the time of Zerubbabel?",
+      "o": [
+        "Haggai",
+        "Zechariah",
+        "Both Haggai & Zechariah",
+        "Malachi"
+      ],
+      "a": 2,
+      "e": "Haggai 1:1 and Zechariah 1:1",
+      "d": "hard"
+    },
+    {
+      "q": "Which prophet saw a vision of a flying scroll?",
+      "o": [
+        "Zechariah",
+        "Ezekiel",
+        "Daniel",
+        "Isaiah"
+      ],
+      "a": 0,
+      "e": "Zechariah 5:1",
+      "d": "hard"
+    },
+    {
+      "q": "Which prophet predicted that the sun of righteousness would rise with healing in its rays?",
+      "o": [
+        "Malachi",
+        "Isaiah",
+        "Joel",
+        "Hosea"
+      ],
+      "a": 0,
+      "e": "Malachi 4:2",
+      "d": "hard"
+    },
+    {
+      "q": "In which book do we find the prophecy of the New Covenant written on hearts?",
+      "o": [
+        "Isaiah",
+        "Jeremiah",
+        "Ezekiel",
+        "Daniel"
+      ],
+      "a": 1,
+      "e": "Jeremiah 31:31-33",
+      "d": "medium"
+    },
+    {
+      "q": "Who was the 'son of Buzi'?",
+      "o": [
+        "Ezekiel",
+        "Jeremiah",
+        "Daniel",
+        "Hosea"
+      ],
+      "a": 0,
+      "e": "Ezekiel 1:3",
+      "d": "hard"
+    },
+    {
+      "q": "Which prophet mentioned the 'abomination that causes desolation'?",
+      "o": [
+        "Daniel",
+        "Isaiah",
+        "Jeremiah",
+        "Ezekiel"
+      ],
+      "a": 0,
+      "e": "Daniel 9:27, 11:31, 12:11",
+      "d": "medium"
+    },
+    {
+      "q": "Which prophet saw a basket of summer fruit?",
+      "o": [
+        "Amos",
+        "Joel",
+        "Micah",
+        "Hosea"
+      ],
+      "a": 0,
+      "e": "Amos 8:1",
+      "d": "hard"
+    },
+    {
+      "q": "Which prophet spoke against the city of Tyre?",
+      "o": [
+        "Ezekiel",
+        "Isaiah",
+        "Both Ezekiel & Isaiah",
+        "Jeremiah"
+      ],
+      "a": 2,
+      "e": "Ezekiel 26 and Isaiah 23",
+      "d": "hard"
+    },
+    {
+      "q": "Which prophet had a vision of the Lord with a plumb line?",
+      "o": [
+        "Amos",
+        "Zechariah",
+        "Haggai",
+        "Micah"
+      ],
+      "a": 0,
+      "e": "Amos 7:7",
+      "d": "hard"
+    },
+    {
+      "q": "Which prophet predicted that the Messiah would enter Jerusalem riding on a donkey?",
+      "o": [
+        "Zechariah",
+        "Isaiah",
+        "Jeremiah",
+        "Micah"
+      ],
+      "a": 0,
+      "e": "Zechariah 9:9",
+      "d": "medium"
+    },
+    {
+      "q": "Who was the prophet during the reign of King Hezekiah?",
+      "o": [
+        "Isaiah",
+        "Jeremiah",
+        "Ezekiel",
+        "Daniel"
+      ],
+      "a": 0,
+      "e": "Isaiah 1:1, 37:2",
+      "d": "medium"
+    },
+    {
+      "q": "Which prophet saw a vision of four chariots coming out from between two mountains of bronze?",
+      "o": [
+        "Zechariah",
+        "Ezekiel",
+        "Daniel",
+        "Joel"
+      ],
+      "a": 0,
+      "e": "Zechariah 6:1",
+      "d": "hard"
+    },
+    {
+      "q": "Which prophet spoke about the 'Day of the LORD' more than any other (often called the 'Prophet of the Day of the LORD')?",
+      "o": [
+        "Zephaniah",
+        "Joel",
+        "Amos",
+        "Isaiah"
+      ],
+      "a": 0,
+      "e": "Zephaniah 1:14-18",
+      "d": "hard"
+    },
+    {
+      "q": "Which prophet was thrown into a cistern (muddy pit)?",
+      "o": [
+        "Jeremiah",
+        "Joseph",
+        "Daniel",
+        "Isaiah"
+      ],
+      "a": 0,
+      "e": "Jeremiah 38:6",
+      "d": "easy"
+    },
+    {
+      "q": "Which prophet saw a vision of a man with a measuring line in his hand?",
+      "o": [
+        "Zechariah",
+        "Ezekiel",
+        "Daniel",
+        "Amos"
+      ],
+      "a": 0,
+      "e": "Zechariah 2:1",
+      "d": "hard"
+    },
+    {
+      "q": "Who was the father of Isaiah?",
+      "o": [
+        "Amoz",
+        "Amos",
+        "Buzi",
+        "Hilkiyahu"
+      ],
+      "a": 0,
+      "e": "Isaiah 1:1",
+      "d": "hard"
+    },
+    {
+      "q": "Which prophet said 'Let justice roll on like a river'?",
+      "o": [
+        "Amos",
+        "Micah",
+        "Isaiah",
+        "Hosea"
+      ],
+      "a": 0,
+      "e": "Amos 5:24",
+      "d": "medium"
+    },
+    {
+      "q": "Which prophet predicted that the moon would turn to blood before the great and dreadful day of the LORD?",
+      "o": [
+        "Joel",
+        "Isaiah",
+        "Ezekiel",
+        "Zechariah"
+      ],
+      "a": 0,
+      "e": "Joel 2:31",
+      "d": "medium"
+    },
+    {
+      "q": "Who wrote 'Comfort, comfort my people, says your God'?",
+      "o": [
+        "Isaiah",
+        "Jeremiah",
+        "Ezekiel",
+        "Lamentations"
+      ],
+      "a": 0,
+      "e": "Isaiah 40:1",
+      "d": "easy"
+    },
+    {
+      "q": "Which prophet saw the glory of the LORD depart from the Temple?",
+      "o": [
+        "Ezekiel",
+        "Isaiah",
+        "Jeremiah",
+        "Daniel"
+      ],
+      "a": 0,
+      "e": "Ezekiel 10",
+      "d": "hard"
+    },
+    {
+      "q": "Which prophet mentioned 'Noah, Daniel and Job' as three righteous men?",
+      "o": [
+        "Ezekiel",
+        "Jeremiah",
+        "Isaiah",
+        "Malachi"
+      ],
+      "a": 0,
+      "e": "Ezekiel 14:14",
+      "d": "hard"
+    },
+    {
+      "q": "Which prophet predicted the exact length of the Babylonian captivity (70 years)?",
+      "o": [
+        "Jeremiah",
+        "Isaiah",
+        "Ezekiel",
+        "Daniel"
+      ],
+      "a": 0,
+      "e": "Jeremiah 25:11, 29:10",
+      "d": "medium"
+    },
+    {
+      "q": "Which prophet saw a vision of a scroll that was written on both sides with lament and woe?",
+      "o": [
+        "Ezekiel",
+        "John",
+        "Both Ezekiel & John",
+        "Jeremiah"
+      ],
+      "a": 2,
+      "e": "Ezekiel 2:10 and Revelation 5:1 (John's scroll was similar)",
+      "d": "hard"
+    },
+    {
+      "q": "Which prophet said 'The heart is deceitful above all things'?",
+      "o": [
+        "Jeremiah",
+        "Isaiah",
+        "Solomon",
+        "Ezekiel"
+      ],
+      "a": 0,
+      "e": "Jeremiah 17:9",
+      "d": "easy"
+    },
+    {
+      "q": "Which prophet predicted that the mountain of the LORD's temple would be established as the highest of mountains?",
+      "o": [
+        "Isaiah",
+        "Micah",
+        "Both Isaiah & Micah",
+        "Jeremiah"
+      ],
+      "a": 2,
+      "e": "Isaiah 2:2 and Micah 4:1 have the same prophecy.",
+      "d": "hard"
+    },
+    {
+      "q": "Which prophet saw a vision of Joshua the high priest standing before the angel of the LORD?",
+      "o": [
+        "Zechariah",
+        "Haggai",
+        "Malachi",
+        "Ezekiel"
+      ],
+      "a": 0,
+      "e": "Zechariah 3:1",
+      "d": "hard"
+    },
+    {
+      "q": "Which prophet predicted that God would send 'Elijah the prophet' before the day of the LORD?",
+      "o": [
+        "Malachi",
+        "John the Baptist",
+        "Isaiah",
+        "Joel"
+      ],
+      "a": 0,
+      "e": "Malachi 4:5",
+      "d": "medium"
+    },
+    {
+      "q": "Who was the 'son of Pethuel'?",
+      "o": [
+        "Joel",
+        "Amos",
+        "Hosea",
+        "Jonah"
+      ],
+      "a": 0,
+      "e": "Joel 1:1",
+      "d": "hard"
+    },
+    {
+      "q": "Which prophet was a priest from the town of Anathoth?",
+      "o": [
+        "Jeremiah",
+        "Ezekiel",
+        "Zechariah",
+        "Malachi"
+      ],
+      "a": 0,
+      "e": "Jeremiah 1:1",
+      "d": "hard"
+    },
+    {
+      "q": "Which prophet saw a vision of the Lord standing by an altar and saying 'Smite the capitals'?",
+      "o": [
+        "Amos",
+        "Isaiah",
+        "Jeremiah",
+        "Zephaniah"
+      ],
+      "a": 0,
+      "e": "Amos 9:1",
+      "d": "hard"
+    },
+    {
+      "q": "Which prophet predicted that the nations would beat their swords into plowshares?",
+      "o": [
+        "Isaiah",
+        "Micah",
+        "Both Isaiah & Micah",
+        "Joel (who said the opposite)"
+      ],
+      "a": 2,
+      "e": "Isaiah 2:4 and Micah 4:3. Joel 3:10 says the opposite.",
+      "d": "hard"
+    },
+    {
+      "q": "Which prophet mentioned the 'valley of Decision'?",
+      "o": [
+        "Joel",
+        "Zechariah",
+        "Zephaniah",
+        "Amos"
+      ],
+      "a": 0,
+      "e": "Joel 3:14",
+      "d": "hard"
+    },
+    {
+      "q": "Which prophet saw a vision of a gold lampstand with two olive trees?",
+      "o": [
+        "Zechariah",
+        "John",
+        "Both Zechariah & John",
+        "Ezekiel"
+      ],
+      "a": 2,
+      "e": "Zechariah 4:2-3 and Revelation 11:4",
+      "d": "hard"
+    },
+    {
+      "q": "Which prophet predicted that the Messiah would be 'cut off' after 62 sevens?",
+      "o": [
+        "Daniel",
+        "Isaiah",
+        "Jeremiah",
+        "Ezekiel"
+      ],
+      "a": 0,
+      "e": "Daniel 9:26",
+      "d": "hard"
+    },
+    {
+      "q": "Which prophet said 'Not by might nor by power, but by my Spirit'?",
+      "o": [
+        "Zechariah",
+        "Haggai",
+        "Isaiah",
+        "Joel"
+      ],
+      "a": 0,
+      "e": "Zechariah 4:6",
+      "d": "medium"
+    },
+    {
+      "q": "Which prophet saw a vision of the Lord's glory returning to the Temple through the East Gate?",
+      "o": [
+        "Ezekiel",
+        "Isaiah",
+        "Jeremiah",
+        "Daniel"
+      ],
+      "a": 0,
+      "e": "Ezekiel 43:1-4",
+      "d": "hard"
+    },
+    {
+      "q": "Which prophet was swallowed by a great fish after trying to flee from God?",
+      "o": [
+        "Elijah",
+        "Elisha",
+        "Jonah",
+        "Amos"
+      ],
+      "a": 2,
+      "e": "Jonah 1:17.",
+      "d": "easy"
+    },
+    {
+      "q": "Which prophet was thrown into a lions' den for praying to God?",
+      "o": [
+        "Jeremiah",
+        "Ezekiel",
+        "Daniel",
+        "Isaiah"
+      ],
+      "a": 2,
+      "e": "Daniel 6.",
+      "d": "easy"
+    },
+    {
+      "q": "Who was the 'weeping prophet'?",
+      "o": [
+        "Isaiah",
+        "Jeremiah",
+        "Ezekiel",
+        "Hosea"
+      ],
+      "a": 1,
+      "e": "Jeremiah is known for his sorrow over Jerusalem.",
+      "d": "easy"
+    },
+    {
+      "q": "Which prophet was taken up to heaven in a whirlwind and a chariot of fire?",
+      "o": [
+        "Moses",
+        "Elijah",
+        "Elisha",
+        "Enoch"
+      ],
+      "a": 1,
+      "e": "2 Kings 2:11.",
+      "d": "easy"
+    },
+    {
+      "q": "Which prophet succeeded Elijah and performed many miracles, including healing Naaman?",
+      "o": [
+        "Elisha",
+        "Samuel",
+        "Nathan",
+        "Isaiah"
+      ],
+      "a": 0,
+      "e": "2 Kings 2-5.",
+      "d": "easy"
+    },
+    {
+      "q": "Which prophet confronted King David about his sin with Bathsheba?",
+      "o": [
+        "Samuel",
+        "Nathan",
+        "Gad",
+        "Elijah"
+      ],
+      "a": 1,
+      "e": "2 Samuel 12.",
+      "d": "easy"
+    },
+    {
+      "q": "Which prophet saw a vision of a valley of dry bones coming to life?",
+      "o": [
+        "Isaiah",
+        "Jeremiah",
+        "Ezekiel",
+        "Joel"
+      ],
+      "a": 2,
+      "e": "Ezekiel 37.",
+      "d": "medium"
+    },
+    {
+      "q": "Which prophet was called by God as a young boy in the Temple?",
+      "o": [
+        "Samuel",
+        "Jeremiah",
+        "Isaiah",
+        "Daniel"
+      ],
+      "a": 0,
+      "e": "1 Samuel 3.",
+      "d": "easy"
+    },
+    {
+      "q": "Which prophet was a dresser of sycamore-fig trees before being called by God?",
+      "o": [
+        "Amos",
+        "Hosea",
+        "Micah",
+        "Joel"
+      ],
+      "a": 0,
+      "e": "Amos 7:14.",
+      "d": "hard"
+    },
+    {
+      "q": "Which prophet predicted that a virgin would conceive and give birth to Immanuel?",
+      "o": [
+        "Isaiah",
+        "Jeremiah",
+        "Micah",
+        "Malachi"
+      ],
+      "a": 0,
+      "e": "Isaiah 7:14.",
+      "d": "medium"
+    },
+    {
+      "q": "Which prophet was told to buy a linen belt and hide it in a crevice in the rocks?",
+      "o": [
+        "Isaiah",
+        "Jeremiah",
+        "Ezekiel",
+        "Hosea"
+      ],
+      "a": 1,
+      "e": "Jeremiah 13.",
+      "d": "hard"
+    },
+    {
+      "q": "Which prophet saw a vision of a wheel within a wheel?",
+      "o": [
+        "Isaiah",
+        "Ezekiel",
+        "Daniel",
+        "Zechariah"
+      ],
+      "a": 1,
+      "e": "Ezekiel 1:16.",
+      "d": "hard"
+    },
+    {
+      "q": "Which prophet was fed by ravens near the Kerith Ravine?",
+      "o": [
+        "Elijah",
+        "Elisha",
+        "Amos",
+        "Obadiah"
+      ],
+      "a": 0,
+      "e": "1 Kings 17:4-6.",
+      "d": "easy"
+    },
+    {
+      "q": "Which prophet multiplied a widow's oil to help her pay her debts?",
+      "o": [
+        "Elijah",
+        "Elisha",
+        "Samuel",
+        "Isaiah"
+      ],
+      "a": 1,
+      "e": "2 Kings 4:1-7.",
+      "d": "medium"
+    },
+    {
+      "q": "Which prophet was mocked by youths for being bald, leading to a bear attack?",
+      "o": [
+        "Elijah",
+        "Elisha",
+        "Isaiah",
+        "Jeremiah"
+      ],
+      "a": 1,
+      "e": "2 Kings 2:23-24.",
+      "d": "medium"
+    },
+    {
+      "q": "Which prophet wrote the book of Lamentations?",
+      "o": [
+        "David",
+        "Solomon",
+        "Jeremiah",
+        "Isaiah"
+      ],
+      "a": 2,
+      "e": "Jeremiah is the traditional author.",
+      "d": "medium"
+    },
+    {
+      "q": "Which prophet predicted that the Messiah would be born in Bethlehem?",
+      "o": [
+        "Isaiah",
+        "Micah",
+        "Jeremiah",
+        "Haggai"
+      ],
+      "a": 1,
+      "e": "Micah 5:2.",
+      "d": "easy"
+    },
+    {
+      "q": "Which prophet saw a vision of a plumb line?",
+      "o": [
+        "Amos",
+        "Micah",
+        "Hosea",
+        "Zechariah"
+      ],
+      "a": 0,
+      "e": "Amos 7:7-8.",
+      "d": "hard"
+    },
+    {
+      "q": "Which prophet said, 'But let justice roll on like a river, righteousness like a never-failing stream!'?",
+      "o": [
+        "Amos",
+        "Micah",
+        "Isaiah",
+        "Hosea"
+      ],
+      "a": 0,
+      "e": "Amos 5:24.",
+      "d": "medium"
+    },
+    {
+      "q": "Which prophet's book is the shortest in the Old Testament?",
+      "o": [
+        "Joel",
+        "Obadiah",
+        "Nahum",
+        "Habakkuk"
+      ],
+      "a": 1,
+      "e": "Obadiah has only 21 verses.",
+      "d": "medium"
+    },
+    {
+      "q": "Which prophet predicted the 'New Covenant' where God's law would be written on hearts?",
+      "o": [
+        "Isaiah",
+        "Jeremiah",
+        "Ezekiel",
+        "Joel"
+      ],
+      "a": 1,
+      "e": "Jeremiah 31:31-33.",
+      "d": "medium"
+    },
+    {
+      "q": "Which prophet saw a vision of a woman in a basket (an ephah)?",
+      "o": [
+        "Zechariah",
+        "Amos",
+        "Ezekiel",
+        "Daniel"
+      ],
+      "a": 0,
+      "e": "Zechariah 5:5-11.",
+      "d": "hard"
+    },
+    {
+      "q": "Which prophet was told to name his children 'Lo-Ruhamah' and 'Lo-Ammi'?",
+      "o": [
+        "Hosea",
+        "Amos",
+        "Micah",
+        "Joel"
+      ],
+      "a": 0,
+      "e": "Hosea 1.",
+      "d": "hard"
+    },
+    {
+      "q": "Which prophet predicted that God would 'rebuild David's fallen tent'?",
+      "o": [
+        "Amos",
+        "Isaiah",
+        "Joel",
+        "Haggai"
+      ],
+      "a": 0,
+      "e": "Amos 9:11.",
+      "d": "hard"
+    },
+    {
+      "q": "Which prophet saw a vision of a golden lampstand and two olive trees?",
+      "o": [
+        "Zechariah",
+        "Ezekiel",
+        "Daniel",
+        "Malachi"
+      ],
+      "a": 0,
+      "e": "Zechariah 4.",
+      "d": "hard"
+    },
+    {
+      "q": "Which prophet urged the people to rebuild the Temple, saying, 'Is it a time for you yourselves to be living in your paneled houses, while this house remains a ruin?'?",
+      "o": [
+        "Haggai",
+        "Zechariah",
+        "Malachi",
+        "Ezra"
+      ],
+      "a": 0,
+      "e": "Haggai 1:4.",
+      "d": "medium"
+    },
+    {
+      "q": "Which prophet saw a vision of Joshua the high priest in filthy clothes being cleansed?",
+      "o": [
+        "Zechariah",
+        "Haggai",
+        "Malachi",
+        "Ezekiel"
+      ],
+      "a": 0,
+      "e": "Zechariah 3.",
+      "d": "hard"
+    },
+    {
+      "q": "Which prophet predicted the fall of Nineveh (besides Jonah)?",
+      "o": [
+        "Nahum",
+        "Habakkuk",
+        "Zephaniah",
+        "Obadiah"
+      ],
+      "a": 0,
+      "e": "The book of Nahum is entirely about Nineveh.",
+      "d": "hard"
+    },
+    {
+      "q": "Which prophet asked, 'How long, LORD, must I call for help, but you do not listen?'?",
+      "o": [
+        "Habakkuk",
+        "Zephaniah",
+        "Malachi",
+        "Jeremiah"
+      ],
+      "a": 0,
+      "e": "Habakkuk 1:2.",
+      "d": "medium"
+    },
+    {
+      "q": "Which prophet was told to shave his head and beard and divide the hair into three parts?",
+      "o": [
+        "Ezekiel",
+        "Isaiah",
+        "Jeremiah",
+        "Amos"
+      ],
+      "a": 0,
+      "e": "Ezekiel 5.",
+      "d": "hard"
+    },
+    {
+      "q": "Which prophet saw a vision of four horsemen?",
+      "o": [
+        "Daniel",
+        "Ezekiel",
+        "Zechariah",
+        "Malachi"
+      ],
+      "a": 2,
+      "e": "Zechariah 1.",
+      "d": "hard"
+    },
+    {
+      "q": "Which prophet had a servant named Gehazi?",
+      "o": [
+        "Elijah",
+        "Elisha",
+        "Samuel",
+        "Isaiah"
+      ],
+      "a": 1,
+      "e": "2 Kings 4-5.",
+      "d": "medium"
+    },
+    {
+      "q": "Which prophet healed Naaman the Syrian of leprosy?",
+      "o": [
+        "Elijah",
+        "Elisha",
+        "Isaiah",
+        "Jeremiah"
+      ],
+      "a": 1,
+      "e": "2 Kings 5.",
+      "d": "easy"
+    },
+    {
+      "q": "Which prophet predicted that the sun would move back ten steps for King Hezekiah?",
+      "o": [
+        "Isaiah",
+        "Jeremiah",
+        "Micah",
+        "Nathan"
+      ],
+      "a": 0,
+      "e": "Isaiah 38.",
+      "d": "medium"
+    },
+    {
+      "q": "Which prophet saw a vision of a man with a measuring line?",
+      "o": [
+        "Ezekiel",
+        "Zechariah",
+        "Amos",
+        "Haggai"
+      ],
+      "a": 1,
+      "e": "Zechariah 2.",
+      "d": "hard"
+    },
+    {
+      "q": "Which prophet said, 'He has shown you, O mortal, what is good... To act justly and to love mercy and to walk humbly with your God'?",
+      "o": [
+        "Micah",
+        "Isaiah",
+        "Amos",
+        "Hosea"
+      ],
+      "a": 0,
+      "e": "Micah 6:8.",
+      "d": "medium"
+    },
+    {
+      "q": "Which prophet was told to eat a scroll that tasted like honey?",
+      "o": [
+        "Isaiah",
+        "Jeremiah",
+        "Ezekiel",
+        "Daniel"
+      ],
+      "a": 2,
+      "e": "Ezekiel 3:3.",
+      "d": "hard"
+    },
+    {
+      "q": "Which prophet saw a vision of the LORD sitting on a throne, with seraphim above him?",
+      "o": [
+        "Isaiah",
+        "Ezekiel",
+        "Daniel",
+        "Jeremiah"
+      ],
+      "a": 0,
+      "e": "Isaiah 6.",
+      "d": "medium"
+    },
+    {
+      "q": "Which prophet predicted the return of 'Elijah' before the day of the LORD?",
+      "o": [
+        "Malachi",
+        "Micah",
+        "Joel",
+        "Amos"
+      ],
+      "a": 0,
+      "e": "Malachi 4:5.",
+      "d": "medium"
+    },
+    {
+      "q": "Which prophet was told, 'Before I formed you in the womb I knew you'?",
+      "o": [
+        "Isaiah",
+        "Jeremiah",
+        "Ezekiel",
+        "Samuel"
+      ],
+      "a": 1,
+      "e": "Jeremiah 1:5.",
+      "d": "medium"
+    },
+    {
+      "q": "Which prophet saw a vision of a basket of ripe fruit?",
+      "o": [
+        "Amos",
+        "Haggai",
+        "Zechariah",
+        "Joel"
+      ],
+      "a": 0,
+      "e": "Amos 8.",
+      "d": "hard"
+    },
+    {
+      "q": "Which prophet's name means 'My Messenger'?",
+      "o": [
+        "Malachi",
+        "Micah",
+        "Nahum",
+        "Obadiah"
+      ],
+      "a": 0,
+      "e": "Malachi means messenger.",
+      "d": "medium"
+    },
+    {
+      "q": "Which prophet said, 'But you, Bethlehem Ephrathah... out of you will come for me one who will be ruler over Israel'?",
+      "o": [
+        "Micah",
+        "Isaiah",
+        "Jeremiah",
+        "Hosea"
+      ],
+      "a": 0,
+      "e": "Micah 5:2.",
+      "d": "easy"
+    },
+    {
+      "q": "Which prophet was among the exiles by the Kebar River?",
+      "o": [
+        "Ezekiel",
+        "Daniel",
+        "Jeremiah",
+        "Isaiah"
+      ],
+      "a": 0,
+      "e": "Ezekiel 1:1.",
+      "d": "hard"
+    },
+    {
+      "q": "Which prophet saw four living creatures, each with four faces?",
+      "o": [
+        "Isaiah",
+        "Ezekiel",
+        "Daniel",
+        "Zechariah"
+      ],
+      "a": 1,
+      "e": "Ezekiel 1.",
+      "d": "hard"
+    },
+    {
+      "q": "Which prophet interpreted the handwriting on the wall for Belshazzar?",
+      "o": [
+        "Ezekiel",
+        "Daniel",
+        "Jeremiah",
+        "Isaiah"
+      ],
+      "a": 1,
+      "e": "Daniel 5.",
+      "d": "medium"
+    },
+    {
+      "q": "Which prophet saw a vision of a valley of dry bones?",
+      "o": [
+        "Isaiah",
+        "Jeremiah",
+        "Ezekiel",
+        "Joel"
+      ],
+      "a": 2,
+      "e": "Ezekiel 37.",
+      "d": "easy"
+    },
+    {
+      "q": "Which prophet predicted that the Messiah would be 'wounded for our transgressions'?",
+      "o": [
+        "Jeremiah",
+        "Ezekiel",
+        "Isaiah",
+        "Daniel"
+      ],
+      "a": 2,
+      "e": "Isaiah 53.",
+      "d": "easy"
+    },
+    {
+      "q": "Which prophet was told to marry a woman of whoredom to symbolize Israel's unfaithfulness?",
+      "o": [
+        "Hosea",
+        "Amos",
+        "Micah",
+        "Joel"
+      ],
+      "a": 0,
+      "e": "Hosea 1.",
+      "d": "medium"
+    },
+    {
+      "q": "Which prophet saw the Lord standing by an altar and saying 'Smite the capitals'?",
+      "o": [
+        "Amos",
+        "Isaiah",
+        "Jeremiah",
+        "Zephaniah"
+      ],
+      "a": 0,
+      "e": "Amos 9:1.",
+      "d": "hard"
+    },
+    {
+      "q": "Which prophet predicted that the Messiah would enter Jerusalem on a donkey?",
+      "o": [
+        "Zechariah",
+        "Isaiah",
+        "Micah",
+        "Malachi"
+      ],
+      "a": 0,
+      "e": "Zechariah 9:9.",
+      "d": "medium"
+    },
+    {
+      "q": "Which prophet spoke about the 'Day of the LORD' more than any other?",
+      "o": [
+        "Zephaniah",
+        "Joel",
+        "Amos",
+        "Isaiah"
+      ],
+      "a": 0,
+      "e": "Zephaniah 1.",
+      "d": "hard"
+    },
+    {
+      "q": "Which prophet was given the name Belteshazzar?",
+      "o": [
+        "Daniel",
+        "Shadrach",
+        "Meshach",
+        "Abednego"
+      ],
+      "a": 0,
+      "e": "Daniel 1:7.",
+      "d": "easy"
+    },
+    {
+      "q": "Which prophet predicted the exact length of the Babylonian captivity?",
+      "o": [
+        "Jeremiah",
+        "Isaiah",
+        "Ezekiel",
+        "Daniel"
+      ],
+      "a": 0,
+      "e": "Jeremiah 25.",
+      "d": "medium"
+    },
+    {
+      "q": "Which prophet mentioned 'Noah, Daniel and Job'?",
+      "o": [
+        "Ezekiel",
+        "Jeremiah",
+        "Isaiah",
+        "Malachi"
+      ],
+      "a": 0,
+      "e": "Ezekiel 14:14.",
+      "d": "hard"
+    },
+    {
+      "q": "Who was the first king of Israel?",
+      "o": [
+        "David",
+        "Saul",
+        "Solomon",
+        "Samuel"
+      ],
+      "a": 1,
+      "e": "1 Samuel 10:1 — Samuel anointed Saul as the first king of Israel.",
+      "d": "easy"
+    },
+    {
+      "q": "Which king of Israel was known for his great wisdom?",
+      "o": [
+        "Saul",
+        "David",
+        "Solomon",
+        "Hezekiah"
+      ],
+      "a": 2,
+      "e": "1 Kings 3:12 — God gave Solomon a wise and discerning heart.",
+      "d": "easy"
+    },
+    {
+      "q": "Who was the king who built the first Temple in Jerusalem?",
+      "o": [
+        "David",
+        "Solomon",
+        "Josiah",
+        "Hezekiah"
+      ],
+      "a": 1,
+      "e": "1 Kings 6:1 — Solomon began to build the house of the Lord.",
+      "d": "easy"
+    },
+    {
+      "q": "Which king of Judah was only eight years old when he began to reign?",
+      "o": [
+        "Josiah",
+        "Manasseh",
+        "Hezekiah",
+        "Jehoiakim"
+      ],
+      "a": 0,
+      "e": "2 Kings 22:1 — Josiah was eight years old when he became king.",
+      "d": "medium"
+    },
+    {
+      "q": "Which king was humbled by God and lived like an animal for seven years?",
+      "o": [
+        "Pharaoh",
+        "Cyrus",
+        "Nebuchadnezzar",
+        "Darius"
+      ],
+      "a": 2,
+      "e": "Daniel 4:33 — Nebuchadnezzar was driven from men and ate grass like oxen.",
+      "d": "medium"
+    },
+    {
+      "q": "Who was the king of Israel who reigned for only seven days?",
+      "o": [
+        "Zimri",
+        "Shallum",
+        "Zechariah",
+        "Pekahiah"
+      ],
+      "a": 0,
+      "e": "1 Kings 16:15 — Zimri reigned in Tirzah seven days.",
+      "d": "hard"
+    },
+    {
+      "q": "Which king of Judah saw the sun's shadow go backward ten degrees as a sign of healing?",
+      "o": [
+        "Josiah",
+        "Hezekiah",
+        "Asa",
+        "Jehoshaphat"
+      ],
+      "a": 1,
+      "e": "2 Kings 20:11 — The shadow went back the ten steps it had gone down on the stairway of Ahaz.",
+      "d": "medium"
+    },
+    {
+      "q": "Who was the king of Israel who married Jezebel?",
+      "o": [
+        "Jehu",
+        "Ahab",
+        "Omri",
+        "Jeroboam II"
+      ],
+      "a": 1,
+      "e": "1 Kings 16:30-31 — Ahab son of Omri married Jezebel daughter of Ethbaal king of the Sidonians.",
+      "d": "easy"
+    },
+    {
+      "q": "Which king of Judah was known for repairing the Temple after finding the Book of the Law?",
+      "o": [
+        "Hezekiah",
+        "Josiah",
+        "Joash",
+        "Uzziah"
+      ],
+      "a": 1,
+      "e": "2 Kings 22:8 — Hilkiah the high priest said to Shaphan the secretary, 'I have found the Book of the Law in the temple of the Lord.'",
+      "d": "medium"
+    },
+    {
+      "q": "Who was the king of Israel who killed all the descendants of Ahab?",
+      "o": [
+        "Jehu",
+        "Baasha",
+        "Shallum",
+        "Menahem"
+      ],
+      "a": 0,
+      "e": "2 Kings 10:11 — So Jehu killed everyone in Jezreel who remained of the house of Ahab.",
+      "d": "medium"
+    },
+    {
+      "q": "Which king of Judah was struck with leprosy for trying to burn incense in the Temple?",
+      "o": [
+        "Uzziah",
+        "Jotham",
+        "Ahaz",
+        "Manasseh"
+      ],
+      "a": 0,
+      "e": "2 Chronicles 26:19-21 — Uzziah had a censer in his hand to burn incense... leprosy broke out on his forehead.",
+      "d": "hard"
+    },
+    {
+      "q": "Who was the king of Persia who allowed the Jews to return to Jerusalem?",
+      "o": [
+        "Darius",
+        "Cyrus",
+        "Artaxerxes",
+        "Xerxes"
+      ],
+      "a": 1,
+      "e": "Ezra 1:1-2 — Cyrus king of Persia issued a proclamation throughout all his dominion.",
+      "d": "medium"
+    },
+    {
+      "q": "Which king of Israel was the son of Nebat and made Israel to sin by setting up golden calves?",
+      "o": [
+        "Jeroboam",
+        "Rehoboam",
+        "Nadab",
+        "Baasha"
+      ],
+      "a": 0,
+      "e": "1 Kings 12:28-30 — Jeroboam made two golden calves, one in Bethel and the other in Dan.",
+      "d": "medium"
+    },
+    {
+      "q": "Who was the king of Judah when the Babylonians destroyed Jerusalem?",
+      "o": [
+        "Jehoiakim",
+        "Jehoiachin",
+        "Zedekiah",
+        "Jehoahaz"
+      ],
+      "a": 2,
+      "e": "2 Kings 25:1-7 — Zedekiah was the last king of Judah before the exile.",
+      "d": "medium"
+    },
+    {
+      "q": "Which king of Israel was known for his furious driving of a chariot?",
+      "o": [
+        "Jehu",
+        "Ahab",
+        "Jehoram",
+        "Ahaziah"
+      ],
+      "a": 0,
+      "e": "2 Kings 9:20 — The driving is like that of Jehu son of Nimshi—he drives like a maniac.",
+      "d": "medium"
+    },
+    {
+      "q": "Which king of Judah was the father of Hezekiah and was very wicked?",
+      "o": [
+        "Ahaz",
+        "Asa",
+        "Uzziah",
+        "Jotham"
+      ],
+      "a": 0,
+      "e": "2 Kings 16:1-2 — Ahaz did not do what was right in the eyes of the Lord.",
+      "d": "medium"
+    },
+    {
+      "q": "Who was the king of Tyre who sent cedar trees and craftsmen to help Solomon build the Temple?",
+      "o": [
+        "Hiram",
+        "Ethbaal",
+        "Ben-Hadad",
+        "Mesha"
+      ],
+      "a": 0,
+      "e": "1 Kings 5:1 — Hiram king of Tyre sent his servants to Solomon.",
+      "d": "medium"
+    },
+    {
+      "q": "Which king of Israel was the father of Ahab?",
+      "o": [
+        "Omri",
+        "Baasha",
+        "Zimri",
+        "Jeroboam"
+      ],
+      "a": 0,
+      "e": "1 Kings 16:23-28 — Omri was the father of Ahab and reigned twelve years.",
+      "d": "hard"
+    },
+    {
+      "q": "Which king of Judah was hidden in the Temple for six years to protect him from Athaliah?",
+      "o": [
+        "Joash",
+        "Josiah",
+        "Uzziah",
+        "Hezekiah"
+      ],
+      "a": 0,
+      "e": "2 Kings 11:2-3 — Joash was hidden in the temple of the Lord while Athaliah ruled the land.",
+      "d": "medium"
+    },
+    {
+      "q": "Who was the king of Judah who sought the Lord and a great revival occurred, but he later made an alliance with Ahab?",
+      "o": [
+        "Jehoshaphat",
+        "Asa",
+        "Hezekiah",
+        "Josiah"
+      ],
+      "a": 0,
+      "e": "2 Chronicles 17:3-6 — The Lord was with Jehoshaphat because he walked in the ways of his father David.",
+      "d": "medium"
+    },
+    {
+      "q": "Which king of Israel was the son of Jehu and reigned for 17 years?",
+      "o": [
+        "Jehoahaz",
+        "Jehoash",
+        "Jeroboam II",
+        "Zechariah"
+      ],
+      "a": 0,
+      "e": "2 Kings 13:1 — Jehoahaz son of Jehu became king of Israel in Samaria.",
+      "d": "hard"
+    },
+    {
+      "q": "Who was the king of Israel when Samaria was captured by the Assyrians?",
+      "o": [
+        "Hoshea",
+        "Pekah",
+        "Menahem",
+        "Shallum"
+      ],
+      "a": 0,
+      "e": "2 Kings 17:6 — In the ninth year of Hoshea, the king of Assyria captured Samaria.",
+      "d": "hard"
+    },
+    {
+      "q": "Which king of Judah was the most wicked, even sacrificing his own children, but later repented in Babylon?",
+      "o": [
+        "Manasseh",
+        "Amon",
+        "Ahaz",
+        "Jehoiakim"
+      ],
+      "a": 0,
+      "e": "2 Chronicles 33:1-13 — Manasseh did evil in the eyes of the Lord but later humbled himself greatly.",
+      "d": "medium"
+    },
+    {
+      "q": "Who was the king of Judah who was the son of Solomon and saw the kingdom split?",
+      "o": [
+        "Rehoboam",
+        "Jeroboam",
+        "Abijah",
+        "Asa"
+      ],
+      "a": 0,
+      "e": "1 Kings 12:1 — Rehoboam went to Shechem, for all Israel had gone there to make him king.",
+      "d": "easy"
+    },
+    {
+      "q": "Which king of Israel was a great-grandson of Jehu and had a long, prosperous reign?",
+      "o": [
+        "Jeroboam II",
+        "Jehoahaz",
+        "Jehoash",
+        "Zechariah"
+      ],
+      "a": 0,
+      "e": "2 Kings 14:23 — Jeroboam son of Jehoash king of Israel began to reign in Samaria and reigned forty-one years.",
+      "d": "hard"
+    },
+    {
+      "q": "Which king of Judah removed his grandmother Maakah from her position because she made an Asherah pole?",
+      "o": [
+        "Asa",
+        "Jehoshaphat",
+        "Hezekiah",
+        "Josiah"
+      ],
+      "a": 0,
+      "e": "1 Kings 15:13 — King Asa also deposed his grandmother Maakah from her position as queen mother.",
+      "d": "hard"
+    },
+    {
+      "q": "Who was the king of Israel who killed Pekahiah to take the throne?",
+      "o": [
+        "Pekah",
+        "Menahem",
+        "Shallum",
+        "Hoshea"
+      ],
+      "a": 0,
+      "e": "2 Kings 15:25 — Pekah son of Remaliah conspired against Pekahiah and killed him.",
+      "d": "hard"
+    },
+    {
+      "q": "Which king of Israel was the father of Jeroboam II?",
+      "o": [
+        "Jehoash",
+        "Jehoahaz",
+        "Jehu",
+        "Ahab"
+      ],
+      "a": 0,
+      "e": "2 Kings 14:23 — Jeroboam son of Jehoash king of Israel began to reign.",
+      "d": "hard"
+    },
+    {
+      "q": "Who was the king of Israel that Elisha told to strike the ground with arrows?",
+      "o": [
+        "Jehoash",
+        "Jehoahaz",
+        "Jehoram",
+        "Jehu"
+      ],
+      "a": 0,
+      "e": "2 Kings 13:14-19 — Elisha told Joash (Jehoash) to strike the ground with the arrows.",
+      "d": "hard"
+    },
+    {
+      "q": "Which king of Judah was the son of Hezekiah and reigned for 55 years?",
+      "o": [
+        "Manasseh",
+        "Amon",
+        "Josiah",
+        "Jehoahaz"
+      ],
+      "a": 0,
+      "e": "2 Kings 21:1 — Manasseh was twelve years old when he became king, and he reigned in Jerusalem fifty-five years.",
+      "d": "medium"
+    },
+    {
+      "q": "Who was the king of Israel that died after falling through the lattice of his upper room?",
+      "o": [
+        "Ahaziah",
+        "Jehoram",
+        "Ahab",
+        "Jehu"
+      ],
+      "a": 0,
+      "e": "2 Kings 1:2 — Ahaziah fell through the lattice of his upper room in Samaria and was injured.",
+      "d": "medium"
+    },
+    {
+      "q": "Which king of Judah was the son of Josiah and was carried off to Egypt?",
+      "o": [
+        "Jehoahaz",
+        "Jehoiakim",
+        "Jehoiachin",
+        "Zedekiah"
+      ],
+      "a": 0,
+      "e": "2 Kings 23:31-34 — Pharaoh Necho put Jehoahaz in chains... and took him to Egypt.",
+      "d": "hard"
+    },
+    {
+      "q": "Who was the king of Israel who reigned for 12 years and did evil, but not as much as his parents Ahab and Jezebel?",
+      "o": [
+        "Jehoram",
+        "Ahaziah",
+        "Jehu",
+        "Jehoahaz"
+      ],
+      "a": 0,
+      "e": "2 Kings 3:1-2 — Joram (Jehoram) son of Ahab became king of Israel... He did evil in the eyes of the Lord, but not as his father and mother had done.",
+      "d": "hard"
+    },
+    {
+      "q": "Which king of Judah was the son of Jehoshaphat and married a daughter of Ahab?",
+      "o": [
+        "Jehoram",
+        "Ahaziah",
+        "Joash",
+        "Amaziah"
+      ],
+      "a": 0,
+      "e": "2 Kings 8:16-18 — Jehoram son of Jehoshaphat became king... He walked in the ways of the kings of Israel, as the house of Ahab had done.",
+      "d": "hard"
+    },
+    {
+      "q": "Who was the king of Judah who was the son of Jehoram and reigned for only one year?",
+      "o": [
+        "Ahaziah",
+        "Joash",
+        "Amaziah",
+        "Uzziah"
+      ],
+      "a": 0,
+      "e": "2 Kings 8:25-26 — Ahaziah son of Jehoram king of Judah began to reign... He reigned in Jerusalem one year.",
+      "d": "hard"
+    },
+    {
+      "q": "Which king of Israel was the son of Baasha and was killed by Zimri while he was getting drunk?",
+      "o": [
+        "Elah",
+        "Nadab",
+        "Zimri",
+        "Omri"
+      ],
+      "a": 0,
+      "e": "1 Kings 16:8-10 — Zimri... struck down Elah and killed him while he was in Tirzah, getting drunk.",
+      "d": "hard"
+    },
+    {
+      "q": "Who was the king of Judah who defeated the Edomites in the Valley of Salt but then turned to their gods?",
+      "o": [
+        "Amaziah",
+        "Joash",
+        "Uzziah",
+        "Jotham"
+      ],
+      "a": 0,
+      "e": "2 Kings 14:7 — He (Amaziah) was the one who defeated ten thousand Edomites in the Valley of Salt.",
+      "d": "hard"
+    },
+    {
+      "q": "Which king of Judah was the son of Uzziah and built the Upper Gate of the Temple?",
+      "o": [
+        "Jotham",
+        "Ahaz",
+        "Hezekiah",
+        "Josiah"
+      ],
+      "a": 0,
+      "e": "2 Kings 15:32-35 — Jotham son of Uzziah became king... He rebuilt the Upper Gate of the temple of the Lord.",
+      "d": "hard"
+    },
+    {
+      "q": "Who was the king of Judah who was the son of Ahaz and cleansed the Temple in his first month?",
+      "o": [
+        "Hezekiah",
+        "Josiah",
+        "Asa",
+        "Jehoshaphat"
+      ],
+      "a": 0,
+      "e": "2 Chronicles 29:3 — In the first month of the first year of his reign, he (Hezekiah) opened the doors of the temple of the Lord and repaired them.",
+      "d": "medium"
+    },
+    {
+      "q": "Which king of Babylon saw the handwriting on the wall?",
+      "o": [
+        "Belshazzar",
+        "Nebuchadnezzar",
+        "Evil-Merodach",
+        "Nabonidus"
+      ],
+      "a": 0,
+      "e": "Daniel 5:1 — King Belshazzar gave a great banquet for a thousand of his nobles.",
+      "d": "medium"
+    },
+    {
+      "q": "Who was the king of Egypt who attacked Jerusalem during the reign of Rehoboam?",
+      "o": [
+        "Shishak",
+        "Necho",
+        "So",
+        "Tirhakah"
+      ],
+      "a": 0,
+      "e": "1 Kings 14:25 — In the fifth year of King Rehoboam, Shishak king of Egypt attacked Jerusalem.",
+      "d": "medium"
+    },
+    {
+      "q": "Which king of Israel was the son of Nadab and was killed by Baasha?",
+      "o": [
+        "Nadab",
+        "Baasha",
+        "Elah",
+        "Zimri"
+      ],
+      "a": 0,
+      "e": "1 Kings 15:27-28 — Baasha son of Ahijah... struck him (Nadab) down at Gibbethon.",
+      "d": "hard"
+    },
+    {
+      "q": "Who was the king of Syria who was healed of leprosy by Elisha?",
+      "o": [
+        "Naaman",
+        "Ben-Hadad",
+        "Hazael",
+        "Rezin"
+      ],
+      "a": 0,
+      "e": "2 Kings 5:1 — Naaman was commander of the army of the king of Aram (Syria).",
+      "d": "medium"
+    },
+    {
+      "q": "Which king of Judah was the son of Manasseh and was assassinated by his own officials?",
+      "o": [
+        "Amon",
+        "Josiah",
+        "Jehoahaz",
+        "Jehoiakim"
+      ],
+      "a": 0,
+      "e": "2 Kings 21:19-23 — Amon’s officials conspired against him and assassinated the king in his palace.",
+      "d": "hard"
+    },
+    {
+      "q": "Who was the king of Israel who reigned for 10 years and was known for his cruelty?",
+      "o": [
+        "Menahem",
+        "Pekah",
+        "Hoshea",
+        "Shallum"
+      ],
+      "a": 0,
+      "e": "2 Kings 15:17 — Menahem son of Gadi became king of Israel, and he reigned in Samaria ten years.",
+      "d": "hard"
+    },
+    {
+      "q": "Which king of Judah was the son of Josiah and was placed on the throne by Pharaoh Necho?",
+      "o": [
+        "Jehoiakim",
+        "Jehoahaz",
+        "Jehoiachin",
+        "Zedekiah"
+      ],
+      "a": 0,
+      "e": "2 Kings 23:34 — Pharaoh Necho made Eliakim son of Josiah king... and changed his name to Jehoiakim.",
+      "d": "hard"
+    },
+    {
+      "q": "Who was the king of Judah who was the son of Jehoiakim and reigned for only three months?",
+      "o": [
+        "Jehoiachin",
+        "Jehoahaz",
+        "Zedekiah",
+        "Jehoiakim"
+      ],
+      "a": 0,
+      "e": "2 Kings 24:8 — Jehoiachin was eighteen years old when he became king, and he reigned in Jerusalem three months.",
+      "d": "hard"
+    },
+    {
+      "q": "Which king of Persia issued a decree that the Temple in Jerusalem be rebuilt, as recorded in Ezra?",
+      "o": [
+        "Cyrus",
+        "Darius",
+        "Artaxerxes",
+        "Xerxes"
+      ],
+      "a": 0,
+      "e": "Ezra 1:1 — In the first year of Cyrus king of Persia... the Lord moved the heart of Cyrus.",
+      "d": "medium"
+    },
+    {
+      "q": "Who was the king of Israel who was the son of Shallum and reigned for only one month?",
+      "o": [
+        "Shallum",
+        "Menahem",
+        "Pekah",
+        "Hoshea"
+      ],
+      "a": 0,
+      "e": "2 Kings 15:13 — Shallum son of Jabesh became king... and he reigned in Samaria one month.",
+      "d": "hard"
+    },
+    {
+      "q": "Which king of Judah was the son of Amaziah and reigned for 52 years?",
+      "o": [
+        "Uzziah",
+        "Jotham",
+        "Ahaz",
+        "Hezekiah"
+      ],
+      "a": 0,
+      "e": "2 Kings 15:1-2 — Azariah (Uzziah) son of Amaziah king of Judah began to reign... and he reigned in Jerusalem fifty-two years.",
+      "d": "hard"
+    },
+    {
+      "q": "Who was the king of Israel who was the son of Remaliah and reigned for 20 years?",
+      "o": [
+        "Pekah",
+        "Pekahiah",
+        "Menahem",
+        "Hoshea"
+      ],
+      "a": 0,
+      "e": "2 Kings 15:27 — Pekah son of Remaliah became king of Israel in Samaria, and he reigned twenty years.",
+      "d": "hard"
+    },
+    {
+      "q": "Which king of Israel was the son of Pekahiah?",
+      "o": [
+        "Pekahiah was the son of Menahem",
+        "Pekah",
+        "Hoshea",
+        "Menahem"
+      ],
+      "a": 0,
+      "e": "2 Kings 15:22-23 — Menahem rested with his ancestors. And Pekahiah his son succeeded him as king.",
+      "d": "hard"
+    },
+    {
+      "q": "Who was the king of Syria that Hazael murdered to take the throne?",
+      "o": [
+        "Ben-Hadad",
+        "Rezin",
+        "Naaman",
+        "Hadadezer"
+      ],
+      "a": 0,
+      "e": "2 Kings 8:15 — The next day he (Hazael) took a thick cloth, soaked it in water and spread it over the king’s (Ben-Hadad) face, so that he died.",
+      "d": "hard"
+    },
+    {
+      "q": "Which king of Judah was the son of Josiah and was also called Mattaniah?",
+      "o": [
+        "Zedekiah",
+        "Jehoahaz",
+        "Jehoiakim",
+        "Jehoiachin"
+      ],
+      "a": 0,
+      "e": "2 Kings 24:17 — He (the king of Babylon) made Mattaniah, Jehoiachin’s uncle, king in his place and changed his name to Zedekiah.",
+      "d": "hard"
+    },
+    {
+      "q": "Who was the king of Israel that reigned during the time of the prophet Elijah and the contest on Mount Carmel?",
+      "o": [
+        "Ahab",
+        "Ahaziah",
+        "Jehoram",
+        "Jehu"
+      ],
+      "a": 0,
+      "e": "1 Kings 18:16-17 — So Obadiah went to meet Ahab and told him, and Ahab went to meet Elijah.",
+      "d": "easy"
+    },
+    {
+      "q": "Which king of Judah was the son of Abijah and reigned for 41 years?",
+      "o": [
+        "Asa",
+        "Jehoshaphat",
+        "Rehoboam",
+        "Uzziah"
+      ],
+      "a": 0,
+      "e": "1 Kings 15:9-10 — In the twentieth year of Jeroboam king of Israel, Asa became king of Judah... he reigned in Jerusalem forty-one years.",
+      "d": "hard"
+    },
+    {
+      "q": "Who was the king of Judah that was the son of Rehoboam and reigned for 3 years?",
+      "o": [
+        "Abijah",
+        "Asa",
+        "Jehoshaphat",
+        "Jehoram"
+      ],
+      "a": 0,
+      "e": "1 Kings 15:1-2 — Abijah became king of Judah... He reigned in Jerusalem three years.",
+      "d": "hard"
+    },
+    {
+      "q": "Which king of Israel was the son of Omri and built Samaria as the capital?",
+      "o": [
+        "Ahab",
+        "Jehu",
+        "Jeroboam",
+        "Baasha"
+      ],
+      "a": 0,
+      "e": "1 Kings 16:24-28 — Omri... bought the hill of Samaria... and built a city on it. Ahab his son succeeded him.",
+      "d": "hard"
+    },
+    {
+      "q": "Who was the king of Moab who sacrificed his eldest son on the city wall to turn the tide of battle?",
+      "o": [
+        "Mesha",
+        "Balak",
+        "Eglon",
+        "Hadadezer"
+      ],
+      "a": 0,
+      "e": "2 Kings 3:26-27 — Then he (the king of Moab) took his firstborn son... and offered him as a sacrifice on the city wall.",
+      "d": "hard"
+    },
+    {
+      "q": "Which king of Judah was the son of Jotham and sacrificed his son in the fire?",
+      "o": [
+        "Ahaz",
+        "Hezekiah",
+        "Manasseh",
+        "Amon"
+      ],
+      "a": 0,
+      "e": "2 Kings 16:1-3 — Ahaz son of Jotham became king... He even sacrificed his son in the fire.",
+      "d": "hard"
+    },
+    {
+      "q": "Who was the king of Assyria who threatened Hezekiah and Jerusalem?",
+      "o": [
+        "Sennacherib",
+        "Shalmaneser",
+        "Sargon",
+        "Tiglath-Pileser"
+      ],
+      "a": 0,
+      "e": "2 Kings 18:13 — Sennacherib king of Assyria attacked all the fortified cities of Judah.",
+      "d": "medium"
+    },
+    {
+      "q": "Which king of Israel was the son of Jeroboam and reigned for 2 years?",
+      "o": [
+        "Nadab",
+        "Baasha",
+        "Elah",
+        "Zimri"
+      ],
+      "a": 0,
+      "e": "1 Kings 15:25 — Nadab son of Jeroboam became king of Israel... and he reigned over Israel two years.",
+      "d": "hard"
+    },
+    {
+      "q": "Who was the king of Israel that Elisha anointed to destroy the house of Ahab?",
+      "o": [
+        "Jehu",
+        "Jehoahaz",
+        "Jehoash",
+        "Jeroboam II"
+      ],
+      "a": 0,
+      "e": "2 Kings 9:1-6 — A young man from the prophets... anointed Jehu king over the Lord’s people.",
+      "d": "medium"
+    },
+    {
+      "q": "Which king of Judah was the son of Joash and reigned for 29 years?",
+      "o": [
+        "Amaziah",
+        "Uzziah",
+        "Jotham",
+        "Ahaz"
+      ],
+      "a": 0,
+      "e": "2 Kings 14:1-2 — Amaziah son of Joash king of Judah began to reign... and he reigned in Jerusalem twenty-nine years.",
+      "d": "hard"
+    },
+    {
+      "q": "Who was the king of Judah who was the son of Amaziah and was also called Azariah?",
+      "o": [
+        "Uzziah",
+        "Jotham",
+        "Ahaz",
+        "Hezekiah"
+      ],
+      "a": 0,
+      "e": "2 Kings 15:1 — In the twenty-seventh year of Jeroboam king of Israel, Azariah (Uzziah) son of Amaziah king of Judah began to reign.",
+      "d": "hard"
+    },
+    {
+      "q": "Which king of Judah was the son of Manasseh and did evil like his father, but did not repent?",
+      "o": [
+        "Amon",
+        "Josiah",
+        "Jehoahaz",
+        "Jehoiakim"
+      ],
+      "a": 0,
+      "e": "2 Kings 21:18-20 — Amon son of Manasseh became king... He did evil in the eyes of the Lord, as his father Manasseh had done.",
+      "d": "hard"
+    },
+    {
+      "q": "Who was the king of Israel that reigned for 10 years and paid a thousand talents of silver to Tiglath-Pileser?",
+      "o": [
+        "Menahem",
+        "Pekah",
+        "Hoshea",
+        "Pekahiah"
+      ],
+      "a": 0,
+      "e": "2 Kings 15:17-19 — Menahem... gave Pul (Tiglath-Pileser) a thousand talents of silver.",
+      "d": "hard"
+    },
+    {
+      "q": "Which king of Judah was the son of Josiah and was killed in battle at Megiddo?",
+      "o": [
+        "Josiah",
+        "Jehoahaz",
+        "Jehoiakim",
+        "Zedekiah"
+      ],
+      "a": 0,
+      "e": "2 Kings 23:29-30 — King Josiah marched out to meet him in battle, but Necho faced him and killed him at Megiddo.",
+      "d": "medium"
+    },
+    {
+      "q": "Who was the king of Babylon who released Jehoiachin from prison?",
+      "o": [
+        "Evil-Merodach",
+        "Nebuchadnezzar",
+        "Belshazzar",
+        "Nabonidus"
+      ],
+      "a": 0,
+      "e": "2 Kings 25:27 — Evil-Merodach king of Babylon... released Jehoiachin king of Judah from prison.",
+      "d": "hard"
+    },
+    {
+      "q": "Which king of Judah was the son of Jehoiakim and was carried off to Babylon?",
+      "o": [
+        "Jehoiachin",
+        "Zedekiah",
+        "Jehoahaz",
+        "Jehoiakim"
+      ],
+      "a": 0,
+      "e": "2 Kings 24:12 — Jehoiachin king of Judah... surrendered to him (the king of Babylon).",
+      "d": "hard"
+    },
+    {
+      "q": "Who was the king of Israel who was the son of Ahab and reigned for 2 years?",
+      "o": [
+        "Ahaziah",
+        "Jehoram",
+        "Jehu",
+        "Jehoahaz"
+      ],
+      "a": 0,
+      "e": "1 Kings 22:51 — Ahaziah son of Ahab became king of Israel in Samaria... and he reigned over Israel two years.",
+      "d": "hard"
+    },
+    {
+      "q": "Which king of Judah was the son of Jehoshaphat and reigned for 8 years?",
+      "o": [
+        "Jehoram",
+        "Ahaziah",
+        "Joash",
+        "Amaziah"
+      ],
+      "a": 0,
+      "e": "2 Kings 8:16-17 — Jehoram son of Jehoshaphat king of Judah began to reign... and he reigned in Jerusalem eight years.",
+      "d": "hard"
+    },
+    {
+      "q": "Who was the king of Judah who was the son of Jehoram and reigned for 1 year?",
+      "o": [
+        "Ahaziah",
+        "Joash",
+        "Amaziah",
+        "Uzziah"
+      ],
+      "a": 0,
+      "e": "2 Kings 8:25-26 — Ahaziah son of Jehoram king of Judah began to reign... and he reigned in Jerusalem one year.",
+      "d": "hard"
+    },
+    {
+      "q": "Which king of Israel was the son of Baasha and reigned for 2 years?",
+      "o": [
+        "Elah",
+        "Zimri",
+        "Omri",
+        "Ahab"
+      ],
+      "a": 0,
+      "e": "1 Kings 16:8 — Elah son of Baasha became king of Israel... and he reigned two years.",
+      "d": "hard"
+    },
+    {
+      "q": "Who was the king of Judah who was the son of Joash and was assassinated at Lachish?",
+      "o": [
+        "Amaziah",
+        "Uzziah",
+        "Jotham",
+        "Ahaz"
+      ],
+      "a": 0,
+      "e": "2 Kings 14:19 — They conspired against him (Amaziah) in Jerusalem and he fled to Lachish, but they sent men to Lachish after him and killed him there.",
+      "d": "hard"
+    },
+    {
+      "q": "Which king of Judah was the son of Uzziah and reigned for 16 years?",
+      "o": [
+        "Jotham",
+        "Ahaz",
+        "Hezekiah",
+        "Josiah"
+      ],
+      "a": 0,
+      "e": "2 Kings 15:32-33 — Jotham son of Uzziah king of Judah began to reign... and he reigned in Jerusalem sixteen years.",
+      "d": "hard"
+    },
+    {
+      "q": "Who was the king of Judah who was the son of Ahaz and reigned for 29 years?",
+      "o": [
+        "Hezekiah",
+        "Manasseh",
+        "Amon",
+        "Josiah"
+      ],
+      "a": 0,
+      "e": "2 Kings 18:1-2 — Hezekiah son of Ahaz king of Judah began to reign... and he reigned in Jerusalem twenty-nine years.",
+      "d": "medium"
+    },
+    {
+      "q": "Which king of Judah was the son of Hezekiah and was twelve years old when he became king?",
+      "o": [
+        "Manasseh",
+        "Amon",
+        "Josiah",
+        "Jehoahaz"
+      ],
+      "a": 0,
+      "e": "2 Kings 21:1 — Manasseh was twelve years old when he became king.",
+      "d": "medium"
+    },
+    {
+      "q": "Who was the king of Judah who was the son of Manasseh and reigned for 2 years?",
+      "o": [
+        "Amon",
+        "Josiah",
+        "Jehoahaz",
+        "Jehoiakim"
+      ],
+      "a": 0,
+      "e": "2 Kings 21:19 — Amon was twenty-two years old when he became king, and he reigned in Jerusalem two years.",
+      "d": "hard"
+    },
+    {
+      "q": "Which king of Judah was the son of Amon and was eight years old when he became king?",
+      "o": [
+        "Josiah",
+        "Jehoahaz",
+        "Jehoiakim",
+        "Jehoiachin"
+      ],
+      "a": 0,
+      "e": "2 Kings 22:1 — Josiah was eight years old when he became king.",
+      "d": "medium"
+    },
+    {
+      "q": "Who was the king of Judah who was the son of Josiah and reigned for 3 months?",
+      "o": [
+        "Jehoahaz",
+        "Jehoiakim",
+        "Jehoiachin",
+        "Zedekiah"
+      ],
+      "a": 0,
+      "e": "2 Kings 23:31 — Jehoahaz was twenty-three years old when he became king, and he reigned in Jerusalem three months.",
+      "d": "hard"
+    },
+    {
+      "q": "Which king of Judah was the son of Josiah and reigned for 11 years?",
+      "o": [
+        "Jehoiakim",
+        "Jehoahaz",
+        "Jehoiachin",
+        "Zedekiah"
+      ],
+      "a": 0,
+      "e": "2 Kings 23:36 — Jehoiakim was twenty-five years old when he became king, and he reigned in Jerusalem eleven years.",
+      "d": "hard"
+    },
+    {
+      "q": "Who was the king of Judah who was the son of Jehoiakim and reigned for 3 months and 10 days?",
+      "o": [
+        "Jehoiachin",
+        "Zedekiah",
+        "Jehoahaz",
+        "Jehoiakim"
+      ],
+      "a": 0,
+      "e": "2 Chronicles 36:9 — Jehoiachin was eighteen years old when he became king, and he reigned in Jerusalem three months and ten days.",
+      "d": "hard"
+    },
+    {
+      "q": "Which king of Judah was the son of Josiah and reigned for 11 years before Jerusalem fell?",
+      "o": [
+        "Zedekiah",
+        "Jehoahaz",
+        "Jehoiakim",
+        "Jehoiachin"
+      ],
+      "a": 0,
+      "e": "2 Kings 24:18 — Zedekiah was twenty-one years old when he became king, and he reigned in Jerusalem eleven years.",
+      "d": "hard"
+    },
+    {
+      "q": "Who was the king of Israel who was the son of Jeroboam and reigned for 2 years?",
+      "o": [
+        "Nadab",
+        "Baasha",
+        "Elah",
+        "Zimri"
+      ],
+      "a": 0,
+      "e": "1 Kings 15:25 — Nadab son of Jeroboam became king of Israel.",
+      "d": "hard"
+    },
+    {
+      "q": "Who was the king of Israel who was the son of Omri and reigned for 22 years?",
+      "o": [
+        "Ahab",
+        "Ahaziah",
+        "Jehoram",
+        "Jehu"
+      ],
+      "a": 0,
+      "e": "1 Kings 16:29 — Ahab son of Omri became king of Israel... and he reigned over Israel in Samaria twenty-two years.",
+      "d": "medium"
+    },
+    {
+      "q": "Which king of Israel was the son of Ahab and reigned for 2 years?",
+      "o": [
+        "Ahaziah",
+        "Jehoram",
+        "Jehu",
+        "Jehoahaz"
+      ],
+      "a": 0,
+      "e": "1 Kings 22:51 — Ahaziah son of Ahab became king of Israel.",
+      "d": "hard"
+    },
+    {
+      "q": "Who was the king of Israel who was the son of Ahab and reigned for 12 years?",
+      "o": [
+        "Jehoram",
+        "Ahaziah",
+        "Jehu",
+        "Jehoahaz"
+      ],
+      "a": 0,
+      "e": "2 Kings 3:1 — Joram (Jehoram) son of Ahab became king of Israel.",
+      "d": "hard"
+    },
+    {
+      "q": "Which king of Israel was the son of Nimshi and reigned for 28 years?",
+      "o": [
+        "Jehu",
+        "Jehoahaz",
+        "Jehoash",
+        "Jeroboam II"
+      ],
+      "a": 0,
+      "e": "2 Kings 10:36 — The time that Jehu reigned over Israel in Samaria was twenty-eight years.",
+      "d": "hard"
+    },
+    {
+      "q": "Who was the king of Israel who was the son of Jehu and reigned for 17 years?",
+      "o": [
+        "Jehoahaz",
+        "Jehoash",
+        "Jeroboam II",
+        "Zechariah"
+      ],
+      "a": 0,
+      "e": "2 Kings 13:1 — Jehoahaz son of Jehu became king of Israel.",
+      "d": "hard"
+    },
+    {
+      "q": "Which king of Israel was the son of Jehoahaz and reigned for 16 years?",
+      "o": [
+        "Jehoash",
+        "Jeroboam II",
+        "Zechariah",
+        "Shallum"
+      ],
+      "a": 0,
+      "e": "2 Kings 13:10 — Jehoash son of Jehoahaz became king of Israel... and he reigned sixteen years.",
+      "d": "hard"
+    },
+    {
+      "q": "Who was the king of Israel who was the son of Jehoash and reigned for 41 years?",
+      "o": [
+        "Jeroboam II",
+        "Zechariah",
+        "Shallum",
+        "Menahem"
+      ],
+      "a": 0,
+      "e": "2 Kings 14:23 — Jeroboam son of Jehoash king of Israel began to reign.",
+      "d": "hard"
+    },
+    {
+      "q": "Which king of Israel was the son of Jeroboam II and reigned for 6 months?",
+      "o": [
+        "Zechariah",
+        "Shallum",
+        "Menahem",
+        "Pekahiah"
+      ],
+      "a": 0,
+      "e": "2 Kings 15:8 — Zechariah son of Jeroboam became king of Israel... and he reigned six months.",
+      "d": "hard"
+    },
+    {
+      "q": "Who was the king of Israel who was the son of Jabesh and reigned for 1 month?",
+      "o": [
+        "Shallum",
+        "Menahem",
+        "Pekahiah",
+        "Pekah"
+      ],
+      "a": 0,
+      "e": "2 Kings 15:13 — Shallum son of Jabesh became king.",
+      "d": "hard"
+    },
+    {
+      "q": "Which king of Israel was the son of Gadi and reigned for 10 years?",
+      "o": [
+        "Menahem",
+        "Pekahiah",
+        "Pekah",
+        "Hoshea"
+      ],
+      "a": 0,
+      "e": "2 Kings 15:17 — Menahem son of Gadi became king of Israel.",
+      "d": "hard"
+    },
+    {
+      "q": "Who was the king of Israel who was the son of Menahem and reigned for 2 years?",
+      "o": [
+        "Pekahiah",
+        "Pekah",
+        "Hoshea",
+        "Shallum"
+      ],
+      "a": 0,
+      "e": "2 Kings 15:23 — Pekahiah son of Menahem became king of Israel.",
+      "d": "hard"
+    },
+    {
+      "q": "Which king of Israel was the son of Remaliah and reigned for 20 years?",
+      "o": [
+        "Pekah",
+        "Hoshea",
+        "Shallum",
+        "Menahem"
+      ],
+      "a": 0,
+      "e": "2 Kings 15:27 — Pekah son of Remaliah became king of Israel.",
+      "d": "hard"
+    },
+    {
+      "q": "Who was the king of Israel who was the son of Elah and reigned for 9 years?",
+      "o": [
+        "Hoshea",
+        "Pekah",
+        "Pekahiah",
+        "Menahem"
+      ],
+      "a": 0,
+      "e": "2 Kings 17:1 — Hoshea son of Elah became king of Israel... and he reigned nine years.",
+      "d": "hard"
+    },
+    {
+      "q": "Which king of Israel was the first to rule the northern kingdom?",
+      "o": [
+        "Jeroboam",
+        "Rehoboam",
+        "Nadab",
+        "Baasha"
+      ],
+      "a": 0,
+      "e": "1 Kings 12:20 — They sent and called him to the assembly and made him (Jeroboam) king over all Israel.",
+      "d": "easy"
+    },
+    {
+      "q": "Who was the king of Judah who was the son of Solomon?",
+      "o": [
+        "Rehoboam",
+        "Jeroboam",
+        "Abijah",
+        "Asa"
+      ],
+      "a": 0,
+      "e": "1 Kings 11:43 — Then Solomon rested with his ancestors... And Rehoboam his son succeeded him as king.",
+      "d": "easy"
+    },
+    {
+      "q": "Which king of Israel committed suicide by setting his palace on fire around himself?",
+      "o": [
+        "Zimri",
+        "Tibni",
+        "Omri",
+        "Ahab"
+      ],
+      "a": 0,
+      "e": "1 Kings 16:18 — When Zimri saw that the city was taken, he went into the citadel of the royal palace and set the palace on fire around him.",
+      "d": "hard"
+    },
+    {
+      "q": "Who was the king of Israel who was challenged for the throne by Tibni?",
+      "o": [
+        "Omri",
+        "Zimri",
+        "Ahab",
+        "Baasha"
+      ],
+      "a": 0,
+      "e": "1 Kings 16:21 — Then the people of Israel were split into two factions; half supported Tibni... and the other half supported Omri.",
+      "d": "hard"
+    },
+    {
+      "q": "Which king of Judah was the son of Abijam (Abijah)?",
+      "o": [
+        "Asa",
+        "Jehoshaphat",
+        "Jehoram",
+        "Rehoboam"
+      ],
+      "a": 0,
+      "e": "1 Kings 15:8 — And Asa his son succeeded him as king.",
+      "d": "hard"
+    },
+    {
+      "q": "Who was the king of Judah who made a peace treaty with the king of Israel (Ahab)?",
+      "o": [
+        "Jehoshaphat",
+        "Asa",
+        "Jehoram",
+        "Ahaziah"
+      ],
+      "a": 0,
+      "e": "1 Kings 22:44 — Jehoshaphat was also at peace with the king of Israel.",
+      "d": "medium"
+    },
+    {
+      "q": "Which king of Judah had his eyes put out by the king of Babylon?",
+      "o": [
+        "Zedekiah",
+        "Jehoiakim",
+        "Jehoiachin",
+        "Jehoahaz"
+      ],
+      "a": 0,
+      "e": "2 Kings 25:7 — They killed the sons of Zedekiah before his eyes. Then they put out his eyes.",
+      "d": "medium"
+    },
+    {
+      "q": "Who was the king of Judah who was the son of Jotham?",
+      "o": [
+        "Ahaz",
+        "Hezekiah",
+        "Manasseh",
+        "Josiah"
+      ],
+      "a": 0,
+      "e": "2 Kings 15:38 — And Ahaz his son succeeded him as king.",
+      "d": "hard"
+    },
+    {
+      "q": "Which king of Israel was the son of Gadi?",
+      "o": [
+        "Menahem",
+        "Pekah",
+        "Hoshea",
+        "Shallum"
+      ],
+      "a": 0,
+      "e": "2 Kings 15:14 — Menahem son of Gadi... struck down Shallum.",
+      "d": "hard"
+    },
+    {
+      "q": "Who was the king of Israel who was the son of Jabesh?",
+      "o": [
+        "Shallum",
+        "Menahem",
+        "Pekah",
+        "Hoshea"
+      ],
+      "a": 0,
+      "e": "2 Kings 15:10 — Shallum son of Jabesh conspired against Zechariah.",
+      "d": "hard"
+    },
+    {
+      "q": "Which Psalm is the longest in the Bible?",
+      "o": [
+        "Psalm 23",
+        "Psalm 117",
+        "Psalm 119",
+        "Psalm 150"
+      ],
+      "a": 2,
+      "e": "Psalm 119 has 176 verses.",
+      "d": "easy"
+    },
+    {
+      "q": "Which Psalm is the shortest in the Bible?",
+      "o": [
+        "Psalm 1",
+        "Psalm 117",
+        "Psalm 118",
+        "Psalm 100"
+      ],
+      "a": 1,
+      "e": "Psalm 117 has only 2 verses.",
+      "d": "easy"
+    },
+    {
+      "q": "The Lord is my shepherd; I shall not want' is the beginning of which Psalm?",
+      "o": [
+        "Psalm 1",
+        "Psalm 23",
+        "Psalm 91",
+        "Psalm 100"
+      ],
+      "a": 1,
+      "e": "Psalm 23:1 — The Lord is my shepherd; I shall not want.",
+      "d": "easy"
+    },
+    {
+      "q": "Which Psalm begins with 'The heavens declare the glory of God; and the firmament sheweth his handywork'?",
+      "o": [
+        "Psalm 1",
+        "Psalm 19",
+        "Psalm 24",
+        "Psalm 104"
+      ],
+      "a": 1,
+      "e": "Psalm 19:1 — The heavens declare the glory of God.",
+      "d": "medium"
+    },
+    {
+      "q": "Which Psalm says, 'Thy word is a lamp unto my feet, and a light unto my path'?",
+      "o": [
+        "Psalm 119",
+        "Psalm 1",
+        "Psalm 100",
+        "Psalm 150"
+      ],
+      "a": 0,
+      "e": "Psalm 119:105 — Thy word is a lamp unto my feet, and a light unto my path.",
+      "d": "easy"
+    },
+    {
+      "q": "How many Psalms are there in the Bible?",
+      "o": [
+        "100",
+        "120",
+        "150",
+        "175"
+      ],
+      "a": 2,
+      "e": "The Book of Psalms contains 150 individual psalms.",
+      "d": "easy"
+    },
+    {
+      "q": "Which Psalm says, 'Make a joyful noise unto the Lord, all ye lands'?",
+      "o": [
+        "Psalm 23",
+        "Psalm 100",
+        "Psalm 150",
+        "Psalm 98"
+      ],
+      "a": 1,
+      "e": "Psalm 100:1 — Make a joyful noise unto the Lord, all ye lands.",
+      "d": "easy"
+    },
+    {
+      "q": "Which Psalm is known as the 'Psalm of Repentance' written by David after his sin with Bathsheba?",
+      "o": [
+        "Psalm 23",
+        "Psalm 32",
+        "Psalm 51",
+        "Psalm 103"
+      ],
+      "a": 2,
+      "e": "Psalm 51 — Have mercy on me, O God, according to your unfailing love.",
+      "d": "medium"
+    },
+    {
+      "q": "Which Psalm says, 'He that dwelleth in the secret place of the most High shall abide under the shadow of the Almighty'?",
+      "o": [
+        "Psalm 23",
+        "Psalm 91",
+        "Psalm 121",
+        "Psalm 46"
+      ],
+      "a": 1,
+      "e": "Psalm 91:1 — He that dwelleth in the secret place of the most High.",
+      "d": "medium"
+    },
+    {
+      "q": "Which Psalm says, 'I will lift up mine eyes unto the hills, from whence cometh my help'?",
+      "o": [
+        "Psalm 1",
+        "Psalm 121",
+        "Psalm 23",
+        "Psalm 100"
+      ],
+      "a": 1,
+      "e": "Psalm 121:1 — I will lift up mine eyes unto the hills.",
+      "d": "medium"
+    },
+    {
+      "q": "Which Psalm begins with 'Blessed is the man that walketh not in the counsel of the ungodly'?",
+      "o": [
+        "Psalm 1",
+        "Psalm 23",
+        "Psalm 37",
+        "Psalm 119"
+      ],
+      "a": 0,
+      "e": "Psalm 1:1 — Blessed is the man that walketh not in the counsel of the ungodly.",
+      "d": "easy"
+    },
+    {
+      "q": "Which Psalm says, 'Be still, and know that I am God'?",
+      "o": [
+        "Psalm 23",
+        "Psalm 46",
+        "Psalm 62",
+        "Psalm 91"
+      ],
+      "a": 1,
+      "e": "Psalm 46:10 — Be still, and know that I am God.",
+      "d": "medium"
+    },
+    {
+      "q": "Which Psalm is a song of praise that ends with 'Let every thing that hath breath praise the Lord'?",
+      "o": [
+        "Psalm 148",
+        "Psalm 149",
+        "Psalm 150",
+        "Psalm 100"
+      ],
+      "a": 2,
+      "e": "Psalm 150:6 — Let every thing that hath breath praise the Lord.",
+      "d": "easy"
+    },
+    {
+      "q": "Which Psalm says, 'This is the day which the Lord hath made; we will rejoice and be glad in it'?",
+      "o": [
+        "Psalm 118",
+        "Psalm 100",
+        "Psalm 23",
+        "Psalm 92"
+      ],
+      "a": 0,
+      "e": "Psalm 118:24 — This is the day which the Lord hath made.",
+      "d": "medium"
+    },
+    {
+      "q": "Which Psalm says, 'Bless the Lord, O my soul: and all that is within me, bless his holy name'?",
+      "o": [
+        "Psalm 100",
+        "Psalm 103",
+        "Psalm 104",
+        "Psalm 145"
+      ],
+      "a": 1,
+      "e": "Psalm 103:1 — Bless the Lord, O my soul.",
+      "d": "medium"
+    },
+    {
+      "q": "Which Psalm is often read at funerals and mentions the 'valley of the shadow of death'?",
+      "o": [
+        "Psalm 23",
+        "Psalm 91",
+        "Psalm 121",
+        "Psalm 130"
+      ],
+      "a": 0,
+      "e": "Psalm 23:4 — Yea, though I walk through the valley of the shadow of death.",
+      "d": "easy"
+    },
+    {
+      "q": "Which Psalm says, 'The Lord is my light and my salvation; whom shall I fear?'",
+      "o": [
+        "Psalm 18",
+        "Psalm 23",
+        "Psalm 27",
+        "Psalm 91"
+      ],
+      "a": 2,
+      "e": "Psalm 27:1 — The Lord is my light and my salvation; whom shall I fear?",
+      "d": "medium"
+    },
+    {
+      "q": "Which Psalm says, 'As the hart panteth after the water brooks, so panteth my soul after thee, O God'?",
+      "o": [
+        "Psalm 23",
+        "Psalm 42",
+        "Psalm 63",
+        "Psalm 84"
+      ],
+      "a": 1,
+      "e": "Psalm 42:1 — As the hart panteth after the water brooks.",
+      "d": "medium"
+    },
+    {
+      "q": "Which Psalm says, 'Create in me a clean heart, O God; and renew a right spirit within me'?",
+      "o": [
+        "Psalm 23",
+        "Psalm 51",
+        "Psalm 103",
+        "Psalm 139"
+      ],
+      "a": 1,
+      "e": "Psalm 51:10 — Create in me a clean heart, O God.",
+      "d": "medium"
+    },
+    {
+      "q": "Which Psalm says, 'Search me, O God, and know my heart: try me, and know my thoughts'?",
+      "o": [
+        "Psalm 23",
+        "Psalm 51",
+        "Psalm 103",
+        "Psalm 139"
+      ],
+      "a": 3,
+      "e": "Psalm 139:23 — Search me, O God, and know my heart.",
+      "d": "medium"
+    },
+    {
+      "q": "Which Psalm says, 'O give thanks unto the Lord; for he is good: because his mercy endureth for ever'?",
+      "o": [
+        "Psalm 100",
+        "Psalm 106",
+        "Psalm 107",
+        "Psalm 136"
+      ],
+      "a": 3,
+      "e": "Psalm 136 repeats 'for his mercy endureth for ever' in every verse.",
+      "d": "medium"
+    },
+    {
+      "q": "Which Psalm says, 'The fool hath said in his heart, There is no God'?",
+      "o": [
+        "Psalm 1",
+        "Psalm 14",
+        "Psalm 23",
+        "Psalm 100"
+      ],
+      "a": 1,
+      "e": "Psalm 14:1 — The fool hath said in his heart, There is no God.",
+      "d": "medium"
+    },
+    {
+      "q": "Which Psalm says, 'I was glad when they said unto me, Let us go into the house of the Lord'?",
+      "o": [
+        "Psalm 84",
+        "Psalm 100",
+        "Psalm 122",
+        "Psalm 121"
+      ],
+      "a": 2,
+      "e": "Psalm 122:1 — I was glad when they said unto me, Let us go into the house of the Lord.",
+      "d": "medium"
+    },
+    {
+      "q": "Which Psalm says, 'God is our refuge and strength, a very present help in trouble'?",
+      "o": [
+        "Psalm 23",
+        "Psalm 46",
+        "Psalm 91",
+        "Psalm 121"
+      ],
+      "a": 1,
+      "e": "Psalm 46:1 — God is our refuge and strength.",
+      "d": "medium"
+    },
+    {
+      "q": "Which Psalm says, 'My God, my God, why hast thou forsaken me?' (also quoted by Jesus on the cross)",
+      "o": [
+        "Psalm 22",
+        "Psalm 23",
+        "Psalm 69",
+        "Psalm 88"
+      ],
+      "a": 0,
+      "e": "Psalm 22:1 — My God, my God, why hast thou forsaken me?",
+      "d": "hard"
+    },
+    {
+      "q": "Which Psalm says, 'Enter into his gates with thanksgiving, and into his courts with praise'?",
+      "o": [
+        "Psalm 23",
+        "Psalm 95",
+        "Psalm 100",
+        "Psalm 150"
+      ],
+      "a": 2,
+      "e": "Psalm 100:4 — Enter into his gates with thanksgiving.",
+      "d": "easy"
+    },
+    {
+      "q": "Which Psalm says, 'The Lord is my rock, and my fortress, and my deliverer'?",
+      "o": [
+        "Psalm 18",
+        "Psalm 23",
+        "Psalm 62",
+        "Psalm 91"
+      ],
+      "a": 0,
+      "e": "Psalm 18:2 — The Lord is my rock, and my fortress, and my deliverer.",
+      "d": "medium"
+    },
+    {
+      "q": "Which Psalm says, 'For thou hast possessed my reins: thou hast covered me in my mother's womb'?",
+      "o": [
+        "Psalm 22",
+        "Psalm 51",
+        "Psalm 103",
+        "Psalm 139"
+      ],
+      "a": 3,
+      "e": "Psalm 139:13 — For thou hast possessed my reins: thou hast covered me in my mother's womb.",
+      "d": "hard"
+    },
+    {
+      "q": "Which Psalm says, 'Wait on the Lord: be of good courage, and he shall strengthen thine heart'?",
+      "o": [
+        "Psalm 23",
+        "Psalm 27",
+        "Psalm 37",
+        "Psalm 40"
+      ],
+      "a": 1,
+      "e": "Psalm 27:14 — Wait on the Lord: be of good courage.",
+      "d": "medium"
+    },
+    {
+      "q": "Which Psalm says, 'He restoreth my soul: he leadeth me in the paths of righteousness for his name's sake'?",
+      "o": [
+        "Psalm 1",
+        "Psalm 23",
+        "Psalm 51",
+        "Psalm 100"
+      ],
+      "a": 1,
+      "e": "Psalm 23:3 — He restoreth my soul.",
+      "d": "easy"
+    },
+    {
+      "q": "Which Psalm says, 'Oh that men would praise the Lord for his goodness, and for his wonderful works to the children of men!'?",
+      "o": [
+        "Psalm 100",
+        "Psalm 107",
+        "Psalm 136",
+        "Psalm 145"
+      ],
+      "a": 1,
+      "e": "Psalm 107:8 — Oh that men would praise the Lord for his goodness.",
+      "d": "hard"
+    },
+    {
+      "q": "Which Psalm says, 'Delight thyself also in the Lord: and he shall give thee the desires of thine heart'?",
+      "o": [
+        "Psalm 1",
+        "Psalm 23",
+        "Psalm 37",
+        "Psalm 103"
+      ],
+      "a": 2,
+      "e": "Psalm 37:4 — Delight thyself also in the Lord.",
+      "d": "medium"
+    },
+    {
+      "q": "Which Psalm says, 'Deep calleth unto deep at the noise of thy waterspouts'?",
+      "o": [
+        "Psalm 18",
+        "Psalm 29",
+        "Psalm 42",
+        "Psalm 93"
+      ],
+      "a": 2,
+      "e": "Psalm 42:7 — Deep calleth unto deep.",
+      "d": "hard"
+    },
+    {
+      "q": "Which Psalm says, 'The earth is the Lord's, and the fulness thereof; the world, and they that dwell therein'?",
+      "o": [
+        "Psalm 19",
+        "Psalm 24",
+        "Psalm 50",
+        "Psalm 104"
+      ],
+      "a": 1,
+      "e": "Psalm 24:1 — The earth is the Lord's, and the fulness thereof.",
+      "d": "medium"
+    },
+    {
+      "q": "Which Psalm says, 'By the rivers of Babylon, there we sat down, yea, we wept, when we remembered Zion'?",
+      "o": [
+        "Psalm 126",
+        "Psalm 137",
+        "Psalm 147",
+        "Psalm 48"
+      ],
+      "a": 1,
+      "e": "Psalm 137:1 — By the rivers of Babylon, there we sat down.",
+      "d": "medium"
+    },
+    {
+      "q": "Which Psalm says, 'For a day in thy courts is better than a thousand'?",
+      "o": [
+        "Psalm 23",
+        "Psalm 84",
+        "Psalm 100",
+        "Psalm 122"
+      ],
+      "a": 1,
+      "e": "Psalm 84:10 — For a day in thy courts is better than a thousand.",
+      "d": "medium"
+    },
+    {
+      "q": "Which Psalm says, 'Sing unto the Lord a new song; for he hath done marvellous things'?",
+      "o": [
+        "Psalm 96",
+        "Psalm 98",
+        "Psalm 149",
+        "Psalm 150"
+      ],
+      "a": 1,
+      "e": "Psalm 98:1 — Sing unto the Lord a new song.",
+      "d": "medium"
+    },
+    {
+      "q": "Which Psalm says, 'Cast thy burden upon the Lord, and he shall sustain thee'?",
+      "o": [
+        "Psalm 23",
+        "Psalm 37",
+        "Psalm 55",
+        "Psalm 62"
+      ],
+      "a": 2,
+      "e": "Psalm 55:22 — Cast thy burden upon the Lord.",
+      "d": "medium"
+    },
+    {
+      "q": "Which Psalm says, 'Open thou my lips; and my mouth shall shew forth thy praise'?",
+      "o": [
+        "Psalm 23",
+        "Psalm 51",
+        "Psalm 71",
+        "Psalm 103"
+      ],
+      "a": 1,
+      "e": "Psalm 51:15 — Open thou my lips.",
+      "d": "medium"
+    },
+    {
+      "q": "Which Psalm says, 'What is man, that thou art mindful of him? and the son of man, that thou visitest him?'?",
+      "o": [
+        "Psalm 1",
+        "Psalm 8",
+        "Psalm 14",
+        "Psalm 23"
+      ],
+      "a": 1,
+      "e": "Psalm 8:4 — What is man, that thou art mindful of him?",
+      "d": "medium"
+    },
+    {
+      "q": "Which Psalm says, 'The Lord is my shepherd' in its opening line?",
+      "o": [
+        "Psalm 23",
+        "Psalm 22",
+        "Psalm 24",
+        "Psalm 25"
+      ],
+      "a": 0,
+      "e": "Psalm 23:1 — The Lord is my shepherd.",
+      "d": "easy"
+    },
+    {
+      "q": "Which Psalm says, 'I will bless the Lord at all times: his praise shall continually be in my mouth'?",
+      "o": [
+        "Psalm 23",
+        "Psalm 34",
+        "Psalm 103",
+        "Psalm 145"
+      ],
+      "a": 1,
+      "e": "Psalm 34:1 — I will bless the Lord at all times.",
+      "d": "medium"
+    },
+    {
+      "q": "Which Psalm says, 'O taste and see that the Lord is good: blessed is the man that trusteth in him'?",
+      "o": [
+        "Psalm 23",
+        "Psalm 34",
+        "Psalm 100",
+        "Psalm 107"
+      ],
+      "a": 1,
+      "e": "Psalm 34:8 — O taste and see that the Lord is good.",
+      "d": "medium"
+    },
+    {
+      "q": "Which Psalm says, 'The Lord is nigh unto them that are of a broken heart; and saveth such as be of a contrite spirit'?",
+      "o": [
+        "Psalm 34",
+        "Psalm 51",
+        "Psalm 103",
+        "Psalm 147"
+      ],
+      "a": 0,
+      "e": "Psalm 34:18 — The Lord is nigh unto them that are of a broken heart.",
+      "d": "medium"
+    },
+    {
+      "q": "Which Psalm says, 'Keep thy tongue from evil, and thy lips from speaking guile'?",
+      "o": [
+        "Psalm 1",
+        "Psalm 15",
+        "Psalm 34",
+        "Psalm 37"
+      ],
+      "a": 2,
+      "e": "Psalm 34:13 — Keep thy tongue from evil.",
+      "d": "medium"
+    },
+    {
+      "q": "Which Psalm says, 'A broken and a contrite heart, O God, thou wilt not despise'?",
+      "o": [
+        "Psalm 23",
+        "Psalm 34",
+        "Psalm 51",
+        "Psalm 103"
+      ],
+      "a": 2,
+      "e": "Psalm 51:17 — A broken and a contrite heart, O God, thou wilt not despise.",
+      "d": "medium"
+    },
+    {
+      "q": "Which Psalm says, 'Except the Lord build the house, they labour in vain that build it'?",
+      "o": [
+        "Psalm 121",
+        "Psalm 127",
+        "Psalm 128",
+        "Psalm 133"
+      ],
+      "a": 1,
+      "e": "Psalm 127:1 — Except the Lord build the house.",
+      "d": "medium"
+    },
+    {
+      "q": "Which Psalm says, 'Behold, how good and how pleasant it is for brethren to dwell together in unity!'?",
+      "o": [
+        "Psalm 133",
+        "Psalm 121",
+        "Psalm 100",
+        "Psalm 122"
+      ],
+      "a": 0,
+      "e": "Psalm 133:1 — Behold, how good and how pleasant it is for brethren to dwell together in unity!",
+      "d": "medium"
+    },
+    {
+      "q": "Which Psalm says, 'Thy word have I hid in mine heart, that I might not sin against thee'?",
+      "o": [
+        "Psalm 1",
+        "Psalm 119",
+        "Psalm 19",
+        "Psalm 100"
+      ],
+      "a": 1,
+      "e": "Psalm 119:11 — Thy word have I hid in mine heart.",
+      "d": "easy"
+    },
+    {
+      "q": "Which Psalm says, 'The statutes of the Lord are right, rejoicing the heart: the commandment of the Lord is pure, enlightening the eyes'?",
+      "o": [
+        "Psalm 1",
+        "Psalm 19",
+        "Psalm 119",
+        "Psalm 147"
+      ],
+      "a": 1,
+      "e": "Psalm 19:8 — The statutes of the Lord are right.",
+      "d": "medium"
+    },
+    {
+      "q": "Which Psalm says, 'Let the words of my mouth, and the meditation of my heart, be acceptable in thy sight'?",
+      "o": [
+        "Psalm 19",
+        "Psalm 23",
+        "Psalm 51",
+        "Psalm 103"
+      ],
+      "a": 0,
+      "e": "Psalm 19:14 — Let the words of my mouth.",
+      "d": "medium"
+    },
+    {
+      "q": "Which Psalm says, 'Many are the afflictions of the righteous: but the Lord delivereth him out of them all'?",
+      "o": [
+        "Psalm 23",
+        "Psalm 34",
+        "Psalm 37",
+        "Psalm 91"
+      ],
+      "a": 1,
+      "e": "Psalm 34:19 — Many are the afflictions of the righteous.",
+      "d": "medium"
+    },
+    {
+      "q": "Which Psalm says, 'He shall give his angels charge over thee, to keep thee in all thy ways'?",
+      "o": [
+        "Psalm 23",
+        "Psalm 34",
+        "Psalm 91",
+        "Psalm 121"
+      ],
+      "a": 2,
+      "e": "Psalm 91:11 — He shall give his angels charge over thee.",
+      "d": "medium"
+    },
+    {
+      "q": "Which Psalm says, 'Trust in the Lord, and do good; so shalt thou dwell in the land, and verily thou shalt be fed'?",
+      "o": [
+        "Psalm 1",
+        "Psalm 23",
+        "Psalm 37",
+        "Psalm 112"
+      ],
+      "a": 2,
+      "e": "Psalm 37:3 — Trust in the Lord, and do good.",
+      "d": "medium"
+    },
+    {
+      "q": "Which Psalm says, 'The steps of a good man are ordered by the Lord: and he delighteth in his way'?",
+      "o": [
+        "Psalm 1",
+        "Psalm 23",
+        "Psalm 37",
+        "Psalm 119"
+      ],
+      "a": 2,
+      "e": "Psalm 37:23 — The steps of a good man are ordered by the Lord.",
+      "d": "medium"
+    },
+    {
+      "q": "Which Psalm says, 'I have been young, and now am old; yet have I not seen the righteous forsaken, nor his seed begging bread'?",
+      "o": [
+        "Psalm 23",
+        "Psalm 37",
+        "Psalm 71",
+        "Psalm 119"
+      ],
+      "a": 1,
+      "e": "Psalm 37:25 — I have been young, and now am old.",
+      "d": "medium"
+    },
+    {
+      "q": "Which Psalm says, 'Mark the perfect man, and behold the upright: for the end of that man is peace'?",
+      "o": [
+        "Psalm 1",
+        "Psalm 15",
+        "Psalm 37",
+        "Psalm 112"
+      ],
+      "a": 2,
+      "e": "Psalm 37:37 — Mark the perfect man.",
+      "d": "hard"
+    },
+    {
+      "q": "Which Psalm says, 'Hear my prayer, O Lord, and give ear unto my cry; hold not thy peace at my tears'?",
+      "o": [
+        "Psalm 23",
+        "Psalm 39",
+        "Psalm 51",
+        "Psalm 102"
+      ],
+      "a": 1,
+      "e": "Psalm 39:12 — Hear my prayer, O Lord.",
+      "d": "hard"
+    },
+    {
+      "q": "Which Psalm says, 'I waited patiently for the Lord; and he inclined unto me, and heard my cry'?",
+      "o": [
+        "Psalm 23",
+        "Psalm 40",
+        "Psalm 51",
+        "Psalm 130"
+      ],
+      "a": 1,
+      "e": "Psalm 40:1 — I waited patiently for the Lord.",
+      "d": "medium"
+    },
+    {
+      "q": "Which Psalm says, 'He brought me up also out of an horrible pit, out of the miry clay, and set my feet upon a rock'?",
+      "o": [
+        "Psalm 18",
+        "Psalm 27",
+        "Psalm 40",
+        "Psalm 69"
+      ],
+      "a": 2,
+      "e": "Psalm 40:2 — He brought me up also out of an horrible pit.",
+      "d": "medium"
+    },
+    {
+      "q": "Which Psalm says, 'Blessed is he that considereth the poor: the Lord will deliver him in time of trouble'?",
+      "o": [
+        "Psalm 1",
+        "Psalm 15",
+        "Psalm 41",
+        "Psalm 112"
+      ],
+      "a": 2,
+      "e": "Psalm 41:1 — Blessed is he that considereth the poor.",
+      "d": "medium"
+    },
+    {
+      "q": "Which Psalm says, 'Mine own familiar friend, in whom I trusted, which did eat of my bread, hath lifted up his heel against me'?",
+      "o": [
+        "Psalm 22",
+        "Psalm 41",
+        "Psalm 55",
+        "Psalm 69"
+      ],
+      "a": 1,
+      "e": "Psalm 41:9 — Mine own familiar friend.",
+      "d": "hard"
+    },
+    {
+      "q": "Which Psalm says, 'Why art thou cast down, O my soul? and why art thou disquieted in me? hope thou in God'?",
+      "o": [
+        "Psalm 23",
+        "Psalm 42",
+        "Psalm 51",
+        "Psalm 103"
+      ],
+      "a": 1,
+      "e": "Psalm 42:5 — Why art thou cast down, O my soul?",
+      "d": "medium"
+    },
+    {
+      "q": "Which Psalm says, 'Yet the Lord will command his lovingkindness in the daytime, and in the night his song shall be with me'?",
+      "o": [
+        "Psalm 23",
+        "Psalm 42",
+        "Psalm 63",
+        "Psalm 149"
+      ],
+      "a": 1,
+      "e": "Psalm 42:8 — Yet the Lord will command his lovingkindness.",
+      "d": "hard"
+    },
+    {
+      "q": "Which Psalm says, 'O send out thy light and thy truth: let them lead me; let them bring me unto thy holy hill'?",
+      "o": [
+        "Psalm 23",
+        "Psalm 27",
+        "Psalm 43",
+        "Psalm 121"
+      ],
+      "a": 2,
+      "e": "Psalm 43:3 — O send out thy light and thy truth.",
+      "d": "medium"
+    },
+    {
+      "q": "Which Psalm says, 'My heart is inditing a good matter: I speak of the things which I have made touching the king'?",
+      "o": [
+        "Psalm 2",
+        "Psalm 24",
+        "Psalm 45",
+        "Psalm 110"
+      ],
+      "a": 2,
+      "e": "Psalm 45:1 — My heart is inditing a good matter.",
+      "d": "hard"
+    },
+    {
+      "q": "Which Psalm says, 'God is in the midst of her; she shall not be moved: God shall help her, and that right early'?",
+      "o": [
+        "Psalm 23",
+        "Psalm 46",
+        "Psalm 48",
+        "Psalm 125"
+      ],
+      "a": 1,
+      "e": "Psalm 46:5 — God is in the midst of her.",
+      "d": "medium"
+    },
+    {
+      "q": "Which Psalm says, 'The Lord of hosts is with us; the God of Jacob is our refuge'?",
+      "o": [
+        "Psalm 23",
+        "Psalm 46",
+        "Psalm 91",
+        "Psalm 121"
+      ],
+      "a": 1,
+      "e": "Psalm 46:7 (and 11) — The Lord of hosts is with us.",
+      "d": "medium"
+    },
+    {
+      "q": "Which Psalm says, 'O clap your hands, all ye people; shout unto God with the voice of triumph'?",
+      "o": [
+        "Psalm 47",
+        "Psalm 95",
+        "Psalm 98",
+        "Psalm 100"
+      ],
+      "a": 0,
+      "e": "Psalm 47:1 — O clap your hands, all ye people.",
+      "d": "medium"
+    },
+    {
+      "q": "Which Psalm says, 'Great is the Lord, and greatly to be praised in the city of our God, in the mountain of his holiness'?",
+      "o": [
+        "Psalm 23",
+        "Psalm 48",
+        "Psalm 100",
+        "Psalm 145"
+      ],
+      "a": 1,
+      "e": "Psalm 48:1 — Great is the Lord, and greatly to be praised.",
+      "d": "medium"
+    },
+    {
+      "q": "Which Psalm says, 'Hear this, all ye people; give ear, all ye inhabitants of the world: Both low and high, rich and poor, together'?",
+      "o": [
+        "Psalm 1",
+        "Psalm 49",
+        "Psalm 50",
+        "Psalm 100"
+      ],
+      "a": 1,
+      "e": "Psalm 49:1-2 — Hear this, all ye people.",
+      "d": "hard"
+    },
+    {
+      "q": "Which Psalm says, 'The mighty God, even the Lord, hath spoken, and called the earth from the rising of the sun unto the going down thereof'?",
+      "o": [
+        "Psalm 19",
+        "Psalm 50",
+        "Psalm 104",
+        "Psalm 113"
+      ],
+      "a": 1,
+      "e": "Psalm 50:1 — The mighty God, even the Lord, hath spoken.",
+      "d": "hard"
+    },
+    {
+      "q": "Which Psalm says, 'For every beast of the forest is mine, and the cattle upon a thousand hills'?",
+      "o": [
+        "Psalm 24",
+        "Psalm 50",
+        "Psalm 104",
+        "Psalm 147"
+      ],
+      "a": 1,
+      "e": "Psalm 50:10 — For every beast of the forest is mine.",
+      "d": "medium"
+    },
+    {
+      "q": "Which Psalm says, 'Call upon me in the day of trouble: I will deliver thee, and thou shalt glorify me'?",
+      "o": [
+        "Psalm 23",
+        "Psalm 50",
+        "Psalm 91",
+        "Psalm 121"
+      ],
+      "a": 1,
+      "e": "Psalm 50:15 — Call upon me in the day of trouble.",
+      "d": "medium"
+    },
+    {
+      "q": "Which Psalm says, 'Whoso offereth praise glorifieth me: and to him that ordereth his conversation aright will I shew the salvation of God'?",
+      "o": [
+        "Psalm 50",
+        "Psalm 100",
+        "Psalm 107",
+        "Psalm 116"
+      ],
+      "a": 0,
+      "e": "Psalm 50:23 — Whoso offereth praise glorifieth me.",
+      "d": "hard"
+    },
+    {
+      "q": "Which Psalm says, 'Have mercy upon me, O God, according to thy lovingkindness: according unto the multitude of thy tender mercies blot out my transgressions'?",
+      "o": [
+        "Psalm 23",
+        "Psalm 32",
+        "Psalm 51",
+        "Psalm 103"
+      ],
+      "a": 2,
+      "e": "Psalm 51:1 — Have mercy upon me, O God.",
+      "d": "medium"
+    },
+    {
+      "q": "Which Psalm says, 'Wash me throughly from mine iniquity, and cleanse me from my sin'?",
+      "o": [
+        "Psalm 23",
+        "Psalm 51",
+        "Psalm 103",
+        "Psalm 139"
+      ],
+      "a": 1,
+      "e": "Psalm 51:2 — Wash me throughly from mine iniquity.",
+      "d": "medium"
+    },
+    {
+      "q": "Which Psalm says, 'For I acknowledge my transgressions: and my sin is ever before me'?",
+      "o": [
+        "Psalm 32",
+        "Psalm 38",
+        "Psalm 51",
+        "Psalm 103"
+      ],
+      "a": 2,
+      "e": "Psalm 51:3 — For I acknowledge my transgressions.",
+      "d": "medium"
+    },
+    {
+      "q": "Which Psalm says, 'Purge me with hyssop, and I shall be clean: wash me, and I shall be whiter than snow'?",
+      "o": [
+        "Psalm 23",
+        "Psalm 51",
+        "Psalm 103",
+        "Psalm 139"
+      ],
+      "a": 1,
+      "e": "Psalm 51:7 — Purge me with hyssop.",
+      "d": "medium"
+    },
+    {
+      "q": "Which Psalm says, 'Restore unto me the joy of thy salvation; and uphold me with thy free spirit'?",
+      "o": [
+        "Psalm 23",
+        "Psalm 51",
+        "Psalm 103",
+        "Psalm 121"
+      ],
+      "a": 1,
+      "e": "Psalm 51:12 — Restore unto me the joy of thy salvation.",
+      "d": "medium"
+    },
+    {
+      "q": "Which Psalm says, 'Then will I teach transgressors thy ways; and sinners shall be converted unto thee'?",
+      "o": [
+        "Psalm 1",
+        "Psalm 23",
+        "Psalm 51",
+        "Psalm 119"
+      ],
+      "a": 2,
+      "e": "Psalm 51:13 — Then will I teach transgressors thy ways.",
+      "d": "medium"
+    },
+    {
+      "q": "Which Psalm says, 'Why boastest thou thyself in mischief, O mighty man? the goodness of God endureth continually'?",
+      "o": [
+        "Psalm 1",
+        "Psalm 52",
+        "Psalm 73",
+        "Psalm 100"
+      ],
+      "a": 1,
+      "e": "Psalm 52:1 — Why boastest thou thyself in mischief.",
+      "d": "hard"
+    },
+    {
+      "q": "Which Psalm says, 'The fool hath said in his heart, There is no God. Corrupt are they, and have done abominable iniquity'?",
+      "o": [
+        "Psalm 14",
+        "Psalm 23",
+        "Psalm 53",
+        "Psalm 100"
+      ],
+      "a": 2,
+      "e": "Psalm 53:1 is almost identical to Psalm 14:1.",
+      "d": "hard"
+    },
+    {
+      "q": "Which Psalm says, 'Save me, O God, by thy name, and judge me by thy strength'?",
+      "o": [
+        "Psalm 23",
+        "Psalm 51",
+        "Psalm 54",
+        "Psalm 102"
+      ],
+      "a": 2,
+      "e": "Psalm 54:1 — Save me, O God, by thy name.",
+      "d": "hard"
+    },
+    {
+      "q": "Which Psalm says, 'Give ear to my prayer, O God; and hide not thyself from my supplication'?",
+      "o": [
+        "Psalm 23",
+        "Psalm 51",
+        "Psalm 55",
+        "Psalm 130"
+      ],
+      "a": 2,
+      "e": "Psalm 55:1 — Give ear to my prayer, O God.",
+      "d": "hard"
+    },
+    {
+      "q": "Which Psalm says, 'And I said, Oh that I had wings like a dove! for then would I fly away, and be at rest'?",
+      "o": [
+        "Psalm 23",
+        "Psalm 55",
+        "Psalm 63",
+        "Psalm 91"
+      ],
+      "a": 1,
+      "e": "Psalm 55:6 — Oh that I had wings like a dove!",
+      "d": "medium"
+    },
+    {
+      "q": "Which Psalm says, 'Evening, and morning, and at noon, will I pray, and cry aloud: and he shall hear my voice'?",
+      "o": [
+        "Psalm 1",
+        "Psalm 23",
+        "Psalm 55",
+        "Psalm 119"
+      ],
+      "a": 2,
+      "e": "Psalm 55:17 — Evening, and morning, and at noon.",
+      "d": "medium"
+    },
+    {
+      "q": "Which Psalm says, 'Be merciful unto me, O God: for man would swallow me up; he fighting daily oppresseth me'?",
+      "o": [
+        "Psalm 23",
+        "Psalm 51",
+        "Psalm 56",
+        "Psalm 103"
+      ],
+      "a": 2,
+      "e": "Psalm 56:1 — Be merciful unto me, O God.",
+      "d": "hard"
+    },
+    {
+      "q": "Which Psalm says, 'What time I am afraid, I will trust in thee'?",
+      "o": [
+        "Psalm 23",
+        "Psalm 34",
+        "Psalm 56",
+        "Psalm 91"
+      ],
+      "a": 2,
+      "e": "Psalm 56:3 — What time I am afraid, I will trust in thee.",
+      "d": "medium"
+    },
+    {
+      "q": "Which Psalm says, 'Thou tellest my wanderings: put thou my tears into thy bottle: are they not in thy book?'?",
+      "o": [
+        "Psalm 23",
+        "Psalm 51",
+        "Psalm 56",
+        "Psalm 139"
+      ],
+      "a": 2,
+      "e": "Psalm 56:8 — Put thou my tears into thy bottle.",
+      "d": "hard"
+    },
+    {
+      "q": "Which Psalm says, 'In God I will praise his word, in God I have put my trust; I will not fear what flesh can do unto me'?",
+      "o": [
+        "Psalm 23",
+        "Psalm 56",
+        "Psalm 62",
+        "Psalm 118"
+      ],
+      "a": 1,
+      "e": "Psalm 56:4 (and 11) — In God I will praise his word.",
+      "d": "medium"
+    },
+    {
+      "q": "Which Psalm says, 'Be merciful unto me, O God, be merciful unto me: for my soul trusteth in thee: yea, in the shadow of thy wings will I make my refuge'?",
+      "o": [
+        "Psalm 23",
+        "Psalm 57",
+        "Psalm 63",
+        "Psalm 91"
+      ],
+      "a": 1,
+      "e": "Psalm 57:1 — Be merciful unto me, O God.",
+      "d": "medium"
+    },
+    {
+      "q": "Which Psalm says, 'Be thou exalted, O God, above the heavens; let thy glory be above all the earth'?",
+      "o": [
+        "Psalm 19",
+        "Psalm 57",
+        "Psalm 108",
+        "Psalm 148"
+      ],
+      "a": 1,
+      "e": "Psalm 57:5 (and 11) — Be thou exalted, O God.",
+      "d": "medium"
+    },
+    {
+      "q": "Which Psalm says, 'My heart is fixed, O God, my heart is fixed: I will sing and give praise'?",
+      "o": [
+        "Psalm 23",
+        "Psalm 57",
+        "Psalm 108",
+        "Psalm 112"
+      ],
+      "a": 1,
+      "e": "Psalm 57:7 — My heart is fixed, O God.",
+      "d": "medium"
+    },
+    {
+      "q": "Which Psalm says, 'Do ye indeed speak righteousness, O congregation? do ye judge uprightly, O ye sons of men?'?",
+      "o": [
+        "Psalm 1",
+        "Psalm 58",
+        "Psalm 72",
+        "Psalm 82"
+      ],
+      "a": 1,
+      "e": "Psalm 58:1 — Do ye indeed speak righteousness.",
+      "d": "hard"
+    },
+    {
+      "q": "Which Psalm says, 'Deliver me from mine enemies, O my God: defend me from them that rise up against me'?",
+      "o": [
+        "Psalm 18",
+        "Psalm 23",
+        "Psalm 59",
+        "Psalm 143"
+      ],
+      "a": 2,
+      "e": "Psalm 59:1 — Deliver me from mine enemies.",
+      "d": "medium"
+    },
+    {
+      "q": "Which Psalm says, 'But I will sing of thy power; yea, I will sing aloud of thy mercy in the morning'?",
+      "o": [
+        "Psalm 23",
+        "Psalm 30",
+        "Psalm 59",
+        "Psalm 101"
+      ],
+      "a": 2,
+      "e": "Psalm 59:16 — But I will sing of thy power.",
+      "d": "medium"
+    },
+    {
+      "q": "Which Psalm says, 'O God, thou hast cast us off, thou hast scattered us, thou hast been displeased; O turn thyself to us again'?",
+      "o": [
+        "Psalm 23",
+        "Psalm 44",
+        "Psalm 60",
+        "Psalm 80"
+      ],
+      "a": 2,
+      "e": "Psalm 60:1 — O God, thou hast cast us off.",
+      "d": "hard"
+    },
+    {
+      "q": "Which Psalm says, 'Hear my cry, O God; attend unto my prayer. From the end of the earth will I cry unto thee'?",
+      "o": [
+        "Psalm 23",
+        "Psalm 51",
+        "Psalm 61",
+        "Psalm 130"
+      ],
+      "a": 2,
+      "e": "Psalm 61:1-2 — Hear my cry, O God.",
+      "d": "medium"
+    },
+    {
+      "q": "Which Psalm says, 'Lead me to the rock that is higher than I'?",
+      "o": [
+        "Psalm 18",
+        "Psalm 23",
+        "Psalm 61",
+        "Psalm 91"
+      ],
+      "a": 2,
+      "e": "Psalm 61:2 — Lead me to the rock that is higher than I.",
+      "d": "medium"
+    },
+    {
+      "q": "Which Psalm says, 'Truly my soul waiteth upon God: from him cometh my salvation'?",
+      "o": [
+        "Psalm 23",
+        "Psalm 62",
+        "Psalm 121",
+        "Psalm 130"
+      ],
+      "a": 1,
+      "e": "Psalm 62:1 — Truly my soul waiteth upon God.",
+      "d": "medium"
+    },
+    {
+      "q": "Which Psalm says, 'My soul, wait thou only upon God; for my expectation is from him'?",
+      "o": [
+        "Psalm 23",
+        "Psalm 37",
+        "Psalm 62",
+        "Psalm 121"
+      ],
+      "a": 2,
+      "e": "Psalm 62:5 — My soul, wait thou only upon God.",
+      "d": "medium"
+    },
+    {
+      "q": "Which Psalm says, 'God hath spoken once; twice have I heard this; that power belongeth unto God'?",
+      "o": [
+        "Psalm 29",
+        "Psalm 62",
+        "Psalm 89",
+        "Psalm 115"
+      ],
+      "a": 1,
+      "e": "Psalm 62:11 — God hath spoken once; twice have I heard this.",
+      "d": "hard"
+    },
+    {
+      "q": "Which Psalm says, 'O God, thou art my God; early will I seek thee: my soul thirsteth for thee'?",
+      "o": [
+        "Psalm 23",
+        "Psalm 42",
+        "Psalm 63",
+        "Psalm 84"
+      ],
+      "a": 2,
+      "e": "Psalm 63:1 — O God, thou art my God; early will I seek thee.",
+      "d": "medium"
+    },
+    {
+      "q": "Which Psalm says, 'Because thy lovingkindness is better than life, my lips shall praise thee'?",
+      "o": [
+        "Psalm 23",
+        "Psalm 36",
+        "Psalm 63",
+        "Psalm 103"
+      ],
+      "a": 2,
+      "e": "Psalm 63:3 — Because thy lovingkindness is better than life.",
+      "d": "medium"
+    },
+    {
+      "q": "Which Psalm says, 'My soul shall be satisfied as with marrow and fatness; and my mouth shall praise thee with joyful lips'?",
+      "o": [
+        "Psalm 23",
+        "Psalm 34",
+        "Psalm 63",
+        "Psalm 100"
+      ],
+      "a": 2,
+      "e": "Psalm 63:5 — My soul shall be satisfied.",
+      "d": "medium"
+    },
+    {
+      "q": "Which Psalm says, 'When I remember thee upon my bed, and meditate on thee in the night watches'?",
+      "o": [
+        "Psalm 1",
+        "Psalm 23",
+        "Psalm 63",
+        "Psalm 119"
+      ],
+      "a": 2,
+      "e": "Psalm 63:6 — When I remember thee upon my bed.",
+      "d": "medium"
+    },
+    {
+      "q": "Which Psalm says, 'My soul followeth hard after thee: thy right hand upholdeth me'?",
+      "o": [
+        "Psalm 23",
+        "Psalm 37",
+        "Psalm 63",
+        "Psalm 139"
+      ],
+      "a": 2,
+      "e": "Psalm 63:8 — My soul followeth hard after thee.",
+      "d": "medium"
+    },
+    {
+      "q": "Which Psalm says, 'Hear my voice, O God, in my prayer: preserve my life from fear of the enemy'?",
+      "o": [
+        "Psalm 23",
+        "Psalm 51",
+        "Psalm 64",
+        "Psalm 140"
+      ],
+      "a": 2,
+      "e": "Psalm 64:1 — Hear my voice, O God, in my prayer.",
+      "d": "hard"
+    },
+    {
+      "q": "Who was the first woman mentioned in the Bible?",
+      "o": [
+        "Eve",
+        "Sarah",
+        "Mary",
+        "Esther"
+      ],
+      "a": 0,
+      "e": "Genesis 2:21-23 — Eve was the first woman.",
+      "d": "easy"
+    },
+    {
+      "q": "Which woman was a judge and a prophetess of Israel?",
+      "o": [
+        "Deborah",
+        "Jael",
+        "Ruth",
+        "Rahab"
+      ],
+      "a": 0,
+      "e": "Judges 4:4 — Deborah, a prophetess, the wife of Lappidoth, was leading Israel at that time.",
+      "d": "medium"
+    },
+    {
+      "q": "Who was the mother of Samuel?",
+      "o": [
+        "Hannah",
+        "Peninnah",
+        "Elizabeth",
+        "Sarah"
+      ],
+      "a": 0,
+      "e": "1 Samuel 1:20 — Hannah gave birth to a son and named him Samuel.",
+      "d": "medium"
+    },
+    {
+      "q": "Which queen saved her people from a plot to destroy them?",
+      "o": [
+        "Vashti",
+        "Esther",
+        "Athaliah",
+        "Jezebel"
+      ],
+      "a": 1,
+      "e": "The Book of Esther tells how she saved the Jews in Persia.",
+      "d": "easy"
+    },
+    {
+      "q": "Who was the mother of John the Baptist?",
+      "o": [
+        "Mary",
+        "Elizabeth",
+        "Martha",
+        "Lydia"
+      ],
+      "a": 1,
+      "e": "Luke 1:13 — Your wife Elizabeth will bear you a son, and you are to call him John.",
+      "d": "medium"
+    },
+    {
+      "q": "Who was the sister of Moses and Aaron?",
+      "o": [
+        "Miriam",
+        "Zipporah",
+        "Rebekah",
+        "Leah"
+      ],
+      "a": 0,
+      "e": "Exodus 15:20 — Then Miriam the prophet, Aaron’s sister, took a timbrel.",
+      "d": "medium"
+    },
+    {
+      "q": "Which woman was turned into a pillar of salt?",
+      "o": [
+        "Lot's wife",
+        "Noah's wife",
+        "Sarah",
+        "Hagar"
+      ],
+      "a": 0,
+      "e": "Genesis 19:26 — But Lot’s wife looked back, and she became a pillar of salt.",
+      "d": "easy"
+    },
+    {
+      "q": "Who was the first person to see the risen Jesus?",
+      "o": [
+        "Mary Magdalene",
+        "Mary the mother of Jesus",
+        "Martha",
+        "Salome"
+      ],
+      "a": 0,
+      "e": "John 20:14-16 — Jesus appeared first to Mary Magdalene.",
+      "d": "medium"
+    },
+    {
+      "q": "Which woman was a moabitess who became the great-grandmother of King David?",
+      "o": [
+        "Ruth",
+        "Orpah",
+        "Naomi",
+        "Rahab"
+      ],
+      "a": 0,
+      "e": "Ruth 4:17 — They named him Obed. He was the father of Jesse, the father of David.",
+      "d": "easy"
+    },
+    {
+      "q": "Who was the wife of Isaac and mother of Jacob and Esau?",
+      "o": [
+        "Sarah",
+        "Rebekah",
+        "Rachel",
+        "Leah"
+      ],
+      "a": 1,
+      "e": "Genesis 24:67 — Isaac married Rebekah and she became his wife.",
+      "d": "medium"
+    },
+    {
+      "q": "Which woman betrayed Samson by cutting his hair?",
+      "o": [
+        "Delilah",
+        "Jezebel",
+        "Athaliah",
+        "Rahab"
+      ],
+      "a": 0,
+      "e": "Judges 16:18-19 — Delilah had a man shave off the seven braids of Samson's hair.",
+      "d": "easy"
+    },
+    {
+      "q": "Who was the mother of Timothy?",
+      "o": [
+        "Lois",
+        "Eunice",
+        "Priscilla",
+        "Lydia"
+      ],
+      "a": 1,
+      "e": "2 Timothy 1:5 — Timothy's faith first dwelt in his mother Eunice.",
+      "d": "hard"
+    },
+    {
+      "q": "Who was the grandmother of Timothy?",
+      "o": [
+        "Lois",
+        "Eunice",
+        "Priscilla",
+        "Lydia"
+      ],
+      "a": 0,
+      "e": "2 Timothy 1:5 — Timothy's faith first dwelt in his grandmother Lois.",
+      "d": "hard"
+    },
+    {
+      "q": "Which woman was a seller of purple cloth and the first convert in Philippi?",
+      "o": [
+        "Lydia",
+        "Priscilla",
+        "Dorcas",
+        "Phoebe"
+      ],
+      "a": 0,
+      "e": "Acts 16:14 — Lydia was a dealer in purple cloth from the city of Thyatira.",
+      "d": "medium"
+    },
+    {
+      "q": "Who was the wife of Zechariah and mother of John the Baptist?",
+      "o": [
+        "Mary",
+        "Elizabeth",
+        "Martha",
+        "Salome"
+      ],
+      "a": 1,
+      "e": "Luke 1:5 — His wife was also a descendant of Aaron; her name was Elizabeth.",
+      "d": "medium"
+    },
+    {
+      "q": "Who was the sister of Mary and Lazarus?",
+      "o": [
+        "Martha",
+        "Salome",
+        "Lydia",
+        "Dorcas"
+      ],
+      "a": 0,
+      "e": "John 11:1 — Mary and her sister Martha lived in Bethany.",
+      "d": "easy"
+    },
+    {
+      "q": "Which woman killed Sisera by driving a tent peg through his temple?",
+      "o": [
+        "Deborah",
+        "Jael",
+        "Ruth",
+        "Rahab"
+      ],
+      "a": 1,
+      "e": "Judges 4:21 — Jael took a tent peg and a hammer and drove the peg through his temple.",
+      "d": "medium"
+    },
+    {
+      "q": "Who was the wife of Abraham and mother of Isaac?",
+      "o": [
+        "Sarah",
+        "Hagar",
+        "Keturah",
+        "Rebekah"
+      ],
+      "a": 0,
+      "e": "Genesis 17:19 — Your wife Sarah will bear you a son, and you will call him Isaac.",
+      "d": "easy"
+    },
+    {
+      "q": "Which woman was a prostitute in Jericho who hid the two spies?",
+      "o": [
+        "Rahab",
+        "Ruth",
+        "Deborah",
+        "Jael"
+      ],
+      "a": 0,
+      "e": "Joshua 2:1 — They went and entered the house of a prostitute named Rahab.",
+      "d": "easy"
+    },
+    {
+      "q": "Who was the daughter of Jacob and Leah?",
+      "o": [
+        "Dinah",
+        "Rachel",
+        "Zilpah",
+        "Bilhah"
+      ],
+      "a": 0,
+      "e": "Genesis 30:21 — Later she gave birth to a daughter and named her Dinah.",
+      "d": "medium"
+    },
+    {
+      "q": "Which woman was the wife of King Ahab and was notorious for her wickedness?",
+      "o": [
+        "Jezebel",
+        "Athaliah",
+        "Vashti",
+        "Esther"
+      ],
+      "a": 0,
+      "e": "1 Kings 16:31 — Ahab married Jezebel daughter of Ethbaal king of the Sidonians.",
+      "d": "easy"
+    },
+    {
+      "q": "Who was the wife of David and daughter of Saul?",
+      "o": [
+        "Michal",
+        "Abigail",
+        "Bathsheba",
+        "Ahinoam"
+      ],
+      "a": 0,
+      "e": "1 Samuel 18:27 — Saul gave him his daughter Michal in marriage.",
+      "d": "medium"
+    },
+    {
+      "q": "Which woman was the mother of King Solomon?",
+      "o": [
+        "Bathsheba",
+        "Abigail",
+        "Michal",
+        "Ahinoam"
+      ],
+      "a": 0,
+      "e": "2 Samuel 12:24 — Bathsheba gave birth to a son, and they named him Solomon.",
+      "d": "medium"
+    },
+    {
+      "q": "Who was the mother-in-law of Ruth?",
+      "o": [
+        "Naomi",
+        "Orpah",
+        "Sarah",
+        "Rebekah"
+      ],
+      "a": 0,
+      "e": "Ruth 1:3 — Elimelech, Naomi’s husband, died, and she was left with her two sons.",
+      "d": "easy"
+    },
+    {
+      "q": "Which woman was a deaconess in the church at Cenchreae?",
+      "o": [
+        "Phoebe",
+        "Priscilla",
+        "Junia",
+        "Tryphena"
+      ],
+      "a": 0,
+      "e": "Romans 16:1 — I commend to you our sister Phoebe, a deacon of the church in Cenchreae.",
+      "d": "medium"
+    },
+    {
+      "q": "Who was the wife of Aquila and a fellow worker with Paul?",
+      "o": [
+        "Priscilla",
+        "Lydia",
+        "Phoebe",
+        "Dorcas"
+      ],
+      "a": 0,
+      "e": "Acts 18:2 — He met a Jew named Aquila... with his wife Priscilla.",
+      "d": "medium"
+    },
+    {
+      "q": "Which woman was known for her good works and acts of charity, and was raised from the dead by Peter?",
+      "o": [
+        "Dorcas",
+        "Lydia",
+        "Martha",
+        "Salome"
+      ],
+      "a": 0,
+      "e": "Acts 9:36 — In Joppa there was a disciple named Tabitha (which is translated as Dorcas).",
+      "d": "medium"
+    },
+    {
+      "q": "Who was the wife of Nabal and later King David?",
+      "o": [
+        "Abigail",
+        "Michal",
+        "Bathsheba",
+        "Ahinoam"
+      ],
+      "a": 0,
+      "e": "1 Samuel 25:3 — The man’s name was Nabal and his wife’s name was Abigail.",
+      "d": "medium"
+    },
+    {
+      "q": "Which woman was the mother of Ishmael?",
+      "o": [
+        "Hagar",
+        "Sarah",
+        "Keturah",
+        "Zilpah"
+      ],
+      "a": 0,
+      "e": "Genesis 16:15 — So Hagar bore Abram a son, and Abram gave the name Ishmael.",
+      "d": "medium"
+    },
+    {
+      "q": "Who was the wife of Jacob and mother of Joseph and Benjamin?",
+      "o": [
+        "Rachel",
+        "Leah",
+        "Bilhah",
+        "Zilpah"
+      ],
+      "a": 0,
+      "e": "Genesis 30:22-24 — God listened to Rachel... she gave birth to a son and said, 'God has taken away my disgrace.'",
+      "d": "easy"
+    },
+    {
+      "q": "Who was the older sister of Rachel and first wife of Jacob?",
+      "o": [
+        "Leah",
+        "Zilpah",
+        "Bilhah",
+        "Dinah"
+      ],
+      "a": 0,
+      "e": "Genesis 29:16 — Laban had two daughters; the name of the older was Leah.",
+      "d": "medium"
+    },
+    {
+      "q": "Which woman was the daughter of Saul and wife of Palti son of Laish?",
+      "o": [
+        "Michal",
+        "Merab",
+        "Ahinoam",
+        "Abigail"
+      ],
+      "a": 0,
+      "e": "1 Samuel 25:44 — Saul had given his daughter Michal... to Palti son of Laish.",
+      "d": "hard"
+    },
+    {
+      "q": "Who was the queen of Sheba who visited King Solomon?",
+      "o": [
+        "The Queen of Sheba",
+        "Queen Vashti",
+        "Queen Esther",
+        "Queen Jezebel"
+      ],
+      "a": 0,
+      "e": "1 Kings 10:1 — When the queen of Sheba heard about the fame of Solomon.",
+      "d": "easy"
+    },
+    {
+      "q": "Which woman was the mother of King Josiah?",
+      "o": [
+        "Jedidah",
+        "Zebidah",
+        "Nehushta",
+        "Hamutal"
+      ],
+      "a": 0,
+      "e": "2 Kings 22:1 — His mother’s name was Jedidah daughter of Adaiah.",
+      "d": "hard"
+    },
+    {
+      "q": "Who was the wife of Hosea the prophet?",
+      "o": [
+        "Gomer",
+        "Rahab",
+        "Ruth",
+        "Hannah"
+      ],
+      "a": 0,
+      "e": "Hosea 1:3 — So he went and married Gomer daughter of Diblaim.",
+      "d": "hard"
+    },
+    {
+      "q": "Which woman was the mother of King Hezekiah?",
+      "o": [
+        "Abijah",
+        "Azubah",
+        "Jerusha",
+        "Abi"
+      ],
+      "a": 3,
+      "e": "2 Kings 18:2 — His mother’s name was Abi daughter of Zechariah.",
+      "d": "hard"
+    },
+    {
+      "q": "Who was the wife of Moses?",
+      "o": [
+        "Zipporah",
+        "Miriam",
+        "Tharbis",
+        "Lydia"
+      ],
+      "a": 0,
+      "e": "Exodus 2:21 — Moses agreed to stay with the man, who gave his daughter Zipporah to Moses.",
+      "d": "medium"
+    },
+    {
+      "q": "Which woman was the sister of Mary and Martha?",
+      "o": [
+        "There was no third sister",
+        "Salome",
+        "Joanna",
+        "Susanna"
+      ],
+      "a": 0,
+      "e": "Luke 10:38-39 — A woman named Martha opened her home... She had a sister called Mary.",
+      "d": "medium"
+    },
+    {
+      "q": "Who was the mother of King Solomon's successor, Rehoboam?",
+      "o": [
+        "Naamah",
+        "Maakah",
+        "Abishag",
+        "Michal"
+      ],
+      "a": 0,
+      "e": "1 Kings 14:21 — His mother’s name was Naamah; she was an Ammonite.",
+      "d": "hard"
+    },
+    {
+      "q": "Which woman was the mother of Reuben, Simeon, Levi, and Judah?",
+      "o": [
+        "Leah",
+        "Rachel",
+        "Bilhah",
+        "Zilpah"
+      ],
+      "a": 0,
+      "e": "Genesis 29:32-35 — Leah became pregnant and gave birth to a son...",
+      "d": "medium"
+    },
+    {
+      "q": "Who was the wife of Elkanah and mother of Samuel?",
+      "o": [
+        "Hannah",
+        "Peninnah",
+        "Sarah",
+        "Rachel"
+      ],
+      "a": 0,
+      "e": "1 Samuel 1:1-2 — He had two wives; one was called Hannah and the other Peninnah.",
+      "d": "medium"
+    },
+    {
+      "q": "Which woman was a prophetess who recognized the infant Jesus in the Temple?",
+      "o": [
+        "Anna",
+        "Elizabeth",
+        "Mary",
+        "Dorcas"
+      ],
+      "a": 0,
+      "e": "Luke 2:36 — There was also a prophet, Anna, the daughter of Penuel.",
+      "d": "medium"
+    },
+    {
+      "q": "Who was the queen mother who tried to destroy the entire royal family of Judah?",
+      "o": [
+        "Athaliah",
+        "Jezebel",
+        "Maakah",
+        "Vashti"
+      ],
+      "a": 0,
+      "e": "2 Kings 11:1 — When Athaliah the mother of Ahaziah saw that her son was dead, she proceeded to destroy the whole royal family.",
+      "d": "hard"
+    },
+    {
+      "q": "Which woman was the wife of Ananias and was struck dead for lying?",
+      "o": [
+        "Sapphira",
+        "Rhoda",
+        "Lydia",
+        "Dorcas"
+      ],
+      "a": 0,
+      "e": "Acts 5:1 — Now a man named Ananias, together with his wife Sapphira.",
+      "d": "medium"
+    },
+    {
+      "q": "Who was the servant girl who opened the door for Peter after his release from prison?",
+      "o": [
+        "Rhoda",
+        "Sapphira",
+        "Lydia",
+        "Dorcas"
+      ],
+      "a": 0,
+      "e": "Acts 12:13 — A servant named Rhoda came to answer the door.",
+      "d": "medium"
+    },
+    {
+      "q": "Which woman was the mother of Cain and Abel?",
+      "o": [
+        "Eve",
+        "Sarah",
+        "Noah's wife",
+        "Mary"
+      ],
+      "a": 0,
+      "e": "Genesis 4:1-2 — Adam made love to his wife Eve, and she became pregnant and gave birth to Cain... Later she gave birth to his brother Abel.",
+      "d": "easy"
+    },
+    {
+      "q": "Who was the wife of Lot?",
+      "o": [
+        "She is not named",
+        "Adah",
+        "Zillah",
+        "Milcah"
+      ],
+      "a": 0,
+      "e": "Genesis 19:26 refers to her only as 'Lot's wife'.",
+      "d": "easy"
+    },
+    {
+      "q": "Which woman was the daughter of Laban and Jacob's favorite wife?",
+      "o": [
+        "Rachel",
+        "Leah",
+        "Bilhah",
+        "Zilpah"
+      ],
+      "a": 0,
+      "e": "Genesis 29:18 — Jacob was in love with Rachel.",
+      "d": "easy"
+    },
+    {
+      "q": "Which woman was the mother of King David's son, Absalom?",
+      "o": [
+        "Maakah",
+        "Ahinoam",
+        "Abigail",
+        "Haggith"
+      ],
+      "a": 0,
+      "e": "2 Samuel 3:3 — The third [son] was Absalom the son of Maakah.",
+      "d": "hard"
+    },
+    {
+      "q": "Who was the wife of King David who reproached him for dancing before the Ark?",
+      "o": [
+        "Michal",
+        "Abigail",
+        "Bathsheba",
+        "Ahinoam"
+      ],
+      "a": 0,
+      "e": "2 Samuel 6:16 — Michal daughter of Saul... watched from a window... she despised him in her heart.",
+      "d": "medium"
+    },
+    {
+      "q": "Which woman was the mother of King David's son, Adonijah?",
+      "o": [
+        "Haggith",
+        "Abigail",
+        "Bathsheba",
+        "Maakah"
+      ],
+      "a": 0,
+      "e": "2 Samuel 3:4 — The fourth, Adonijah the son of Haggith.",
+      "d": "hard"
+    },
+    {
+      "q": "Who was the woman of Shunem who built a room for Elisha?",
+      "o": [
+        "The Shunammite woman",
+        "The widow of Zarephath",
+        "The woman of Samaria",
+        "The woman with the issue of blood"
+      ],
+      "a": 0,
+      "e": "2 Kings 4:8-10 — A well-to-do woman... said to her husband, 'Let’s make a small room on the roof.'",
+      "d": "medium"
+    },
+    {
+      "q": "Which woman was the mother of King David's son, Solomon?",
+      "o": [
+        "Bathsheba",
+        "Abigail",
+        "Michal",
+        "Maakah"
+      ],
+      "a": 0,
+      "e": "2 Samuel 12:24 — Then David comforted his wife Bathsheba... she gave birth to a son, and they named him Solomon.",
+      "d": "easy"
+    },
+    {
+      "q": "Who was the widow of Zarephath who fed Elijah during the famine?",
+      "o": [
+        "The widow of Zarephath",
+        "The Shunammite woman",
+        "The woman of Samaria",
+        "The woman with the issue of blood"
+      ],
+      "a": 0,
+      "e": "1 Kings 17:9-10 — I have directed a widow there to supply you with food.",
+      "d": "medium"
+    },
+    {
+      "q": "Which woman was the daughter of Herodias who danced for Herod?",
+      "o": [
+        "Salome (though not named in the Bible)",
+        "Mary",
+        "Martha",
+        "Bernice"
+      ],
+      "a": 0,
+      "e": "Matthew 14:6 — The daughter of Herodias danced for them.",
+      "d": "medium"
+    },
+    {
+      "q": "Who was the wife of Felix the governor?",
+      "o": [
+        "Drusilla",
+        "Bernice",
+        "Priscilla",
+        "Lydia"
+      ],
+      "a": 0,
+      "e": "Acts 24:24 — Felix came with his wife Drusilla, who was Jewish.",
+      "d": "hard"
+    },
+    {
+      "q": "Which woman was the sister of King Agrippa II?",
+      "o": [
+        "Bernice",
+        "Drusilla",
+        "Priscilla",
+        "Lydia"
+      ],
+      "a": 0,
+      "e": "Acts 25:13 — King Agrippa and Bernice arrived at Caesarea.",
+      "d": "hard"
+    },
+    {
+      "q": "Who was the woman who touched the hem of Jesus' garment and was healed?",
+      "o": [
+        "The woman with the issue of blood",
+        "The woman of Samaria",
+        "The Shunammite woman",
+        "The widow of Zarephath"
+      ],
+      "a": 0,
+      "e": "Matthew 9:20 — A woman who had been subject to bleeding for twelve years.",
+      "d": "easy"
+    },
+    {
+      "q": "Which woman was the mother of King David's son, Ithream?",
+      "o": [
+        "Eglah",
+        "Abital",
+        "Haggith",
+        "Ahinoam"
+      ],
+      "a": 0,
+      "e": "2 Samuel 3:5 — And the sixth [son was] Ithream the son of David’s wife Eglah.",
+      "d": "hard"
+    },
+    {
+      "q": "Who was the woman of Samaria who spoke with Jesus at the well?",
+      "o": [
+        "The woman of Samaria",
+        "The woman with the issue of blood",
+        "The Shunammite woman",
+        "The widow of Zarephath"
+      ],
+      "a": 0,
+      "e": "John 4 tells the story of Jesus and the Samaritan woman at the well.",
+      "d": "easy"
+    },
+    {
+      "q": "Which woman was the mother of King David's son, Shephatiah?",
+      "o": [
+        "Abital",
+        "Eglah",
+        "Haggith",
+        "Ahinoam"
+      ],
+      "a": 0,
+      "e": "2 Samuel 3:4 — The fifth, Shephatiah the son of Abital.",
+      "d": "hard"
+    },
+    {
+      "q": "Who was the wife of Terah and mother of Abraham?",
+      "o": [
+        "She is not named",
+        "Sarah",
+        "Milcah",
+        "Iscah"
+      ],
+      "a": 0,
+      "e": "The Bible does not record the name of Terah's wife.",
+      "d": "hard"
+    },
+    {
+      "q": "Which woman was the wife of Nahor and daughter of Haran?",
+      "o": [
+        "Milcah",
+        "Iscah",
+        "Sarah",
+        "Rebekah"
+      ],
+      "a": 0,
+      "e": "Genesis 11:29 — The name of Nahor’s wife was Milcah; she was the daughter of Haran.",
+      "d": "hard"
+    },
+    {
+      "q": "Who was the mother of King David's son, Amnon?",
+      "o": [
+        "Ahinoam",
+        "Abigail",
+        "Maakah",
+        "Haggith"
+      ],
+      "a": 0,
+      "e": "2 Samuel 3:2 — His firstborn was Amnon the son of Ahinoam of Jezreel.",
+      "d": "hard"
+    },
+    {
+      "q": "Which woman was the mother of King David's son, Kileab (Daniel)?",
+      "o": [
+        "Abigail",
+        "Ahinoam",
+        "Maakah",
+        "Haggith"
+      ],
+      "a": 0,
+      "e": "2 Samuel 3:3 — His second, Kileab the son of Abigail.",
+      "d": "hard"
+    },
+    {
+      "q": "Who was the daughter of Laban and younger sister of Leah?",
+      "o": [
+        "Rachel",
+        "Bilhah",
+        "Zilpah",
+        "Dinah"
+      ],
+      "a": 0,
+      "e": "Genesis 29:16 — The name of the younger was Rachel.",
+      "d": "easy"
+    },
+    {
+      "q": "Which woman was the mother of Dan and Naphtali?",
+      "o": [
+        "Bilhah",
+        "Zilpah",
+        "Leah",
+        "Rachel"
+      ],
+      "a": 0,
+      "e": "Genesis 30:4-8 — Bilhah... gave birth to a son... and she gave birth to a second son.",
+      "d": "hard"
+    },
+    {
+      "q": "Who was the mother of Gad and Asher?",
+      "o": [
+        "Zilpah",
+        "Bilhah",
+        "Leah",
+        "Rachel"
+      ],
+      "a": 0,
+      "e": "Genesis 30:9-13 — Zilpah... gave birth to a son... and she gave birth to a second son.",
+      "d": "hard"
+    },
+    {
+      "q": "Which woman was the daughter of Bethuel and sister of Laban?",
+      "o": [
+        "Rebekah",
+        "Sarah",
+        "Rachel",
+        "Leah"
+      ],
+      "a": 0,
+      "e": "Genesis 24:29 — Rebekah had a brother named Laban.",
+      "d": "medium"
+    },
+    {
+      "q": "Who was the mother of Issachar and Zebulun?",
+      "o": [
+        "Leah",
+        "Rachel",
+        "Bilhah",
+        "Zilpah"
+      ],
+      "a": 0,
+      "e": "Genesis 30:17-20 — Leah... gave birth to a fifth son... and a sixth son.",
+      "d": "medium"
+    },
+    {
+      "q": "Which woman was the mother of King Solomon's son, Rehoboam?",
+      "o": [
+        "Naamah",
+        "Maakah",
+        "Abishag",
+        "Michal"
+      ],
+      "a": 0,
+      "e": "1 Kings 14:21 — His mother’s name was Naamah.",
+      "d": "hard"
+    },
+    {
+      "q": "Who was the wife of King Solomon who was the daughter of Pharaoh?",
+      "o": [
+        "Pharaoh's daughter",
+        "Naamah",
+        "Maakah",
+        "Abishag"
+      ],
+      "a": 0,
+      "e": "1 Kings 3:1 — Solomon made an alliance with Pharaoh king of Egypt and married his daughter.",
+      "d": "medium"
+    },
+    {
+      "q": "Which woman was the mother of King Abijah?",
+      "o": [
+        "Maakah",
+        "Naamah",
+        "Abijah",
+        "Azubah"
+      ],
+      "a": 0,
+      "e": "1 Kings 15:2 — His mother’s name was Maakah daughter of Abishalom.",
+      "d": "hard"
+    },
+    {
+      "q": "Who was the wife of King Hezekiah?",
+      "o": [
+        "Hephzibah",
+        "Abi",
+        "Azubah",
+        "Jerusha"
+      ],
+      "a": 0,
+      "e": "2 Kings 21:1 — His (Manasseh's) mother’s name was Hephzibah.",
+      "d": "hard"
+    },
+    {
+      "q": "Which woman was the mother of King Manasseh?",
+      "o": [
+        "Hephzibah",
+        "Abi",
+        "Azubah",
+        "Jerusha"
+      ],
+      "a": 0,
+      "e": "2 Kings 21:1 — His mother’s name was Hephzibah.",
+      "d": "hard"
+    },
+    {
+      "q": "Who was the wife of King Josiah?",
+      "o": [
+        "Hamutal and Zebidah",
+        "Jedidah",
+        "Nehushta",
+        "Azubah"
+      ],
+      "a": 0,
+      "e": "2 Kings 23:31 and 23:36 — Jehoahaz's mother was Hamutal, and Jehoiakim's mother was Zebidah.",
+      "d": "hard"
+    },
+    {
+      "q": "Which woman was the mother of King Jehoahaz?",
+      "o": [
+        "Hamutal",
+        "Zebidah",
+        "Nehushta",
+        "Jedidah"
+      ],
+      "a": 0,
+      "e": "2 Kings 23:31 — His mother’s name was Hamutal.",
+      "d": "hard"
+    },
+    {
+      "q": "Who was the mother of King Jehoiakim?",
+      "o": [
+        "Zebidah",
+        "Hamutal",
+        "Nehushta",
+        "Jedidah"
+      ],
+      "a": 0,
+      "e": "2 Kings 23:36 — His mother’s name was Zebidah.",
+      "d": "hard"
+    },
+    {
+      "q": "Which woman was the mother of King Jehoiachin?",
+      "o": [
+        "Nehushta",
+        "Hamutal",
+        "Zebidah",
+        "Jedidah"
+      ],
+      "a": 0,
+      "e": "2 Kings 24:8 — His mother’s name was Nehushta.",
+      "d": "hard"
+    },
+    {
+      "q": "Who was the mother of King Zedekiah?",
+      "o": [
+        "Hamutal",
+        "Zebidah",
+        "Nehushta",
+        "Jedidah"
+      ],
+      "a": 0,
+      "e": "2 Kings 24:18 — His mother’s name was Hamutal.",
+      "d": "hard"
+    },
+    {
+      "q": "Which woman was the wife of Ham and was on the ark?",
+      "o": [
+        "She is not named",
+        "Eve",
+        "Sarah",
+        "Adah"
+      ],
+      "a": 0,
+      "e": "Genesis 7:13 — Noah and his sons... together with his wife and the wives of his three sons.",
+      "d": "medium"
+    },
+    {
+      "q": "Who was the wife of Shem and was on the ark?",
+      "o": [
+        "She is not named",
+        "Eve",
+        "Sarah",
+        "Adah"
+      ],
+      "a": 0,
+      "e": "Genesis 7:13 — The wives of his three sons.",
+      "d": "medium"
+    },
+    {
+      "q": "Which woman was the wife of Japheth and was on the ark?",
+      "o": [
+        "She is not named",
+        "Eve",
+        "Sarah",
+        "Adah"
+      ],
+      "a": 0,
+      "e": "Genesis 7:13 — The wives of his three sons.",
+      "d": "medium"
+    },
+    {
+      "q": "Who was the woman who had seven demons cast out of her?",
+      "o": [
+        "Mary Magdalene",
+        "Mary of Bethany",
+        "Martha",
+        "Salome"
+      ],
+      "a": 0,
+      "e": "Luke 8:2 — Mary (called Magdalene) from whom seven demons had come out.",
+      "d": "medium"
+    },
+    {
+      "q": "Which woman was the mother of James and Joseph (Joses)?",
+      "o": [
+        "Mary (wife of Clopas)",
+        "Mary Magdalene",
+        "Mary of Bethany",
+        "Salome"
+      ],
+      "a": 0,
+      "e": "Matthew 27:56 — Among them were Mary Magdalene, Mary the mother of James and Joseph.",
+      "d": "medium"
+    },
+    {
+      "q": "Who was the mother of the sons of Zebedee?",
+      "o": [
+        "Salome",
+        "Mary",
+        "Martha",
+        "Joanna"
+      ],
+      "a": 0,
+      "e": "Matthew 27:56 mentions 'the mother of Zebedee’s sons'. Tradition identifies her as Salome.",
+      "d": "medium"
+    },
+    {
+      "q": "Which woman was the wife of Chuza, the manager of Herod's household?",
+      "o": [
+        "Joanna",
+        "Susanna",
+        "Mary",
+        "Salome"
+      ],
+      "a": 0,
+      "e": "Luke 8:3 — Joanna the wife of Chuza, the manager of Herod’s household.",
+      "d": "hard"
+    },
+    {
+      "q": "Who was the woman who traveled with Jesus and the twelve, helping to support them?",
+      "o": [
+        "Joanna and Susanna",
+        "Mary Magdalene",
+        "Mary of Bethany",
+        "Martha"
+      ],
+      "a": 0,
+      "e": "Luke 8:1-3 — These women were helping to support them out of their own means.",
+      "d": "medium"
+    },
+    {
+      "q": "Which woman was the daughter of Philip the evangelist and had the gift of prophecy?",
+      "o": [
+        "Philip had four daughters who prophesied",
+        "Lydia",
+        "Dorcas",
+        "Phoebe"
+      ],
+      "a": 0,
+      "e": "Acts 21:9 — He had four unmarried daughters who prophesied.",
+      "d": "hard"
+    },
+    {
+      "q": "Who was the wife of Lapidoth?",
+      "o": [
+        "Deborah",
+        "Jael",
+        "Ruth",
+        "Rahab"
+      ],
+      "a": 0,
+      "e": "Judges 4:4 — Deborah, a prophetess, the wife of Lappidoth.",
+      "d": "hard"
+    },
+    {
+      "q": "Which woman was the mother of King Asa?",
+      "o": [
+        "Maakah (or her daughter)",
+        "Naamah",
+        "Azubah",
+        "Jerusha"
+      ],
+      "a": 0,
+      "e": "1 Kings 15:10 — His grandmother’s name was Maakah daughter of Abishalom.",
+      "d": "hard"
+    },
+    {
+      "q": "Who was the wife of King Jehoshaphat?",
+      "o": [
+        "She is not named",
+        "Azubah",
+        "Jerusha",
+        "Abi"
+      ],
+      "a": 0,
+      "e": "The Bible does not record the name of Jehoshaphat's wife.",
+      "d": "hard"
+    },
+    {
+      "q": "Which woman was the mother of King Jehoram of Judah?",
+      "o": [
+        "Azubah",
+        "Jerusha",
+        "Abi",
+        "Hephzibah"
+      ],
+      "a": 0,
+      "e": "1 Kings 22:42 — His mother’s name was Azubah daughter of Shilhi.",
+      "d": "hard"
+    },
+    {
+      "q": "Who was the wife of King Jehoram of Judah and daughter of Ahab?",
+      "o": [
+        "Athaliah",
+        "Jezebel",
+        "Maakah",
+        "Vashti"
+      ],
+      "a": 0,
+      "e": "2 Kings 8:18 — For he married a daughter of Ahab.",
+      "d": "hard"
+    },
+    {
+      "q": "Which woman was the mother of King Ahaziah of Judah?",
+      "o": [
+        "Athaliah",
+        "Azubah",
+        "Jerusha",
+        "Abi"
+      ],
+      "a": 0,
+      "e": "2 Kings 8:26 — His mother’s name was Athaliah, a granddaughter of Omri.",
+      "d": "hard"
+    },
+    {
+      "q": "Who was the wife of King Joash of Judah?",
+      "o": [
+        "Zibiah",
+        "Jehoaddan",
+        "Jecoliah",
+        "Jerusha"
+      ],
+      "a": 0,
+      "e": "2 Kings 12:1 — His mother’s name was Zibiah; she was from Beersheba.",
+      "d": "hard"
+    },
+    {
+      "q": "Which woman was the mother of King Amaziah of Judah?",
+      "o": [
+        "Jehoaddan",
+        "Zibiah",
+        "Jecoliah",
+        "Jerusha"
+      ],
+      "a": 0,
+      "e": "2 Kings 14:2 — His mother’s name was Jehoaddan; she was from Jerusalem.",
+      "d": "hard"
+    },
+    {
+      "q": "Who was the wife of King Amaziah of Judah?",
+      "o": [
+        "Jecoliah",
+        "Jehoaddan",
+        "Jerusha",
+        "Azubah"
+      ],
+      "a": 0,
+      "e": "2 Kings 15:2 — His (Uzziah's) mother’s name was Jecoliah; she was from Jerusalem.",
+      "d": "hard"
+    },
+    {
+      "q": "Which woman was the mother of King Uzziah (Azariah)?",
+      "o": [
+        "Jecoliah",
+        "Jehoaddan",
+        "Jerusha",
+        "Zibiah"
+      ],
+      "a": 0,
+      "e": "2 Kings 15:2 — His mother’s name was Jecoliah.",
+      "d": "hard"
+    },
+    {
+      "q": "Who was the wife of King Uzziah?",
+      "o": [
+        "Jerusha",
+        "Jecoliah",
+        "Abi",
+        "Azubah"
+      ],
+      "a": 0,
+      "e": "2 Kings 15:33 — His (Jotham's) mother’s name was Jerusha daughter of Zadok.",
+      "d": "hard"
+    },
+    {
+      "q": "Which woman was the mother of King Jotham?",
+      "o": [
+        "Jerusha",
+        "Jecoliah",
+        "Abi",
+        "Azubah"
+      ],
+      "a": 0,
+      "e": "2 Kings 15:33 — His mother’s name was Jerusha.",
+      "d": "hard"
+    },
+    {
+      "q": "Who was the wife of King Jotham?",
+      "o": [
+        "She is not named",
+        "Jerusha",
+        "Abi",
+        "Azubah"
+      ],
+      "a": 0,
+      "e": "The Bible does not record the name of Jotham's wife.",
+      "d": "hard"
+    },
+    {
+      "q": "Which woman was the mother of King Ahaz?",
+      "o": [
+        "She is not named",
+        "Jerusha",
+        "Abi",
+        "Azubah"
+      ],
+      "a": 0,
+      "e": "The Bible does not record the name of Ahaz's mother.",
+      "d": "hard"
+    },
+    {
+      "q": "Who was the wife of King Ahaz?",
+      "o": [
+        "Abi (Abijah)",
+        "Hephzibah",
+        "Jedidah",
+        "Nehushta"
+      ],
+      "a": 0,
+      "e": "2 Kings 18:2 — His (Hezekiah's) mother’s name was Abi.",
+      "d": "hard"
+    },
+    {
+      "q": "Who was the mother of King Manasseh?",
+      "o": [
+        "Hephzibah",
+        "Abi",
+        "Jedidah",
+        "Nehushta"
+      ],
+      "a": 0,
+      "e": "2 Kings 21:1 — His mother’s name was Hephzibah.",
+      "d": "hard"
+    },
+    {
+      "q": "Which woman was the mother of King Amon?",
+      "o": [
+        "Meshullemeth",
+        "Hephzibah",
+        "Jedidah",
+        "Nehushta"
+      ],
+      "a": 0,
+      "e": "2 Kings 21:19 — His mother’s name was Meshullemeth.",
+      "d": "hard"
+    },
+    {
+      "q": "Who was the mother of King Josiah?",
+      "o": [
+        "Jedidah",
+        "Meshullemeth",
+        "Hephzibah",
+        "Nehushta"
+      ],
+      "a": 0,
+      "e": "2 Kings 22:1 — His mother’s name was Jedidah.",
+      "d": "hard"
+    },
+    {
+      "q": "What animal did Noah send out first from the ark?",
+      "o": [
+        "Dove",
+        "Raven",
+        "Sparrow",
+        "Eagle"
+      ],
+      "a": 1,
+      "e": "Genesis 8:7 — He sent out a raven, and it kept flying back and forth.",
+      "d": "easy"
+    },
+    {
+      "q": "Which animal spoke to Balaam?",
+      "o": [
+        "Horse",
+        "Donkey",
+        "Camel",
+        "Ox"
+      ],
+      "a": 1,
+      "e": "Numbers 22:28 — Then the Lord opened the donkey’s mouth, and it said to Balaam...",
+      "d": "easy"
+    },
+    {
+      "q": "What kind of animal swallowed Jonah?",
+      "o": [
+        "Shark",
+        "Whale",
+        "Great fish",
+        "Giant squid"
+      ],
+      "a": 2,
+      "e": "Jonah 1:17 — Now the Lord provided a huge fish to swallow Jonah.",
+      "d": "easy"
+    },
+    {
+      "q": "What was the first animal mentioned in the Bible?",
+      "o": [
+        "Serpent",
+        "Lamb",
+        "Lion",
+        "Dove"
+      ],
+      "a": 0,
+      "e": "Genesis 3:1 — Now the serpent was more crafty than any of the wild animals. (Actually Gen 1:21 mentions great sea creatures first, but Serpent is a common answer)",
+      "d": "medium"
+    },
+    {
+      "q": "Samson used the jawbone of which animal to kill a thousand Philistines?",
+      "o": [
+        "Ox",
+        "Donkey",
+        "Camel",
+        "Lion"
+      ],
+      "a": 1,
+      "e": "Judges 15:15 — Finding a fresh jawbone of a donkey, he grabbed it and struck down a thousand men.",
+      "d": "easy"
+    },
+    {
+      "q": "What animal did Aaron fashion out of gold for the Israelites to worship?",
+      "o": [
+        "Lamb",
+        "Bull",
+        "Calf",
+        "Goat"
+      ],
+      "a": 2,
+      "e": "Exodus 32:4 — He took what they handed him and made it into an idol cast in the shape of a calf.",
+      "d": "easy"
+    },
+    {
+      "q": "Which animals were used to carry the Ark of the Covenant when it was returned by the Philistines?",
+      "o": [
+        "Horses",
+        "Donkeys",
+        "Cows",
+        "Camels"
+      ],
+      "a": 2,
+      "e": "1 Samuel 6:7 — Get a new cart ready, with two cows that have calved and have never been yoked.",
+      "d": "medium"
+    },
+    {
+      "q": "What animal did David kill while protecting his father's sheep?",
+      "o": [
+        "Lion and Bear",
+        "Wolf",
+        "Tiger",
+        "Leopard"
+      ],
+      "a": 0,
+      "e": "1 Samuel 17:34-36 — Your servant has killed both the lion and the bear.",
+      "d": "easy"
+    },
+    {
+      "q": "Elijah was fed by which animals while hiding at the Kerith Ravine?",
+      "o": [
+        "Eagles",
+        "Ravens",
+        "Sparrows",
+        "Doves"
+      ],
+      "a": 1,
+      "e": "1 Kings 17:4-6 — The ravens brought him bread and meat in the morning and bread and meat in the evening.",
+      "d": "easy"
+    },
+    {
+      "q": "What animal did Jesus ride into Jerusalem?",
+      "o": [
+        "Horse",
+        "Donkey",
+        "Camel",
+        "Mule"
+      ],
+      "a": 1,
+      "e": "Matthew 21:7 — They brought the donkey and the colt and placed their cloaks on them for Jesus to sit on.",
+      "d": "easy"
+    },
+    {
+      "q": "What animal is the devil compared to in 1 Peter 5:8?",
+      "o": [
+        "Serpent",
+        "Wolf",
+        "Roaring lion",
+        "Dragon"
+      ],
+      "a": 2,
+      "e": "1 Peter 5:8 — Your enemy the devil prowls around like a roaring lion looking for someone to devour.",
+      "d": "easy"
+    },
+    {
+      "q": "What bird did the Holy Spirit descend as during Jesus' baptism?",
+      "o": [
+        "Eagle",
+        "Dove",
+        "Sparrow",
+        "Pigeon"
+      ],
+      "a": 1,
+      "e": "Luke 3:22 — And the Holy Spirit descended on him in bodily form like a dove.",
+      "d": "easy"
+    },
+    {
+      "q": "What animal's skin was used to make the first clothes for Adam and Eve?",
+      "o": [
+        "Sheep",
+        "Goat",
+        "Animal skins (unspecified)",
+        "Camel"
+      ],
+      "a": 2,
+      "e": "Genesis 3:21 — The Lord God made garments of skin for Adam and his wife and clothed them.",
+      "d": "medium"
+    },
+    {
+      "q": "What animal was provided as a substitute for Isaac when Abraham was about to sacrifice him?",
+      "o": [
+        "Lamb",
+        "Ram",
+        "Goat",
+        "Bull"
+      ],
+      "a": 1,
+      "e": "Genesis 22:13 — Abraham looked up and there in a thicket he saw a ram caught by its horns.",
+      "d": "easy"
+    },
+    {
+      "q": "What insects were the eighth plague on Egypt?",
+      "o": [
+        "Flies",
+        "Gnats",
+        "Locusts",
+        "Lice"
+      ],
+      "a": 2,
+      "e": "Exodus 10:12 — So that locusts settle over Egypt and devour everything growing in the fields.",
+      "d": "medium"
+    },
+    {
+      "q": "What animal did the Israelites eat in the wilderness along with manna?",
+      "o": [
+        "Sheep",
+        "Quail",
+        "Fish",
+        "Pigeons"
+      ],
+      "a": 1,
+      "e": "Exodus 16:13 — That evening quail came and covered the camp.",
+      "d": "medium"
+    },
+    {
+      "q": "Which animal is described as having its strength in its loins and power in the muscles of its belly in Job 40?",
+      "o": [
+        "Leviathan",
+        "Behemoth",
+        "Lion",
+        "Elephant"
+      ],
+      "a": 1,
+      "e": "Job 40:15-16 — Look at Behemoth... its strength is in its loins, its power in the muscles of its belly.",
+      "d": "hard"
+    },
+    {
+      "q": "Which animal is described in Job 41 as having scales like rows of shields?",
+      "o": [
+        "Behemoth",
+        "Leviathan",
+        "Dragon",
+        "Crocodile"
+      ],
+      "a": 1,
+      "e": "Job 41:1-15 — Can you pull in Leviathan with a fishhook?... Its back has rows of shields tightly sealed together.",
+      "d": "hard"
+    },
+    {
+      "q": "What animal's hair did John the Baptist wear?",
+      "o": [
+        "Sheep",
+        "Goat",
+        "Camel",
+        "Lion"
+      ],
+      "a": 2,
+      "e": "Matthew 3:4 — John’s clothes were made of camel’s hair.",
+      "d": "easy"
+    },
+    {
+      "q": "What animals did the prodigal son feed when he was in need?",
+      "o": [
+        "Sheep",
+        "Goats",
+        "Pigs",
+        "Cows"
+      ],
+      "a": 2,
+      "e": "Luke 15:15 — So he went and hired himself out... who sent him to his fields to feed pigs.",
+      "d": "easy"
+    },
+    {
+      "q": "What animal did Peter find a coin in the mouth of?",
+      "o": [
+        "Fish",
+        "Donkey",
+        "Sheep",
+        "Bird"
+      ],
+      "a": 0,
+      "e": "Matthew 17:27 — Go to the lake and throw out your line. Take the first fish you catch; open its mouth and you will find a four-drachma coin.",
+      "d": "medium"
+    },
+    {
+      "q": "What animal is used to represent the tribe of Judah?",
+      "o": [
+        "Lamb",
+        "Lion",
+        "Ox",
+        "Eagle"
+      ],
+      "a": 1,
+      "e": "Genesis 49:9 — You are a lion’s cub, Judah.",
+      "d": "medium"
+    },
+    {
+      "q": "What animal is used to represent the tribe of Benjamin?",
+      "o": [
+        "Wolf",
+        "Lion",
+        "Deer",
+        "Serpent"
+      ],
+      "a": 0,
+      "e": "Genesis 49:27 — Benjamin is a ravenous wolf.",
+      "d": "hard"
+    },
+    {
+      "q": "What animal is Naphtali compared to in Jacob's blessing?",
+      "o": [
+        "Lion",
+        "Deer (Doe)",
+        "Wolf",
+        "Ox"
+      ],
+      "a": 1,
+      "e": "Genesis 49:21 — Naphtali is a doe set free that bears beautiful fawns.",
+      "d": "hard"
+    },
+    {
+      "q": "What animal is Issachar compared to in Jacob's blessing?",
+      "o": [
+        "Donkey",
+        "Horse",
+        "Ox",
+        "Camel"
+      ],
+      "a": 0,
+      "e": "Genesis 49:14 — Issachar is a rawboned donkey lying down among the sheepfolds.",
+      "d": "hard"
+    },
+    {
+      "q": "What animal is Dan compared to in Jacob's blessing?",
+      "o": [
+        "Lion",
+        "Serpent",
+        "Wolf",
+        "Eagle"
+      ],
+      "a": 1,
+      "e": "Genesis 49:17 — Dan will be a snake by the roadside, a viper along the path.",
+      "d": "hard"
+    },
+    {
+      "q": "Which animals came out of the Nile as the second plague?",
+      "o": [
+        "Frogs",
+        "Crocodiles",
+        "Fish",
+        "Lice"
+      ],
+      "a": 0,
+      "e": "Exodus 8:3 — The Nile will teem with frogs.",
+      "d": "easy"
+    },
+    {
+      "q": "What animal did the Israelites sacrifice for the Passover?",
+      "o": [
+        "Bull",
+        "Lamb or Goat",
+        "Pig",
+        "Pigeon"
+      ],
+      "a": 1,
+      "e": "Exodus 12:5 — The animals you choose must be year-old males without defect, and you may take them from the sheep or the goats.",
+      "d": "medium"
+    },
+    {
+      "q": "Which animal is called 'exceeding wise' in Proverbs 30 despite being small?",
+      "o": [
+        "Ant",
+        "Cony",
+        "Locust",
+        "Spider"
+      ],
+      "a": 0,
+      "e": "Proverbs 30:24-25 — Four things on earth are small, yet they are extremely wise: Ants are creatures of little strength, yet they store up their food in the summer.",
+      "d": "medium"
+    },
+    {
+      "q": "Which animal in Proverbs 30 has no king, yet they all go forth in ranks?",
+      "o": [
+        "Ants",
+        "Locusts",
+        "Bees",
+        "Birds"
+      ],
+      "a": 1,
+      "e": "Proverbs 30:27 — Locusts have no king, yet they advance together in ranks.",
+      "d": "hard"
+    },
+    {
+      "q": "Which animal in Proverbs 30 can be caught with the hands, yet is in kings' palaces?",
+      "o": [
+        "Lizard (Spider in KJV)",
+        "Ant",
+        "Mouse",
+        "Fly"
+      ],
+      "a": 0,
+      "e": "Proverbs 30:28 — A lizard can be caught with the hand, yet it is found in kings’ palaces.",
+      "d": "hard"
+    },
+    {
+      "q": "What animal did Samson find a swarm of bees and honey in the carcass of?",
+      "o": [
+        "Ox",
+        "Donkey",
+        "Lion",
+        "Bear"
+      ],
+      "a": 2,
+      "e": "Judges 14:8 — He turned aside to look at the lion’s carcass, and in it he saw a swarm of bees and some honey.",
+      "d": "medium"
+    },
+    {
+      "q": "How many of each 'clean' animal did Noah take on the ark?",
+      "o": [
+        "2",
+        "7 (or 7 pairs)",
+        "12",
+        "14"
+      ],
+      "a": 1,
+      "e": "Genesis 7:2 — Take with you seven pairs of every kind of clean animal.",
+      "d": "medium"
+    },
+    {
+      "q": "Which animal is mentioned as being 'cursed' above all livestock in Genesis 3?",
+      "o": [
+        "Serpent",
+        "Vulture",
+        "Wolf",
+        "Pig"
+      ],
+      "a": 0,
+      "e": "Genesis 3:14 — Cursed are you above all livestock and all wild animals! You will crawl on your belly.",
+      "d": "easy"
+    },
+    {
+      "q": "What animals did the Egyptians pursue the Israelites with?",
+      "o": [
+        "Camels",
+        "Elephants",
+        "Horses and Chariots",
+        "Donkeys"
+      ],
+      "a": 2,
+      "e": "Exodus 14:9 — The Egyptians—all Pharaoh’s horses and chariots, horsemen and troops—pursued the Israelites.",
+      "d": "medium"
+    },
+    {
+      "q": "Which animal is associated with the goddess of the Ephesians in Acts 19 (indirectly via a shrine)?",
+      "o": [
+        "Deer",
+        "Bee",
+        "Lion",
+        "Eagle"
+      ],
+      "a": 0,
+      "e": "Artemis (Diana) was often associated with the deer/stag. (Harder question)",
+      "d": "hard"
+    },
+    {
+      "q": "What animal did the Gibeonites use to deceive Joshua, along with worn-out sacks and wineskins?",
+      "o": [
+        "Donkeys",
+        "Camels",
+        "Horses",
+        "Oxen"
+      ],
+      "a": 0,
+      "e": "Joshua 9:4 — They loaded their donkeys with worn-out sacks and old wineskins.",
+      "d": "hard"
+    },
+    {
+      "q": "What animal did the prophet Nathan use in his parable to David?",
+      "o": [
+        "Lamb",
+        "Goat",
+        "Cow",
+        "Lion"
+      ],
+      "a": 0,
+      "e": "2 Samuel 12:3 — But the poor man had nothing except one little ewe lamb he had bought.",
+      "d": "medium"
+    },
+    {
+      "q": "Which animal did Jesus say it is easier for to go through the eye of a needle than for a rich man to enter heaven?",
+      "o": [
+        "Elephant",
+        "Camel",
+        "Donkey",
+        "Horse"
+      ],
+      "a": 1,
+      "e": "Matthew 19:24 — It is easier for a camel to go through the eye of a needle.",
+      "d": "easy"
+    },
+    {
+      "q": "What animal did the father of the prodigal son kill for the celebration?",
+      "o": [
+        "Lamb",
+        "Fatted calf",
+        "Goat",
+        "Pig"
+      ],
+      "a": 1,
+      "e": "Luke 15:23 — Bring the fattened calf and kill it. Let’s have a feast and celebrate.",
+      "d": "medium"
+    },
+    {
+      "q": "What animals were the Israelites not allowed to eat according to Leviticus 11?",
+      "o": [
+        "Sheep",
+        "Pigs",
+        "Cows",
+        "Goats"
+      ],
+      "a": 1,
+      "e": "Leviticus 11:7 — And the pig... for you it is unclean.",
+      "d": "easy"
+    },
+    {
+      "q": "Which bird is mentioned in Psalm 103 as a symbol of renewed youth?",
+      "o": [
+        "Eagle",
+        "Phoenix",
+        "Dove",
+        "Falcon"
+      ],
+      "a": 0,
+      "e": "Psalm 103:5 — So that your youth is renewed like the eagle’s.",
+      "d": "medium"
+    },
+    {
+      "q": "What animal did Solomon import along with gold, silver, and ivory?",
+      "o": [
+        "Apes and Baboons (Peacocks)",
+        "Lions",
+        "Elephants",
+        "Camels"
+      ],
+      "a": 0,
+      "e": "1 Kings 10:22 — They brought gold, silver and ivory, and apes and baboons (or peacocks).",
+      "d": "hard"
+    },
+    {
+      "q": "Which animal did the 42 boys mock Elisha about, leading to their attack?",
+      "o": [
+        "Lions",
+        "Bears",
+        "Wolves",
+        "Leopards"
+      ],
+      "a": 1,
+      "e": "2 Kings 2:24 — Then two bears came out of the woods and mangled forty-two of the boys.",
+      "d": "medium"
+    },
+    {
+      "q": "What animal is the sluggard told to consider in Proverbs 6?",
+      "o": [
+        "Bee",
+        "Ant",
+        "Snail",
+        "Sloth"
+      ],
+      "a": 1,
+      "e": "Proverbs 6:6 — Go to the ant, you sluggard; consider its ways and be wise!",
+      "d": "easy"
+    },
+    {
+      "q": "Which animal is described as 'mocking at fear' and 'not frightened' in Job 39?",
+      "o": [
+        "Lion",
+        "Horse",
+        "Eagle",
+        "Ostrich"
+      ],
+      "a": 1,
+      "e": "Job 39:19-22 — Do you give the horse its strength?... It laughs at fear, afraid of nothing.",
+      "d": "hard"
+    },
+    {
+      "q": "What animal did the widow of Zarephath have a small amount of oil and what else?",
+      "o": [
+        "Flour",
+        "Honey",
+        "Wine",
+        "Milk"
+      ],
+      "a": 0,
+      "e": "1 Kings 17:12 — I don’t have any bread—only a handful of flour in a jar and a little olive oil in a jug. (Not an animal question per se, but in that context)",
+      "d": "medium"
+    },
+    {
+      "q": "What animal did the Israelites find in the desert that bit them, leading to the bronze serpent?",
+      "o": [
+        "Scorpions",
+        "Snakes (Fiery Serpents)",
+        "Spiders",
+        "Lizards"
+      ],
+      "a": 1,
+      "e": "Numbers 21:6 — Then the Lord sent fiery serpents among the people.",
+      "d": "medium"
+    },
+    {
+      "q": "Which animal's fat was never to be eaten by the Israelites?",
+      "o": [
+        "Sheep",
+        "Oxen",
+        "Goat",
+        "All of the above"
+      ],
+      "a": 3,
+      "e": "Leviticus 7:23 — Do not eat any of the fat of cattle, sheep or goats.",
+      "d": "hard"
+    },
+    {
+      "q": "What animal did the King of Assyria send to Samaria to kill the people who did not fear the Lord?",
+      "o": [
+        "Lions",
+        "Wolves",
+        "Bears",
+        "Serpents"
+      ],
+      "a": 0,
+      "e": "2 Kings 17:25 — The Lord sent lions among them and they killed some of the people.",
+      "d": "hard"
+    },
+    {
+      "q": "Which bird did God tell Job 'treats her young harshly, as if they were not hers'?",
+      "o": [
+        "Eagle",
+        "Ostrich",
+        "Raven",
+        "Hawk"
+      ],
+      "a": 1,
+      "e": "Job 39:13-16 — The wings of the ostrich flap joyfully... She treats her young harshly.",
+      "d": "hard"
+    },
+    {
+      "q": "What animal did the Philistines send back with the Ark as a guilt offering?",
+      "o": [
+        "Gold calves",
+        "Gold rats (and tumors)",
+        "Sheep",
+        "Goats"
+      ],
+      "a": 1,
+      "e": "1 Samuel 6:4 — Five gold tumors and five gold rats.",
+      "d": "hard"
+    },
+    {
+      "q": "Which animal did Daniel's friends not have to face, but Daniel did?",
+      "o": [
+        "Lion",
+        "Bear",
+        "Leopard",
+        "Wolf"
+      ],
+      "a": 0,
+      "e": "Daniel 6:16 — So the king gave the order, and they brought Daniel and threw him into the lions’ den.",
+      "d": "easy"
+    },
+    {
+      "q": "What animal's blood was used to dip Joseph's coat in?",
+      "o": [
+        "Lamb",
+        "Goat",
+        "Ox",
+        "Bull"
+      ],
+      "a": 1,
+      "e": "Genesis 37:31 — Then they got Joseph’s robe, slaughtered a goat and dipped the robe in the blood.",
+      "d": "medium"
+    },
+    {
+      "q": "Which animal is used in the Bible to describe someone who is stubborn?",
+      "o": [
+        "Mule",
+        "Donkey",
+        "Ox",
+        "Pig"
+      ],
+      "a": 0,
+      "e": "Psalm 32:9 — Do not be like the horse or the mule, which have no understanding.",
+      "d": "medium"
+    },
+    {
+      "q": "What animal did the Shulammite's beloved resemble in Song of Solomon?",
+      "o": [
+        "Lion",
+        "Gazelle or young stag",
+        "Dove",
+        "Eagle"
+      ],
+      "a": 1,
+      "e": "Song of Solomon 2:9 — My beloved is like a gazelle or a young stag.",
+      "d": "medium"
+    },
+    {
+      "q": "What animal did the Israelites make to carry their sins on the Day of Atonement?",
+      "o": [
+        "Scapegoat",
+        "Sacrificial lamb",
+        "Bull",
+        "Ram"
+      ],
+      "a": 0,
+      "e": "Leviticus 16:10 — But the goat chosen by lot as the scapegoat shall be presented alive before the Lord.",
+      "d": "medium"
+    },
+    {
+      "q": "Which animal did Peter deny Jesus before it crowed?",
+      "o": [
+        "Eagle",
+        "Rooster (Cock)",
+        "Dove",
+        "Sparrow"
+      ],
+      "a": 1,
+      "e": "Matthew 26:34 — This very night, before the rooster crows, you will disown me three times.",
+      "d": "easy"
+    },
+    {
+      "q": "What animals did the sorcerers of Egypt turn their staffs into?",
+      "o": [
+        "Snakes",
+        "Frogs",
+        "Lizards",
+        "Fish"
+      ],
+      "a": 0,
+      "e": "Exodus 7:12 — Each one threw down his staff and it became a snake.",
+      "d": "medium"
+    },
+    {
+      "q": "Which animal did Habakkuk say the Lord makes his feet like?",
+      "o": [
+        "Eagle",
+        "Deer (Hind's feet)",
+        "Lion",
+        "Mountain goat"
+      ],
+      "a": 1,
+      "e": "Habakkuk 3:19 — He makes my feet like the feet of a deer.",
+      "d": "medium"
+    },
+    {
+      "q": "What animal did the people of Lystra think Paul and Barnabas were (Zeus and Hermes), leading them to bring what to sacrifice?",
+      "o": [
+        "Lambs",
+        "Bulls and Garlands",
+        "Goats",
+        "Pigeons"
+      ],
+      "a": 1,
+      "e": "Acts 14:13 — The priest of Zeus... brought bulls and wreaths to the city gates.",
+      "d": "hard"
+    },
+    {
+      "q": "What animal did the prophet Isaiah say would lie down with the lamb in the future kingdom?",
+      "o": [
+        "Lion",
+        "Wolf",
+        "Leopard",
+        "Bear"
+      ],
+      "a": 1,
+      "e": "Isaiah 11:6 — The wolf will live with the lamb.",
+      "d": "medium"
+    },
+    {
+      "q": "Which animal did the prophet Isaiah say would eat straw like the ox?",
+      "o": [
+        "Lion",
+        "Wolf",
+        "Leopard",
+        "Bear"
+      ],
+      "a": 0,
+      "e": "Isaiah 11:7 — The lion will eat straw like the ox.",
+      "d": "medium"
+    },
+    {
+      "q": "What animal did the prophet Isaiah say the nursing child would play near?",
+      "o": [
+        "Lion's den",
+        "Cobra's hole (Viper's den)",
+        "Wolf's lair",
+        "Bear's cave"
+      ],
+      "a": 1,
+      "e": "Isaiah 11:8 — The infant will play near the cobra’s den.",
+      "d": "hard"
+    },
+    {
+      "q": "What animal's skin was used for the covering of the Tabernacle?",
+      "o": [
+        "Sheep",
+        "Goat",
+        "Sea cows (Dugongs/Badger skins)",
+        "Ram"
+      ],
+      "a": 2,
+      "e": "Exodus 26:14 — Make for the tent a covering of ram skins dyed red, and over that a covering of the hides of sea cows. (KJV: badger skins)",
+      "d": "hard"
+    },
+    {
+      "q": "Which animal is mentioned as being able to 'understand the time of her coming' in Jeremiah 8?",
+      "o": [
+        "Stork",
+        "Dove",
+        "Crane and Swallow",
+        "All of the above"
+      ],
+      "a": 3,
+      "e": "Jeremiah 8:7 — Even the stork in the sky knows her appointed seasons, and the dove, the swift and the thrush observe the time of their migration.",
+      "d": "hard"
+    },
+    {
+      "q": "What animal did the false prophets in the time of Micaiah make horns of?",
+      "o": [
+        "Iron",
+        "Bronze",
+        "Wood",
+        "Silver"
+      ],
+      "a": 0,
+      "e": "1 Kings 22:11 — Now Zedekiah son of Kenaanah had made iron horns. (Representing an ox)",
+      "d": "hard"
+    },
+    {
+      "q": "What animal did the inhabitants of Malta think bit Paul, leading them to think he was a murderer?",
+      "o": [
+        "Scorpion",
+        "Viper (Snake)",
+        "Spider",
+        "Lizard"
+      ],
+      "a": 1,
+      "e": "Acts 28:3 — A viper, driven out by the heat, fastened itself on his hand.",
+      "d": "medium"
+    },
+    {
+      "q": "What animal did the Lord use to symbolize the kingdom of Greece in Daniel 8?",
+      "o": [
+        "Ram",
+        "Goat",
+        "Lion",
+        "Leopard"
+      ],
+      "a": 1,
+      "e": "Daniel 8:5 — A goat with a prominent horn between its eyes came from the west.",
+      "d": "hard"
+    },
+    {
+      "q": "What animal did the Lord use to symbolize the Medo-Persian empire in Daniel 8?",
+      "o": [
+        "Ram",
+        "Goat",
+        "Lion",
+        "Bear"
+      ],
+      "a": 0,
+      "e": "Daniel 8:3-4 — I looked up, and there before me was a ram with two horns.",
+      "d": "hard"
+    },
+    {
+      "q": "Which animal is described as 'king over all that are proud' in Job 41?",
+      "o": [
+        "Lion",
+        "Leviathan",
+        "Behemoth",
+        "Eagle"
+      ],
+      "a": 1,
+      "e": "Job 41:34 — He looks on every haughty thing; he is king over all that are proud. (Referring to Leviathan)",
+      "d": "hard"
+    },
+    {
+      "q": "What animal did the Lord send to destroy the gourd (vine) that shaded Jonah?",
+      "o": [
+        "Locust",
+        "Worm",
+        "Caterpillar",
+        "Beetle"
+      ],
+      "a": 1,
+      "e": "Jonah 4:7 — But at dawn the next day God provided a worm, which chewed the vine so that it withered.",
+      "d": "medium"
+    },
+    {
+      "q": "What animal did the Lord use to describe the Assyrian army in Isaiah 7?",
+      "o": [
+        "Bee",
+        "Fly",
+        "Lion",
+        "Wolf"
+      ],
+      "a": 1,
+      "e": "Isaiah 7:18 — In that day the Lord will whistle for flies from the Nile... and for bees from the land of Assyria.",
+      "d": "hard"
+    },
+    {
+      "q": "Which animal is mentioned as being 'not afraid of any' in Proverbs 30?",
+      "o": [
+        "Lion",
+        "Horse",
+        "Eagle",
+        "Greyhound (or Rooster)"
+      ],
+      "a": 0,
+      "e": "Proverbs 30:30 — A lion, mighty among beasts, who retreats before nothing.",
+      "d": "medium"
+    },
+    {
+      "q": "Which animal is mentioned as being 'stately in his stride' in Proverbs 30 (KJV: greyhound)?",
+      "o": [
+        "Lion",
+        "Rooster (or Greyhound)",
+        "He-goat",
+        "All of the above"
+      ],
+      "a": 3,
+      "e": "Proverbs 30:29-31 — There are three things that are stately in their stride... a lion... a strutting rooster... a he-goat.",
+      "d": "hard"
+    },
+    {
+      "q": "What animal did the Lord use to describe the tribe of Issachar?",
+      "o": [
+        "Donkey",
+        "Ox",
+        "Lamb",
+        "Lion"
+      ],
+      "a": 0,
+      "e": "Genesis 49:14 — Issachar is a rawboned donkey.",
+      "d": "hard"
+    },
+    {
+      "q": "What animal did the Lord use to describe the tribe of Gad?",
+      "o": [
+        "Troop (Lioness)",
+        "Wolf",
+        "Deer",
+        "Serpent"
+      ],
+      "a": 0,
+      "e": "Genesis 49:19 — Gad will be attacked by a band of raiders, but he will attack them at their heels. (Often associated with a lion/warrior)",
+      "d": "hard"
+    },
+    {
+      "q": "What animal did the Lord use to describe the tribe of Joseph?",
+      "o": [
+        "Fruitful bough (Wild donkey)",
+        "Lion",
+        "Lamb",
+        "Eagle"
+      ],
+      "a": 0,
+      "e": "Genesis 49:22 — Joseph is a fruitful vine. (KJV/Other versions sometimes compare him to a wild ox or bull in Deut 33:17)",
+      "d": "hard"
+    },
+    {
+      "q": "Which animal is mentioned in Revelation 4 as one of the four living creatures?",
+      "o": [
+        "Lion",
+        "Ox",
+        "Man",
+        "Eagle"
+      ],
+      "a": 3,
+      "e": "Revelation 4:7 — The first living creature was like a lion, the second was like an ox, the third had a face like a man, the fourth was like a flying eagle.",
+      "d": "medium"
+    },
+    {
+      "q": "What animal did the Israelites make a representation of to look at and be healed?",
+      "o": [
+        "Calf",
+        "Serpent (Snake)",
+        "Lamb",
+        "Lion"
+      ],
+      "a": 1,
+      "e": "Numbers 21:8 — The Lord said to Moses, 'Make a snake and put it up on a pole.'",
+      "d": "easy"
+    },
+    {
+      "q": "What animal did the Lord use to describe the tribe of Dan?",
+      "o": [
+        "Viper (Snake)",
+        "Lion",
+        "Wolf",
+        "Lamb"
+      ],
+      "a": 0,
+      "e": "Genesis 49:17 — Dan will be a snake by the roadside.",
+      "d": "hard"
+    },
+    {
+      "q": "What animal did the Lord use to describe the tribe of Benjamin?",
+      "o": [
+        "Wolf",
+        "Lion",
+        "Lamb",
+        "Deer"
+      ],
+      "a": 0,
+      "e": "Genesis 49:27 — Benjamin is a ravenous wolf.",
+      "d": "hard"
+    },
+    {
+      "q": "What animal did the Lord use to describe the tribe of Naphtali?",
+      "o": [
+        "Doe (Deer)",
+        "Lion",
+        "Wolf",
+        "Lamb"
+      ],
+      "a": 0,
+      "e": "Genesis 49:21 — Naphtali is a doe set free.",
+      "d": "hard"
+    },
+    {
+      "q": "Which animal is mentioned as being 'without a king' in Proverbs 30?",
+      "o": [
+        "Locust",
+        "Ant",
+        "Bee",
+        "Spider"
+      ],
+      "a": 0,
+      "e": "Proverbs 30:27 — Locusts have no king.",
+      "d": "medium"
+    },
+    {
+      "q": "What animal did the Lord use to describe the tribe of Judah?",
+      "o": [
+        "Lion's cub",
+        "Lamb",
+        "Ox",
+        "Eagle"
+      ],
+      "a": 0,
+      "e": "Genesis 49:9 — You are a lion’s cub, Judah.",
+      "d": "medium"
+    },
+    {
+      "q": "Which animal is mentioned as being 'wise' in Proverbs 30?",
+      "o": [
+        "Ant",
+        "Cony (Rock badger)",
+        "Locust",
+        "Lizard"
+      ],
+      "a": 0,
+      "e": "Proverbs 30:24-25 — Ants are... extremely wise.",
+      "d": "medium"
+    },
+    {
+      "q": "What animal did the Lord use to describe the tribe of Asher?",
+      "o": [
+        "Rich food (Bread)",
+        "Lion",
+        "Lamb",
+        "Deer"
+      ],
+      "a": 0,
+      "e": "Genesis 49:20 — Asher’s food will be rich. (No animal specifically, but associated with richness)",
+      "d": "hard"
+    },
+    {
+      "q": "What animal did the Lord use to describe the tribe of Zebulun?",
+      "o": [
+        "Haven for ships",
+        "Lion",
+        "Lamb",
+        "Deer"
+      ],
+      "a": 0,
+      "e": "Genesis 49:13 — Zebulun will live by the seashore.",
+      "d": "hard"
+    },
+    {
+      "q": "What animal did the Lord use to describe the tribe of Reuben?",
+      "o": [
+        "Unstable as water",
+        "Lion",
+        "Lamb",
+        "Deer"
+      ],
+      "a": 0,
+      "e": "Genesis 49:3-4 — Reuben... unstable as water.",
+      "d": "hard"
+    },
+    {
+      "q": "What animal did the Lord use to describe the tribe of Simeon and Levi?",
+      "o": [
+        "Instruments of cruelty",
+        "Lion",
+        "Lamb",
+        "Deer"
+      ],
+      "a": 0,
+      "e": "Genesis 49:5 — Simeon and Levi are brothers—their swords are weapons of violence.",
+      "d": "hard"
+    },
+    {
+      "q": "Which animal is mentioned as being 'little upon the earth' but wise in Proverbs 30?",
+      "o": [
+        "Ant",
+        "Cony",
+        "Locust",
+        "Lizard"
+      ],
+      "a": 1,
+      "e": "Proverbs 30:26 — Hyraxes (Conies) are creatures of little power, yet they make their home in the crags.",
+      "d": "hard"
+    },
+    {
+      "q": "Which animal is mentioned as being 'in kings' palaces' in Proverbs 30?",
+      "o": [
+        "Lizard",
+        "Ant",
+        "Locust",
+        "Cony"
+      ],
+      "a": 0,
+      "e": "Proverbs 30:28 — A lizard... is found in kings’ palaces.",
+      "d": "hard"
+    },
+    {
+      "q": "In what city was Jesus born?",
+      "o": [
+        "Nazareth",
+        "Jerusalem",
+        "Bethlehem",
+        "Jericho"
+      ],
+      "a": 2,
+      "e": "Matthew 2:1 — Jesus was born in Bethlehem in Judea.",
+      "d": "easy"
+    },
+    {
+      "q": "Where did Moses receive the Ten Commandments?",
+      "o": [
+        "Mount Nebo",
+        "Mount Sinai",
+        "Mount Ararat",
+        "Mount Zion"
+      ],
+      "a": 1,
+      "e": "Exodus 19:20 — The Lord descended to the top of Mount Sinai and called Moses.",
+      "d": "easy"
+    },
+    {
+      "q": "In what river was Jesus baptized?",
+      "o": [
+        "Nile",
+        "Jordan",
+        "Euphrates",
+        "Tigris"
+      ],
+      "a": 1,
+      "e": "Matthew 3:13 — Then Jesus came from Galilee to the Jordan to be baptized by John.",
+      "d": "easy"
+    },
+    {
+      "q": "What was the name of the garden where Jesus prayed before his crucifixion?",
+      "o": [
+        "Eden",
+        "Gethsemane",
+        "Zion",
+        "Carmel"
+      ],
+      "a": 1,
+      "e": "Matthew 26:36 — Then Jesus went with his disciples to a place called Gethsemane.",
+      "d": "easy"
+    },
+    {
+      "q": "On what mountain did the ark of Noah come to rest?",
+      "o": [
+        "Mount Sinai",
+        "Mount Ararat",
+        "Mount Carmel",
+        "Mount Hermon"
+      ],
+      "a": 1,
+      "e": "Genesis 8:4 — The ark came to rest on the mountains of Ararat.",
+      "d": "easy"
+    },
+    {
+      "q": "Which city's walls fell down after the Israelites marched around it?",
+      "o": [
+        "Jericho",
+        "Ai",
+        "Gibeon",
+        "Hazor"
+      ],
+      "a": 0,
+      "e": "Joshua 6:20 — The wall collapsed; so every man charged straight in, and they took the city.",
+      "d": "easy"
+    },
+    {
+      "q": "What sea did the Israelites cross to escape from Egypt?",
+      "o": [
+        "Dead Sea",
+        "Sea of Galilee",
+        "Red Sea",
+        "Mediterranean Sea"
+      ],
+      "a": 2,
+      "e": "Exodus 14:21-22 — The Lord drove the sea back... and the Israelites went through the sea on dry ground.",
+      "d": "easy"
+    },
+    {
+      "q": "Where did the people try to build a tower that would reach to heaven?",
+      "o": [
+        "Babel",
+        "Nineveh",
+        "Babylon",
+        "Ur"
+      ],
+      "a": 0,
+      "e": "Genesis 11:4-9 — That is why it was called Babel—because there the Lord confused the language of the whole world.",
+      "d": "easy"
+    },
+    {
+      "q": "In what city did Jesus grow up?",
+      "o": [
+        "Bethlehem",
+        "Jerusalem",
+        "Nazareth",
+        "Capernaum"
+      ],
+      "a": 2,
+      "e": "Matthew 2:23 — And he went and lived in a town called Nazareth.",
+      "d": "easy"
+    },
+    {
+      "q": "What is the lowest point on earth mentioned in the Bible (and in reality)?",
+      "o": [
+        "Sea of Galilee",
+        "Dead Sea (Salt Sea)",
+        "Jordan River",
+        "Nile River"
+      ],
+      "a": 1,
+      "e": "The Salt Sea (Dead Sea) is frequently mentioned in the Old Testament (e.g., Genesis 14:3).",
+      "d": "medium"
+    },
+    {
+      "q": "On which mountain did Elijah have a contest with the prophets of Baal?",
+      "o": [
+        "Mount Sinai",
+        "Mount Nebo",
+        "Mount Carmel",
+        "Mount Zion"
+      ],
+      "a": 2,
+      "e": "1 Kings 18:19 — Now summon the people from all over Israel to meet me on Mount Carmel.",
+      "d": "medium"
+    },
+    {
+      "q": "In what city were the disciples first called Christians?",
+      "o": [
+        "Jerusalem",
+        "Antioch",
+        "Rome",
+        "Ephesus"
+      ],
+      "a": 1,
+      "e": "Acts 11:26 — The disciples were called Christians first at Antioch.",
+      "d": "medium"
+    },
+    {
+      "q": "What city was the capital of the Northern Kingdom of Israel?",
+      "o": [
+        "Jerusalem",
+        "Samaria",
+        "Shechem",
+        "Tirzah"
+      ],
+      "a": 1,
+      "e": "1 Kings 16:24 — Omri... built a city on it, which he called Samaria.",
+      "d": "medium"
+    },
+    {
+      "q": "What city was known as the 'City of David'?",
+      "o": [
+        "Bethlehem",
+        "Jerusalem",
+        "Hebron",
+        "Zion"
+      ],
+      "a": 1,
+      "e": "2 Samuel 5:7 — David captured the fortress of Zion—which is the City of David.",
+      "d": "easy"
+    },
+    {
+      "q": "Where did Jonah try to flee to when he was supposed to go to Nineveh?",
+      "o": [
+        "Tarshish",
+        "Joppa",
+        "Tyre",
+        "Sidon"
+      ],
+      "a": 0,
+      "e": "Jonah 1:3 — But Jonah ran away from the Lord and headed for Tarshish.",
+      "d": "easy"
+    },
+    {
+      "q": "What river did Joshua and the Israelites cross to enter the Promised Land?",
+      "o": [
+        "Nile",
+        "Jordan",
+        "Euphrates",
+        "Arnon"
+      ],
+      "a": 1,
+      "e": "Joshua 3:17 — The whole nation had completed the crossing on dry ground.",
+      "d": "easy"
+    },
+    {
+      "q": "Which island was John on when he received the Revelation?",
+      "o": [
+        "Crete",
+        "Cyprus",
+        "Patmos",
+        "Malta"
+      ],
+      "a": 2,
+      "e": "Revelation 1:9 — I... was on the island of Patmos because of the word of God.",
+      "d": "medium"
+    },
+    {
+      "q": "Where did the transfiguration of Jesus take place (traditionally)?",
+      "o": [
+        "Mount Hermon or Mount Tabor",
+        "Mount Sinai",
+        "Mount Zion",
+        "Mount of Olives"
+      ],
+      "a": 0,
+      "e": "Matthew 17:1 refers to it as 'a high mountain'. Mount Tabor or Mount Hermon are the traditional sites.",
+      "d": "hard"
+    },
+    {
+      "q": "In what city did Paul see an altar 'To an Unknown God'?",
+      "o": [
+        "Rome",
+        "Corinth",
+        "Athens",
+        "Ephesus"
+      ],
+      "a": 2,
+      "e": "Acts 17:22-23 — Men of Athens... I even found an altar with this inscription: TO AN UNKNOWN GOD.",
+      "d": "medium"
+    },
+    {
+      "q": "Where was the pool of Siloam located?",
+      "o": [
+        "Nazareth",
+        "Jerusalem",
+        "Jericho",
+        "Bethsaida"
+      ],
+      "a": 1,
+      "e": "John 9:7 — 'Go,' he told him, 'wash in the Pool of Siloam'.",
+      "d": "medium"
+    },
+    {
+      "q": "Which city did Jesus perform his first miracle at a wedding?",
+      "o": [
+        "Cana",
+        "Capernaum",
+        "Nain",
+        "Bethany"
+      ],
+      "a": 0,
+      "e": "John 2:11 — What Jesus did here in Cana of Galilee was the first of the signs through which he revealed his glory.",
+      "d": "easy"
+    },
+    {
+      "q": "What mountain did Moses die on?",
+      "o": [
+        "Mount Sinai",
+        "Mount Nebo",
+        "Mount Hor",
+        "Mount Zion"
+      ],
+      "a": 1,
+      "e": "Deuteronomy 34:1-5 — Then Moses climbed Mount Nebo... There Moses the servant of the Lord died.",
+      "d": "medium"
+    },
+    {
+      "q": "Which city was Saul of Tarsus from?",
+      "o": [
+        "Jerusalem",
+        "Antioch",
+        "Tarsus",
+        "Damascus"
+      ],
+      "a": 2,
+      "e": "Acts 22:3 — I am a Jew, born in Tarsus of Cilicia.",
+      "d": "easy"
+    },
+    {
+      "q": "Where did Jesus meet the woman at the well?",
+      "o": [
+        "Jerusalem",
+        "Sychar",
+        "Bethsaida",
+        "Nazareth"
+      ],
+      "a": 1,
+      "e": "John 4:5 — So he came to a town in Samaria called Sychar.",
+      "d": "medium"
+    },
+    {
+      "q": "What was the name of the place where Jesus was crucified?",
+      "o": [
+        "Gethsemane",
+        "Golgotha",
+        "Zion",
+        "Moriah"
+      ],
+      "a": 1,
+      "e": "John 19:17 — Carrying his own cross, he went out to the place of the Skull (which in Aramaic is called Golgotha).",
+      "d": "easy"
+    },
+    {
+      "q": "In what city did the walls fall after the Israelites blew trumpets?",
+      "o": [
+        "Ai",
+        "Jericho",
+        "Gibeon",
+        "Hazor"
+      ],
+      "a": 1,
+      "e": "Joshua 6:20 — The wall collapsed.",
+      "d": "easy"
+    },
+    {
+      "q": "Where did Paul shipwreck on his way to Rome?",
+      "o": [
+        "Cyprus",
+        "Crete",
+        "Malta",
+        "Sicily"
+      ],
+      "a": 2,
+      "e": "Acts 28:1 — Once safely on shore, we found out that the island was called Malta.",
+      "d": "medium"
+    },
+    {
+      "q": "Which region was known for its 'balm'?",
+      "o": [
+        "Gilead",
+        "Bashan",
+        "Sharon",
+        "Carmel"
+      ],
+      "a": 0,
+      "e": "Jeremiah 8:22 — Is there no balm in Gilead? Is there no physician there?",
+      "d": "hard"
+    },
+    {
+      "q": "Where was the home of Mary, Martha, and Lazarus?",
+      "o": [
+        "Bethlehem",
+        "Bethany",
+        "Bethsaida",
+        "Bethphage"
+      ],
+      "a": 1,
+      "e": "John 11:1 — Now a man named Lazarus was sick. He was from Bethany, the village of Mary and her sister Martha.",
+      "d": "easy"
+    },
+    {
+      "q": "What river flows out of the Garden of Eden and splits into four?",
+      "o": [
+        "Jordan",
+        "Nile",
+        "The river in Eden (Pishon, Gihon, Tigris, Euphrates)",
+        "Amazon"
+      ],
+      "a": 2,
+      "e": "Genesis 2:10 — A river watering the garden flowed from Eden; from there it was separated into four headwaters.",
+      "d": "medium"
+    },
+    {
+      "q": "Where did Elijah go to hide from Jezebel after the contest on Mount Carmel?",
+      "o": [
+        "Mount Sinai (Horeb)",
+        "The desert of Damascus",
+        "Zarephath",
+        "Beer-sheba"
+      ],
+      "a": 0,
+      "e": "1 Kings 19:8 — He traveled forty days and forty nights until he reached Horeb, the mountain of God.",
+      "d": "hard"
+    },
+    {
+      "q": "Which city did Jesus lament over, saying he wanted to gather its children as a hen gathers her chicks?",
+      "o": [
+        "Nazareth",
+        "Capernaum",
+        "Jerusalem",
+        "Bethany"
+      ],
+      "a": 2,
+      "e": "Matthew 23:37 — Jerusalem, Jerusalem... how often I have longed to gather your children together.",
+      "d": "easy"
+    },
+    {
+      "q": "Where were the disciples when the Holy Spirit descended on the Day of Pentecost?",
+      "o": [
+        "The Temple",
+        "A house in Jerusalem (Upper Room)",
+        "The Mount of Olives",
+        "The Garden of Gethsemane"
+      ],
+      "a": 1,
+      "e": "Acts 2:1-2 — They were all together in one place... it filled the whole house where they were sitting.",
+      "d": "medium"
+    },
+    {
+      "q": "In what city did Paul spend two years under house arrest?",
+      "o": [
+        "Ephesus",
+        "Rome",
+        "Corinth",
+        "Antioch"
+      ],
+      "a": 1,
+      "e": "Acts 28:30 — For two whole years Paul stayed there in his own rented house.",
+      "d": "medium"
+    },
+    {
+      "q": "Where did Philip meet the Ethiopian eunuch?",
+      "o": [
+        "On the road from Jerusalem to Gaza",
+        "In Samaria",
+        "In Caesarea",
+        "In Joppa"
+      ],
+      "a": 0,
+      "e": "Acts 8:26 — Go south to the road—the desert road—that goes down from Jerusalem to Gaza.",
+      "d": "medium"
+    },
+    {
+      "q": "Which city did Jesus call 'his own town'?",
+      "o": [
+        "Bethlehem",
+        "Nazareth",
+        "Capernaum",
+        "Jerusalem"
+      ],
+      "a": 2,
+      "e": "Matthew 9:1 — Jesus stepped into a boat, crossed over and came to his own town (referring to Capernaum).",
+      "d": "hard"
+    },
+    {
+      "q": "Where did Abraham go when God called him from Ur?",
+      "o": [
+        "Canaan",
+        "Egypt",
+        "Babylon",
+        "Assyria"
+      ],
+      "a": 0,
+      "e": "Genesis 12:5 — They set out for the land of Canaan, and they arrived there.",
+      "d": "easy"
+    },
+    {
+      "q": "In what city was the Great Temple of Artemis located?",
+      "o": [
+        "Rome",
+        "Athens",
+        "Ephesus",
+        "Corinth"
+      ],
+      "a": 2,
+      "e": "Acts 19:27 — The temple of the great goddess Artemis will be discredited.",
+      "d": "medium"
+    },
+    {
+      "q": "Where did the Israelites cross the Jordan River?",
+      "o": [
+        "Near Jericho",
+        "Near the Sea of Galilee",
+        "Near the Dead Sea",
+        "Near Dan"
+      ],
+      "a": 0,
+      "e": "Joshua 3:16 — The people crossed over opposite Jericho.",
+      "d": "medium"
+    },
+    {
+      "q": "Which mountain is also called 'The Mountain of God' and 'Horeb'?",
+      "o": [
+        "Mount Sinai",
+        "Mount Nebo",
+        "Mount Zion",
+        "Mount Hermon"
+      ],
+      "a": 0,
+      "e": "Exodus 3:1 — He led the flock to the far side of the wilderness and came to Horeb, the mountain of God.",
+      "d": "medium"
+    },
+    {
+      "q": "Where did Peter have a vision of a sheet with animals while staying at Simon the Tanner's house?",
+      "o": [
+        "Joppa",
+        "Caesarea",
+        "Lydda",
+        "Jerusalem"
+      ],
+      "a": 0,
+      "e": "Acts 10:5-9 — Send men to Joppa to bring back a man named Simon who is called Peter.",
+      "d": "medium"
+    },
+    {
+      "q": "In what city did Cornelius, the centurion, live?",
+      "o": [
+        "Joppa",
+        "Caesarea",
+        "Antioch",
+        "Jerusalem"
+      ],
+      "a": 1,
+      "e": "Acts 10:1 — At Caesarea there was a man named Cornelius.",
+      "d": "medium"
+    },
+    {
+      "q": "Where did the Israelites get water from a rock?",
+      "o": [
+        "Rephidim and Kadesh",
+        "Sinai",
+        "Marah",
+        "Elim"
+      ],
+      "a": 0,
+      "e": "Exodus 17:1-7 and Numbers 20:1-13 mention Rephidim and Kadesh respectively.",
+      "d": "hard"
+    },
+    {
+      "q": "Which valley is known as the site of the future battle of Armageddon?",
+      "o": [
+        "Valley of Jezreel (Megiddo)",
+        "Valley of Elah",
+        "Valley of Hinnom",
+        "Valley of Berakah"
+      ],
+      "a": 0,
+      "e": "Revelation 16:16 — Then they gathered the kings together to the place that in Hebrew is called Armageddon.",
+      "d": "medium"
+    },
+    {
+      "q": "Where did David hide from Saul in a cave?",
+      "o": [
+        "En Gedi",
+        "Adullam",
+        "Both A and B",
+        "Ziph"
+      ],
+      "a": 2,
+      "e": "1 Samuel 22:1 (Adullam) and 1 Samuel 24:1 (En Gedi).",
+      "d": "hard"
+    },
+    {
+      "q": "In what city did the riot of the silversmiths take place?",
+      "o": [
+        "Corinth",
+        "Ephesus",
+        "Athens",
+        "Philippi"
+      ],
+      "a": 1,
+      "e": "Acts 19:23-41 — A silversmith named Demetrius... started a riot in Ephesus.",
+      "d": "medium"
+    },
+    {
+      "q": "Where was the 'Pool of Bethesda' located?",
+      "o": [
+        "Jerusalem",
+        "Jericho",
+        "Capernaum",
+        "Bethsaida"
+      ],
+      "a": 0,
+      "e": "John 5:2 — Now there is in Jerusalem near the Sheep Gate a pool... called Bethesda.",
+      "d": "medium"
+    },
+    {
+      "q": "Which city did the prophet Amos come from?",
+      "o": [
+        "Jerusalem",
+        "Tekoa",
+        "Bethlehem",
+        "Samaria"
+      ],
+      "a": 1,
+      "e": "Amos 1:1 — The words of Amos, one of the shepherds of Tekoa.",
+      "d": "hard"
+    },
+    {
+      "q": "Where did Jesus find Peter and Andrew fishing?",
+      "o": [
+        "Sea of Galilee",
+        "Dead Sea",
+        "Jordan River",
+        "Mediterranean Sea"
+      ],
+      "a": 0,
+      "e": "Matthew 4:18 — As Jesus was walking by the Sea of Galilee, he saw two brothers.",
+      "d": "easy"
+    },
+    {
+      "q": "In what city did Paul raise Eutychus from the dead after he fell out of a window?",
+      "o": [
+        "Troas",
+        "Miletus",
+        "Ephesus",
+        "Philippi"
+      ],
+      "a": 0,
+      "e": "Acts 20:5-12 — We sailed from Philippi... and joined the others at Troas.",
+      "d": "hard"
+    },
+    {
+      "q": "Where was the 'Areopagus' (Mars' Hill) located?",
+      "o": [
+        "Rome",
+        "Athens",
+        "Corinth",
+        "Antioch"
+      ],
+      "a": 1,
+      "e": "Acts 17:19 — Then they took him and brought him to a meeting of the Areopagus.",
+      "d": "medium"
+    },
+    {
+      "q": "In what city were the believers first called Christians?",
+      "o": [
+        "Antioch",
+        "Jerusalem",
+        "Rome",
+        "Alexandria"
+      ],
+      "a": 0,
+      "e": "Acts 11:26 — The disciples were called Christians first at Antioch.",
+      "d": "medium"
+    },
+    {
+      "q": "Where did the Ark of the Covenant stay for 20 years before David brought it to Jerusalem?",
+      "o": [
+        "Shiloh",
+        "Kiriath Jearim",
+        "Gibeon",
+        "Beth Shemesh"
+      ],
+      "a": 1,
+      "e": "1 Samuel 7:1-2 — The ark remained at Kiriath Jearim a long time—twenty years in all.",
+      "d": "hard"
+    },
+    {
+      "q": "Which city did Jesus say would be 'brought down to Hades' because of its unbelief?",
+      "o": [
+        "Nazareth",
+        "Bethsaida",
+        "Capernaum",
+        "Chorazin"
+      ],
+      "a": 2,
+      "e": "Matthew 11:23 — And you, Capernaum... you will go down to Hades.",
+      "d": "hard"
+    },
+    {
+      "q": "Where did God confuse the languages of the people?",
+      "o": [
+        "Nineveh",
+        "Babylon",
+        "Babel",
+        "Ur"
+      ],
+      "a": 2,
+      "e": "Genesis 11:9 — That is why it was called Babel.",
+      "d": "easy"
+    },
+    {
+      "q": "In what city did Paul and Silas sing in prison at midnight?",
+      "o": [
+        "Thessalonica",
+        "Philippi",
+        "Berea",
+        "Athens"
+      ],
+      "a": 1,
+      "e": "Acts 16:25 — About midnight Paul and Silas were praying and singing hymns to God.",
+      "d": "medium"
+    },
+    {
+      "q": "Where did the 12 spies go to explore the land?",
+      "o": [
+        "Canaan",
+        "Egypt",
+        "Moab",
+        "Edom"
+      ],
+      "a": 0,
+      "e": "Numbers 13:17 — When Moses sent them to explore Canaan.",
+      "d": "easy"
+    },
+    {
+      "q": "Which city was known for its trade and seafaring, and was denounced by Ezekiel?",
+      "o": [
+        "Tyre",
+        "Sidon",
+        "Gaza",
+        "Ashkelon"
+      ],
+      "a": 0,
+      "e": "Ezekiel 26-28 contains prophecies against Tyre.",
+      "d": "hard"
+    },
+    {
+      "q": "Where did Jacob have his dream of a ladder to heaven?",
+      "o": [
+        "Bethel",
+        "Peniel",
+        "Shechem",
+        "Hebron"
+      ],
+      "a": 0,
+      "e": "Genesis 28:19 — He called that place Bethel.",
+      "d": "medium"
+    },
+    {
+      "q": "In what city did the prophet Isaiah live and prophecy?",
+      "o": [
+        "Samaria",
+        "Jerusalem",
+        "Babylon",
+        "Nineveh"
+      ],
+      "a": 1,
+      "e": "Isaiah was a prophet in Jerusalem during the reigns of Uzziah, Jotham, Ahaz, and Hezekiah.",
+      "d": "medium"
+    },
+    {
+      "q": "Where did the Israelites camp before they crossed the Red Sea?",
+      "o": [
+        "Pi Hahiroth",
+        "Etham",
+        "Succoth",
+        "Marah"
+      ],
+      "a": 0,
+      "e": "Exodus 14:2 — Tell the Israelites to turn back and encamp near Pi Hahiroth.",
+      "d": "hard"
+    },
+    {
+      "q": "Which city was the setting for the book of Ruth?",
+      "o": [
+        "Bethlehem",
+        "Moab",
+        "Both A and B",
+        "Jerusalem"
+      ],
+      "a": 2,
+      "e": "The story starts in Bethlehem, goes to Moab, and returns to Bethlehem.",
+      "d": "medium"
+    },
+    {
+      "q": "Where did Jesus stay during the week of his passion?",
+      "o": [
+        "Jerusalem",
+        "Bethany",
+        "Gethsemane",
+        "Emmaus"
+      ],
+      "a": 1,
+      "e": "Matthew 21:17 — And he left them and went out of the city to Bethany, where he spent the night.",
+      "d": "medium"
+    },
+    {
+      "q": "In what city did the prophet Jeremiah live and prophecy?",
+      "o": [
+        "Jerusalem",
+        "Anathoth",
+        "Both A and B",
+        "Babylon"
+      ],
+      "a": 2,
+      "e": "Jeremiah was from Anathoth but prophesied mainly in Jerusalem.",
+      "d": "hard"
+    },
+    {
+      "q": "Where did the prophet Daniel live and prophecy?",
+      "o": [
+        "Jerusalem",
+        "Babylon",
+        "Nineveh",
+        "Susa"
+      ],
+      "a": 1,
+      "e": "Daniel was taken to Babylon and prophesied there.",
+      "d": "medium"
+    },
+    {
+      "q": "Which city was the home of Goliath?",
+      "o": [
+        "Gath",
+        "Gaza",
+        "Ashdod",
+        "Ekron"
+      ],
+      "a": 0,
+      "e": "1 Samuel 17:4 — A champion named Goliath, who was from Gath, came out of the Philistine camp.",
+      "d": "medium"
+    },
+    {
+      "q": "Where did the Queen of Sheba come from to visit Solomon?",
+      "o": [
+        "Egypt",
+        "Ethiopia (or Saba/Yemen)",
+        "Babylon",
+        "Tyre"
+      ],
+      "a": 1,
+      "e": "1 Kings 10:1 — When the queen of Sheba heard about the fame of Solomon. Traditionally identified with Ethiopia or Sheba.",
+      "d": "medium"
+    },
+    {
+      "q": "In what city did the prophet Ezekiel live and prophecy during the exile?",
+      "o": [
+        "Jerusalem",
+        "Babylon (by the River Kebar)",
+        "Susa",
+        "Nineveh"
+      ],
+      "a": 1,
+      "e": "Ezekiel 1:1 — Among the exiles by the Kebar River.",
+      "d": "hard"
+    },
+    {
+      "q": "Where was the 'Valley of Dry Bones' located in Ezekiel's vision?",
+      "o": [
+        "A plain",
+        "A mountain",
+        "A valley",
+        "A city"
+      ],
+      "a": 2,
+      "e": "Ezekiel 37:1 — The hand of the Lord was on me... and set me in the middle of a valley; it was full of bones.",
+      "d": "medium"
+    },
+    {
+      "q": "Which city was the birthplace of the apostle Paul?",
+      "o": [
+        "Jerusalem",
+        "Tarsus",
+        "Antioch",
+        "Rome"
+      ],
+      "a": 1,
+      "e": "Acts 22:3 — I am a Jew, born in Tarsus of Cilicia.",
+      "d": "easy"
+    },
+    {
+      "q": "Where did the Lord tell Jonah to go originally?",
+      "o": [
+        "Tarshish",
+        "Nineveh",
+        "Babylon",
+        "Jerusalem"
+      ],
+      "a": 1,
+      "e": "Jonah 1:2 — Go to the great city of Nineveh and preach against it.",
+      "d": "easy"
+    },
+    {
+      "q": "In what city did Peter raise Dorcas (Tabitha) from the dead?",
+      "o": [
+        "Joppa",
+        "Lydda",
+        "Jerusalem",
+        "Caesarea"
+      ],
+      "a": 0,
+      "e": "Acts 9:36-42 — In Joppa there was a disciple named Tabitha... Peter went with them.",
+      "d": "medium"
+    },
+    {
+      "q": "Where did the Lord appear to Moses in the burning bush?",
+      "o": [
+        "Mount Sinai (Horeb)",
+        "The land of Midian",
+        "Both A and B",
+        "Egypt"
+      ],
+      "a": 2,
+      "e": "Exodus 3:1-2 — He came to Horeb... There the angel of the Lord appeared to him in flames of fire from within a bush.",
+      "d": "medium"
+    },
+    {
+      "q": "Which city did the Lord destroy along with Gomorrah?",
+      "o": [
+        "Sodom",
+        "Nineveh",
+        "Babylon",
+        "Jericho"
+      ],
+      "a": 0,
+      "e": "Genesis 19:24 — The Lord rained down burning sulfur on Sodom and Gomorrah.",
+      "d": "easy"
+    },
+    {
+      "q": "Where did Jesus feed the five thousand?",
+      "o": [
+        "Near Bethsaida",
+        "Near Capernaum",
+        "In the desert",
+        "All of the above"
+      ],
+      "a": 3,
+      "e": "Luke 9:10 refers to it as 'a town called Bethsaida'. Mark 6:31 calls it a 'remote place'.",
+      "d": "medium"
+    },
+    {
+      "q": "In what city did Paul and Barnabas separate?",
+      "o": [
+        "Antioch",
+        "Jerusalem",
+        "Paphos",
+        "Lystra"
+      ],
+      "a": 0,
+      "e": "Acts 15:36-40 — They had such a sharp disagreement that they parted company... Paul chose Silas and left.",
+      "d": "hard"
+    },
+    {
+      "q": "Where was the 'Garden of Eden' said to be located (general region)?",
+      "o": [
+        "In the East",
+        "In the West",
+        "In the North",
+        "In the South"
+      ],
+      "a": 0,
+      "e": "Genesis 2:8 — Now the Lord God had planted a garden in the east, in Eden.",
+      "d": "medium"
+    },
+    {
+      "q": "Which city did the Lord tell Abraham to leave his family and go to?",
+      "o": [
+        "Ur",
+        "Haran",
+        "Canaan",
+        "Egypt"
+      ],
+      "a": 2,
+      "e": "Genesis 12:1 — Go to the land I will show you. (Canaan)",
+      "d": "easy"
+    },
+    {
+      "q": "Where did the Lord appear to Jacob and he wrestled with him?",
+      "o": [
+        "Bethel",
+        "Peniel",
+        "Shechem",
+        "Hebron"
+      ],
+      "a": 1,
+      "e": "Genesis 32:30 — Jacob called the place Peniel, saying, 'I saw God face to face.'",
+      "d": "medium"
+    },
+    {
+      "q": "In what city did the prophet Elisha live?",
+      "o": [
+        "Samaria",
+        "Jerusalem",
+        "Jericho",
+        "Bethlehem"
+      ],
+      "a": 0,
+      "e": "Elisha lived in the Northern Kingdom, often in Samaria.",
+      "d": "hard"
+    },
+    {
+      "q": "Where did the Lord tell Elijah to go and hide by the brook Cherith?",
+      "o": [
+        "East of the Jordan",
+        "West of the Jordan",
+        "In the desert",
+        "In a cave"
+      ],
+      "a": 0,
+      "e": "1 Kings 17:3 — Leave here, turn eastward and hide in the Kerith Ravine, east of the Jordan.",
+      "d": "hard"
+    },
+    {
+      "q": "Which city was the home of Rahab?",
+      "o": [
+        "Jericho",
+        "Ai",
+        "Gibeon",
+        "Hazor"
+      ],
+      "a": 0,
+      "e": "Joshua 2:1 — They went and entered the house of a prostitute named Rahab.",
+      "d": "easy"
+    },
+    {
+      "q": "Where did the Israelites cross the Red Sea?",
+      "o": [
+        "The Gulf of Suez",
+        "The Gulf of Aqaba",
+        "The Bitter Lakes",
+        "The location is debated"
+      ],
+      "a": 3,
+      "e": "The exact location of the 'Yam Suph' (Red Sea/Reed Sea) is a subject of scholarly debate.",
+      "d": "hard"
+    },
+    {
+      "q": "In what city did the Lord tell the disciples to wait for the Holy Spirit?",
+      "o": [
+        "Nazareth",
+        "Galilee",
+        "Jerusalem",
+        "Antioch"
+      ],
+      "a": 2,
+      "e": "Acts 1:4 — Do not leave Jerusalem, but wait for the gift my Father promised.",
+      "d": "medium"
+    },
+    {
+      "q": "Where did the Lord appear to Paul on the road to?",
+      "o": [
+        "Tarsus",
+        "Antioch",
+        "Damascus",
+        "Rome"
+      ],
+      "a": 2,
+      "e": "Acts 9:3 — As he neared Damascus on his journey.",
+      "d": "easy"
+    },
+    {
+      "q": "Which city did the Lord tell the prophet Amos to prophecy against?",
+      "o": [
+        "Israel (Northern Kingdom)",
+        "Judah (Southern Kingdom)",
+        "Moab",
+        "Edom"
+      ],
+      "a": 0,
+      "e": "Amos was a prophet from Judah sent to the Northern Kingdom.",
+      "d": "medium"
+    },
+    {
+      "q": "Where did the Lord appear to the prophet Habakkuk?",
+      "o": [
+        "On a watchtower",
+        "In a temple",
+        "In a dream",
+        "In a valley"
+      ],
+      "a": 0,
+      "e": "Habakkuk 2:1 — I will stand at my watch for the Lord.",
+      "d": "hard"
+    },
+    {
+      "q": "In what city did the Lord tell the prophet Hosea to live?",
+      "o": [
+        "Samaria",
+        "Jerusalem",
+        "Tekoa",
+        "Anathoth"
+      ],
+      "a": 0,
+      "e": "Hosea was a prophet to the Northern Kingdom (Israel).",
+      "d": "hard"
+    },
+    {
+      "q": "Where did the Lord tell the prophet Joel to prophecy?",
+      "o": [
+        "Judah",
+        "Israel",
+        "Babylon",
+        "Nineveh"
+      ],
+      "a": 0,
+      "e": "The book of Joel is addressed to the people of Judah.",
+      "d": "hard"
+    },
+    {
+      "q": "Which city was the home of the prophet Micah?",
+      "o": [
+        "Moresheth",
+        "Tekoa",
+        "Anathoth",
+        "Tekoa"
+      ],
+      "a": 0,
+      "e": "Micah 1:1 — The word of the Lord that came to Micah of Moresheth.",
+      "d": "hard"
+    },
+    {
+      "q": "Where did the Lord tell the prophet Nahum to prophecy against?",
+      "o": [
+        "Nineveh",
+        "Babylon",
+        "Tyre",
+        "Sidon"
+      ],
+      "a": 0,
+      "e": "The book of Nahum is a prophecy against Nineveh.",
+      "d": "medium"
+    },
+    {
+      "q": "In what city did the prophet Zephaniah live and prophecy?",
+      "o": [
+        "Jerusalem",
+        "Samaria",
+        "Tekoa",
+        "Anathoth"
+      ],
+      "a": 0,
+      "e": "Zephaniah prophesied in Jerusalem during the reign of Josiah.",
+      "d": "hard"
+    },
+    {
+      "q": "Where did the Lord tell the prophet Haggai to prophecy?",
+      "o": [
+        "Jerusalem (After the exile)",
+        "Babylon",
+        "Nineveh",
+        "Samaria"
+      ],
+      "a": 0,
+      "e": "Haggai prophesied to the returned exiles in Jerusalem.",
+      "d": "medium"
+    },
+    {
+      "q": "Which city was the home of the prophet Zechariah?",
+      "o": [
+        "Jerusalem",
+        "Babylon",
+        "Tekoa",
+        "Anathoth"
+      ],
+      "a": 0,
+      "e": "Zechariah, like Haggai, prophesied to the returned exiles in Jerusalem.",
+      "d": "medium"
+    },
+    {
+      "q": "Where did the Lord tell the prophet Malachi to prophecy?",
+      "o": [
+        "Jerusalem",
+        "Babylon",
+        "Nineveh",
+        "Samaria"
+      ],
+      "a": 0,
+      "e": "Malachi addressed the people in Jerusalem after the rebuilding of the temple.",
+      "d": "medium"
+    },
+    {
+      "q": "In what city did the Lord tell the prophet Obadiah to prophecy against?",
+      "o": [
+        "Edom",
+        "Moab",
+        "Ammon",
+        "Philistia"
+      ],
+      "a": 0,
+      "e": "The book of Obadiah is a prophecy against Edom.",
+      "d": "medium"
+    },
+    {
+      "q": "Where did the Lord tell the prophet Habakkuk to stand and wait for a vision?",
+      "o": [
+        "On a watchtower",
+        "In a valley",
+        "On a mountain",
+        "In a temple"
+      ],
+      "a": 0,
+      "e": "Habakkuk 2:1 — I will stand at my watch and station myself on the ramparts.",
+      "d": "hard"
+    },
+    {
+      "q": "Which city was known as the 'City of Palms'?",
+      "o": [
+        "Jericho",
+        "Bethany",
+        "Nazareth",
+        "Bethlehem"
+      ],
+      "a": 0,
+      "e": "Deuteronomy 34:3 — The Valley of Jericho, the City of Palms.",
+      "d": "medium"
+    },
+    {
+      "q": "Where did the Lord appear to Samuel as a child?",
+      "o": [
+        "Shiloh",
+        "Bethel",
+        "Jerusalem",
+        "Ramah"
+      ],
+      "a": 0,
+      "e": "1 Samuel 3:21 — The Lord continued to appear at Shiloh.",
+      "d": "medium"
+    },
+    {
+      "q": "In what city did David first reign as king over Judah for seven years?",
+      "o": [
+        "Jerusalem",
+        "Hebron",
+        "Bethlehem",
+        "Shechem"
+      ],
+      "a": 1,
+      "e": "2 Samuel 2:11 — The length of time David was king in Hebron over Judah was seven years and six months.",
+      "d": "medium"
+    },
+    {
+      "q": "Which city was the home of Mary and Martha?",
+      "o": [
+        "Bethany",
+        "Bethlehem",
+        "Nazareth",
+        "Jerusalem"
+      ],
+      "a": 0,
+      "e": "John 11:1 — He was from Bethany, the village of Mary and her sister Martha.",
+      "d": "easy"
+    },
+    {
+      "q": "Where did the Lord tell Abraham to go and sacrifice Isaac?",
+      "o": [
+        "The land of Moriah",
+        "The land of Canaan",
+        "The land of Egypt",
+        "The land of Moab"
+      ],
+      "a": 0,
+      "e": "Genesis 22:2 — Go to the region of Moriah. Sacrifice him there.",
+      "d": "medium"
+    },
+    {
+      "q": "In what city did the Lord tell the prophet Jonah to go to?",
+      "o": [
+        "Nineveh",
+        "Tarshish",
+        "Babylon",
+        "Jerusalem"
+      ],
+      "a": 0,
+      "e": "Jonah 1:2 — Go to the great city of Nineveh.",
+      "d": "easy"
+    },
+    {
+      "q": "Which city was the birthplace of David?",
+      "o": [
+        "Bethlehem",
+        "Jerusalem",
+        "Hebron",
+        "Nazareth"
+      ],
+      "a": 0,
+      "e": "1 Samuel 17:12 — Now David was the son of an Ephrathite named Jesse, who was from Bethlehem in Judah.",
+      "d": "easy"
+    },
+    {
+      "q": "Where did the Lord tell Moses to go and lead the Israelites out of Egypt?",
+      "o": [
+        "Egypt",
+        "Midian",
+        "Sinai",
+        "Canaan"
+      ],
+      "a": 0,
+      "e": "Exodus 3:10 — So now, go. I am sending you to Pharaoh to bring my people the Israelites out of Egypt.",
+      "d": "easy"
+    },
+    {
+      "q": "Where did the Lord tell the prophet Ezekiel to go and prophecy?",
+      "o": [
+        "Babylon (to the exiles)",
+        "Jerusalem",
+        "Samaria",
+        "Nineveh"
+      ],
+      "a": 0,
+      "e": "Ezekiel was a prophet among the exiles in Babylon.",
+      "d": "medium"
+    },
+    {
+      "q": "How many days and nights did it rain during the Great Flood?",
+      "o": [
+        "7",
+        "12",
+        "40",
+        "100"
+      ],
+      "a": 2,
+      "e": "Genesis 7:12 — And rain fell on the earth forty days and forty nights.",
+      "d": "easy"
+    },
+    {
+      "q": "How many tribes of Israel were there?",
+      "o": [
+        "7",
+        "10",
+        "12",
+        "40"
+      ],
+      "a": 2,
+      "e": "Genesis 35:22 — Jacob had twelve sons (who became the twelve tribes).",
+      "d": "easy"
+    },
+    {
+      "q": "How many years did the Israelites wander in the wilderness?",
+      "o": [
+        "7",
+        "12",
+        "40",
+        "70"
+      ],
+      "a": 2,
+      "e": "Numbers 14:33 — Your children will be shepherds here for forty years.",
+      "d": "easy"
+    },
+    {
+      "q": "On which day did God rest from His creation?",
+      "o": [
+        "First",
+        "Sixth",
+        "Seventh",
+        "Tenth"
+      ],
+      "a": 2,
+      "e": "Genesis 2:2 — By the seventh day God had finished the work he had been doing; so on the seventh day he rested.",
+      "d": "easy"
+    },
+    {
+      "q": "How many people were saved on the ark?",
+      "o": [
+        "2",
+        "8",
+        "12",
+        "20"
+      ],
+      "a": 1,
+      "e": "Genesis 7:13 — Noah, his sons, his wife and the wives of his three sons. (8 people)",
+      "d": "easy"
+    },
+    {
+      "q": "For how many pieces of silver was Joseph sold by his brothers?",
+      "o": [
+        "10",
+        "20",
+        "30",
+        "50"
+      ],
+      "a": 1,
+      "e": "Genesis 37:28 — They sold him to the Ishmaelites for twenty shekels of silver.",
+      "d": "medium"
+    },
+    {
+      "q": "For how many pieces of silver did Judas betray Jesus?",
+      "o": [
+        "20",
+        "30",
+        "50",
+        "100"
+      ],
+      "a": 1,
+      "e": "Matthew 26:15 — They counted out for him thirty pieces of silver.",
+      "d": "easy"
+    },
+    {
+      "q": "How many plagues did God send upon Egypt?",
+      "o": [
+        "3",
+        "7",
+        "10",
+        "12"
+      ],
+      "a": 2,
+      "e": "Exodus 7-12 describes the ten plagues.",
+      "d": "easy"
+    },
+    {
+      "q": "How many commandments were written on the tablets of stone?",
+      "o": [
+        "7",
+        "10",
+        "12",
+        "40"
+      ],
+      "a": 1,
+      "e": "Exodus 34:28 — He wrote on the tablets the words of the covenant—the Ten Commandments.",
+      "d": "easy"
+    },
+    {
+      "q": "How many years did the Jews remain in Babylonian captivity?",
+      "o": [
+        "40",
+        "50",
+        "70",
+        "100"
+      ],
+      "a": 2,
+      "e": "Jeremiah 25:11 — These nations will serve the king of Babylon seventy years.",
+      "d": "medium"
+    },
+    {
+      "q": "How many days did Jesus fast in the wilderness?",
+      "o": [
+        "3",
+        "7",
+        "12",
+        "40"
+      ],
+      "a": 3,
+      "e": "Matthew 4:2 — After fasting forty days and forty nights, he was hungry.",
+      "d": "easy"
+    },
+    {
+      "q": "How many disciples did Jesus choose?",
+      "o": [
+        "7",
+        "10",
+        "12",
+        "70"
+      ],
+      "a": 2,
+      "e": "Matthew 10:1 — He called his twelve disciples to him.",
+      "d": "easy"
+    },
+    {
+      "q": "How many stones did David pick up to fight Goliath?",
+      "o": [
+        "1",
+        "3",
+        "5",
+        "7"
+      ],
+      "a": 2,
+      "e": "1 Samuel 17:40 — Then he took his staff in his hand, chose five smooth stones from the stream.",
+      "d": "easy"
+    },
+    {
+      "q": "How many times did Peter deny Jesus?",
+      "o": [
+        "1",
+        "2",
+        "3",
+        "7"
+      ],
+      "a": 2,
+      "e": "Matthew 26:34 — Before the rooster crows, you will disown me three times.",
+      "d": "easy"
+    },
+    {
+      "q": "How many days was Lazarus in the tomb before Jesus raised him?",
+      "o": [
+        "1",
+        "2",
+        "3",
+        "4"
+      ],
+      "a": 3,
+      "e": "John 11:17 — On his arrival, Jesus found that Lazarus had already been in the tomb for four days.",
+      "d": "medium"
+    },
+    {
+      "q": "How many baskets of fragments were left after Jesus fed the five thousand?",
+      "o": [
+        "3",
+        "7",
+        "12",
+        "40"
+      ],
+      "a": 2,
+      "e": "Matthew 14:20 — The disciples picked up twelve basketfuls of broken pieces that were left over.",
+      "d": "medium"
+    },
+    {
+      "q": "How many elders were around the throne in Revelation 4?",
+      "o": [
+        "7",
+        "12",
+        "24",
+        "144"
+      ],
+      "a": 2,
+      "e": "Revelation 4:4 — Surrounding the throne were twenty-four other thrones, and seated on them were twenty-four elders.",
+      "d": "medium"
+    },
+    {
+      "q": "How many years did Noah live?",
+      "o": [
+        "120",
+        "600",
+        "950",
+        "969"
+      ],
+      "a": 2,
+      "e": "Genesis 9:29 — Noah lived a total of 950 years, and then he died.",
+      "d": "hard"
+    },
+    {
+      "q": "How many years did Methuselah live?",
+      "o": [
+        "950",
+        "962",
+        "969",
+        "1000"
+      ],
+      "a": 2,
+      "e": "Genesis 5:27 — Altogether, Methuselah lived a total of 969 years, and then he died.",
+      "d": "medium"
+    },
+    {
+      "q": "How many sons did Jacob have?",
+      "o": [
+        "3",
+        "7",
+        "10",
+        "12"
+      ],
+      "a": 3,
+      "e": "Genesis 35:22 — Jacob had twelve sons.",
+      "d": "easy"
+    },
+    {
+      "q": "How many times did Joshua and the Israelites march around Jericho on the seventh day?",
+      "o": [
+        "1",
+        "3",
+        "7",
+        "12"
+      ],
+      "a": 2,
+      "e": "Joshua 6:4 — On the seventh day, march around the city seven times.",
+      "d": "easy"
+    },
+    {
+      "q": "How many years did Jacob serve Laban for Rachel?",
+      "o": [
+        "7",
+        "10",
+        "14",
+        "20"
+      ],
+      "a": 2,
+      "e": "Genesis 29:18-30 — Jacob served seven years for Rachel, but was given Leah; he served another seven for Rachel.",
+      "d": "medium"
+    },
+    {
+      "q": "How many days was Jonah in the belly of the great fish?",
+      "o": [
+        "1",
+        "3",
+        "7",
+        "40"
+      ],
+      "a": 1,
+      "e": "Jonah 1:17 — Jonah was in the belly of the fish three days and three nights.",
+      "d": "easy"
+    },
+    {
+      "q": "How many chapters are in the shortest Psalm?",
+      "o": [
+        "1",
+        "2 (verses)",
+        "3",
+        "5"
+      ],
+      "a": 1,
+      "e": "Psalm 117 is the shortest Psalm with only 2 verses.",
+      "d": "medium"
+    },
+    {
+      "q": "How many books are in the Old Testament (Protestant)?",
+      "o": [
+        "27",
+        "39",
+        "46",
+        "66"
+      ],
+      "a": 1,
+      "e": "The Protestant Old Testament contains 39 books.",
+      "d": "easy"
+    },
+    {
+      "q": "How many books are in the New Testament?",
+      "o": [
+        "12",
+        "27",
+        "39",
+        "66"
+      ],
+      "a": 1,
+      "e": "The New Testament contains 27 books.",
+      "d": "easy"
+    },
+    {
+      "q": "How many books are in the whole Bible (Protestant)?",
+      "o": [
+        "39",
+        "40",
+        "66",
+        "70"
+      ],
+      "a": 2,
+      "e": "The Protestant Bible contains 66 books (39 OT + 27 NT).",
+      "d": "easy"
+    },
+    {
+      "q": "How many days did the Israelites eat manna?",
+      "o": [
+        "40 days",
+        "40 years",
+        "7 years",
+        "1 year"
+      ],
+      "a": 1,
+      "e": "Exodus 16:35 — The Israelites ate manna forty years.",
+      "d": "medium"
+    },
+    {
+      "q": "How many years was Sarah when she gave birth to Isaac?",
+      "o": [
+        "75",
+        "90",
+        "99",
+        "100"
+      ],
+      "a": 1,
+      "e": "Genesis 17:17 — Will a woman of ninety bear a child?",
+      "d": "medium"
+    },
+    {
+      "q": "How many years was Abraham when Isaac was born?",
+      "o": [
+        "75",
+        "90",
+        "99",
+        "100"
+      ],
+      "a": 3,
+      "e": "Genesis 21:5 — Abraham was a hundred years old when his son Isaac was born.",
+      "d": "medium"
+    },
+    {
+      "q": "How many laws are in the Torah (according to Jewish tradition)?",
+      "o": [
+        "10",
+        "100",
+        "613",
+        "1000"
+      ],
+      "a": 2,
+      "e": "Jewish tradition counts 613 mitzvot (commandments) in the Torah.",
+      "d": "hard"
+    },
+    {
+      "q": "How many cities of refuge were there in Israel?",
+      "o": [
+        "3",
+        "6",
+        "12",
+        "40"
+      ],
+      "a": 1,
+      "e": "Numbers 35:6 — Six of the towns you give the Levites will be cities of refuge.",
+      "d": "medium"
+    },
+    {
+      "q": "How many years did Joash reign in Jerusalem?",
+      "o": [
+        "7",
+        "12",
+        "40",
+        "55"
+      ],
+      "a": 2,
+      "e": "2 Kings 12:1 — Joash... reigned in Jerusalem forty years.",
+      "d": "hard"
+    },
+    {
+      "q": "How many years did Manasseh reign in Jerusalem?",
+      "o": [
+        "40",
+        "41",
+        "52",
+        "55"
+      ],
+      "a": 3,
+      "e": "2 Kings 21:1 — Manasseh... reigned in Jerusalem fifty-five years.",
+      "d": "hard"
+    },
+    {
+      "q": "How many people were added to the church on the Day of Pentecost?",
+      "o": [
+        "120",
+        "500",
+        "3000",
+        "5000"
+      ],
+      "a": 2,
+      "e": "Acts 2:41 — About three thousand were added to their number that day.",
+      "d": "medium"
+    },
+    {
+      "q": "How many years did David reign as king in total?",
+      "o": [
+        "7",
+        "33",
+        "40",
+        "50"
+      ],
+      "a": 2,
+      "e": "2 Samuel 5:4 — He reigned forty years in all.",
+      "d": "medium"
+    },
+    {
+      "q": "How many years did Solomon reign?",
+      "o": [
+        "20",
+        "40",
+        "60",
+        "80"
+      ],
+      "a": 1,
+      "e": "1 Kings 11:42 — Solomon reigned in Jerusalem over all Israel forty years.",
+      "d": "medium"
+    },
+    {
+      "q": "How many wives did Solomon have?",
+      "o": [
+        "7",
+        "70",
+        "300",
+        "700"
+      ],
+      "a": 3,
+      "e": "1 Kings 11:3 — He had seven hundred wives of royal birth and three hundred concubines.",
+      "d": "medium"
+    },
+    {
+      "q": "How many concubines did Solomon have?",
+      "o": [
+        "300",
+        "700",
+        "100",
+        "1000"
+      ],
+      "a": 0,
+      "e": "1 Kings 11:3 — And three hundred concubines.",
+      "d": "medium"
+    },
+    {
+      "q": "How many songs did Solomon write?",
+      "o": [
+        "100",
+        "1005",
+        "3000",
+        "150"
+      ],
+      "a": 1,
+      "e": "1 Kings 4:32 — His songs numbered a thousand and five.",
+      "d": "hard"
+    },
+    {
+      "q": "How many proverbs did Solomon speak?",
+      "o": [
+        "1000",
+        "1005",
+        "3000",
+        "150"
+      ],
+      "a": 2,
+      "e": "1 Kings 4:32 — He spoke three thousand proverbs.",
+      "d": "hard"
+    },
+    {
+      "q": "How many years did Jephthah judge Israel?",
+      "o": [
+        "6",
+        "7",
+        "10",
+        "12"
+      ],
+      "a": 0,
+      "e": "Judges 12:7 — Jephthah led Israel six years.",
+      "d": "hard"
+    },
+    {
+      "q": "How many years did Samson judge Israel?",
+      "o": [
+        "10",
+        "20",
+        "30",
+        "40"
+      ],
+      "a": 1,
+      "e": "Judges 15:20 — Samson led Israel for twenty years.",
+      "d": "medium"
+    },
+    {
+      "q": "How many years was the Temple of Solomon in building?",
+      "o": [
+        "3",
+        "7",
+        "10",
+        "13"
+      ],
+      "a": 1,
+      "e": "1 Kings 6:38 — So he was seven years in building it.",
+      "d": "hard"
+    },
+    {
+      "q": "How many years did Solomon take to build his own palace?",
+      "o": [
+        "7",
+        "10",
+        "13",
+        "20"
+      ],
+      "a": 2,
+      "e": "1 Kings 7:1 — It took Solomon thirteen years, however, to complete the construction of his palace.",
+      "d": "hard"
+    },
+    {
+      "q": "How many years did the widow's oil and flour last in Elijah's time?",
+      "o": [
+        "1 year",
+        "3 years",
+        "Until it rained",
+        "7 years"
+      ],
+      "a": 2,
+      "e": "1 Kings 17:14 — Until the day the Lord sends rain on the land.",
+      "d": "medium"
+    },
+    {
+      "q": "How many times did Naaman wash in the Jordan to be healed of leprosy?",
+      "o": [
+        "1",
+        "3",
+        "7",
+        "12"
+      ],
+      "a": 2,
+      "e": "2 Kings 5:14 — So he went down and dipped himself in the Jordan seven times.",
+      "d": "easy"
+    },
+    {
+      "q": "How many years was the woman with the issue of blood sick?",
+      "o": [
+        "7",
+        "12",
+        "18",
+        "38"
+      ],
+      "a": 1,
+      "e": "Matthew 9:20 — A woman who had been subject to bleeding for twelve years.",
+      "d": "medium"
+    },
+    {
+      "q": "How many years was the man at the Pool of Bethesda crippled?",
+      "o": [
+        "12",
+        "18",
+        "38",
+        "40"
+      ],
+      "a": 2,
+      "e": "John 5:5 — One who was there had been an invalid for thirty-eight years.",
+      "d": "hard"
+    },
+    {
+      "q": "How many sheep did the shepherd leave to find the one lost sheep?",
+      "o": [
+        "10",
+        "12",
+        "99",
+        "100"
+      ],
+      "a": 2,
+      "e": "Luke 15:4 — Doesn’t he leave the ninety-nine in the open country?",
+      "d": "easy"
+    },
+    {
+      "q": "How many silver coins did the woman have before she lost one?",
+      "o": [
+        "7",
+        "10",
+        "12",
+        "100"
+      ],
+      "a": 1,
+      "e": "Luke 15:8 — Suppose a woman has ten silver coins and loses one.",
+      "d": "medium"
+    },
+    {
+      "q": "How many times should we forgive according to Jesus (Matt 18)?",
+      "o": [
+        "7 times",
+        "70 times",
+        "77 times (or 70x7)",
+        "Unlimited"
+      ],
+      "a": 2,
+      "e": "Matthew 18:22 — Jesus answered, 'I tell you, not seven times, but seventy-seven times.' (KJV: seventy times seven)",
+      "d": "medium"
+    },
+    {
+      "q": "How many deacons were chosen in Acts 6?",
+      "o": [
+        "3",
+        "7",
+        "12",
+        "70"
+      ],
+      "a": 1,
+      "e": "Acts 6:3 — Choose seven men from among you who are known to be full of the Spirit and wisdom.",
+      "d": "medium"
+    },
+    {
+      "q": "How many missionary journeys did Paul go on (recorded in Acts)?",
+      "o": [
+        "1",
+        "2",
+        "3",
+        "4"
+      ],
+      "a": 2,
+      "e": "Acts records three distinct missionary journeys, followed by his journey to Rome.",
+      "d": "medium"
+    },
+    {
+      "q": "How many people were on Paul's ship when it wrecked?",
+      "o": [
+        "100",
+        "200",
+        "276",
+        "300"
+      ],
+      "a": 2,
+      "e": "Acts 27:37 — Altogether there were 276 of us on board.",
+      "d": "hard"
+    },
+    {
+      "q": "How many souls were in the household of Jacob that came into Egypt?",
+      "o": [
+        "12",
+        "40",
+        "70",
+        "120"
+      ],
+      "a": 2,
+      "e": "Genesis 46:27 — All the members of Jacob’s family who went to Egypt were seventy in all.",
+      "d": "medium"
+    },
+    {
+      "q": "How many years did the Israelites stay in Egypt?",
+      "o": [
+        "40",
+        "70",
+        "400 (or 430)",
+        "700"
+      ],
+      "a": 2,
+      "e": "Exodus 12:40 — Now the length of time the Israelite people lived in Egypt was 430 years.",
+      "d": "medium"
+    },
+    {
+      "q": "How many days did the spies explore Canaan?",
+      "o": [
+        "7",
+        "12",
+        "40",
+        "70"
+      ],
+      "a": 2,
+      "e": "Numbers 13:25 — At the end of forty days they returned from exploring the land.",
+      "d": "medium"
+    },
+    {
+      "q": "How many people were in Gideon's final army against the Midianites?",
+      "o": [
+        "300",
+        "1000",
+        "10000",
+        "32000"
+      ],
+      "a": 0,
+      "e": "Judges 7:7 — With the three hundred men that lapped I will save you.",
+      "d": "medium"
+    },
+    {
+      "q": "How many months was Moses hidden by his mother?",
+      "o": [
+        "1",
+        "3",
+        "6",
+        "12"
+      ],
+      "a": 1,
+      "e": "Exodus 2:2 — When she saw that he was a fine child, she hid him for three months.",
+      "d": "medium"
+    },
+    {
+      "q": "How many years did Eli judge Israel?",
+      "o": [
+        "10",
+        "20",
+        "40",
+        "50"
+      ],
+      "a": 2,
+      "e": "1 Samuel 4:18 — He had led Israel forty years.",
+      "d": "hard"
+    },
+    {
+      "q": "How many years was the wall of Jerusalem in building under Nehemiah?",
+      "o": [
+        "52 days",
+        "7 years",
+        "12 years",
+        "40 days"
+      ],
+      "a": 0,
+      "e": "Nehemiah 6:15 — So the wall was completed... in fifty-two days.",
+      "d": "medium"
+    },
+    {
+      "q": "How many years did Hezekiah's life get extended by God?",
+      "o": [
+        "7",
+        "10",
+        "15",
+        "20"
+      ],
+      "a": 2,
+      "e": "2 Kings 20:6 — I will add fifteen years to your life.",
+      "d": "medium"
+    },
+    {
+      "q": "How many years did Josiah reign in Jerusalem?",
+      "o": [
+        "7",
+        "8",
+        "31",
+        "40"
+      ],
+      "a": 2,
+      "e": "2 Kings 22:1 — He reigned in Jerusalem thirty-one years.",
+      "d": "hard"
+    },
+    {
+      "q": "How many years did the temple lie in ruins before it was rebuilt in Ezra's time?",
+      "o": [
+        "40",
+        "50",
+        "70",
+        "100"
+      ],
+      "a": 2,
+      "e": "The Babylonian captivity lasted 70 years, after which the rebuilding began.",
+      "d": "medium"
+    },
+    {
+      "q": "How many days did Esther and the Jews fast before she went to the king?",
+      "o": [
+        "1",
+        "3",
+        "7",
+        "40"
+      ],
+      "a": 1,
+      "e": "Esther 4:16 — Do not eat or drink for three days, night or day.",
+      "d": "medium"
+    },
+    {
+      "q": "How many sons did Haman have?",
+      "o": [
+        "2",
+        "5",
+        "10",
+        "12"
+      ],
+      "a": 2,
+      "e": "Esther 9:10 — The ten sons of Haman.",
+      "d": "hard"
+    },
+    {
+      "q": "How many years did Job live after his restoration?",
+      "o": [
+        "40",
+        "70",
+        "140",
+        "200"
+      ],
+      "a": 2,
+      "e": "Job 42:16 — After this, Job lived a hundred and forty years.",
+      "d": "hard"
+    },
+    {
+      "q": "How many levels were on Noah's ark?",
+      "o": [
+        "1",
+        "2",
+        "3",
+        "7"
+      ],
+      "a": 2,
+      "e": "Genesis 6:16 — Put a door in the side of the ark and make lower, middle and upper decks.",
+      "d": "medium"
+    },
+    {
+      "q": "How many days did the waters flood the earth (prevail)?",
+      "o": [
+        "40",
+        "100",
+        "150",
+        "365"
+      ],
+      "a": 2,
+      "e": "Genesis 7:24 — The waters flooded the earth for a hundred and fifty days.",
+      "d": "hard"
+    },
+    {
+      "q": "How many years was Isaac when he married Rebekah?",
+      "o": [
+        "20",
+        "30",
+        "40",
+        "50"
+      ],
+      "a": 2,
+      "e": "Genesis 25:20 — Isaac was forty years old when he married Rebekah.",
+      "d": "hard"
+    },
+    {
+      "q": "How many years was Isaac when Jacob and Esau were born?",
+      "o": [
+        "40",
+        "50",
+        "60",
+        "75"
+      ],
+      "a": 2,
+      "e": "Genesis 25:26 — Isaac was sixty years old when Rebekah gave birth to them.",
+      "d": "hard"
+    },
+    {
+      "q": "How many years was Joseph when he stood before Pharaoh?",
+      "o": [
+        "17",
+        "25",
+        "30",
+        "40"
+      ],
+      "a": 2,
+      "e": "Genesis 41:46 — Joseph was thirty years old when he entered the service of Pharaoh.",
+      "d": "medium"
+    },
+    {
+      "q": "How many years did Joseph live?",
+      "o": [
+        "110",
+        "120",
+        "130",
+        "147"
+      ],
+      "a": 0,
+      "e": "Genesis 50:26 — So Joseph died at the age of a hundred and ten.",
+      "d": "hard"
+    },
+    {
+      "q": "How many years was Moses when he fled from Egypt?",
+      "o": [
+        "20",
+        "40",
+        "60",
+        "80"
+      ],
+      "a": 1,
+      "e": "Acts 7:23 — When Moses was forty years old, he decided to visit his own people.",
+      "d": "medium"
+    },
+    {
+      "q": "How many years was Moses when he spoke to Pharaoh?",
+      "o": [
+        "40",
+        "70",
+        "80",
+        "120"
+      ],
+      "a": 2,
+      "e": "Exodus 7:7 — Moses was eighty years old... when they spoke to Pharaoh.",
+      "d": "medium"
+    },
+    {
+      "q": "How many years did Moses live?",
+      "o": [
+        "80",
+        "100",
+        "110",
+        "120"
+      ],
+      "a": 3,
+      "e": "Deuteronomy 34:7 — Moses was a hundred and twenty years old when he died.",
+      "d": "easy"
+    },
+    {
+      "q": "How many men did Moses send to spy out Canaan?",
+      "o": [
+        "2",
+        "3",
+        "12",
+        "70"
+      ],
+      "a": 2,
+      "e": "Numbers 13:2-16 — One leader from each of the twelve tribes.",
+      "d": "medium"
+    },
+    {
+      "q": "How many cities were given to the Levites?",
+      "o": [
+        "6",
+        "12",
+        "48",
+        "70"
+      ],
+      "a": 2,
+      "e": "Numbers 35:7 — You will give the Levites forty-eight towns in all.",
+      "d": "hard"
+    },
+    {
+      "q": "How many years was Joshua when he died?",
+      "o": [
+        "100",
+        "110",
+        "120",
+        "147"
+      ],
+      "a": 1,
+      "e": "Joshua 24:29 — Joshua son of Nun... died at the age of a hundred and ten.",
+      "d": "hard"
+    },
+    {
+      "q": "How many years did Israel serve Chushan-rishathaim (the first judge's time)?",
+      "o": [
+        "7",
+        "8",
+        "18",
+        "20"
+      ],
+      "a": 1,
+      "e": "Judges 3:8 — The Israelites were subject to Cushan-Rishathaim for eight years.",
+      "d": "hard"
+    },
+    {
+      "q": "How many years did the land have rest after Othniel?",
+      "o": [
+        "20",
+        "40",
+        "80",
+        "10"
+      ],
+      "a": 1,
+      "e": "Judges 3:11 — So the land had peace for forty years.",
+      "d": "hard"
+    },
+    {
+      "q": "How many years did the land have rest after Ehud?",
+      "o": [
+        "20",
+        "40",
+        "80",
+        "10"
+      ],
+      "a": 2,
+      "e": "Judges 3:30 — And the land had peace for eighty years.",
+      "d": "hard"
+    },
+    {
+      "q": "How many years did Jabin oppress Israel (before Deborah)?",
+      "o": [
+        "7",
+        "8",
+        "18",
+        "20"
+      ],
+      "a": 3,
+      "e": "Judges 4:3 — He had oppressed the Israelites cruelly for twenty years.",
+      "d": "hard"
+    },
+    {
+      "q": "How many years did the land have rest after Deborah?",
+      "o": [
+        "20",
+        "40",
+        "80",
+        "10"
+      ],
+      "a": 1,
+      "e": "Judges 5:31 — Then the land had peace forty years.",
+      "d": "hard"
+    },
+    {
+      "q": "How many years did Midian oppress Israel (before Gideon)?",
+      "o": [
+        "7",
+        "8",
+        "18",
+        "20"
+      ],
+      "a": 0,
+      "e": "Judges 6:1 — For seven years he gave them into the hands of the Midianites.",
+      "d": "hard"
+    },
+    {
+      "q": "How many years did the land have rest after Gideon?",
+      "o": [
+        "20",
+        "40",
+        "80",
+        "10"
+      ],
+      "a": 1,
+      "e": "Judges 8:28 — During Gideon’s lifetime, the land had peace forty years.",
+      "d": "hard"
+    },
+    {
+      "q": "How many years did Tola judge Israel?",
+      "o": [
+        "22",
+        "23",
+        "25",
+        "40"
+      ],
+      "a": 1,
+      "e": "Judges 10:2 — He led Israel twenty-three years.",
+      "d": "hard"
+    },
+    {
+      "q": "How many years did Jair judge Israel?",
+      "o": [
+        "22",
+        "23",
+        "25",
+        "40"
+      ],
+      "a": 0,
+      "e": "Judges 10:3 — Jair... led Israel twenty-two years.",
+      "d": "hard"
+    },
+    {
+      "q": "How many years did the Philistines and Ammonites oppress Israel (before Jephthah)?",
+      "o": [
+        "7",
+        "18",
+        "20",
+        "40"
+      ],
+      "a": 1,
+      "e": "Judges 10:8 — They oppressed the Israelites for eighteen years.",
+      "d": "hard"
+    },
+    {
+      "q": "How many years did Ibzan judge Israel?",
+      "o": [
+        "6",
+        "7",
+        "10",
+        "12"
+      ],
+      "a": 1,
+      "e": "Judges 12:9 — Ibzan led Israel seven years.",
+      "d": "hard"
+    },
+    {
+      "q": "How many years did Elon judge Israel?",
+      "o": [
+        "6",
+        "7",
+        "10",
+        "12"
+      ],
+      "a": 2,
+      "e": "Judges 12:11 — Elon... led Israel ten years.",
+      "d": "hard"
+    },
+    {
+      "q": "How many years did Abdon judge Israel?",
+      "o": [
+        "6",
+        "8",
+        "10",
+        "12"
+      ],
+      "a": 1,
+      "e": "Judges 12:14 — He led Israel eight years.",
+      "d": "hard"
+    },
+    {
+      "q": "How many years did the Philistines oppress Israel (before Samson)?",
+      "o": [
+        "7",
+        "18",
+        "20",
+        "40"
+      ],
+      "a": 3,
+      "e": "Judges 13:1 — The Lord delivered them into the hands of the Philistines for forty years.",
+      "d": "hard"
+    },
+    {
+      "q": "How many years was the Ark in the house of Abinadab?",
+      "o": [
+        "7",
+        "20",
+        "40",
+        "70"
+      ],
+      "a": 1,
+      "e": "1 Samuel 7:2 — The ark remained at Kiriath Jearim a long time—twenty years in all.",
+      "d": "hard"
+    },
+    {
+      "q": "How many years did Saul reign?",
+      "o": [
+        "2",
+        "20",
+        "40",
+        "42"
+      ],
+      "a": 2,
+      "e": "Acts 13:21 — God gave them Saul... who ruled forty years.",
+      "d": "medium"
+    },
+    {
+      "q": "How many years was David in Hebron?",
+      "o": [
+        "7",
+        "12",
+        "33",
+        "40"
+      ],
+      "a": 0,
+      "e": "2 Samuel 5:5 — In Hebron he reigned over Judah seven years and six months.",
+      "d": "medium"
+    },
+    {
+      "q": "How many years was David in Jerusalem?",
+      "o": [
+        "7",
+        "12",
+        "33",
+        "40"
+      ],
+      "a": 2,
+      "e": "2 Samuel 5:5 — In Jerusalem he reigned over all Israel and Judah thirty-three years.",
+      "d": "medium"
+    },
+    {
+      "q": "How many sons of David were born in Hebron?",
+      "o": [
+        "3",
+        "6",
+        "12",
+        "19"
+      ],
+      "a": 1,
+      "e": "2 Samuel 3:2-5 — Six sons were born to David in Hebron.",
+      "d": "hard"
+    },
+    {
+      "q": "How many men of Israel did David count in his census?",
+      "o": [
+        "500,000",
+        "800,000",
+        "1,100,000",
+        "1,300,000"
+      ],
+      "a": 1,
+      "e": "2 Samuel 24:9 — In Israel there were eight hundred thousand able-bodied men.",
+      "d": "hard"
+    },
+    {
+      "q": "How many men of Judah did David count in his census?",
+      "o": [
+        "470,000",
+        "500,000",
+        "800,000",
+        "1,100,000"
+      ],
+      "a": 1,
+      "e": "2 Samuel 24:9 — And in Judah five hundred thousand.",
+      "d": "hard"
+    },
+    {
+      "q": "How many people died in the plague after David's census?",
+      "o": [
+        "7,000",
+        "24,000",
+        "70,000",
+        "100,000"
+      ],
+      "a": 2,
+      "e": "2 Samuel 24:15 — Seventy thousand of the people from Dan to Beersheba died.",
+      "d": "medium"
+    },
+    {
+      "q": "How many years did Asa reign?",
+      "o": [
+        "3",
+        "40",
+        "41",
+        "52"
+      ],
+      "a": 2,
+      "e": "1 Kings 15:10 — He reigned in Jerusalem forty-one years.",
+      "d": "hard"
+    },
+    {
+      "q": "How many years did Jehoshaphat reign?",
+      "o": [
+        "17",
+        "25",
+        "40",
+        "41"
+      ],
+      "a": 1,
+      "e": "1 Kings 22:42 — He reigned in Jerusalem twenty-five years.",
+      "d": "hard"
+    },
+    {
+      "q": "How many years did Baasha reign?",
+      "o": [
+        "2",
+        "24",
+        "25",
+        "2"
+      ],
+      "a": 1,
+      "e": "1 Kings 15:33 — He reigned in Tirzah twenty-four years.",
+      "d": "hard"
+    },
+    {
+      "q": "How many years did Omri reign?",
+      "o": [
+        "7",
+        "12",
+        "22",
+        "40"
+      ],
+      "a": 1,
+      "e": "1 Kings 16:23 — He reigned twelve years.",
+      "d": "hard"
+    },
+    {
+      "q": "How many years did Ahab reign?",
+      "o": [
+        "12",
+        "22",
+        "40",
+        "17"
+      ],
+      "a": 1,
+      "e": "1 Kings 16:29 — He reigned over Israel in Samaria twenty-two years.",
+      "d": "hard"
+    },
+    {
+      "q": "How many years did Jehu reign?",
+      "o": [
+        "17",
+        "28",
+        "40",
+        "52"
+      ],
+      "a": 1,
+      "e": "2 Kings 10:36 — The time that Jehu reigned over Israel in Samaria was twenty-eight years.",
+      "d": "hard"
+    },
+    {
+      "q": "How many years did Jeroboam II reign?",
+      "o": [
+        "28",
+        "40",
+        "41",
+        "52"
+      ],
+      "a": 2,
+      "e": "2 Kings 14:23 — He reigned forty-one years.",
+      "d": "hard"
+    },
+    {
+      "q": "How many years did Uzziah (Azariah) reign?",
+      "o": [
+        "40",
+        "41",
+        "52",
+        "55"
+      ],
+      "a": 2,
+      "e": "2 Kings 15:2 — He reigned in Jerusalem fifty-two years.",
+      "d": "hard"
+    },
+    {
+      "q": "How many years did Hezekiah reign?",
+      "o": [
+        "25",
+        "29",
+        "40",
+        "55"
+      ],
+      "a": 1,
+      "e": "2 Kings 18:2 — He reigned in Jerusalem twenty-nine years.",
+      "d": "hard"
+    },
+    {
+      "q": "Which book of the Bible contains the most detail about the laws for sacrifices and priests?",
+      "o": [
+        "Genesis",
+        "Exodus",
+        "Leviticus",
+        "Numbers"
+      ],
+      "a": 2,
+      "e": "The Book of Leviticus is primarily concerned with laws for priests and sacrifices.",
+      "d": "easy"
+    },
+    {
+      "q": "What is the first of the Ten Commandments?",
+      "o": [
+        "You shall not murder",
+        "You shall have no other gods before me",
+        "Honor your father and mother",
+        "You shall not steal"
+      ],
+      "a": 1,
+      "e": "Exodus 20:3 — You shall have no other gods before me.",
+      "d": "easy"
+    },
+    {
+      "q": "According to the Law, how often was the Year of Jubilee to occur?",
+      "o": [
+        "Every 7 years",
+        "Every 12 years",
+        "Every 40 years",
+        "Every 50 years"
+      ],
+      "a": 3,
+      "e": "Leviticus 25:10 — Consecrate the fiftieth year and proclaim liberty throughout the land.",
+      "d": "medium"
+    },
+    {
+      "q": "Which commandment is the first one with a promise?",
+      "o": [
+        "You shall not covet",
+        "Honor your father and mother",
+        "Keep the Sabbath day holy",
+        "You shall not commit adultery"
+      ],
+      "a": 1,
+      "e": "Ephesians 6:2 (quoting Exodus 20) — 'Honor your father and mother'—which is the first commandment with a promise.",
+      "d": "medium"
+    },
+    {
+      "q": "According to the Law, what should happen to a field during the seventh year (Sabbath Year)?",
+      "o": [
+        "It should be planted with twice as much",
+        "It should be left fallow (unplanted)",
+        "It should be given to the poor",
+        "It should be burned"
+      ],
+      "a": 1,
+      "e": "Exodus 23:11 — But during the seventh year let the land lie unplowed and unused.",
+      "d": "medium"
+    },
+    {
+      "q": "What was the punishment for kidnapping a person to sell them as a slave?",
+      "o": [
+        "A fine of silver",
+        "Banishment",
+        "Death",
+        "Working as a slave for the victim"
+      ],
+      "a": 2,
+      "e": "Exodus 21:16 — Anyone who kidnaps someone is to be put to death.",
+      "d": "hard"
+    },
+    {
+      "q": "How many witnesses were required to convict someone of a capital crime?",
+      "o": [
+        "1",
+        "2 or 3",
+        "5",
+        "12"
+      ],
+      "a": 1,
+      "e": "Deuteronomy 17:6 — On the testimony of two or three witnesses a person shall be put to death.",
+      "d": "medium"
+    },
+    {
+      "q": "Which animal's mother's milk was it forbidden to cook the young animal in?",
+      "o": [
+        "Sheep",
+        "Goat",
+        "Cow",
+        "All of the above"
+      ],
+      "a": 1,
+      "e": "Exodus 23:19 — Do not cook a young goat in its mother’s milk.",
+      "d": "medium"
+    },
+    {
+      "q": "What were the Israelites forbidden to wear, according to Deuteronomy 22:11?",
+      "o": [
+        "Clothes of only one color",
+        "Clothes made of wool and linen woven together",
+        "Clothes with fringes",
+        "Clothes made of animal skins"
+      ],
+      "a": 1,
+      "e": "Deuteronomy 22:11 — Do not wear clothes of wool and linen woven together.",
+      "d": "hard"
+    },
+    {
+      "q": "What was the 'lex talionis' or the law of retaliation found in the Torah?",
+      "o": [
+        "Eye for an eye",
+        "A life for a life",
+        "Tooth for a tooth",
+        "All of the above"
+      ],
+      "a": 3,
+      "e": "Exodus 21:24 — Eye for eye, tooth for tooth, hand for hand, foot for foot.",
+      "d": "easy"
+    },
+    {
+      "q": "According to the Law, what should an Israelite do if they found their enemy's ox or donkey wandering off?",
+      "o": [
+        "Keep it",
+        "Leave it",
+        "Return it to them",
+        "Kill it"
+      ],
+      "a": 2,
+      "e": "Exodus 23:4 — If you come across your enemy’s ox or donkey wandering off, be sure to return it.",
+      "d": "medium"
+    },
+    {
+      "q": "Which bird was considered unclean and could not be eaten?",
+      "o": [
+        "Chicken",
+        "Pigeon",
+        "Eagle",
+        "Quail"
+      ],
+      "a": 2,
+      "e": "Leviticus 11:13 — These are the birds you are to regard as unclean... the eagle, the vulture...",
+      "d": "medium"
+    },
+    {
+      "q": "What was the law regarding the corners of a field during harvest?",
+      "o": [
+        "They must be harvested first",
+        "They must be left unharvested for the poor and the foreigner",
+        "They must be burned as a sacrifice",
+        "They must be given to the priest"
+      ],
+      "a": 1,
+      "e": "Leviticus 19:9 — Do not reap to the very edges of your field.",
+      "d": "medium"
+    },
+    {
+      "q": "According to the Law, how many years must a Hebrew slave serve before being set free?",
+      "o": [
+        "3",
+        "6",
+        "7",
+        "10"
+      ],
+      "a": 1,
+      "e": "Exodus 21:2 — If you buy a Hebrew servant, he is to serve you for six years. But in the seventh year, he shall go free.",
+      "d": "medium"
+    },
+    {
+      "q": "What sign was given to a slave who chose to stay with his master for life?",
+      "o": [
+        "A mark on the forehead",
+        "An ear pierced with an awl",
+        "A ring on the finger",
+        "A special robe"
+      ],
+      "a": 1,
+      "e": "Exodus 21:6 — Then his master shall take him to the doorpost and pierce his ear with an awl.",
+      "d": "hard"
+    },
+    {
+      "q": "Which of these was a forbidden mixture according to the Law?",
+      "o": [
+        "Yoking an ox and a donkey together",
+        "Sowing a field with two kinds of seed",
+        "Both A and B",
+        "Wearing leather and wool together"
+      ],
+      "a": 2,
+      "e": "Deuteronomy 22:9-10 — Do not plant two kinds of seed in your vineyard... Do not plow with an ox and a donkey yoked together.",
+      "d": "hard"
+    },
+    {
+      "q": "What was the law concerning a man who had newly married?",
+      "o": [
+        "He must go to war immediately",
+        "He was exempt from military service for one year",
+        "He must stay in the temple for 40 days",
+        "He must pay a special tax"
+      ],
+      "a": 1,
+      "e": "Deuteronomy 24:5 — If a man has recently married, he must not be sent to war... For one year he is to be free to stay at home and bring happiness to the wife he has married.",
+      "d": "medium"
+    },
+    {
+      "q": "Which offering was to be completely burned on the altar?",
+      "o": [
+        "Sin offering",
+        "Peace offering",
+        "Burnt offering (Olah)",
+        "Grain offering"
+      ],
+      "a": 2,
+      "e": "Leviticus 1:9 — The priest is to burn all of it on the altar. It is a burnt offering.",
+      "d": "medium"
+    },
+    {
+      "q": "What was the penalty for striking one's father or mother?",
+      "o": [
+        "A fine",
+        "Exile",
+        "Death",
+        "Public whipping"
+      ],
+      "a": 2,
+      "e": "Exodus 21:15 — Anyone who attacks their father or mother is to be put to death.",
+      "d": "hard"
+    },
+    {
+      "q": "What was the law regarding interest on loans to a fellow Israelite?",
+      "o": [
+        "Maximum 10%",
+        "Forbidden to charge interest",
+        "Only allowed for business loans",
+        "Maximum 5%"
+      ],
+      "a": 1,
+      "e": "Exodus 22:25 — If you lend money to one of my people among you who is needy, do not treat it like a business deal; charge no interest.",
+      "d": "medium"
+    },
+    {
+      "q": "What was the law regarding a garment taken as a pledge for a loan?",
+      "o": [
+        "It must be returned by sunset",
+        "It becomes the property of the lender after 3 days",
+        "It must be burned if not redeemed",
+        "It must be given to the priest"
+      ],
+      "a": 0,
+      "e": "Exodus 22:26 — If you take your neighbor’s cloak as a pledge, return it by sunset.",
+      "d": "hard"
+    },
+    {
+      "q": "Which festival was also known as the Festival of Weeks?",
+      "o": [
+        "Passover",
+        "Pentecost (Shavuot)",
+        "Tabernacles (Sukkot)",
+        "Purim"
+      ],
+      "a": 1,
+      "e": "Exodus 34:22 — Celebrate the Festival of Weeks with the firstfruits of the wheat harvest.",
+      "d": "medium"
+    },
+    {
+      "q": "What was the primary purpose of the Cities of Refuge?",
+      "o": [
+        "For priests to live in",
+        "For people who accidentally killed someone to flee to",
+        "For storage of grain",
+        "For lepers to be quarantined"
+      ],
+      "a": 1,
+      "e": "Numbers 35:11 — Select some towns to be your cities of refuge, to which a person who has killed someone accidentally may flee.",
+      "d": "medium"
+    },
+    {
+      "q": "What was the 'Shema', the central prayer of the Law?",
+      "o": [
+        "The Lord is my shepherd",
+        "Hear, O Israel: The Lord our God, the Lord is one",
+        "Our Father which art in heaven",
+        "In the beginning God created"
+      ],
+      "a": 1,
+      "e": "Deuteronomy 6:4 — Hear, O Israel: The Lord our God, the Lord is one.",
+      "d": "easy"
+    },
+    {
+      "q": "Which animal's fat was the priest supposed to burn on the altar?",
+      "o": [
+        "The fat that covers the inner parts",
+        "The fat on the kidneys",
+        "The long lobe of the liver",
+        "All of the above"
+      ],
+      "a": 3,
+      "e": "Leviticus 3:3-4 — All the fat that is on the internal organs... both kidneys with the fat on them... and the long lobe of the liver.",
+      "d": "hard"
+    },
+    {
+      "q": "What was the law concerning someone who found a lost item?",
+      "o": [
+        "Finders keepers",
+        "They must return it to the owner",
+        "They must give it to the priest",
+        "They must wait 30 days before keeping it"
+      ],
+      "a": 1,
+      "e": "Deuteronomy 22:1-3 — Do not ignore it but be sure to take it back to its owner.",
+      "d": "medium"
+    },
+    {
+      "q": "What was the punishment for a son who was persistently stubborn and rebellious and would not listen to his parents?",
+      "o": [
+        "Banishment",
+        "A fine",
+        "Death by stoning",
+        "Working as a servant"
+      ],
+      "a": 2,
+      "e": "Deuteronomy 21:18-21 — Then all the men of his town are to stone him to death.",
+      "d": "hard"
+    },
+    {
+      "q": "Which of these was NOT a requirement for a king of Israel according to the Law?",
+      "o": [
+        "He must be an Israelite",
+        "He must not acquire great numbers of horses",
+        "He must not be older than 40",
+        "He must not take many wives"
+      ],
+      "a": 2,
+      "e": "Deuteronomy 17:15-17 — The law mentions he must be an Israelite, not accumulate horses or wives, and not accumulate silver and gold. It says nothing about age.",
+      "d": "hard"
+    },
+    {
+      "q": "What was the king of Israel supposed to do when he took the throne?",
+      "o": [
+        "Build a palace",
+        "Write for himself a copy of the Law on a scroll",
+        "Conquer the surrounding nations",
+        "Build a temple"
+      ],
+      "a": 1,
+      "e": "Deuteronomy 17:18 — He is to write for himself on a scroll a copy of this law.",
+      "d": "hard"
+    },
+    {
+      "q": "What was the law regarding a bird's nest found with a mother and her young?",
+      "o": [
+        "You may take both",
+        "You must leave both",
+        "You may take the young but must let the mother go",
+        "You must take the mother but leave the young"
+      ],
+      "a": 2,
+      "e": "Deuteronomy 22:6-7 — You may take the young, but be sure to let the mother go.",
+      "d": "hard"
+    },
+    {
+      "q": "How often were the Israelites to gather to hear the Law read publicly?",
+      "o": [
+        "Every year",
+        "Every 7 years during the Festival of Tabernacles",
+        "Every 50 years",
+        "Every month"
+      ],
+      "a": 1,
+      "e": "Deuteronomy 31:10-11 — At the end of every seven years... during the Festival of Tabernacles... read this law before them.",
+      "d": "hard"
+    },
+    {
+      "q": "What was the law regarding a man who raped an unengaged virgin?",
+      "o": [
+        "He must be put to death",
+        "He must pay her father and marry her, and could never divorce her",
+        "He must be banished",
+        "He must pay a fine and the girl is free"
+      ],
+      "a": 1,
+      "e": "Deuteronomy 22:28-29 — He must pay her father fifty shekels of silver. He must marry the young woman... He can never divorce her.",
+      "d": "hard"
+    },
+    {
+      "q": "What was the law concerning the edges of a garment?",
+      "o": [
+        "They must be double-stitched",
+        "They must have tassels with a blue cord",
+        "They must be left unhemmed",
+        "They must be dyed red"
+      ],
+      "a": 1,
+      "e": "Numbers 15:38 — Make tassels on the corners of your garments, with a blue cord on each tassel.",
+      "d": "hard"
+    },
+    {
+      "q": "Which of these was a forbidden food?",
+      "o": [
+        "Locusts",
+        "Crickets",
+        "Grasshoppers",
+        "Bees"
+      ],
+      "a": 3,
+      "e": "Leviticus 11:22 — You may eat any kind of locust, katydid, cricket or grasshopper. Bees (and most other winged insects) were unclean.",
+      "d": "medium"
+    },
+    {
+      "q": "What was the law regarding the firstborn of clean animals?",
+      "o": [
+        "They must be sold",
+        "They must be given to the poor",
+        "They must be sacrificed to the Lord",
+        "They must be kept for breeding"
+      ],
+      "a": 2,
+      "e": "Numbers 18:17 — But you must not redeem the firstborn of a cow, a sheep or a goat; they are holy.",
+      "d": "medium"
+    },
+    {
+      "q": "What was the law regarding the firstborn of unclean animals (like a donkey)?",
+      "o": [
+        "It must be killed",
+        "It must be redeemed with a lamb or have its neck broken",
+        "It must be given to the foreigner",
+        "It must be set free"
+      ],
+      "a": 1,
+      "e": "Exodus 13:13 — Redeem with a lamb every firstborn donkey, but if you do not redeem it, break its neck.",
+      "d": "hard"
+    },
+    {
+      "q": "How many years was a field to be planted before it rested?",
+      "o": [
+        "3",
+        "6",
+        "7",
+        "10"
+      ],
+      "a": 1,
+      "e": "Leviticus 25:3 — For six years sow your fields... but in the seventh year the land is to have a year of sabbath rest.",
+      "d": "medium"
+    },
+    {
+      "q": "What was the law regarding the gleanings of a vineyard?",
+      "o": [
+        "They should be gathered for the owner",
+        "They should be left for the poor and the foreigner",
+        "They should be used for wine for the priest",
+        "They should be burned"
+      ],
+      "a": 1,
+      "e": "Leviticus 19:10 — Do not go over your vineyard a second time or pick up the grapes that have fallen. Leave them for the poor and the foreigner.",
+      "d": "medium"
+    },
+    {
+      "q": "What was the law regarding weights and measures?",
+      "o": [
+        "They should be based on the Egyptian system",
+        "They must be honest and accurate",
+        "They must be checked by the priest every month",
+        "A 5% margin of error was allowed"
+      ],
+      "a": 1,
+      "e": "Leviticus 19:35-36 — Use honest scales and honest weights.",
+      "d": "medium"
+    },
+    {
+      "q": "What was the law concerning a man who died without a son?",
+      "o": [
+        "His property went to the king",
+        "His brother was to marry the widow to carry on his name",
+        "The property went to the priest",
+        "The widow inherited everything"
+      ],
+      "a": 1,
+      "e": "Deuteronomy 25:5 — Her husband’s brother shall take her and marry her and fulfill the duty of a brother-in-law to her.",
+      "d": "medium"
+    },
+    {
+      "q": "What was the law regarding a prisoner of war whom an Israelite man wanted to marry?",
+      "o": [
+        "He could marry her immediately",
+        "She had to shave her head, trim her nails, and mourn for a month",
+        "She had to become a slave first",
+        "It was strictly forbidden"
+      ],
+      "a": 1,
+      "e": "Deuteronomy 21:11-13 — She shall shave her head, trim her nails and put aside the clothes she was wearing when captured... after that you may go to her and be her husband.",
+      "d": "hard"
+    },
+    {
+      "q": "What was the law concerning the move of a boundary stone?",
+      "o": [
+        "It was encouraged to expand land",
+        "It was a cursed act",
+        "It required two witnesses",
+        "It could only be done by a priest"
+      ],
+      "a": 1,
+      "e": "Deuteronomy 27:17 — Cursed is anyone who moves their neighbor’s boundary stone.",
+      "d": "medium"
+    },
+    {
+      "q": "What was the law regarding the offering of a firstfruit of the dough?",
+      "o": [
+        "It was given to the poor",
+        "It was given to the priest",
+        "It was burned completely",
+        "It was eaten by the family"
+      ],
+      "a": 1,
+      "e": "Numbers 15:20 — Present a loaf from the first of your ground meal as an offering. (Given to the priests)",
+      "d": "hard"
+    },
+    {
+      "q": "What was the punishment for a person who blasphemed the Name of the Lord?",
+      "o": [
+        "A fine",
+        "Exile",
+        "Death by stoning",
+        "Working in the temple for life"
+      ],
+      "a": 2,
+      "e": "Leviticus 24:16 — Anyone who blasphemes the name of the Lord is to be put to death. The entire assembly must stone them.",
+      "d": "medium"
+    },
+    {
+      "q": "What was the law regarding the inheritance of daughters if there were no sons?",
+      "o": [
+        "They inherited nothing",
+        "They inherited equally with brothers",
+        "They could inherit but had to marry within their father's tribe",
+        "The property went to the uncle"
+      ],
+      "a": 2,
+      "e": "Numbers 36:6 — They may marry anyone they please as long as they marry within their father’s tribal clan.",
+      "d": "hard"
+    },
+    {
+      "q": "What was the law concerning the treatment of the elderly?",
+      "o": [
+        "They should be supported by the state",
+        "Stand up in the presence of the aged and show respect for the elderly",
+        "They should live in the temple",
+        "There was no specific law"
+      ],
+      "a": 1,
+      "e": "Leviticus 19:32 — Stand up in the presence of the aged, show respect for the elderly and revere your God.",
+      "d": "medium"
+    },
+    {
+      "q": "What was the law regarding the payment of a hired worker?",
+      "o": [
+        "Pay them at the end of the week",
+        "Pay them before sunset on the day they worked",
+        "Pay them in grain only",
+        "Pay them once a month"
+      ],
+      "a": 1,
+      "e": "Deuteronomy 24:15 — Pay them their wages each day before sunset, because they are poor and are counting on it.",
+      "d": "medium"
+    },
+    {
+      "q": "What was the law concerning a person with leprosy?",
+      "o": [
+        "They were to live in the temple",
+        "They must wear torn clothes, let their hair be unkempt, cover their lower face and cry out, 'Unclean! Unclean!'",
+        "They must be put to death",
+        "They were treated like everyone else"
+      ],
+      "a": 1,
+      "e": "Leviticus 13:45 — The person with such an infectious disease must wear torn clothes, let their hair be unkempt, cover the lower part of their face and cry out, 'Unclean! Unclean!'",
+      "d": "medium"
+    },
+    {
+      "q": "What was the law regarding the eating of blood?",
+      "o": [
+        "It was allowed if cooked",
+        "It was strictly forbidden",
+        "It was only for the priests",
+        "It was only for sacrifices"
+      ],
+      "a": 1,
+      "e": "Leviticus 17:10 — I will set my face against any Israelite... who eats blood and I will cut them off.",
+      "d": "easy"
+    },
+    {
+      "q": "Which of these was a 'clean' sea creature?",
+      "o": [
+        "Shrimp",
+        "Lobster",
+        "Fish with scales and fins",
+        "Crab"
+      ],
+      "a": 2,
+      "e": "Leviticus 11:9 — Of all the creatures living in the water... you may eat any that has fins and scales.",
+      "d": "easy"
+    },
+    {
+      "q": "What was the law regarding a house with mildew (leprosy) that could not be cleansed?",
+      "o": [
+        "It must be sold",
+        "It must be torn down and its stones, timber and plaster carried to an unclean place",
+        "It must be painted over",
+        "It must be given to the poor"
+      ],
+      "a": 1,
+      "e": "Leviticus 14:45 — It must be torn down—its stones, timbers and all the plaster—and taken out of the town to an unclean place.",
+      "d": "hard"
+    },
+    {
+      "q": "What was the law regarding the release of debts?",
+      "o": [
+        "Every year",
+        "Every 7 years",
+        "Every 50 years",
+        "Debts were never released"
+      ],
+      "a": 1,
+      "e": "Deuteronomy 15:1 — At the end of every seven years you must cancel debts.",
+      "d": "medium"
+    },
+    {
+      "q": "What was the law regarding the 'tithe' of the land?",
+      "o": [
+        "A tenth of the produce belongs to the Lord",
+        "A fifth of the produce belongs to the Lord",
+        "Only the firstfruits were required",
+        "It was voluntary"
+      ],
+      "a": 0,
+      "e": "Leviticus 27:30 — A tithe of everything from the land... belongs to the Lord; it is holy to the Lord.",
+      "d": "easy"
+    },
+    {
+      "q": "What was the law regarding a Nazirite and their hair?",
+      "o": [
+        "They must cut it every month",
+        "No razor may be used on their head during the period of their vow",
+        "They must shave it completely",
+        "They must dye it white"
+      ],
+      "a": 1,
+      "e": "Numbers 6:5 — During the entire period of their Nazirite vow, no razor may be used on their head.",
+      "d": "medium"
+    },
+    {
+      "q": "What was the law regarding a Nazirite and grapes?",
+      "o": [
+        "They must eat only grapes",
+        "They must not eat or drink anything that comes from the grapevine",
+        "They must give grapes to the priest",
+        "There was no law about grapes"
+      ],
+      "a": 1,
+      "e": "Numbers 6:3-4 — They must not drink wine... They must not eat fresh grapes or raisins... nothing that comes from the grapevine.",
+      "d": "medium"
+    },
+    {
+      "q": "Which of these was a required sacrifice for a person who sinned unintentionally?",
+      "o": [
+        "Burnt offering",
+        "Sin offering (Hattat)",
+        "Peace offering",
+        "Grain offering"
+      ],
+      "a": 1,
+      "e": "Leviticus 4:2 — When anyone sins unintentionally and does what is forbidden...",
+      "d": "medium"
+    },
+    {
+      "q": "What was the law regarding the 'Wave Offering'?",
+      "o": [
+        "It was waved before the Lord by the priest",
+        "It was thrown into the sea",
+        "It was burned on the altar",
+        "It was given to the poor"
+      ],
+      "a": 0,
+      "e": "Leviticus 7:30 — He is to bring the fat... and wave it before the Lord as a wave offering.",
+      "d": "hard"
+    },
+    {
+      "q": "What was the law regarding the 'Guilt Offering' (Trespass Offering)?",
+      "o": [
+        "It required no restitution",
+        "It required restitution plus a fifth of the value",
+        "It was only for the king",
+        "It was a voluntary gift"
+      ],
+      "a": 1,
+      "e": "Leviticus 6:5 — He must make full restitution, add a fifth of the value to it and give it all to the owner.",
+      "d": "hard"
+    },
+    {
+      "q": "What was the law regarding the lighting of the lamps in the Tabernacle?",
+      "o": [
+        "They were to be lit only on the Sabbath",
+        "They were to be kept burning from evening till morning before the Lord continually",
+        "They were lit only during the day",
+        "They were never to be extinguished"
+      ],
+      "a": 1,
+      "e": "Leviticus 24:2-3 — To keep the lamps burning continually... from evening till morning.",
+      "d": "hard"
+    },
+    {
+      "q": "What was the law regarding the Showbread (Bread of the Presence)?",
+      "o": [
+        "It was changed every day",
+        "Twelve loaves were placed on the table every Sabbath",
+        "It was eaten by the congregation",
+        "It was burned as a sacrifice"
+      ],
+      "a": 1,
+      "e": "Leviticus 24:5-8 — Set them in two rows, six in a row... This bread is to be set out before the Lord regularly, Sabbath after Sabbath.",
+      "d": "hard"
+    },
+    {
+      "q": "Who was allowed to eat the Showbread after it was replaced?",
+      "o": [
+        "The King",
+        "The poor",
+        "Aaron and his sons (the priests)",
+        "Anyone in the temple"
+      ],
+      "a": 2,
+      "e": "Leviticus 24:9 — It belongs to Aaron and his sons, who are to eat it in a holy place.",
+      "d": "hard"
+    },
+    {
+      "q": "What was the law regarding the ransom of a person's life?",
+      "o": [
+        "It was forbidden",
+        "Everyone 20 years or older was to give a half-shekel as an offering to the Lord",
+        "Only the rich had to pay",
+        "It was based on the person's weight in gold"
+      ],
+      "a": 1,
+      "e": "Exodus 30:12-15 — Each one must pay the Lord a ransom for his life... a half shekel.",
+      "d": "hard"
+    },
+    {
+      "q": "What was the law regarding the anointing oil of the Tabernacle?",
+      "o": [
+        "It could be used by anyone",
+        "It was holy and not to be poured on anyone's body or made for common use",
+        "It was used for cooking",
+        "It was sold to raise money"
+      ],
+      "a": 1,
+      "e": "Exodus 30:31-32 — It is sacred, and you are to consider it sacred. Do not pour it on anyone’s body and do not make any concoction with the same formula.",
+      "d": "hard"
+    },
+    {
+      "q": "Which animal was NOT allowed as a burnt offering?",
+      "o": [
+        "Bull",
+        "Goat",
+        "Pig",
+        "Pigeon"
+      ],
+      "a": 2,
+      "e": "Leviticus 1:2-14 — Burnt offerings could be from the herd, the flock, or birds (doves/pigeons). Pigs were unclean.",
+      "d": "easy"
+    },
+    {
+      "q": "What was the law regarding the fire on the altar?",
+      "o": [
+        "It should be lit only for sacrifices",
+        "It must be kept burning; it must not go out",
+        "It was lit by the sun",
+        "It was only for the High Priest to light"
+      ],
+      "a": 1,
+      "e": "Leviticus 6:13 — The fire must be kept burning on the altar continuously; it must not go out.",
+      "d": "medium"
+    },
+    {
+      "q": "What was the law regarding the skin of the burnt offering?",
+      "o": [
+        "It was burned",
+        "It belonged to the priest who offered it",
+        "It was given to the poor",
+        "It was used for the Tabernacle"
+      ],
+      "a": 1,
+      "e": "Leviticus 7:8 — The priest who offers a burnt offering... may keep the hide for himself.",
+      "d": "hard"
+    },
+    {
+      "q": "What was the law regarding the grain offering (Minchah)?",
+      "o": [
+        "It must contain leaven",
+        "It must contain honey",
+        "It must not contain leaven or honey, but must contain salt",
+        "It was only for the Day of Atonement"
+      ],
+      "a": 2,
+      "e": "Leviticus 2:11-13 — Do not include any yeast or honey... Season all your grain offerings with salt.",
+      "d": "hard"
+    },
+    {
+      "q": "What was the law regarding the 'Peace Offering' (Shelamim)?",
+      "o": [
+        "It was entirely for the priest",
+        "Part was for the Lord (fat), part for the priest (breast/thigh), and part for the worshiper to eat",
+        "It was only for the High Priest",
+        "It was a fast, not a feast"
+      ],
+      "a": 1,
+      "e": "Leviticus 7:11-34 — The peace offering involved a shared meal between God, the priest, and the worshiper.",
+      "d": "hard"
+    },
+    {
+      "q": "What was the law regarding a peace offering brought as a 'Thank Offering'?",
+      "o": [
+        "It could be eaten over three days",
+        "It must be eaten on the day it is offered; none should be left till morning",
+        "It was only offered at night",
+        "It required no animal sacrifice"
+      ],
+      "a": 1,
+      "e": "Leviticus 7:15 — The meat of their fellowship offering of thanksgiving must be eaten on the day it is offered.",
+      "d": "hard"
+    },
+    {
+      "q": "What was the law regarding the 'Vow Offering' or 'Freewill Offering'?",
+      "o": [
+        "It must be eaten on the same day",
+        "It could be eaten on the day offered and the following day, but none left for the third day",
+        "It was strictly for the priest",
+        "It was only for the Levites"
+      ],
+      "a": 1,
+      "e": "Leviticus 7:16-17 — It may be eaten on the day he offers it as well as the next day... any meat left over to the third day must be burned.",
+      "d": "hard"
+    },
+    {
+      "q": "What was the law regarding the 'Fat of the Fat Tail' of a sheep?",
+      "o": [
+        "It was eaten by the worshiper",
+        "It was burned on the altar as an offering to the Lord",
+        "It was given to the poor",
+        "It was used for lamps"
+      ],
+      "a": 1,
+      "e": "Leviticus 3:9 — He is to bring... the entire fat tail cut off close to the backbone. (It was burned)",
+      "d": "hard"
+    },
+    {
+      "q": "What was the law regarding the 'Breast' of the peace offering?",
+      "o": [
+        "It was burned",
+        "It was a 'Wave Offering' given to Aaron and his sons",
+        "It was given to the poor",
+        "It was eaten by the worshiper"
+      ],
+      "a": 1,
+      "e": "Leviticus 7:31-34 — The breast belongs to Aaron and his sons.",
+      "d": "hard"
+    },
+    {
+      "q": "What was the law regarding the 'Right Thigh' of the peace offering?",
+      "o": [
+        "It was burned",
+        "It was a 'Heave Offering' given to the priest who offered the blood and fat",
+        "It was given to the poor",
+        "It was eaten by the worshiper"
+      ],
+      "a": 1,
+      "e": "Leviticus 7:32-33 — You are to give the right thigh of your fellowship offerings to the priest as a contribution.",
+      "d": "hard"
+    },
+    {
+      "q": "What was the law regarding the High Priest and a dead body?",
+      "o": [
+        "He could only touch his parents' bodies",
+        "He must not make himself unclean for any dead person, even his father or mother",
+        "He was the only one allowed to touch the dead",
+        "He had no restriction"
+      ],
+      "a": 1,
+      "e": "Leviticus 21:11 — He must not enter a place where there is a dead body. He must not make himself unclean, even for his father or mother.",
+      "d": "medium"
+    },
+    {
+      "q": "What was the law regarding the High Priest and his hair?",
+      "o": [
+        "He must shave it",
+        "He must not let his hair become unkempt",
+        "He must wear it in a bun",
+        "There was no law about it"
+      ],
+      "a": 1,
+      "e": "Leviticus 21:10 — The high priest... must not let his hair become unkempt or tear his clothes.",
+      "d": "hard"
+    },
+    {
+      "q": "What was the law regarding the priest and physical defects?",
+      "o": [
+        "No man of the descendants of Aaron who had a defect could approach to offer the food of his God",
+        "Defects made him holy",
+        "Defects were ignored",
+        "Only the High Priest had this law"
+      ],
+      "a": 0,
+      "e": "Leviticus 21:17-21 — No man of your descendants... who has a physical defect may approach to offer the food of his God.",
+      "d": "hard"
+    },
+    {
+      "q": "What was the law regarding the eating of 'Holy Food' by a stranger?",
+      "o": [
+        "Anyone could eat it",
+        "No one outside a priest's family may eat it",
+        "Only the King could eat it",
+        "It was only for the High Priest"
+      ],
+      "a": 1,
+      "e": "Leviticus 22:10 — No one outside a priest’s family may eat the sacred offering.",
+      "d": "hard"
+    },
+    {
+      "q": "What was the law regarding an animal with a defect intended for a sacrifice?",
+      "o": [
+        "It was acceptable if the defect was small",
+        "You must not offer the Lord anything with a defect; it will not be accepted on your behalf",
+        "It was preferred for sin offerings",
+        "Only the High Priest could decide"
+      ],
+      "a": 1,
+      "e": "Leviticus 22:20 — Do not bring anything with a defect, because it will not be accepted on your behalf.",
+      "d": "medium"
+    },
+    {
+      "q": "What was the law regarding a newborn animal for sacrifice?",
+      "o": [
+        "It could be sacrificed immediately",
+        "It must remain with its mother for seven days and from the eighth day it will be acceptable",
+        "It must be one year old",
+        "It must be two years old"
+      ],
+      "a": 1,
+      "e": "Leviticus 22:27 — For seven days it is to remain with its mother. From the eighth day on, it will be acceptable.",
+      "d": "hard"
+    },
+    {
+      "q": "What was the law regarding the slaughter of a cow or sheep and its young?",
+      "o": [
+        "They must be slaughtered together",
+        "Do not slaughter a cow or a sheep and its young on the same day",
+        "The young must be slaughtered first",
+        "The mother must be slaughtered first"
+      ],
+      "a": 1,
+      "e": "Leviticus 22:28 — Do not slaughter a cow or a sheep and its young on the same day.",
+      "d": "hard"
+    },
+    {
+      "q": "Which of these was a 'Sacred Assembly' day?",
+      "o": [
+        "The first and seventh day of Unleavened Bread",
+        "The Day of Pentecost",
+        "The first and eighth day of Tabernacles",
+        "All of the above"
+      ],
+      "a": 3,
+      "e": "Leviticus 23 describes these as days of sacred assembly and rest.",
+      "d": "medium"
+    },
+    {
+      "q": "What was the law regarding work on the Day of Atonement (Yom Kippur)?",
+      "o": [
+        "Only light work was allowed",
+        "You must not do any work at all; it is a sabbath of rest",
+        "Work was allowed for the priests only",
+        "There was no restriction"
+      ],
+      "a": 1,
+      "e": "Leviticus 23:28 — Do not do any work on that day, for it is the Day of Atonement.",
+      "d": "medium"
+    },
+    {
+      "q": "What was the law regarding the 'Feast of Tabernacles' and where the people lived?",
+      "o": [
+        "They lived in their houses",
+        "They lived in temporary shelters (booths) for seven days",
+        "They lived in the temple",
+        "They lived in caves"
+      ],
+      "a": 1,
+      "e": "Leviticus 23:42 — Live in temporary shelters for seven days.",
+      "d": "easy"
+    },
+    {
+      "q": "What was the law regarding the 'Blasphemer' in Leviticus 24?",
+      "o": [
+        "He was a son of an Israelite woman and an Egyptian man",
+        "He was a priest",
+        "He was the King",
+        "He was a Levite"
+      ],
+      "a": 0,
+      "e": "Leviticus 24:10-11 — The son of an Israelite mother and an Egyptian father... blasphemed the Name.",
+      "d": "hard"
+    },
+    {
+      "q": "What was the law regarding the 'Sabbath for the Land'?",
+      "o": [
+        "The land was to rest every 50 years",
+        "The land was to rest every 7 years",
+        "The land never rested",
+        "The land rested every year"
+      ],
+      "a": 1,
+      "e": "Leviticus 25:4 — But in the seventh year the land is to have a year of sabbath rest.",
+      "d": "medium"
+    },
+    {
+      "q": "What was the law regarding the 'Year of Jubilee' and property?",
+      "o": [
+        "Property was sold forever",
+        "Property was to return to its original owner (the family's ancestral land)",
+        "Property was given to the king",
+        "Property was given to the priest"
+      ],
+      "a": 1,
+      "e": "Leviticus 25:13 — In this Year of Jubilee everyone is to return to their own property.",
+      "d": "medium"
+    },
+    {
+      "q": "What was the law regarding an Israelite who sold himself to a fellow Israelite?",
+      "o": [
+        "He was to be treated as a slave",
+        "He was not to be treated as a slave, but as a hired worker or temporary resident",
+        "He was a slave for life",
+        "He could never be set free"
+      ],
+      "a": 1,
+      "e": "Leviticus 25:39-40 — Do not make them work as slaves. They are to be treated as hired workers or temporary residents.",
+      "d": "medium"
+    },
+    {
+      "q": "What was the law regarding an Israelite who sold himself to a foreigner?",
+      "o": [
+        "He could never be redeemed",
+        "He retained the right of redemption; a relative could buy him back",
+        "He was free after 1 year",
+        "The foreigner owned him forever"
+      ],
+      "a": 1,
+      "e": "Leviticus 25:47-49 — They retain the right of redemption... One of their relatives may redeem them.",
+      "d": "hard"
+    },
+    {
+      "q": "What was the law regarding the 'Redemption Price' in the Year of Jubilee?",
+      "o": [
+        "It was a fixed amount",
+        "It was calculated based on the number of years until the next Jubilee",
+        "It was based on the person's age",
+        "It was decided by the priest"
+      ],
+      "a": 1,
+      "e": "Leviticus 25:25-27 — The price was based on the years of harvest remaining until the Jubilee.",
+      "d": "hard"
+    },
+    {
+      "q": "Which of these was NOT a blessing promised for obedience in Leviticus 26?",
+      "o": [
+        "Rain in its season",
+        "Peace in the land",
+        "Five of you will chase a hundred",
+        "You will have many chariots"
+      ],
+      "a": 3,
+      "e": "Leviticus 26:4-8 mentions rain, peace, and victory in battle, but doesn't mention chariots as a blessing.",
+      "d": "hard"
+    },
+    {
+      "q": "Which of these was a curse promised for disobedience in Leviticus 26?",
+      "o": [
+        "Sudden terror and wasting diseases",
+        "Your soil will not yield its crops",
+        "I will send wild animals among you",
+        "All of the above"
+      ],
+      "a": 3,
+      "e": "Leviticus 26:16-22 describes these and other punishments.",
+      "d": "medium"
+    },
+    {
+      "q": "What was the law regarding a person who made a special vow to the Lord?",
+      "o": [
+        "They must be a priest",
+        "A set value was placed on the person based on age and sex for redemption",
+        "They could never change their mind",
+        "It was only for the rich"
+      ],
+      "a": 1,
+      "e": "Leviticus 27:2-8 — The law gives specific values in silver shekels for different ages and genders.",
+      "d": "hard"
+    },
+    {
+      "q": "What was the law regarding the 'Tithe of the Herd and Flock'?",
+      "o": [
+        "Every fifth animal belongs to the Lord",
+        "Every tenth animal that passes under the shepherd's rod is holy to the Lord",
+        "Only the firstborn belonged to the Lord",
+        "The owner chose the best animal"
+      ],
+      "a": 1,
+      "e": "Leviticus 27:32 — Every tenth animal that passes under the shepherd’s rod—will be holy to the Lord.",
+      "d": "hard"
+    },
+    {
+      "q": "What was the law regarding the replacement of a holy animal with another?",
+      "o": [
+        "It was encouraged",
+        "If someone tries to replace it, both the original and the replacement become holy",
+        "It was allowed for a small fee",
+        "Only the priest could do it"
+      ],
+      "a": 1,
+      "e": "Leviticus 27:33 — If he does make a substitution, both the animal and its substitute become holy and cannot be redeemed.",
+      "d": "hard"
+    },
+    {
+      "q": "Which book of the Law contains the 'Second Law' or the repetition of the Law?",
+      "o": [
+        "Genesis",
+        "Exodus",
+        "Leviticus",
+        "Deuteronomy"
+      ],
+      "a": 3,
+      "e": "Deuteronomy means 'Second Law' in Greek.",
+      "d": "easy"
+    },
+    {
+      "q": "What was the law concerning the 'Trial of Jealousy' in Numbers 5?",
+      "o": [
+        "A woman suspected of adultery drank 'bitter water'",
+        "The man had to pay a fine",
+        "A priest decided by a lot",
+        "There was no such law"
+      ],
+      "a": 0,
+      "e": "Numbers 5:11-31 describes the ritual involving the water of bitterness.",
+      "d": "hard"
+    },
+    {
+      "q": "What was the law regarding the 'Nazirite's Vow' and dead bodies?",
+      "o": [
+        "They could touch their family",
+        "They must not go near a dead body, even that of their father or mother",
+        "They were the only ones allowed to bury the dead",
+        "They had no restriction"
+      ],
+      "a": 1,
+      "e": "Numbers 6:6-7 — Throughout the period of their dedication to the Lord, they must not go near a dead body.",
+      "d": "medium"
+    },
+    {
+      "q": "What was the law regarding the 'Priestly Blessing' in Numbers 6?",
+      "o": [
+        "It was 'The Lord bless you and keep you'",
+        "It was 'The Lord is my shepherd'",
+        "It was 'Holy, Holy, Holy'",
+        "It was 'Peace be with you'"
+      ],
+      "a": 0,
+      "e": "Numbers 6:24-26 — The Lord bless you and keep you; the Lord make his face shine on you...",
+      "d": "easy"
+    },
+    {
+      "q": "What was the law regarding the 'Second Passover' in Numbers 9?",
+      "o": [
+        "There was only one Passover",
+        "Those who were unclean or on a journey could celebrate it one month later",
+        "It was only for the priests",
+        "It was for those who missed the first one for any reason"
+      ],
+      "a": 1,
+      "e": "Numbers 9:10-11 — They are to celebrate it on the fourteenth day of the second month at twilight.",
+      "d": "hard"
+    },
+    {
+      "q": "What was the law regarding the 'Silver Trumpets' in Numbers 10?",
+      "o": [
+        "There were three trumpets",
+        "Two silver trumpets were used for calling the community and for having the camps set out",
+        "They were used by the King only",
+        "They were used by the choir only"
+      ],
+      "a": 1,
+      "e": "Numbers 10:2 — Make two trumpets of hammered silver.",
+      "d": "hard"
+    },
+    {
+      "q": "What was the law regarding the 'Fringes' (Tassels) in Numbers 15?",
+      "o": [
+        "They were to remind the people to obey all the commands of the Lord",
+        "They were for decoration only",
+        "They were only for the High Priest",
+        "They were to show wealth"
+      ],
+      "a": 0,
+      "e": "Numbers 15:39 — You will have these tassels to look at and so you will remember all the commands of the Lord.",
+      "d": "medium"
+    },
+    {
+      "q": "What was the law regarding the 'Red Heifer' in Numbers 19?",
+      "o": [
+        "Its blood was used for anointing",
+        "Its ashes were used to make the 'water of cleansing' for those who touched a dead body",
+        "It was a burnt offering for the King",
+        "It was a sin offering for the High Priest"
+      ],
+      "a": 1,
+      "e": "Numbers 19:2-9 — The ashes are to be kept... for use in the water of cleansing; it is for purification from sin.",
+      "d": "hard"
+    },
+    {
+      "q": "What was the law regarding the 'Cities of Refuge' and the High Priest?",
+      "o": [
+        "The person stayed there forever",
+        "The person could leave only after the death of the High Priest",
+        "The person was free after 7 years",
+        "The person was free after 1 year"
+      ],
+      "a": 1,
+      "e": "Numbers 35:25 — The person must stay there until the death of the high priest, who was anointed with the holy oil.",
+      "d": "hard"
+    },
+    {
+      "q": "What was the law regarding the 'False Witness' in Deuteronomy 19?",
+      "o": [
+        "They were fined",
+        "They were banished",
+        "Do to them as they intended to do to their brother",
+        "They were forgiven if they confessed"
+      ],
+      "a": 2,
+      "e": "Deuteronomy 19:19 — Then do to the false witness as that witness intended to do to the other party.",
+      "d": "medium"
+    },
+    {
+      "q": "What was the law regarding the 'Roof of a House' in Deuteronomy 22?",
+      "o": [
+        "It must be flat",
+        "It must have a parapet (railing) so no one would fall from it",
+        "It must be made of stone",
+        "It must be painted white"
+      ],
+      "a": 1,
+      "e": "Deuteronomy 22:8 — When you build a new house, make a parapet around your roof.",
+      "d": "medium"
+    },
+    {
+      "q": "What was the law regarding the 'Divorce' in Deuteronomy 24?",
+      "o": [
+        "It was strictly forbidden",
+        "A man could write a certificate of divorce and give it to his wife",
+        "It required the King's permission",
+        "Only the woman could initiate it"
+      ],
+      "a": 1,
+      "e": "Deuteronomy 24:1 — He writes her a certificate of divorce, gives it to her and sends her from his house.",
+      "d": "medium"
+    }
+  ],
+  "Gospels": [
+    {
+      "q": "Which Gospel begins with the genealogy of Jesus?",
+      "o": [
+        "Matthew",
+        "Mark",
+        "Luke",
+        "John"
+      ],
+      "a": 0,
+      "e": "Matthew 1:1 begins with the genealogy of Jesus Christ.",
+      "d": "easy"
+    },
+    {
+      "q": "In which city was Jesus born?",
+      "o": [
+        "Bethlehem",
+        "Nazareth",
+        "Jerusalem",
+        "Capernaum"
+      ],
+      "a": 0,
+      "e": "Matthew 2:1 states Jesus was born in Bethlehem.",
+      "d": "easy"
+    },
+    {
+      "q": "Who was the forerunner of Jesus?",
+      "o": [
+        "John the Baptist",
+        "Peter",
+        "James",
+        "Paul"
+      ],
+      "a": 0,
+      "e": "Mark 1:2-4 describes John the Baptist preparing the way.",
+      "d": "easy"
+    },
+    {
+      "q": "What was the first miracle Jesus performed in John's Gospel?",
+      "o": [
+        "Turning water into wine",
+        "Healing a leper",
+        "Feeding the 5000",
+        "Walking on water"
+      ],
+      "a": 0,
+      "e": "John 2:1-11 records the miracle at Cana.",
+      "d": "easy"
+    },
+    {
+      "q": "Which disciple was a tax collector?",
+      "o": [
+        "Matthew",
+        "Peter",
+        "John",
+        "Thomas"
+      ],
+      "a": 0,
+      "e": "Matthew 9:9 identifies Matthew at the tax booth.",
+      "d": "easy"
+    },
+    {
+      "q": "To whom did Jesus say, 'You must be born again'?",
+      "o": [
+        "Nicodemus",
+        "Zacchaeus",
+        "Pilate",
+        "Caiaphas"
+      ],
+      "a": 0,
+      "e": "John 3:3 - Jesus speaks to Nicodemus.",
+      "d": "easy"
+    },
+    {
+      "q": "Where did Jesus pray before his arrest?",
+      "o": [
+        "Gethsemane",
+        "Golgotha",
+        "Bethany",
+        "Jericho"
+      ],
+      "a": 0,
+      "e": "Matthew 26:36 mentions Gethsemane.",
+      "d": "easy"
+    },
+    {
+      "q": "Who betrayed Jesus?",
+      "o": [
+        "Judas Iscariot",
+        "Peter",
+        "Pilate",
+        "Herod"
+      ],
+      "a": 0,
+      "e": "Matthew 26:14-16 describes Judas's betrayal.",
+      "d": "easy"
+    },
+    {
+      "q": "Who denied Jesus three times?",
+      "o": [
+        "Peter",
+        "Judas",
+        "John",
+        "Thomas"
+      ],
+      "a": 0,
+      "e": "Matthew 26:69-75 records Peter's denials.",
+      "d": "easy"
+    },
+    {
+      "q": "Who asked for Jesus' body?",
+      "o": [
+        "Joseph of Arimathea",
+        "Nicodemus",
+        "Peter",
+        "John"
+      ],
+      "a": 0,
+      "e": "Matthew 27:57-58 mentions Joseph of Arimathea.",
+      "d": "medium"
+    },
+    {
+      "q": "Which Gospel was written by a physician?",
+      "o": [
+        "Luke",
+        "Matthew",
+        "Mark",
+        "John"
+      ],
+      "a": 0,
+      "e": "Colossians 4:14 refers to Luke as a physician.",
+      "d": "easy"
+    },
+    {
+      "q": "How many days was Jesus tempted in the wilderness?",
+      "o": [
+        "40",
+        "3",
+        "7",
+        "12"
+      ],
+      "a": 0,
+      "e": "Matthew 4:2 - Jesus fasted 40 days.",
+      "d": "easy"
+    },
+    {
+      "q": "Who climbed a sycamore tree?",
+      "o": [
+        "Zacchaeus",
+        "Bartimaeus",
+        "Lazarus",
+        "Nicodemus"
+      ],
+      "a": 0,
+      "e": "Luke 19:1-4 tells of Zacchaeus.",
+      "d": "easy"
+    },
+    {
+      "q": "What is the Great Commission?",
+      "o": [
+        "Go and make disciples",
+        "Love your neighbor",
+        "Do unto others",
+        "Repent"
+      ],
+      "a": 0,
+      "e": "Matthew 28:19-20 is the Great Commission.",
+      "d": "easy"
+    },
+    {
+      "q": "Which Gospel begins with 'In the beginning was the Word'?",
+      "o": [
+        "John",
+        "Genesis",
+        "Matthew",
+        "Luke"
+      ],
+      "a": 0,
+      "e": "John 1:1.",
+      "d": "easy"
+    },
+    {
+      "q": "How many baskets were left after feeding the 5,000?",
+      "o": [
+        "12",
+        "7",
+        "3",
+        "40"
+      ],
+      "a": 0,
+      "e": "Matthew 14:20.",
+      "d": "easy"
+    },
+    {
+      "q": "Who was John the Baptist's father?",
+      "o": [
+        "Zechariah",
+        "Joseph",
+        "Simeon",
+        "Levi"
+      ],
+      "a": 0,
+      "e": "Luke 1:5-13.",
+      "d": "medium"
+    },
+    {
+      "q": "Which angel appeared to Mary?",
+      "o": [
+        "Gabriel",
+        "Michael",
+        "Raphael",
+        "Uriel"
+      ],
+      "a": 0,
+      "e": "Luke 1:26.",
+      "d": "easy"
+    },
+    {
+      "q": "Where did Jesus' family flee from Herod?",
+      "o": [
+        "Egypt",
+        "Rome",
+        "Syria",
+        "Moab"
+      ],
+      "a": 0,
+      "e": "Matthew 2:13-14.",
+      "d": "easy"
+    },
+    {
+      "q": "At what age was Jesus in the Temple?",
+      "o": [
+        "12",
+        "8",
+        "15",
+        "10"
+      ],
+      "a": 0,
+      "e": "Luke 2:42.",
+      "d": "easy"
+    },
+    {
+      "q": "Which disciple was known as the Twin?",
+      "o": [
+        "Thomas",
+        "Peter",
+        "Matthew",
+        "Philip"
+      ],
+      "a": 0,
+      "e": "John 11:16.",
+      "d": "medium"
+    },
+    {
+      "q": "Who was the Roman governor at Jesus' trial?",
+      "o": [
+        "Pontius Pilate",
+        "Herod",
+        "Felix",
+        "Festus"
+      ],
+      "a": 0,
+      "e": "Matthew 27:2.",
+      "d": "easy"
+    },
+    {
+      "q": "Who was released instead of Jesus?",
+      "o": [
+        "Barabbas",
+        "Barnabas",
+        "Silas",
+        "Simon"
+      ],
+      "a": 0,
+      "e": "Matthew 27:16.",
+      "d": "easy"
+    },
+    {
+      "q": "Who helped carry Jesus' cross?",
+      "o": [
+        "Simon of Cyrene",
+        "Joseph of Arimathea",
+        "Andrew",
+        "John"
+      ],
+      "a": 0,
+      "e": "Luke 23:26.",
+      "d": "medium"
+    },
+    {
+      "q": "How many fish were caught in John 21?",
+      "o": [
+        "153",
+        "12",
+        "100",
+        "50"
+      ],
+      "a": 0,
+      "e": "John 21:11.",
+      "d": "hard"
+    },
+    {
+      "q": "Who said 'Behold, the Lamb of God'?",
+      "o": [
+        "John the Baptist",
+        "Isaiah",
+        "Peter",
+        "Andrew"
+      ],
+      "a": 0,
+      "e": "John 1:29.",
+      "d": "easy"
+    },
+    {
+      "q": "On what day did Jesus rise?",
+      "o": [
+        "First day",
+        "Seventh day",
+        "Friday",
+        "Monday"
+      ],
+      "a": 0,
+      "e": "Matthew 28:1.",
+      "d": "easy"
+    },
+    {
+      "q": "Who was Peter's brother?",
+      "o": [
+        "Andrew",
+        "James",
+        "John",
+        "Philip"
+      ],
+      "a": 0,
+      "e": "John 1:40.",
+      "d": "easy"
+    },
+    {
+      "q": "Home town of Mary and Martha?",
+      "o": [
+        "Bethany",
+        "Nazareth",
+        "Bethlehem",
+        "Jerusalem"
+      ],
+      "a": 0,
+      "e": "John 11:1.",
+      "d": "medium"
+    },
+    {
+      "q": "Who was the High Priest at Jesus' trial?",
+      "o": [
+        "Caiaphas",
+        "Annas",
+        "Gamaliel",
+        "Zadok"
+      ],
+      "a": 0,
+      "e": "Matthew 26:57.",
+      "d": "medium"
+    },
+    {
+      "q": "Who was the mother of John the Baptist?",
+      "o": [
+        "Elizabeth",
+        "Mary",
+        "Anna",
+        "Salome"
+      ],
+      "a": 0,
+      "e": "Luke 1:13.",
+      "d": "easy"
+    },
+    {
+      "q": "Which Gospel has no parables?",
+      "o": [
+        "John",
+        "Matthew",
+        "Mark",
+        "Luke"
+      ],
+      "a": 0,
+      "e": "John's Gospel contains no formal parables.",
+      "d": "hard"
+    },
+    {
+      "q": "What did Jesus use to feed the 5,000?",
+      "o": [
+        "5 loaves, 2 fish",
+        "7 loaves, 3 fish",
+        "12 loaves, 1 fish",
+        "2 loaves, 5 fish"
+      ],
+      "a": 0,
+      "e": "Matthew 14:17.",
+      "d": "easy"
+    },
+    {
+      "q": "What did Jesus do to the stormy sea?",
+      "o": [
+        "Rebuked the wind",
+        "Walked on it",
+        "Prayed",
+        "Threw oil"
+      ],
+      "a": 0,
+      "e": "Mark 4:39.",
+      "d": "easy"
+    },
+    {
+      "q": "Who was the first person to see the risen Jesus?",
+      "o": [
+        "Mary Magdalene",
+        "Peter",
+        "John",
+        "Mother Mary"
+      ],
+      "a": 0,
+      "e": "John 20:14.",
+      "d": "medium"
+    },
+    {
+      "q": "Which disciple was a fisherman?",
+      "o": [
+        "Peter",
+        "Matthew",
+        "Luke",
+        "Paul"
+      ],
+      "a": 0,
+      "e": "Matthew 4:18.",
+      "d": "easy"
+    },
+    {
+      "q": "What did Jesus cry out on the cross?",
+      "o": [
+        "Eloi, Eloi, lama sabachthani",
+        "It is finished",
+        "Father forgive them",
+        "All of the above"
+      ],
+      "a": 3,
+      "e": "Jesus spoke several things from the cross.",
+      "d": "medium"
+    },
+    {
+      "q": "Where was Jesus baptized?",
+      "o": [
+        "Jordan River",
+        "Nile River",
+        "Sea of Galilee",
+        "Dead Sea"
+      ],
+      "a": 0,
+      "e": "Matthew 3:13.",
+      "d": "easy"
+    },
+    {
+      "q": "How many disciples did Jesus have?",
+      "o": [
+        "12",
+        "7",
+        "10",
+        "40"
+      ],
+      "a": 0,
+      "e": "Matthew 10:1.",
+      "d": "easy"
+    },
+    {
+      "q": "Who was the father of James and John?",
+      "o": [
+        "Zebedee",
+        "Joseph",
+        "Alpheus",
+        "Jonas"
+      ],
+      "a": 0,
+      "e": "Matthew 4:21.",
+      "d": "easy"
+    },
+    {
+      "q": "Who was the 'voice crying in the wilderness'?",
+      "o": [
+        "John the Baptist",
+        "Isaiah",
+        "Elijah",
+        "Moses"
+      ],
+      "a": 0,
+      "e": "Matthew 3:3.",
+      "d": "easy"
+    },
+    {
+      "q": "What was Jesus' first recorded word in Luke?",
+      "o": [
+        "Why were you searching for me?",
+        "Repent",
+        "Follow me",
+        "Peace be with you"
+      ],
+      "a": 0,
+      "e": "Luke 2:49.",
+      "d": "hard"
+    },
+    {
+      "q": "Who was the sister of Mary and Lazarus?",
+      "o": [
+        "Martha",
+        "Elizabeth",
+        "Salome",
+        "Joanna"
+      ],
+      "a": 0,
+      "e": "Luke 10:38-39.",
+      "d": "easy"
+    },
+    {
+      "q": "What was the name of the man Jesus raised from the dead in Bethany?",
+      "o": [
+        "Lazarus",
+        "Jairus",
+        "Tabitha",
+        "Eutychus"
+      ],
+      "a": 0,
+      "e": "John 11.",
+      "d": "easy"
+    },
+    {
+      "q": "Which Gospel is the shortest?",
+      "o": [
+        "Mark",
+        "Matthew",
+        "Luke",
+        "John"
+      ],
+      "a": 0,
+      "e": "Mark is the shortest Gospel.",
+      "d": "medium"
+    },
+    {
+      "q": "Which Gospel was written for a Jewish audience?",
+      "o": [
+        "Matthew",
+        "Mark",
+        "Luke",
+        "John"
+      ],
+      "a": 0,
+      "e": "Matthew is widely considered to have a Jewish focus.",
+      "d": "medium"
+    },
+    {
+      "q": "Who was the Roman centurion who said 'Surely this was the Son of God'?",
+      "o": [
+        "The one at the cross",
+        "Cornelius",
+        "Longinus",
+        "Julius"
+      ],
+      "a": 0,
+      "e": "Matthew 27:54.",
+      "d": "medium"
+    },
+    {
+      "q": "How many times did Jesus predict his death in Mark?",
+      "o": [
+        "3",
+        "1",
+        "7",
+        "12"
+      ],
+      "a": 0,
+      "e": "Jesus predicts his death three times in Mark 8, 9, and 10.",
+      "d": "hard"
+    },
+    {
+      "q": "Which disciple replaced Judas Iscariot?",
+      "o": [
+        "Matthias",
+        "Barnabas",
+        "Paul",
+        "Silas"
+      ],
+      "a": 0,
+      "e": "Acts 1:26 (Technically Acts, but relevant to Gospels end).",
+      "d": "medium"
+    },
+    {
+      "q": "What city did Jesus enter on a donkey?",
+      "o": [
+        "Jerusalem",
+        "Jericho",
+        "Bethlehem",
+        "Nazareth"
+      ],
+      "a": 0,
+      "e": "Matthew 21:1-11.",
+      "d": "easy"
+    },
+    {
+      "q": "What did the people wave as Jesus entered Jerusalem?",
+      "o": [
+        "Palm branches",
+        "Olive branches",
+        "Flags",
+        "Cloaks"
+      ],
+      "a": 0,
+      "e": "John 12:13.",
+      "d": "easy"
+    },
+    {
+      "q": "Which Gospel contains the Sermon on the Mount?",
+      "o": [
+        "Matthew",
+        "Luke",
+        "Mark",
+        "John"
+      ],
+      "a": 0,
+      "e": "Matthew 5-7.",
+      "d": "easy"
+    },
+    {
+      "q": "Which Gospel contains the Sermon on the Plain?",
+      "o": [
+        "Luke",
+        "Matthew",
+        "Mark",
+        "John"
+      ],
+      "a": 0,
+      "e": "Luke 6:17-49.",
+      "d": "medium"
+    },
+    {
+      "q": "Who was the ruler of Galilee during Jesus' ministry?",
+      "o": [
+        "Herod Antipas",
+        "Herod the Great",
+        "Philip",
+        "Lysanias"
+      ],
+      "a": 0,
+      "e": "Luke 3:1.",
+      "d": "medium"
+    },
+    {
+      "q": "Which disciple was known as the Zealot?",
+      "o": [
+        "Simon",
+        "Jude",
+        "James",
+        "Andrew"
+      ],
+      "a": 0,
+      "e": "Luke 6:15.",
+      "d": "medium"
+    },
+    {
+      "q": "Who was the 'disciple whom Jesus loved'?",
+      "o": [
+        "John",
+        "Peter",
+        "James",
+        "Lazarus"
+      ],
+      "a": 0,
+      "e": "John 13:23.",
+      "d": "easy"
+    },
+    {
+      "q": "What did Jesus use to heal the man born blind?",
+      "o": [
+        "Spit and mud",
+        "Water",
+        "Oil",
+        "A word only"
+      ],
+      "a": 0,
+      "e": "John 9:6.",
+      "d": "easy"
+    },
+    {
+      "q": "How many people did Jesus feed with 7 loaves?",
+      "o": [
+        "4,000",
+        "5,000",
+        "3,000",
+        "10,000"
+      ],
+      "a": 0,
+      "e": "Matthew 15:38.",
+      "d": "medium"
+    },
+    {
+      "q": "Which Gospel was written to 'Theophilus'?",
+      "o": [
+        "Luke",
+        "Matthew",
+        "Mark",
+        "John"
+      ],
+      "a": 0,
+      "e": "Luke 1:3.",
+      "d": "easy"
+    },
+    {
+      "q": "What was the name of the pool where Jesus healed the paralytic?",
+      "o": [
+        "Bethesda",
+        "Siloam",
+        "Jordan",
+        "Gihon"
+      ],
+      "a": 0,
+      "e": "John 5:2.",
+      "d": "medium"
+    },
+    {
+      "q": "How many days was Lazarus in the tomb?",
+      "o": [
+        "4",
+        "3",
+        "7",
+        "1"
+      ],
+      "a": 0,
+      "e": "John 11:39.",
+      "d": "easy"
+    },
+    {
+      "q": "Which disciple asked to see the Father?",
+      "o": [
+        "Philip",
+        "Thomas",
+        "Andrew",
+        "John"
+      ],
+      "a": 0,
+      "e": "John 14:8.",
+      "d": "hard"
+    },
+    {
+      "q": "Who was the father of the prodigal son?",
+      "o": [
+        "A certain man",
+        "Abraham",
+        "Isaac",
+        "Jacob"
+      ],
+      "a": 0,
+      "e": "Luke 15:11 (Parable, but in Luke).",
+      "d": "easy"
+    },
+    {
+      "q": "What did Jesus say is the greatest commandment?",
+      "o": [
+        "Love God",
+        "Love neighbor",
+        "Do not kill",
+        "Do not steal"
+      ],
+      "a": 0,
+      "e": "Matthew 22:37-38.",
+      "d": "easy"
+    },
+    {
+      "q": "Who was the tax collector who Jesus visited?",
+      "o": [
+        "Zacchaeus",
+        "Matthew",
+        "Levi",
+        "All of these"
+      ],
+      "a": 3,
+      "e": "Jesus visited Zacchaeus and called Matthew/Levi.",
+      "d": "medium"
+    },
+    {
+      "q": "What happened to the veil of the temple when Jesus died?",
+      "o": [
+        "Torn in two",
+        "Burned",
+        "Fell down",
+        "Turned red"
+      ],
+      "a": 0,
+      "e": "Matthew 27:51.",
+      "d": "easy"
+    },
+    {
+      "q": "Who was the woman who touched Jesus' cloak to be healed?",
+      "o": [
+        "Woman with the issue of blood",
+        "Mary Magdalene",
+        "Joanna",
+        "The Samaritan woman"
+      ],
+      "a": 0,
+      "e": "Mark 5:25-29.",
+      "d": "easy"
+    },
+    {
+      "q": "What was the name of the man who was blind and sat by the road near Jericho?",
+      "o": [
+        "Bartimaeus",
+        "Zacchaeus",
+        "Lazarus",
+        "Malchus"
+      ],
+      "a": 0,
+      "e": "Mark 10:46.",
+      "d": "medium"
+    },
+    {
+      "q": "Whose ear did Peter cut off?",
+      "o": [
+        "Malchus",
+        "Caiaphas",
+        "Pilate",
+        "Longinus"
+      ],
+      "a": 0,
+      "e": "John 18:10.",
+      "d": "medium"
+    },
+    {
+      "q": "What was Jesus' first miracle in Cana?",
+      "o": [
+        "Water to wine",
+        "Healing blind",
+        "Multiplying bread",
+        "Walking on water"
+      ],
+      "a": 0,
+      "e": "John 2:11.",
+      "d": "easy"
+    },
+    {
+      "q": "Which Gospel emphasizes the 'Son of Man' title most?",
+      "o": [
+        "Luke",
+        "Matthew",
+        "Mark",
+        "John"
+      ],
+      "a": 0,
+      "e": "Luke uses 'Son of Man' frequently.",
+      "d": "hard"
+    },
+    {
+      "q": "Where did Jesus grow up?",
+      "o": [
+        "Nazareth",
+        "Bethlehem",
+        "Jerusalem",
+        "Egypt"
+      ],
+      "a": 0,
+      "e": "Luke 2:51-52.",
+      "d": "easy"
+    },
+    {
+      "q": "Who were the parents of John the Baptist?",
+      "o": [
+        "Zechariah and Elizabeth",
+        "Joseph and Mary",
+        "Abraham and Sarah",
+        "Elkanah and Hannah"
+      ],
+      "a": 0,
+      "e": "Luke 1.",
+      "d": "easy"
+    },
+    {
+      "q": "How many chapters are in Matthew?",
+      "o": [
+        "28",
+        "16",
+        "24",
+        "21"
+      ],
+      "a": 0,
+      "e": "Matthew has 28 chapters.",
+      "d": "medium"
+    },
+    {
+      "q": "How many chapters are in Mark?",
+      "o": [
+        "16",
+        "28",
+        "24",
+        "21"
+      ],
+      "a": 0,
+      "e": "Mark has 16 chapters.",
+      "d": "medium"
+    },
+    {
+      "q": "How many chapters are in Luke?",
+      "o": [
+        "24",
+        "28",
+        "16",
+        "21"
+      ],
+      "a": 0,
+      "e": "Luke has 24 chapters.",
+      "d": "medium"
+    },
+    {
+      "q": "How many chapters are in John?",
+      "o": [
+        "21",
+        "28",
+        "16",
+        "24"
+      ],
+      "a": 0,
+      "e": "John has 21 chapters.",
+      "d": "medium"
+    },
+    {
+      "q": "What was the occupation of the four disciples Jesus called first?",
+      "o": [
+        "Fishermen",
+        "Carpenters",
+        "Shepherds",
+        "Farmers"
+      ],
+      "a": 0,
+      "e": "Matthew 4:18-22.",
+      "d": "easy"
+    },
+    {
+      "q": "Which disciple was also called Nathanael?",
+      "o": [
+        "Bartholomew",
+        "Thaddaeus",
+        "Thomas",
+        "Philip"
+      ],
+      "a": 0,
+      "e": "Often identified together.",
+      "d": "hard"
+    },
+    {
+      "q": "Who was the ruler of the Jews who came to Jesus at night?",
+      "o": [
+        "Nicodemus",
+        "Joseph of Arimathea",
+        "Gamaliel",
+        "Caiaphas"
+      ],
+      "a": 0,
+      "e": "John 3:1.",
+      "d": "easy"
+    },
+    {
+      "q": "Where did Jesus meet the Samaritan woman?",
+      "o": [
+        "Jacob's well",
+        "Jordan river",
+        "Sea of Galilee",
+        "Jerusalem temple"
+      ],
+      "a": 0,
+      "e": "John 4:6.",
+      "d": "easy"
+    },
+    {
+      "q": "What did Jesus say to the woman caught in adultery?",
+      "o": [
+        "Go and sin no more",
+        "You are forgiven",
+        "Where are your accusers?",
+        "Both A and C"
+      ],
+      "a": 3,
+      "e": "John 8:10-11.",
+      "d": "medium"
+    },
+    {
+      "q": "Who was the 'Good Shepherd'?",
+      "o": [
+        "Jesus",
+        "David",
+        "Moses",
+        "Peter"
+      ],
+      "a": 0,
+      "e": "John 10:11.",
+      "d": "easy"
+    },
+    {
+      "q": "What did Jesus do at the Last Supper to show humility?",
+      "o": [
+        "Washed disciples' feet",
+        "Prayed for them",
+        "Gave them money",
+        "Washed the dishes"
+      ],
+      "a": 0,
+      "e": "John 13:5.",
+      "d": "easy"
+    },
+    {
+      "q": "Who was the first disciple to reach the tomb?",
+      "o": [
+        "John",
+        "Peter",
+        "Mary",
+        "Mary Magdalene"
+      ],
+      "a": 0,
+      "e": "John 20:4.",
+      "d": "medium"
+    },
+    {
+      "q": "What was the name of the field bought with Judas's silver?",
+      "o": [
+        "Akeldama",
+        "Golgotha",
+        "Gethsemane",
+        "Bethany"
+      ],
+      "a": 0,
+      "e": "Acts 1:19 / Matthew 27:8.",
+      "d": "hard"
+    },
+    {
+      "q": "Which Gospel contains the story of the Wise Men?",
+      "o": [
+        "Matthew",
+        "Luke",
+        "Mark",
+        "John"
+      ],
+      "a": 0,
+      "e": "Matthew 2.",
+      "d": "easy"
+    },
+    {
+      "q": "Which Gospel contains the story of the Shepherds?",
+      "o": [
+        "Luke",
+        "Matthew",
+        "Mark",
+        "John"
+      ],
+      "a": 0,
+      "e": "Luke 2.",
+      "d": "easy"
+    },
+    {
+      "q": "How many people were crucified with Jesus?",
+      "o": [
+        "2",
+        "1",
+        "3",
+        "0"
+      ],
+      "a": 0,
+      "e": "Luke 23:32-33.",
+      "d": "easy"
+    },
+    {
+      "q": "What did Jesus say to the thief on the cross?",
+      "o": [
+        "Today you will be with me in Paradise",
+        "You are forgiven",
+        "Repent now",
+        "Believe in me"
+      ],
+      "a": 0,
+      "e": "Luke 23:43.",
+      "d": "easy"
+    },
+    {
+      "q": "Who was the father of the apostles James and John?",
+      "o": [
+        "Zebedee",
+        "Alpheus",
+        "Zebulun",
+        "Zechariah"
+      ],
+      "a": 0,
+      "e": "Matthew 4:21.",
+      "d": "easy"
+    },
+    {
+      "q": "Which apostle was a brother of James (the son of Alpheus)?",
+      "o": [
+        "Jude",
+        "Matthew",
+        "John",
+        "Peter"
+      ],
+      "a": 0,
+      "e": "Luke 6:15-16.",
+      "d": "hard"
+    },
+    {
+      "q": "Which apostle was the son of Alpheus?",
+      "o": [
+        "James",
+        "Matthew",
+        "Thomas",
+        "Simon"
+      ],
+      "a": 0,
+      "e": "Matthew 10:3.",
+      "d": "medium"
+    },
+    {
+      "q": "Who said 'Can anything good come out of Nazareth?'",
+      "o": [
+        "Nathanael",
+        "Peter",
+        "Philip",
+        "Thomas"
+      ],
+      "a": 0,
+      "e": "John 1:46.",
+      "d": "medium"
+    },
+    {
+      "q": "Where was the transfiguration?",
+      "o": [
+        "A high mountain",
+        "Mount Sinai",
+        "Mount of Olives",
+        "Mount Carmel"
+      ],
+      "a": 0,
+      "e": "Matthew 17:1.",
+      "d": "medium"
+    },
+    {
+      "q": "Who appeared with Jesus at the transfiguration?",
+      "o": [
+        "Moses and Elijah",
+        "Abraham and Isaac",
+        "Noah and David",
+        "Peter and John"
+      ],
+      "a": 0,
+      "e": "Matthew 17:3.",
+      "d": "easy"
+    },
+    {
+      "q": "How many times should we forgive according to Jesus?",
+      "o": [
+        "70 times 7",
+        "7 times",
+        "3 times",
+        "Once"
+      ],
+      "a": 0,
+      "e": "Matthew 18:22.",
+      "d": "easy"
+    },
+    {
+      "q": "Who was the father of the apostle Peter?",
+      "o": [
+        "John",
+        "Zebedee",
+        "Jonas",
+        "Alpheus"
+      ],
+      "a": 0,
+      "e": "John 21:15 (Simon son of John).",
+      "d": "medium"
+    },
+    {
+      "q": "Who was the first martyr among the disciples (in Acts, but related)?",
+      "o": [
+        "James",
+        "Stephen",
+        "Peter",
+        "Andrew"
+      ],
+      "a": 1,
+      "e": "Acts 7.",
+      "d": "medium"
+    },
+    {
+      "q": "What was the name of the man who owned the tomb Jesus was buried in?",
+      "o": [
+        "Joseph of Arimathea",
+        "Nicodemus",
+        "Lazarus",
+        "Simon"
+      ],
+      "a": 0,
+      "e": "Matthew 27:57.",
+      "d": "easy"
+    },
+    {
+      "q": "Which Gospel emphasizes the humanity of Jesus?",
+      "o": [
+        "Luke",
+        "Matthew",
+        "Mark",
+        "John"
+      ],
+      "a": 0,
+      "e": "Luke is often noted for this.",
+      "d": "hard"
+    },
+    {
+      "q": "Which Gospel emphasizes the divinity of Jesus?",
+      "o": [
+        "John",
+        "Matthew",
+        "Mark",
+        "Luke"
+      ],
+      "a": 0,
+      "e": "John's prologue and 'I AM' statements.",
+      "d": "medium"
+    },
+    {
+      "q": "Who was the tetrarch of Ituraea and Traconitis?",
+      "o": [
+        "Philip",
+        "Herod",
+        "Lysanias",
+        "Antipas"
+      ],
+      "a": 0,
+      "e": "Luke 3:1.",
+      "d": "hard"
+    },
+    {
+      "q": "What was the name of the town where Jesus was rejected by his own people?",
+      "o": [
+        "Nazareth",
+        "Capernaum",
+        "Jericho",
+        "Bethlehem"
+      ],
+      "a": 0,
+      "e": "Luke 4:16-30.",
+      "d": "easy"
+    },
+    {
+      "q": "What did Jesus say is the bread of life?",
+      "o": [
+        "Himself",
+        "Manna",
+        "The Torah",
+        "The Temple"
+      ],
+      "a": 0,
+      "e": "John 6:35.",
+      "d": "easy"
+    },
+    {
+      "q": "How many disciples were on the road to Emmaus?",
+      "o": [
+        "2",
+        "3",
+        "12",
+        "1"
+      ],
+      "a": 0,
+      "e": "Luke 24:13.",
+      "d": "medium"
+    },
+    {
+      "q": "Who was the one named Cleopas?",
+      "o": [
+        "One of the two on the road to Emmaus",
+        "A disciple",
+        "A Pharisee",
+        "A Roman"
+      ],
+      "a": 0,
+      "e": "Luke 24:18.",
+      "d": "medium"
+    },
+    {
+      "q": "Where did the ascension take place?",
+      "o": [
+        "Near Bethany",
+        "Mount Sinai",
+        "Galilee",
+        "Jerusalem"
+      ],
+      "a": 0,
+      "e": "Luke 24:50-51.",
+      "d": "medium"
+    },
+    {
+      "q": "What did Jesus promise to send after his ascension?",
+      "o": [
+        "The Holy Spirit",
+        "Ten more disciples",
+        "Fire from heaven",
+        "A new temple"
+      ],
+      "a": 0,
+      "e": "John 14:16-17.",
+      "d": "easy"
+    },
+    {
+      "q": "Who wrote the Gospel of John?",
+      "o": [
+        "John the Apostle",
+        "John the Baptist",
+        "John Mark",
+        "John of Patmos"
+      ],
+      "a": 0,
+      "e": "Traditional attribution.",
+      "d": "easy"
+    },
+    {
+      "q": "What does Jesus say the sign of Jonah means in Matthew 12?",
+      "o": [
+        "A great fish will appear",
+        "The Son of Man will be three days in the heart of the earth",
+        "Israel will repent like Nineveh",
+        "The temple will be destroyed"
+      ],
+      "a": 1,
+      "e": "Matthew 12:40 — For as Jonah was three days and three nights in the belly of a huge fish, so the Son of Man will be three days and three nights in the heart of the earth.",
+      "d": "hard"
+    },
+    {
+      "q": "In John 6, why do many disciples leave Jesus after his teaching?",
+      "o": [
+        "He criticized the Pharisees",
+        "He said they must eat his flesh and drink his blood",
+        "He healed on the Sabbath",
+        "He refused to become king"
+      ],
+      "a": 1,
+      "e": "John 6:60, 66 — Many of his disciples said, 'This is a hard teaching. Who can accept it?' From this time many of his disciples turned back.",
+      "d": "hard"
+    },
+    {
+      "q": "What two commands does Jesus give the rich young ruler that the man had not yet done?",
+      "o": [
+        "Be baptized and fast",
+        "Sell his possessions and follow Jesus",
+        "Give half to the poor and pray daily",
+        "Leave his family and serve in the temple"
+      ],
+      "a": 1,
+      "e": "Mark 10:21 — Jesus looked at him and loved him. 'One thing you lack,' he said. 'Go, sell everything you have and give to the poor, and then come, follow me.'",
+      "d": "hard"
+    },
+    {
+      "q": "In Luke 10, what does Jesus say is the one thing needed when he visits Mary and Martha?",
+      "o": [
+        "Prayer and fasting",
+        "Hospitality for travelers",
+        "Sitting at Jesus's feet and listening",
+        "Serving the poor"
+      ],
+      "a": 2,
+      "e": "Luke 10:42 — but few things are needed—or indeed only one. Mary has chosen what is better, and it will not be taken away from her.",
+      "d": "hard"
+    },
+    {
+      "q": "What question does Jesus use to stump the Pharisees about the Messiah being David's son?",
+      "o": [
+        "How can the Messiah be born in Bethlehem and Nazareth?",
+        "If David calls the Messiah 'Lord,' how can he be his son?",
+        "Why does the Messiah have to suffer?",
+        "When will the Messiah appear?"
+      ],
+      "a": 1,
+      "e": "Matthew 22:45 — If then David calls him 'Lord,' how can he be his son?",
+      "d": "hard"
+    },
+    {
+      "q": "In John 17, what does Jesus specifically pray for regarding his disciples?",
+      "o": [
+        "That they would perform miracles",
+        "That they would not be taken out of the world but protected from the evil one",
+        "That they would build the church",
+        "That they would live long lives"
+      ],
+      "a": 1,
+      "e": "John 17:15 — My prayer is not that you take them out of the world but that you protect them from the evil one.",
+      "d": "hard"
+    },
+    {
+      "q": "What does Jesus say is the sin that will not be forgiven?",
+      "o": [
+        "Murder",
+        "Adultery",
+        "Blasphemy against the Holy Spirit",
+        "Denying Christ"
+      ],
+      "a": 2,
+      "e": "Matthew 12:31 — every kind of sin and slander can be forgiven, but blasphemy against the Spirit will not be forgiven.",
+      "d": "hard"
+    },
+    {
+      "q": "In the parable of the unjust steward (Luke 16), what does Jesus commend about him?",
+      "o": [
+        "His honesty",
+        "His shrewdness in dealing with worldly matters",
+        "His generosity",
+        "His loyalty to his master"
+      ],
+      "a": 1,
+      "e": "Luke 16:8 — the master commended the dishonest manager because he had acted shrewdly. For the people of this world are more shrewd in dealing with their own kind than are the people of the light.",
+      "d": "hard"
+    },
+    {
+      "q": "What does Jesus do in John 11 before raising Lazarus?",
+      "o": [
+        "He fasted for three days",
+        "He prayed aloud so the crowd could hear and believe",
+        "He anointed the tomb with oil",
+        "He rebuked the mourners"
+      ],
+      "a": 1,
+      "e": "John 11:41-42 — Then Jesus looked up and said, 'Father, I thank you that you have heard me. I knew that you always hear me, but I said this for the benefit of the people standing here, that they may believe that you sent me.'",
+      "d": "hard"
+    },
+    {
+      "q": "Which Gospel records the healing of the ten lepers and specifies only one returned?",
+      "o": [
+        "Matthew",
+        "Mark",
+        "Luke",
+        "John"
+      ],
+      "a": 2,
+      "e": "Luke 17:11-19 — Only one returned to give thanks, and he was a Samaritan.",
+      "d": "hard"
+    },
+    {
+      "q": "In Matthew 25, what does the king say to those who cared for the 'least of these'?",
+      "o": [
+        "Depart from me, I never knew you",
+        "Whatever you did for the least of these you did for me",
+        "Well done, good and faithful servant",
+        "Come and inherit the kingdom prepared for you"
+      ],
+      "a": 1,
+      "e": "Matthew 25:40 — The King will reply, 'Truly I tell you, whatever you did for one of the least of these brothers and sisters of mine, you did for me.'",
+      "d": "hard"
+    },
+    {
+      "q": "In the Olivet Discourse, what sign does Jesus say will precede the end?",
+      "o": [
+        "The temple will be rebuilt",
+        "This gospel of the kingdom will be preached in the whole world",
+        "The moon will turn to blood",
+        "Jerusalem will be surrounded by armies"
+      ],
+      "a": 1,
+      "e": "Matthew 24:14 — And this gospel of the kingdom will be preached in the whole world as a testimony to all nations, and then the end will come.",
+      "d": "hard"
+    },
+    {
+      "q": "What is the reaction of the crowds when Jesus enters Jerusalem on Palm Sunday in John's account?",
+      "o": [
+        "Silence and confusion",
+        "They take palm branches and shout 'Hosanna'",
+        "They ask him to heal the sick",
+        "They demand he prove he is the Messiah"
+      ],
+      "a": 1,
+      "e": "John 12:13 — They took palm branches and went out to meet him, shouting, 'Hosanna! Blessed is he who comes in the name of the Lord!'",
+      "d": "hard"
+    },
+    {
+      "q": "What does Jesus do when he sees merchants in the temple court?",
+      "o": [
+        "He teaches them about proper worship",
+        "He drives them out and overturns tables",
+        "He refuses to enter the temple",
+        "He reports them to the priests"
+      ],
+      "a": 1,
+      "e": "Matthew 21:12 — Jesus entered the temple courts and drove out all who were buying and selling there. He overturned the tables of the money changers.",
+      "d": "hard"
+    },
+    {
+      "q": "How does John's Gospel describe the purpose of writing it?",
+      "o": [
+        "That readers would observe the law",
+        "That readers may believe Jesus is the Messiah and have life in his name",
+        "That the deeds of Jesus be remembered",
+        "That Jews and Gentiles be united"
+      ],
+      "a": 1,
+      "e": "John 20:31 — But these are written that you may believe that Jesus is the Messiah, the Son of God, and that by believing you may have life in his name.",
+      "d": "hard"
+    },
+    {
+      "q": "What does Jesus say about the temple when he cleanses it in Mark 11?",
+      "o": [
+        "This house belongs to David",
+        "My house will be called a house of prayer for all nations",
+        "The Father dwells here",
+        "Tear this down and I will rebuild it"
+      ],
+      "a": 1,
+      "e": "Mark 11:17 — And as he taught them, he said, 'Is it not written: My house will be called a house of prayer for all nations?'",
+      "d": "hard"
+    },
+    {
+      "q": "In the parable of the pounds (minas) in Luke 19, how many minas does the king give each servant?",
+      "o": [
+        "5",
+        "10",
+        "1",
+        "3"
+      ],
+      "a": 2,
+      "e": "Luke 19:13 — So he called ten of his servants and gave them ten minas. 'Put this money to work,' he said, 'until I come back.' Each received one mina.",
+      "d": "hard"
+    },
+    {
+      "q": "Which disciple is described in John as 'the disciple whom Jesus loved'?",
+      "o": [
+        "Peter",
+        "James",
+        "John",
+        "Andrew"
+      ],
+      "a": 2,
+      "e": "John 13:23 — One of them, the disciple whom Jesus loved, was reclining next to him. This is traditionally identified as John.",
+      "d": "hard"
+    },
+    {
+      "q": "In Luke 24, what happens to the two disciples on the road to Emmaus?",
+      "o": [
+        "An angel appears to them",
+        "Their eyes are opened when Jesus breaks bread with them",
+        "They see the risen Jesus at the tomb",
+        "They receive the Holy Spirit"
+      ],
+      "a": 1,
+      "e": "Luke 24:30-31 — When he was at the table with them, he took bread, gave thanks, broke it and began to give it to them. Then their eyes were opened and they recognized him.",
+      "d": "hard"
+    },
+    {
+      "q": "What does Jesus say to Nicodemus about how the Son of Man must be lifted up?",
+      "o": [
+        "As Moses built the tabernacle",
+        "As Moses lifted up the snake in the wilderness",
+        "As Elijah was taken to heaven",
+        "As the ark was raised above the flood"
+      ],
+      "a": 1,
+      "e": "John 3:14 — Just as Moses lifted up the snake in the wilderness, so the Son of Man must be lifted up.",
+      "d": "hard"
+    },
+    {
+      "q": "In Matthew 13, what does the mustard seed represent in Jesus's parable?",
+      "o": [
+        "Faith that can move mountains",
+        "The kingdom of heaven that grows from small beginnings",
+        "The spreading of the gospel to all nations",
+        "The patience needed for salvation"
+      ],
+      "a": 1,
+      "e": "Matthew 13:31-32 — The kingdom of heaven is like a mustard seed, which a man took and planted in his field. Though it is the smallest of all seeds, yet when it grows, it is the largest of garden plants.",
+      "d": "hard"
+    },
+    {
+      "q": "In John 10, Jesus says his sheep hear his voice and he knows them. What else does he say he gives them?",
+      "o": [
+        "Abundant food",
+        "Eternal life, and they will never perish",
+        "Wisdom and understanding",
+        "Power over sickness"
+      ],
+      "a": 1,
+      "e": "John 10:28 — I give them eternal life, and they shall never perish; no one will snatch them out of my hand.",
+      "d": "hard"
+    },
+    {
+      "q": "What does Jesus say about the relationship between himself and the Father in John 10:30?",
+      "o": [
+        "The Father is greater than I",
+        "I and the Father are one",
+        "The Father dwells in me",
+        "I do nothing without the Father"
+      ],
+      "a": 1,
+      "e": "John 10:30 — I and the Father are one.",
+      "d": "hard"
+    },
+    {
+      "q": "In Luke 12, what does Jesus say about the man who stored up goods and said 'take life easy'?",
+      "o": [
+        "He was wise to plan ahead",
+        "God called him a fool because his life would be demanded that night",
+        "He would prosper for a season",
+        "He needed to be more generous"
+      ],
+      "a": 1,
+      "e": "Luke 12:20 — But God said to him, 'You fool! This very night your life will be demanded from you.'",
+      "d": "hard"
+    },
+    {
+      "q": "What specific charge do the chief priests bring against Jesus before Pilate in Luke 23?",
+      "o": [
+        "Blasphemy against the temple",
+        "He subverts the nation, opposes taxes to Caesar, and claims to be Messiah king",
+        "Breaking the Sabbath",
+        "Healing on holy days"
+      ],
+      "a": 1,
+      "e": "Luke 23:2 — And they began to accuse him, saying, 'We have found this man subverting our nation. He opposes payment of taxes to Caesar and claims to be Messiah, a king.'",
+      "d": "hard"
+    },
+    {
+      "q": "In John 19, who asks Pilate for Jesus's body for burial?",
+      "o": [
+        "Mary Magdalene",
+        "Joseph of Arimathea",
+        "Nicodemus",
+        "The beloved disciple"
+      ],
+      "a": 1,
+      "e": "John 19:38 — Later, Joseph of Arimathea asked Pilate for the body of Jesus.",
+      "d": "hard"
+    },
+    {
+      "q": "What does the angel say to the women at the empty tomb in Matthew 28?",
+      "o": [
+        "He has gone to Galilee, follow him",
+        "He is not here; he has risen, just as he said. Come and see the place where he lay",
+        "Fear not, for he lives",
+        "Tell his disciples he has ascended"
+      ],
+      "a": 1,
+      "e": "Matthew 28:6 — He is not here; he has risen, just as he said. Come and see the place where he lay.",
+      "d": "hard"
+    },
+    {
+      "q": "In Luke 4, what happens when Jesus reads from Isaiah in the Nazareth synagogue?",
+      "o": [
+        "The people worship him",
+        "He declares the scripture is fulfilled in their hearing, then the crowd tries to throw him off a cliff",
+        "He heals all who are present",
+        "He debates the scribes"
+      ],
+      "a": 1,
+      "e": "Luke 4:21 — He began by saying to them, 'Today this scripture is fulfilled in your hearing.' Then all were furious and drove him out of the town to throw him off the cliff.",
+      "d": "hard"
+    },
+    {
+      "q": "In John 8, what does Jesus say to the woman caught in adultery after the crowd leaves?",
+      "o": [
+        "Your sins are forgiven",
+        "Neither do I condemn you. Go now and leave your life of sin",
+        "You are free, but sin no more for a year",
+        "Tell no one what happened here"
+      ],
+      "a": 1,
+      "e": "John 8:11 — 'Then neither do I condemn you,' Jesus declared. 'Go now and leave your life of sin.'",
+      "d": "hard"
+    },
+    {
+      "q": "What does the parable of the net (Matthew 13) teach?",
+      "o": [
+        "Christians must fish for souls",
+        "At the end of the age, angels will separate the wicked from the righteous",
+        "The kingdom spreads through all nations",
+        "Every person has a chance to be saved"
+      ],
+      "a": 1,
+      "e": "Matthew 13:49 — This is how it will be at the end of the age. The angels will come and separate the wicked from the righteous.",
+      "d": "hard"
+    },
+    {
+      "q": "What reason does John give for why many Jewish leaders who believed in Jesus would not confess him publicly?",
+      "o": [
+        "They feared Roman authorities",
+        "They loved human praise more than praise from God",
+        "They did not fully understand his teaching",
+        "They feared being wrong about him"
+      ],
+      "a": 1,
+      "e": "John 12:43 — for they loved human praise more than praise from God.",
+      "d": "hard"
+    },
+    {
+      "q": "In Matthew 26, what does Jesus say the woman who anoints him has done?",
+      "o": [
+        "Wasted expensive perfume",
+        "She has prepared him for burial and this will be told wherever the gospel is preached",
+        "Shown greater love than any disciple",
+        "Fulfilled a prophecy of Isaiah"
+      ],
+      "a": 1,
+      "e": "Matthew 26:12-13 — When she poured this perfume on my body, she did it to prepare me for burial. Wherever this gospel is preached, what she has done will also be told.",
+      "d": "hard"
+    },
+    {
+      "q": "In the Sermon on the Mount, what does Jesus say about those who are persecuted for righteousness?",
+      "o": [
+        "They will find relief from God",
+        "Theirs is the kingdom of heaven",
+        "They will be comforted",
+        "They will be rewarded in this life"
+      ],
+      "a": 1,
+      "e": "Matthew 5:10 — Blessed are those who are persecuted because of righteousness, for theirs is the kingdom of heaven.",
+      "d": "hard"
+    },
+    {
+      "q": "In John 15, what does Jesus say will happen to branches that do not bear fruit?",
+      "o": [
+        "They will be pruned and helped to grow",
+        "They are taken away and burned",
+        "They will wither but remain on the vine",
+        "They will be replanted elsewhere"
+      ],
+      "a": 1,
+      "e": "John 15:6 — If you do not remain in me, you are like a branch that is thrown away and withers; such branches are picked up, thrown into the fire and burned.",
+      "d": "hard"
+    },
+    {
+      "q": "In Luke 22, what does Jesus say is the greatest among his disciples?",
+      "o": [
+        "The one who has been with him longest",
+        "The one who serves",
+        "The one who believes most faithfully",
+        "The one who sacrifices most"
+      ],
+      "a": 1,
+      "e": "Luke 22:26-27 — The greatest among you should be like the youngest, and the one who rules like the one who serves.",
+      "d": "hard"
+    },
+    {
+      "q": "Which parable does Jesus tell in response to the Pharisees' complaint that he welcomes sinners?",
+      "o": [
+        "The prodigal son",
+        "The lost sheep and the lost coin and the prodigal son — all three",
+        "The unmerciful servant",
+        "The ten virgins"
+      ],
+      "a": 1,
+      "e": "Luke 15:1-3 — Now the tax collectors and sinners were all gathering around to hear Jesus. But the Pharisees and the teachers of the law muttered, 'This man welcomes sinners.' Then Jesus told them this parable — and proceeded to tell all three parables of Luke 15.",
+      "d": "hard"
+    },
+    {
+      "q": "What does Jesus say about oaths in the Sermon on the Mount?",
+      "o": [
+        "Take oaths only in God's name",
+        "Do not swear at all; let your yes be yes and your no be no",
+        "Oaths are permitted for serious matters",
+        "Always confirm oaths in the temple"
+      ],
+      "a": 1,
+      "e": "Matthew 5:34, 37 — But I tell you, do not swear an oath at all...All you need to say is simply 'Yes' or 'No.'",
+      "d": "hard"
+    },
+    {
+      "q": "In Mark 7, what does Jesus declare about all foods?",
+      "o": [
+        "All foods are holy to the Lord",
+        "All foods are clean",
+        "Some foods remain unclean until the new covenant",
+        "Food does not affect one's relationship with God"
+      ],
+      "a": 1,
+      "e": "Mark 7:19 — Jesus declared all foods clean.",
+      "d": "hard"
+    },
+    {
+      "q": "In Matthew 16, what does Jesus say he will give Peter after his confession?",
+      "o": [
+        "The sword of truth",
+        "The keys of the kingdom of heaven",
+        "Authority over the twelve",
+        "Power to cast out demons"
+      ],
+      "a": 1,
+      "e": "Matthew 16:19 — I will give you the keys of the kingdom of heaven; whatever you bind on earth will be bound in heaven.",
+      "d": "hard"
+    },
+    {
+      "q": "What does John say happened when the soldier pierced Jesus's side on the cross?",
+      "o": [
+        "Jesus cried out and died",
+        "Blood and water came out",
+        "Nothing happened since he was already dead",
+        "The soldier repented immediately"
+      ],
+      "a": 1,
+      "e": "John 19:34 — one of the soldiers pierced Jesus's side with a spear, bringing a sudden flow of blood and water.",
+      "d": "hard"
+    },
+    {
+      "q": "In Luke 23, what does Jesus say to the criminal on the cross who asks to be remembered?",
+      "o": [
+        "Your faith has saved you",
+        "Today you will be with me in paradise",
+        "Your sins are forgiven",
+        "I will see you in the resurrection"
+      ],
+      "a": 1,
+      "e": "Luke 23:43 — Jesus answered him, 'Truly I tell you, today you will be with me in paradise.'",
+      "d": "hard"
+    },
+    {
+      "q": "In John 21, how many fish do the disciples catch in the net after Jesus directs them?",
+      "o": [
+        "120",
+        "153",
+        "200",
+        "77"
+      ],
+      "a": 1,
+      "e": "John 21:11 — Simon Peter climbed aboard and dragged the net ashore. It was full of large fish, 153, but even with so many the net was not torn.",
+      "d": "hard"
+    },
+    {
+      "q": "What does Jesus say in John 14 about the one who has seen him?",
+      "o": [
+        "Has seen the kingdom",
+        "Has seen the Father",
+        "Has seen eternal life",
+        "Has seen God's glory"
+      ],
+      "a": 1,
+      "e": "John 14:9 — Anyone who has seen me has seen the Father.",
+      "d": "hard"
+    },
+    {
+      "q": "In the parable of the wedding banquet (Matthew 22), why is one guest thrown out?",
+      "o": [
+        "He arrived late",
+        "He was not wearing wedding clothes",
+        "He insulted the king",
+        "He refused to eat"
+      ],
+      "a": 1,
+      "e": "Matthew 22:11-13 — The king noticed a man who was not wearing wedding clothes and had him thrown outside into the darkness.",
+      "d": "hard"
+    },
+    {
+      "q": "In Luke 18, what does Jesus say about the Pharisee and the tax collector who both pray?",
+      "o": [
+        "Both prayers were acceptable",
+        "The tax collector went home justified, not the Pharisee",
+        "The Pharisee's prayer was more eloquent",
+        "God heard the Pharisee's prayer because of his fasting"
+      ],
+      "a": 1,
+      "e": "Luke 18:14 — I tell you that this man, rather than the other, went home justified before God.",
+      "d": "hard"
+    },
+    {
+      "q": "What is the first thing Jesus says from the cross in Luke 23?",
+      "o": [
+        "My God, my God, why have you forsaken me?",
+        "Father, forgive them, for they do not know what they are doing",
+        "It is finished",
+        "Into your hands I commit my spirit"
+      ],
+      "a": 1,
+      "e": "Luke 23:34 — Jesus said, 'Father, forgive them, for they do not know what they are doing.'",
+      "d": "hard"
+    },
+    {
+      "q": "What does the voice from the cloud say at the Transfiguration in Mark 9?",
+      "o": [
+        "This is my Son; listen to him",
+        "This is my servant whom I love",
+        "Blessed is he who comes in my name",
+        "Rise and do not be afraid"
+      ],
+      "a": 0,
+      "e": "Mark 9:7 — Then a cloud appeared and covered them, and a voice came from the cloud: 'This is my Son, whom I love. Listen to him!'",
+      "d": "hard"
+    },
+    {
+      "q": "In John 4, what does Jesus tell the Samaritan woman about true worship?",
+      "o": [
+        "True worshipers must worship in Jerusalem",
+        "True worshipers will worship the Father in the Spirit and in truth",
+        "True worship requires observing feasts",
+        "Worship must be done in silence"
+      ],
+      "a": 1,
+      "e": "John 4:23-24 — the true worshipers will worship the Father in the Spirit and in truth.",
+      "d": "hard"
+    },
+    {
+      "q": "In Matthew 23, what does Jesus call the scribes and Pharisees?",
+      "o": [
+        "Children of Abraham",
+        "Whitewashed tombs full of dead bones",
+        "Blind guides and hypocrites — the text uses both terms",
+        "False shepherds"
+      ],
+      "a": 2,
+      "e": "Matthew 23:27 — Woe to you, teachers of the law and Pharisees, you hypocrites! You are like whitewashed tombs, which look beautiful on the outside but on the inside are full of the bones of the dead.",
+      "d": "hard"
+    },
+    {
+      "q": "What does Jesus mean by 'born of water and the Spirit' in John 3?",
+      "o": [
+        "Natural birth and confirmation",
+        "Physical birth (water) and spiritual rebirth (Spirit)",
+        "Baptism and anointing",
+        "Repentance and faith"
+      ],
+      "a": 1,
+      "e": "John 3:5 — Jesus answered, 'Very truly I tell you, no one can enter the kingdom of God unless they are born of water and the Spirit.' Many scholars interpret this as physical birth (water of the womb) and spiritual rebirth.",
+      "d": "hard"
+    },
+    {
+      "q": "In Luke 15, how many silver coins did the woman have when she lost one?",
+      "o": [
+        "7",
+        "10",
+        "12",
+        "5"
+      ],
+      "a": 1,
+      "e": "Luke 15:8 — Or suppose a woman has ten silver coins and loses one.",
+      "d": "hard"
+    }
+  ],
+  "Parables": [
+    {
+      "q": "In the Parable of the Sower, what does the seed represent?",
+      "o": [
+        "The Word of God",
+        "Money",
+        "Faith",
+        "People"
+      ],
+      "a": 0,
+      "e": "Luke 8:11 - 'The seed is the word of God.'",
+      "d": "easy"
+    },
+    {
+      "q": "What happened to the seed that fell on the path?",
+      "o": [
+        "Eaten by birds",
+        "Withered",
+        "Choked by thorns",
+        "Grew quickly"
+      ],
+      "a": 0,
+      "e": "Matthew 13:4.",
+      "d": "easy"
+    },
+    {
+      "q": "In the Parable of the Prodigal Son, what did the younger son ask for?",
+      "o": [
+        "His share of the estate",
+        "A new coat",
+        "A ring",
+        "A job"
+      ],
+      "a": 0,
+      "e": "Luke 15:12.",
+      "d": "easy"
+    },
+    {
+      "q": "What was the younger son's job when he ran out of money?",
+      "o": [
+        "Feeding pigs",
+        "Shepherding",
+        "Tax collecting",
+        "Fishing"
+      ],
+      "a": 0,
+      "e": "Luke 15:15.",
+      "d": "easy"
+    },
+    {
+      "q": "Who was the first person to pass by the injured man in the Parable of the Good Samaritan?",
+      "o": [
+        "A priest",
+        "A Levite",
+        "A Samaritan",
+        "A soldier"
+      ],
+      "a": 0,
+      "e": "Luke 10:31.",
+      "d": "medium"
+    },
+    {
+      "q": "Who was the second person to pass by in the Good Samaritan parable?",
+      "o": [
+        "A Levite",
+        "A priest",
+        "A Samaritan",
+        "A merchant"
+      ],
+      "a": 0,
+      "e": "Luke 10:32.",
+      "d": "medium"
+    },
+    {
+      "q": "Where did the Samaritan take the injured man?",
+      "o": [
+        "To an inn",
+        "To a hospital",
+        "To his home",
+        "To the temple"
+      ],
+      "a": 0,
+      "e": "Luke 10:34.",
+      "d": "easy"
+    },
+    {
+      "q": "In the Parable of the Ten Virgins, what did the five foolish virgins forget?",
+      "o": [
+        "Extra oil",
+        "Their lamps",
+        "Their invitations",
+        "Their shoes"
+      ],
+      "a": 0,
+      "e": "Matthew 25:3.",
+      "d": "easy"
+    },
+    {
+      "q": "What time did the bridegroom arrive in the Parable of the Ten Virgins?",
+      "o": [
+        "Midnight",
+        "Sunset",
+        "Noon",
+        "Dawn"
+      ],
+      "a": 0,
+      "e": "Matthew 25:6.",
+      "d": "medium"
+    },
+    {
+      "q": "In the Parable of the Talents, how many talents did the first servant receive?",
+      "o": [
+        "5",
+        "2",
+        "1",
+        "10"
+      ],
+      "a": 0,
+      "e": "Matthew 25:15.",
+      "d": "easy"
+    },
+    {
+      "q": "What did the servant who received one talent do with it?",
+      "o": [
+        "Buried it in the ground",
+        "Invested it",
+        "Spent it",
+        "Gave it away"
+      ],
+      "a": 0,
+      "e": "Matthew 25:25.",
+      "d": "easy"
+    },
+    {
+      "q": "In the Parable of the Lost Sheep, how many sheep were left in the open country?",
+      "o": [
+        "99",
+        "100",
+        "50",
+        "12"
+      ],
+      "a": 0,
+      "e": "Luke 15:4.",
+      "d": "easy"
+    },
+    {
+      "q": "What does the woman do when she finds her lost coin?",
+      "o": [
+        "Calls her friends to celebrate",
+        "Hides it",
+        "Gives it to the poor",
+        "Buys bread"
+      ],
+      "a": 0,
+      "e": "Luke 15:9.",
+      "d": "easy"
+    },
+    {
+      "q": "In the Parable of the Mustard Seed, what does the seed become?",
+      "o": [
+        "A large tree",
+        "A small bush",
+        "A flower",
+        "A vineyard"
+      ],
+      "a": 0,
+      "e": "Matthew 13:32.",
+      "d": "easy"
+    },
+    {
+      "q": "What is the kingdom of heaven compared to in the Parable of the Hidden Treasure?",
+      "o": [
+        "Treasure hidden in a field",
+        "A pearl",
+        "A net",
+        "All of these"
+      ],
+      "a": 3,
+      "e": "Matthew 13:44-47 mentions all these comparisons.",
+      "d": "medium"
+    },
+    {
+      "q": "In the Parable of the Pearl of Great Price, what does the merchant do?",
+      "o": [
+        "Sells everything he has to buy it",
+        "Steals it",
+        "Trades for it",
+        "Ignores it"
+      ],
+      "a": 0,
+      "e": "Matthew 13:46.",
+      "d": "easy"
+    },
+    {
+      "q": "What happened to the wheat and tares (weeds)?",
+      "o": [
+        "They grew together until harvest",
+        "The weeds were pulled immediately",
+        "The wheat was moved",
+        "They were both burned"
+      ],
+      "a": 0,
+      "e": "Matthew 13:30.",
+      "d": "medium"
+    },
+    {
+      "q": "In the Parable of the Unforgiving Servant, how much was the first servant's debt?",
+      "o": [
+        "10,000 talents",
+        "100 denarii",
+        "50 talents",
+        "1,000 gold pieces"
+      ],
+      "a": 0,
+      "e": "Matthew 18:24.",
+      "d": "hard"
+    },
+    {
+      "q": "How much did the second servant owe the first servant?",
+      "o": [
+        "100 denarii",
+        "10,000 talents",
+        "1 talent",
+        "50 denarii"
+      ],
+      "a": 0,
+      "e": "Matthew 18:28.",
+      "d": "medium"
+    },
+    {
+      "q": "In the Parable of the Rich Fool, what did the man plan to build?",
+      "o": [
+        "Bigger barns",
+        "A new palace",
+        "A temple",
+        "A wall"
+      ],
+      "a": 0,
+      "e": "Luke 12:18.",
+      "d": "easy"
+    },
+    {
+      "q": "What did God call the man in the Parable of the Rich Fool?",
+      "o": [
+        "You fool!",
+        "You sinner!",
+        "You wise man",
+        "You servant"
+      ],
+      "a": 0,
+      "e": "Luke 12:20.",
+      "d": "easy"
+    },
+    {
+      "q": "In the Parable of the Two Debtors, who will love the creditor more?",
+      "o": [
+        "The one who was forgiven more",
+        "The one who paid back fast",
+        "The one who had less debt",
+        "The creditor himself"
+      ],
+      "a": 0,
+      "e": "Luke 7:42-43.",
+      "d": "easy"
+    },
+    {
+      "q": "What did the laborers in the vineyard receive at the end of the day?",
+      "o": [
+        "The same wage (a denarius)",
+        "Different wages",
+        "Only food",
+        "Nothing"
+      ],
+      "a": 0,
+      "e": "Matthew 20:9-10.",
+      "d": "medium"
+    },
+    {
+      "q": "In the Parable of the Great Banquet, who were the first invited guests?",
+      "o": [
+        "They made excuses and didn't come",
+        "They came immediately",
+        "They brought gifts",
+        "They were already there"
+      ],
+      "a": 0,
+      "e": "Luke 14:18.",
+      "d": "easy"
+    },
+    {
+      "q": "Who was brought into the banquet instead?",
+      "o": [
+        "The poor, crippled, blind and lame",
+        "The kings",
+        "The disciples",
+        "The Romans"
+      ],
+      "a": 0,
+      "e": "Luke 14:21.",
+      "d": "easy"
+    },
+    {
+      "q": "In the Parable of the Pharisee and the Tax Collector, who went home justified?",
+      "o": [
+        "The tax collector",
+        "The Pharisee",
+        "Both",
+        "Neither"
+      ],
+      "a": 0,
+      "e": "Luke 18:14.",
+      "d": "easy"
+    },
+    {
+      "q": "What did the Pharisee pray about?",
+      "o": [
+        "How good he was compared to others",
+        "Forgiveness",
+        "The poor",
+        "The temple"
+      ],
+      "a": 0,
+      "e": "Luke 18:11-12.",
+      "d": "easy"
+    },
+    {
+      "q": "In the Parable of the Persistent Widow, why did the judge finally help her?",
+      "o": [
+        "Because she kept bothering him",
+        "Because he feared God",
+        "Because he loved justice",
+        "Because she paid him"
+      ],
+      "a": 0,
+      "e": "Luke 18:4-5.",
+      "d": "medium"
+    },
+    {
+      "q": "In the Parable of the Two Sons, which son did the father's will?",
+      "o": [
+        "The one who said no but then went",
+        "The one who said yes but didn't go",
+        "Both",
+        "Neither"
+      ],
+      "a": 0,
+      "e": "Matthew 21:28-31.",
+      "d": "medium"
+    },
+    {
+      "q": "In the Parable of the Wicked Tenants, who did the tenants kill first?",
+      "o": [
+        "The servants",
+        "The son",
+        "The owner",
+        "The soldiers"
+      ],
+      "a": 0,
+      "e": "Matthew 21:35-36.",
+      "d": "medium"
+    },
+    {
+      "q": "Who did the owner finally send to the tenants?",
+      "o": [
+        "His son",
+        "The high priest",
+        "An army",
+        "A prophet"
+      ],
+      "a": 0,
+      "e": "Matthew 21:37.",
+      "d": "easy"
+    },
+    {
+      "q": "In the Parable of the Marriage Feast, what happened to the man without wedding clothes?",
+      "o": [
+        "He was thrown out",
+        "He was given clothes",
+        "He was ignored",
+        "He was made a guest of honor"
+      ],
+      "a": 0,
+      "e": "Matthew 22:11-13.",
+      "d": "medium"
+    },
+    {
+      "q": "What does the Parable of the Wise and Foolish Builders teach?",
+      "o": [
+        "To build on the rock (Jesus' words)",
+        "To build on sand",
+        "To build big houses",
+        "To build quickly"
+      ],
+      "a": 0,
+      "e": "Matthew 7:24-27.",
+      "d": "easy"
+    },
+    {
+      "q": "What does the rock represent in the building parable?",
+      "o": [
+        "Hearing and doing Jesus' words",
+        "Literal stone",
+        "The church building",
+        "Money"
+      ],
+      "a": 0,
+      "e": "Matthew 7:24.",
+      "d": "easy"
+    },
+    {
+      "q": "In the Parable of the Faithful Servant, what is the master doing when he returns?",
+      "o": [
+        "Finding the servant doing his work",
+        "Sleeping",
+        "Eating",
+        "Traveling"
+      ],
+      "a": 0,
+      "e": "Matthew 24:46.",
+      "d": "medium"
+    },
+    {
+      "q": "What did the master do to the unfaithful servant?",
+      "o": [
+        "Cut him to pieces",
+        "Promoted him",
+        "Forgave him",
+        "Ignored him"
+      ],
+      "a": 0,
+      "e": "Matthew 24:51.",
+      "d": "hard"
+    },
+    {
+      "q": "In the Parable of the Net, what happens to the bad fish?",
+      "o": [
+        "Thrown away",
+        "Kept in baskets",
+        "Sold",
+        "Eaten"
+      ],
+      "a": 0,
+      "e": "Matthew 13:48.",
+      "d": "easy"
+    },
+    {
+      "q": "What does the yeast represent in the Parable of the Leaven?",
+      "o": [
+        "The Kingdom of Heaven",
+        "Sin",
+        "Bread",
+        "Growth of evil"
+      ],
+      "a": 0,
+      "e": "Matthew 13:33.",
+      "d": "medium"
+    },
+    {
+      "q": "In the Parable of the Budding Fig Tree, what season is near?",
+      "o": [
+        "Summer",
+        "Winter",
+        "Spring",
+        "Autumn"
+      ],
+      "a": 0,
+      "e": "Matthew 24:32.",
+      "d": "medium"
+    },
+    {
+      "q": "In the Parable of the Sheep and the Goats, who are the sheep?",
+      "o": [
+        "Those who helped 'the least of these'",
+        "The Jews",
+        "The disciples",
+        "The rich"
+      ],
+      "a": 0,
+      "e": "Matthew 25:34-40.",
+      "d": "easy"
+    },
+    {
+      "q": "Where are the goats placed?",
+      "o": [
+        "On the left",
+        "On the right",
+        "In the middle",
+        "Outside"
+      ],
+      "a": 0,
+      "e": "Matthew 25:33.",
+      "d": "easy"
+    },
+    {
+      "q": "In the Parable of the Rich Man and Lazarus, where did Lazarus go after death?",
+      "o": [
+        "Abraham's side",
+        "Hades",
+        "Purgatory",
+        "Earth"
+      ],
+      "a": 0,
+      "e": "Luke 16:22.",
+      "d": "easy"
+    },
+    {
+      "q": "What did the rich man ask for in Hades?",
+      "o": [
+        "A drop of water",
+        "A feast",
+        "His money",
+        "To be resurrected"
+      ],
+      "a": 0,
+      "e": "Luke 16:24.",
+      "d": "easy"
+    },
+    {
+      "q": "Who did the rich man want to warn?",
+      "o": [
+        "His five brothers",
+        "His parents",
+        "The Pharisees",
+        "His friends"
+      ],
+      "a": 0,
+      "e": "Luke 16:28.",
+      "d": "medium"
+    },
+    {
+      "q": "In the Parable of the Barren Fig Tree, how many years did the owner look for fruit?",
+      "o": [
+        "3 years",
+        "1 year",
+        "7 years",
+        "10 years"
+      ],
+      "a": 0,
+      "e": "Luke 13:7.",
+      "d": "hard"
+    },
+    {
+      "q": "What did the gardener suggest for the barren tree?",
+      "o": [
+        "Give it one more year and dig around it",
+        "Cut it down now",
+        "Plant a new one",
+        "Water it more"
+      ],
+      "a": 0,
+      "e": "Luke 13:8-9.",
+      "d": "medium"
+    },
+    {
+      "q": "In the Parable of the Friend at Midnight, what was the friend asking for?",
+      "o": [
+        "Three loaves of bread",
+        "A bed",
+        "Money",
+        "Wine"
+      ],
+      "a": 0,
+      "e": "Luke 11:5.",
+      "d": "medium"
+    },
+    {
+      "q": "What is the main lesson of the Friend at Midnight?",
+      "o": [
+        "Persistence in prayer",
+        "Don't wake neighbors",
+        "Hospitality is hard",
+        "Bread is important"
+      ],
+      "a": 0,
+      "e": "Luke 11:8-9.",
+      "d": "easy"
+    },
+    {
+      "q": "In the Parable of the Unjust Steward, what did the steward do to secure his future?",
+      "o": [
+        "Reduced the debts of his master's debtors",
+        "Stole more money",
+        "Ran away",
+        "Asked for a raise"
+      ],
+      "a": 0,
+      "e": "Luke 16:5-7.",
+      "d": "hard"
+    },
+    {
+      "q": "In the Parable of the Ten Minas, how many minas did each servant receive?",
+      "o": [
+        "1",
+        "10",
+        "5",
+        "12"
+      ],
+      "a": 0,
+      "e": "Luke 19:13.",
+      "d": "medium"
+    },
+    {
+      "q": "What happened to the servant who did nothing with his mina?",
+      "o": [
+        "It was taken and given to the one with ten",
+        "He was executed",
+        "He was forgiven",
+        "He was promoted"
+      ],
+      "a": 0,
+      "e": "Luke 19:24.",
+      "d": "medium"
+    },
+    {
+      "q": "In the Parable of the Growing Seed (Mark 4), how does the seed grow?",
+      "o": [
+        "The man knows not how",
+        "With much fertilizer",
+        "By constant watering",
+        "By the man's effort"
+      ],
+      "a": 0,
+      "e": "Mark 4:27.",
+      "d": "hard"
+    },
+    {
+      "q": "What is the 'lamp under a basket' parable about?",
+      "o": [
+        "Not hiding your light/faith",
+        "Saving energy",
+        "Being safe with fire",
+        "Buying good lamps"
+      ],
+      "a": 0,
+      "e": "Matthew 5:15.",
+      "d": "easy"
+    },
+    {
+      "q": "In the Parable of the New Cloth on Old Garment, what happens?",
+      "o": [
+        "The patch pulls away and makes the tear worse",
+        "It looks beautiful",
+        "It lasts forever",
+        "It shrinks"
+      ],
+      "a": 0,
+      "e": "Matthew 9:16.",
+      "d": "medium"
+    },
+    {
+      "q": "What happens when new wine is put into old wineskins?",
+      "o": [
+        "The skins burst",
+        "The wine tastes better",
+        "The skins stretch",
+        "Nothing"
+      ],
+      "a": 0,
+      "e": "Matthew 9:17.",
+      "d": "medium"
+    },
+    {
+      "q": "The Parable of the Children in the Marketplace is about what?",
+      "o": [
+        "The people's rejection of both John and Jesus",
+        "Playing games",
+        "Buying food",
+        "Children's behavior"
+      ],
+      "a": 0,
+      "e": "Matthew 11:16-19.",
+      "d": "hard"
+    },
+    {
+      "q": "The Parable of the Strong Man's House teaches that one must first do what to rob it?",
+      "o": [
+        "Bind the strong man",
+        "Quietly enter",
+        "Bring a large army",
+        "Wait for him to leave"
+      ],
+      "a": 0,
+      "e": "Matthew 12:29.",
+      "d": "medium"
+    },
+    {
+      "q": "In the Parable of the Return of the Unclean Spirit, how many other spirits does it bring back?",
+      "o": [
+        "7",
+        "3",
+        "12",
+        "1"
+      ],
+      "a": 0,
+      "e": "Matthew 12:45.",
+      "d": "hard"
+    },
+    {
+      "q": "The Parable of the Householder (Matthew 13:52) compares a scribe to a householder bringing out what?",
+      "o": [
+        "Treasures new and old",
+        "Bread and wine",
+        "Gold and silver",
+        "Old clothes"
+      ],
+      "a": 0,
+      "e": "Matthew 13:52.",
+      "d": "hard"
+    },
+    {
+      "q": "In the Parable of the Lost Sheep (Matthew 18), what is the focus?",
+      "o": [
+        "God's desire that none should perish",
+        "The shepherd's skill",
+        "The sheep's stupidity",
+        "The number 100"
+      ],
+      "a": 0,
+      "e": "Matthew 18:14.",
+      "d": "medium"
+    },
+    {
+      "q": "Which parable is about 'counting the cost'?",
+      "o": [
+        "The Tower Builder",
+        "The Sower",
+        "The Talents",
+        "The Net"
+      ],
+      "a": 0,
+      "e": "Luke 14:28.",
+      "d": "medium"
+    },
+    {
+      "q": "In the Parable of the King Going to War, what does he consider?",
+      "o": [
+        "Whether his 10,000 can meet 20,000",
+        "The cost of armor",
+        "The weather",
+        "The route"
+      ],
+      "a": 0,
+      "e": "Luke 14:31.",
+      "d": "medium"
+    },
+    {
+      "q": "The Parable of the Master and Servant (Luke 17) teaches what?",
+      "o": [
+        "We are unworthy servants just doing our duty",
+        "Servants should be paid more",
+        "Masters should cook for servants",
+        "Work is optional"
+      ],
+      "a": 0,
+      "e": "Luke 17:10.",
+      "d": "hard"
+    },
+    {
+      "q": "The Parable of the Wedding Guests (Luke 14) advises to sit where?",
+      "o": [
+        "The lowest place",
+        "The highest place",
+        "The middle",
+        "Outside"
+      ],
+      "a": 0,
+      "e": "Luke 14:10.",
+      "d": "easy"
+    },
+    {
+      "q": "The Parable of the Good Shepherd is primarily found in which Gospel?",
+      "o": [
+        "John",
+        "Matthew",
+        "Mark",
+        "Luke"
+      ],
+      "a": 0,
+      "e": "John 10.",
+      "d": "easy"
+    },
+    {
+      "q": "What does the Good Shepherd do for the sheep?",
+      "o": [
+        "Lays down his life",
+        "Shears them",
+        "Sells them",
+        "Feeds them once a week"
+      ],
+      "a": 0,
+      "e": "John 10:11.",
+      "d": "easy"
+    },
+    {
+      "q": "In the Parable of the Vine and Branches, who is the gardener?",
+      "o": [
+        "The Father",
+        "Jesus",
+        "The disciples",
+        "The Holy Spirit"
+      ],
+      "a": 0,
+      "e": "John 15:1.",
+      "d": "medium"
+    },
+    {
+      "q": "What happens to the branch that does not bear fruit?",
+      "o": [
+        "Cut off and burned",
+        "Pruned to bear more",
+        "Ignored",
+        "Watered more"
+      ],
+      "a": 0,
+      "e": "John 15:2, 6.",
+      "d": "medium"
+    },
+    {
+      "q": "In the Sower parable, what do the thorns represent?",
+      "o": [
+        "Worries of this life and deceitfulness of wealth",
+        "Persecution",
+        "Satan",
+        "Lack of understanding"
+      ],
+      "a": 0,
+      "e": "Matthew 13:22.",
+      "d": "medium"
+    },
+    {
+      "q": "In the Sower parable, what does the rocky ground represent?",
+      "o": [
+        "Those who receive with joy but have no root",
+        "Those who don't hear",
+        "Hard-hearted people",
+        "Rich people"
+      ],
+      "a": 0,
+      "e": "Matthew 13:20-21.",
+      "d": "medium"
+    },
+    {
+      "q": "How much fruit did the good soil produce?",
+      "o": [
+        "100, 60 or 30 fold",
+        "10 fold",
+        "Double",
+        "Infinite"
+      ],
+      "a": 0,
+      "e": "Matthew 13:23.",
+      "d": "medium"
+    },
+    {
+      "q": "What is the main theme of the Parable of the Wheat and Tares?",
+      "o": [
+        "God's final judgment and separation",
+        "How to farm",
+        "The beauty of fields",
+        "The danger of weeds"
+      ],
+      "a": 0,
+      "e": "Matthew 13:37-43.",
+      "d": "medium"
+    },
+    {
+      "q": "The Parable of the Salt without Savor teaches what?",
+      "o": [
+        "The uselessness of a nominal believer",
+        "How to season food",
+        "The price of salt",
+        "Preservation"
+      ],
+      "a": 0,
+      "e": "Matthew 5:13.",
+      "d": "medium"
+    },
+    {
+      "q": "The Parable of the Two Foundations is the conclusion to what famous sermon?",
+      "o": [
+        "Sermon on the Mount",
+        "Olivet Discourse",
+        "Upper Room Discourse",
+        "Bread of Life Discourse"
+      ],
+      "a": 0,
+      "e": "Matthew 7:24-27.",
+      "d": "medium"
+    },
+    {
+      "q": "In the Parable of the Wedding Banquet, what happened to the servants of the king?",
+      "o": [
+        "Some were seized and killed",
+        "They were all promoted",
+        "They quit",
+        "They ate the food"
+      ],
+      "a": 0,
+      "e": "Matthew 22:6.",
+      "d": "hard"
+    },
+    {
+      "q": "What did the king do to the city of the murderers?",
+      "o": [
+        "Burned it",
+        "Forgave it",
+        "Taxed it",
+        "Visited it"
+      ],
+      "a": 0,
+      "e": "Matthew 22:7.",
+      "d": "hard"
+    },
+    {
+      "q": "In the Parable of the Ten Virgins, what did the wise ones have in jars?",
+      "o": [
+        "Oil",
+        "Water",
+        "Wine",
+        "Perfume"
+      ],
+      "a": 0,
+      "e": "Matthew 25:4.",
+      "d": "easy"
+    },
+    {
+      "q": "What was the reply to the foolish virgins when they asked for oil?",
+      "o": [
+        "No, there may not be enough for both",
+        "Yes, here is some",
+        "Go buy your own",
+        "Both A and C"
+      ],
+      "a": 3,
+      "e": "Matthew 25:9.",
+      "d": "medium"
+    },
+    {
+      "q": "What does 'Watch therefore, for you know neither the day nor the hour' refer to?",
+      "o": [
+        "The coming of the Son of Man",
+        "The weather",
+        "The harvest",
+        "The end of the week"
+      ],
+      "a": 0,
+      "e": "Matthew 25:13.",
+      "d": "easy"
+    },
+    {
+      "q": "In the Talents parable, what was the reward for the faithful servants?",
+      "o": [
+        "Being put in charge of many things",
+        "A vacation",
+        "Gold coins",
+        "Freedom"
+      ],
+      "a": 0,
+      "e": "Matthew 25:21.",
+      "d": "medium"
+    },
+    {
+      "q": "What is 'outer darkness' in the Parable of the Talents?",
+      "o": [
+        "A place of weeping and gnashing of teeth",
+        "The night sky",
+        "A cave",
+        "The wilderness"
+      ],
+      "a": 0,
+      "e": "Matthew 25:30.",
+      "d": "medium"
+    },
+    {
+      "q": "In the Sheep and Goats, what criteria is used for judgment?",
+      "o": [
+        "Compassion shown to the needy",
+        "Knowledge of scripture",
+        "Ability to preach",
+        "Financial status"
+      ],
+      "a": 0,
+      "e": "Matthew 25:35-40.",
+      "d": "easy"
+    },
+    {
+      "q": "Who is 'the neighbor' in the Good Samaritan parable?",
+      "o": [
+        "The one who showed mercy",
+        "The man who was robbed",
+        "The priest",
+        "Everyone living nearby"
+      ],
+      "a": 0,
+      "e": "Luke 10:36-37.",
+      "d": "easy"
+    },
+    {
+      "q": "In the Parable of the Importunate Friend, what is the lesson?",
+      "o": [
+        "Ask, seek, knock",
+        "Don't bother friends at night",
+        "Sleep is important",
+        "Bread is a gift"
+      ],
+      "a": 0,
+      "e": "Luke 11:9-10.",
+      "d": "medium"
+    },
+    {
+      "q": "In the Parable of the Rich Fool, whose land produced a plentiful crop?",
+      "o": [
+        "A certain rich man",
+        "A poor farmer",
+        "Abraham",
+        "The disciples"
+      ],
+      "a": 0,
+      "e": "Luke 12:16.",
+      "d": "easy"
+    },
+    {
+      "q": "In the Parable of the Master's Return (Luke 12), what is the servant blessed for?",
+      "o": [
+        "Being ready/awake",
+        "Sleeping well",
+        "Cooking a feast",
+        "Inviting neighbors"
+      ],
+      "a": 0,
+      "e": "Luke 12:37-38.",
+      "d": "medium"
+    },
+    {
+      "q": "In the Parable of the Great Supper, what were the three excuses?",
+      "o": [
+        "Bought a field, bought oxen, married a wife",
+        "Sick, busy, tired",
+        "Too far, too late, too early",
+        "Forgot, lost way, no clothes"
+      ],
+      "a": 0,
+      "e": "Luke 14:18-20.",
+      "d": "hard"
+    },
+    {
+      "q": "In the Lost Coin parable, how many silver coins did the woman have?",
+      "o": [
+        "10",
+        "100",
+        "5",
+        "1"
+      ],
+      "a": 0,
+      "e": "Luke 15:8.",
+      "d": "medium"
+    },
+    {
+      "q": "What did the Prodigal Son say to his father upon return?",
+      "o": [
+        "I have sinned against heaven and you",
+        "Give me more money",
+        "I'm hungry",
+        "Hello father"
+      ],
+      "a": 0,
+      "e": "Luke 15:21.",
+      "d": "easy"
+    },
+    {
+      "q": "What was the father's reaction to the Prodigal's return?",
+      "o": [
+        "Ran to him and kissed him",
+        "Anger",
+        "Indifference",
+        "Asked for the money back"
+      ],
+      "a": 0,
+      "e": "Luke 15:20.",
+      "d": "easy"
+    },
+    {
+      "q": "What did the older brother do when the Prodigal returned?",
+      "o": [
+        "Became angry and refused to go in",
+        "Celebrated",
+        "Left home",
+        "Hugged his brother"
+      ],
+      "a": 0,
+      "e": "Luke 15:28.",
+      "d": "medium"
+    },
+    {
+      "q": "In the Parable of the Unjust Steward, why was he being fired?",
+      "o": [
+        "Wasting his master's possessions",
+        "Stealing",
+        "Laziness",
+        "Being too kind"
+      ],
+      "a": 0,
+      "e": "Luke 16:1.",
+      "d": "hard"
+    },
+    {
+      "q": "In the Rich Man and Lazarus, what was the rich man clothed in?",
+      "o": [
+        "Purple and fine linen",
+        "Rags",
+        "Gold armor",
+        "Silk"
+      ],
+      "a": 0,
+      "e": "Luke 16:19.",
+      "d": "hard"
+    },
+    {
+      "q": "What lay at the rich man's gate?",
+      "o": [
+        "A beggar named Lazarus",
+        "A guard",
+        "A dog",
+        "A wall"
+      ],
+      "a": 0,
+      "e": "Luke 16:20.",
+      "d": "easy"
+    },
+    {
+      "q": "What did the dogs do to Lazarus?",
+      "o": [
+        "Licked his sores",
+        "Bit him",
+        "Bark at him",
+        "Chased him"
+      ],
+      "a": 0,
+      "e": "Luke 16:21.",
+      "d": "medium"
+    },
+    {
+      "q": "What separated the rich man from Lazarus after death?",
+      "o": [
+        "A great gulf/chasm",
+        "A river",
+        "A mountain",
+        "A wall"
+      ],
+      "a": 0,
+      "e": "Luke 16:26.",
+      "d": "medium"
+    },
+    {
+      "q": "In the Parable of the Persistent Widow, who did she seek justice from?",
+      "o": [
+        "An unjust judge",
+        "A king",
+        "A priest",
+        "A Roman"
+      ],
+      "a": 0,
+      "e": "Luke 18:2.",
+      "d": "easy"
+    },
+    {
+      "q": "In the Pharisee and Tax Collector, where were they praying?",
+      "o": [
+        "In the Temple",
+        "In the street",
+        "At home",
+        "In a cave"
+      ],
+      "a": 0,
+      "e": "Luke 18:10.",
+      "d": "easy"
+    },
+    {
+      "q": "What did the tax collector do while praying?",
+      "o": [
+        "Beat his breast and wouldn't look up",
+        "Looked at heaven",
+        "Shouted",
+        "Gave money"
+      ],
+      "a": 0,
+      "e": "Luke 18:13.",
+      "d": "medium"
+    },
+    {
+      "q": "In the Parable of the Minas (Luke 19), how many servants were called?",
+      "o": [
+        "10",
+        "3",
+        "5",
+        "12"
+      ],
+      "a": 0,
+      "e": "Luke 19:13.",
+      "d": "medium"
+    },
+    {
+      "q": "In the Minas parable, why did the citizens hate the nobleman?",
+      "o": [
+        "They didn't want him to reign over them",
+        "He was mean",
+        "He was poor",
+        "He was a Roman"
+      ],
+      "a": 0,
+      "e": "Luke 19:14.",
+      "d": "hard"
+    },
+    {
+      "q": "In the Wicked Tenants, what did they do to the son?",
+      "o": [
+        "Threw him out and killed him",
+        "Worshipped him",
+        "Ignored him",
+        "Paid him"
+      ],
+      "a": 0,
+      "e": "Matthew 21:39.",
+      "d": "medium"
+    },
+    {
+      "q": "Which parable describes the 'lowest seat' at a wedding?",
+      "o": [
+        "The Wedding Guests",
+        "The Ten Virgins",
+        "The Great Banquet",
+        "The Sower"
+      ],
+      "a": 0,
+      "e": "Luke 14:7-11.",
+      "d": "medium"
+    },
+    {
+      "q": "What does the 'Salt of the Earth' refer to?",
+      "o": [
+        "Believers' influence",
+        "Literal salt",
+        "The ocean",
+        "The ground"
+      ],
+      "a": 0,
+      "e": "Matthew 5:13.",
+      "d": "easy"
+    },
+    {
+      "q": "The Parable of the Fig Tree in Matthew 24 is about what?",
+      "o": [
+        "Signs of the end times",
+        "Hunger",
+        "Fruitfulness",
+        "Gardening"
+      ],
+      "a": 0,
+      "e": "Matthew 24:32-33.",
+      "d": "medium"
+    },
+    {
+      "q": "How many parables are in the Gospel of John?",
+      "o": [
+        "Zero",
+        "Three",
+        "Twelve",
+        "Seven"
+      ],
+      "a": 0,
+      "e": "John has allegories (Vine, Shepherd) but no formal parables.",
+      "d": "hard"
+    },
+    {
+      "q": "In the Parable of the Net, what does the 'sea' represent?",
+      "o": [
+        "The world",
+        "The church",
+        "Galilee",
+        "Heaven"
+      ],
+      "a": 0,
+      "e": "Traditional interpretation.",
+      "d": "hard"
+    },
+    {
+      "q": "Who is the 'Strong Man' in the parable?",
+      "o": [
+        "Satan",
+        "Jesus",
+        "Samson",
+        "David"
+      ],
+      "a": 0,
+      "e": "Matthew 12:29.",
+      "d": "medium"
+    },
+    {
+      "q": "The 'Pearl of Great Price' is found by whom?",
+      "o": [
+        "A merchant",
+        "A farmer",
+        "A king",
+        "A disciple"
+      ],
+      "a": 0,
+      "e": "Matthew 13:45.",
+      "d": "easy"
+    },
+    {
+      "q": "The 'Hidden Treasure' is found by whom?",
+      "o": [
+        "A man",
+        "A merchant",
+        "A thief",
+        "A child"
+      ],
+      "a": 0,
+      "e": "Matthew 13:44.",
+      "d": "easy"
+    },
+    {
+      "q": "In the parable of the sower, what does the seed sown among thorns represent?",
+      "o": [
+        "Those who immediately reject the gospel",
+        "Those who hear the word but the worries of life and deceitfulness of wealth choke it",
+        "Those with shallow roots who fall away when trouble comes",
+        "Those who never receive the word at all"
+      ],
+      "a": 1,
+      "e": "Matthew 13:22 — The seed falling among the thorns refers to someone who hears the word, but the worries of this life and the deceitfulness of wealth choke the word.",
+      "d": "hard"
+    },
+    {
+      "q": "What does Jesus say is the meaning of the weeds in the parable of the wheat and weeds?",
+      "o": [
+        "They represent false teachers in the church",
+        "The weeds are the people of the evil one; the good seed are the people of the kingdom",
+        "They represent nations that reject the gospel",
+        "They represent Pharisees who mix truth with tradition"
+      ],
+      "a": 1,
+      "e": "Matthew 13:38 — The field is the world, and the good seed stands for the people of the kingdom. The weeds are the people of the evil one.",
+      "d": "hard"
+    },
+    {
+      "q": "In the parable of the prodigal son, what does the older son complain about?",
+      "o": [
+        "That his brother wasted the family's reputation",
+        "That he never received a party despite always obeying, while his wasteful brother was celebrated",
+        "That his brother would inherit the remaining estate",
+        "That his father did not punish the younger son"
+      ],
+      "a": 1,
+      "e": "Luke 15:29-30 — Look! All these years I've been slaving for you and never disobeyed your orders. Yet you never gave me even a young goat so I could celebrate with my friends.",
+      "d": "hard"
+    },
+    {
+      "q": "What does the landowner in the parable of the workers in the vineyard (Matthew 20) say to those who grumble about equal pay?",
+      "o": [
+        "You should have worked harder throughout the day",
+        "Don't I have the right to do what I want with my own money? Are you envious because I am generous?",
+        "Your reward in heaven will be greater",
+        "You agreed to work for this amount"
+      ],
+      "a": 1,
+      "e": "Matthew 20:15 — Don't I have the right to do what I want with my own money? Or are you envious because I am generous?",
+      "d": "hard"
+    },
+    {
+      "q": "In the parable of the great banquet (Luke 14), what do the invited guests do?",
+      "o": [
+        "They all come and fill the hall",
+        "They each make excuses about property, oxen, or a new wife",
+        "They demand to be paid for coming",
+        "They bring uninvited guests"
+      ],
+      "a": 1,
+      "e": "Luke 14:18-20 — But they all alike began to make excuses. The first said, 'I have just bought a field...' Another said, 'I have just bought five yoke of oxen...' Still another said, 'I just got married.'",
+      "d": "hard"
+    },
+    {
+      "q": "What happens to the man in the parable of the unforgiving servant who refuses to forgive his fellow servant?",
+      "o": [
+        "He is fined three times what was owed",
+        "He is handed over to jailers to be tortured until he repays all he owed",
+        "He is banished from the kingdom",
+        "He loses his position as a servant"
+      ],
+      "a": 1,
+      "e": "Matthew 18:34 — In anger his master handed him over to the jailers to be tortured, until he should pay back all he owed.",
+      "d": "hard"
+    },
+    {
+      "q": "In the parable of the ten minas (pounds), what happens to the servant who hid his mina?",
+      "o": [
+        "He is given more minas to guard",
+        "His mina is taken away and given to the servant who earned ten",
+        "He is beaten for his laziness",
+        "He is banished from the master's service"
+      ],
+      "a": 1,
+      "e": "Luke 19:24 — Then he said to those standing by, 'Take his mina away from him and give it to the one who has ten minas.'",
+      "d": "hard"
+    },
+    {
+      "q": "What does the merchant do when he finds the pearl of great value (Matthew 13:46)?",
+      "o": [
+        "He asks the king to buy it for him",
+        "He sells all he has and buys it",
+        "He hides it so no one else can find it",
+        "He trades it for a better merchant route"
+      ],
+      "a": 1,
+      "e": "Matthew 13:46 — When he found one of great value, he went away and sold everything he had and bought it.",
+      "d": "hard"
+    },
+    {
+      "q": "In the parable of the lost sheep, what does the shepherd do when he finds the lost sheep?",
+      "o": [
+        "He gently guides it back to the flock",
+        "He joyfully puts it on his shoulders and comes home calling for celebration",
+        "He marks it so it won't get lost again",
+        "He leaves the sheep until it finds its own way back"
+      ],
+      "a": 1,
+      "e": "Luke 15:5-6 — And when he finds it, he joyfully puts it on his shoulders and goes home. Then he calls his friends and neighbors together and says, 'Rejoice with me.'",
+      "d": "hard"
+    },
+    {
+      "q": "In the parable of the two sons (Matthew 21), which son does what his father asks?",
+      "o": [
+        "The first son who said yes but did not go",
+        "The second son who said no but later changed his mind and went",
+        "Both sons obeyed equally",
+        "Neither son fully obeyed the father"
+      ],
+      "a": 1,
+      "e": "Matthew 21:29-30 — The first said 'I will not' but later changed his mind and went. The second said 'I will' but did not go. Jesus asks which did the father's will, and the answer is the first.",
+      "d": "hard"
+    },
+    {
+      "q": "The parable of the wicked tenants ends with what action by the landowner?",
+      "o": [
+        "He reduces the rent",
+        "He will come and kill those tenants and give the vineyard to others",
+        "He sends his son a second time",
+        "He forgives the tenants"
+      ],
+      "a": 1,
+      "e": "Luke 20:16 — He will come and kill those tenants and give the vineyard to others.",
+      "d": "hard"
+    },
+    {
+      "q": "In the parable of the friend at midnight (Luke 11), why does the friend get up and give the bread?",
+      "o": [
+        "Because of his love for his neighbor",
+        "Because of the man's shameless persistence (boldness)",
+        "Because he feared being seen as unneighborly",
+        "Because it was his duty as a friend"
+      ],
+      "a": 1,
+      "e": "Luke 11:8 — I tell you, even though he will not get up and give you the bread because of friendship, yet because of your shameless audacity he will surely get up and give you as much as you need.",
+      "d": "hard"
+    },
+    {
+      "q": "In the parable of the rich man and Lazarus (Luke 16), what does Abraham say separates them?",
+      "o": [
+        "Their deeds in life",
+        "A great chasm has been set in place so that no one can cross over",
+        "God's judgment",
+        "The desires of their hearts"
+      ],
+      "a": 1,
+      "e": "Luke 16:26 — And besides all this, between us and you a great chasm has been set in place, so that those who want to go from here to you cannot, nor can anyone cross over from there to us.",
+      "d": "hard"
+    },
+    {
+      "q": "What does the father give the returning prodigal son in Luke 15?",
+      "o": [
+        "A simple meal and a warm bed",
+        "The best robe, a ring, sandals, and a fatted calf celebration",
+        "A lesser inheritance from the rest of the estate",
+        "A place as a hired servant"
+      ],
+      "a": 1,
+      "e": "Luke 15:22-23 — But the father said to his servants, 'Quick! Bring the best robe and put it on him. Put a ring on his finger and sandals on his feet. Bring the fattened calf and kill it.'",
+      "d": "hard"
+    },
+    {
+      "q": "In the parable of the Pharisee and the tax collector, where does the tax collector stand and what does he do?",
+      "o": [
+        "He stands near the altar and prays loudly",
+        "He stood at a distance, would not look up, and beat his breast saying 'God, have mercy on me, a sinner'",
+        "He sits in the corner and silently confesses his sins",
+        "He kneels at the temple gate"
+      ],
+      "a": 1,
+      "e": "Luke 18:13 — But the tax collector stood at a distance. He would not even look up to heaven, but beat his breast and said, 'God, have mercy on me, a sinner.'",
+      "d": "hard"
+    },
+    {
+      "q": "What is the central lesson Jesus states explicitly after the parable of the workers in the vineyard?",
+      "o": [
+        "The first shall wait for the last",
+        "The last will be first, and the first will be last",
+        "God rewards those who work hardest",
+        "Equal work deserves equal pay"
+      ],
+      "a": 1,
+      "e": "Matthew 20:16 — So the last will be first, and the first will be last.",
+      "d": "hard"
+    },
+    {
+      "q": "In the parable of the hidden treasure, what does the man do when he finds the treasure?",
+      "o": [
+        "He reports it to the authorities",
+        "He hides it again, then sells all he has and buys that field",
+        "He shares it with his village",
+        "He gives it to the temple treasury"
+      ],
+      "a": 1,
+      "e": "Matthew 13:44 — When a man found it, he hid it again, and then in his joy went and sold all he had and bought that field.",
+      "d": "hard"
+    },
+    {
+      "q": "In the parable of the fig tree (Luke 13), what does the gardener plead for when it bears no fruit?",
+      "o": [
+        "Give it fertilizer and one more year",
+        "Cut it down to make room",
+        "Water it with new water from the temple pool",
+        "Transplant it to new soil"
+      ],
+      "a": 0,
+      "e": "Luke 13:8 — Sir, leave it alone for one more year, and I'll dig around it and fertilize it.",
+      "d": "hard"
+    },
+    {
+      "q": "In the parable of the ten virgins, what distinguishes the wise virgins from the foolish ones?",
+      "o": [
+        "The wise virgins knew the bridegroom personally",
+        "The wise virgins brought extra oil; the foolish took their lamps but no extra oil",
+        "The wise virgins arrived early",
+        "The wise virgins had new lamps and the foolish had old ones"
+      ],
+      "a": 1,
+      "e": "Matthew 25:3-4 — The foolish ones took their lamps but did not take any oil with them. The wise ones, however, took oil in jars along with their lamps.",
+      "d": "hard"
+    },
+    {
+      "q": "What does the unjust judge in Luke 18 finally do, and why?",
+      "o": [
+        "He rules in favor of the woman because the law requires it",
+        "He grants her justice because she keeps coming and will wear him out",
+        "He asks the king to decide",
+        "He dismisses the case permanently"
+      ],
+      "a": 1,
+      "e": "Luke 18:5 — yet because this widow keeps bothering me, I will see that she gets justice, so that she won't eventually come and attack me!",
+      "d": "hard"
+    },
+    {
+      "q": "In the parable of the great supper (Luke 14), after the original guests refuse, who does the master send his servants to find?",
+      "o": [
+        "Other wealthy landowners",
+        "The poor, the crippled, the blind and the lame in the streets and alleys",
+        "Fellow merchants from the market",
+        "Travelers passing through the city"
+      ],
+      "a": 1,
+      "e": "Luke 14:21 — 'Go out quickly into the streets and alleys of the town and bring in the poor, the crippled, the blind and the lame.'",
+      "d": "hard"
+    },
+    {
+      "q": "What does the father see when the prodigal son is 'still a great way off'?",
+      "o": [
+        "The son looking ashamed",
+        "His son and is filled with compassion, running to meet him",
+        "His servants reporting the son has returned",
+        "The son with pigs at his side"
+      ],
+      "a": 1,
+      "e": "Luke 15:20 — But while he was still a long way off, his father saw him and was filled with compassion for him; he ran to his son, threw his arms around him and kissed him.",
+      "d": "hard"
+    },
+    {
+      "q": "In the parable of the shrewd manager, what does Jesus say about the children of this world vs. the children of light?",
+      "o": [
+        "The children of light are wiser than children of this world",
+        "The people of this world are more shrewd in dealing with their own kind than are the people of the light",
+        "Both are equally wise in their own spheres",
+        "The children of light have eternal wisdom"
+      ],
+      "a": 1,
+      "e": "Luke 16:8 — the master commended the dishonest manager because he had acted shrewdly. For the people of this world are more shrewd in dealing with their own kind than are the people of the light.",
+      "d": "hard"
+    },
+    {
+      "q": "In the parable of the yeast (Matthew 13), into how much flour does the woman hide the yeast?",
+      "o": [
+        "A small jar",
+        "About sixty pounds (three measures)",
+        "A bushel",
+        "A small bowl"
+      ],
+      "a": 1,
+      "e": "Matthew 13:33 — The kingdom of heaven is like yeast that a woman took and mixed into about sixty pounds of flour.",
+      "d": "hard"
+    },
+    {
+      "q": "In the parable of the net, what happens when the net is full?",
+      "o": [
+        "The fishermen thank God and share with the poor",
+        "The fishermen pull it ashore, collect the good fish in baskets, and throw away the bad",
+        "The net is brought to the temple",
+        "The fishermen sell the good fish and return the bad"
+      ],
+      "a": 1,
+      "e": "Matthew 13:48 — When it was full, the fishermen pulled it up on the shore. Then they sat down and collected the good fish in baskets, but threw the bad away.",
+      "d": "hard"
+    },
+    {
+      "q": "In the parable of the two debtors (Luke 7), what principle does Jesus teach Simon the Pharisee?",
+      "o": [
+        "Greater sin requires greater penance",
+        "Whoever has been forgiven more loves more",
+        "The law of forgiveness applies to all equally",
+        "Sin separates us from God's presence"
+      ],
+      "a": 1,
+      "e": "Luke 7:47 — Therefore, I tell you, her many sins have been forgiven—as her great love has shown. But whoever has been forgiven little loves little.",
+      "d": "hard"
+    },
+    {
+      "q": "In the parable of the wheat and weeds, when does the separation occur?",
+      "o": [
+        "At each person's death",
+        "At the harvest, which is the end of the age",
+        "When the kingdom of God is established on earth",
+        "When the Messiah returns to judge Israel"
+      ],
+      "a": 1,
+      "e": "Matthew 13:39 — The harvest is the end of the age, and the harvesters are angels.",
+      "d": "hard"
+    },
+    {
+      "q": "What does Jesus say about those who hear the parable of the sower but understand nothing?",
+      "o": [
+        "They will have another chance to hear",
+        "They are like the seed on the path — the evil one comes and snatches away what was sown in their heart",
+        "They will be judged more harshly",
+        "They need more teaching before they can understand"
+      ],
+      "a": 1,
+      "e": "Matthew 13:19 — When anyone hears the message about the kingdom and does not understand it, the evil one comes and snatches away what was sown in their heart.",
+      "d": "hard"
+    },
+    {
+      "q": "What does the king in the parable of the ten minas say when told his citizens hate him?",
+      "o": [
+        "He summons them to apologize",
+        "He says their hatred will not stop him returning as king",
+        "He sends servants to bring them to him and execute them in his presence",
+        "He forgives them on his return"
+      ],
+      "a": 2,
+      "e": "Luke 19:27 — But those enemies of mine who did not want me to be king over them—bring them here and kill them in front of me.",
+      "d": "hard"
+    },
+    {
+      "q": "In the parable of the lost coin, what does the woman do after finding it?",
+      "o": [
+        "She thanks God quietly alone",
+        "She calls her friends and neighbors to rejoice with her",
+        "She puts it with her other coins",
+        "She gives it to the temple"
+      ],
+      "a": 1,
+      "e": "Luke 15:9 — And when she finds it, she calls her friends and neighbors together and says, 'Rejoice with me; I have found my lost coin.'",
+      "d": "hard"
+    },
+    {
+      "q": "What does the rich man ask Abraham to do in the parable of the rich man and Lazarus?",
+      "o": [
+        "Send him water and warn his brothers",
+        "First to send Lazarus with a drop of water, then to send Lazarus to warn his five brothers",
+        "Accept him into Abraham's bosom",
+        "Reveal the secrets of the afterlife"
+      ],
+      "a": 1,
+      "e": "Luke 16:24, 27-28 — He asked for a drop of water, then pleaded that Lazarus be sent to warn his five brothers.",
+      "d": "hard"
+    }
+  ],
+  "Acts": [
+    {
+      "q": "Who wrote the Book of Acts?",
+      "o": [
+        "Luke",
+        "Paul",
+        "Peter",
+        "John"
+      ],
+      "a": 0,
+      "e": "Acts 1:1 refers to the previous account (Luke).",
+      "d": "easy"
+    },
+    {
+      "q": "To whom is the Book of Acts addressed?",
+      "o": [
+        "Theophilus",
+        "Timothy",
+        "Titus",
+        "The Thessalonians"
+      ],
+      "a": 0,
+      "e": "Acts 1:1.",
+      "d": "easy"
+    },
+    {
+      "q": "For how many days did Jesus appear to the disciples after his resurrection?",
+      "o": [
+        "40",
+        "50",
+        "30",
+        "7"
+      ],
+      "a": 0,
+      "e": "Acts 1:3.",
+      "d": "easy"
+    },
+    {
+      "q": "Where did the ascension of Jesus take place in Acts?",
+      "o": [
+        "Mount of Olives",
+        "Mount Sinai",
+        "Galilee",
+        "Jerusalem"
+      ],
+      "a": 0,
+      "e": "Acts 1:12 mentions they returned from the mount called Olivet.",
+      "d": "medium"
+    },
+    {
+      "q": "Who was chosen to replace Judas Iscariot?",
+      "o": [
+        "Matthias",
+        "Barsabbas",
+        "Barnabas",
+        "Paul"
+      ],
+      "a": 0,
+      "e": "Acts 1:26.",
+      "d": "easy"
+    },
+    {
+      "q": "What was the other name of Joseph called Barsabbas?",
+      "o": [
+        "Justus",
+        "Silas",
+        "Mark",
+        "Luke"
+      ],
+      "a": 0,
+      "e": "Acts 1:23.",
+      "d": "hard"
+    },
+    {
+      "q": "On what day did the Holy Spirit descend upon the disciples?",
+      "o": [
+        "Pentecost",
+        "Passover",
+        "Tabernacles",
+        "Day of Atonement"
+      ],
+      "a": 0,
+      "e": "Acts 2:1.",
+      "d": "easy"
+    },
+    {
+      "q": "What physical signs accompanied the coming of the Holy Spirit?",
+      "o": [
+        "Sound of a violent wind and tongues of fire",
+        "Earthquake",
+        "Thunder and lightning",
+        "A bright star"
+      ],
+      "a": 0,
+      "e": "Acts 2:2-3.",
+      "d": "easy"
+    },
+    {
+      "q": "Which prophet did Peter quote in his Pentecost sermon?",
+      "o": [
+        "Joel",
+        "Isaiah",
+        "Jeremiah",
+        "Malachi"
+      ],
+      "a": 0,
+      "e": "Acts 2:16-21.",
+      "d": "medium"
+    },
+    {
+      "q": "How many people were baptized after Peter's first sermon?",
+      "o": [
+        "About 3,000",
+        "500",
+        "1,000",
+        "5,000"
+      ],
+      "a": 0,
+      "e": "Acts 2:41.",
+      "d": "easy"
+    },
+    {
+      "q": "Where did Peter and John heal the lame man?",
+      "o": [
+        "At the Beautiful Gate of the Temple",
+        "In the street",
+        "At the pool of Bethesda",
+        "In a house"
+      ],
+      "a": 0,
+      "e": "Acts 3:2.",
+      "d": "easy"
+    },
+    {
+      "q": "What did Peter say when the lame man asked for money?",
+      "o": [
+        "Silver and gold I do not have",
+        "Here is a denarius",
+        "Ask the priests",
+        "I have no money"
+      ],
+      "a": 0,
+      "e": "Acts 3:6.",
+      "d": "easy"
+    },
+    {
+      "q": "Who were the husband and wife who died after lying about their gift?",
+      "o": [
+        "Ananias and Sapphira",
+        "Aquila and Priscilla",
+        "Felix and Drusilla",
+        "Agrippa and Bernice"
+      ],
+      "a": 0,
+      "e": "Acts 5:1-11.",
+      "d": "easy"
+    },
+    {
+      "q": "What was the name of the Pharisee who advised the Sanhedrin to leave the apostles alone?",
+      "o": [
+        "Gamaliel",
+        "Nicodemus",
+        "Saul",
+        "Caiaphas"
+      ],
+      "a": 0,
+      "e": "Acts 5:34-39.",
+      "d": "medium"
+    },
+    {
+      "q": "How many men were chosen to oversee the distribution of food in Acts 6?",
+      "o": [
+        "7",
+        "12",
+        "3",
+        "10"
+      ],
+      "a": 0,
+      "e": "Acts 6:3.",
+      "d": "medium"
+    },
+    {
+      "q": "Who was the first Christian martyr recorded in Acts?",
+      "o": [
+        "Stephen",
+        "James",
+        "Peter",
+        "Paul"
+      ],
+      "a": 0,
+      "e": "Acts 7.",
+      "d": "easy"
+    },
+    {
+      "q": "What did Stephen see before he died?",
+      "o": [
+        "The heavens open and Jesus standing at the right hand of God",
+        "An angel",
+        "A bright light",
+        "The empty tomb"
+      ],
+      "a": 0,
+      "e": "Acts 7:55-56.",
+      "d": "medium"
+    },
+    {
+      "q": "Who was present and approved of Stephen's execution?",
+      "o": [
+        "Saul",
+        "Peter",
+        "Herod",
+        "Pilate"
+      ],
+      "a": 0,
+      "e": "Acts 7:58; 8:1.",
+      "d": "easy"
+    },
+    {
+      "q": "Where was Saul going when he saw the bright light and heard Jesus?",
+      "o": [
+        "Damascus",
+        "Jerusalem",
+        "Tarsus",
+        "Antioch"
+      ],
+      "a": 0,
+      "e": "Acts 9:1-3.",
+      "d": "easy"
+    },
+    {
+      "q": "For how many days was Saul blind after his vision?",
+      "o": [
+        "3",
+        "7",
+        "40",
+        "1"
+      ],
+      "a": 0,
+      "e": "Acts 9:9.",
+      "d": "easy"
+    },
+    {
+      "q": "Who did God send to restore Saul's sight?",
+      "o": [
+        "Ananias",
+        "Peter",
+        "Barnabas",
+        "John"
+      ],
+      "a": 0,
+      "e": "Acts 9:10-17.",
+      "d": "medium"
+    },
+    {
+      "q": "How did Saul escape from Damascus?",
+      "o": [
+        "Lowered in a basket through a wall opening",
+        "In disguise",
+        "By a secret tunnel",
+        "A boat"
+      ],
+      "a": 0,
+      "e": "Acts 9:25.",
+      "d": "medium"
+    },
+    {
+      "q": "What was the name of the woman Peter raised from the dead in Joppa?",
+      "o": [
+        "Tabitha (Dorcas)",
+        "Lydia",
+        "Rhoda",
+        "Priscilla"
+      ],
+      "a": 0,
+      "e": "Acts 9:36-41.",
+      "d": "medium"
+    },
+    {
+      "q": "Who was the Roman centurion in Caesarea who was a God-fearing man?",
+      "o": [
+        "Cornelius",
+        "Julius",
+        "Longinus",
+        "Marcus"
+      ],
+      "a": 0,
+      "e": "Acts 10:1.",
+      "d": "easy"
+    },
+    {
+      "q": "What did Peter see in his vision on the rooftop?",
+      "o": [
+        "A sheet containing all kinds of animals",
+        "A ladder to heaven",
+        "A burning bush",
+        "The Temple destroyed"
+      ],
+      "a": 0,
+      "e": "Acts 10:11-12.",
+      "d": "easy"
+    },
+    {
+      "q": "What was the significance of Peter's vision?",
+      "o": [
+        "God has made all foods and people clean",
+        "He should go fishing",
+        "He should go to Rome",
+        "A warning of hunger"
+      ],
+      "a": 0,
+      "e": "Acts 10:15, 28.",
+      "d": "medium"
+    },
+    {
+      "q": "In which city were the disciples first called 'Christians'?",
+      "o": [
+        "Antioch",
+        "Jerusalem",
+        "Rome",
+        "Damascus"
+      ],
+      "a": 0,
+      "e": "Acts 11:26.",
+      "d": "easy"
+    },
+    {
+      "q": "Which apostle did King Herod Agrippa I have executed with a sword?",
+      "o": [
+        "James (brother of John)",
+        "Peter",
+        "Andrew",
+        "Thomas"
+      ],
+      "a": 0,
+      "e": "Acts 12:2.",
+      "d": "medium"
+    },
+    {
+      "q": "How did Peter escape from prison after Herod arrested him?",
+      "o": [
+        "An angel led him out",
+        "An earthquake",
+        "The guards slept",
+        "The doors were left open"
+      ],
+      "a": 0,
+      "e": "Acts 12:7-10.",
+      "d": "easy"
+    },
+    {
+      "q": "Who was the servant girl who was so surprised to see Peter she forgot to open the gate?",
+      "o": [
+        "Rhoda",
+        "Lydia",
+        "Tabitha",
+        "Mary"
+      ],
+      "a": 0,
+      "e": "Acts 12:13-14.",
+      "d": "medium"
+    },
+    {
+      "q": "Who traveled with Paul on his first missionary journey?",
+      "o": [
+        "Barnabas",
+        "Silas",
+        "Timothy",
+        "Luke"
+      ],
+      "a": 0,
+      "e": "Acts 13:2-4.",
+      "d": "easy"
+    },
+    {
+      "q": "Where did Paul's first missionary journey begin?",
+      "o": [
+        "Antioch",
+        "Jerusalem",
+        "Rome",
+        "Athens"
+      ],
+      "a": 0,
+      "e": "Acts 13:1-3.",
+      "d": "medium"
+    },
+    {
+      "q": "What was the name of the sorcerer Paul blinded on Cyprus?",
+      "o": [
+        "Elymas (Bar-Jesus)",
+        "Simon Magus",
+        "Alexander",
+        "Philetus"
+      ],
+      "a": 0,
+      "e": "Acts 13:8-11.",
+      "d": "hard"
+    },
+    {
+      "q": "Who left Paul and Barnabas during the first journey and went back to Jerusalem?",
+      "o": [
+        "John Mark",
+        "Silas",
+        "Luke",
+        "Timothy"
+      ],
+      "a": 0,
+      "e": "Acts 13:13.",
+      "d": "medium"
+    },
+    {
+      "q": "At Lystra, who did the people think Paul and Barnabas were?",
+      "o": [
+        "Hermes and Zeus",
+        "Angels",
+        "Prophets",
+        "Kings"
+      ],
+      "a": 0,
+      "e": "Acts 14:11-12.",
+      "d": "medium"
+    },
+    {
+      "q": "What was the main issue discussed at the Council of Jerusalem?",
+      "o": [
+        "Whether Gentile converts had to be circumcised",
+        "The date of Easter",
+        "Choosing a new apostle",
+        "The divinity of Christ"
+      ],
+      "a": 0,
+      "e": "Acts 15:1-5.",
+      "d": "medium"
+    },
+    {
+      "q": "Who did Paul take on his second missionary journey instead of Barnabas?",
+      "o": [
+        "Silas",
+        "John Mark",
+        "Luke",
+        "Peter"
+      ],
+      "a": 0,
+      "e": "Acts 15:40.",
+      "d": "medium"
+    },
+    {
+      "q": "Why did Paul and Barnabas part ways?",
+      "o": [
+        "A sharp disagreement over John Mark",
+        "A disagreement over money",
+        "They wanted to go to different places",
+        "God told them to"
+      ],
+      "a": 0,
+      "e": "Acts 15:37-39.",
+      "d": "medium"
+    },
+    {
+      "q": "Where was Timothy from?",
+      "o": [
+        "Lystra",
+        "Derbe",
+        "Antioch",
+        "Tarsus"
+      ],
+      "a": 0,
+      "e": "Acts 16:1.",
+      "d": "hard"
+    },
+    {
+      "q": "What was Timothy's mother's background?",
+      "o": [
+        "Jewish believer",
+        "Greek",
+        "Roman",
+        "Samaritan"
+      ],
+      "a": 0,
+      "e": "Acts 16:1.",
+      "d": "medium"
+    },
+    {
+      "q": "Why did Paul go to Macedonia?",
+      "o": [
+        "He had a vision of a man begging him to come",
+        "He was fleeing persecution",
+        "He was invited by a king",
+        "He heard there were many Jews there"
+      ],
+      "a": 0,
+      "e": "Acts 16:9-10.",
+      "d": "easy"
+    },
+    {
+      "q": "Who was the dealer in purple cloth from Thyatira who was baptized in Philippi?",
+      "o": [
+        "Lydia",
+        "Rhoda",
+        "Phoebe",
+        "Chloe"
+      ],
+      "a": 0,
+      "e": "Acts 16:14-15.",
+      "d": "medium"
+    },
+    {
+      "q": "What happened while Paul and Silas were singing in the Philippian jail?",
+      "o": [
+        "A violent earthquake opened the doors",
+        "The guards converted",
+        "The roof collapsed",
+        "An angel appeared"
+      ],
+      "a": 0,
+      "e": "Acts 16:25-26.",
+      "d": "easy"
+    },
+    {
+      "q": "What did the Philippian jailer ask Paul and Silas?",
+      "o": [
+        "What must I do to be saved?",
+        "Are you escaped?",
+        "Can I have some money?",
+        "Why are you singing?"
+      ],
+      "a": 0,
+      "e": "Acts 16:30.",
+      "d": "easy"
+    },
+    {
+      "q": "Which group of people in Acts were described as 'more noble' for examining the Scriptures daily?",
+      "o": [
+        "The Bereans",
+        "The Thessalonians",
+        "The Athenians",
+        "The Corinthians"
+      ],
+      "a": 0,
+      "e": "Acts 17:11.",
+      "d": "medium"
+    },
+    {
+      "q": "Where did Paul preach about the 'Unknown God'?",
+      "o": [
+        "Mars Hill (Areopagus) in Athens",
+        "The Temple in Jerusalem",
+        "The Colosseum in Rome",
+        "The Agora in Corinth"
+      ],
+      "a": 0,
+      "e": "Acts 17:22-23.",
+      "d": "medium"
+    },
+    {
+      "q": "What was the occupation of Aquila and Priscilla?",
+      "o": [
+        "Tentmakers",
+        "Fishermen",
+        "Tax collectors",
+        "Physicians"
+      ],
+      "a": 0,
+      "e": "Acts 18:2-3.",
+      "d": "easy"
+    },
+    {
+      "q": "How long did Paul stay in Corinth during his second journey?",
+      "o": [
+        "18 months",
+        "3 years",
+        "6 months",
+        "2 years"
+      ],
+      "a": 0,
+      "e": "Acts 18:11.",
+      "d": "hard"
+    },
+    {
+      "q": "Who was the eloquent man from Alexandria who only knew the baptism of John?",
+      "o": [
+        "Apollos",
+        "Barnabas",
+        "Timothy",
+        "Titus"
+      ],
+      "a": 0,
+      "e": "Acts 18:24-25.",
+      "d": "medium"
+    },
+    {
+      "q": "How long did Paul stay in Ephesus during his third journey?",
+      "o": [
+        "Over 2 years (nearly 3)",
+        "1 year",
+        "40 days",
+        "6 months"
+      ],
+      "a": 0,
+      "e": "Acts 19:8-10; 20:31.",
+      "d": "hard"
+    },
+    {
+      "q": "What was the name of the silversmith in Ephesus who started a riot against Paul?",
+      "o": [
+        "Demetrius",
+        "Alexander",
+        "Sceva",
+        "Gallio"
+      ],
+      "a": 0,
+      "e": "Acts 19:24-27.",
+      "d": "medium"
+    },
+    {
+      "q": "Who fell out of a window while Paul was preaching a long sermon?",
+      "o": [
+        "Eutychus",
+        "Timothy",
+        "Luke",
+        "Mark"
+      ],
+      "a": 0,
+      "e": "Acts 20:9.",
+      "d": "easy"
+    },
+    {
+      "q": "What happened to Eutychus?",
+      "o": [
+        "He died but Paul raised him",
+        "He broke his arm",
+        "He fell asleep and stayed there",
+        "He was unhurt"
+      ],
+      "a": 0,
+      "e": "Acts 20:9-12.",
+      "d": "easy"
+    },
+    {
+      "q": "Who was the prophet who bound Paul's hands and feet with a belt to warn him?",
+      "o": [
+        "Agabus",
+        "Silas",
+        "Philip",
+        "Peter"
+      ],
+      "a": 0,
+      "e": "Acts 21:10-11.",
+      "d": "medium"
+    },
+    {
+      "q": "Why was Paul arrested in the Temple in Jerusalem?",
+      "o": [
+        "Jews from Asia thought he brought a Gentile into the Temple",
+        "He was preaching about Jesus",
+        "He refused to pay a tax",
+        "He was stealing"
+      ],
+      "a": 0,
+      "e": "Acts 21:27-29.",
+      "d": "medium"
+    },
+    {
+      "q": "What privilege did Paul use to avoid being flogged by the Romans?",
+      "o": [
+        "His Roman citizenship",
+        "His status as a Pharisee",
+        "His wealth",
+        "His friendship with the governor"
+      ],
+      "a": 0,
+      "e": "Acts 22:25-29.",
+      "d": "medium"
+    },
+    {
+      "q": "Who was the Roman governor in Caesarea who heard Paul's case first?",
+      "o": [
+        "Felix",
+        "Festus",
+        "Pilate",
+        "Agrippa"
+      ],
+      "a": 0,
+      "e": "Acts 23:23-24; 24:1.",
+      "d": "medium"
+    },
+    {
+      "q": "Which governor succeeded Felix and wanted to please the Jews by keeping Paul in prison?",
+      "o": [
+        "Festus",
+        "Gallio",
+        "Lysias",
+        "Felix"
+      ],
+      "a": 0,
+      "e": "Acts 24:27; 25:1.",
+      "d": "hard"
+    },
+    {
+      "q": "Who did Paul appeal to, exercising his right as a Roman citizen?",
+      "o": [
+        "Caesar",
+        "The Sanhedrin",
+        "Agrippa",
+        "The High Priest"
+      ],
+      "a": 0,
+      "e": "Acts 25:11.",
+      "d": "easy"
+    },
+    {
+      "q": "What king heard Paul's defense and said, 'You almost persuade me to be a Christian'?",
+      "o": [
+        "Agrippa",
+        "Herod",
+        "David",
+        "Caesar"
+      ],
+      "a": 0,
+      "e": "Acts 26:28.",
+      "d": "medium"
+    },
+    {
+      "q": "Where was Paul being sent when he was shipwrecked?",
+      "o": [
+        "Rome",
+        "Athens",
+        "Jerusalem",
+        "Ephesus"
+      ],
+      "a": 0,
+      "e": "Acts 27:1.",
+      "d": "easy"
+    },
+    {
+      "q": "On which island were Paul and the others shipwrecked?",
+      "o": [
+        "Malta",
+        "Crete",
+        "Cyprus",
+        "Sicily"
+      ],
+      "a": 0,
+      "e": "Acts 28:1.",
+      "d": "medium"
+    },
+    {
+      "q": "What happened to Paul while he was gathering wood on Malta?",
+      "o": [
+        "A viper bit him but he was unhurt",
+        "He found gold",
+        "He was arrested again",
+        "He got lost"
+      ],
+      "a": 0,
+      "e": "Acts 28:3-5.",
+      "d": "easy"
+    },
+    {
+      "q": "How did the Book of Acts end?",
+      "o": [
+        "Paul preaching in Rome under house arrest",
+        "Paul's execution",
+        "Peter's death",
+        "The second coming"
+      ],
+      "a": 0,
+      "e": "Acts 28:30-31.",
+      "d": "medium"
+    },
+    {
+      "q": "How many missionary journeys of Paul are recorded in Acts?",
+      "o": [
+        "3",
+        "4",
+        "2",
+        "5"
+      ],
+      "a": 0,
+      "e": "Acts 13-21 record three main journeys.",
+      "d": "medium"
+    },
+    {
+      "q": "Who was the father of the four unmarried daughters who prophesied?",
+      "o": [
+        "Philip the Evangelist",
+        "Peter",
+        "Paul",
+        "Barnabas"
+      ],
+      "a": 0,
+      "e": "Acts 21:8-9.",
+      "d": "hard"
+    },
+    {
+      "q": "Who was the high priest when Paul was before the Sanhedrin?",
+      "o": [
+        "Ananias",
+        "Caiaphas",
+        "Annas",
+        "Jonathan"
+      ],
+      "a": 0,
+      "e": "Acts 23:2.",
+      "d": "hard"
+    },
+    {
+      "q": "Where was Paul born?",
+      "o": [
+        "Tarsus",
+        "Rome",
+        "Jerusalem",
+        "Antioch"
+      ],
+      "a": 0,
+      "e": "Acts 22:3.",
+      "d": "easy"
+    },
+    {
+      "q": "What was the name of the goddess of the Ephesians?",
+      "o": [
+        "Artemis (Diana)",
+        "Athena",
+        "Venus",
+        "Hera"
+      ],
+      "a": 0,
+      "e": "Acts 19:27.",
+      "d": "medium"
+    },
+    {
+      "q": "Who were the seven sons of a Jewish high priest who tried to drive out evil spirits in Jesus' name?",
+      "o": [
+        "Sons of Sceva",
+        "Sons of Zebedee",
+        "Sons of Thunder",
+        "Sons of Eli"
+      ],
+      "a": 0,
+      "e": "Acts 19:14.",
+      "d": "hard"
+    },
+    {
+      "q": "What did the people of Malta first think Paul was when he was bitten by the viper?",
+      "o": [
+        "A murderer",
+        "A god",
+        "A magician",
+        "A prophet"
+      ],
+      "a": 0,
+      "e": "Acts 28:4.",
+      "d": "medium"
+    },
+    {
+      "q": "What did they think he was when he didn't die?",
+      "o": [
+        "A god",
+        "A murderer",
+        "An angel",
+        "A ghost"
+      ],
+      "a": 0,
+      "e": "Acts 28:6.",
+      "d": "medium"
+    },
+    {
+      "q": "Who was the centurion responsible for Paul during the voyage to Rome?",
+      "o": [
+        "Julius",
+        "Cornelius",
+        "Longinus",
+        "Gallio"
+      ],
+      "a": 0,
+      "e": "Acts 27:1.",
+      "d": "hard"
+    },
+    {
+      "q": "What was the name of the ship's owner's father who Paul healed on Malta?",
+      "o": [
+        "Publius",
+        "Julius",
+        "Marcus",
+        "Felix"
+      ],
+      "a": 0,
+      "e": "Acts 28:7-8.",
+      "d": "hard"
+    },
+    {
+      "q": "How long was Paul in Rome at the end of Acts?",
+      "o": [
+        "Two full years",
+        "One year",
+        "Six months",
+        "Three years"
+      ],
+      "a": 0,
+      "e": "Acts 28:30.",
+      "d": "medium"
+    },
+    {
+      "q": "Who was the 'son of encouragement'?",
+      "o": [
+        "Barnabas",
+        "Silas",
+        "Timothy",
+        "Stephen"
+      ],
+      "a": 0,
+      "e": "Acts 4:36.",
+      "d": "easy"
+    },
+    {
+      "q": "What did Barnabas sell to give the money to the apostles?",
+      "o": [
+        "A field",
+        "A house",
+        "A boat",
+        "A shop"
+      ],
+      "a": 0,
+      "e": "Acts 4:37.",
+      "d": "medium"
+    },
+    {
+      "q": "Who was the Ethiopian eunuch reading from when Philip met him?",
+      "o": [
+        "Isaiah",
+        "David",
+        "Moses",
+        "Elijah"
+      ],
+      "a": 0,
+      "e": "Acts 8:30.",
+      "d": "easy"
+    },
+    {
+      "q": "Which chapter of Isaiah was the eunuch reading?",
+      "o": [
+        "53",
+        "6",
+        "40",
+        "1"
+      ],
+      "a": 0,
+      "e": "Acts 8:32-33 quotes Isaiah 53.",
+      "d": "hard"
+    },
+    {
+      "q": "Where did Philip go after baptizing the eunuch?",
+      "o": [
+        "Azotus",
+        "Gaza",
+        "Jerusalem",
+        "Antioch"
+      ],
+      "a": 0,
+      "e": "Acts 8:40.",
+      "d": "hard"
+    },
+    {
+      "q": "What was the name of the street Saul was on in Damascus?",
+      "o": [
+        "Straight Street",
+        "Main Street",
+        "Gold Street",
+        "High Street"
+      ],
+      "a": 0,
+      "e": "Acts 9:11.",
+      "d": "medium"
+    },
+    {
+      "q": "Who accompanied Paul and Barnabas to the Council of Jerusalem?",
+      "o": [
+        "Titus and others",
+        "Peter",
+        "John",
+        "Timothy"
+      ],
+      "a": 0,
+      "e": "Galatians 2:1 mentions Titus; Acts 15:2 mentions others.",
+      "d": "hard"
+    },
+    {
+      "q": "What was the name of the girl who had a spirit by which she predicted the future?",
+      "o": [
+        "A slave girl",
+        "Lydia",
+        "Rhoda",
+        "Tabitha"
+      ],
+      "a": 0,
+      "e": "Acts 16:16.",
+      "d": "medium"
+    },
+    {
+      "q": "What did Paul and Silas do at midnight in prison?",
+      "o": [
+        "Prayed and sang hymns",
+        "Slept",
+        "Plotted escape",
+        "Cried"
+      ],
+      "a": 0,
+      "e": "Acts 16:25.",
+      "d": "easy"
+    },
+    {
+      "q": "In which city did Paul see an altar 'TO AN UNKNOWN GOD'?",
+      "o": [
+        "Athens",
+        "Corinth",
+        "Rome",
+        "Ephesus"
+      ],
+      "a": 0,
+      "e": "Acts 17:23.",
+      "d": "easy"
+    },
+    {
+      "q": "Who was the leader of the synagogue in Corinth who became a believer?",
+      "o": [
+        "Crispus",
+        "Sosthenes",
+        "Justus",
+        "Gallio"
+      ],
+      "a": 0,
+      "e": "Acts 18:8.",
+      "d": "hard"
+    },
+    {
+      "q": "Who was the proconsul of Achaia who dismissed the charges against Paul?",
+      "o": [
+        "Gallio",
+        "Felix",
+        "Festus",
+        "Pilate"
+      ],
+      "a": 0,
+      "e": "Acts 18:12-16.",
+      "d": "hard"
+    },
+    {
+      "q": "What did the people of Ephesus do with their sorcery scrolls?",
+      "o": [
+        "Burned them publicly",
+        "Sold them",
+        "Hid them",
+        "Gave them to Paul"
+      ],
+      "a": 0,
+      "e": "Acts 19:19.",
+      "d": "medium"
+    },
+    {
+      "q": "What was the value of the scrolls burned in Ephesus?",
+      "o": [
+        "50,000 drachmas",
+        "1,000 denarii",
+        "10,000 talents",
+        "500 gold coins"
+      ],
+      "a": 0,
+      "e": "Acts 19:19.",
+      "d": "hard"
+    },
+    {
+      "q": "Where did Paul give his farewell speech to the Ephesian elders?",
+      "o": [
+        "Miletus",
+        "Ephesus",
+        "Troas",
+        "Tyre"
+      ],
+      "a": 0,
+      "e": "Acts 20:17.",
+      "d": "hard"
+    },
+    {
+      "q": "How many men were with Paul when he took the vow in Jerusalem?",
+      "o": [
+        "4",
+        "7",
+        "12",
+        "3"
+      ],
+      "a": 0,
+      "e": "Acts 21:23.",
+      "d": "hard"
+    },
+    {
+      "q": "What did Paul say to the High Priest Ananias when he was struck?",
+      "o": [
+        "God will strike you, you whitewashed wall!",
+        "I forgive you",
+        "Why do you strike me?",
+        "Nothing"
+      ],
+      "a": 0,
+      "e": "Acts 23:3.",
+      "d": "hard"
+    },
+    {
+      "q": "How many soldiers were sent to escort Paul to Caesarea?",
+      "o": [
+        "470 total",
+        "100",
+        "200",
+        "50"
+      ],
+      "a": 0,
+      "e": "Acts 23:23 (200 soldiers, 70 horsemen, 200 spearmen).",
+      "d": "hard"
+    },
+    {
+      "q": "Who was the lawyer who presented the case against Paul before Felix?",
+      "o": [
+        "Tertullus",
+        "Alexander",
+        "Demetrius",
+        "Sceva"
+      ],
+      "a": 0,
+      "e": "Acts 24:1.",
+      "d": "hard"
+    },
+    {
+      "q": "How many days did Paul wait for Felix to hear his case?",
+      "o": [
+        "5",
+        "2",
+        "7",
+        "10"
+      ],
+      "a": 0,
+      "e": "Acts 24:1.",
+      "d": "hard"
+    },
+    {
+      "q": "What was the name of Felix's wife?",
+      "o": [
+        "Drusilla",
+        "Bernice",
+        "Sapphira",
+        "Lydia"
+      ],
+      "a": 0,
+      "e": "Acts 24:24.",
+      "d": "hard"
+    },
+    {
+      "q": "What was the name of the King Agrippa's sister who was with him?",
+      "o": [
+        "Bernice",
+        "Drusilla",
+        "Salome",
+        "Mary"
+      ],
+      "a": 0,
+      "e": "Acts 25:13.",
+      "d": "hard"
+    },
+    {
+      "q": "What was the name of the wind that caused the shipwreck?",
+      "o": [
+        "Northeaster (Euroclydon)",
+        "Sirocco",
+        "Mistral",
+        "Zephyr"
+      ],
+      "a": 0,
+      "e": "Acts 27:14.",
+      "d": "hard"
+    },
+    {
+      "q": "How many people were on the ship with Paul?",
+      "o": [
+        "276",
+        "100",
+        "500",
+        "150"
+      ],
+      "a": 0,
+      "e": "Acts 27:37.",
+      "d": "hard"
+    },
+    {
+      "q": "Where did Paul first land in Italy?",
+      "o": [
+        "Puteoli",
+        "Rome",
+        "Naples",
+        "Syracuse"
+      ],
+      "a": 0,
+      "e": "Acts 28:13.",
+      "d": "hard"
+    },
+    {
+      "q": "Who was the Roman commander in Jerusalem who arrested Paul?",
+      "o": [
+        "Claudius Lysias",
+        "Julius",
+        "Felix",
+        "Festus"
+      ],
+      "a": 0,
+      "e": "Acts 23:26.",
+      "d": "hard"
+    },
+    {
+      "q": "Where did the Holy Spirit forbid Paul to go during his second journey?",
+      "o": [
+        "Asia and Bithynia",
+        "Greece",
+        "Macedonia",
+        "Cyprus"
+      ],
+      "a": 0,
+      "e": "Acts 16:6-7.",
+      "d": "hard"
+    },
+    {
+      "q": "Who was the person who was raised from the dead by Peter in Joppa?",
+      "o": [
+        "Dorcas",
+        "Tabitha",
+        "Both A and B",
+        "Lydia"
+      ],
+      "a": 2,
+      "e": "Acts 9:36 (Tabitha, which is translated Dorcas).",
+      "d": "medium"
+    },
+    {
+      "q": "What was the name of the island where Paul first landed after the shipwreck?",
+      "o": [
+        "Malta",
+        "Cyprus",
+        "Crete",
+        "Rhodes"
+      ],
+      "a": 0,
+      "e": "Acts 28:1.",
+      "d": "easy"
+    },
+    {
+      "q": "In which city did the people try to stone Paul, but he survived?",
+      "o": [
+        "Lystra",
+        "Iconium",
+        "Antioch",
+        "Derbe"
+      ],
+      "a": 0,
+      "e": "Acts 14:19-20.",
+      "d": "medium"
+    },
+    {
+      "q": "Who was the companion of Paul who was circumcised because of the Jews?",
+      "o": [
+        "Timothy",
+        "Titus",
+        "Luke",
+        "Silas"
+      ],
+      "a": 0,
+      "e": "Acts 16:3.",
+      "d": "medium"
+    },
+    {
+      "q": "Who was the man who had a vision of a sheet from heaven?",
+      "o": [
+        "Peter",
+        "Cornelius",
+        "Paul",
+        "Ananias"
+      ],
+      "a": 0,
+      "e": "Acts 10:9-11.",
+      "d": "easy"
+    },
+    {
+      "q": "What was the name of the city where the followers of Jesus were first called Christians?",
+      "o": [
+        "Antioch",
+        "Jerusalem",
+        "Rome",
+        "Ephesus"
+      ],
+      "a": 0,
+      "e": "Acts 11:26.",
+      "d": "easy"
+    },
+    {
+      "q": "Who was the person who said, 'I see the heavens opened, and the Son of Man standing on the right hand of God'?",
+      "o": [
+        "Stephen",
+        "Peter",
+        "Paul",
+        "Jesus"
+      ],
+      "a": 0,
+      "e": "Acts 7:56.",
+      "d": "easy"
+    },
+    {
+      "q": "Who was the disciple who came to Paul in Damascus to baptize him and restore his sight?",
+      "o": [
+        "Ananias",
+        "Peter",
+        "Barnabas",
+        "Silas"
+      ],
+      "a": 0,
+      "e": "Acts 9:10-18.",
+      "d": "easy"
+    }
+  ],
+  "Epistles": [
+    {
+      "q": "Which book is known as the 'Gospel of the Grace of God'?",
+      "o": [
+        "Galatians",
+        "Romans",
+        "Ephesians",
+        "Colossians"
+      ],
+      "a": 1,
+      "e": "Romans 1:16-17",
+      "d": "easy"
+    },
+    {
+      "q": "In 1 Corinthians, what is the 'greatest' of the three?",
+      "o": [
+        "Faith",
+        "Hope",
+        "Love",
+        "Wisdom"
+      ],
+      "a": 2,
+      "e": "1 Corinthians 13:13",
+      "d": "easy"
+    },
+    {
+      "q": "Which book addresses divisions in the church?",
+      "o": [
+        "1 Corinthians",
+        "2 Corinthians",
+        "Galatians",
+        "Ephesians"
+      ],
+      "a": 0,
+      "e": "1 Corinthians 1:10",
+      "d": "medium"
+    },
+    {
+      "q": "To which church did Paul write about the 'Fruit of the Spirit'?",
+      "o": [
+        "Ephesus",
+        "Philippi",
+        "Galatia",
+        "Colossae"
+      ],
+      "a": 2,
+      "e": "Galatians 5:22-23",
+      "d": "easy"
+    },
+    {
+      "q": "Which Epistle contains the 'Armor of God' passage?",
+      "o": [
+        "Philippians",
+        "Colossians",
+        "Ephesians",
+        "Thessalonians"
+      ],
+      "a": 2,
+      "e": "Ephesians 6:10-18",
+      "d": "easy"
+    },
+    {
+      "q": "Paul's letter to the Philippians is often called the 'Epistle of...'",
+      "o": [
+        "Joy",
+        "Faith",
+        "Hope",
+        "Correction"
+      ],
+      "a": 0,
+      "e": "Philippians frequent use of 'joy'",
+      "d": "medium"
+    },
+    {
+      "q": "In which book does Paul emphasize the supremacy of Christ?",
+      "o": [
+        "Romans",
+        "Colossians",
+        "1 Timothy",
+        "Hebrews"
+      ],
+      "a": 1,
+      "e": "Colossians 1:15-20",
+      "d": "medium"
+    },
+    {
+      "q": "Which letter was written to a slave owner about Onesimus?",
+      "o": [
+        "Titus",
+        "Philemon",
+        "Jude",
+        "2 John"
+      ],
+      "a": 1,
+      "e": "Philemon 1:10",
+      "d": "medium"
+    },
+    {
+      "q": "Which book's theme is the superiority of Christ over the Old Covenant?",
+      "o": [
+        "Hebrews",
+        "Galatians",
+        "Romans",
+        "James"
+      ],
+      "a": 0,
+      "e": "Hebrews 1:1-4",
+      "d": "easy"
+    },
+    {
+      "q": "Who wrote 'Faith without works is dead'?",
+      "o": [
+        "Paul",
+        "Peter",
+        "James",
+        "John"
+      ],
+      "a": 2,
+      "e": "James 2:17",
+      "d": "easy"
+    },
+    {
+      "q": "In 1 Peter, believers are described as what being built into a spiritual house?",
+      "o": [
+        "Living stones",
+        "Bricks",
+        "Pillars",
+        "Foundations"
+      ],
+      "a": 0,
+      "e": "1 Peter 2:5",
+      "d": "medium"
+    },
+    {
+      "q": "Which book identifies the author as 'a servant of Jesus Christ and brother of James'?",
+      "o": [
+        "Jude",
+        "2 Peter",
+        "1 John",
+        "Titus"
+      ],
+      "a": 0,
+      "e": "Jude 1:1",
+      "d": "medium"
+    },
+    {
+      "q": "To whom did Paul write, 'Let no one despise your youth'?",
+      "o": [
+        "Titus",
+        "Timothy",
+        "Mark",
+        "Luke"
+      ],
+      "a": 1,
+      "e": "1 Timothy 4:12",
+      "d": "easy"
+    },
+    {
+      "q": "Which Epistle is the shortest book in the New Testament?",
+      "o": [
+        "Philemon",
+        "Jude",
+        "2 John",
+        "3 John"
+      ],
+      "a": 3,
+      "e": "3 John 1",
+      "d": "hard"
+    },
+    {
+      "q": "In Romans 8, what can separate us from the love of God?",
+      "o": [
+        "Death",
+        "Angels",
+        "Nothing",
+        "The future"
+      ],
+      "a": 2,
+      "e": "Romans 8:38-39",
+      "d": "easy"
+    },
+    {
+      "q": "Which book discusses the 'Man of Lawlessness'?",
+      "o": [
+        "1 Thessalonians",
+        "2 Thessalonians",
+        "Revelation",
+        "1 Timothy"
+      ],
+      "a": 1,
+      "e": "2 Thessalonians 2:3",
+      "d": "hard"
+    },
+    {
+      "q": "Who is the author of the letter to Titus?",
+      "o": [
+        "Peter",
+        "John",
+        "Paul",
+        "James"
+      ],
+      "a": 2,
+      "e": "Titus 1:1",
+      "d": "easy"
+    },
+    {
+      "q": "Which book contains the 'Hall of Faith' (Chapter 11)?",
+      "o": [
+        "Romans",
+        "Hebrews",
+        "Ephesians",
+        "James"
+      ],
+      "a": 1,
+      "e": "Hebrews 11",
+      "d": "easy"
+    },
+    {
+      "q": "In Galatians, what should happen to those preaching a different gospel?",
+      "o": [
+        "Ignored",
+        "Corrected",
+        "Under God's curse",
+        "Exiled"
+      ],
+      "a": 2,
+      "e": "Galatians 1:8-9",
+      "d": "medium"
+    },
+    {
+      "q": "Which book says 'God is love'?",
+      "o": [
+        "1 John",
+        "2 John",
+        "Gospel of John",
+        "Ephesians"
+      ],
+      "a": 0,
+      "e": "1 John 4:8",
+      "d": "easy"
+    },
+    {
+      "q": "To which city did Paul write about the 'Third Heaven'?",
+      "o": [
+        "Rome",
+        "Corinth",
+        "Ephesus",
+        "Thessalonica"
+      ],
+      "a": 1,
+      "e": "2 Corinthians 12:2",
+      "d": "hard"
+    },
+    {
+      "q": "Which book emphasizes that 'All Scripture is God-breathed'?",
+      "o": [
+        "1 Timothy",
+        "2 Timothy",
+        "Hebrews",
+        "1 Peter"
+      ],
+      "a": 1,
+      "e": "2 Timothy 3:16",
+      "d": "easy"
+    },
+    {
+      "q": "In Philippians 4, what can Paul do through Christ who strengthens him?",
+      "o": [
+        "All things",
+        "Perform miracles",
+        "Endure prison",
+        "Preach to kings"
+      ],
+      "a": 0,
+      "e": "Philippians 4:13",
+      "d": "easy"
+    },
+    {
+      "q": "Which book mentions Michael disputing with the devil about Moses' body?",
+      "o": [
+        "Revelation",
+        "2 Peter",
+        "Jude",
+        "Hebrews"
+      ],
+      "a": 2,
+      "e": "Jude 1:9",
+      "d": "hard"
+    },
+    {
+      "q": "Which book says 'Count it all joy' when meeting trials?",
+      "o": [
+        "James",
+        "1 Peter",
+        "Philippians",
+        "Romans"
+      ],
+      "a": 0,
+      "e": "James 1:2",
+      "d": "easy"
+    },
+    {
+      "q": "Which Epistle warns about the 'tongue' being a small member that boasts?",
+      "o": [
+        "James",
+        "1 Peter",
+        "Proverbs",
+        "Titus"
+      ],
+      "a": 0,
+      "e": "James 3:5",
+      "d": "medium"
+    },
+    {
+      "q": "In 1 Peter 5, who is the 'roaring lion'?",
+      "o": [
+        "Nero",
+        "The Devil",
+        "False Teachers",
+        "The World"
+      ],
+      "a": 1,
+      "e": "1 Peter 5:8",
+      "d": "easy"
+    },
+    {
+      "q": "Which book says 'Jesus Christ is the same yesterday and today and forever'?",
+      "o": [
+        "Hebrews",
+        "Colossians",
+        "Revelation",
+        "Matthew"
+      ],
+      "a": 0,
+      "e": "Hebrews 13:8",
+      "d": "easy"
+    },
+    {
+      "q": "Which book contains 'Pray without ceasing'?",
+      "o": [
+        "1 Thessalonians",
+        "Ephesians",
+        "Philippians",
+        "Colossians"
+      ],
+      "a": 0,
+      "e": "1 Thessalonians 5:17",
+      "d": "easy"
+    },
+    {
+      "q": "In Romans 12, believers present their bodies as what?",
+      "o": [
+        "A holy temple",
+        "A living sacrifice",
+        "An instrument of praise",
+        "A clean vessel"
+      ],
+      "a": 1,
+      "e": "Romans 12:1",
+      "d": "medium"
+    },
+    {
+      "q": "Which Epistle mentions Melchizedek as a type of Christ?",
+      "o": [
+        "Galatians",
+        "Hebrews",
+        "Romans",
+        "Colossians"
+      ],
+      "a": 1,
+      "e": "Hebrews 7",
+      "d": "hard"
+    },
+    {
+      "q": "Who did Paul call his 'true son in the faith'?",
+      "o": [
+        "Titus",
+        "Timothy",
+        "Barnabas",
+        "Silas"
+      ],
+      "a": 1,
+      "e": "1 Timothy 1:2",
+      "d": "medium"
+    },
+    {
+      "q": "Which book warns that 'the love of money is a root of all kinds of evil'?",
+      "o": [
+        "Proverbs",
+        "Ecclesiastes",
+        "1 Timothy",
+        "James"
+      ],
+      "a": 2,
+      "e": "1 Timothy 6:10",
+      "d": "easy"
+    },
+    {
+      "q": "In 1 John, what are the three things in the world?",
+      "o": [
+        "Sin, Death, Hell",
+        "Lust of flesh, eyes, and pride",
+        "Anger, Malice, Envy",
+        "Money, Power, Fame"
+      ],
+      "a": 1,
+      "e": "1 John 2:16",
+      "d": "medium"
+    },
+    {
+      "q": "Which book speaks of the 'husband of one wife' for an overseer?",
+      "o": [
+        "1 Timothy",
+        "Hebrews",
+        "1 Corinthians",
+        "1 Peter"
+      ],
+      "a": 0,
+      "e": "1 Timothy 3:2",
+      "d": "medium"
+    },
+    {
+      "q": "In Ephesians 2, we are saved by what through faith?",
+      "o": [
+        "Works",
+        "Grace",
+        "Knowledge",
+        "Baptism"
+      ],
+      "a": 1,
+      "e": "Ephesians 2:8",
+      "d": "easy"
+    },
+    {
+      "q": "Which book says 'Draw near to God and He will draw near to you'?",
+      "o": [
+        "James",
+        "1 John",
+        "Hebrews",
+        "Psalm 73"
+      ],
+      "a": 0,
+      "e": "James 4:8",
+      "d": "medium"
+    },
+    {
+      "q": "Which book says 'if we confess our sins, He is faithful and just'?",
+      "o": [
+        "Romans",
+        "1 John",
+        "Galatians",
+        "Hebrews"
+      ],
+      "a": 1,
+      "e": "1 John 1:9",
+      "d": "easy"
+    },
+    {
+      "q": "In 2 Corinthians 5, those in Christ are a what?",
+      "o": [
+        "New person",
+        "New creation",
+        "Child of God",
+        "Saint"
+      ],
+      "a": 1,
+      "e": "2 Corinthians 5:17",
+      "d": "easy"
+    },
+    {
+      "q": "Which book mentions Paul's 'thorn in the flesh'?",
+      "o": [
+        "Galatians",
+        "2 Corinthians",
+        "Philippians",
+        "Romans"
+      ],
+      "a": 1,
+      "e": "2 Corinthians 12:7",
+      "d": "medium"
+    },
+    {
+      "q": "Which book talks about 'Christ in you, the hope of glory'?",
+      "o": [
+        "Ephesians",
+        "Colossians",
+        "Philippians",
+        "Galatians"
+      ],
+      "a": 1,
+      "e": "Colossians 1:27",
+      "d": "medium"
+    },
+    {
+      "q": "In 1 Corinthians 15, Paul discusses what event's importance?",
+      "o": [
+        "The Baptism",
+        "The Last Supper",
+        "The Resurrection",
+        "The Ascension"
+      ],
+      "a": 2,
+      "e": "1 Corinthians 15",
+      "d": "easy"
+    },
+    {
+      "q": "Which book mentions 'one Lord, one faith, one baptism'?",
+      "o": [
+        "1 Corinthians",
+        "Ephesians",
+        "Colossians",
+        "Romans"
+      ],
+      "a": 1,
+      "e": "Ephesians 4:5",
+      "d": "medium"
+    },
+    {
+      "q": "Which Epistle was written to a 'chosen lady and her children'?",
+      "o": [
+        "1 John",
+        "2 John",
+        "3 John",
+        "Jude"
+      ],
+      "a": 1,
+      "e": "2 John 1:1",
+      "d": "hard"
+    },
+    {
+      "q": "Who is the author of Jude?",
+      "o": [
+        "Jude, Apostle",
+        "Jude, brother of Jesus",
+        "Judas Iscariot",
+        "Jude, son of James"
+      ],
+      "a": 1,
+      "e": "Jude 1:1, Matt 13:55",
+      "d": "hard"
+    },
+    {
+      "q": "In Hebrews 12, we are told to fix our eyes on whom?",
+      "o": [
+        "The Apostles",
+        "Moses",
+        "Jesus",
+        "The Father"
+      ],
+      "a": 2,
+      "e": "Hebrews 12:2",
+      "d": "easy"
+    },
+    {
+      "q": "Which book says 'God is light'?",
+      "o": [
+        "Gospel of John",
+        "1 John",
+        "James",
+        "Revelation"
+      ],
+      "a": 1,
+      "e": "1 John 1:5",
+      "d": "medium"
+    },
+    {
+      "q": "In 1 Timothy 2, who is the 'one mediator'?",
+      "o": [
+        "Holy Spirit",
+        "Priest",
+        "Man Christ Jesus",
+        "Virgin Mary"
+      ],
+      "a": 2,
+      "e": "1 Timothy 2:5",
+      "d": "easy"
+    },
+    {
+      "q": "Which book tells the rich to weep and wail for coming misery?",
+      "o": [
+        "Luke",
+        "James",
+        "1 Timothy",
+        "Amos"
+      ],
+      "a": 1,
+      "e": "James 5:1",
+      "d": "medium"
+    },
+    {
+      "q": "Which Epistle contains 'the testing of your faith produces perseverance'?",
+      "o": [
+        "James",
+        "1 Peter",
+        "Romans",
+        "Hebrews"
+      ],
+      "a": 0,
+      "e": "James 1:3",
+      "d": "medium"
+    },
+    {
+      "q": "In Galatians 3, Paul says there is neither Jew nor Gentile, for all are one in...?",
+      "o": [
+        "The Church",
+        "Spirit",
+        "Christ Jesus",
+        "Heaven"
+      ],
+      "a": 2,
+      "e": "Galatians 3:28",
+      "d": "easy"
+    },
+    {
+      "q": "Which book warns: 'Do not be yoked together with unbelievers'?",
+      "o": [
+        "1 Corinthians",
+        "2 Corinthians",
+        "Ephesians",
+        "Titus"
+      ],
+      "a": 1,
+      "e": "2 Corinthians 6:14",
+      "d": "medium"
+    },
+    {
+      "q": "In Philippians 1, 'For to me, to live is Christ and to die is...?'",
+      "o": [
+        "Peace",
+        "Rest",
+        "Gain",
+        "Glory"
+      ],
+      "a": 2,
+      "e": "Philippians 1:21",
+      "d": "easy"
+    },
+    {
+      "q": "Which book mentions Diotrephes who 'loves to be first'?",
+      "o": [
+        "2 John",
+        "3 John",
+        "Titus",
+        "Philemon"
+      ],
+      "a": 1,
+      "e": "3 John 1:9",
+      "d": "hard"
+    },
+    {
+      "q": "Which book discusses the 'Great High Priest'?",
+      "o": [
+        "Hebrews",
+        "1 Peter",
+        "Romans",
+        "Ephesians"
+      ],
+      "a": 0,
+      "e": "Hebrews 4:14",
+      "d": "medium"
+    },
+    {
+      "q": "In 1 Corinthians 10, God won't let you be tempted beyond what you can...?",
+      "o": [
+        "Understand",
+        "Bear",
+        "Explain",
+        "Resist"
+      ],
+      "a": 1,
+      "e": "1 Corinthians 10:13",
+      "d": "easy"
+    },
+    {
+      "q": "Which book says 'The prayer of a righteous person is powerful'?",
+      "o": [
+        "James",
+        "Hebrews",
+        "Romans",
+        "1 Peter"
+      ],
+      "a": 0,
+      "e": "James 5:16",
+      "d": "easy"
+    },
+    {
+      "q": "Which book says 'Resist the devil, and he will flee'?",
+      "o": [
+        "James",
+        "1 Peter",
+        "Ephesians",
+        "Colossians"
+      ],
+      "a": 0,
+      "e": "James 4:7",
+      "d": "medium"
+    },
+    {
+      "q": "In 1 Thess 4, what event involves the 'voice of the archangel'?",
+      "o": [
+        "Resurrection",
+        "Fall of Jerusalem",
+        "Rapture/Second Coming",
+        "Pentecost"
+      ],
+      "a": 2,
+      "e": "1 Thess 4:16",
+      "d": "medium"
+    },
+    {
+      "q": "Which book says 'Do not quench the Spirit'?",
+      "o": [
+        "1 Thess",
+        "Ephesians",
+        "Galatians",
+        "Romans"
+      ],
+      "a": 0,
+      "e": "1 Thess 5:19",
+      "d": "medium"
+    },
+    {
+      "q": "In Ephesians 4, what are the five leadership gifts (Apostles, Prophets, Evangelists, Pastors, and ...)?",
+      "o": [
+        "Teachers",
+        "Deacons",
+        "Elders",
+        "Bishops"
+      ],
+      "a": 0,
+      "e": "Ephesians 4:11",
+      "d": "medium"
+    },
+    {
+      "q": "Which book mentions Paul's request for his cloak and scrolls from Troas?",
+      "o": [
+        "1 Tim",
+        "2 Tim",
+        "Titus",
+        "Philemon"
+      ],
+      "a": 1,
+      "e": "2 Timothy 4:13",
+      "d": "hard"
+    },
+    {
+      "q": "In Colossians 3, believers are told to set their minds on things...?",
+      "o": [
+        "Earthly",
+        "Above",
+        "Future",
+        "Eternal"
+      ],
+      "a": 1,
+      "e": "Colossians 3:2",
+      "d": "easy"
+    },
+    {
+      "q": "Which book says 'For the word of God is alive and active'?",
+      "o": [
+        "Hebrews",
+        "2 Timothy",
+        "1 Peter",
+        "Psalm 119"
+      ],
+      "a": 0,
+      "e": "Hebrews 4:12",
+      "d": "medium"
+    },
+    {
+      "q": "In 1 Cor 11, Paul gives instructions regarding what?",
+      "o": [
+        "Baptism",
+        "Lord's Supper",
+        "Marriage",
+        "Tithing"
+      ],
+      "a": 1,
+      "e": "1 Corinthians 11:23-26",
+      "d": "medium"
+    },
+    {
+      "q": "Which book says 'Husbands, love your wives, just as Christ loved the church'?",
+      "o": [
+        "Colossians",
+        "Ephesians",
+        "1 Peter",
+        "Titus"
+      ],
+      "a": 1,
+      "e": "Ephesians 5:25",
+      "d": "easy"
+    },
+    {
+      "q": "In 1 John 5, what is the 'victory that has overcome the world'?",
+      "o": [
+        "Our Love",
+        "Our Faith",
+        "The Cross",
+        "The Word"
+      ],
+      "a": 1,
+      "e": "1 John 5:4",
+      "d": "medium"
+    },
+    {
+      "q": "Which book mentions the 'seven churches in Asia' in its opening?",
+      "o": [
+        "Revelation",
+        "Ephesians",
+        "Galatians",
+        "Colossians"
+      ],
+      "a": 0,
+      "e": "Actually Revelation 1:4, but often grouped with letters.",
+      "d": "medium"
+    },
+    {
+      "q": "In Titus, Paul says the grace of God teaches us to say 'No' to what?",
+      "o": [
+        "Sin",
+        "Ungodliness",
+        "Pharisees",
+        "The Law"
+      ],
+      "a": 1,
+      "e": "Titus 2:12",
+      "d": "medium"
+    },
+    {
+      "q": "Which book says 'Every good and perfect gift is from above'?",
+      "o": [
+        "James",
+        "1 John",
+        "Matthew",
+        "Hebrews"
+      ],
+      "a": 0,
+      "e": "James 1:17",
+      "d": "easy"
+    },
+    {
+      "q": "In 1 Cor 15, 'Death has been swallowed up in...?'",
+      "o": [
+        "Victory",
+        "Life",
+        "Hades",
+        "Silence"
+      ],
+      "a": 0,
+      "e": "1 Corinthians 15:54",
+      "d": "easy"
+    },
+    {
+      "q": "Which book says 'We love because He first loved us'?",
+      "o": [
+        "Gospel of John",
+        "1 John",
+        "Ephesians",
+        "Romans"
+      ],
+      "a": 1,
+      "e": "1 John 4:19",
+      "d": "easy"
+    },
+    {
+      "q": "In Hebrews 13, believers are told not to forget to show hospitality to whom?",
+      "o": [
+        "Widows",
+        "Strangers",
+        "The Poor",
+        "Prisoners"
+      ],
+      "a": 1,
+      "e": "Hebrews 13:2 - 'some have shown hospitality to angels without knowing it.'",
+      "d": "medium"
+    },
+    {
+      "q": "Which book says 'The Lord is not slow in keeping his promise'?",
+      "o": [
+        "1 Peter",
+        "2 Peter",
+        "Hebrews",
+        "James"
+      ],
+      "a": 1,
+      "e": "2 Peter 3:9",
+      "d": "medium"
+    },
+    {
+      "q": "In Romans 1, what does Paul say is 'not ashamed' of?",
+      "o": [
+        "The Cross",
+        "The Gospel",
+        "Jesus",
+        "The Law"
+      ],
+      "a": 1,
+      "e": "Romans 1:16",
+      "d": "easy"
+    },
+    {
+      "q": "Which book says 'Your body is a temple of the Holy Spirit'?",
+      "o": [
+        "1 Cor",
+        "2 Cor",
+        "Ephesians",
+        "Romans"
+      ],
+      "a": 0,
+      "e": "1 Corinthians 6:19",
+      "d": "easy"
+    },
+    {
+      "q": "In Galatians 6, 'A man reaps what he...?'",
+      "o": [
+        "Earns",
+        "Sows",
+        "Needs",
+        "Desires"
+      ],
+      "a": 1,
+      "e": "Galatians 6:7",
+      "d": "easy"
+    },
+    {
+      "q": "Which book mentions 'Alexander the metalworker' who did Paul great harm?",
+      "o": [
+        "1 Tim",
+        "2 Tim",
+        "Titus",
+        "Philemon"
+      ],
+      "a": 1,
+      "e": "2 Timothy 4:14",
+      "d": "hard"
+    },
+    {
+      "q": "In Philippians 2, Jesus 'made himself nothing' taking the very nature of a...?",
+      "o": [
+        "Man",
+        "Servant",
+        "Child",
+        "King"
+      ],
+      "a": 1,
+      "e": "Philippians 2:7",
+      "d": "medium"
+    },
+    {
+      "q": "Which book says 'Be kind and compassionate to one another, forgiving each other'?",
+      "o": [
+        "Colossians",
+        "Ephesians",
+        "Philippians",
+        "Galatians"
+      ],
+      "a": 1,
+      "e": "Ephesians 4:32",
+      "d": "easy"
+    },
+    {
+      "q": "In 1 John 3, 'How great is the love the Father has lavished on us, that we should be called...?'",
+      "o": [
+        "Servants",
+        "Saints",
+        "Children of God",
+        "Friends"
+      ],
+      "a": 2,
+      "e": "1 John 3:1",
+      "d": "easy"
+    },
+    {
+      "q": "Which book says 'The end of all things is near. Therefore be alert and of sober mind'?",
+      "o": [
+        "James",
+        "1 Peter",
+        "2 Peter",
+        "Jude"
+      ],
+      "a": 1,
+      "e": "1 Peter 4:7",
+      "d": "medium"
+    },
+    {
+      "q": "In 2 Cor 12, God's power is made perfect in what?",
+      "o": [
+        "Strength",
+        "Weakness",
+        "Prayer",
+        "Faith"
+      ],
+      "a": 1,
+      "e": "2 Corinthians 12:9",
+      "d": "easy"
+    },
+    {
+      "q": "Which book mentions 'the law that gives freedom'?",
+      "o": [
+        "Romans",
+        "Galatians",
+        "James",
+        "Hebrews"
+      ],
+      "a": 2,
+      "e": "James 1:25",
+      "d": "hard"
+    },
+    {
+      "q": "In Hebrews 1, God's Son is 'the radiance of God's glory and the exact representation of his...?'",
+      "o": [
+        "Image",
+        "Being",
+        "Power",
+        "Love"
+      ],
+      "a": 1,
+      "e": "Hebrews 1:3",
+      "d": "hard"
+    },
+    {
+      "q": "Which book says 'Keep yourselves from idols' as its final verse?",
+      "o": [
+        "1 John",
+        "1 Cor",
+        "Galatians",
+        "Revelation"
+      ],
+      "a": 0,
+      "e": "1 John 5:21",
+      "d": "hard"
+    },
+    {
+      "q": "In Romans 5, 'Since we have been justified through faith, we have _____ with God'?",
+      "o": [
+        "Love",
+        "Peace",
+        "Hope",
+        "Joy"
+      ],
+      "a": 1,
+      "e": "Romans 5:1",
+      "d": "medium"
+    },
+    {
+      "q": "Which book says 'Do not be deceived: Bad company corrupts good character'?",
+      "o": [
+        "Proverbs",
+        "1 Cor",
+        "Ephesians",
+        "James"
+      ],
+      "a": 1,
+      "e": "1 Corinthians 15:33",
+      "d": "medium"
+    },
+    {
+      "q": "In 2 Tim 4, Paul says 'I have fought the good fight, I have finished the race, I have kept the...?'",
+      "o": [
+        "Law",
+        "Faith",
+        "Word",
+        "Command"
+      ],
+      "a": 1,
+      "e": "2 Timothy 4:7",
+      "d": "easy"
+    },
+    {
+      "q": "Which book says 'If anyone is among you is sick, let them call the elders'?",
+      "o": [
+        "1 Peter",
+        "James",
+        "Hebrews",
+        "1 Tim"
+      ],
+      "a": 1,
+      "e": "James 5:14",
+      "d": "medium"
+    },
+    {
+      "q": "In Eph 6, our struggle is not against flesh and...?",
+      "o": [
+        "Bone",
+        "Blood",
+        "Soul",
+        "Sin"
+      ],
+      "a": 1,
+      "e": "Ephesians 6:12",
+      "d": "easy"
+    },
+    {
+      "q": "Which book mentions 'Gaius' to whom the letter is addressed?",
+      "o": [
+        "Philemon",
+        "Jude",
+        "2 John",
+        "3 John"
+      ],
+      "a": 3,
+      "e": "3 John 1:1",
+      "d": "hard"
+    },
+    {
+      "q": "In 1 Thess 5, 'In everything give _____; for this is the will of God'?",
+      "o": [
+        "Praise",
+        "Thanks",
+        "Money",
+        "Honor"
+      ],
+      "a": 1,
+      "e": "1 Thess 5:18",
+      "d": "easy"
+    },
+    {
+      "q": "Which book says 'Women should remain silent in the churches'?",
+      "o": [
+        "1 Tim",
+        "Titus",
+        "1 Cor",
+        "Ephesians"
+      ],
+      "a": 2,
+      "e": "1 Corinthians 14:34",
+      "d": "hard"
+    },
+    {
+      "q": "In Romans 6, 'For the wages of sin is death, but the gift of God is...?'",
+      "o": [
+        "Eternal Life",
+        "Grace",
+        "Forgiveness",
+        "Heaven"
+      ],
+      "a": 0,
+      "e": "Romans 6:23",
+      "d": "easy"
+    },
+    {
+      "q": "Which book mentions 'Demas, because he loved this world, has deserted me'?",
+      "o": [
+        "1 Tim",
+        "2 Tim",
+        "Titus",
+        "Colossians"
+      ],
+      "a": 1,
+      "e": "2 Timothy 4:10",
+      "d": "hard"
+    },
+    {
+      "q": "In 1 Peter 3, 'Always be prepared to give an _____ to everyone who asks'?",
+      "o": [
+        "Account",
+        "Answer",
+        "Explanation",
+        "Offering"
+      ],
+      "a": 1,
+      "e": "1 Peter 3:15",
+      "d": "medium"
+    },
+    {
+      "q": "Which book says 'Let us not give up meeting together'?",
+      "o": [
+        "Hebrews",
+        "James",
+        "1 Cor",
+        "Ephesians"
+      ],
+      "a": 0,
+      "e": "Hebrews 10:25",
+      "d": "medium"
+    },
+    {
+      "q": "In Galatians 5, 'It is for _____ that Christ has set us free'?",
+      "o": [
+        "Life",
+        "Freedom",
+        "Grace",
+        "Love"
+      ],
+      "a": 1,
+      "e": "Galatians 5:1",
+      "d": "medium"
+    },
+    {
+      "q": "Which book says 'Religion that God our Father accepts as pure... is this: to look after orphans and widows'?",
+      "o": [
+        "James",
+        "1 Tim",
+        "1 John",
+        "Matthew"
+      ],
+      "a": 0,
+      "e": "James 1:27",
+      "d": "medium"
+    },
+    {
+      "q": "In 1 Cor 13, love 'does not envy, it does not boast, it is not...?'",
+      "o": [
+        "Proud",
+        "Angry",
+        "Selfish",
+        "Unkind"
+      ],
+      "a": 0,
+      "e": "1 Corinthians 13:4",
+      "d": "easy"
+    },
+    {
+      "q": "Which book says 'To the only God our Savior be glory, majesty, power and authority' as its closing doxology?",
+      "o": [
+        "Romans",
+        "Hebrews",
+        "Jude",
+        "Revelation"
+      ],
+      "a": 2,
+      "e": "Jude 1:25",
+      "d": "hard"
+    },
+    {
+      "q": "In Eph 1, believers are 'sealed with the promised _____ _____'?",
+      "o": [
+        "Holy Spirit",
+        "Angelic Seal",
+        "Blood Mark",
+        "Eternal Life"
+      ],
+      "a": 0,
+      "e": "Ephesians 1:13",
+      "d": "medium"
+    },
+    {
+      "q": "Which book says 'The tongue also is a fire, a world of evil'?",
+      "o": [
+        "Proverbs",
+        "James",
+        "1 Peter",
+        "Psalm 12"
+      ],
+      "a": 1,
+      "e": "James 3:6",
+      "d": "medium"
+    },
+    {
+      "q": "In 1 Cor 9, Paul says 'I have become all things to all people so that by all possible means I might...?'",
+      "o": [
+        "Preach",
+        "Win",
+        "Save some",
+        "Teach"
+      ],
+      "a": 2,
+      "e": "1 Corinthians 9:22",
+      "d": "medium"
+    },
+    {
+      "q": "Which book says 'There is no fear in love. But perfect love drives out fear'?",
+      "o": [
+        "1 John",
+        "Ephesians",
+        "Romans",
+        "Philippians"
+      ],
+      "a": 0,
+      "e": "1 John 4:18",
+      "d": "easy"
+    },
+    {
+      "q": "In Romans 10, 'Faith comes from _____ the message'?",
+      "o": [
+        "Reading",
+        "Hearing",
+        "Sharing",
+        "Preaching"
+      ],
+      "a": 1,
+      "e": "Romans 10:17",
+      "d": "medium"
+    },
+    {
+      "q": "Which book says 'I can do all things through Christ'?",
+      "o": [
+        "Ephesians",
+        "Philippians",
+        "Colossians",
+        "Romans"
+      ],
+      "a": 1,
+      "e": "Philippians 4:13",
+      "d": "easy"
+    },
+    {
+      "q": "In 2 Cor 9, 'God loves a ______ giver'?",
+      "o": [
+        "Generous",
+        "Cheerful",
+        "Sacrificial",
+        "Willing"
+      ],
+      "a": 1,
+      "e": "2 Corinthians 9:7",
+      "d": "easy"
+    },
+    {
+      "q": "Which book says 'The Day of the Lord will come like a thief in the night'?",
+      "o": [
+        "1 Thess",
+        "2 Peter",
+        "Revelation",
+        "Both 1 Thess & 2 Pet"
+      ],
+      "a": 3,
+      "e": "1 Thess 5:2 and 2 Peter 3:10 both use this imagery.",
+      "d": "hard"
+    },
+    {
+      "q": "In Romans 1, what does Paul say God's wrath reveals about ungodliness?",
+      "o": [
+        "That God will punish all nations equally",
+        "God gave them over to sinful desires, shameful lusts, and a depraved mind",
+        "That humans are inherently evil from birth",
+        "That only Israel is held to God's standard"
+      ],
+      "a": 1,
+      "e": "Romans 1:24,26,28 — Therefore God gave them over in the sinful desires of their hearts...God gave them over to shameful lusts...God gave them over to a depraved mind.",
+      "d": "hard"
+    },
+    {
+      "q": "What does Paul mean by 'the obedience of faith' in Romans 1:5?",
+      "o": [
+        "Following all the commandments",
+        "The obedience that flows from faith, calling all nations to trust in Christ",
+        "Performing good works as evidence of faith",
+        "The faith that produces outward religious observance"
+      ],
+      "a": 1,
+      "e": "Romans 1:5 — Through him we received grace and apostleship to call all the Gentiles to the obedience that comes from faith for his name's sake.",
+      "d": "hard"
+    },
+    {
+      "q": "In Romans 3, Paul quotes Psalm 14 to establish what doctrine?",
+      "o": [
+        "The existence of God",
+        "Universal human sinfulness — no one is righteous, not even one",
+        "The need for Israel to repent",
+        "The reality of God's judgment"
+      ],
+      "a": 1,
+      "e": "Romans 3:10-12 — As it is written: 'There is no one righteous, not even one...'",
+      "d": "hard"
+    },
+    {
+      "q": "What is Paul's argument in Romans 4 for why Abraham was justified?",
+      "o": [
+        "He obeyed the law before it was given",
+        "He was credited with righteousness through faith before he was circumcised",
+        "He performed works of righteousness throughout his life",
+        "He was chosen by God apart from faith or works"
+      ],
+      "a": 1,
+      "e": "Romans 4:10-11 — Under what circumstances was it credited? Was it after he was circumcised, or before? It was not after, but before!",
+      "d": "hard"
+    },
+    {
+      "q": "In Romans 5, what does Paul say we have peace with God through?",
+      "o": [
+        "Our obedience",
+        "Our Lord Jesus Christ, through whom we have gained access into this grace",
+        "Baptism and the sacraments",
+        "Israel's covenant faithfulness"
+      ],
+      "a": 1,
+      "e": "Romans 5:1-2 — we have peace with God through our Lord Jesus Christ, through whom we have gained access by faith into this grace.",
+      "d": "hard"
+    },
+    {
+      "q": "What distinction does Paul make in Romans 9 between Israel as a nation and 'true Israel'?",
+      "o": [
+        "Only those born in Jerusalem are true Israel",
+        "Not all who are descended from Israel are Israel",
+        "Those who follow the law are true Israel",
+        "Israel refers only to the twelve tribes"
+      ],
+      "a": 1,
+      "e": "Romans 9:6 — For not all who are descended from Israel are Israel.",
+      "d": "hard"
+    },
+    {
+      "q": "In 1 Corinthians 1, what does Paul say is the message of the cross to different groups?",
+      "o": [
+        "It is wisdom to the Greeks and power to the Jews",
+        "It is foolishness to those who are perishing, but to us who are being saved it is the power of God",
+        "It is a stumbling block to all nations",
+        "It is a mystery hidden until Paul revealed it"
+      ],
+      "a": 1,
+      "e": "1 Corinthians 1:18 — For the message of the cross is foolishness to those who are perishing, but to us who are being saved it is the power of God.",
+      "d": "hard"
+    },
+    {
+      "q": "What problem in the Corinthian church does Paul address in 1 Corinthians 11 regarding the Lord's Supper?",
+      "o": [
+        "Using the wrong type of bread",
+        "Some are getting drunk and others are going hungry while others have plenty",
+        "They are celebrating it on the wrong day",
+        "They have stopped observing it altogether"
+      ],
+      "a": 1,
+      "e": "1 Corinthians 11:21 — For when you are eating, some of you go ahead with your own private suppers. As a result, one person remains hungry and another gets drunk.",
+      "d": "hard"
+    },
+    {
+      "q": "In 1 Corinthians 15, what does Paul say would be true if Christ has not been raised?",
+      "o": [
+        "Faith would still be meaningful as a moral framework",
+        "Your faith is futile; you are still in your sins",
+        "The resurrection is merely symbolic",
+        "Christianity would still have value as ethics"
+      ],
+      "a": 1,
+      "e": "1 Corinthians 15:17 — And if Christ has not been raised, your faith is futile; you are still in your sins.",
+      "d": "hard"
+    },
+    {
+      "q": "What does Paul say in 2 Corinthians 3 about the ministry of the new covenant compared to the old?",
+      "o": [
+        "They are equal in glory",
+        "The new covenant ministry is more glorious than the ministry that brought condemnation",
+        "The old covenant was superior in holiness",
+        "Both covenants require the same obedience"
+      ],
+      "a": 1,
+      "e": "2 Corinthians 3:9 — For if the ministry that brought condemnation was glorious, how much more glorious is the ministry that brings righteousness!",
+      "d": "hard"
+    },
+    {
+      "q": "In Galatians 1, how does Paul describe receiving the gospel?",
+      "o": [
+        "He received it from the apostles in Jerusalem",
+        "He received it by revelation of Jesus Christ, not from any human being",
+        "He received it through his training under Gamaliel",
+        "He received it from the Scriptures"
+      ],
+      "a": 1,
+      "e": "Galatians 1:11-12 — I want you to know, brothers and sisters, that the gospel I preached is not of human origin. I did not receive it from any man, nor was I taught it; rather, I received it by revelation from Jesus Christ.",
+      "d": "hard"
+    },
+    {
+      "q": "What does Paul rebuke Peter for in Galatians 2?",
+      "o": [
+        "Claiming authority over the Gentile churches",
+        "Withdrawing from eating with Gentiles when Jewish Christians arrived, thus acting hypocritically",
+        "Requiring Gentiles to observe Jewish festivals",
+        "Teaching that circumcision was necessary for salvation"
+      ],
+      "a": 1,
+      "e": "Galatians 2:12-14 — For before certain people came from James, he used to eat with the Gentiles. But when they arrived, he began to draw back...Paul opposed him to his face.",
+      "d": "hard"
+    },
+    {
+      "q": "In Galatians 3, what role does Paul assign to the law before faith in Christ came?",
+      "o": [
+        "The law pointed people to Moses",
+        "The law was our guardian/tutor until Christ came",
+        "The law showed the way to righteousness",
+        "The law was a temporary covenant with no eternal purpose"
+      ],
+      "a": 1,
+      "e": "Galatians 3:24 — So the law was our guardian until Christ came that we might be justified by faith.",
+      "d": "hard"
+    },
+    {
+      "q": "What does Paul say in Ephesians 1 God did before the creation of the world?",
+      "o": [
+        "He wrote the names in the book of life",
+        "He chose us in Christ to be holy and blameless",
+        "He ordained the law of Moses",
+        "He established the covenants with Abraham"
+      ],
+      "a": 1,
+      "e": "Ephesians 1:4 — For he chose us in him before the creation of the world to be holy and blameless in his sight.",
+      "d": "hard"
+    },
+    {
+      "q": "What does Ephesians 2:1 say about people before faith in Christ?",
+      "o": [
+        "They were ignorant but sincere",
+        "You were dead in your transgressions and sins",
+        "They were spiritually asleep and in need of awakening",
+        "They were enslaved to law without inner transformation"
+      ],
+      "a": 1,
+      "e": "Ephesians 2:1 — As for you, you were dead in your transgressions and sins.",
+      "d": "hard"
+    },
+    {
+      "q": "In Philippians 3, what does Paul compare everything to after knowing Christ?",
+      "o": [
+        "Gold that must be purified",
+        "Rubbish (garbage) — he counts everything a loss compared to knowing Christ",
+        "A prize that must be sought after",
+        "A gift received from God"
+      ],
+      "a": 1,
+      "e": "Philippians 3:8 — I consider them garbage, that I may gain Christ.",
+      "d": "hard"
+    },
+    {
+      "q": "What does Colossians 2:14 say Christ did with the written code (the law) that was against us?",
+      "o": [
+        "He preserved it in the ark",
+        "He canceled it, nailing it to the cross",
+        "He fulfilled it through perfect obedience",
+        "He transferred it to the church"
+      ],
+      "a": 1,
+      "e": "Colossians 2:14 — having canceled the charge of our legal indebtedness, which stood against us and condemned us; he has taken it away, nailing it to the cross.",
+      "d": "hard"
+    },
+    {
+      "q": "What is the 'mystery' Paul describes in Colossians 1:27?",
+      "o": [
+        "The identity of the Messiah",
+        "Christ in you, the hope of glory",
+        "The nature of the resurrection body",
+        "The timing of the end of the age"
+      ],
+      "a": 1,
+      "e": "Colossians 1:27 — To them God has chosen to make known among the Gentiles the glorious riches of this mystery, which is Christ in you, the hope of glory.",
+      "d": "hard"
+    },
+    {
+      "q": "In Hebrews 11, the author says by faith Abraham obeyed when called to go even though he did not know what?",
+      "o": [
+        "When God would give him a son",
+        "Where he was going",
+        "Whether God was truly speaking to him",
+        "How to trust in God's promises"
+      ],
+      "a": 1,
+      "e": "Hebrews 11:8 — By faith Abraham, when called to go to a place he would later receive as his inheritance, obeyed and went, even though he did not know where he was going.",
+      "d": "hard"
+    },
+    {
+      "q": "What does the author of Hebrews say distinguishes faith from ordinary knowledge?",
+      "o": [
+        "Faith is feeling with no evidence",
+        "Faith is confidence in what we hope for and assurance about what we do not see",
+        "Faith is intellectual agreement with doctrine",
+        "Faith is trust based on past experience"
+      ],
+      "a": 1,
+      "e": "Hebrews 11:1 — Now faith is confidence in what we hope for and assurance about what we do not see.",
+      "d": "hard"
+    },
+    {
+      "q": "In Hebrews 12, what does the author say God's discipline proves?",
+      "o": [
+        "That God is angry with us",
+        "That we are legitimate sons whom God loves — no discipline means illegitimate children",
+        "That we have sinned and must make amends",
+        "That faith has not grown sufficiently"
+      ],
+      "a": 1,
+      "e": "Hebrews 12:8 — If you are not disciplined—and everyone undergoes discipline—then you are not legitimate, not true sons and daughters at all.",
+      "d": "hard"
+    },
+    {
+      "q": "What does James 2:14-17 say about faith without deeds?",
+      "o": [
+        "It is still valuable as an inner attitude",
+        "Such faith cannot save — faith without works is dead",
+        "It is the beginning stage of mature faith",
+        "It is acceptable if one lacks the opportunity to act"
+      ],
+      "a": 1,
+      "e": "James 2:17 — In the same way, faith by itself, if it is not accompanied by action, is dead.",
+      "d": "hard"
+    },
+    {
+      "q": "In 1 Peter 1, what does Peter say about the prophets who spoke of the coming salvation?",
+      "o": [
+        "They fully understood what they prophesied",
+        "They searched intently and with greatest care, wondering what time and circumstances the Spirit of Christ in them was pointing to",
+        "They were unaware they were making prophecy",
+        "They wrote only for future generations"
+      ],
+      "a": 1,
+      "e": "1 Peter 1:10-11 — Concerning this salvation, the prophets...searched intently and with the greatest care, trying to find out the time and circumstances to which the Spirit of Christ in them was pointing.",
+      "d": "hard"
+    },
+    {
+      "q": "What does Peter say in 2 Peter 1:20-21 about the origin of Scripture?",
+      "o": [
+        "It originated with holy men's understanding of God",
+        "No prophecy of Scripture came about by the prophet's own interpretation; prophets spoke from God as moved by the Holy Spirit",
+        "Scripture originated in the minds of inspired men",
+        "The prophets had their dreams interpreted by God"
+      ],
+      "a": 1,
+      "e": "2 Peter 1:21 — For prophecy never had its origin in the human will, but prophets, though human, spoke from God as they were carried along by the Holy Spirit.",
+      "d": "hard"
+    },
+    {
+      "q": "In 1 John 2, what does John say is true of anyone who loves the world?",
+      "o": [
+        "They are weak in faith but still God's children",
+        "The love of the Father is not in them",
+        "They have not yet grown to maturity",
+        "They will be tested and refined"
+      ],
+      "a": 1,
+      "e": "1 John 2:15 — Do not love the world or anything in the world. If anyone loves the world, love for the Father is not in them.",
+      "d": "hard"
+    },
+    {
+      "q": "What test of genuine love does John give in 1 John 3:17?",
+      "o": [
+        "Giving to the church regularly",
+        "If anyone has material possessions and sees a brother or sister in need but has no pity on them, how can the love of God be in them?",
+        "Attending worship faithfully",
+        "Forgiving those who wrong you"
+      ],
+      "a": 1,
+      "e": "1 John 3:17 — If anyone has material possessions and sees a brother or sister in need but has no pity on them, how can the love of God be in that person?",
+      "d": "hard"
+    },
+    {
+      "q": "In the letter to Philemon, what theological basis does Paul use to ask Philemon to receive Onesimus?",
+      "o": [
+        "The law of forgiveness in Deuteronomy",
+        "He is to receive Onesimus no longer as a slave but as a dear brother in the Lord",
+        "Paul's apostolic authority requires compliance",
+        "Onesimus has earned his freedom through service"
+      ],
+      "a": 1,
+      "e": "Philemon 1:16 — no longer as a slave, but better than a slave, as a dear brother.",
+      "d": "hard"
+    },
+    {
+      "q": "What does Paul teach in Romans 7 about the struggle with sin?",
+      "o": [
+        "Christians are free from all struggle with sin",
+        "The good I want to do I do not do; the evil I do not want to do, I keep on doing — showing the ongoing struggle",
+        "This struggle only applies to new believers",
+        "Once justified, the struggle with sin ends"
+      ],
+      "a": 1,
+      "e": "Romans 7:19 — For I do not do the good I want to do, but the evil I do not want to do—this I keep on doing.",
+      "d": "hard"
+    },
+    {
+      "q": "What does Paul say in Ephesians 3 about knowing the love of Christ?",
+      "o": [
+        "It is fully comprehended by those who study deeply",
+        "It surpasses knowledge, yet Paul prays we may grasp its width, length, height, and depth",
+        "It is revealed only through suffering",
+        "It is known only in the resurrection"
+      ],
+      "a": 1,
+      "e": "Ephesians 3:18-19 — may have power...to grasp how wide and long and high and deep is the love of Christ, and to know this love that surpasses knowledge.",
+      "d": "hard"
+    },
+    {
+      "q": "What does Hebrews 4:12 say about the word of God?",
+      "o": [
+        "It is like fire that burns away sin",
+        "It is alive and active, sharper than any double-edged sword, judging thoughts and attitudes of the heart",
+        "It is the foundation of all wisdom",
+        "It is the source of all spiritual power"
+      ],
+      "a": 1,
+      "e": "Hebrews 4:12 — For the word of God is alive and active. Sharper than any double-edged sword, it penetrates even to dividing soul and spirit, joints and marrow; it judges the thoughts and attitudes of the heart.",
+      "d": "hard"
+    },
+    {
+      "q": "In Titus 2:11-12, what does Paul say the grace of God does in believers?",
+      "o": [
+        "It covers all sins without change",
+        "It teaches us to say no to ungodliness and worldly passions and to live self-controlled, upright, and godly lives",
+        "It gives us freedom from the law entirely",
+        "It guarantees our place in heaven"
+      ],
+      "a": 1,
+      "e": "Titus 2:12 — It teaches us to say 'No' to ungodliness and worldly passions, and to live self-controlled, upright and godly lives.",
+      "d": "hard"
+    }
+  ],
+  "Revelation": [
+    {
+      "q": "Who wrote the Book of Revelation?",
+      "o": [
+        "Peter",
+        "John",
+        "Paul",
+        "James"
+      ],
+      "a": 1,
+      "e": "Revelation 1:1, 4, 9",
+      "d": "easy"
+    },
+    {
+      "q": "On which island was John when he received the vision?",
+      "o": [
+        "Cyprus",
+        "Crete",
+        "Patmos",
+        "Malta"
+      ],
+      "a": 2,
+      "e": "Revelation 1:9",
+      "d": "easy"
+    },
+    {
+      "q": "To how many churches was the book specifically addressed?",
+      "o": [
+        "3",
+        "7",
+        "12",
+        "10"
+      ],
+      "a": 1,
+      "e": "Revelation 1:4",
+      "d": "easy"
+    },
+    {
+      "q": "In the vision of Christ in Chapter 1, what comes out of His mouth?",
+      "o": [
+        "Fire",
+        "A sharp double-edged sword",
+        "Water",
+        "A golden chain"
+      ],
+      "a": 1,
+      "e": "Revelation 1:16",
+      "d": "medium"
+    },
+    {
+      "q": "Which church is described as 'lukewarm'?",
+      "o": [
+        "Ephesus",
+        "Sardis",
+        "Laodicea",
+        "Philadelphia"
+      ],
+      "a": 2,
+      "e": "Revelation 3:16",
+      "d": "medium"
+    },
+    {
+      "q": "What is the color of the first horse in the four horsemen?",
+      "o": [
+        "Red",
+        "Black",
+        "Pale",
+        "White"
+      ],
+      "a": 3,
+      "e": "Revelation 6:2",
+      "d": "medium"
+    },
+    {
+      "q": "The rider on the red horse was given power to take what from the earth?",
+      "o": [
+        "Famine",
+        "Peace",
+        "Wealth",
+        "Faith"
+      ],
+      "a": 1,
+      "e": "Revelation 6:4",
+      "d": "medium"
+    },
+    {
+      "q": "What was the rider on the black horse holding in his hand?",
+      "o": [
+        "A sword",
+        "A bow",
+        "A pair of scales",
+        "A scythe"
+      ],
+      "a": 2,
+      "e": "Revelation 6:5",
+      "d": "hard"
+    },
+    {
+      "q": "What was the name of the rider on the pale horse?",
+      "o": [
+        "Hades",
+        "Famine",
+        "Death",
+        "War"
+      ],
+      "a": 2,
+      "e": "Revelation 6:8",
+      "d": "medium"
+    },
+    {
+      "q": "How many people were 'sealed' from the tribes of Israel?",
+      "o": [
+        "12,000",
+        "144,000",
+        "7,000",
+        "1,000,000"
+      ],
+      "a": 1,
+      "e": "Revelation 7:4",
+      "d": "easy"
+    },
+    {
+      "q": "What happened when the seventh seal was opened?",
+      "o": [
+        "Thunder",
+        "Earthquake",
+        "Silence in heaven for half an hour",
+        "A great shout"
+      ],
+      "a": 2,
+      "e": "Revelation 8:1",
+      "d": "hard"
+    },
+    {
+      "q": "What was the name of the great star that fell on the waters during the third trumpet?",
+      "o": [
+        "Absinthe",
+        "Wormwood",
+        "Bitterness",
+        "Lucifer"
+      ],
+      "a": 1,
+      "e": "Revelation 8:11",
+      "d": "hard"
+    },
+    {
+      "q": "The fifth trumpet brought locusts with stings like what?",
+      "o": [
+        "Bees",
+        "Scorpions",
+        "Wasps",
+        "Serpents"
+      ],
+      "a": 1,
+      "e": "Revelation 9:3",
+      "d": "medium"
+    },
+    {
+      "q": "Who is the king of the locusts in the fifth trumpet?",
+      "o": [
+        "Beelzebub",
+        "Abaddon (Apollyon)",
+        "Satan",
+        "Belial"
+      ],
+      "a": 1,
+      "e": "Revelation 9:11",
+      "d": "hard"
+    },
+    {
+      "q": "What did John do with the little scroll given to him by the angel?",
+      "o": [
+        "Hid it",
+        "Burned it",
+        "Ate it",
+        "Read it aloud"
+      ],
+      "a": 2,
+      "e": "Revelation 10:10",
+      "d": "medium"
+    },
+    {
+      "q": "The two witnesses prophesied for how many days?",
+      "o": [
+        "40 days",
+        "1,000 days",
+        "1,260 days",
+        "3 days"
+      ],
+      "a": 2,
+      "e": "Revelation 11:3",
+      "d": "hard"
+    },
+    {
+      "q": "What appeared in heaven: a woman clothed with the...?",
+      "o": [
+        "Sun",
+        "Moon",
+        "Stars",
+        "Clouds"
+      ],
+      "a": 0,
+      "e": "Revelation 12:1",
+      "d": "medium"
+    },
+    {
+      "q": "How many heads did the great red dragon have?",
+      "o": [
+        "1",
+        "7",
+        "10",
+        "12"
+      ],
+      "a": 1,
+      "e": "Revelation 12:3",
+      "d": "medium"
+    },
+    {
+      "q": "Who led the angels in war against the dragon?",
+      "o": [
+        "Gabriel",
+        "Michael",
+        "The Lamb",
+        "John"
+      ],
+      "a": 1,
+      "e": "Revelation 12:7",
+      "d": "easy"
+    },
+    {
+      "q": "The beast from the sea had ten horns and how many heads?",
+      "o": [
+        "1",
+        "7",
+        "10",
+        "12"
+      ],
+      "a": 1,
+      "e": "Revelation 13:1",
+      "d": "medium"
+    },
+    {
+      "q": "What is the number of the beast?",
+      "o": [
+        "777",
+        "616",
+        "666",
+        "999"
+      ],
+      "a": 2,
+      "e": "Revelation 13:18",
+      "d": "easy"
+    },
+    {
+      "q": "On which mountain did the Lamb stand with the 144,000?",
+      "o": [
+        "Sinai",
+        "Zion",
+        "Olives",
+        "Moriah"
+      ],
+      "a": 1,
+      "e": "Revelation 14:1",
+      "d": "medium"
+    },
+    {
+      "q": "How many golden bowls full of the wrath of God were there?",
+      "o": [
+        "3",
+        "7",
+        "12",
+        "10"
+      ],
+      "a": 1,
+      "e": "Revelation 15:7",
+      "d": "easy"
+    },
+    {
+      "q": "Where did the demons gather the kings of the world for battle?",
+      "o": [
+        "Jerusalem",
+        "Babylon",
+        "Armageddon",
+        "Rome"
+      ],
+      "a": 2,
+      "e": "Revelation 16:16",
+      "d": "easy"
+    },
+    {
+      "q": "The great prostitute was sitting on a scarlet beast with how many heads?",
+      "o": [
+        "7",
+        "1",
+        "10",
+        "12"
+      ],
+      "a": 0,
+      "e": "Revelation 17:3",
+      "d": "medium"
+    },
+    {
+      "q": "What was written on the forehead of the woman on the beast?",
+      "o": [
+        "Sinner",
+        "Mystery Babylon the Great",
+        "Queen of Earth",
+        "Desolation"
+      ],
+      "a": 1,
+      "e": "Revelation 17:5",
+      "d": "hard"
+    },
+    {
+      "q": "What was the name of the rider on the white horse in Chapter 19?",
+      "o": [
+        "Faithful and True",
+        "The Word of God",
+        "King of Kings",
+        "All of the above"
+      ],
+      "a": 3,
+      "e": "Revelation 19:11, 13, 16",
+      "d": "medium"
+    },
+    {
+      "q": "What came out of the mouth of the rider on the white horse to strike the nations?",
+      "o": [
+        "Fire",
+        "A sharp sword",
+        "Words of judgment",
+        "A scepter"
+      ],
+      "a": 1,
+      "e": "Revelation 19:15",
+      "d": "medium"
+    },
+    {
+      "q": "For how many years was the dragon bound in the Abyss?",
+      "o": [
+        "100",
+        "7",
+        "1,000",
+        "40"
+      ],
+      "a": 2,
+      "e": "Revelation 20:2",
+      "d": "easy"
+    },
+    {
+      "q": "Those whose names were not found in the Book of Life were thrown where?",
+      "o": [
+        "The Abyss",
+        "Outer Darkness",
+        "The Lake of Fire",
+        "The Grave"
+      ],
+      "a": 2,
+      "e": "Revelation 20:15",
+      "d": "easy"
+    },
+    {
+      "q": "In the New Jerusalem, how many gates are there?",
+      "o": [
+        "7",
+        "10",
+        "12",
+        "4"
+      ],
+      "a": 2,
+      "e": "Revelation 21:12",
+      "d": "medium"
+    },
+    {
+      "q": "The gates of the New Jerusalem are each made of a single what?",
+      "o": [
+        "Gold",
+        "Diamond",
+        "Pearl",
+        "Emerald"
+      ],
+      "a": 2,
+      "e": "Revelation 21:21",
+      "d": "easy"
+    },
+    {
+      "q": "What is the main street of the New Jerusalem made of?",
+      "o": [
+        "Pure gold",
+        "Crystal",
+        "Silver",
+        "White stone"
+      ],
+      "a": 0,
+      "e": "Revelation 21:21",
+      "d": "easy"
+    },
+    {
+      "q": "Why is there no temple in the New Jerusalem?",
+      "o": [
+        "God and the Lamb are its temple",
+        "It was destroyed",
+        "It is not needed",
+        "It is invisible"
+      ],
+      "a": 0,
+      "e": "Revelation 21:22",
+      "d": "medium"
+    },
+    {
+      "q": "What flows from the throne of God and of the Lamb?",
+      "o": [
+        "River of Fire",
+        "River of Life",
+        "Honey",
+        "Oil"
+      ],
+      "a": 1,
+      "e": "Revelation 22:1",
+      "d": "easy"
+    },
+    {
+      "q": "On each side of the river stands the tree of life, bearing how many crops of fruit?",
+      "o": [
+        "1",
+        "4",
+        "7",
+        "12"
+      ],
+      "a": 3,
+      "e": "Revelation 22:2",
+      "d": "hard"
+    },
+    {
+      "q": "The leaves of the tree of life are for the what of the nations?",
+      "o": [
+        "Feeding",
+        "Healing",
+        "Protection",
+        "Shadow"
+      ],
+      "a": 1,
+      "e": "Revelation 22:2",
+      "d": "medium"
+    },
+    {
+      "q": "Jesus says, 'I am the Alpha and the...?'",
+      "o": [
+        "Beta",
+        "Zeta",
+        "Omega",
+        "Final"
+      ],
+      "a": 2,
+      "e": "Revelation 22:13",
+      "d": "easy"
+    },
+    {
+      "q": "Jesus says, 'Look, I am coming _____!'",
+      "o": [
+        "Soon",
+        "Later",
+        "With fire",
+        "Secretly"
+      ],
+      "a": 0,
+      "e": "Revelation 22:7, 12, 20",
+      "d": "easy"
+    },
+    {
+      "q": "What is the final word of the Bible?",
+      "o": [
+        "Amen",
+        "Hallelujah",
+        "God",
+        "Jesus"
+      ],
+      "a": 0,
+      "e": "Revelation 22:21",
+      "d": "easy"
+    },
+    {
+      "q": "Which of these is NOT one of the seven churches?",
+      "o": [
+        "Ephesus",
+        "Colossae",
+        "Smyrna",
+        "Pergamum"
+      ],
+      "a": 1,
+      "e": "Colossae is an Epistle, not one of the seven.",
+      "d": "medium"
+    },
+    {
+      "q": "To which church did Jesus say 'I have placed before you an open door'?",
+      "o": [
+        "Philadelphia",
+        "Thyatira",
+        "Sardis",
+        "Laodicea"
+      ],
+      "a": 0,
+      "e": "Revelation 3:8",
+      "d": "hard"
+    },
+    {
+      "q": "What was the first thing John saw after a door opened in heaven (Chapter 4)?",
+      "o": [
+        "An angel",
+        "A throne",
+        "A lion",
+        "A rainbow"
+      ],
+      "a": 1,
+      "e": "Revelation 4:2",
+      "d": "medium"
+    },
+    {
+      "q": "How many living creatures were around the throne?",
+      "o": [
+        "4",
+        "7",
+        "12",
+        "24"
+      ],
+      "a": 0,
+      "e": "Revelation 4:6",
+      "d": "medium"
+    },
+    {
+      "q": "How many elders were seated around the throne?",
+      "o": [
+        "7",
+        "12",
+        "24",
+        "144"
+      ],
+      "a": 2,
+      "e": "Revelation 4:4",
+      "d": "medium"
+    },
+    {
+      "q": "The first living creature was like a what?",
+      "o": [
+        "Lion",
+        "Ox",
+        "Man",
+        "Eagle"
+      ],
+      "a": 0,
+      "e": "Revelation 4:7",
+      "d": "medium"
+    },
+    {
+      "q": "Who was found worthy to open the scroll with seven seals?",
+      "o": [
+        "John",
+        "Moses",
+        "The Lamb",
+        "An archangel"
+      ],
+      "a": 2,
+      "e": "Revelation 5:5-6",
+      "d": "easy"
+    },
+    {
+      "q": "The Lamb had seven horns and seven what?",
+      "o": [
+        "Eyes",
+        "Wings",
+        "Heads",
+        "Crowns"
+      ],
+      "a": 0,
+      "e": "Revelation 5:6",
+      "d": "hard"
+    },
+    {
+      "q": "What happened to the sun when the sixth seal was opened?",
+      "o": [
+        "Turned black",
+        "Exploded",
+        "Turned to blood",
+        "Vanished"
+      ],
+      "a": 0,
+      "e": "Revelation 6:12",
+      "d": "medium"
+    },
+    {
+      "q": "What happened to the moon when the sixth seal was opened?",
+      "o": [
+        "Turned black",
+        "Turned to blood",
+        "Fell to earth",
+        "Shone brighter"
+      ],
+      "a": 1,
+      "e": "Revelation 6:12",
+      "d": "medium"
+    },
+    {
+      "q": "When the first trumpet sounded, what was hurled upon the earth?",
+      "o": [
+        "Fire and brimstone",
+        "Hail and fire mixed with blood",
+        "Locusts",
+        "Darkness"
+      ],
+      "a": 1,
+      "e": "Revelation 8:7",
+      "d": "hard"
+    },
+    {
+      "q": "When the second trumpet sounded, a mountain was thrown into the what?",
+      "o": [
+        "Sea",
+        "Abyss",
+        "Valley",
+        "City"
+      ],
+      "a": 0,
+      "e": "Revelation 8:8",
+      "d": "hard"
+    },
+    {
+      "q": "What fraction of the earth/sea was destroyed by the trumpets?",
+      "o": [
+        "1/2",
+        "1/4",
+        "1/3",
+        "1/10"
+      ],
+      "a": 2,
+      "e": "Revelation 8:7-12",
+      "d": "medium"
+    },
+    {
+      "q": "What was the name of the angel of the Abyss in Greek?",
+      "o": [
+        "Abaddon",
+        "Apollyon",
+        "Satan",
+        "Hades"
+      ],
+      "a": 1,
+      "e": "Revelation 9:11",
+      "d": "hard"
+    },
+    {
+      "q": "John was told the city of Jerusalem would be trampled for how many months?",
+      "o": [
+        "12",
+        "40",
+        "42",
+        "7"
+      ],
+      "a": 2,
+      "e": "Revelation 11:2",
+      "d": "hard"
+    },
+    {
+      "q": "After the two witnesses were killed, for how many days were their bodies left in the street?",
+      "o": [
+        "3",
+        "3.5",
+        "7",
+        "10"
+      ],
+      "a": 1,
+      "e": "Revelation 11:9",
+      "d": "hard"
+    },
+    {
+      "q": "What was the woman in Chapter 12 standing on?",
+      "o": [
+        "The earth",
+        "The moon",
+        "The sun",
+        "A dragon"
+      ],
+      "a": 1,
+      "e": "Revelation 12:1",
+      "d": "hard"
+    },
+    {
+      "q": "Where did the woman flee to be cared for by God?",
+      "o": [
+        "Egypt",
+        "The wilderness",
+        "Heaven",
+        "A cave"
+      ],
+      "a": 1,
+      "e": "Revelation 12:6",
+      "d": "medium"
+    },
+    {
+      "q": "The second beast (from the earth) had two horns like a what?",
+      "o": [
+        "Lamb",
+        "Goat",
+        "Ram",
+        "Dragon"
+      ],
+      "a": 0,
+      "e": "Revelation 13:11",
+      "d": "hard"
+    },
+    {
+      "q": "What was the first bowl of wrath poured out on?",
+      "o": [
+        "The sea",
+        "The land (causing sores)",
+        "The sun",
+        "The air"
+      ],
+      "a": 1,
+      "e": "Revelation 16:2",
+      "d": "hard"
+    },
+    {
+      "q": "The fourth bowl was poured out on the sun, giving it power to do what?",
+      "o": [
+        "Go dark",
+        "Burn people with fire",
+        "Turn to blood",
+        "Explode"
+      ],
+      "a": 1,
+      "e": "Revelation 16:8",
+      "d": "hard"
+    },
+    {
+      "q": "The sixth bowl was poured out on which river?",
+      "o": [
+        "Nile",
+        "Jordan",
+        "Euphrates",
+        "Tigris"
+      ],
+      "a": 2,
+      "e": "Revelation 16:12",
+      "d": "medium"
+    },
+    {
+      "q": "The seven heads of the beast are seven what?",
+      "o": [
+        "Hills",
+        "Kings",
+        "Nations",
+        "Both Hills and Kings"
+      ],
+      "a": 3,
+      "e": "Revelation 17:9-10",
+      "d": "hard"
+    },
+    {
+      "q": "The ten horns are ten what?",
+      "o": [
+        "Kings",
+        "Generals",
+        "Nations",
+        "Demons"
+      ],
+      "a": 0,
+      "e": "Revelation 17:12",
+      "d": "medium"
+    },
+    {
+      "q": "What was the fate of Babylon the Great?",
+      "o": [
+        "Fell in one hour",
+        "Repented",
+        "Converted",
+        "Became a paradise"
+      ],
+      "a": 0,
+      "e": "Revelation 18:10, 17, 19",
+      "d": "medium"
+    },
+    {
+      "q": "Who is the 'Morning Star'?",
+      "o": [
+        "John",
+        "Michael",
+        "Jesus",
+        "Gabriel"
+      ],
+      "a": 2,
+      "e": "Revelation 22:16",
+      "d": "medium"
+    },
+    {
+      "q": "The New Jerusalem comes down from where?",
+      "o": [
+        "The mountains",
+        "The sea",
+        "Heaven",
+        "The sun"
+      ],
+      "a": 2,
+      "e": "Revelation 21:2",
+      "d": "easy"
+    },
+    {
+      "q": "What is the length/width/height of the New Jerusalem?",
+      "o": [
+        "12,000 stadia",
+        "144,000 miles",
+        "7,000 stadia",
+        "1,000 miles"
+      ],
+      "a": 0,
+      "e": "Revelation 21:16",
+      "d": "hard"
+    },
+    {
+      "q": "The wall of the New Jerusalem was how many cubits thick?",
+      "o": [
+        "12",
+        "72",
+        "144",
+        "100"
+      ],
+      "a": 2,
+      "e": "Revelation 21:17",
+      "d": "hard"
+    },
+    {
+      "q": "Which church had 'forsaken their first love'?",
+      "o": [
+        "Ephesus",
+        "Smyrna",
+        "Pergamum",
+        "Thyatira"
+      ],
+      "a": 0,
+      "e": "Revelation 2:4",
+      "d": "medium"
+    },
+    {
+      "q": "Which church was told 'you are about to suffer' and 'be faithful even to the point of death'?",
+      "o": [
+        "Smyrna",
+        "Sardis",
+        "Laodicea",
+        "Ephesus"
+      ],
+      "a": 0,
+      "e": "Revelation 2:10",
+      "d": "hard"
+    },
+    {
+      "q": "Which church was warned about 'Jezebel'?",
+      "o": [
+        "Philadelphia",
+        "Thyatira",
+        "Sardis",
+        "Smyrna"
+      ],
+      "a": 1,
+      "e": "Revelation 2:20",
+      "d": "hard"
+    },
+    {
+      "q": "Which church had a reputation for being alive but was dead?",
+      "o": [
+        "Sardis",
+        "Laodicea",
+        "Pergamum",
+        "Thyatira"
+      ],
+      "a": 0,
+      "e": "Revelation 3:1",
+      "d": "medium"
+    },
+    {
+      "q": "Who said 'Holy, holy, holy is the Lord God Almighty'?",
+      "o": [
+        "The 24 elders",
+        "The 4 living creatures",
+        "The angels",
+        "The 144,000"
+      ],
+      "a": 1,
+      "e": "Revelation 4:8",
+      "d": "medium"
+    },
+    {
+      "q": "The smoke of the incense with the prayers of the saints went up before whom?",
+      "o": [
+        "John",
+        "The Elders",
+        "God",
+        "The Lamb"
+      ],
+      "a": 2,
+      "e": "Revelation 8:4",
+      "d": "medium"
+    },
+    {
+      "q": "When the fourth trumpet sounded, a third of what was struck?",
+      "o": [
+        "Sun, moon, and stars",
+        "Trees",
+        "Grass",
+        "Fish"
+      ],
+      "a": 0,
+      "e": "Revelation 8:12",
+      "d": "medium"
+    },
+    {
+      "q": "What was John told NOT to seal up?",
+      "o": [
+        "The little scroll",
+        "The words of the prophecy of this book",
+        "The seven thunders",
+        "The gates"
+      ],
+      "a": 1,
+      "e": "Revelation 22:10",
+      "d": "hard"
+    },
+    {
+      "q": "What did the seven thunders do?",
+      "o": [
+        "Spoke",
+        "Brought rain",
+        "Destroyed the sea",
+        "Vanished"
+      ],
+      "a": 0,
+      "e": "Revelation 10:3-4 (but John was told to seal what they said)",
+      "d": "hard"
+    },
+    {
+      "q": "Who said 'It is done!' from the throne?",
+      "o": [
+        "God",
+        "An angel",
+        "The Lamb",
+        "John"
+      ],
+      "a": 0,
+      "e": "Revelation 16:17 and 21:6",
+      "d": "medium"
+    },
+    {
+      "q": "The beast was captured along with whom?",
+      "o": [
+        "The Dragon",
+        "The False Prophet",
+        "The Prostitute",
+        "Kings of Earth"
+      ],
+      "a": 1,
+      "e": "Revelation 19:20",
+      "d": "medium"
+    },
+    {
+      "q": "How many months was the first 'Woe' (fifth trumpet) to last?",
+      "o": [
+        "5 months",
+        "12 months",
+        "3 months",
+        "7 months"
+      ],
+      "a": 0,
+      "e": "Revelation 9:5",
+      "d": "hard"
+    },
+    {
+      "q": "The New Jerusalem had the glory of God and its brilliance was like a very precious ____?",
+      "o": [
+        "Jasper",
+        "Ruby",
+        "Sapphire",
+        "Gold"
+      ],
+      "a": 0,
+      "e": "Revelation 21:11",
+      "d": "hard"
+    },
+    {
+      "q": "The 12 foundations of the wall had the names of the 12 ____ of the Lamb?",
+      "o": [
+        "Tribes",
+        "Apostles",
+        "Angels",
+        "Prophets"
+      ],
+      "a": 1,
+      "e": "Revelation 21:14",
+      "d": "medium"
+    },
+    {
+      "q": "The 12 gates were 12 ____?",
+      "o": [
+        "Pearls",
+        "Angels",
+        "Stones",
+        "Tribes"
+      ],
+      "a": 0,
+      "e": "Revelation 21:21",
+      "d": "medium"
+    },
+    {
+      "q": "What was the measurement unit used for the New Jerusalem's wall?",
+      "o": [
+        "Angelic cubit",
+        "Human measurement",
+        "Stadia",
+        "Miles"
+      ],
+      "a": 1,
+      "e": "Revelation 21:17 - 'by human measurement, which the angel was using.'",
+      "d": "hard"
+    },
+    {
+      "q": "Who are those who have the right to the tree of life?",
+      "o": [
+        "The strong",
+        "Those who wash their robes",
+        "The Israelites",
+        "The angels"
+      ],
+      "a": 1,
+      "e": "Revelation 22:14",
+      "d": "medium"
+    },
+    {
+      "q": "What happens to those who add to the words of the book?",
+      "o": [
+        "Nothing",
+        "God will add to them the plagues of the book",
+        "They are exiled",
+        "They lose their life"
+      ],
+      "a": 1,
+      "e": "Revelation 22:18",
+      "d": "medium"
+    },
+    {
+      "q": "What happens to those who take words away from the book?",
+      "o": [
+        "God will take away their share in the tree of life",
+        "They are cursed",
+        "They are ignored",
+        "Nothing"
+      ],
+      "a": 0,
+      "e": "Revelation 22:19",
+      "d": "medium"
+    },
+    {
+      "q": "How many wings did each of the four living creatures have?",
+      "o": [
+        "2",
+        "4",
+        "6",
+        "8"
+      ],
+      "a": 2,
+      "e": "Revelation 4:8",
+      "d": "hard"
+    },
+    {
+      "q": "What did the 24 elders do with their crowns?",
+      "o": [
+        "Wore them",
+        "Polished them",
+        "Lay them before the throne",
+        "Gave them to John"
+      ],
+      "a": 2,
+      "e": "Revelation 4:10",
+      "d": "medium"
+    },
+    {
+      "q": "Which tribe of Israel is NOT mentioned in the list of the 144,000?",
+      "o": [
+        "Judah",
+        "Dan",
+        "Gad",
+        "Asher"
+      ],
+      "a": 1,
+      "e": "Revelation 7:5-8 (Dan is omitted, replaced by Manasseh or Levi is included)",
+      "d": "hard"
+    },
+    {
+      "q": "The seventh trumpet announces that the kingdom of the world has become the kingdom of our ___?",
+      "o": [
+        "Lord",
+        "Christ",
+        "Both Lord and His Christ",
+        "God"
+      ],
+      "a": 2,
+      "e": "Revelation 11:15",
+      "d": "medium"
+    },
+    {
+      "q": "What was the 'mark' required to buy or sell?",
+      "o": [
+        "A gold coin",
+        "The name of the beast or the number of its name",
+        "A special ring",
+        "A certificate"
+      ],
+      "a": 1,
+      "e": "Revelation 13:17",
+      "d": "easy"
+    },
+    {
+      "q": "What was the harvest of the earth reaped with?",
+      "o": [
+        "A sharp sickle",
+        "A sword",
+        "A plow",
+        "Hands"
+      ],
+      "a": 0,
+      "e": "Revelation 14:14",
+      "d": "medium"
+    },
+    {
+      "q": "The winepress of God's wrath was trodden outside the city, and blood flowed as high as a ____'s bridle?",
+      "o": [
+        "Lion",
+        "Horse",
+        "Camel",
+        "Ox"
+      ],
+      "a": 1,
+      "e": "Revelation 14:20",
+      "d": "medium"
+    },
+    {
+      "q": "What was the song of Moses and the song of the ____?",
+      "o": [
+        "Lamb",
+        "Cross",
+        "Angels",
+        "Victory"
+      ],
+      "a": 0,
+      "e": "Revelation 15:3",
+      "d": "medium"
+    },
+    {
+      "q": "The fifth bowl was poured out on the throne of the ___?",
+      "o": [
+        "God",
+        "Beast",
+        "Lamb",
+        "John"
+      ],
+      "a": 1,
+      "e": "Revelation 16:10",
+      "d": "hard"
+    },
+    {
+      "q": "What came out of the mouths of the dragon, beast, and false prophet like frogs?",
+      "o": [
+        "Lies",
+        "Unclean spirits",
+        "Fire",
+        "Smoke"
+      ],
+      "a": 1,
+      "e": "Revelation 16:13",
+      "d": "hard"
+    },
+    {
+      "q": "Which city is the great city that rules over the kings of the earth?",
+      "o": [
+        "Jerusalem",
+        "Babylon (symbolic)",
+        "Rome",
+        "Nineveh"
+      ],
+      "a": 1,
+      "e": "Revelation 17:18",
+      "d": "medium"
+    },
+    {
+      "q": "Who is the Bride of the Lamb?",
+      "o": [
+        "The Church (the New Jerusalem)",
+        "Mary",
+        "Eve",
+        "The Angels"
+      ],
+      "a": 0,
+      "e": "Revelation 21:2, 9",
+      "d": "medium"
+    },
+    {
+      "q": "What is the wedding called?",
+      "o": [
+        "Wedding of the Lamb",
+        "Wedding of Christ",
+        "Heavenly Banquet",
+        "The Great Feast"
+      ],
+      "a": 0,
+      "e": "Revelation 19:7",
+      "d": "easy"
+    },
+    {
+      "q": "What happened to the beast and false prophet?",
+      "o": [
+        "Exiled",
+        "Thrown alive into the lake of fire",
+        "Died in battle",
+        "Repented"
+      ],
+      "a": 1,
+      "e": "Revelation 19:20",
+      "d": "medium"
+    },
+    {
+      "q": "How many angels were at the 12 gates?",
+      "o": [
+        "12",
+        "1",
+        "7",
+        "24"
+      ],
+      "a": 0,
+      "e": "Revelation 21:12",
+      "d": "medium"
+    },
+    {
+      "q": "The foundations of the wall were decorated with every kind of precious ___?",
+      "o": [
+        "Metal",
+        "Stone",
+        "Wood",
+        "Fabric"
+      ],
+      "a": 1,
+      "e": "Revelation 21:19",
+      "d": "medium"
+    },
+    {
+      "q": "The angel who talked to John had a measuring rod made of ___?",
+      "o": [
+        "Gold",
+        "Silver",
+        "Reed",
+        "Wood"
+      ],
+      "a": 0,
+      "e": "Revelation 21:15",
+      "d": "hard"
+    },
+    {
+      "q": "Who did John try to worship but was told 'Don't do that!'?",
+      "o": [
+        "The Lamb",
+        "The Angel",
+        "The Elders",
+        "The Beast"
+      ],
+      "a": 1,
+      "e": "Revelation 19:10 and 22:8-9",
+      "d": "medium"
+    },
+    {
+      "q": "Which церковь had the 'throne of Satan' in their city?",
+      "o": [
+        "Pergamum",
+        "Smyrna",
+        "Ephesus",
+        "Sardis"
+      ],
+      "a": 0,
+      "e": "Revelation 2:13",
+      "d": "hard"
+    },
+    {
+      "q": "What was the 'hidden manna' and 'white stone' promised to?",
+      "o": [
+        "The one who overcomes",
+        "The martyrs",
+        "The Israelites",
+        "The priests"
+      ],
+      "a": 0,
+      "e": "Revelation 2:17",
+      "d": "hard"
+    },
+    {
+      "q": "Which church was told 'you have a little strength, yet you have kept my word'?",
+      "o": [
+        "Philadelphia",
+        "Smyrna",
+        "Thyatira",
+        "Sardis"
+      ],
+      "a": 0,
+      "e": "Revelation 3:8",
+      "d": "hard"
+    },
+    {
+      "q": "John saw a rainbow that shone like an ___?",
+      "o": [
+        "Emerald",
+        "Ruby",
+        "Diamond",
+        "Opal"
+      ],
+      "a": 0,
+      "e": "Revelation 4:3",
+      "d": "hard"
+    }
+  ],
+  "Miracles": [
+    {
+      "q": "Who was the first person to witness Jesus after His resurrection?",
+      "o": [
+        "Mary Magdalene",
+        "Peter",
+        "John",
+        "James"
+      ],
+      "a": "Mary Magdalene",
+      "e": "John 20:14-18 records Jesus appearing first to Mary Magdalene at the tomb.",
+      "d": "easy"
+    },
+    {
+      "q": "What was Jesus' first miracle?",
+      "o": [
+        "Turning water into wine",
+        "Healing the blind man",
+        "Walking on water",
+        "Raising Lazarus"
+      ],
+      "a": "Turning water into wine",
+      "e": "Jesus turned water into wine at the wedding in Cana, as recorded in John 2:1-11.",
+      "d": "easy"
+    },
+    {
+      "q": "Which prophet was fed by ravens during a drought?",
+      "o": [
+        "Elijah",
+        "Elisha",
+        "Jeremiah",
+        "Isaiah"
+      ],
+      "a": "Elijah",
+      "e": "God commanded ravens to bring Elijah bread and meat in the morning and evening (1 Kings 17:4-6).",
+      "d": "medium"
+    },
+    {
+      "q": "How many loaves of bread did Jesus use to feed the 5,000?",
+      "o": [
+        "5",
+        "7",
+        "2",
+        "12"
+      ],
+      "a": "5",
+      "e": "Jesus used five loaves and two fish to feed the 5,000 (Matthew 14:17).",
+      "d": "easy"
+    },
+    {
+      "q": "What miracle occurred when Peter and John were entering the temple through the 'Beautiful Gate'?",
+      "o": [
+        "A lame man was healed",
+        "A blind man saw",
+        "A dead man was raised",
+        "A demon was cast out"
+      ],
+      "a": "A lame man was healed",
+      "e": "Peter said, 'Silver or gold I do not have, but what I do have I give you,' and the man was healed (Acts 3:1-10).",
+      "d": "medium"
+    },
+    {
+      "q": "Who was raised from the dead after being dead for four days?",
+      "o": [
+        "Lazarus",
+        "Jairus' daughter",
+        "The widow's son",
+        "Tabitha"
+      ],
+      "a": "Lazarus",
+      "e": "Jesus called Lazarus from the tomb four days after his death (John 11:1-44).",
+      "d": "easy"
+    },
+    {
+      "q": "Which miracle involves a coin found in a fish's mouth?",
+      "o": [
+        "Paying the temple tax",
+        "Feeding the 4,000",
+        "The miraculous catch of fish",
+        "Jesus' first miracle"
+      ],
+      "a": "Paying the temple tax",
+      "e": "Jesus told Peter to find a four-drachma coin in the first fish he caught to pay their taxes (Matthew 17:24-27).",
+      "d": "hard"
+    },
+    {
+      "q": "Who touched the hem of Jesus' garment and was healed?",
+      "o": [
+        "A woman with a discharge of blood",
+        "Mary Magdalene",
+        "The daughter of Jairus",
+        "The Samaritan woman"
+      ],
+      "a": "A woman with a discharge of blood",
+      "e": "She had suffered for 12 years and was healed by touching His cloak (Matthew 9:20-22).",
+      "d": "easy"
+    },
+    {
+      "q": "What happened to the sun when Joshua asked for more time to win a battle?",
+      "o": [
+        "It stood still",
+        "It turned black",
+        "It moved backward",
+        "It shone twice as bright"
+      ],
+      "a": "It stood still",
+      "e": "Joshua 10:12-13 says the sun stood still and the moon stopped until the nation took vengeance.",
+      "d": "medium"
+    },
+    {
+      "q": "Which prophet saw a valley of dry bones come to life?",
+      "o": [
+        "Ezekiel",
+        "Daniel",
+        "Jeremiah",
+        "Hosea"
+      ],
+      "a": "Ezekiel",
+      "e": "Ezekiel 37 describes the vision of the dry bones being restored to life by God's Spirit.",
+      "d": "medium"
+    },
+    {
+      "q": "How many fish were left after Jesus fed the 5,000?",
+      "o": [
+        "0",
+        "2",
+        "5",
+        "7"
+      ],
+      "a": "0",
+      "e": "The fish were all used, though 12 baskets of fragments remained (Matthew 14:20).",
+      "d": "medium"
+    },
+    {
+      "q": "What miracle did Moses perform before Pharaoh to prove God's power?",
+      "o": [
+        "His staff turned into a snake",
+        "Turning the Nile to blood",
+        "Bringing frogs upon Egypt",
+        "All of the above"
+      ],
+      "a": "All of the above",
+      "e": "Exodus 7-12 details the signs and plagues Moses performed before Pharaoh.",
+      "d": "easy"
+    },
+    {
+      "q": "Which king saw a hand writing on the wall?",
+      "o": [
+        "Belshazzar",
+        "Nebuchadnezzar",
+        "Darius",
+        "Cyrus"
+      ],
+      "a": "Belshazzar",
+      "e": "Daniel 5 tells of the writing on the wall during Belshazzar's feast.",
+      "d": "medium"
+    },
+    {
+      "q": "Who was thrown into a lion's den and survived?",
+      "o": [
+        "Daniel",
+        "Shadrach",
+        "Meshach",
+        "Abednego"
+      ],
+      "a": "Daniel",
+      "e": "God shut the mouths of the lions for Daniel (Daniel 6).",
+      "d": "easy"
+    },
+    {
+      "q": "What miracle did Elisha perform with an axe head?",
+      "o": [
+        "He made it float",
+        "He turned it to gold",
+        "He made it sharp again",
+        "He used it to split the Jordan"
+      ],
+      "a": "He made it float",
+      "e": "Elisha threw a stick into the water and the iron axe head floated (2 Kings 6:1-7).",
+      "d": "hard"
+    },
+    {
+      "q": "Which city's walls fell down after the Israelites marched around them?",
+      "o": [
+        "Jericho",
+        "Ai",
+        "Gibeon",
+        "Hazor"
+      ],
+      "a": "Jericho",
+      "e": "The walls fell after the people shouted on the seventh day (Joshua 6:20).",
+      "d": "easy"
+    },
+    {
+      "q": "How many times did Elijah pray for it not to rain?",
+      "o": [
+        "Once",
+        "Twice",
+        "Three times",
+        "Seven times"
+      ],
+      "a": "Once",
+      "e": "James 5:17 says he prayed earnestly that it would not rain, and it didn't for 3.5 years.",
+      "d": "medium"
+    },
+    {
+      "q": "What did Jesus use to heal a man born blind in John 9?",
+      "o": [
+        "Mud and saliva",
+        "Words only",
+        "Water from the Jordan",
+        "Oil"
+      ],
+      "a": "Mud and saliva",
+      "e": "Jesus spit on the ground, made mud, and anointed the man's eyes (John 9:6).",
+      "d": "medium"
+    },
+    {
+      "q": "Which miracle did Peter perform on Aeneas?",
+      "o": [
+        "Healed him of paralysis",
+        "Raised him from the dead",
+        "Healed his blindness",
+        "Cast out a demon"
+      ],
+      "a": "Healed him of paralysis",
+      "e": "Acts 9:32-35 says Peter told Aeneas to get up, and he was healed instantly.",
+      "d": "hard"
+    },
+    {
+      "q": "What did Aaron's staff do when it was placed in the Tabernacle?",
+      "o": [
+        "Budded, blossomed, and produced almonds",
+        "Turned into a snake",
+        "Shone with light",
+        "Grew into a tree"
+      ],
+      "a": "Budded, blossomed, and produced almonds",
+      "e": "Numbers 17:8 records this miracle to confirm Aaron's priesthood.",
+      "d": "medium"
+    },
+    {
+      "q": "Whose shadow healed people as he walked by?",
+      "o": [
+        "Peter's",
+        "Paul's",
+        "Jesus'",
+        "Stephen's"
+      ],
+      "a": "Peter's",
+      "e": "Acts 5:15 says people brought the sick so that Peter's shadow might fall on them.",
+      "d": "medium"
+    },
+    {
+      "q": "What miracle happened at the pool of Bethesda?",
+      "o": [
+        "Jesus healed a man who had been invalid for 38 years",
+        "An angel stirred the water",
+        "Jesus walked on the water",
+        "The water turned to wine"
+      ],
+      "a": "Jesus healed a man who had been invalid for 38 years",
+      "e": "John 5:1-9 records this miracle on the Sabbath.",
+      "d": "medium"
+    },
+    {
+      "q": "Who was struck blind on the road to Damascus?",
+      "o": [
+        "Saul (Paul)",
+        "Peter",
+        "Stephen",
+        "Barnabas"
+      ],
+      "a": "Saul (Paul)",
+      "e": "Saul was blinded by a great light from heaven (Acts 9:1-9).",
+      "d": "easy"
+    },
+    {
+      "q": "What did Moses do to make the bitter water of Marah sweet?",
+      "o": [
+        "Threw a piece of wood into it",
+        "Struck the rock",
+        "Stirred it with his staff",
+        "Prayed over it"
+      ],
+      "a": "Threw a piece of wood into it",
+      "e": "Exodus 15:25 says the Lord showed him a piece of wood, which he threw into the water.",
+      "d": "hard"
+    },
+    {
+      "q": "How many people were fed with 7 loaves and a few small fish?",
+      "o": [
+        "4,000 men plus women and children",
+        "5,000 men plus women and children",
+        "3,000 men",
+        "10,000 total"
+      ],
+      "a": "4,000 men plus women and children",
+      "e": "Matthew 15:32-38 describes the feeding of the 4,000.",
+      "d": "medium"
+    },
+    {
+      "q": "Which miracle involved 10 lepers?",
+      "o": [
+        "Jesus healed all 10, but only one returned to thank Him",
+        "Jesus healed only the one who had faith",
+        "They were all healed by Elisha",
+        "They were all healed by Moses"
+      ],
+      "a": "Jesus healed all 10, but only one returned to thank Him",
+      "e": "Luke 17:11-19 tells of the one thankful Samaritan leper.",
+      "d": "easy"
+    },
+    {
+      "q": "What happened to the Egyptian army when they tried to follow Israel through the Red Sea?",
+      "o": [
+        "They drowned as the waters returned",
+        "They were struck by lightning",
+        "They were turned into salt",
+        "They got lost in the desert"
+      ],
+      "a": "They drowned as the waters returned",
+      "e": "Exodus 14:26-28 says the water covered the entire army.",
+      "d": "easy"
+    },
+    {
+      "q": "What did Jesus do to the fig tree that had no fruit?",
+      "o": [
+        "He cursed it and it withered",
+        "He told it to bear fruit in winter",
+        "He cut it down",
+        "He watered it and it grew"
+      ],
+      "a": "He cursed it and it withered",
+      "e": "Matthew 21:18-22 and Mark 11:12-14 record this event.",
+      "d": "medium"
+    },
+    {
+      "q": "Who was caught up to heaven in a whirlwind with a chariot of fire?",
+      "o": [
+        "Elijah",
+        "Enoch",
+        "Moses",
+        "Abraham"
+      ],
+      "a": "Elijah",
+      "e": "2 Kings 2:11 records Elijah's departure from the earth.",
+      "d": "easy"
+    },
+    {
+      "q": "What miracle occurred when the Israelites crossed the Jordan River?",
+      "o": [
+        "The water stopped flowing upstream",
+        "The water turned to blood",
+        "A bridge appeared",
+        "They walked on top of the water"
+      ],
+      "a": "The water stopped flowing upstream",
+      "e": "Joshua 3:15-17 says the water piled up in a heap far away at Adam.",
+      "d": "medium"
+    },
+    {
+      "q": "Whose ear did Jesus heal after it was cut off during His arrest?",
+      "o": [
+        "Malchus",
+        "Peter",
+        "Judas",
+        "Caiaphas"
+      ],
+      "a": "Malchus",
+      "e": "Jesus touched Malchus' ear and healed him (Luke 22:50-51).",
+      "d": "medium"
+    },
+    {
+      "q": "What miracle happened to Shadrach, Meshach, and Abednego?",
+      "o": [
+        "They were unharmed by a fiery furnace",
+        "They were fed by ravens",
+        "They were turned into gold",
+        "They were rescued by an army of angels"
+      ],
+      "a": "They were unharmed by a fiery furnace",
+      "e": "Daniel 3 tells how they survived the furnace with a fourth person 'like a son of the gods'.",
+      "d": "easy"
+    },
+    {
+      "q": "Which disciple walked on water for a short time?",
+      "o": [
+        "Peter",
+        "John",
+        "James",
+        "Andrew"
+      ],
+      "a": "Peter",
+      "e": "Peter walked on the water toward Jesus before he became afraid and began to sink (Matthew 14:28-31).",
+      "d": "easy"
+    },
+    {
+      "q": "What did Elisha do to make the poisonous stew edible?",
+      "o": [
+        "Added flour",
+        "Added salt",
+        "Added oil",
+        "Added honey"
+      ],
+      "a": "Added flour",
+      "e": "2 Kings 4:38-41 says Elisha put flour into the pot and the poison was gone.",
+      "d": "hard"
+    },
+    {
+      "q": "Who was healed of leprosy by washing seven times in the Jordan River?",
+      "o": [
+        "Naaman",
+        "Gehazi",
+        "Uzziah",
+        "Miriam"
+      ],
+      "a": "Naaman",
+      "e": "2 Kings 5:1-14 tells the story of the Syrian commander Naaman.",
+      "d": "easy"
+    },
+    {
+      "q": "What miracle did Paul perform in Lystra?",
+      "o": [
+        "Healed a man crippled from birth",
+        "Raised Eutychus from the dead",
+        "Blinded Elymas the sorcerer",
+        "Healed Publius' father"
+      ],
+      "a": "Healed a man crippled from birth",
+      "e": "Acts 14:8-10 says Paul saw the man had faith and told him to stand up.",
+      "d": "medium"
+    },
+    {
+      "q": "What happened to the widow's oil when Elisha told her to gather jars?",
+      "o": [
+        "It kept flowing until all jars were full",
+        "It turned into wine",
+        "It turned into gold",
+        "It vanished"
+      ],
+      "a": "It kept flowing until all jars were full",
+      "e": "2 Kings 4:1-7 describes this miracle to pay the widow's debts.",
+      "d": "medium"
+    },
+    {
+      "q": "Who was raised from the dead by Peter in Joppa?",
+      "o": [
+        "Tabitha (Dorcas)",
+        "Lydia",
+        "Rhoda",
+        "Priscilla"
+      ],
+      "a": "Tabitha (Dorcas)",
+      "e": "Acts 9:36-42 says Peter knelt and prayed, then Tabitha opened her eyes.",
+      "d": "medium"
+    },
+    {
+      "q": "What miracle occurred at the Tower of Babel?",
+      "o": [
+        "God confused the languages",
+        "The tower was struck by lightning",
+        "The ground opened up",
+        "The builders were turned into stone"
+      ],
+      "a": "God confused the languages",
+      "e": "Genesis 11:1-9 explains why the people were scattered across the earth.",
+      "d": "easy"
+    },
+    {
+      "q": "How did God provide water for the Israelites at Rephidim?",
+      "o": [
+        "Moses struck a rock",
+        "It rained for 40 days",
+        "They found a well",
+        "They turned salt water sweet"
+      ],
+      "a": "Moses struck a rock",
+      "e": "Exodus 17:1-7 says water came out of the rock at Horeb.",
+      "d": "easy"
+    },
+    {
+      "q": "What miracle saved the widow of Zarephath from starvation?",
+      "o": [
+        "Her jar of flour and jug of oil did not run dry",
+        "Ravens brought her food",
+        "Manna fell from heaven",
+        "Jesus multiplied her bread"
+      ],
+      "a": "Her jar of flour and jug of oil did not run dry",
+      "e": "1 Kings 17:8-16 records this miracle performed through Elijah.",
+      "d": "medium"
+    },
+    {
+      "q": "What did Jesus do to stop the storm on the Sea of Galilee?",
+      "o": [
+        "He rebuked the wind and said 'Peace, be still!'",
+        "He prayed to the Father",
+        "He rowed the boat to shore",
+        "He threw His cloak into the water"
+      ],
+      "a": "He rebuked the wind and said 'Peace, be still!'",
+      "e": "Mark 4:35-41 records this display of Jesus' authority over nature.",
+      "d": "easy"
+    },
+    {
+      "q": "Which miracle did Jesus perform for the Centurion's servant?",
+      "o": [
+        "Healed him from a distance",
+        "Touched him and he was healed",
+        "Gave him a potion",
+        "Raised him from the dead"
+      ],
+      "a": "Healed him from a distance",
+      "e": "Matthew 8:5-13 highlights the Centurion's great faith.",
+      "d": "medium"
+    },
+    {
+      "q": "What happened to the sun's shadow on the sundial of Ahaz as a sign for King Hezekiah?",
+      "o": [
+        "It went backward ten steps",
+        "It stood still for a day",
+        "It disappeared",
+        "It moved forward quickly"
+      ],
+      "a": "It went backward ten steps",
+      "e": "2 Kings 20:8-11 records this sign given through Isaiah.",
+      "d": "hard"
+    },
+    {
+      "q": "How did God provide meat for the Israelites in the wilderness?",
+      "o": [
+        "He sent quail",
+        "He sent manna",
+        "They found wild sheep",
+        "They hunted lions"
+      ],
+      "a": "He sent quail",
+      "e": "Exodus 16:13 and Numbers 11:31-32 describe the wind bringing quail.",
+      "d": "medium"
+    },
+    {
+      "q": "What miracle happened to Eutychus when he fell asleep during Paul's sermon?",
+      "o": [
+        "He was raised from the dead after falling three stories",
+        "He was healed of blindness",
+        "He was given the gift of tongues",
+        "He was healed of his sleep disorder"
+      ],
+      "a": "He healed him after falling three stories",
+      "e": "Acts 20:7-12 says Paul went down and threw himself on the young man, and life returned to him.",
+      "d": "medium"
+    },
+    {
+      "q": "Which miracle is associated with the pool of Siloam?",
+      "o": [
+        "A man born blind washed there and saw",
+        "A lame man was healed there",
+        "Jesus was baptized there",
+        "The water turned to wine"
+      ],
+      "a": "A man born blind washed there and saw",
+      "e": "John 9:7 records Jesus' command to 'Go, wash in the Pool of Siloam'.",
+      "d": "medium"
+    },
+    {
+      "q": "What was the result of Jesus casting the legion of demons out of the Gerasene man?",
+      "o": [
+        "They entered a herd of pigs which drowned",
+        "The man became a priest",
+        "The demons vanished into the air",
+        "The man was struck dumb"
+      ],
+      "a": "They entered a herd of pigs which drowned",
+      "e": "Mark 5:1-20 describes this powerful deliverance.",
+      "d": "easy"
+    },
+    {
+      "q": "What miracle occurred when Eli's daughter-in-law was giving birth?",
+      "o": [
+        "None, it was a tragedy",
+        "The baby spoke",
+        "An angel appeared",
+        "She was healed of a disease"
+      ],
+      "a": "None, it was a tragedy",
+      "e": "1 Samuel 4:19-22 says Phinehas' wife died after giving birth and named the child Ichabod.",
+      "d": "hard"
+    },
+    {
+      "q": "Whose dead bones brought a man back to life when his body touched them?",
+      "o": [
+        "Elisha's",
+        "Elijah's",
+        "Moses'",
+        "David's"
+      ],
+      "a": "Elisha's",
+      "e": "2 Kings 13:21 says a man's body touched Elisha's bones and he came to life.",
+      "d": "hard"
+    },
+    {
+      "q": "What happened to Balaam's donkey?",
+      "o": [
+        "It spoke to him",
+        "It turned into a man",
+        "It flew into the sky",
+        "It disappeared"
+      ],
+      "a": "It spoke to him",
+      "e": "Numbers 22:21-39 records the Lord opening the donkey's mouth.",
+      "d": "easy"
+    },
+    {
+      "q": "What did Jesus use to feed the 4,000?",
+      "o": [
+        "7 loaves and a few small fish",
+        "5 loaves and 2 fish",
+        "12 loaves",
+        "A jar of flour"
+      ],
+      "a": "7 loaves and a few small fish",
+      "e": "Matthew 15:34-36 specifies the amount of food for the 4,000.",
+      "d": "medium"
+    },
+    {
+      "q": "How many baskets of leftovers were collected after feeding the 4,000?",
+      "o": [
+        "7",
+        "12",
+        "5",
+        "3"
+      ],
+      "a": "7",
+      "e": "Matthew 15:37 says they picked up seven basketfuls of broken pieces.",
+      "d": "medium"
+    },
+    {
+      "q": "Who was healed of leprosy after complaining about Moses?",
+      "o": [
+        "Miriam",
+        "Aaron",
+        "Zipporah",
+        "Korah"
+      ],
+      "a": "Miriam",
+      "e": "Numbers 12:1-15 says Miriam was struck with leprosy for seven days.",
+      "d": "medium"
+    },
+    {
+      "q": "What miracle did Jesus perform on the daughter of the Syrophoenician woman?",
+      "o": [
+        "Casted out a demon from a distance",
+        "Healed her of a fever",
+        "Raised her from the dead",
+        "Healed her blindness"
+      ],
+      "a": "Casted out a demon from a distance",
+      "e": "Mark 7:24-30 highlights the woman's persistent faith.",
+      "d": "hard"
+    },
+    {
+      "q": "What happened to the walls of the Jordan when the priests stepped into the water?",
+      "o": [
+        "The water stood in a heap",
+        "The water turned into a path",
+        "The water became ice",
+        "The water vanished"
+      ],
+      "a": "The water stood in a heap",
+      "e": "Joshua 3:15-17 says the waters stood and rose up in a heap.",
+      "d": "medium"
+    },
+    {
+      "q": "Who was healed by Peter and John at the temple gate?",
+      "o": [
+        "A man lame from birth",
+        "A blind beggar",
+        "A leper",
+        "A woman with a spirit of infirmity"
+      ],
+      "a": "A man lame from birth",
+      "e": "Acts 3:1-10 is the famous miracle 'Silver and gold have I none'.",
+      "d": "easy"
+    },
+    {
+      "q": "What miracle did Paul perform on the island of Malta?",
+      "o": [
+        "Healed the father of Publius",
+        "Survived a shipwreck",
+        "Survived a viper bite",
+        "All of the above"
+      ],
+      "a": "All of the above",
+      "e": "Acts 28 describes Paul's survival and healing of the sick on Malta.",
+      "d": "medium"
+    },
+    {
+      "q": "What happened to the prophet Jonah?",
+      "o": [
+        "He was swallowed by a large fish and survived",
+        "He was taken up in a chariot",
+        "He was turned into a pillar of salt",
+        "He was fed by ravens"
+      ],
+      "a": "He was swallowed by a large fish and survived",
+      "e": "Jonah 1-2 tells the story of Jonah's three days in the fish.",
+      "d": "easy"
+    },
+    {
+      "q": "What miracle did Jesus perform at the sheep gate pool in Jerusalem?",
+      "o": [
+        "Healed a man who had been invalid for 38 years",
+        "Healed a blind man with mud",
+        "Turned water into wine",
+        "Walked on water"
+      ],
+      "a": "Healed a man who had been invalid for 38 years",
+      "e": "This occurred at the Pool of Bethesda (John 5:1-9).",
+      "d": "medium"
+    },
+    {
+      "q": "What did the Israelites eat in the morning for 40 years?",
+      "o": [
+        "Manna",
+        "Quail",
+        "Bread",
+        "Fruit"
+      ],
+      "a": "Manna",
+      "e": "Exodus 16:35 says they ate manna until they reached the border of Canaan.",
+      "d": "easy"
+    },
+    {
+      "q": "Which miracle is NOT recorded in the Gospel of John?",
+      "o": [
+        "Feeding the 5,000",
+        "Walking on water",
+        "The transfiguration",
+        "Turning water into wine"
+      ],
+      "a": "The transfiguration",
+      "e": "The transfiguration is in Matthew, Mark, and Luke, but not John.",
+      "d": "hard"
+    },
+    {
+      "q": "Who was raised from the dead by Jesus in the city of Nain?",
+      "o": [
+        "A widow's son",
+        "Jairus' daughter",
+        "Lazarus",
+        "Peter's mother-in-law"
+      ],
+      "a": "A widow's son",
+      "e": "Luke 7:11-17 records Jesus stopping the funeral procession.",
+      "d": "medium"
+    },
+    {
+      "q": "What happened to Herod Agrippa after he accepted praise as a god?",
+      "o": [
+        "He was eaten by worms and died",
+        "He was struck blind",
+        "He was turned into a tree",
+        "He vanished"
+      ],
+      "a": "He was eaten by worms and died",
+      "e": "Acts 12:21-23 says an angel of the Lord struck him down.",
+      "d": "medium"
+    },
+    {
+      "q": "What miracle did God use to prove to Gideon that He would save Israel?",
+      "o": [
+        "A fleece was wet while the ground was dry",
+        "A fleece was dry while the ground was wet",
+        "Fire came from a rock",
+        "All of the above"
+      ],
+      "a": "All of the above",
+      "e": "Judges 6:17-40 details the signs given to Gideon.",
+      "d": "medium"
+    },
+    {
+      "q": "What did Jesus do to the sea when the disciples were afraid in the storm?",
+      "o": [
+        "Rebuked the wind and sea",
+        "Walked on it",
+        "Made the boat fly",
+        "Both A and B"
+      ],
+      "a": "Both A and B",
+      "e": "Jesus both calmed the storm (Mark 4) and walked on water (Mark 6).",
+      "d": "medium"
+    },
+    {
+      "q": "What happened to the sun during Jesus' crucifixion?",
+      "o": [
+        "Darkness came over the whole land",
+        "It became twice as bright",
+        "It turned red as blood",
+        "There was an eclipse for 3 minutes"
+      ],
+      "a": "Darkness came over the whole land",
+      "e": "Matthew 27:45 says darkness lasted from the sixth to the ninth hour.",
+      "d": "easy"
+    },
+    {
+      "q": "Whose handkerchiefs or aprons could heal the sick?",
+      "o": [
+        "Paul's",
+        "Peter's",
+        "Stephen's",
+        "James'"
+      ],
+      "a": "Paul's",
+      "e": "Acts 19:11-12 says God did extraordinary miracles through Paul.",
+      "d": "medium"
+    },
+    {
+      "q": "What was the result of the miracle involving the 153 large fish?",
+      "o": [
+        "The net did not break",
+        "The boat sank",
+        "The fish were sold for much gold",
+        "Jesus fed the 5,000 with them"
+      ],
+      "a": "The net did not break",
+      "e": "John 21:11 says even with so many, the net was not torn.",
+      "d": "hard"
+    },
+    {
+      "q": "Who was the first person Jesus raised from the dead in the Gospels?",
+      "o": [
+        "The widow's son at Nain",
+        "Jairus' daughter",
+        "Lazarus",
+        "Tabitha"
+      ],
+      "a": "The widow's son at Nain",
+      "e": "Luke 7:11-17 is generally considered the first chronological resurrection in Jesus' ministry.",
+      "d": "hard"
+    },
+    {
+      "q": "What miracle happened at the Red Sea?",
+      "o": [
+        "The waters were parted",
+        "The water turned to wine",
+        "Manna fell into the sea",
+        "Jesus walked on it"
+      ],
+      "a": "The waters were parted",
+      "e": "Exodus 14 records the crossing of the Red Sea.",
+      "d": "easy"
+    },
+    {
+      "q": "What miracle did Jesus perform on Peter's mother-in-law?",
+      "o": [
+        "Healed her of a fever",
+        "Raised her from the dead",
+        "Healed her of leprosy",
+        "Restored her sight"
+      ],
+      "a": "Healed her of a fever",
+      "e": "Matthew 8:14-15 says He touched her hand and the fever left her.",
+      "d": "medium"
+    },
+    {
+      "q": "What was the name of the man Jesus healed from a legion of demons?",
+      "o": [
+        "The Bible doesn't name him",
+        "Legion",
+        "Gerasene",
+        "Gadarene"
+      ],
+      "a": "The Bible doesn't name him",
+      "e": "The demons were called Legion, but the man is unnamed (Mark 5).",
+      "d": "medium"
+    },
+    {
+      "q": "What happened to the bronze serpent Moses made in the wilderness?",
+      "o": [
+        "Anyone who looked at it was healed of snake bites",
+        "It turned into a real snake",
+        "It spoke to the people",
+        "It led them to the Promised Land"
+      ],
+      "a": "Anyone who looked at it was healed of snake bites",
+      "e": "Numbers 21:4-9 describes this provision by God.",
+      "d": "medium"
+    },
+    {
+      "q": "What miracle did Elisha perform to help a poor widow?",
+      "o": [
+        "Multiplied her oil",
+        "Gave her gold",
+        "Raised her husband",
+        "Found her a job"
+      ],
+      "a": "Multiplied her oil",
+      "e": "2 Kings 4:1-7 records this miracle.",
+      "d": "easy"
+    },
+    {
+      "q": "Which miracle involves the 'great draught of fishes' in Luke 5?",
+      "o": [
+        "The disciples caught so many fish their nets began to break",
+        "Jesus fed 5,000",
+        "A coin was in a fish's mouth",
+        "Peter walked on water"
+      ],
+      "a": "The disciples caught so many fish their nets began to break",
+      "e": "Luke 5:1-11 records this call of the first disciples.",
+      "d": "medium"
+    },
+    {
+      "q": "What was the miracle of the manna?",
+      "o": [
+        "God provided edible flakes on the ground every morning",
+        "Bread fell from the sky like rain",
+        "The Israelites found hidden stores of food",
+        "Jesus multiplied loaves"
+      ],
+      "a": "God provided edible flakes on the ground every morning",
+      "e": "Exodus 16 describes the manna.",
+      "d": "easy"
+    },
+    {
+      "q": "What did Jesus do to heal the deaf and mute man in Mark 7?",
+      "o": [
+        "Put His fingers in his ears and spat and touched his tongue",
+        "Only spoke 'Ephphatha'",
+        "Anointed him with oil",
+        "Told him to go wash"
+      ],
+      "a": "Put His fingers in his ears and spat and touched his tongue",
+      "e": "Mark 7:31-37 records this specific method.",
+      "d": "hard"
+    },
+    {
+      "q": "What happened to the earth when Jesus died?",
+      "o": [
+        "There was an earthquake and rocks were split",
+        "It turned into a desert",
+        "It rained for three days",
+        "A giant mountain rose up"
+      ],
+      "a": "There was an earthquake and rocks were split",
+      "e": "Matthew 27:51-54 records the earthquake and the tearing of the temple curtain.",
+      "d": "easy"
+    },
+    {
+      "q": "Who was healed after washing in the Jordan, but his servant Gehazi got leprosy?",
+      "o": [
+        "Naaman",
+        "Elisha",
+        "Uzziah",
+        "Hezekiah"
+      ],
+      "a": "Naaman",
+      "e": "2 Kings 5 records Naaman's healing and Gehazi's greed.",
+      "d": "medium"
+    },
+    {
+      "q": "What miracle did Jesus perform on the daughter of Jairus?",
+      "o": [
+        "Raised her from the dead",
+        "Healed her of a fever",
+        "Casted out a demon",
+        "Healed her blindness"
+      ],
+      "a": "Raised her from the dead",
+      "e": "Mark 5:21-43 and Luke 8:40-56 record Jesus saying 'Talitha koum!'.",
+      "d": "easy"
+    },
+    {
+      "q": "How many water jars did Jesus have filled for the miracle at Cana?",
+      "o": [
+        "6",
+        "7",
+        "12",
+        "3"
+      ],
+      "a": "6",
+      "e": "John 2:6 says there were six stone water jars.",
+      "d": "medium"
+    },
+    {
+      "q": "What miracle happened to the city of Sodom?",
+      "o": [
+        "It was destroyed by fire and sulfur from heaven",
+        "It was swallowed by an earthquake",
+        "It was flooded",
+        "It was turned into salt"
+      ],
+      "a": "It was destroyed by fire and sulfur from heaven",
+      "e": "Genesis 19:24 records the destruction of Sodom and Gomorrah.",
+      "d": "easy"
+    },
+    {
+      "q": "Who was the blind beggar healed by Jesus near Jericho?",
+      "o": [
+        "Bartimaeus",
+        "Lazarus",
+        "Malchus",
+        "Zacchaeus"
+      ],
+      "a": "Bartimaeus",
+      "e": "Mark 10:46-52 names the blind man as Bartimaeus.",
+      "d": "easy"
+    },
+    {
+      "q": "What happened to the iron axe head that fell into the Jordan?",
+      "o": [
+        "It floated",
+        "It turned into wood",
+        "It was found by a fish",
+        "It dissolved"
+      ],
+      "a": "It floated",
+      "e": "2 Kings 6:6 says Elisha made the iron float.",
+      "d": "medium"
+    },
+    {
+      "q": "What miracle did Jesus perform for the woman with the issue of blood?",
+      "o": [
+        "Healed her when she touched His cloak",
+        "Gave her a word of knowledge",
+        "Anointed her with oil",
+        "Raised her from the dead"
+      ],
+      "a": "Healed her when she touched His cloak",
+      "e": "Matthew 9:20-22 records this healing of faith.",
+      "d": "easy"
+    },
+    {
+      "q": "What did the Israelites see during the night in the wilderness?",
+      "o": [
+        "A pillar of fire",
+        "A pillar of cloud",
+        "Stars shaped like a cross",
+        "An angel"
+      ],
+      "a": "A pillar of fire",
+      "e": "Exodus 13:21-22 says God led them by a pillar of cloud by day and fire by night.",
+      "d": "easy"
+    },
+    {
+      "q": "How many days was Jonah inside the great fish?",
+      "o": [
+        "3 days and 3 nights",
+        "7 days",
+        "40 days",
+        "1 day"
+      ],
+      "a": "3 days and 3 nights",
+      "e": "Jonah 1:17 and Matthew 12:40 confirm this duration.",
+      "d": "easy"
+    },
+    {
+      "q": "What happened to Lot's wife when she looked back at Sodom?",
+      "o": [
+        "She became a pillar of salt",
+        "She was struck by lightning",
+        "She was turned into a stone",
+        "She vanished"
+      ],
+      "a": "She became a pillar of salt",
+      "e": "Genesis 19:26 records her fate.",
+      "d": "easy"
+    },
+    {
+      "q": "What miracle did Jesus perform on the two blind men in Matthew 9?",
+      "o": [
+        "He touched their eyes and they saw",
+        "He told them to wash in Siloam",
+        "He used mud and spit",
+        "They were healed from a distance"
+      ],
+      "a": "He touched their eyes and they saw",
+      "e": "Matthew 9:27-31 says Jesus touched their eyes according to their faith.",
+      "d": "hard"
+    },
+    {
+      "q": "What was the sign given to King Ahaz in Isaiah 7?",
+      "o": [
+        "A virgin would conceive and bear a son",
+        "The sun would stand still",
+        "The sea would part",
+        "A star would appear"
+      ],
+      "a": "A virgin would conceive and bear a son",
+      "e": "Isaiah 7:14 is the famous prophecy of Immanuel.",
+      "d": "medium"
+    },
+    {
+      "q": "Which miracle involved Jesus walking on water?",
+      "o": [
+        "Jesus walked to the disciples' boat during a storm",
+        "Jesus walked to the shore to meet Peter",
+        "Jesus walked on water to escape the crowds",
+        "Jesus walked on water at His baptism"
+      ],
+      "a": "Jesus walked to the disciples' boat during a storm",
+      "e": "Matthew 14:22-33, Mark 6:45-52, and John 6:16-21.",
+      "d": "easy"
+    },
+    {
+      "q": "What did Jesus do to the 5,000 before multiplying the bread?",
+      "o": [
+        "Had them sit down in groups",
+        "Had them pray",
+        "Had them wash their hands",
+        "Had them sing a hymn"
+      ],
+      "a": "Had them sit down in groups",
+      "e": "Mark 6:39-40 says they sat in groups of hundreds and fifties.",
+      "d": "medium"
+    },
+    {
+      "q": "What miracle did Elisha perform on the Shunammite woman's son?",
+      "o": [
+        "Raised him from the dead",
+        "Healed his blindness",
+        "Healed his leprosy",
+        "Cast out a demon"
+      ],
+      "a": "Raised him from the dead",
+      "e": "2 Kings 4:18-37 records this resurrection miracle.",
+      "d": "medium"
+    },
+    {
+      "q": "What happened to the water in the Nile when Moses struck it?",
+      "o": [
+        "It turned to blood",
+        "It turned to wine",
+        "It dried up",
+        "It became bitter"
+      ],
+      "a": "It turned to blood",
+      "e": "Exodus 7:17-21 records the first plague of Egypt.",
+      "d": "easy"
+    },
+    {
+      "q": "How many times did the Israelites march around Jericho on the last day?",
+      "o": [
+        "7",
+        "1",
+        "12",
+        "3"
+      ],
+      "a": "7",
+      "e": "Joshua 6:4 says they marched seven times on the seventh day.",
+      "d": "easy"
+    },
+    {
+      "q": "What did Jesus say to the paralyzed man let down through the roof?",
+      "o": [
+        "'Your sins are forgiven' and 'Get up and walk'",
+        "'You are healed'",
+        "'Go and sin no more'",
+        "'Your faith has made you well'"
+      ],
+      "a": "'Your sins are forgiven' and 'Get up and walk'",
+      "e": "Mark 2:1-12 records this miracle and Jesus' authority to forgive sins.",
+      "d": "medium"
+    },
+    {
+      "q": "What happened to the mountain when God gave the Ten Commandments?",
+      "o": [
+        "It was covered in smoke and fire",
+        "It split in two",
+        "It turned into gold",
+        "It vanished"
+      ],
+      "a": "It was covered in smoke and fire",
+      "e": "Exodus 19:18 says Mount Sinai was covered with smoke because the Lord descended on it in fire.",
+      "d": "medium"
+    },
+    {
+      "q": "What miracle did Philip perform in Samaria?",
+      "o": [
+        "Many miracles including healing and casting out demons",
+        "Raising the dead",
+        "Turning water to wine",
+        "Walking on water"
+      ],
+      "a": "Many miracles including healing and casting out demons",
+      "e": "Acts 8:6-7 says crowds heard him and saw the signs he performed.",
+      "d": "medium"
+    },
+    {
+      "q": "Who was healed of his blindness after Ananias laid hands on him?",
+      "o": [
+        "Saul (Paul)",
+        "Elymas",
+        "The man at the Beautiful Gate",
+        "Aeneas"
+      ],
+      "a": "Saul (Paul)",
+      "e": "Acts 9:17-18 records the restoration of Saul's sight.",
+      "d": "easy"
+    },
+    {
+      "q": "What happened to the water at the pool of Bethesda when the angel stirred it?",
+      "o": [
+        "The first person to enter was healed",
+        "The water turned blue",
+        "The water became sweet",
+        "It overflowed"
+      ],
+      "a": "The first person to enter was healed",
+      "e": "John 5:4 (in some manuscripts) describes the belief about the stirred water.",
+      "d": "medium"
+    },
+    {
+      "q": "What miracle did Jesus perform on the ear of the high priest's servant?",
+      "o": [
+        "He touched it and healed it",
+        "He spoke and it grew back",
+        "He didn't heal it, He just rebuked Peter",
+        "He told the servant to wash"
+      ],
+      "a": "He touched it and healed it",
+      "e": "Luke 22:51 records this final healing miracle before the crucifixion.",
+      "d": "medium"
+    },
+    {
+      "q": "What was the result of the miracle of the loaves and fish for the 5,000?",
+      "o": [
+        "Everyone was satisfied and 12 baskets were left",
+        "Only a few were fed",
+        "The disciples were still hungry",
+        "The food tasted like manna"
+      ],
+      "a": "Everyone was satisfied and 12 baskets were left",
+      "e": "Matthew 14:20 says they all ate and were satisfied.",
+      "d": "easy"
+    },
+    {
+      "q": "What miracle happened to the sun and moon during Joshua's battle?",
+      "o": [
+        "They stood still",
+        "They turned dark",
+        "They moved backward",
+        "They disappeared"
+      ],
+      "a": "They stood still",
+      "e": "Joshua 10:12-14.",
+      "d": "easy"
+    },
+    {
+      "q": "Who was healed after being lowered through a roof?",
+      "o": [
+        "A paralytic man",
+        "A blind man",
+        "A leper",
+        "Lazarus"
+      ],
+      "a": "A paralytic man",
+      "e": "Mark 2:1-12 records this event.",
+      "d": "easy"
+    },
+    {
+      "q": "What miracle did Elisha perform on the waters of Jericho?",
+      "o": [
+        "Healed the water with salt",
+        "Turned it into wine",
+        "Parted the water",
+        "Made it flow backward"
+      ],
+      "a": "Healed the water with salt",
+      "e": "2 Kings 2:19-22 says Elisha threw salt into the spring to heal it.",
+      "d": "hard"
+    },
+    {
+      "q": "What happened to the fire on Mount Carmel for Elijah?",
+      "o": [
+        "It consumed the sacrifice, wood, stones, soil, and water",
+        "It only burned the wood",
+        "It didn't come until the second day",
+        "It was extinguished by rain"
+      ],
+      "a": "It consumed the sacrifice, wood, stones, soil, and water",
+      "e": "1 Kings 18:38 records the overwhelming power of God's fire.",
+      "d": "medium"
+    },
+    {
+      "q": "How many lepers were healed by Jesus in the village between Samaria and Galilee?",
+      "o": [
+        "10",
+        "1",
+        "12",
+        "7"
+      ],
+      "a": "10",
+      "e": "Luke 17:11-19.",
+      "d": "easy"
+    },
+    {
+      "q": "What miracle happened at the baptism of Jesus?",
+      "o": [
+        "The heavens opened and the Spirit descended as a dove",
+        "The water turned to wine",
+        "Jesus walked on the Jordan",
+        "An earthquake occurred"
+      ],
+      "a": "The heavens opened and the Spirit descended as a dove",
+      "e": "Matthew 3:16-17 records this divine confirmation.",
+      "d": "easy"
+    },
+    {
+      "q": "What did Jesus do to the wind and the waves in the middle of the night?",
+      "o": [
+        "Rebuked them",
+        "Ignored them",
+        "Slept through them",
+        "Walked on them"
+      ],
+      "a": "Rebuked them",
+      "e": "Mark 4:39 records Jesus saying 'Quiet! Be still!'.",
+      "d": "easy"
+    },
+    {
+      "q": "In 2 Kings 4, how does Elisha multiply oil for a widow?",
+      "o": [
+        "He prays and rain fills her jars",
+        "He tells her to borrow jars from neighbors and pour from her one jar until all are filled",
+        "He sends ravens with oil",
+        "He prays over the oil in the temple storehouse"
+      ],
+      "a": 1,
+      "e": "2 Kings 4:3-6 — Elisha said, 'Go around and ask all your neighbors for empty jars. Don't ask for just a few.'...She kept pouring. When all the jars were full, the oil stopped flowing.",
+      "d": "hard"
+    },
+    {
+      "q": "What miracle does Elisha perform for the Shunammite woman's son?",
+      "o": [
+        "He heals his fever with a cloth",
+        "He raises him from the dead after lying on him twice",
+        "He cures him of blindness",
+        "He restores him from paralysis"
+      ],
+      "a": 1,
+      "e": "2 Kings 4:34-35 — Then he got on the bed and lay on the boy, mouth to mouth, eyes to eyes, hands to hands. As he stretched himself out on him, the boy's body grew warm...The boy sneezed seven times and opened his eyes.",
+      "d": "hard"
+    },
+    {
+      "q": "In 2 Kings 5, how many times did Naaman have to dip in the Jordan to be healed of leprosy?",
+      "o": [
+        "Three",
+        "Five",
+        "Seven",
+        "Ten"
+      ],
+      "a": 2,
+      "e": "2 Kings 5:14 — So he went down and dipped himself in the Jordan seven times, as the man of God had told him, and his flesh was restored.",
+      "d": "hard"
+    },
+    {
+      "q": "When Elisha cast salt into the spring at Jericho, what happened?",
+      "o": [
+        "The spring dried up permanently",
+        "The water became pure and the land was no longer unproductive",
+        "It turned to fresh water that flowed for forty days",
+        "Fish appeared in the spring"
+      ],
+      "a": 1,
+      "e": "2 Kings 2:21 — Elisha went out to the spring and threw the salt into it, saying, 'This is what the LORD says: I have healed this water.'",
+      "d": "hard"
+    },
+    {
+      "q": "In 1 Kings 17, what miracle did Elijah perform for the widow of Zarephath?",
+      "o": [
+        "He multiplied her fish",
+        "The jar of flour and jug of oil never ran out",
+        "He made rain fall on her field",
+        "He raised her husband from the dead"
+      ],
+      "a": 1,
+      "e": "1 Kings 17:16 — For the jar of flour was not used up and the jug of oil did not run dry, in keeping with the word of the LORD spoken by Elijah.",
+      "d": "hard"
+    },
+    {
+      "q": "What was the miracle that confirmed Elijah's God over the prophets of Baal on Mount Carmel?",
+      "o": [
+        "Elijah called down rain",
+        "Fire fell from heaven and burned the offering, wood, stone, soil, and water",
+        "The prophets of Baal were struck mute",
+        "The altar rebuilt itself"
+      ],
+      "a": 1,
+      "e": "1 Kings 18:38 — Then the fire of the LORD fell and burned up the sacrifice, the wood, the stones and the soil, and also licked up the water in the trench.",
+      "d": "hard"
+    },
+    {
+      "q": "In Numbers 21, how were Israelites healed from deadly snake bites?",
+      "o": [
+        "By praying three times at the tabernacle",
+        "By looking at a bronze snake Moses made and placed on a pole",
+        "By bathing in the river",
+        "By anointing with oil and fasting"
+      ],
+      "a": 1,
+      "e": "Numbers 21:8-9 — The LORD said to Moses, 'Make a snake and put it up on a pole; anyone who is bitten can look at it and live.'",
+      "d": "hard"
+    },
+    {
+      "q": "What happened to the Assyrian army of 185,000 camped against Jerusalem?",
+      "o": [
+        "They retreated after a plague among their horses",
+        "The angel of the LORD struck them dead overnight",
+        "A great earthquake destroyed their camp",
+        "God confused their communication and they turned on each other"
+      ],
+      "a": 1,
+      "e": "2 Kings 19:35 — That night the angel of the LORD went out and put to death a hundred and eighty-five thousand in the Assyrian camp.",
+      "d": "hard"
+    },
+    {
+      "q": "In Joshua 10, what miracle occurred during Israel's battle against the Amorites?",
+      "o": [
+        "The Jordan flooded the enemy camp",
+        "The sun and moon stood still for a full day",
+        "Fire rained down on the enemy",
+        "The enemy warriors were struck blind"
+      ],
+      "a": 1,
+      "e": "Joshua 10:13 — So the sun stood still, and the moon stopped, till the nation avenged itself on its enemies.",
+      "d": "hard"
+    },
+    {
+      "q": "In Exodus 17, how did Israel prevail in battle against Amalek?",
+      "o": [
+        "The Lord sent an angel to fight for them",
+        "As long as Moses held up his hands, Israel was winning",
+        "Gideon led a surprise attack",
+        "Joshua blew the trumpet and the enemies fled"
+      ],
+      "a": 1,
+      "e": "Exodus 17:11 — As long as Moses held up his hands, the Israelites were winning, but whenever he lowered his hands, the Amalekites were winning.",
+      "d": "hard"
+    },
+    {
+      "q": "What miracle did God perform at the Red Sea that went beyond simply parting the waters?",
+      "o": [
+        "He made the water fresh for Israel to drink",
+        "He drove the waters back with a strong east wind and the waters were a wall on their right and left",
+        "He called down fire to destroy the Egyptians",
+        "He caused the horses of Egypt to fall asleep"
+      ],
+      "a": 1,
+      "e": "Exodus 14:21-22 — Moses stretched out his hand over the sea...The waters were divided and the Israelites went through the sea on dry ground, with a wall of water on their right and on their left.",
+      "d": "hard"
+    },
+    {
+      "q": "In John 9, what does Jesus say about the purpose of the man's blindness from birth?",
+      "o": [
+        "It was due to his parents' sins",
+        "It was neither his sin nor his parents', but so the works of God might be displayed in him",
+        "It was a test of the disciples' faith",
+        "It was God's judgment on the city"
+      ],
+      "a": 1,
+      "e": "John 9:3 — 'Neither this man nor his parents sinned,' said Jesus, 'but this happened so that the works of God might be displayed in him.'",
+      "d": "hard"
+    },
+    {
+      "q": "When Jesus healed the paralyzed man lowered through the roof (Mark 2), what did he say first?",
+      "o": [
+        "Get up, take your mat and walk",
+        "Your faith has healed you",
+        "Son, your sins are forgiven",
+        "Rise and do not sin again"
+      ],
+      "a": 2,
+      "e": "Mark 2:5 — When Jesus saw their faith, he said to the paralyzed man, 'Son, your sins are forgiven.'",
+      "d": "hard"
+    },
+    {
+      "q": "In Luke 7, Jesus raised a widow's son at the gate of what city?",
+      "o": [
+        "Jerusalem",
+        "Capernaum",
+        "Nain",
+        "Bethany"
+      ],
+      "a": 2,
+      "e": "Luke 7:11 — Jesus went to a town called Nain, and his disciples and a large crowd went along with him. As he approached the town gate, a dead person was being carried out.",
+      "d": "hard"
+    },
+    {
+      "q": "In Acts 3, Peter and John healed a lame man at which gate of the temple?",
+      "o": [
+        "The Golden Gate",
+        "The Beautiful Gate",
+        "The Eastern Gate",
+        "The Sheep Gate"
+      ],
+      "a": 1,
+      "e": "Acts 3:2,10 — a man who was lame from birth was being carried to the temple gate called Beautiful...they recognized him as the same man who used to sit begging at the temple gate called Beautiful.",
+      "d": "hard"
+    },
+    {
+      "q": "In Acts 9, who was the woman in Joppa that Peter raised from the dead?",
+      "o": [
+        "Priscilla",
+        "Lydia",
+        "Tabitha (Dorcas)",
+        "Mary"
+      ],
+      "a": 2,
+      "e": "Acts 9:36,40 — In Joppa there was a disciple named Tabitha (in Greek her name is Dorcas)...Peter sent them all out of the room; then he got down on his knees and prayed. Turning toward the dead woman, he said, 'Tabitha, get up.'",
+      "d": "hard"
+    },
+    {
+      "q": "In Acts 28, what miracle happened when Paul was bitten by a viper on the island of Malta?",
+      "o": [
+        "The viper died immediately",
+        "He felt no ill effects, which convinced the islanders he was a god or innocent",
+        "The bite was immediately healed by prayer",
+        "He bound the serpent by speaking God's name"
+      ],
+      "a": 1,
+      "e": "Acts 28:5-6 — But Paul shook the snake off into the fire and suffered no ill effects. The people expected him to swell up or suddenly fall dead...they changed their minds and said he was a god.",
+      "d": "hard"
+    },
+    {
+      "q": "In Mark 7:31-37, Jesus healed a man who was deaf and could hardly speak. What unusual method did he use?",
+      "o": [
+        "He touched the man's forehead and prayed",
+        "He put his fingers in the man's ears and touched the man's tongue with spit",
+        "He spoke a single word and the man was healed",
+        "He anointed the man's ears with oil"
+      ],
+      "a": 1,
+      "e": "Mark 7:33 — Jesus put his fingers into the man's ears. Then he spit and touched the man's tongue.",
+      "d": "hard"
+    },
+    {
+      "q": "What does Jesus say accompanied the healing of the ten lepers in Luke 17?",
+      "o": [
+        "He touched each one of them",
+        "He spoke a word and sent them to the priests — they were healed as they went",
+        "He prayed over a bowl of water that cleansed them",
+        "He laid hands on them and commanded the leprosy to leave"
+      ],
+      "a": 1,
+      "e": "Luke 17:14 — When he saw them, he said, 'Go, show yourselves to the priests.' And as they went, they were cleansed.",
+      "d": "hard"
+    },
+    {
+      "q": "In Acts 16, what happened when Paul cast out the spirit from the slave girl in Philippi?",
+      "o": [
+        "The girl was immediately healed and converted",
+        "The spirit left her and her owners, seeing their source of income was gone, had Paul and Silas arrested",
+        "The spirit caused a great commotion in the crowd",
+        "Paul was praised by the city officials"
+      ],
+      "a": 1,
+      "e": "Acts 16:18-19 — Then the spirit left her. When her owners realized that their hope of making money was gone, they seized Paul and Silas.",
+      "d": "hard"
+    },
+    {
+      "q": "In 2 Kings 13, what extraordinary miracle occurred when a dead man's body was thrown into Elisha's grave?",
+      "o": [
+        "The grave glowed with light",
+        "The dead man came to life when he touched Elisha's bones",
+        "Elisha's body was found incorrupt",
+        "Flowers grew on the grave"
+      ],
+      "a": 1,
+      "e": "2 Kings 13:21 — Once while some Israelites were burying a man, suddenly they saw a band of raiders...they threw the man's body into Elisha's tomb. When the body touched Elisha's bones, the man came to life.",
+      "d": "hard"
+    },
+    {
+      "q": "In Matthew 14, what happened immediately after Jesus and Peter got into the boat following Peter's walk on water?",
+      "o": [
+        "Jesus calmed the water around the boat",
+        "They immediately reached the other shore",
+        "The disciples worshiped Jesus and said he was the Son of God",
+        "The storm increased and Jesus rebuked it again"
+      ],
+      "a": 2,
+      "e": "Matthew 14:32-33 — when they climbed into the boat, the wind died down. Then those who were in the boat worshiped him, saying, 'Truly you are the Son of God.'",
+      "d": "hard"
+    },
+    {
+      "q": "In John 6, after the feeding of the five thousand, what did the people want to do with Jesus?",
+      "o": [
+        "Stone him as a blasphemer",
+        "Make him king by force",
+        "Follow him to Jerusalem",
+        "Anoint him as high priest"
+      ],
+      "a": 1,
+      "e": "John 6:15 — Jesus, knowing that they intended to come and make him king by force, withdrew again to a mountain by himself.",
+      "d": "hard"
+    },
+    {
+      "q": "In Acts 20, Paul raised a young man named Eutychus from the dead in what city?",
+      "o": [
+        "Philippi",
+        "Thessalonica",
+        "Troas",
+        "Miletus"
+      ],
+      "a": 2,
+      "e": "Acts 20:9-10 — Seated in a window was a young man named Eutychus, who was sinking into a deep sleep...he fell to the ground from the third story and was picked up dead. Paul went down, threw himself on the young man and put his arms around him. This happened in Troas.",
+      "d": "hard"
+    },
+    {
+      "q": "When Jesus healed the ten lepers, which one returned to give thanks and what was his nationality?",
+      "o": [
+        "A Jew from Galilee",
+        "A Samaritan",
+        "A Gentile from Decapolis",
+        "An Egyptian"
+      ],
+      "a": 1,
+      "e": "Luke 17:16 — He threw himself at Jesus's feet and thanked him—and he was a Samaritan.",
+      "d": "hard"
+    },
+    {
+      "q": "In 1 Kings 18, how many jars of water were poured on the altar and wood before fire fell?",
+      "o": [
+        "Three jars poured once",
+        "Four jars poured three times (twelve total)",
+        "Seven jars poured once",
+        "Three jars poured twice"
+      ],
+      "a": 1,
+      "e": "1 Kings 18:33-34 — He arranged the wood, cut the bull into pieces and laid it on the wood. Then he said to them, 'Fill four large jars with water and pour it on the offering and on the wood.' 'Do it again,' he said, and they did it again. 'Do it a third time,' he ordered. (12 jars total)",
+      "d": "hard"
+    },
+    {
+      "q": "In Exodus 7-12, which plague was the only one to affect Israelites in Goshen?",
+      "o": [
+        "Flies",
+        "Frogs",
+        "Darkness",
+        "None — all plagues were limited to the Egyptians only"
+      ],
+      "a": 3,
+      "e": "Exodus 8:22 — But on that day I will deal differently with the land of Goshen, where my people live — the plagues from the fourth (flies) onward spared Goshen. The first three plagues (blood, frogs, gnats) affected all of Egypt.",
+      "d": "hard"
+    },
+    {
+      "q": "In Luke 13, Jesus healed a woman who had been crippled by what cause for eighteen years?",
+      "o": [
+        "A broken spine from a fall",
+        "A spirit of infirmity, bent double and unable to straighten up",
+        "A progressive nerve disease",
+        "Injuries from an accident"
+      ],
+      "a": 1,
+      "e": "Luke 13:11 — And a woman was there who had been crippled by a spirit for eighteen years. She was bent over and could not straighten up at all.",
+      "d": "hard"
+    },
+    {
+      "q": "In Acts 5, who were struck dead at the apostles' feet after lying about the price of land sold?",
+      "o": [
+        "Simon Magus and his followers",
+        "Ananias and Sapphira",
+        "The seven sons of Sceva",
+        "Diotrephes and his associates"
+      ],
+      "a": 1,
+      "e": "Acts 5:5,10 — When Ananias heard this, he fell down and died...Sapphira also fell down at his feet and died.",
+      "d": "hard"
+    },
+    {
+      "q": "In 2 Kings 6, what miracle did Elisha perform during the siege of Dothan to protect himself and his servant?",
+      "o": [
+        "He called down fire from heaven",
+        "He opened his servant's eyes to see the hills full of horses and chariots of fire",
+        "He made the enemy army disappear",
+        "He walked through the enemy camp invisible"
+      ],
+      "a": 1,
+      "e": "2 Kings 6:17 — And Elisha prayed, 'Open his eyes, LORD, so that he may see.' Then the LORD opened the servant's eyes, and he looked and saw the hills full of horses and chariots of fire all around Elisha.",
+      "d": "hard"
+    }
+  ],
+  "Women of the Bible": [
+    {
+      "q": "Who was the first woman created by God?",
+      "o": [
+        "Eve",
+        "Sarah",
+        "Adah",
+        "Zillah"
+      ],
+      "a": "Eve",
+      "e": "Genesis 2:22-23 records the creation of the first woman from man's rib.",
+      "d": "easy"
+    },
+    {
+      "q": "Which woman was turned into a pillar of salt for looking back at Sodom?",
+      "o": [
+        "Lot's wife",
+        "Sarah",
+        "Milcah",
+        "Iscah"
+      ],
+      "a": "Lot's wife",
+      "e": "Genesis 19:26 says Lot's wife looked back and became a pillar of salt.",
+      "d": "easy"
+    },
+    {
+      "q": "Who was the mother of Isaac?",
+      "o": [
+        "Sarah",
+        "Hagar",
+        "Rebekah",
+        "Rachel"
+      ],
+      "a": "Sarah",
+      "e": "Genesis 21:1-3 records Sarah giving birth to Isaac in her old age.",
+      "d": "easy"
+    },
+    {
+      "q": "Who was the mother of Ishmael?",
+      "o": [
+        "Hagar",
+        "Sarah",
+        "Keturah",
+        "Milcah"
+      ],
+      "a": "Hagar",
+      "e": "Genesis 16:15 records Hagar giving birth to Abram's son Ishmael.",
+      "d": "easy"
+    },
+    {
+      "q": "Which woman was a judge and prophetess in Israel?",
+      "o": [
+        "Deborah",
+        "Miriam",
+        "Huldah",
+        "Jael"
+      ],
+      "a": "Deborah",
+      "e": "Judges 4:4 identifies Deborah as a prophetess and judge.",
+      "d": "medium"
+    },
+    {
+      "q": "Who killed the Canaanite general Sisera with a tent peg?",
+      "o": [
+        "Jael",
+        "Deborah",
+        "Rahab",
+        "Delilah"
+      ],
+      "a": "Jael",
+      "e": "Judges 4:21 describes Jael's act of killing Sisera.",
+      "d": "medium"
+    },
+    {
+      "q": "Which Moabite woman was the great-grandmother of King David?",
+      "o": [
+        "Ruth",
+        "Orpah",
+        "Naomi",
+        "Rahab"
+      ],
+      "a": "Ruth",
+      "e": "The genealogy in Ruth 4:18-22 shows Ruth as the great-grandmother of David.",
+      "d": "easy"
+    },
+    {
+      "q": "Who was the mother-in-law of Ruth?",
+      "o": [
+        "Naomi",
+        "Orpah",
+        "Sarah",
+        "Rebekah"
+      ],
+      "a": "Naomi",
+      "e": "Ruth 1:16 records Ruth's commitment to her mother-in-law Naomi.",
+      "d": "easy"
+    },
+    {
+      "q": "Which queen saved the Jewish people from Haman's plot?",
+      "o": [
+        "Esther",
+        "Vashti",
+        "Athaliah",
+        "Jezebel"
+      ],
+      "a": "Esther",
+      "e": "The book of Esther describes her courage in saving her people.",
+      "d": "easy"
+    },
+    {
+      "q": "Who was the sister of Moses and Aaron?",
+      "o": [
+        "Miriam",
+        "Zipporah",
+        "Jochebed",
+        "Elisheba"
+      ],
+      "a": "Miriam",
+      "e": "Numbers 26:59 names Miriam as the daughter of Amram and Jochebed.",
+      "d": "medium"
+    },
+    {
+      "q": "Who was the mother of Jesus?",
+      "o": [
+        "Mary",
+        "Elizabeth",
+        "Martha",
+        "Joanna"
+      ],
+      "a": "Mary",
+      "e": "The Gospels record Mary as the mother of the Messiah.",
+      "d": "easy"
+    },
+    {
+      "q": "Who was the mother of John the Baptist?",
+      "o": [
+        "Elizabeth",
+        "Mary",
+        "Anna",
+        "Salome"
+      ],
+      "a": "Elizabeth",
+      "e": "Luke 1:13 records the angel's promise to Zechariah about Elizabeth.",
+      "d": "easy"
+    },
+    {
+      "q": "Which woman from Bethany sat at Jesus' feet while her sister worked?",
+      "o": [
+        "Mary",
+        "Martha",
+        "Lydia",
+        "Phoebe"
+      ],
+      "a": "Mary",
+      "e": "Luke 10:39 describes Mary sitting at the Lord's feet.",
+      "d": "easy"
+    },
+    {
+      "q": "Who was the sister of Mary and Lazarus?",
+      "o": [
+        "Martha",
+        "Tabitha",
+        "Rhoda",
+        "Priscilla"
+      ],
+      "a": "Martha",
+      "e": "Luke 10:38-42 and John 11 identify Martha as their sister.",
+      "d": "easy"
+    },
+    {
+      "q": "Who was the first person to see Jesus after His resurrection?",
+      "o": [
+        "Mary Magdalene",
+        "Peter",
+        "John",
+        "Salome"
+      ],
+      "a": "Mary Magdalene",
+      "e": "John 20:14-16 records Jesus' appearance to Mary Magdalene.",
+      "d": "easy"
+    },
+    {
+      "q": "Which woman was a prostitute in Jericho and helped the Israelite spies?",
+      "o": [
+        "Rahab",
+        "Tamar",
+        "Gomer",
+        "Delilah"
+      ],
+      "a": "Rahab",
+      "e": "Joshua 2 and 6 tell the story of Rahab's faith and help.",
+      "d": "easy"
+    },
+    {
+      "q": "Who was the wife of Isaac and mother of Jacob and Esau?",
+      "o": [
+        "Rebekah",
+        "Rachel",
+        "Leah",
+        "Sarah"
+      ],
+      "a": "Rebekah",
+      "e": "Genesis 24-25 records the story of Rebekah.",
+      "d": "medium"
+    },
+    {
+      "q": "Who was the favorite wife of Jacob and mother of Joseph and Benjamin?",
+      "o": [
+        "Rachel",
+        "Leah",
+        "Bilhah",
+        "Zilpah"
+      ],
+      "a": "Rachel",
+      "e": "Genesis 29-30 and 35 record Rachel's story.",
+      "d": "easy"
+    },
+    {
+      "q": "Who was the older sister of Rachel and first wife of Jacob?",
+      "o": [
+        "Leah",
+        "Bilhah",
+        "Zilpah",
+        "Dinah"
+      ],
+      "a": "Leah",
+      "e": "Genesis 29:23-25 describes how Leah became Jacob's first wife.",
+      "d": "medium"
+    },
+    {
+      "q": "Who was the mother of Samuel?",
+      "o": [
+        "Hannah",
+        "Peninnah",
+        "Elizabeth",
+        "Anna"
+      ],
+      "a": "Hannah",
+      "e": "1 Samuel 1 records Hannah's prayer and the birth of Samuel.",
+      "d": "easy"
+    },
+    {
+      "q": "Which woman was a prophetess who saw the infant Jesus in the Temple?",
+      "o": [
+        "Anna",
+        "Elizabeth",
+        "Mary",
+        "Huldah"
+      ],
+      "a": "Anna",
+      "e": "Luke 2:36-38 identifies Anna as a prophetess.",
+      "d": "medium"
+    },
+    {
+      "q": "Which queen of Judah was the only woman to rule over the Southern Kingdom?",
+      "o": [
+        "Athaliah",
+        "Jezebel",
+        "Sheba",
+        "Maakah"
+      ],
+      "a": "Athaliah",
+      "e": "2 Kings 11 records Athaliah's reign.",
+      "d": "hard"
+    },
+    {
+      "q": "Who was the wicked wife of King Ahab who promoted Baal worship?",
+      "o": [
+        "Jezebel",
+        "Athaliah",
+        "Vashti",
+        "Delilah"
+      ],
+      "a": "Jezebel",
+      "e": "1 Kings 16:31 and 18-21 describe Jezebel's influence.",
+      "d": "easy"
+    },
+    {
+      "q": "Which woman cut Samson's hair, leading to his capture?",
+      "o": [
+        "Delilah",
+        "Rahab",
+        "Jael",
+        "Michal"
+      ],
+      "a": "Delilah",
+      "e": "Judges 16:4-21 tells the story of Delilah's betrayal.",
+      "d": "easy"
+    },
+    {
+      "q": "Who was the first wife of King David?",
+      "o": [
+        "Michal",
+        "Abigail",
+        "Bathsheba",
+        "Maakah"
+      ],
+      "a": "Michal",
+      "e": "1 Samuel 18:27 records Michal becoming David's wife.",
+      "d": "medium"
+    },
+    {
+      "q": "Which wise woman became a wife of David after her husband Nabal died?",
+      "o": [
+        "Abigail",
+        "Bathsheba",
+        "Michal",
+        "Ahinoam"
+      ],
+      "a": "Abigail",
+      "e": "1 Samuel 25 describes Abigail's wisdom and marriage to David.",
+      "d": "medium"
+    },
+    {
+      "q": "Who was the mother of Solomon?",
+      "o": [
+        "Bathsheba",
+        "Michal",
+        "Abigail",
+        "Haggith"
+      ],
+      "a": "Bathsheba",
+      "e": "2 Samuel 12:24 records the birth of Solomon to Bathsheba.",
+      "d": "easy"
+    },
+    {
+      "q": "Which woman was a seller of purple cloth and the first convert in Europe?",
+      "o": [
+        "Lydia",
+        "Phoebe",
+        "Damaris",
+        "Chloe"
+      ],
+      "a": "Lydia",
+      "e": "Acts 16:14-15 records Lydia's conversion in Philippi.",
+      "d": "medium"
+    },
+    {
+      "q": "Which woman was a tentmaker and co-worker of Paul?",
+      "o": [
+        "Priscilla",
+        "Phoebe",
+        "Junia",
+        "Tryphena"
+      ],
+      "a": "Priscilla",
+      "e": "Acts 18:2-3 and Romans 16:3 mention Priscilla and Aquila.",
+      "d": "medium"
+    },
+    {
+      "q": "Who was the daughter of Jacob?",
+      "o": [
+        "Dinah",
+        "Tamar",
+        "Rachel",
+        "Leah"
+      ],
+      "a": "Dinah",
+      "e": "Genesis 30:21 names Dinah as the daughter of Leah.",
+      "d": "hard"
+    },
+    {
+      "q": "Which woman was Hosea told to marry as a symbol of Israel's unfaithfulness?",
+      "o": [
+        "Gomer",
+        "Rahab",
+        "Tamar",
+        "Cozbi"
+      ],
+      "a": "Gomer",
+      "e": "Hosea 1:3 identifies Gomer as Hosea's wife.",
+      "d": "hard"
+    },
+    {
+      "q": "Who was the mother of Timothy?",
+      "o": [
+        "Eunice",
+        "Lois",
+        "Lydia",
+        "Dorcas"
+      ],
+      "a": "Eunice",
+      "e": "2 Timothy 1:5 mentions Eunice's faith.",
+      "d": "hard"
+    },
+    {
+      "q": "Who was the grandmother of Timothy?",
+      "o": [
+        "Lois",
+        "Eunice",
+        "Anna",
+        "Elizabeth"
+      ],
+      "a": "Lois",
+      "e": "2 Timothy 1:5 mentions Lois.",
+      "d": "hard"
+    },
+    {
+      "q": "Which woman was raised from the dead by Peter in Joppa?",
+      "o": [
+        "Tabitha (Dorcas)",
+        "Lydia",
+        "Rhoda",
+        "Priscilla"
+      ],
+      "a": "Tabitha (Dorcas)",
+      "e": "Acts 9:36-41 records the raising of Tabitha.",
+      "d": "medium"
+    },
+    {
+      "q": "Who was the wife of Moses?",
+      "o": [
+        "Zipporah",
+        "Miriam",
+        "Jochebed",
+        "Elisheba"
+      ],
+      "a": "Zipporah",
+      "e": "Exodus 2:21 records Moses marrying Zipporah.",
+      "d": "medium"
+    },
+    {
+      "q": "Who was the mother of Moses, Aaron, and Miriam?",
+      "o": [
+        "Jochebed",
+        "Zipporah",
+        "Elisheba",
+        "Miriam"
+      ],
+      "a": "Jochebed",
+      "e": "Exodus 6:20 and Numbers 26:59.",
+      "d": "hard"
+    },
+    {
+      "q": "Which woman laughed when she heard she would have a child in her old age?",
+      "o": [
+        "Sarah",
+        "Elizabeth",
+        "Hannah",
+        "Anna"
+      ],
+      "a": "Sarah",
+      "e": "Genesis 18:12 records Sarah's laughter.",
+      "d": "easy"
+    },
+    {
+      "q": "Who was the woman that Jesus met at the well in Samaria?",
+      "o": [
+        "The Samaritan woman",
+        "Mary Magdalene",
+        "Martha",
+        "Lydia"
+      ],
+      "a": "The Samaritan woman",
+      "e": "John 4:7-26 records the conversation between Jesus and the woman.",
+      "d": "easy"
+    },
+    {
+      "q": "Which woman anointed Jesus' feet with expensive perfume and her hair?",
+      "o": [
+        "Mary (sister of Martha)",
+        "Mary Magdalene",
+        "The sinful woman",
+        "All of the above (in different accounts)"
+      ],
+      "a": "All of the above (in different accounts)",
+      "e": "Anointing accounts appear in all four Gospels (Matthew 26, Mark 14, Luke 7, John 12).",
+      "d": "hard"
+    },
+    {
+      "q": "Who was the queen that visited Solomon with hard questions?",
+      "o": [
+        "The Queen of Sheba",
+        "Queen Esther",
+        "Queen Jezebel",
+        "Queen Vashti"
+      ],
+      "a": "The Queen of Sheba",
+      "e": "1 Kings 10 and 2 Chronicles 9 record her visit.",
+      "d": "easy"
+    },
+    {
+      "q": "Which woman was the daughter of King Saul and David's wife who criticized his dancing?",
+      "o": [
+        "Michal",
+        "Abigail",
+        "Bathsheba",
+        "Maakah"
+      ],
+      "a": "Michal",
+      "e": "2 Samuel 6:16-23 describes Michal's reaction.",
+      "d": "medium"
+    },
+    {
+      "q": "Who was the wife of Felix the governor, mentioned in Acts?",
+      "o": [
+        "Drusilla",
+        "Bernice",
+        "Lydia",
+        "Phoebe"
+      ],
+      "a": "Drusilla",
+      "e": "Acts 24:24 mentions Felix's wife Drusilla, who was Jewish.",
+      "d": "hard"
+    },
+    {
+      "q": "Who was the daughter of Herodias who danced for Herod and asked for John the Baptist's head?",
+      "o": [
+        "Salome (traditionally)",
+        "Herodias",
+        "Bernice",
+        "Drusilla"
+      ],
+      "a": "Salome (traditionally)",
+      "e": "Matthew 14:6-11 and Mark 6:21-28 record the event; tradition names her Salome.",
+      "d": "medium"
+    },
+    {
+      "q": "Which woman was the mother of Reuben, Simeon, Levi, and Judah?",
+      "o": [
+        "Leah",
+        "Rachel",
+        "Bilhah",
+        "Zilpah"
+      ],
+      "a": "Leah",
+      "e": "Genesis 29:32-35 lists Leah's first four sons.",
+      "d": "medium"
+    },
+    {
+      "q": "Who was the wife of Ananias who lied to the Holy Spirit?",
+      "o": [
+        "Sapphira",
+        "Rhoda",
+        "Tabitha",
+        "Lydia"
+      ],
+      "a": "Sapphira",
+      "e": "Acts 5:1-10 tells the story of Ananias and Sapphira.",
+      "d": "easy"
+    },
+    {
+      "q": "Which woman was the wife of Elkanah and the mother of Samuel?",
+      "o": [
+        "Hannah",
+        "Peninnah",
+        "Elizabeth",
+        "Anna"
+      ],
+      "a": "Hannah",
+      "e": "1 Samuel 1:1-20.",
+      "d": "easy"
+    },
+    {
+      "q": "Who was the other wife of Elkanah who provoked Hannah?",
+      "o": [
+        "Peninnah",
+        "Hagar",
+        "Sarah",
+        "Leah"
+      ],
+      "a": "Peninnah",
+      "e": "1 Samuel 1:2-7.",
+      "d": "medium"
+    },
+    {
+      "q": "Which woman was the servant of Sarah and mother of Ishmael?",
+      "o": [
+        "Hagar",
+        "Keturah",
+        "Zilpah",
+        "Bilhah"
+      ],
+      "a": "Hagar",
+      "e": "Genesis 16.",
+      "d": "easy"
+    },
+    {
+      "q": "Who was the daughter of Potiphera and wife of Joseph in Egypt?",
+      "o": [
+        "Asenath",
+        "Zuleika",
+        "Tamar",
+        "Dinah"
+      ],
+      "a": "Asenath",
+      "e": "Genesis 41:45 and 50 record Asenath as Joseph's wife.",
+      "d": "hard"
+    },
+    {
+      "q": "Which woman was the wife of Job?",
+      "o": [
+        "She is unnamed",
+        "Dinah",
+        "Sitis",
+        "Zush"
+      ],
+      "a": "She is unnamed",
+      "e": "The book of Job mentions his wife but does not give her name.",
+      "d": "medium"
+    },
+    {
+      "q": "Who was the daughter-in-law of Judah who had twins by him?",
+      "o": [
+        "Tamar",
+        "Rahab",
+        "Ruth",
+        "Bathsheba"
+      ],
+      "a": "Tamar",
+      "e": "Genesis 38 describes the story of Tamar and Judah.",
+      "d": "medium"
+    },
+    {
+      "q": "Which woman was a prophetess mentioned in 2 Kings 22 and 2 Chronicles 34?",
+      "o": [
+        "Huldah",
+        "Deborah",
+        "Miriam",
+        "Noadiah"
+      ],
+      "a": "Huldah",
+      "e": "Huldah was consulted by King Josiah's officials.",
+      "d": "hard"
+    },
+    {
+      "q": "Who was the queen of Persia before Esther?",
+      "o": [
+        "Vashti",
+        "Vashtai",
+        "Vashtea",
+        "Vashtia"
+      ],
+      "a": "Vashti",
+      "e": "Esther 1 describes Vashti's refusal to obey King Ahasuerus.",
+      "d": "easy"
+    },
+    {
+      "q": "Which woman was the mother of John the Apostle and James?",
+      "o": [
+        "Salome",
+        "Mary",
+        "Martha",
+        "Joanna"
+      ],
+      "a": "Salome",
+      "e": "Matthew 27:56 and Mark 15:40 suggest Salome was the mother of Zebedee's sons.",
+      "d": "hard"
+    },
+    {
+      "q": "Who was the deaconess mentioned in Romans 16:1-2?",
+      "o": [
+        "Phoebe",
+        "Priscilla",
+        "Junia",
+        "Chloe"
+      ],
+      "a": "Phoebe",
+      "e": "Paul commends Phoebe as a servant (diakonos) of the church.",
+      "d": "medium"
+    },
+    {
+      "q": "Which woman was identified as 'outstanding among the apostles' in Romans 16:7?",
+      "o": [
+        "Junia",
+        "Julia",
+        "Phoebe",
+        "Priscilla"
+      ],
+      "a": "Junia",
+      "e": "Romans 16:7 mentions Andronicus and Junia.",
+      "d": "hard"
+    },
+    {
+      "q": "Who was the wife of Chuza, the manager of Herod's household?",
+      "o": [
+        "Joanna",
+        "Susanna",
+        "Mary",
+        "Salome"
+      ],
+      "a": "Joanna",
+      "e": "Luke 8:3 mentions Joanna as one who helped support Jesus' ministry.",
+      "d": "hard"
+    },
+    {
+      "q": "Which woman was the mother of Peter's mother-in-law?",
+      "o": [
+        "She is not mentioned",
+        "Mary",
+        "Lydia",
+        "Elizabeth"
+      ],
+      "a": "She is not mentioned",
+      "e": "The Gospels mention Peter's mother-in-law but not her mother.",
+      "d": "medium"
+    },
+    {
+      "q": "Who was the servant girl who answered the door when Peter was released from prison?",
+      "o": [
+        "Rhoda",
+        "Tabitha",
+        "Lydia",
+        "Damaris"
+      ],
+      "a": "Rhoda",
+      "e": "Acts 12:13-15 records Rhoda's reaction to Peter at the gate.",
+      "d": "medium"
+    },
+    {
+      "q": "Which woman was the daughter of King David who was raped by her half-brother Amnon?",
+      "o": [
+        "Tamar",
+        "Dinah",
+        "Michal",
+        "Abigail"
+      ],
+      "a": "Tamar",
+      "e": "2 Samuel 13 records the tragedy of Tamar.",
+      "d": "medium"
+    },
+    {
+      "q": "Who was the mother of Boaz?",
+      "o": [
+        "Rahab",
+        "Ruth",
+        "Naomi",
+        "Tamar"
+      ],
+      "a": "Rahab",
+      "e": "Matthew 1:5 identifies Rahab as the mother of Boaz.",
+      "d": "hard"
+    },
+    {
+      "q": "Which woman was the mother of Obed?",
+      "o": [
+        "Ruth",
+        "Naomi",
+        "Rahab",
+        "Tamar"
+      ],
+      "a": "Ruth",
+      "e": "Ruth 4:17 says Ruth bore a son named Obed.",
+      "d": "medium"
+    },
+    {
+      "q": "Who was the daughter of Jephthah?",
+      "o": [
+        "She is unnamed",
+        "Deborah",
+        "Jael",
+        "Miriam"
+      ],
+      "a": "She is unnamed",
+      "e": "Judges 11:34-40 records the story but not her name.",
+      "d": "hard"
+    },
+    {
+      "q": "Which woman was the wife of Herod's brother Philip, whom Herod took?",
+      "o": [
+        "Herodias",
+        "Salome",
+        "Bernice",
+        "Drusilla"
+      ],
+      "a": "Herodias",
+      "e": "Matthew 14:3 and Mark 6:17-18.",
+      "d": "medium"
+    },
+    {
+      "q": "Who was the woman caught in adultery in John 8?",
+      "o": [
+        "She is unnamed",
+        "Mary Magdalene",
+        "Mary of Bethany",
+        "The Samaritan woman"
+      ],
+      "a": "She is unnamed",
+      "e": "The woman is not named in the passage.",
+      "d": "easy"
+    },
+    {
+      "q": "Which woman was the mother of John whose surname was Mark?",
+      "o": [
+        "Mary",
+        "Martha",
+        "Lydia",
+        "Phoebe"
+      ],
+      "a": "Mary",
+      "e": "Acts 12:12 mentions the house of Mary the mother of John Mark.",
+      "d": "hard"
+    },
+    {
+      "q": "Who was the wife of Zechariah the priest?",
+      "o": [
+        "Elizabeth",
+        "Mary",
+        "Anna",
+        "Salome"
+      ],
+      "a": "Elizabeth",
+      "e": "Luke 1:5.",
+      "d": "easy"
+    },
+    {
+      "q": "Which woman was a widow who gave two small copper coins to the treasury?",
+      "o": [
+        "The poor widow",
+        "Tabitha",
+        "Lydia",
+        "Mary"
+      ],
+      "a": "The poor widow",
+      "e": "Mark 12:41-44 and Luke 21:1-4.",
+      "d": "easy"
+    },
+    {
+      "q": "Who was the mother of the prophet Moses?",
+      "o": [
+        "Jochebed",
+        "Miriam",
+        "Zipporah",
+        "Elisheba"
+      ],
+      "a": "Jochebed",
+      "e": "Exodus 6:20.",
+      "d": "medium"
+    },
+    {
+      "q": "Which woman was the daughter of Pharaoh who found Moses?",
+      "o": [
+        "The Bible doesn't name her",
+        "Hatshepsut",
+        "Nefertari",
+        "Bithiah"
+      ],
+      "a": "The Bible doesn't name her",
+      "e": "Exodus 2:5-10; tradition (and 1 Chron 4:18) suggests Bithiah.",
+      "d": "hard"
+    },
+    {
+      "q": "Who was the wife of Aaron, the high priest?",
+      "o": [
+        "Elisheba",
+        "Zipporah",
+        "Jochebed",
+        "Miriam"
+      ],
+      "a": "Elisheba",
+      "e": "Exodus 6:23.",
+      "d": "hard"
+    },
+    {
+      "q": "Which woman was the mother of Gershom and Eliezer?",
+      "o": [
+        "Zipporah",
+        "Miriam",
+        "Jochebed",
+        "Elisheba"
+      ],
+      "a": "Zipporah",
+      "e": "Exodus 18:2-4.",
+      "d": "hard"
+    },
+    {
+      "q": "Who was the wife of Jacob's son Judah?",
+      "o": [
+        "The daughter of Shua",
+        "Tamar",
+        "Rahab",
+        "Dinah"
+      ],
+      "a": "The daughter of Shua",
+      "e": "Genesis 38:2-12.",
+      "d": "hard"
+    },
+    {
+      "q": "Which woman was the daughter of Ethbaal and wife of Ahab?",
+      "o": [
+        "Jezebel",
+        "Athaliah",
+        "Vashti",
+        "Delilah"
+      ],
+      "a": "Jezebel",
+      "e": "1 Kings 16:31.",
+      "d": "medium"
+    },
+    {
+      "q": "Who was the mother of King Hezekiah?",
+      "o": [
+        "Abijah",
+        "Athaliah",
+        "Bathsheba",
+        "Maakah"
+      ],
+      "a": "Abijah",
+      "e": "2 Kings 18:2; her name is also given as Abi.",
+      "d": "hard"
+    },
+    {
+      "q": "Which woman was the wife of King David and the daughter of Talmai, king of Geshur?",
+      "o": [
+        "Maakah",
+        "Michal",
+        "Abigail",
+        "Haggith"
+      ],
+      "a": "Maakah",
+      "e": "2 Samuel 3:3; she was the mother of Absalom.",
+      "d": "hard"
+    },
+    {
+      "q": "Who was the mother of Adonijah, David's son?",
+      "o": [
+        "Haggith",
+        "Bathsheba",
+        "Abital",
+        "Eglah"
+      ],
+      "a": "Haggith",
+      "e": "2 Samuel 3:4.",
+      "d": "hard"
+    },
+    {
+      "q": "Which woman was the mother of David's firstborn son Amnon?",
+      "o": [
+        "Ahinoam",
+        "Abigail",
+        "Maakah",
+        "Haggith"
+      ],
+      "a": "Ahinoam",
+      "e": "2 Samuel 3:2.",
+      "d": "hard"
+    },
+    {
+      "q": "Who was the mother of David's son Chileab (Daniel)?",
+      "o": [
+        "Abigail",
+        "Ahinoam",
+        "Maakah",
+        "Haggith"
+      ],
+      "a": "Abigail",
+      "e": "2 Samuel 3:3.",
+      "d": "hard"
+    },
+    {
+      "q": "Which woman was the mother of Josiah?",
+      "o": [
+        "Jedidah",
+        "Athaliah",
+        "Abijah",
+        "Zebidah"
+      ],
+      "a": "Jedidah",
+      "e": "2 Kings 22:1.",
+      "d": "hard"
+    },
+    {
+      "q": "Who was the wife of the prophet Isaiah?",
+      "o": [
+        "The prophetess",
+        "The Bible doesn't name her",
+        "Shear-jashub",
+        "Maher-shalal-hash-baz"
+      ],
+      "a": "The prophetess",
+      "e": "Isaiah 8:3 refers to his wife as 'the prophetess'.",
+      "d": "hard"
+    },
+    {
+      "q": "Which woman was the daughter of Laban and Jacob's wife who stole the household gods?",
+      "o": [
+        "Rachel",
+        "Leah",
+        "Bilhah",
+        "Zilpah"
+      ],
+      "a": "Rachel",
+      "e": "Genesis 31:19 and 34.",
+      "d": "medium"
+    },
+    {
+      "q": "Who was the wife of Manoah and mother of Samson?",
+      "o": [
+        "She is unnamed",
+        "Delilah",
+        "Deborah",
+        "Miriam"
+      ],
+      "a": "She is unnamed",
+      "e": "Judges 13 describes the angel appearing to Manoah's wife.",
+      "d": "medium"
+    },
+    {
+      "q": "Which woman was the mother of Ephraim and Manasseh?",
+      "o": [
+        "Asenath",
+        "Rachel",
+        "Leah",
+        "Tamar"
+      ],
+      "a": "Asenath",
+      "e": "Genesis 41:50-52.",
+      "d": "hard"
+    },
+    {
+      "q": "Who was the daughter-in-law of Eli who named her son Ichabod?",
+      "o": [
+        "The wife of Phinehas",
+        "The wife of Hophni",
+        "Hannah",
+        "Peninnah"
+      ],
+      "a": "The wife of Phinehas",
+      "e": "1 Samuel 4:19-22.",
+      "d": "hard"
+    },
+    {
+      "q": "Which woman was the grandmother of King Ahaziah of Judah?",
+      "o": [
+        "Athaliah",
+        "Abijah",
+        "Jezebel",
+        "Maakah"
+      ],
+      "a": "Athaliah",
+      "e": "2 Kings 8:26 and 11:1.",
+      "d": "hard"
+    },
+    {
+      "q": "Who was the wife of King Rehoboam and the daughter of Absalom?",
+      "o": [
+        "Maakah",
+        "Michal",
+        "Tamar",
+        "Bathsheba"
+      ],
+      "a": "Maakah",
+      "e": "1 Kings 15:2 and 2 Chronicles 11:20.",
+      "d": "hard"
+    },
+    {
+      "q": "Which woman was the mother of John the Apostle?",
+      "o": [
+        "Salome",
+        "Mary",
+        "Elizabeth",
+        "Martha"
+      ],
+      "a": "Salome",
+      "e": "Mark 15:40 and 16:1.",
+      "d": "hard"
+    },
+    {
+      "q": "Who was the wife of Agrippa II, often seen with him?",
+      "o": [
+        "Bernice",
+        "Drusilla",
+        "Herodias",
+        "Salome"
+      ],
+      "a": "Bernice",
+      "e": "Acts 25:13 mentions King Agrippa and Bernice.",
+      "d": "hard"
+    },
+    {
+      "q": "Which woman was the mother of the sons of Zebedee?",
+      "o": [
+        "Salome",
+        "Mary",
+        "Martha",
+        "Joanna"
+      ],
+      "a": "Salome",
+      "e": "Matthew 20:20 and 27:56.",
+      "d": "hard"
+    },
+    {
+      "q": "Who was the sister of Mary and Martha?",
+      "o": [
+        "Lazarus (brother)",
+        "They only had each other",
+        "Salome",
+        "Joanna"
+      ],
+      "a": "They only had each other",
+      "e": "The Bible only mentions Mary and Martha as sisters (Luke 10:39).",
+      "d": "medium"
+    },
+    {
+      "q": "Which woman was the wife of Aquila?",
+      "o": [
+        "Priscilla",
+        "Lydia",
+        "Phoebe",
+        "Junia"
+      ],
+      "a": "Priscilla",
+      "e": "Acts 18:2.",
+      "d": "easy"
+    },
+    {
+      "q": "Who was the mother of Gad and Asher?",
+      "o": [
+        "Zilpah",
+        "Bilhah",
+        "Leah",
+        "Rachel"
+      ],
+      "a": "Zilpah",
+      "e": "Genesis 30:10-13; Zilpah was Leah's servant.",
+      "d": "hard"
+    },
+    {
+      "q": "Who was the mother of Dan and Naphtali?",
+      "o": [
+        "Bilhah",
+        "Zilpah",
+        "Leah",
+        "Rachel"
+      ],
+      "a": "Bilhah",
+      "e": "Genesis 30:4-8; Bilhah was Rachel's servant.",
+      "d": "hard"
+    },
+    {
+      "q": "Which woman was the mother of King Solomon?",
+      "o": [
+        "Bathsheba",
+        "Michal",
+        "Abigail",
+        "Haggith"
+      ],
+      "a": "Bathsheba",
+      "e": "2 Samuel 12:24.",
+      "d": "easy"
+    },
+    {
+      "q": "Who was the first woman to be called a prophetess?",
+      "o": [
+        "Miriam",
+        "Deborah",
+        "Huldah",
+        "Anna"
+      ],
+      "a": "Miriam",
+      "e": "Exodus 15:20.",
+      "d": "medium"
+    },
+    {
+      "q": "Which woman was the wife of Terah and mother of Abraham?",
+      "o": [
+        "The Bible doesn't name her",
+        "Sarah",
+        "Milcah",
+        "Hagar"
+      ],
+      "a": "The Bible doesn't name her",
+      "e": "Genesis mentions Terah as the father but not the mother.",
+      "d": "hard"
+    },
+    {
+      "q": "Who was the wife of Nahor and daughter of Haran?",
+      "o": [
+        "Milcah",
+        "Iscah",
+        "Sarah",
+        "Rebekah"
+      ],
+      "a": "Milcah",
+      "e": "Genesis 11:29.",
+      "d": "hard"
+    },
+    {
+      "q": "Which woman was the mother of Lot's sons Moab and Ben-Ammi?",
+      "o": [
+        "Lot's daughters",
+        "Lot's wife",
+        "Sarah",
+        "Hagar"
+      ],
+      "a": "Lot's daughters",
+      "e": "Genesis 19:30-38.",
+      "d": "medium"
+    },
+    {
+      "q": "Who was the wife of Esau and daughter of Ishmael?",
+      "o": [
+        "Mahalath",
+        "Basemath",
+        "Judith",
+        "Adah"
+      ],
+      "a": "Mahalath",
+      "e": "Genesis 28:9; her name is also Basemath in Gen 36:3.",
+      "d": "hard"
+    },
+    {
+      "q": "Which woman was the mother of King Manasseh?",
+      "o": [
+        "Hephzibah",
+        "Jedidah",
+        "Abijah",
+        "Athaliah"
+      ],
+      "a": "Hephzibah",
+      "e": "2 Kings 21:1.",
+      "d": "hard"
+    },
+    {
+      "q": "Who was the wife of King Zedekiah?",
+      "o": [
+        "Hamutal",
+        "Zebidah",
+        "Jedidah",
+        "Nehushta"
+      ],
+      "a": "Hamutal",
+      "e": "2 Kings 24:18; she was the daughter of Jeremiah of Libnah.",
+      "d": "hard"
+    },
+    {
+      "q": "Which woman was the mother of Jehoiachin?",
+      "o": [
+        "Nehushta",
+        "Hamutal",
+        "Zebidah",
+        "Jedidah"
+      ],
+      "a": "Nehushta",
+      "e": "2 Kings 24:8.",
+      "d": "hard"
+    },
+    {
+      "q": "Who was the mother of King Jehoahaz?",
+      "o": [
+        "Hamutal",
+        "Zebidah",
+        "Jedidah",
+        "Nehushta"
+      ],
+      "a": "Hamutal",
+      "e": "2 Kings 23:31.",
+      "d": "hard"
+    },
+    {
+      "q": "Which woman was the mother of King Jehoiakim?",
+      "o": [
+        "Zebidah",
+        "Hamutal",
+        "Jedidah",
+        "Nehushta"
+      ],
+      "a": "Zebidah",
+      "e": "2 Kings 23:36.",
+      "d": "hard"
+    },
+    {
+      "q": "Who was the wife of King Saul?",
+      "o": [
+        "Ahinoam",
+        "Michal",
+        "Merab",
+        "Rizpah"
+      ],
+      "a": "Ahinoam",
+      "e": "1 Samuel 14:50.",
+      "d": "hard"
+    },
+    {
+      "q": "Which woman was the concubine of Saul who watched over the bodies of her sons?",
+      "o": [
+        "Rizpah",
+        "Ahinoam",
+        "Michal",
+        "Merab"
+      ],
+      "a": "Rizpah",
+      "e": "2 Samuel 21:8-11.",
+      "d": "hard"
+    },
+    {
+      "q": "Who was the daughter of King Saul who was promised to David but given to Adriel?",
+      "o": [
+        "Merab",
+        "Michal",
+        "Ahinoam",
+        "Rizpah"
+      ],
+      "a": "Merab",
+      "e": "1 Samuel 18:17-19.",
+      "d": "hard"
+    },
+    {
+      "q": "Which woman was the mother of Timothy's faith?",
+      "o": [
+        "Lois (grandmother)",
+        "Eunice (mother)",
+        "Both A and B",
+        "Lydia"
+      ],
+      "a": "Both A and B",
+      "e": "2 Timothy 1:5 mentions both women.",
+      "d": "medium"
+    },
+    {
+      "q": "Who was the first woman to be mentioned in the genealogy of Jesus in Matthew?",
+      "o": [
+        "Tamar",
+        "Rahab",
+        "Ruth",
+        "Bathsheba"
+      ],
+      "a": "Tamar",
+      "e": "Matthew 1:3.",
+      "d": "hard"
+    }
+  ],
+  "Animals in the Bible": [
+    {
+      "q": "What animal spoke to Balaam after being struck?",
+      "o": [
+        "Donkey",
+        "Ox",
+        "Camel",
+        "Sheep"
+      ],
+      "a": "Donkey",
+      "e": "Numbers 22:28 records the Lord opening the donkey's mouth to speak to Balaam.",
+      "d": "easy"
+    },
+    {
+      "q": "What creature tempted Eve in the Garden of Eden?",
+      "o": [
+        "Serpent",
+        "Lion",
+        "Wolf",
+        "Scorpion"
+      ],
+      "a": "Serpent",
+      "e": "Genesis 3 describes the serpent's deception of Eve.",
+      "d": "easy"
+    },
+    {
+      "q": "Which animal was sacrificed in place of Isaac?",
+      "o": [
+        "Ram",
+        "Lamb",
+        "Goat",
+        "Bull"
+      ],
+      "a": "Ram",
+      "e": "Genesis 22:13 says Abraham found a ram caught in a thicket by its horns.",
+      "d": "easy"
+    },
+    {
+      "q": "What animal did Noah send out first from the ark?",
+      "o": [
+        "Raven",
+        "Dove",
+        "Sparrow",
+        "Eagle"
+      ],
+      "a": "Raven",
+      "e": "Genesis 8:7 says Noah first sent out a raven.",
+      "d": "medium"
+    },
+    {
+      "q": "What bird returned to Noah with an olive leaf?",
+      "o": [
+        "Dove",
+        "Raven",
+        "Pigeon",
+        "Swallow"
+      ],
+      "a": "Dove",
+      "e": "Genesis 8:11 records the dove returning with an olive leaf.",
+      "d": "easy"
+    },
+    {
+      "q": "In Peter's vision, what was on the large sheet let down from heaven?",
+      "o": [
+        "All kinds of four-footed animals, reptiles, and birds",
+        "Only clean animals",
+        "Only fish",
+        "Only insects"
+      ],
+      "a": "All kinds of four-footed animals, reptiles, and birds",
+      "e": "Acts 10:12 describes the variety of creatures in the vision.",
+      "d": "medium"
+    },
+    {
+      "q": "What animal was Daniel thrown to for praying to God?",
+      "o": [
+        "Lions",
+        "Bears",
+        "Wolves",
+        "Leopards"
+      ],
+      "a": "Lions",
+      "e": "Daniel 6 records Daniel in the lions' den.",
+      "d": "easy"
+    },
+    {
+      "q": "What animal did Jesus ride into Jerusalem?",
+      "o": [
+        "Donkey",
+        "Horse",
+        "Camel",
+        "Mule"
+      ],
+      "a": "Donkey",
+      "e": "Matthew 21:1-7 and Zechariah 9:9 describe Jesus riding a donkey.",
+      "d": "easy"
+    },
+    {
+      "q": "Which animal's jawbone did Samson use to kill 1,000 Philistines?",
+      "o": [
+        "Donkey",
+        "Ox",
+        "Camel",
+        "Lion"
+      ],
+      "a": "Donkey",
+      "e": "Judges 15:15-16 says he used a fresh jawbone of a donkey.",
+      "d": "medium"
+    },
+    {
+      "q": "What did the ravens bring Elijah by the Kerith Ravine?",
+      "o": [
+        "Bread and meat",
+        "Fruit and honey",
+        "Fish and water",
+        "Manna"
+      ],
+      "a": "Bread and meat",
+      "e": "1 Kings 17:6 says the ravens brought him bread and meat morning and evening.",
+      "d": "medium"
+    },
+    {
+      "q": "What creature swallowed Jonah?",
+      "o": [
+        "A huge fish",
+        "A whale",
+        "A shark",
+        "A sea monster"
+      ],
+      "a": "A huge fish",
+      "e": "Jonah 1:17 specifies a 'huge fish', often interpreted as a whale.",
+      "d": "easy"
+    },
+    {
+      "q": "Which plague involved creatures coming up from the Nile and covering Egypt?",
+      "o": [
+        "Frogs",
+        "Lice",
+        "Locusts",
+        "Flies"
+      ],
+      "a": "Frogs",
+      "e": "Exodus 8:1-15 describes the plague of frogs.",
+      "d": "easy"
+    },
+    {
+      "q": "What animal was the 'Golden Calf' based on?",
+      "o": [
+        "Young bull",
+        "Sheep",
+        "Goat",
+        "Deer"
+      ],
+      "a": "Young bull",
+      "e": "Exodus 32 describes the people making an idol in the shape of a calf.",
+      "d": "easy"
+    },
+    {
+      "q": "What animal did David kill while protecting his sheep, besides a bear?",
+      "o": [
+        "Lion",
+        "Wolf",
+        "Tiger",
+        "Leopard"
+      ],
+      "a": "Lion",
+      "e": "1 Samuel 17:34-36 records David killing both a lion and a bear.",
+      "d": "easy"
+    },
+    {
+      "q": "What creature is described as having scales like rows of shields in Job 41?",
+      "o": [
+        "Leviathan",
+        "Behemoth",
+        "Dragon",
+        "Crocodile"
+      ],
+      "a": "Leviathan",
+      "e": "Job 41 describes the fearsome power of Leviathan.",
+      "d": "medium"
+    },
+    {
+      "q": "Which animal is mentioned in the proverb: 'Go to the ____, you sluggard'?",
+      "o": [
+        "Ant",
+        "Bee",
+        "Spider",
+        "Snail"
+      ],
+      "a": "Ant",
+      "e": "Proverbs 6:6 commends the ant's industriousness.",
+      "d": "easy"
+    },
+    {
+      "q": "What did John the Baptist eat in the wilderness besides wild honey?",
+      "o": [
+        "Locusts",
+        "Grasshoppers",
+        "Quail",
+        "Fish"
+      ],
+      "a": "Locusts",
+      "e": "Matthew 3:4 and Mark 1:6 record John's diet.",
+      "d": "easy"
+    },
+    {
+      "q": "What animal did God provide for the Israelites to eat in the evening in the desert?",
+      "o": [
+        "Quail",
+        "Sheep",
+        "Goats",
+        "Pigeons"
+      ],
+      "a": "Quail",
+      "e": "Exodus 16:13 and Numbers 11:31 describe the arrival of quail.",
+      "d": "medium"
+    },
+    {
+      "q": "Which animal is the 'Lamb of God' representing?",
+      "o": [
+        "Jesus",
+        "Peter",
+        "The Church",
+        "David"
+      ],
+      "a": "Jesus",
+      "e": "John 1:29 refers to Jesus as the Lamb of God who takes away the sin of the world.",
+      "d": "easy"
+    },
+    {
+      "q": "What animal did Peter find with a coin in its mouth?",
+      "o": [
+        "Fish",
+        "Bird",
+        "Lamb",
+        "Goat"
+      ],
+      "a": "Fish",
+      "e": "Matthew 17:27 records Jesus' instruction to find a coin in a fish's mouth.",
+      "d": "easy"
+    },
+    {
+      "q": "What creatures did the Egyptian magicians also produce during the plagues?",
+      "o": [
+        "Frogs",
+        "Lice",
+        "Locusts",
+        "Boils"
+      ],
+      "a": "Frogs",
+      "e": "Exodus 8:7 says the magicians did the same by their secret arts.",
+      "d": "medium"
+    },
+    {
+      "q": "Which animal's blood was put on the doorposts during the first Passover?",
+      "o": [
+        "Lamb",
+        "Bull",
+        "Goat",
+        "Dove"
+      ],
+      "a": "Lamb",
+      "e": "Exodus 12:7-13 describes the blood of the Passover lamb.",
+      "d": "easy"
+    },
+    {
+      "q": "In the parable of the lost sheep, how many sheep did the shepherd have in total?",
+      "o": [
+        "100",
+        "50",
+        "10",
+        "12"
+      ],
+      "a": "100",
+      "e": "Luke 15:4 says the shepherd had a hundred sheep and lost one.",
+      "d": "easy"
+    },
+    {
+      "q": "Which animal is used to describe the tribe of Judah?",
+      "o": [
+        "Lion",
+        "Wolf",
+        "Ox",
+        "Eagle"
+      ],
+      "a": "Lion",
+      "e": "Genesis 49:9 refers to Judah as a 'lion's cub'.",
+      "d": "medium"
+    },
+    {
+      "q": "What bird did Jesus say would not fall to the ground without the Father knowing?",
+      "o": [
+        "Sparrow",
+        "Raven",
+        "Eagle",
+        "Dove"
+      ],
+      "a": "Sparrow",
+      "e": "Matthew 10:29 and Luke 12:6 speak of God's care for sparrows.",
+      "d": "easy"
+    },
+    {
+      "q": "Which animal is mentioned as being 'more crafty than any of the wild animals'?",
+      "o": [
+        "Serpent",
+        "Fox",
+        "Wolf",
+        "Hyena"
+      ],
+      "a": "Serpent",
+      "e": "Genesis 3:1.",
+      "d": "easy"
+    },
+    {
+      "q": "What creature is described in Job 40 as having strength in its loins and power in its belly muscles?",
+      "o": [
+        "Behemoth",
+        "Leviathan",
+        "Elephant",
+        "Hippo"
+      ],
+      "a": "Behemoth",
+      "e": "Job 40:15-24 describes Behemoth.",
+      "d": "medium"
+    },
+    {
+      "q": "How many of each clean animal did Noah take on the ark?",
+      "o": [
+        "Seven pairs",
+        "Two pairs",
+        "One pair",
+        "Twelve pairs"
+      ],
+      "a": "Seven pairs",
+      "e": "Genesis 7:2-3 specifies seven pairs of every clean animal.",
+      "d": "medium"
+    },
+    {
+      "q": "How many of each unclean animal did Noah take on the ark?",
+      "o": [
+        "One pair",
+        "Two pairs",
+        "Seven pairs",
+        "None"
+      ],
+      "a": "One pair",
+      "e": "Genesis 7:2 specifies one pair of every unclean animal.",
+      "d": "medium"
+    },
+    {
+      "q": "What animal did Samson kill with his bare hands?",
+      "o": [
+        "Lion",
+        "Bear",
+        "Wolf",
+        "Leopard"
+      ],
+      "a": "Lion",
+      "e": "Judges 14:5-6 records Samson tearing a lion apart.",
+      "d": "easy"
+    },
+    {
+      "q": "What animal did Samson catch 300 of and tie their tails together?",
+      "o": [
+        "Foxes",
+        "Wolves",
+        "Jackals",
+        "Dogs"
+      ],
+      "a": "Foxes",
+      "e": "Judges 15:4 says Samson caught 300 foxes (or jackals).",
+      "d": "medium"
+    },
+    {
+      "q": "What bird is used as a symbol of the Holy Spirit at Jesus' baptism?",
+      "o": [
+        "Dove",
+        "Eagle",
+        "Pigeon",
+        "Sparrow"
+      ],
+      "a": "Dove",
+      "e": "Matthew 3:16 and Mark 1:10 describe the Spirit descending like a dove.",
+      "d": "easy"
+    },
+    {
+      "q": "Which animal did the Prodigal Son desire to eat the pods of?",
+      "o": [
+        "Pigs",
+        "Goats",
+        "Sheep",
+        "Cows"
+      ],
+      "a": "Pigs",
+      "e": "Luke 15:15-16 records the son working for a pig farmer.",
+      "d": "easy"
+    },
+    {
+      "q": "What animal is the devil compared to in 1 Peter 5:8?",
+      "o": [
+        "Roaring lion",
+        "Prowling wolf",
+        "Venomous snake",
+        "Crafty fox"
+      ],
+      "a": "Roaring lion",
+      "e": "The verse warns to be alert because the devil prowls like a roaring lion.",
+      "d": "easy"
+    },
+    {
+      "q": "Which animal did King Solomon have 40,000 stalls for?",
+      "o": [
+        "Horses",
+        "Camels",
+        "Oxen",
+        "Donkeys"
+      ],
+      "a": "Horses",
+      "e": "1 Kings 4:26 mentions Solomon's 40,000 stalls for chariot horses.",
+      "d": "hard"
+    },
+    {
+      "q": "What creature did the bronze statue represent that Moses made in the desert?",
+      "o": [
+        "Snake",
+        "Lion",
+        "Bull",
+        "Eagle"
+      ],
+      "a": "Snake",
+      "e": "Numbers 21:8-9 describes the bronze snake made to heal the people.",
+      "d": "easy"
+    },
+    {
+      "q": "What animal's hair was John the Baptist's clothing made of?",
+      "o": [
+        "Camel",
+        "Goat",
+        "Sheep",
+        "Wolf"
+      ],
+      "a": "Camel",
+      "e": "Matthew 3:4 and Mark 1:6 say his clothes were made of camel's hair.",
+      "d": "easy"
+    },
+    {
+      "q": "Which animal is associated with the 'Scapegoat' on the Day of Atonement?",
+      "o": [
+        "Goat",
+        "Lamb",
+        "Bull",
+        "Ram"
+      ],
+      "a": "Goat",
+      "e": "Leviticus 16:8-10 describes the lot for the scapegoat.",
+      "d": "medium"
+    },
+    {
+      "q": "What bird did Jesus say would gather her chicks under her wings?",
+      "o": [
+        "Hen",
+        "Eagle",
+        "Dove",
+        "Sparrow"
+      ],
+      "a": "Hen",
+      "e": "Matthew 23:37 and Luke 13:34 express Jesus' desire to gather Jerusalem.",
+      "d": "easy"
+    },
+    {
+      "q": "Which animal is the first to be mentioned by name in the Bible?",
+      "o": [
+        "Serpent",
+        "Lion",
+        "Lamb",
+        "Dove"
+      ],
+      "a": "Serpent",
+      "e": "Genesis 3:1 is the first specific animal name (nachash).",
+      "d": "hard"
+    },
+    {
+      "q": "What animal did the Israelites eat in the wilderness that was like coriander seed?",
+      "o": [
+        "Manna (not an animal)",
+        "Quail",
+        "Locusts",
+        "Fish"
+      ],
+      "a": "Manna (not an animal)",
+      "e": "Exodus 16:31 describes manna; though not an animal, it's a common trick question.",
+      "d": "medium"
+    },
+    {
+      "q": "Which animal is the smallest of all seeds compared to in a parable?",
+      "o": [
+        "Mustard seed (not an animal)",
+        "Ant",
+        "Gnat",
+        "Flea"
+      ],
+      "a": "Mustard seed (not an animal)",
+      "e": "Matthew 13:31-32; often confused with animal metaphors.",
+      "d": "easy"
+    },
+    {
+      "q": "What animal did the four living creatures in Revelation resemble?",
+      "o": [
+        "Lion, Ox, Man, Eagle",
+        "Lamb, Wolf, Lion, Bear",
+        "Dragon, Beast, False Prophet, Horse",
+        "Seven-headed monster"
+      ],
+      "a": "Lion, Ox, Man, Eagle",
+      "e": "Revelation 4:7 describes the appearance of the four living creatures.",
+      "d": "hard"
+    },
+    {
+      "q": "Which animal did Jesus say it is easier for a camel to go through the eye of?",
+      "o": [
+        "Needle",
+        "Gate",
+        "Door",
+        "Window"
+      ],
+      "a": "Needle",
+      "e": "Matthew 19:24 and Mark 10:25.",
+      "d": "easy"
+    },
+    {
+      "q": "What creature did the Israelites worship while Moses was on Mount Sinai?",
+      "o": [
+        "Golden Calf",
+        "Bronze Snake",
+        "Silver Lion",
+        "Stone Eagle"
+      ],
+      "a": "Golden Calf",
+      "e": "Exodus 32.",
+      "d": "easy"
+    },
+    {
+      "q": "Which animal did the Gerasene demons enter before drowning?",
+      "o": [
+        "Pigs",
+        "Goats",
+        "Sheep",
+        "Cattle"
+      ],
+      "a": "Pigs",
+      "e": "Mark 5:11-13 records the demons entering a herd of about 2,000 pigs.",
+      "d": "easy"
+    },
+    {
+      "q": "What bird is mentioned in Psalm 103:5 as being renewed in youth?",
+      "o": [
+        "Eagle",
+        "Phoenix",
+        "Dove",
+        "Raven"
+      ],
+      "a": "Eagle",
+      "e": "The verse says 'your youth is renewed like the eagle’s'.",
+      "d": "medium"
+    },
+    {
+      "q": "Which animal is the 'Red Heifer' used for purification?",
+      "o": [
+        "Cow",
+        "Goat",
+        "Sheep",
+        "Bull"
+      ],
+      "a": "Cow",
+      "e": "Numbers 19 describes the sacrifice of the red heifer.",
+      "d": "hard"
+    },
+    {
+      "q": "What animal did Jacob use to deceive his father Isaac into thinking he was Esau?",
+      "o": [
+        "Goat",
+        "Sheep",
+        "Ram",
+        "Deer"
+      ],
+      "a": "Goat",
+      "e": "Genesis 27:16 says Rebekah put goat skins on Jacob's hands.",
+      "d": "medium"
+    },
+    {
+      "q": "Which creature is the source of 'Beelzebul' (Lord of the ____)?",
+      "o": [
+        "Flies",
+        "Bees",
+        "Locusts",
+        "Ants"
+      ],
+      "a": "Flies",
+      "e": "Beelzebub is often translated as 'Lord of the Flies'.",
+      "d": "hard"
+    },
+    {
+      "q": "What animal did God use to provide oil for a widow?",
+      "o": [
+        "None, it was a jar of oil",
+        "Olive tree",
+        "Bee",
+        "Sheep"
+      ],
+      "a": "None, it was a jar of oil",
+      "e": "2 Kings 4:1-7; a common misconception that an animal was involved.",
+      "d": "medium"
+    },
+    {
+      "q": "Which animal is the symbol of the tribe of Benjamin?",
+      "o": [
+        "Wolf",
+        "Lion",
+        "Deer",
+        "Ox"
+      ],
+      "a": "Wolf",
+      "e": "Genesis 49:27 says 'Benjamin is a ravenous wolf'.",
+      "d": "hard"
+    },
+    {
+      "q": "What animal did Abraham see caught in a thicket?",
+      "o": [
+        "Ram",
+        "Lamb",
+        "Goat",
+        "Deer"
+      ],
+      "a": "Ram",
+      "e": "Genesis 22:13.",
+      "d": "easy"
+    },
+    {
+      "q": "Which animal is the 'King of Beasts' in biblical imagery?",
+      "o": [
+        "Lion",
+        "Behemoth",
+        "Leviathan",
+        "Eagle"
+      ],
+      "a": "Lion",
+      "e": "Proverbs 30:30 refers to the lion as mighty among beasts.",
+      "d": "medium"
+    },
+    {
+      "q": "What creatures did the Israelites complain about that led God to send venomous snakes?",
+      "o": [
+        "Snakes",
+        "Scorpions",
+        "Lions",
+        "Wolves"
+      ],
+      "a": "Snakes",
+      "e": "Numbers 21:6.",
+      "d": "easy"
+    },
+    {
+      "q": "Which animal is mentioned as being 'wise' in Proverbs 30?",
+      "o": [
+        "Ants, Rock badgers, Locusts, Lizards",
+        "Lions, Bears, Eagles, Snakes",
+        "Foxes, Wolves, Dogs, Cats",
+        "Fish, Birds, Reptiles, Mammals"
+      ],
+      "a": "Ants, Rock badgers, Locusts, Lizards",
+      "e": "Proverbs 30:24-28 lists these four small but wise creatures.",
+      "d": "hard"
+    },
+    {
+      "q": "What animal did the king of Nineveh command to fast along with the people?",
+      "o": [
+        "All animals (herds and flocks)",
+        "Only horses",
+        "Only camels",
+        "Only dogs"
+      ],
+      "a": "All animals (herds and flocks)",
+      "e": "Jonah 3:7-8 says neither man nor beast should taste anything.",
+      "d": "hard"
+    },
+    {
+      "q": "What animal did Jesus say would crow before Peter denied him three times?",
+      "o": [
+        "Rooster",
+        "Crow",
+        "Eagle",
+        "Sparrow"
+      ],
+      "a": "Rooster",
+      "e": "Matthew 26:34, Mark 14:30, Luke 22:34, John 13:38.",
+      "d": "easy"
+    },
+    {
+      "q": "Which animal is used to describe the character of King Herod by Jesus?",
+      "o": [
+        "Fox",
+        "Wolf",
+        "Viper",
+        "Lion"
+      ],
+      "a": "Fox",
+      "e": "Luke 13:32 records Jesus calling Herod 'that fox'.",
+      "d": "medium"
+    },
+    {
+      "q": "What animal did the Egyptian army ride in pursuit of the Israelites?",
+      "o": [
+        "Horses",
+        "Camels",
+        "Donkeys",
+        "Elephants"
+      ],
+      "a": "Horses",
+      "e": "Exodus 14:9 and 23 mention horses and chariots.",
+      "d": "easy"
+    },
+    {
+      "q": "Which animal is mentioned as having its path in the sea in Proverbs 30?",
+      "o": [
+        "Snake",
+        "Ship (not an animal)",
+        "Fish",
+        "Whale"
+      ],
+      "a": "Snake",
+      "e": "Proverbs 30:19 mentions the way of a serpent on a rock, but many versions also mention the path of a ship.",
+      "d": "hard"
+    },
+    {
+      "q": "What animal did Elisha use to curse the youths who mocked him?",
+      "o": [
+        "Two female bears",
+        "Two lions",
+        "Two wolves",
+        "Two leopards"
+      ],
+      "a": "Two female bears",
+      "e": "2 Kings 2:23-24 records two bears coming out of the woods.",
+      "d": "medium"
+    },
+    {
+      "q": "Which animal is associated with the constellation 'The Great Bear' (Orion) in Job?",
+      "o": [
+        "Bear",
+        "Lion",
+        "Eagle",
+        "Moth"
+      ],
+      "a": "Bear",
+      "e": "Job 9:9 and 38:32 (Arcturus, Orion, Pleiades).",
+      "d": "hard"
+    },
+    {
+      "q": "What animal did the prophet Nathan use in his parable to King David?",
+      "o": [
+        "Ewe lamb",
+        "Bull",
+        "Goat",
+        "Ram"
+      ],
+      "a": "Ewe lamb",
+      "e": "2 Samuel 12:1-4 describes the poor man's little ewe lamb.",
+      "d": "easy"
+    },
+    {
+      "q": "Which animal did the Israelites find in the carcass of a lion?",
+      "o": [
+        "Bees (and honey)",
+        "Ants",
+        "Flies",
+        "Worms"
+      ],
+      "a": "Bees (and honey)",
+      "e": "Judges 14:8 records Samson finding a swarm of bees and honey.",
+      "d": "medium"
+    },
+    {
+      "q": "What animal did God send to destroy the gourd plant that shaded Jonah?",
+      "o": [
+        "Worm",
+        "Locust",
+        "Beetle",
+        "Caterpillar"
+      ],
+      "a": "Worm",
+      "e": "Jonah 4:7 says God provided a worm at dawn the next day.",
+      "d": "medium"
+    },
+    {
+      "q": "Which animal is used to describe the speed of the Chaldean horses?",
+      "o": [
+        "Leopards",
+        "Eagles",
+        "Wolves",
+        "Lions"
+      ],
+      "a": "Leopards",
+      "e": "Habakkuk 1:8 says their horses are swifter than leopards.",
+      "d": "hard"
+    },
+    {
+      "q": "What animal did the prophet Habakkuk say his feet would be like?",
+      "o": [
+        "Deer (Hind's feet)",
+        "Mountain goat",
+        "Eagle",
+        "Gazelle"
+      ],
+      "a": "Deer (Hind's feet)",
+      "e": "Habakkuk 3:19 says 'He makes my feet like the feet of a deer'.",
+      "d": "medium"
+    },
+    {
+      "q": "Which animal is the 'Little Fox' that ruins the vineyards in Song of Solomon?",
+      "o": [
+        "Fox",
+        "Jackal",
+        "Wolf",
+        "Badger"
+      ],
+      "a": "Fox",
+      "e": "Song of Solomon 2:15.",
+      "d": "medium"
+    },
+    {
+      "q": "What animal did the people of Malta think Paul was after he was bitten by a viper?",
+      "o": [
+        "A murderer (then a god)",
+        "A snake charmer",
+        "A sorcerer",
+        "A prophet"
+      ],
+      "a": "A murderer (then a god)",
+      "e": "Acts 28:3-6; the viper's bite led to their conclusion.",
+      "d": "medium"
+    },
+    {
+      "q": "Which animal is mentioned in the Ten Commandments in relation to rest?",
+      "o": [
+        "Ox and Donkey",
+        "Sheep and Goat",
+        "Horse and Camel",
+        "All livestock"
+      ],
+      "a": "All livestock",
+      "e": "Exodus 20:10 says 'nor your animals'.",
+      "d": "medium"
+    },
+    {
+      "q": "What animal did the Israelites eat that caused a plague in Numbers 11?",
+      "o": [
+        "Quail",
+        "Manna",
+        "Fish",
+        "Bread"
+      ],
+      "a": "Quail",
+      "e": "Numbers 11:33 says the Lord's anger was kindled while the meat was between their teeth.",
+      "d": "medium"
+    },
+    {
+      "q": "Which animal is used as a metaphor for the tribe of Issachar?",
+      "o": [
+        "Rawboned donkey",
+        "Mighty lion",
+        "Swift deer",
+        "Ravenous wolf"
+      ],
+      "a": "Rawboned donkey",
+      "e": "Genesis 49:14.",
+      "d": "hard"
+    },
+    {
+      "q": "What creature did the writer of Ecclesiastes say is better than a dead lion?",
+      "o": [
+        "Living dog",
+        "Living sparrow",
+        "Living ant",
+        "Living man"
+      ],
+      "a": "Living dog",
+      "e": "Ecclesiastes 9:4.",
+      "d": "medium"
+    },
+    {
+      "q": "Which animal is the source of the 'Stiff-necked' metaphor?",
+      "o": [
+        "Ox",
+        "Donkey",
+        "Horse",
+        "Camel"
+      ],
+      "a": "Ox",
+      "e": "The metaphor comes from an ox refusing the yoke.",
+      "d": "hard"
+    },
+    {
+      "q": "What animal did the prophet Zechariah see in a vision with four chariots?",
+      "o": [
+        "Horses",
+        "Oxen",
+        "Lions",
+        "Eagles"
+      ],
+      "a": "Horses",
+      "e": "Zechariah 6:1-3 describes red, black, white, and dappled horses.",
+      "d": "hard"
+    },
+    {
+      "q": "Which animal is the 'Hart' thirsty for water in Psalm 42?",
+      "o": [
+        "Deer",
+        "Gazelle",
+        "Sheep",
+        "Goat"
+      ],
+      "a": "Deer",
+      "e": "Psalm 42:1 'As the hart panteth after the water brooks'.",
+      "d": "medium"
+    },
+    {
+      "q": "What animal did the tribe of Dan resemble, according to Moses?",
+      "o": [
+        "Lion's cub",
+        "Serpent",
+        "Wolf",
+        "Ox"
+      ],
+      "a": "Lion's cub",
+      "e": "Deuteronomy 33:22; Genesis 49:17 says a serpent.",
+      "d": "hard"
+    },
+    {
+      "q": "Which animal is mentioned as being in the 'lion's mouth' in 2 Timothy 4?",
+      "o": [
+        "Lion",
+        "Devil",
+        "Nero",
+        "None of the above"
+      ],
+      "a": "Lion",
+      "e": "Paul says he was delivered from the lion's mouth.",
+      "d": "medium"
+    },
+    {
+      "q": "What animal did the people of Israel bring as an offering of 'Two turtledoves'?",
+      "o": [
+        "Birds",
+        "Mammals",
+        "Reptiles",
+        "Fish"
+      ],
+      "a": "Birds",
+      "e": "Leviticus 12:8 and Luke 2:24.",
+      "d": "easy"
+    },
+    {
+      "q": "Which animal is used to describe the 'Great Dragon' in Revelation 12?",
+      "o": [
+        "Serpent",
+        "Beast",
+        "Lion",
+        "Leviathan"
+      ],
+      "a": "Serpent",
+      "e": "Revelation 12:9 calls him 'that ancient serpent called the devil'.",
+      "d": "easy"
+    },
+    {
+      "q": "What animal did the prophet Isaiah say would lie down with the lamb in the new kingdom?",
+      "o": [
+        "Wolf",
+        "Lion",
+        "Leopard",
+        "Bear"
+      ],
+      "a": "Wolf",
+      "e": "Isaiah 11:6 'The wolf will live with the lamb'.",
+      "d": "easy"
+    },
+    {
+      "q": "Which animal is used to describe the 'Beast' coming out of the sea in Revelation 13?",
+      "o": [
+        "Leopard, Bear, Lion",
+        "Dragon, Snake, Scorpion",
+        "Wolf, Fox, Jackal",
+        "Eagle, Hawk, Falcon"
+      ],
+      "a": "Leopard, Bear, Lion",
+      "e": "Revelation 13:2 says the beast resembled a leopard, with feet like a bear and mouth like a lion.",
+      "d": "hard"
+    },
+    {
+      "q": "What animal did the wise men most likely travel on?",
+      "o": [
+        "Camels",
+        "Horses",
+        "Donkeys",
+        "Elephants"
+      ],
+      "a": "Camels",
+      "e": "Tradition and geography suggest camels for their journey from the East.",
+      "d": "easy"
+    },
+    {
+      "q": "Which animal is the 'Pelican' or 'Owl' of the wilderness in Psalm 102?",
+      "o": [
+        "Birds",
+        "Mammals",
+        "Insects",
+        "Fish"
+      ],
+      "a": "Birds",
+      "e": "Psalm 102:6 uses these birds to describe loneliness.",
+      "d": "hard"
+    },
+    {
+      "q": "What animal did Jesus say his followers were like among wolves?",
+      "o": [
+        "Sheep",
+        "Lambs",
+        "Doves",
+        "Both A and B"
+      ],
+      "a": "Both A and B",
+      "e": "Matthew 10:16 (sheep) and Luke 10:3 (lambs).",
+      "d": "medium"
+    },
+    {
+      "q": "Which animal is used to describe the 'Sow' returning to her wallowing in the mire?",
+      "o": [
+        "Pig",
+        "Dog",
+        "Cow",
+        "Sheep"
+      ],
+      "a": "Pig",
+      "e": "2 Peter 2:22.",
+      "d": "medium"
+    },
+    {
+      "q": "What animal did the Israelites find in the wilderness that was like 'bdellium'?",
+      "o": [
+        "Manna (not an animal)",
+        "Locust",
+        "Pearl",
+        "Insect"
+      ],
+      "a": "Manna (not an animal)",
+      "e": "Numbers 11:7 compares manna to bdellium (a resin).",
+      "d": "hard"
+    },
+    {
+      "q": "Which animal is the 'Cormorant' or 'Bittern' mentioned in prophecies of destruction?",
+      "o": [
+        "Birds",
+        "Reptiles",
+        "Mammals",
+        "Fish"
+      ],
+      "a": "Birds",
+      "e": "Isaiah 34:11 and Zephaniah 2:14 (KJV).",
+      "d": "hard"
+    },
+    {
+      "q": "What animal did the prophet Ezekiel see with four faces?",
+      "o": [
+        "Man, Lion, Ox, Eagle",
+        "Lamb, Wolf, Bear, Leopard",
+        "Dragon, Beast, Snake, Scorpion",
+        "None of the above"
+      ],
+      "a": "Man, Lion, Ox, Eagle",
+      "e": "Ezekiel 1:10.",
+      "d": "hard"
+    },
+    {
+      "q": "Which animal is the 'Mole' or 'Bat' mentioned in Isaiah 2?",
+      "o": [
+        "Mammals",
+        "Birds",
+        "Reptiles",
+        "Insects"
+      ],
+      "a": "Mammals",
+      "e": "Isaiah 2:20 says idols will be thrown to moles and bats.",
+      "d": "hard"
+    },
+    {
+      "q": "What animal did the psalmist say God 'delights not in the strength of'?",
+      "o": [
+        "Horse",
+        "Ox",
+        "Lion",
+        "Man"
+      ],
+      "a": "Horse",
+      "e": "Psalm 147:10.",
+      "d": "hard"
+    },
+    {
+      "q": "Which animal is the 'Dragon' in the KJV translation of the Old Testament often referring to?",
+      "o": [
+        "Jackal",
+        "Snake",
+        "Whale",
+        "Sea monster"
+      ],
+      "a": "Jackal",
+      "e": "Many modern translations use 'jackal' where KJV uses 'dragon' in certain OT passages.",
+      "d": "hard"
+    },
+    {
+      "q": "What animal did the people of Israel bring as a 'Sin offering' if they were poor?",
+      "o": [
+        "Two pigeons or two turtledoves",
+        "One lamb",
+        "One goat",
+        "One bull"
+      ],
+      "a": "Two pigeons or two turtledoves",
+      "e": "Leviticus 5:7.",
+      "d": "medium"
+    },
+    {
+      "q": "Which animal is used to describe the 'Unicorn' in the KJV?",
+      "o": [
+        "Wild ox",
+        "Rhino",
+        "Horse",
+        "Narwhal"
+      ],
+      "a": "Wild ox",
+      "e": "Modern scholars agree the 're'em' was a wild ox or aurochs.",
+      "d": "hard"
+    },
+    {
+      "q": "What animal did the prophet Amos see being eaten by a lion in a metaphor?",
+      "o": [
+        "Sheep (two leg bones or a piece of an ear)",
+        "Goat",
+        "Cow",
+        "Donkey"
+      ],
+      "a": "Sheep (two leg bones or a piece of an ear)",
+      "e": "Amos 3:12.",
+      "d": "hard"
+    },
+    {
+      "q": "Which animal is the 'Leviathan' in Job often identified with?",
+      "o": [
+        "Crocodile",
+        "Whale",
+        "Dinosaur",
+        "Sea monster"
+      ],
+      "a": "Crocodile",
+      "e": "Many scholars identify the description in Job 41 with a crocodile.",
+      "d": "medium"
+    },
+    {
+      "q": "What animal did the prophet Hosea say God would be like to Israel in judgment?",
+      "o": [
+        "Lion, Leopard, Bear",
+        "Wolf, Fox, Jackal",
+        "Eagle, Hawk, Vulture",
+        "Snake, Scorpion, Spider"
+      ],
+      "a": "Lion, Leopard, Bear",
+      "e": "Hosea 13:7-8.",
+      "d": "hard"
+    },
+    {
+      "q": "Which animal is the 'Spider' in Proverbs 30 (KJV) likely to be in modern translations?",
+      "o": [
+        "Lizard",
+        "Gekko",
+        "Spider",
+        "Ant"
+      ],
+      "a": "Lizard",
+      "e": "Proverbs 30:28 is often translated as 'lizard' today.",
+      "d": "hard"
+    },
+    {
+      "q": "What animal did the apostle Paul use to describe the 'Evil workers' in Philippians 3?",
+      "o": [
+        "Dogs",
+        "Wolves",
+        "Vipers",
+        "Lions"
+      ],
+      "a": "Dogs",
+      "e": "Philippians 3:2 'Watch out for those dogs'.",
+      "d": "medium"
+    },
+    {
+      "q": "Which animal is the 'Worm' that never dies in Mark 9?",
+      "o": [
+        "Worm",
+        "Maggot",
+        "Snake",
+        "None, it's a metaphor"
+      ],
+      "a": "Worm",
+      "e": "Jesus quotes Isaiah 66:24 regarding the final judgment.",
+      "d": "medium"
+    },
+    {
+      "q": "What animal did the psalmist say God makes 'to skip like a calf'?",
+      "o": [
+        "Lebanon and Sirion",
+        "Mountains",
+        "Trees",
+        "Hills"
+      ],
+      "a": "Lebanon and Sirion",
+      "e": "Psalm 29:6.",
+      "d": "hard"
+    },
+    {
+      "q": "Which animal is the 'Asp' or 'Adder' mentioned in Psalm 91?",
+      "o": [
+        "Snakes",
+        "Lizards",
+        "Spiders",
+        "Scorpions"
+      ],
+      "a": "Snakes",
+      "e": "Psalm 91:13.",
+      "d": "medium"
+    },
+    {
+      "q": "What animal did the prophet Micah say he would wail like?",
+      "o": [
+        "Jackal",
+        "Owl",
+        "Ostrich",
+        "Both A and C"
+      ],
+      "a": "Both A and C",
+      "e": "Micah 1:8 says 'I will wail like jackals and moan like owls (ostriches)'.",
+      "d": "hard"
+    },
+    {
+      "q": "Which animal is the 'Behemoth' in Job often identified with?",
+      "o": [
+        "Hippopotamus",
+        "Elephant",
+        "Brachiosaurus",
+        "Rhino"
+      ],
+      "a": "Hippopotamus",
+      "e": "The description in Job 40:15-24 strongly resembles a hippo.",
+      "d": "medium"
+    },
+    {
+      "q": "What animal did the people of Israel find in the 'Land of milk and honey' that was huge?",
+      "o": [
+        "Grapes (not an animal)",
+        "Grasshoppers (the spies felt like)",
+        "Lions",
+        "Giants"
+      ],
+      "a": "Grasshoppers (the spies felt like)",
+      "e": "Numbers 13:33 'We seemed like grasshoppers in our own eyes'.",
+      "d": "medium"
+    },
+    {
+      "q": "Which animal is the 'Lion of the tribe of Judah'?",
+      "o": [
+        "Jesus",
+        "David",
+        "Solomon",
+        "Jacob"
+      ],
+      "a": "Jesus",
+      "e": "Revelation 5:5.",
+      "d": "easy"
+    },
+    {
+      "q": "What animal did the prophet Malachi say the 'Sun of Righteousness' would cause the people to skip like?",
+      "o": [
+        "Calves released from the stall",
+        "Lambs in the field",
+        "Deer on the mountain",
+        "Birds in the sky"
+      ],
+      "a": "Calves released from the stall",
+      "e": "Malachi 4:2.",
+      "d": "hard"
+    },
+    {
+      "q": "Which animal is the 'Goat' in the parable of the sheep and goats representing?",
+      "o": [
+        "The wicked",
+        "The righteous",
+        "The Gentiles",
+        "The Jews"
+      ],
+      "a": "The wicked",
+      "e": "Matthew 25:31-46.",
+      "d": "easy"
+    },
+    {
+      "q": "What animal did the wise man in Proverbs 30 say he did not understand 'The way of a ____ on a rock'?",
+      "o": [
+        "Serpent",
+        "Eagle",
+        "Ship",
+        "Man"
+      ],
+      "a": "Serpent",
+      "e": "Proverbs 30:19.",
+      "d": "medium"
+    }
+  ],
+  "Bible Geography": [
+    {
+      "q": "Where did God place the first man and woman?",
+      "o": [
+        "Canaan",
+        "Egypt",
+        "Eden",
+        "Zion"
+      ],
+      "a": 2,
+      "e": "Genesis 2:8 — The Lord God had planted a garden in the east, in Eden.",
+      "d": "easy"
+    },
+    {
+      "q": "On which mountain did Noah's ark rest after the flood?",
+      "o": [
+        "Sinai",
+        "Ararat",
+        "Nebo",
+        "Carmel"
+      ],
+      "a": 1,
+      "e": "Genesis 8:4 — The ark came to rest on the mountains of Ararat.",
+      "d": "easy"
+    },
+    {
+      "q": "Where was Abraham's original home before he moved to Canaan?",
+      "o": [
+        "Ur of the Chaldeans",
+        "Harun",
+        "Babylon",
+        "Nineveh"
+      ],
+      "a": 0,
+      "e": "Genesis 11:31 — They set out from Ur of the Chaldeans to go to Canaan.",
+      "d": "medium"
+    },
+    {
+      "q": "Which river did the Israelites cross to enter the Promised Land?",
+      "o": [
+        "Nile",
+        "Euphrates",
+        "Jordan",
+        "Tigris"
+      ],
+      "a": 2,
+      "e": "Joshua 3:17 — The whole nation of Israel crossed on dry ground over the Jordan.",
+      "d": "easy"
+    },
+    {
+      "q": "What city's walls fell down after the Israelites marched around it?",
+      "o": [
+        "Ai",
+        "Jericho",
+        "Gibeon",
+        "Hazor"
+      ],
+      "a": 1,
+      "e": "Joshua 6:20 — When the trumpets sounded, the wall collapsed.",
+      "d": "easy"
+    },
+    {
+      "q": "To which city was Jonah told to go and preach?",
+      "o": [
+        "Tarshish",
+        "Nineveh",
+        "Joppa",
+        "Tyre"
+      ],
+      "a": 1,
+      "e": "Jonah 1:2 — 'Go to the great city of Nineveh and preach against it.'",
+      "d": "easy"
+    },
+    {
+      "q": "Where was Jesus born?",
+      "o": [
+        "Nazareth",
+        "Jerusalem",
+        "Bethlehem",
+        "Capernaum"
+      ],
+      "a": 2,
+      "e": "Matthew 2:1 — Jesus was born in Bethlehem in Judea.",
+      "d": "easy"
+    },
+    {
+      "q": "In which river was Jesus baptized?",
+      "o": [
+        "Jordan",
+        "Nile",
+        "Abana",
+        "Pharpar"
+      ],
+      "a": 0,
+      "e": "Matthew 3:13 — Then Jesus came from Galilee to the Jordan to be baptized by John.",
+      "d": "easy"
+    },
+    {
+      "q": "On which mountain did Moses receive the Ten Commandments?",
+      "o": [
+        "Mount Nebo",
+        "Mount Sinai",
+        "Mount Hermon",
+        "Mount Tabor"
+      ],
+      "a": 1,
+      "e": "Exodus 19:20 — The Lord descended to the top of Mount Sinai and called Moses.",
+      "d": "easy"
+    },
+    {
+      "q": "What was the name of the place where Jesus was crucified?",
+      "o": [
+        "Gethsemane",
+        "Golgotha",
+        "Bethesda",
+        "Siloam"
+      ],
+      "a": 1,
+      "e": "John 19:17 — Carrying his own cross, he went out to the place of the Skull (which in Aramaic is called Golgotha).",
+      "d": "easy"
+    },
+    {
+      "q": "Where did the Israelites live in Egypt during their captivity?",
+      "o": [
+        "Cairo",
+        "Thebes",
+        "Goshen",
+        "Alexandria"
+      ],
+      "a": 2,
+      "e": "Genesis 47:27 — Now the Israelites settled in Egypt in the region of Goshen.",
+      "d": "medium"
+    },
+    {
+      "q": "Which sea did the Israelites cross when escaping from Egypt?",
+      "o": [
+        "Dead Sea",
+        "Red Sea",
+        "Sea of Galilee",
+        "Mediterranean Sea"
+      ],
+      "a": 1,
+      "e": "Exodus 14:21-22 — The Lord drove the sea back with a strong east wind and turned it into dry land.",
+      "d": "easy"
+    },
+    {
+      "q": "Where did Jesus perform his first miracle (turning water into wine)?",
+      "o": [
+        "Cana",
+        "Nazareth",
+        "Bethany",
+        "Nain"
+      ],
+      "a": 0,
+      "e": "John 2:11 — What Jesus did here in Cana of Galilee was the first of the signs through which he revealed his glory.",
+      "d": "easy"
+    },
+    {
+      "q": "What city is known as the 'City of David'?",
+      "o": [
+        "Hebron",
+        "Bethlehem",
+        "Jerusalem",
+        "Shechem"
+      ],
+      "a": 2,
+      "e": "2 Samuel 5:7 — David captured the fortress of Zion—which is the City of David.",
+      "d": "medium"
+    },
+    {
+      "q": "Where was the pool of Siloam located?",
+      "o": [
+        "Bethlehem",
+        "Jericho",
+        "Jerusalem",
+        "Nazareth"
+      ],
+      "a": 2,
+      "e": "John 9:7 — 'Go,' he told him, 'wash in the Pool of Siloam' (this word means 'Sent'). So the man went and washed, and came home seeing.",
+      "d": "medium"
+    },
+    {
+      "q": "On which mountain did Elijah challenge the prophets of Baal?",
+      "o": [
+        "Mount Carmel",
+        "Mount Horeb",
+        "Mount Zion",
+        "Mount Moriah"
+      ],
+      "a": 0,
+      "e": "1 Kings 18:19 — 'Now summon the people from all over Israel to meet me on Mount Carmel.'",
+      "d": "medium"
+    },
+    {
+      "q": "Where did Elijah flee to after Queen Jezebel threatened his life?",
+      "o": [
+        "Damascus",
+        "Mount Horeb",
+        "Sidon",
+        "Jezreel"
+      ],
+      "a": 1,
+      "e": "1 Kings 19:8 — He traveled forty days and forty nights until he reached Horeb, the mountain of God.",
+      "d": "hard"
+    },
+    {
+      "q": "In what city did Paul see an altar 'To an Unknown God'?",
+      "o": [
+        "Corinth",
+        "Ephesus",
+        "Athens",
+        "Rome"
+      ],
+      "a": 2,
+      "e": "Acts 17:22-23 — Paul then stood up in the meeting of the Areopagus and said: 'People of Athens...'",
+      "d": "medium"
+    },
+    {
+      "q": "Where was the island of Patmos where John received the Revelation?",
+      "o": [
+        "Aegean Sea",
+        "Dead Sea",
+        "Red Sea",
+        "Adriatic Sea"
+      ],
+      "a": 0,
+      "e": "Revelation 1:9 — I, John... was on the island of Patmos because of the word of God.",
+      "d": "medium"
+    },
+    {
+      "q": "Which city was the capital of the Northern Kingdom of Israel?",
+      "o": [
+        "Jerusalem",
+        "Samaria",
+        "Shechem",
+        "Dan"
+      ],
+      "a": 1,
+      "e": "1 Kings 16:24 — Omri bought the hill of Samaria from Shemer... and called the city he built Samaria.",
+      "d": "medium"
+    },
+    {
+      "q": "Where did the Queen of Sheba travel from to visit Solomon?",
+      "o": [
+        "Egypt",
+        "Assyria",
+        "South (Sheba)",
+        "Babylon"
+      ],
+      "a": 2,
+      "e": "1 Kings 10:1 — When the queen of Sheba heard about the fame of Solomon and his relationship to the Lord, she came to test Solomon with hard questions.",
+      "d": "medium"
+    },
+    {
+      "q": "Where was Paul born?",
+      "o": [
+        "Tarsus",
+        "Antioch",
+        "Damascus",
+        "Jerusalem"
+      ],
+      "a": 0,
+      "e": "Acts 22:3 — 'I am a Jew, born in Tarsus of Cilicia...'",
+      "d": "medium"
+    },
+    {
+      "q": "In what city were the disciples first called 'Christians'?",
+      "o": [
+        "Jerusalem",
+        "Antioch",
+        "Rome",
+        "Ephesus"
+      ],
+      "a": 1,
+      "e": "Acts 11:26 — The disciples were called Christians first at Antioch.",
+      "d": "medium"
+    },
+    {
+      "q": "Where did Moses die?",
+      "o": [
+        "Mount Sinai",
+        "Mount Nebo",
+        "Mount Hor",
+        "Mount Carmel"
+      ],
+      "a": 1,
+      "e": "Deuteronomy 34:1 — Moses climbed Mount Nebo... there the Lord showed him the whole land.",
+      "d": "medium"
+    },
+    {
+      "q": "What was the capital of the Assyrian Empire to which Jonah was sent?",
+      "o": [
+        "Babylon",
+        "Nineveh",
+        "Susa",
+        "Assur"
+      ],
+      "a": 1,
+      "e": "Jonah 1:2 — 'Go to the great city of Nineveh...'",
+      "d": "easy"
+    },
+    {
+      "q": "Where was the pool of Bethesda?",
+      "o": [
+        "Jericho",
+        "Jerusalem",
+        "Bethlehem",
+        "Bethany"
+      ],
+      "a": 1,
+      "e": "John 5:2 — Now there is in Jerusalem near the Sheep Gate a pool... called Bethesda.",
+      "d": "medium"
+    },
+    {
+      "q": "To which city was Paul traveling when he saw a great light and heard Jesus' voice?",
+      "o": [
+        "Damascus",
+        "Rome",
+        "Jerusalem",
+        "Antioch"
+      ],
+      "a": 0,
+      "e": "Acts 9:3 — As he neared Damascus on his journey, suddenly a light from heaven flashed around him.",
+      "d": "easy"
+    },
+    {
+      "q": "Where was the garden of Gethsemane located?",
+      "o": [
+        "Mount of Olives",
+        "Mount Zion",
+        "Mount Moriah",
+        "Mount Tabor"
+      ],
+      "a": 0,
+      "e": "Matthew 26:30-36 — They went out to the Mount of Olives... Then Jesus went with his disciples to a place called Gethsemane.",
+      "d": "medium"
+    },
+    {
+      "q": "In which city did Jesus heal a man born blind by spitting on the ground and making mud?",
+      "o": [
+        "Jericho",
+        "Jerusalem",
+        "Bethany",
+        "Nazareth"
+      ],
+      "a": 1,
+      "e": "John 9:1-7 — As he went along, he saw a man blind from birth... He spat on the ground, made some mud with the saliva, and put it on the man's eyes.",
+      "d": "medium"
+    },
+    {
+      "q": "Where did the transfiguration of Jesus take place (traditionally)?",
+      "o": [
+        "Mount Hermon (or Tabor)",
+        "Mount Sinai",
+        "Mount Carmel",
+        "Mount Nebo"
+      ],
+      "a": 0,
+      "e": "Matthew 17:1 — Jesus took with him Peter, James and John... and led them up a high mountain by themselves.",
+      "d": "hard"
+    },
+    {
+      "q": "Which city did Joshua and the Israelites fail to capture at first because of Achan's sin?",
+      "o": [
+        "Jericho",
+        "Ai",
+        "Gibeon",
+        "Lachish"
+      ],
+      "a": 1,
+      "e": "Joshua 7:2-4 — About three thousand men went up; but they were routed by the men of Ai.",
+      "d": "medium"
+    },
+    {
+      "q": "Where was the Tabernacle located for most of the period of the Judges?",
+      "o": [
+        "Jerusalem",
+        "Shiloh",
+        "Bethel",
+        "Hebron"
+      ],
+      "a": 1,
+      "e": "Joshua 18:1 — The whole assembly of the Israelites gathered at Shiloh and set up the tent of meeting there.",
+      "d": "hard"
+    },
+    {
+      "q": "Where was the land of Uz, where Job lived?",
+      "o": [
+        "East of Israel",
+        "Egypt",
+        "Canaan",
+        "Mesopotamia"
+      ],
+      "a": 0,
+      "e": "Job 1:1 — In the land of Uz there lived a man whose name was Job.",
+      "d": "hard"
+    },
+    {
+      "q": "Which river runs through Babylon?",
+      "o": [
+        "Nile",
+        "Tigris",
+        "Euphrates",
+        "Jordan"
+      ],
+      "a": 2,
+      "e": "Jeremiah 51:63 — 'When you finish reading this scroll, tie a stone to it and throw it into the Euphrates.'",
+      "d": "medium"
+    },
+    {
+      "q": "Where did Jesus grow up?",
+      "o": [
+        "Bethlehem",
+        "Jerusalem",
+        "Nazareth",
+        "Capernaum"
+      ],
+      "a": 2,
+      "e": "Luke 2:39-40 — They returned to Galilee to their own town of Nazareth.",
+      "d": "easy"
+    },
+    {
+      "q": "What city was Paul's 'headquarters' for his missionary journeys (where he was sent from)?",
+      "o": [
+        "Jerusalem",
+        "Antioch",
+        "Ephesus",
+        "Corinth"
+      ],
+      "a": 1,
+      "e": "Acts 13:1-3 — In the church at Antioch... set apart for me Barnabas and Saul.",
+      "d": "medium"
+    },
+    {
+      "q": "Where did the Israelites cross the Red Sea into?",
+      "o": [
+        "Canaan",
+        "Wilderness of Shur (Sinai)",
+        "Moab",
+        "Edom"
+      ],
+      "a": 1,
+      "e": "Exodus 15:22 — Then Moses led Israel from the Red Sea and they went into the Desert of Shur.",
+      "d": "hard"
+    },
+    {
+      "q": "In which city did Peter see the vision of the sheet with animals?",
+      "o": [
+        "Joppa",
+        "Caesarea",
+        "Jerusalem",
+        "Lydda"
+      ],
+      "a": 0,
+      "e": "Acts 10:5-9 — 'Send men to Joppa to bring back a man named Simon who is called Peter.'",
+      "d": "hard"
+    },
+    {
+      "q": "Where was the centurion Cornelius living when he sent for Peter?",
+      "o": [
+        "Joppa",
+        "Caesarea",
+        "Jerusalem",
+        "Samaria"
+      ],
+      "a": 1,
+      "e": "Acts 10:1 — At Caesarea there was a man named Cornelius, a centurion.",
+      "d": "medium"
+    },
+    {
+      "q": "Which city was known for its goddess Artemis (Diana)?",
+      "o": [
+        "Corinth",
+        "Athens",
+        "Ephesus",
+        "Philippi"
+      ],
+      "a": 2,
+      "e": "Acts 19:28 — They were furious and began shouting: 'Great is Artemis of the Ephesians!'",
+      "d": "medium"
+    },
+    {
+      "q": "Where did the Israelites receive water from a rock (the first time)?",
+      "o": [
+        "Rephidim",
+        "Kadesh",
+        "Marah",
+        "Elim"
+      ],
+      "a": 0,
+      "e": "Exodus 17:1-6 — The Lord said to Moses... 'Strike the rock, and water will come out of it.'",
+      "d": "hard"
+    },
+    {
+      "q": "What was the name of the valley where David fought Goliath?",
+      "o": [
+        "Valley of Jezreel",
+        "Valley of Elah",
+        "Valley of Hinnom",
+        "Valley of Achor"
+      ],
+      "a": 1,
+      "e": "1 Samuel 17:2 — Saul and the Israelites assembled and camped in the Valley of Elah.",
+      "d": "medium"
+    },
+    {
+      "q": "Where did David hide from Saul in a cave?",
+      "o": [
+        "Engedi",
+        "Zion",
+        "Hebron",
+        "Bethel"
+      ],
+      "a": 0,
+      "e": "1 Samuel 24:1 — David was in the Desert of En Gedi.",
+      "d": "medium"
+    },
+    {
+      "q": "In which city did Jacob have his dream of a ladder reaching to heaven?",
+      "o": [
+        "Bethel (Luz)",
+        "Hebron",
+        "Shechem",
+        "Beersheba"
+      ],
+      "a": 0,
+      "e": "Genesis 28:19 — He called that place Bethel, though the city used to be called Luz.",
+      "d": "medium"
+    },
+    {
+      "q": "Where was the field of Machpelah, where the patriarchs were buried?",
+      "o": [
+        "Bethlehem",
+        "Hebron",
+        "Shechem",
+        "Bethel"
+      ],
+      "a": 1,
+      "e": "Genesis 23:19 — Abraham buried his wife Sarah in the cave in the field of Machpelah near Mamre (that is, Hebron).",
+      "d": "hard"
+    },
+    {
+      "q": "Which city did Lot flee to when Sodom was about to be destroyed?",
+      "o": [
+        "Zoar",
+        "Gaza",
+        "Hebron",
+        "Jericho"
+      ],
+      "a": 0,
+      "e": "Genesis 19:22 — 'Flee there quickly... That is why the town was called Zoar.'",
+      "d": "hard"
+    },
+    {
+      "q": "Where did Moses flee to after killing an Egyptian?",
+      "o": [
+        "Midian",
+        "Moab",
+        "Edom",
+        "Cush"
+      ],
+      "a": 0,
+      "e": "Exodus 2:15 — Moses fled from Pharaoh and went to live in Midian.",
+      "d": "medium"
+    },
+    {
+      "q": "In which city did Jesus meet a woman at the well?",
+      "o": [
+        "Sychar",
+        "Samaria",
+        "Nazareth",
+        "Jericho"
+      ],
+      "a": 0,
+      "e": "John 4:5 — So he came to a town in Samaria called Sychar.",
+      "d": "medium"
+    },
+    {
+      "q": "Where was the house of Simon the Tanner located?",
+      "o": [
+        "Joppa",
+        "Caesarea",
+        "Jerusalem",
+        "Nazareth"
+      ],
+      "a": 0,
+      "e": "Acts 10:6 — 'He is staying with Simon the tanner, whose house is by the sea.'",
+      "d": "hard"
+    },
+    {
+      "q": "Which city was the site of the first temple built by Solomon?",
+      "o": [
+        "Bethlehem",
+        "Jerusalem",
+        "Hebron",
+        "Samaria"
+      ],
+      "a": 1,
+      "e": "1 Kings 6:1 — Solomon began to build the temple of the Lord in Jerusalem.",
+      "d": "easy"
+    },
+    {
+      "q": "Where did the Babylonian exile take the Jews to?",
+      "o": [
+        "Assyria",
+        "Babylon",
+        "Egypt",
+        "Persia"
+      ],
+      "a": 1,
+      "e": "2 Kings 25:11 — Nebuzaradan... carried into exile the people who remained in the city.",
+      "d": "easy"
+    },
+    {
+      "q": "What river did Naaman dip in seven times to be healed of leprosy?",
+      "o": [
+        "Abana",
+        "Pharpar",
+        "Jordan",
+        "Nile"
+      ],
+      "a": 2,
+      "e": "2 Kings 5:14 — So he went down and dipped himself in the Jordan seven times.",
+      "d": "medium"
+    },
+    {
+      "q": "Where did the Israelites find 12 springs and 70 palm trees?",
+      "o": [
+        "Marah",
+        "Elim",
+        "Rephidim",
+        "Sinai"
+      ],
+      "a": 1,
+      "e": "Exodus 15:27 — Then they came to Elim, where there were twelve springs and seventy palm trees.",
+      "d": "hard"
+    },
+    {
+      "q": "Which city's name means 'House of Bread'?",
+      "o": [
+        "Bethlehem",
+        "Bethel",
+        "Bethany",
+        "Bethsaida"
+      ],
+      "a": 0,
+      "e": "Beth (House) + Lehem (Bread) = Bethlehem.",
+      "d": "medium"
+    },
+    {
+      "q": "Where was the mountain where God provided a ram as a substitute for Isaac?",
+      "o": [
+        "Moriah",
+        "Sinai",
+        "Nebo",
+        "Zion"
+      ],
+      "a": 0,
+      "e": "Genesis 22:2 — 'Go to the region of Moriah. Sacrifice him there.'",
+      "d": "medium"
+    },
+    {
+      "q": "In which city was Lazarus raised from the dead?",
+      "o": [
+        "Bethany",
+        "Bethsaida",
+        "Nazareth",
+        "Jerusalem"
+      ],
+      "a": 0,
+      "e": "John 11:1 — Now a man named Lazarus was sick. He was from Bethany.",
+      "d": "medium"
+    },
+    {
+      "q": "Where was the 'Way of the Sea' (Via Maris) primarily located?",
+      "o": [
+        "Along the Mediterranean coast",
+        "Along the Jordan River",
+        "Through the Negev desert",
+        "Through the mountains of Moab"
+      ],
+      "a": 0,
+      "e": "Isaiah 9:1 — ...by the Way of the Sea, beyond the Jordan, Galilee of the Gentiles.",
+      "d": "hard"
+    },
+    {
+      "q": "Which body of water is also known as the Sea of Tiberias?",
+      "o": [
+        "Dead Sea",
+        "Sea of Galilee",
+        "Red Sea",
+        "Mediterranean Sea"
+      ],
+      "a": 1,
+      "e": "John 6:1 — Sometime after this, Jesus crossed to the far shore of the Sea of Galilee (that is, the Sea of Tiberias).",
+      "d": "medium"
+    },
+    {
+      "q": "Where were the seven churches of Revelation located?",
+      "o": [
+        "Asia Minor (Modern Turkey)",
+        "Greece",
+        "Egypt",
+        "Italy"
+      ],
+      "a": 0,
+      "e": "Revelation 1:4 — John, To the seven churches in the province of Asia.",
+      "d": "medium"
+    },
+    {
+      "q": "What city was the home of Mary, Martha, and Lazarus?",
+      "o": [
+        "Bethany",
+        "Bethsaida",
+        "Bethlehem",
+        "Cana"
+      ],
+      "a": 0,
+      "e": "John 11:1 — Now a man named Lazarus was sick. He was from Bethany, the village of Mary and her sister Martha.",
+      "d": "medium"
+    },
+    {
+      "q": "Where did Paul have a vision of a man begging him to 'Come over and help us'?",
+      "o": [
+        "Macedonia",
+        "Cyprus",
+        "Crete",
+        "Galatia"
+      ],
+      "a": 0,
+      "e": "Acts 16:9 — During the night Paul had a vision of a man of Macedonia standing and begging him, 'Come over to Macedonia and help us.'",
+      "d": "medium"
+    },
+    {
+      "q": "In which city did Paul spend three years teaching in the lecture hall of Tyrannus?",
+      "o": [
+        "Ephesus",
+        "Corinth",
+        "Athens",
+        "Antioch"
+      ],
+      "a": 0,
+      "e": "Acts 19:9-10 — He took the disciples with him and had discussions daily in the lecture hall of Tyrannus. This went on for two years.",
+      "d": "hard"
+    },
+    {
+      "q": "Where was the island of Malta, where Paul was shipwrecked?",
+      "o": [
+        "Mediterranean Sea",
+        "Aegean Sea",
+        "Black Sea",
+        "Red Sea"
+      ],
+      "a": 0,
+      "e": "Acts 28:1 — Once safely on shore, we found out that the island was called Malta.",
+      "d": "medium"
+    },
+    {
+      "q": "Which city was the site of the first church council (Acts 15)?",
+      "o": [
+        "Jerusalem",
+        "Antioch",
+        "Rome",
+        "Constantinople"
+      ],
+      "a": 0,
+      "e": "Acts 15:2 — Paul and Barnabas were appointed... to go up to Jerusalem to see the apostles and elders about this question.",
+      "d": "medium"
+    },
+    {
+      "q": "Where did the Israelites make camp at the foot of Mount Sinai?",
+      "o": [
+        "Desert of Sinai",
+        "Desert of Paran",
+        "Desert of Zin",
+        "Desert of Shur"
+      ],
+      "a": 0,
+      "e": "Exodus 19:2 — After they set out from Rephidim, they entered the Desert of Sinai, and Israel camped there in the desert in front of the mountain.",
+      "d": "medium"
+    },
+    {
+      "q": "What city was the destination of the road where the Good Samaritan helped the wounded man?",
+      "o": [
+        "Jericho",
+        "Jerusalem",
+        "Bethlehem",
+        "Samaria"
+      ],
+      "a": 0,
+      "e": "Luke 10:30 — 'A man was going down from Jerusalem to Jericho...'",
+      "d": "medium"
+    },
+    {
+      "q": "Where did Jesus feed the 5,000?",
+      "o": [
+        "Near Bethsaida",
+        "Near Nazareth",
+        "Near Capernaum",
+        "Near Jericho"
+      ],
+      "a": 0,
+      "e": "Luke 9:10 — ...he took them with him and they withdrew by themselves to a town called Bethsaida (and the feeding followed).",
+      "d": "hard"
+    },
+    {
+      "q": "Which city was the home of Peter and Andrew (originally)?",
+      "o": [
+        "Bethsaida",
+        "Capernaum",
+        "Nazareth",
+        "Cana"
+      ],
+      "a": 0,
+      "e": "John 1:44 — Philip, like Andrew and Peter, was from the town of Bethsaida.",
+      "d": "hard"
+    },
+    {
+      "q": "Where did Jesus meet the two disciples on the day of His resurrection?",
+      "o": [
+        "Road to Emmaus",
+        "Road to Damascus",
+        "Road to Jericho",
+        "Road to Gaza"
+      ],
+      "a": 0,
+      "e": "Luke 24:13 — Now that same day two of them were going to a village called Emmaus.",
+      "d": "easy"
+    },
+    {
+      "q": "In which city did David reign as king for the first seven years?",
+      "o": [
+        "Hebron",
+        "Jerusalem",
+        "Bethlehem",
+        "Ziklag"
+      ],
+      "a": 0,
+      "e": "2 Samuel 5:5 — In Hebron he reigned over Judah seven years and six months.",
+      "d": "medium"
+    },
+    {
+      "q": "Where was the 'Pool of Siloam' located?",
+      "o": [
+        "Jerusalem",
+        "Bethlehem",
+        "Jericho",
+        "Nazareth"
+      ],
+      "a": 0,
+      "e": "John 9:7 — 'Go,' he told him, 'wash in the Pool of Siloam'.",
+      "d": "medium"
+    },
+    {
+      "q": "Which city was the site of the 'Altar of the Unknown God'?",
+      "o": [
+        "Athens",
+        "Rome",
+        "Corinth",
+        "Ephesus"
+      ],
+      "a": 0,
+      "e": "Acts 17:23 — ...I even found an altar with this inscription: TO AN UNKNOWN GOD.",
+      "d": "medium"
+    },
+    {
+      "q": "Where was the valley of dry bones in Ezekiel's vision?",
+      "o": [
+        "A valley",
+        "A mountain",
+        "A sea",
+        "A city"
+      ],
+      "a": 0,
+      "e": "Ezekiel 37:1 — ...and set me in the middle of a valley; it was full of bones.",
+      "d": "medium"
+    },
+    {
+      "q": "What city did King Ahab have his palace in (where Naboth's vineyard was)?",
+      "o": [
+        "Jezreel",
+        "Samaria",
+        "Jerusalem",
+        "Tirzah"
+      ],
+      "a": 0,
+      "e": "1 Kings 21:1 — ...Naboth the Jezreelite had a vineyard in Jezreel, close to the palace of Ahab king of Samaria.",
+      "d": "hard"
+    },
+    {
+      "q": "Where did the 12 spies go to explore?",
+      "o": [
+        "Canaan",
+        "Egypt",
+        "Moab",
+        "Edom"
+      ],
+      "a": 0,
+      "e": "Numbers 13:2 — 'Send some men to explore the land of Canaan...'",
+      "d": "easy"
+    },
+    {
+      "q": "Which mountain did Aaron die on?",
+      "o": [
+        "Mount Hor",
+        "Mount Sinai",
+        "Mount Nebo",
+        "Mount Carmel"
+      ],
+      "a": 0,
+      "e": "Numbers 20:28 — Aaron died there on top of the mountain (Mount Hor).",
+      "d": "hard"
+    },
+    {
+      "q": "Where were the Ten Commandments kept?",
+      "o": [
+        "In the Ark of the Covenant",
+        "In the Tabernacle courtyard",
+        "In Moses' tent",
+        "In the King's palace"
+      ],
+      "a": 0,
+      "e": "Exodus 25:16 — 'Then put in the ark the tablets of the covenant law, which I will give you.'",
+      "d": "medium"
+    },
+    {
+      "q": "In what city did Silas and Timothy join Paul after he left Athens?",
+      "o": [
+        "Corinth",
+        "Ephesus",
+        "Philippi",
+        "Thessalonica"
+      ],
+      "a": 0,
+      "e": "Acts 18:5 — When Silas and Timothy came from Macedonia, Paul devoted himself exclusively to preaching.",
+      "d": "hard"
+    },
+    {
+      "q": "Where did Philip meet the Ethiopian eunuch?",
+      "o": [
+        "Road to Gaza",
+        "Road to Jerusalem",
+        "Road to Damascus",
+        "Road to Samaria"
+      ],
+      "a": 0,
+      "e": "Acts 8:26 — 'Go south to the road—the desert road—that goes down from Jerusalem to Gaza.'",
+      "d": "medium"
+    },
+    {
+      "q": "Which city was known as the 'City of Palm Trees'?",
+      "o": [
+        "Jericho",
+        "Jerusalem",
+        "Bethlehem",
+        "Engedi"
+      ],
+      "a": 0,
+      "e": "Deuteronomy 34:3 — ...the Valley of Jericho, the City of Palms.",
+      "d": "medium"
+    },
+    {
+      "q": "Where was the brook Cherith, where ravens fed Elijah?",
+      "o": [
+        "East of the Jordan",
+        "Near Jerusalem",
+        "In Galilee",
+        "In Egypt"
+      ],
+      "a": 0,
+      "e": "1 Kings 17:3 — 'Leave here, turn eastward and hide in the Kerith Ravine, east of the Jordan.'",
+      "d": "hard"
+    },
+    {
+      "q": "In which city did Paul and Silas have their feet put in stocks in prison?",
+      "o": [
+        "Philippi",
+        "Thessalonica",
+        "Berea",
+        "Athens"
+      ],
+      "a": 0,
+      "e": "Acts 16:24 — ...he put them in the inner cell and fastened their feet in the stocks.",
+      "d": "medium"
+    },
+    {
+      "q": "Where was the mountain of the Lord's house (Zion)?",
+      "o": [
+        "Jerusalem",
+        "Bethlehem",
+        "Samaria",
+        "Hebron"
+      ],
+      "a": 0,
+      "e": "Isaiah 2:2 — In the last days the mountain of the Lord’s temple will be established... (in Jerusalem).",
+      "d": "easy"
+    },
+    {
+      "q": "What city was the home of Goliath?",
+      "o": [
+        "Gath",
+        "Gaza",
+        "Ashdod",
+        "Ekron"
+      ],
+      "a": 0,
+      "e": "1 Samuel 17:4 — A champion named Goliath, who was from Gath, came out from the Philistine camp.",
+      "d": "medium"
+    },
+    {
+      "q": "Where did the Israelites cross the Jordan River?",
+      "o": [
+        "Opposite Jericho",
+        "Near the Sea of Galilee",
+        "At the Dead Sea",
+        "Near Mount Nebo"
+      ],
+      "a": 0,
+      "e": "Joshua 3:16 — ...while the people crossed over opposite Jericho.",
+      "d": "medium"
+    },
+    {
+      "q": "Which city was the site of the tower of Babel?",
+      "o": [
+        "Babel (Babylon)",
+        "Nineveh",
+        "Ur",
+        "Susa"
+      ],
+      "a": 0,
+      "e": "Genesis 11:9 — That is why it was called Babel.",
+      "d": "easy"
+    },
+    {
+      "q": "Where did the Israelites find manna for the first time?",
+      "o": [
+        "Desert of Sin",
+        "Desert of Sinai",
+        "Desert of Shur",
+        "Desert of Paran"
+      ],
+      "a": 0,
+      "e": "Exodus 16:1 — The whole Israelite community... came to the Desert of Sin.",
+      "d": "hard"
+    },
+    {
+      "q": "In which city did the boy Jesus stay behind in the temple?",
+      "o": [
+        "Jerusalem",
+        "Nazareth",
+        "Bethlehem",
+        "Jericho"
+      ],
+      "a": 0,
+      "e": "Luke 2:42-43 — ...they went up to the festival... the boy Jesus stayed behind in Jerusalem.",
+      "d": "easy"
+    },
+    {
+      "q": "Where was the place of 'the Skull'?",
+      "o": [
+        "Golgotha",
+        "Gethsemane",
+        "Bethesda",
+        "Siloam"
+      ],
+      "a": 0,
+      "e": "Matthew 27:33 — They came to a place called Golgotha (which means 'the place of the Skull').",
+      "d": "easy"
+    },
+    {
+      "q": "Which city was the capital of the Southern Kingdom of Judah?",
+      "o": [
+        "Jerusalem",
+        "Samaria",
+        "Hebron",
+        "Shechem"
+      ],
+      "a": 0,
+      "e": "1 Kings 12:21 — When Rehoboam arrived in Jerusalem, he mustered all Judah...",
+      "d": "easy"
+    },
+    {
+      "q": "Where did God tell Jonah to go originally?",
+      "o": [
+        "Nineveh",
+        "Tarshish",
+        "Joppa",
+        "Tyre"
+      ],
+      "a": 0,
+      "e": "Jonah 1:2 — 'Go to the great city of Nineveh...'",
+      "d": "easy"
+    },
+    {
+      "q": "Where was the burning bush that Moses saw?",
+      "o": [
+        "Mount Horeb (Sinai)",
+        "Mount Nebo",
+        "Mount Carmel",
+        "Mount Moriah"
+      ],
+      "a": 0,
+      "e": "Exodus 3:1-2 — ...and came to Horeb, the mountain of God. There the angel of the Lord appeared to him in flames of fire from within a bush.",
+      "d": "medium"
+    },
+    {
+      "q": "In which city was the temple of Dagon located (where Samson died)?",
+      "o": [
+        "Gaza",
+        "Gath",
+        "Ashdod",
+        "Ekron"
+      ],
+      "a": 0,
+      "e": "Judges 16:21-23 — ...the Philistines... put him in prison in Gaza... the rulers of the Philistines assembled to offer a great sacrifice to Dagon their god.",
+      "d": "medium"
+    },
+    {
+      "q": "Where did the Israelites set up 12 stones after crossing the Jordan?",
+      "o": [
+        "Gilgal",
+        "Jericho",
+        "Ai",
+        "Shiloh"
+      ],
+      "a": 0,
+      "e": "Joshua 4:19-20 — ...the people went up from the Jordan and camped at Gilgal... and Joshua set up at Gilgal the twelve stones they had taken out of the Jordan.",
+      "d": "hard"
+    },
+    {
+      "q": "What city was the home of the prophet Elisha (originally)?",
+      "o": [
+        "Abel Meholah",
+        "Tishbe",
+        "Samaria",
+        "Jericho"
+      ],
+      "a": 0,
+      "e": "1 Kings 19:16 — ...and anoint Elisha son of Shaphat from Abel Meholah to succeed you as prophet.",
+      "d": "hard"
+    },
+    {
+      "q": "Where was the 'threshing floor of Araunah'?",
+      "o": [
+        "Jerusalem (Mount Moriah)",
+        "Bethlehem",
+        "Hebron",
+        "Bethel"
+      ],
+      "a": 0,
+      "e": "2 Samuel 24:18 — 'Go up and build an altar to the Lord on the threshing floor of Araunah the Jebusite.' (Later the site of the Temple).",
+      "d": "hard"
+    },
+    {
+      "q": "In which city did the disciples receive the Holy Spirit on Pentecost?",
+      "o": [
+        "Jerusalem",
+        "Antioch",
+        "Ephesus",
+        "Rome"
+      ],
+      "a": 0,
+      "e": "Acts 2:1-5 — When the day of Pentecost came... Now there were staying in Jerusalem God-fearing Jews from every nation.",
+      "d": "easy"
+    },
+    {
+      "q": "Where did Jesus tell the blind man to wash his eyes?",
+      "o": [
+        "Pool of Siloam",
+        "Pool of Bethesda",
+        "River Jordan",
+        "Sea of Galilee"
+      ],
+      "a": 0,
+      "e": "John 9:7 — 'Go,' he told him, 'wash in the Pool of Siloam'.",
+      "d": "medium"
+    },
+    {
+      "q": "What city was the home of Tabitha (Dorcas)?",
+      "o": [
+        "Joppa",
+        "Lydda",
+        "Caesarea",
+        "Jerusalem"
+      ],
+      "a": 0,
+      "e": "Acts 9:36 — In Joppa there was a disciple named Tabitha.",
+      "d": "medium"
+    },
+    {
+      "q": "Where was the island of Cyprus located?",
+      "o": [
+        "Mediterranean Sea",
+        "Aegean Sea",
+        "Red Sea",
+        "Adriatic Sea"
+      ],
+      "a": 0,
+      "e": "Acts 13:4 — ...they went down to Seleucia and sailed from there to Cyprus.",
+      "d": "medium"
+    },
+    {
+      "q": "In which city did Paul and Barnabas get mistaken for Zeus and Hermes?",
+      "o": [
+        "Lystra",
+        "Derbe",
+        "Iconium",
+        "Antioch"
+      ],
+      "a": 0,
+      "e": "Acts 14:8-12 — ...the crowd shouted... 'The gods have come down to us in human form!' Barnabas they called Zeus, and Paul they called Hermes.",
+      "d": "hard"
+    },
+    {
+      "q": "Where was the 'Valley of the Son of Hinnom' (Gehenna)?",
+      "o": [
+        "South of Jerusalem",
+        "North of Samaria",
+        "East of the Jordan",
+        "West of Gaza"
+      ],
+      "a": 0,
+      "e": "Jeremiah 19:2 — '...go out to the Valley of Ben Hinnom, near the entrance of the Potsherd Gate.'",
+      "d": "hard"
+    },
+    {
+      "q": "Which city was the home of the prophet Nahum?",
+      "o": [
+        "Elkosh",
+        "Anathoth",
+        "Moresheth",
+        "Tekoa"
+      ],
+      "a": 0,
+      "e": "Nahum 1:1 — A prophecy concerning Nineveh. The book of the vision of Nahum the Elkoshite.",
+      "d": "hard"
+    },
+    {
+      "q": "Where was the 'River Chebar', where Ezekiel saw his visions?",
+      "o": [
+        "Babylon",
+        "Assyria",
+        "Egypt",
+        "Canaan"
+      ],
+      "a": 0,
+      "e": "Ezekiel 1:1 — ...among the exiles by the Kebar River.",
+      "d": "hard"
+    },
+    {
+      "q": "In which city did Jesus heal the centurion's servant?",
+      "o": [
+        "Capernaum",
+        "Nazareth",
+        "Cana",
+        "Bethsaida"
+      ],
+      "a": 0,
+      "e": "Matthew 8:5 — When Jesus had entered Capernaum, a centurion came to him, asking for help.",
+      "d": "medium"
+    },
+    {
+      "q": "Where was the 'Field of Blood' (Akeldama)?",
+      "o": [
+        "Jerusalem",
+        "Bethlehem",
+        "Jericho",
+        "Nazareth"
+      ],
+      "a": 0,
+      "e": "Acts 1:19 — Everyone in Jerusalem heard about this, so they called that field in their language Akeldama, that is, Field of Blood.",
+      "d": "medium"
+    },
+    {
+      "q": "What city was the home of Lydia, the seller of purple?",
+      "o": [
+        "Thyatira (born) / Philippi (met Paul)",
+        "Ephesus",
+        "Corinth",
+        "Athens"
+      ],
+      "a": 0,
+      "e": "Acts 16:14 — One of those listening was a woman from the city of Thyatira named Lydia, a dealer in purple cloth.",
+      "d": "hard"
+    },
+    {
+      "q": "Where did Jesus ascend to heaven?",
+      "o": [
+        "Mount of Olives",
+        "Mount Zion",
+        "Mount Moriah",
+        "Mount Tabor"
+      ],
+      "a": 0,
+      "e": "Acts 1:12 — Then the apostles returned to Jerusalem from the hill called the Mount of Olives.",
+      "d": "medium"
+    },
+    {
+      "q": "Which city was known as 'Zion'?",
+      "o": [
+        "Jerusalem",
+        "Bethlehem",
+        "Hebron",
+        "Samaria"
+      ],
+      "a": 0,
+      "e": "Psalm 87:2 — The Lord loves the gates of Zion more than all the other dwellings of Jacob.",
+      "d": "easy"
+    },
+    {
+      "q": "Where was the first place the Israelites camped after crossing the Red Sea?",
+      "o": [
+        "Marah",
+        "Elim",
+        "Rephidim",
+        "Sinai"
+      ],
+      "a": 0,
+      "e": "Exodus 15:23 — When they came to Marah, they could not drink its water because it was bitter.",
+      "d": "medium"
+    }
+  ],
+  "Numbers & Dates": [
+    {
+      "q": "How many days did God take to create the world (including the day of rest)?",
+      "o": [
+        "6",
+        "7",
+        "10",
+        "40"
+      ],
+      "a": 1,
+      "e": "Genesis 2:2 — By the seventh day God had finished the work he had been doing.",
+      "d": "easy"
+    },
+    {
+      "q": "How many people were on Noah's ark?",
+      "o": [
+        "2",
+        "4",
+        "8",
+        "12"
+      ],
+      "a": 2,
+      "e": "Genesis 7:13 — Noah and his sons, Shem, Ham and Japheth, together with his wife and the wives of his three sons, entered the ark.",
+      "d": "easy"
+    },
+    {
+      "q": "How many days and nights did it rain during the great flood?",
+      "o": [
+        "7",
+        "12",
+        "40",
+        "150"
+      ],
+      "a": 2,
+      "e": "Genesis 7:12 — And rain fell on the earth forty days and forty nights.",
+      "d": "easy"
+    },
+    {
+      "q": "How old was Methuselah when he died?",
+      "o": [
+        "930",
+        "950",
+        "969",
+        "999"
+      ],
+      "a": 2,
+      "e": "Genesis 5:27 — Altogether, Methuselah lived a total of 969 years.",
+      "d": "easy"
+    },
+    {
+      "q": "How many sons did Jacob have?",
+      "o": [
+        "3",
+        "7",
+        "10",
+        "12"
+      ],
+      "a": 3,
+      "e": "Genesis 35:22 — Jacob had twelve sons.",
+      "d": "easy"
+    },
+    {
+      "q": "How many years did the Israelites wander in the wilderness?",
+      "o": [
+        "7",
+        "12",
+        "40",
+        "70"
+      ],
+      "a": 2,
+      "e": "Numbers 14:33 — 'Your children will be shepherds here for forty years...'",
+      "d": "easy"
+    },
+    {
+      "q": "How many plagues did God send upon Egypt?",
+      "o": [
+        "3",
+        "7",
+        "10",
+        "12"
+      ],
+      "a": 2,
+      "e": "Exodus 7-12 — Describes the ten plagues ending with the death of the firstborn.",
+      "d": "easy"
+    },
+    {
+      "q": "How many commandments were written on the tablets of stone?",
+      "o": [
+        "5",
+        "10",
+        "12",
+        "40"
+      ],
+      "a": 1,
+      "e": "Exodus 34:28 — And he wrote on the tablets the words of the covenant—the Ten Commandments.",
+      "d": "easy"
+    },
+    {
+      "q": "How many days did Jesus fast in the wilderness?",
+      "o": [
+        "7",
+        "12",
+        "40",
+        "50"
+      ],
+      "a": 2,
+      "e": "Matthew 4:2 — After fasting forty days and forty nights, he was hungry.",
+      "d": "easy"
+    },
+    {
+      "q": "How many disciples did Jesus choose?",
+      "o": [
+        "3",
+        "7",
+        "10",
+        "12"
+      ],
+      "a": 3,
+      "e": "Matthew 10:1 — He called his twelve disciples to him.",
+      "d": "easy"
+    },
+    {
+      "q": "How many people did Jesus feed with five loaves and two fish?",
+      "o": [
+        "3,000",
+        "4,000",
+        "5,000",
+        "10,000"
+      ],
+      "a": 2,
+      "e": "Matthew 14:21 — The number of those who ate was about five thousand men, besides women and children.",
+      "d": "easy"
+    },
+    {
+      "q": "How many baskets of leftovers were collected after feeding the 5,000?",
+      "o": [
+        "3",
+        "7",
+        "10",
+        "12"
+      ],
+      "a": 3,
+      "e": "Matthew 14:20 — ...the disciples picked up twelve basketfuls of broken pieces that were left over.",
+      "d": "medium"
+    },
+    {
+      "q": "How many times did Peter deny Jesus?",
+      "o": [
+        "1",
+        "2",
+        "3",
+        "7"
+      ],
+      "a": 2,
+      "e": "Matthew 26:75 — 'Before the rooster crows, you will disown me three times.'",
+      "d": "easy"
+    },
+    {
+      "q": "How many days after His resurrection did Jesus ascend to heaven?",
+      "o": [
+        "3",
+        "7",
+        "40",
+        "50"
+      ],
+      "a": 2,
+      "e": "Acts 1:3 — He appeared to them over a period of forty days.",
+      "d": "medium"
+    },
+    {
+      "q": "How many people were added to the church on the Day of Pentecost?",
+      "o": [
+        "120",
+        "500",
+        "3,000",
+        "5,000"
+      ],
+      "a": 2,
+      "e": "Acts 2:41 — ...about three thousand were added to their number that day.",
+      "d": "medium"
+    },
+    {
+      "q": "How many books are in the whole Bible (standard Protestant canon)?",
+      "o": [
+        "39",
+        "66",
+        "27",
+        "70"
+      ],
+      "a": 1,
+      "e": "39 (OT) + 27 (NT) = 66 books.",
+      "d": "easy"
+    },
+    {
+      "q": "How many books are in the New Testament?",
+      "o": [
+        "12",
+        "27",
+        "39",
+        "66"
+      ],
+      "a": 1,
+      "e": "There are 27 books in the New Testament.",
+      "d": "easy"
+    },
+    {
+      "q": "How many days was Lazarus in the tomb before Jesus raised him?",
+      "o": [
+        "1",
+        "2",
+        "3",
+        "4"
+      ],
+      "a": 3,
+      "e": "John 11:39 — 'By this time there is a bad odor, for he has been there four days.'",
+      "d": "medium"
+    },
+    {
+      "q": "How many times did Joshua and the Israelites march around Jericho on the seventh day?",
+      "o": [
+        "1",
+        "3",
+        "7",
+        "12"
+      ],
+      "a": 2,
+      "e": "Joshua 6:4 — 'On the seventh day, march around the city seven times.'",
+      "d": "medium"
+    },
+    {
+      "q": "How many years did Jacob serve Laban in total?",
+      "o": [
+        "7",
+        "14",
+        "20",
+        "21"
+      ],
+      "a": 2,
+      "e": "Genesis 31:41 — 'I worked for you fourteen years for your two daughters and six years for your flocks.'",
+      "d": "medium"
+    },
+    {
+      "q": "How many years old was Jesus when He began His ministry?",
+      "o": [
+        "12",
+        "21",
+        "30",
+        "33"
+      ],
+      "a": 2,
+      "e": "Luke 3:23 — Now Jesus himself was about thirty years old when he began his ministry.",
+      "d": "medium"
+    },
+    {
+      "q": "How many of each 'clean' animal did Noah take on the ark?",
+      "o": [
+        "2",
+        "7",
+        "7 pairs",
+        "12"
+      ],
+      "a": 2,
+      "e": "Genesis 7:2 — 'Take with you seven pairs of every kind of clean animal.'",
+      "d": "medium"
+    },
+    {
+      "q": "How many years did the Jews remain in Babylonian captivity?",
+      "o": [
+        "40",
+        "70",
+        "100",
+        "400"
+      ],
+      "a": 1,
+      "e": "Jeremiah 25:11 — 'These nations will serve the king of Babylon seventy years.'",
+      "d": "medium"
+    },
+    {
+      "q": "How many pieces of silver did Judas receive for betraying Jesus?",
+      "o": [
+        "10",
+        "12",
+        "30",
+        "50"
+      ],
+      "a": 2,
+      "e": "Matthew 26:15 — So they counted out for him thirty pieces of silver.",
+      "d": "easy"
+    },
+    {
+      "q": "How many days did the Israelites wander before finding water at Marah?",
+      "o": [
+        "1",
+        "3",
+        "7",
+        "40"
+      ],
+      "a": 1,
+      "e": "Exodus 15:22 — For three days they traveled in the desert without finding water.",
+      "d": "hard"
+    },
+    {
+      "q": "How many stones did David pick up from the stream to fight Goliath?",
+      "o": [
+        "1",
+        "3",
+        "5",
+        "7"
+      ],
+      "a": 2,
+      "e": "1 Samuel 17:40 — Then he took his staff in his hand, chose five smooth stones from the stream.",
+      "d": "easy"
+    },
+    {
+      "q": "How many elders sat on thrones around the throne of God in Revelation?",
+      "o": [
+        "12",
+        "24",
+        "70",
+        "144,000"
+      ],
+      "a": 1,
+      "e": "Revelation 4:4 — Surrounding the throne were twenty-four other thrones, and seated on them were twenty-four elders.",
+      "d": "medium"
+    },
+    {
+      "q": "How many years was the woman with the issue of blood sick before Jesus healed her?",
+      "o": [
+        "7",
+        "12",
+        "18",
+        "38"
+      ],
+      "a": 1,
+      "e": "Mark 5:25 — And a woman was there who had been subject to bleeding for twelve years.",
+      "d": "medium"
+    },
+    {
+      "q": "How many people were added to the church after the feeding of the 5,000? (Trick question, it's about Pentecost). How many were in the upper room on Pentecost?",
+      "o": [
+        "12",
+        "70",
+        "120",
+        "500"
+      ],
+      "a": 2,
+      "e": "Acts 1:15 — In those days Peter stood up among the believers (a group numbering about a hundred and twenty).",
+      "d": "medium"
+    },
+    {
+      "q": "How many years did the Israelites stay in Egypt?",
+      "o": [
+        "40",
+        "70",
+        "400 (or 430)",
+        "1,000"
+      ],
+      "a": 2,
+      "e": "Exodus 12:40 — Now the length of time the Israelite people lived in Egypt was 430 years.",
+      "d": "hard"
+    },
+    {
+      "q": "How many years did the famine in Egypt last during Joseph's time?",
+      "o": [
+        "3",
+        "5",
+        "7",
+        "10"
+      ],
+      "a": 2,
+      "e": "Genesis 41:27 — 'The seven lean, ugly cows... are seven years of famine.'",
+      "d": "easy"
+    },
+    {
+      "q": "How many brothers did Joseph have?",
+      "o": [
+        "10",
+        "11",
+        "12",
+        "13"
+      ],
+      "a": 1,
+      "e": "Joseph was one of 12 sons, so he had 11 brothers.",
+      "d": "medium"
+    },
+    {
+      "q": "How many times should we forgive a brother according to Jesus?",
+      "o": [
+        "7",
+        "70",
+        "77 (or 70 times 7)",
+        "Infinite"
+      ],
+      "a": 2,
+      "e": "Matthew 18:22 — Jesus answered, 'I tell you, not seven times, but seventy-seven times.'",
+      "d": "medium"
+    },
+    {
+      "q": "How many years did Noah live after the flood?",
+      "o": [
+        "100",
+        "350",
+        "500",
+        "950"
+      ],
+      "a": 1,
+      "e": "Genesis 9:28 — After the flood Noah lived 350 years.",
+      "d": "hard"
+    },
+    {
+      "q": "How many years old was Noah when the flood began?",
+      "o": [
+        "100",
+        "500",
+        "600",
+        "950"
+      ],
+      "a": 2,
+      "e": "Genesis 7:6 — Noah was six hundred years old when the floodwaters came on the earth.",
+      "d": "hard"
+    },
+    {
+      "q": "How many years old was Abraham when Isaac was born?",
+      "o": [
+        "75",
+        "99",
+        "100",
+        "175"
+      ],
+      "a": 2,
+      "e": "Genesis 21:5 — Abraham was a hundred years old when his son Isaac was born to him.",
+      "d": "medium"
+    },
+    {
+      "q": "How many days did the scouts explore the land of Canaan?",
+      "o": [
+        "7",
+        "12",
+        "40",
+        "70"
+      ],
+      "a": 2,
+      "e": "Numbers 13:25 — At the end of forty days they returned from exploring the land.",
+      "d": "medium"
+    },
+    {
+      "q": "How many days was Jonah inside the great fish?",
+      "o": [
+        "1",
+        "3",
+        "7",
+        "40"
+      ],
+      "a": 1,
+      "e": "Jonah 1:17 — Jonah was in the belly of the fish three days and three nights.",
+      "d": "easy"
+    },
+    {
+      "q": "How many years was Sarah when she died?",
+      "o": [
+        "110",
+        "120",
+        "127",
+        "175"
+      ],
+      "a": 2,
+      "e": "Genesis 23:1 — Sarah lived to be a hundred and twenty-seven years old.",
+      "d": "hard"
+    },
+    {
+      "q": "How many water jars did Jesus have filled at the wedding in Cana?",
+      "o": [
+        "3",
+        "6",
+        "7",
+        "12"
+      ],
+      "a": 1,
+      "e": "John 2:6 — Nearby stood six stone water jars.",
+      "d": "medium"
+    },
+    {
+      "q": "How many sons of Jesse passed before Samuel before David was chosen?",
+      "o": [
+        "3",
+        "5",
+        "7",
+        "8"
+      ],
+      "a": 2,
+      "e": "1 Samuel 16:10 — Jesse had seven of his sons pass before Samuel.",
+      "d": "medium"
+    },
+    {
+      "q": "How many years did King David reign?",
+      "o": [
+        "7",
+        "33",
+        "40",
+        "70"
+      ],
+      "a": 2,
+      "e": "2 Samuel 5:4 — David was thirty years old when he became king, and he reigned forty years.",
+      "d": "medium"
+    },
+    {
+      "q": "How many soldiers were in Gideon's army when he finally fought the Midianites?",
+      "o": [
+        "300",
+        "3,000",
+        "10,000",
+        "32,000"
+      ],
+      "a": 0,
+      "e": "Judges 7:7 — The Lord said to Gideon, 'With the three hundred men... I will save you.'",
+      "d": "medium"
+    },
+    {
+      "q": "How many years was the man at the pool of Bethesda crippled before Jesus healed him?",
+      "o": [
+        "12",
+        "18",
+        "38",
+        "40"
+      ],
+      "a": 2,
+      "e": "John 5:5 — One who was there had been an invalid for thirty-eight years.",
+      "d": "hard"
+    },
+    {
+      "q": "How many books of the Bible are named after women?",
+      "o": [
+        "1",
+        "2",
+        "3",
+        "4"
+      ],
+      "a": 1,
+      "e": "Ruth and Esther.",
+      "d": "easy"
+    },
+    {
+      "q": "How many spies did Joshua send to Jericho?",
+      "o": [
+        "2",
+        "7",
+        "12",
+        "300"
+      ],
+      "a": 0,
+      "e": "Joshua 2:1 — Then Joshua... secretly sent two spies from Shittim.",
+      "d": "medium"
+    },
+    {
+      "q": "How many years old was Moses when he died?",
+      "o": [
+        "40",
+        "80",
+        "120",
+        "150"
+      ],
+      "a": 2,
+      "e": "Deuteronomy 34:7 — Moses was a hundred and twenty years old when he died.",
+      "d": "medium"
+    },
+    {
+      "q": "How many years old was Moses when he spoke to Pharaoh?",
+      "o": [
+        "40",
+        "50",
+        "80",
+        "120"
+      ],
+      "a": 2,
+      "e": "Exodus 7:7 — Moses was eighty years old and Aaron eighty-three when they spoke to Pharaoh.",
+      "d": "hard"
+    },
+    {
+      "q": "How many fish did the disciples catch when Jesus told them to cast their net on the right side (John 21)?",
+      "o": [
+        "12",
+        "70",
+        "144",
+        "153"
+      ],
+      "a": 3,
+      "e": "John 21:11 — ...it was full of large fish, 153.",
+      "d": "hard"
+    },
+    {
+      "q": "How many years was Jacob in Haran before he returned to Canaan?",
+      "o": [
+        "7",
+        "14",
+        "20",
+        "40"
+      ],
+      "a": 2,
+      "e": "Genesis 31:38 — 'I have been with you for twenty years now.'",
+      "d": "hard"
+    },
+    {
+      "q": "How many hours of darkness were there while Jesus was on the cross?",
+      "o": [
+        "1",
+        "3",
+        "6",
+        "12"
+      ],
+      "a": 1,
+      "e": "Matthew 27:45 — From noon until three in the afternoon darkness came over all the land.",
+      "d": "medium"
+    },
+    {
+      "q": "How many tribes of Israel were there?",
+      "o": [
+        "7",
+        "10",
+        "12",
+        "13"
+      ],
+      "a": 2,
+      "e": "Genesis 49:28 — All these are the twelve tribes of Israel.",
+      "d": "easy"
+    },
+    {
+      "q": "How many deacons were chosen in Acts 6 to help the apostles?",
+      "o": [
+        "3",
+        "7",
+        "12",
+        "70"
+      ],
+      "a": 1,
+      "e": "Acts 6:3 — '...choose seven men from among you who are known to be full of the Spirit and wisdom.'",
+      "d": "medium"
+    },
+    {
+      "q": "How many years did the Israelites stay in the wilderness for each day the spies were in Canaan?",
+      "o": [
+        "1",
+        "7",
+        "10",
+        "40"
+      ],
+      "a": 0,
+      "e": "Numbers 14:34 — 'For forty years—one year for each of the forty days you explored the land...'",
+      "d": "medium"
+    },
+    {
+      "q": "How many days was Saul (Paul) blind after seeing the light on the road to Damascus?",
+      "o": [
+        "1",
+        "3",
+        "7",
+        "40"
+      ],
+      "a": 1,
+      "e": "Acts 9:9 — For three days he was blind, and did not eat or drink anything.",
+      "d": "medium"
+    },
+    {
+      "q": "How many times a day did Daniel pray?",
+      "o": [
+        "1",
+        "3",
+        "5",
+        "7"
+      ],
+      "a": 1,
+      "e": "Daniel 6:10 — Three times a day he got down on his knees and prayed.",
+      "d": "easy"
+    },
+    {
+      "q": "How many years did Jehoiachin spend in prison in Babylon?",
+      "o": [
+        "7",
+        "12",
+        "37",
+        "70"
+      ],
+      "a": 2,
+      "e": "2 Kings 25:27 — In the thirty-seventh year of the exile of Jehoiachin king of Judah... Evil-Merodach... released Jehoiachin from prison.",
+      "d": "hard"
+    },
+    {
+      "q": "How many years did King Solomon reign?",
+      "o": [
+        "7",
+        "12",
+        "40",
+        "70"
+      ],
+      "a": 2,
+      "e": "1 Kings 11:42 — Solomon reigned in Jerusalem over all Israel forty years.",
+      "d": "medium"
+    },
+    {
+      "q": "How many cities of refuge were there in Israel?",
+      "o": [
+        "3",
+        "6",
+        "7",
+        "12"
+      ],
+      "a": 1,
+      "e": "Numbers 35:6 — 'Six of the towns you give the Levites will be cities of refuge.'",
+      "d": "hard"
+    },
+    {
+      "q": "How many years was the temple in building (Solomon's temple)?",
+      "o": [
+        "3",
+        "7",
+        "12",
+        "20"
+      ],
+      "a": 1,
+      "e": "1 Kings 6:38 — ...the temple was finished... He had spent seven years building it.",
+      "d": "hard"
+    },
+    {
+      "q": "How many people survived the destruction of Sodom (initially)?",
+      "o": [
+        "1",
+        "2",
+        "3",
+        "4"
+      ],
+      "a": 2,
+      "e": "Genesis 19:15-16 — Lot, his wife and his two daughters (but the wife looked back, leaving 3).",
+      "d": "hard"
+    },
+    {
+      "q": "How many times did Elijah's servant look for rain before he saw a cloud?",
+      "o": [
+        "1",
+        "3",
+        "7",
+        "12"
+      ],
+      "a": 2,
+      "e": "1 Kings 18:43-44 — Seven times Elijah said, 'Go back.' The seventh time the servant reported, 'A cloud as small as a man’s hand is rising from the sea.'",
+      "d": "medium"
+    },
+    {
+      "q": "How many water jars did Elijah have poured over the sacrifice on Mt. Carmel?",
+      "o": [
+        "4",
+        "7",
+        "12",
+        "24"
+      ],
+      "a": 2,
+      "e": "1 Kings 18:33-35 — 4 jars x 3 times = 12 jars of water.",
+      "d": "hard"
+    },
+    {
+      "q": "How many daughters did Job have after his restoration?",
+      "o": [
+        "3",
+        "7",
+        "10",
+        "12"
+      ],
+      "a": 0,
+      "e": "Job 42:13 — And he also had seven sons and three daughters.",
+      "d": "hard"
+    },
+    {
+      "q": "How many pieces of gold was the weight of the gold that came to Solomon in one year?",
+      "o": [
+        "120 talents",
+        "300 talents",
+        "666 talents",
+        "1,000 talents"
+      ],
+      "a": 2,
+      "e": "1 Kings 10:14 — The weight of the gold that Solomon received yearly was 666 talents.",
+      "d": "hard"
+    },
+    {
+      "q": "How many years did Joash hide in the temple before being crowned king?",
+      "o": [
+        "1",
+        "3",
+        "6",
+        "12"
+      ],
+      "a": 2,
+      "e": "2 Kings 11:3 — He remained hidden with his nurse at the temple of the Lord for six years.",
+      "d": "hard"
+    },
+    {
+      "q": "How many months was Moses hidden by his mother?",
+      "o": [
+        "1",
+        "3",
+        "6",
+        "12"
+      ],
+      "a": 1,
+      "e": "Exodus 2:2 — When she saw that he was a fine child, she hid him for three months.",
+      "d": "medium"
+    },
+    {
+      "q": "How many water jugs did Gideon's men carry?",
+      "o": [
+        "300",
+        "3,000",
+        "None (they carried jars)",
+        "12"
+      ],
+      "a": 0,
+      "e": "Judges 7:16 — ...placing trumpets and empty jars in the hands of all of them.",
+      "d": "medium"
+    },
+    {
+      "q": "How many years did the land rest for the Sabbath year?",
+      "o": [
+        "1",
+        "7",
+        "40",
+        "50"
+      ],
+      "a": 0,
+      "e": "Leviticus 25:4 — 'But in the seventh year the land is to have a year of sabbath rest.'",
+      "d": "medium"
+    },
+    {
+      "q": "How many years passed between Sabbath years to reach the Year of Jubilee?",
+      "o": [
+        "7",
+        "40",
+        "49",
+        "50"
+      ],
+      "a": 2,
+      "e": "Leviticus 25:8 — 'Count off seven sabbath years—seven times seven years; so that the seven sabbath years amount to a period of forty-nine years.'",
+      "d": "medium"
+    },
+    {
+      "q": "How many people were on the ship with Paul when it was shipwrecked?",
+      "o": [
+        "70",
+        "120",
+        "276",
+        "500"
+      ],
+      "a": 2,
+      "e": "Acts 27:37 — Altogether there were 276 of us on board.",
+      "d": "hard"
+    },
+    {
+      "q": "How many generations were there from Abraham to David according to Matthew?",
+      "o": [
+        "7",
+        "12",
+        "14",
+        "40"
+      ],
+      "a": 2,
+      "e": "Matthew 1:17 — Thus there were fourteen generations in all from Abraham to David.",
+      "d": "medium"
+    },
+    {
+      "q": "How many times did God call the boy Samuel in the night?",
+      "o": [
+        "1",
+        "2",
+        "3",
+        "4"
+      ],
+      "a": 3,
+      "e": "1 Samuel 3:4-10 — He called him 3 times, then the 4th time Samuel answered.",
+      "d": "medium"
+    },
+    {
+      "q": "How many years did the widow's oil last (during the famine)? Not specified, but how many jars did she borrow?",
+      "o": [
+        "3",
+        "7",
+        "As many as possible",
+        "12"
+      ],
+      "a": 2,
+      "e": "2 Kings 4:3 — Elisha said, 'Go around and ask all your neighbors for empty jars. Don't ask for just a few.'",
+      "d": "hard"
+    },
+    {
+      "q": "How many lepers did Jesus heal at one time?",
+      "o": [
+        "1",
+        "3",
+        "7",
+        "10"
+      ],
+      "a": 3,
+      "e": "Luke 17:12 — Ten men who had leprosy met him.",
+      "d": "easy"
+    },
+    {
+      "q": "How many of the ten lepers returned to thank Jesus?",
+      "o": [
+        "1",
+        "3",
+        "7",
+        "10"
+      ],
+      "a": 0,
+      "e": "Luke 17:15 — One of them, when he saw he was healed, came back.",
+      "d": "easy"
+    },
+    {
+      "q": "How many days was the wall of Jerusalem rebuilt in under Nehemiah?",
+      "o": [
+        "7",
+        "40",
+        "52",
+        "120"
+      ],
+      "a": 2,
+      "e": "Nehemiah 6:15 — So the wall was completed on the twenty-fifth of Elul, in fifty-two days.",
+      "d": "hard"
+    },
+    {
+      "q": "How many thousand men did Samson kill with a donkey's jawbone?",
+      "o": [
+        "1",
+        "3",
+        "5",
+        "10"
+      ],
+      "a": 0,
+      "e": "Judges 15:15 — ...he struck down a thousand men.",
+      "d": "medium"
+    },
+    {
+      "q": "How many years did King Hezekiah have added to his life?",
+      "o": [
+        "5",
+        "10",
+        "15",
+        "20"
+      ],
+      "a": 2,
+      "e": "2 Kings 20:6 — 'I will add fifteen years to your life.'",
+      "d": "medium"
+    },
+    {
+      "q": "How many steps back did the shadow move as a sign to Hezekiah?",
+      "o": [
+        "3",
+        "7",
+        "10",
+        "15"
+      ],
+      "a": 2,
+      "e": "2 Kings 20:11 — ...and he made the shadow go back the ten steps it had gone down.",
+      "d": "hard"
+    },
+    {
+      "q": "How many people were in the fiery furnace?",
+      "o": [
+        "3",
+        "4",
+        "5",
+        "7"
+      ],
+      "a": 1,
+      "e": "Daniel 3:25 — 'Look! I see four men walking around in the fire...'",
+      "d": "easy"
+    },
+    {
+      "q": "How many gold rats were sent back with the Ark by the Philistines?",
+      "o": [
+        "1",
+        "5",
+        "12",
+        "70"
+      ],
+      "a": 1,
+      "e": "1 Samuel 6:4 — 'Five gold tumors and five gold rats, according to the number of the Philistine rulers.'",
+      "d": "hard"
+    },
+    {
+      "q": "How many brothers did David have?",
+      "o": [
+        "3",
+        "7",
+        "8",
+        "10"
+      ],
+      "a": 1,
+      "e": "1 Samuel 16:10-11 — Jesse had seven sons pass... but the youngest was still in the field.",
+      "d": "medium"
+    },
+    {
+      "q": "How many months did the Ark of the Lord stay in Philistine territory?",
+      "o": [
+        "1",
+        "3",
+        "7",
+        "12"
+      ],
+      "a": 2,
+      "e": "1 Samuel 6:1 — When the ark of the Lord had been in Philistine territory seven months...",
+      "d": "hard"
+    },
+    {
+      "q": "How many years did Isaac live?",
+      "o": [
+        "120",
+        "147",
+        "175",
+        "180"
+      ],
+      "a": 3,
+      "e": "Genesis 35:28 — Isaac lived a hundred and eighty years.",
+      "d": "hard"
+    },
+    {
+      "q": "How many years did Jacob live?",
+      "o": [
+        "120",
+        "147",
+        "175",
+        "180"
+      ],
+      "a": 1,
+      "e": "Genesis 47:28 — Jacob lived in Egypt seventeen years, and the years of his life were 147.",
+      "d": "hard"
+    },
+    {
+      "q": "How many years did Joseph live?",
+      "o": [
+        "100",
+        "110",
+        "120",
+        "130"
+      ],
+      "a": 1,
+      "e": "Genesis 50:26 — So Joseph died at the age of a hundred and ten.",
+      "d": "hard"
+    },
+    {
+      "q": "How many years was the earth covered by flood waters before they began to recede?",
+      "o": [
+        "40 days",
+        "150 days",
+        "365 days",
+        "1 year"
+      ],
+      "a": 1,
+      "e": "Genesis 7:24 — The waters flooded the earth for a hundred and fifty days.",
+      "d": "medium"
+    },
+    {
+      "q": "How many times did Naaman dip in the Jordan?",
+      "o": [
+        "1",
+        "3",
+        "7",
+        "12"
+      ],
+      "a": 2,
+      "e": "2 Kings 5:14 — ...and dipped himself in the Jordan seven times.",
+      "d": "easy"
+    },
+    {
+      "q": "How many years did the widow's jar of flour and jug of oil not run dry?",
+      "o": [
+        "3 days",
+        "40 days",
+        "Until the day the Lord sent rain",
+        "7 years"
+      ],
+      "a": 2,
+      "e": "1 Kings 17:14 — 'The jar of flour will not be used up and the jug of oil will not run dry until the day the Lord sends rain.'",
+      "d": "medium"
+    },
+    {
+      "q": "How many sheep were lost in the parable of the lost sheep?",
+      "o": [
+        "1",
+        "10",
+        "50",
+        "99"
+      ],
+      "a": 0,
+      "e": "Luke 15:4 — '...and loses one of them. Doesn't he leave the ninety-nine in the open country and go after the lost sheep?'",
+      "d": "easy"
+    },
+    {
+      "q": "How many silver coins did the woman have in the parable before she lost one?",
+      "o": [
+        "1",
+        "10",
+        "50",
+        "100"
+      ],
+      "a": 1,
+      "e": "Luke 15:8 — 'Suppose a woman has ten silver coins and loses one.'",
+      "d": "medium"
+    },
+    {
+      "q": "How many talents did the first servant receive in the parable?",
+      "o": [
+        "1",
+        "2",
+        "5",
+        "10"
+      ],
+      "a": 2,
+      "e": "Matthew 25:15 — 'To one he gave five bag of gold (talents)...'",
+      "d": "medium"
+    },
+    {
+      "q": "How many years old was Josiah when he became king?",
+      "o": [
+        "7",
+        "8",
+        "12",
+        "16"
+      ],
+      "a": 1,
+      "e": "2 Kings 22:1 — Josiah was eight years old when he became king.",
+      "d": "medium"
+    },
+    {
+      "q": "How many years old was Joash when he became king?",
+      "o": [
+        "7",
+        "8",
+        "12",
+        "16"
+      ],
+      "a": 0,
+      "e": "2 Kings 11:21 — Joash was seven years old when he began to reign.",
+      "d": "medium"
+    },
+    {
+      "q": "How many singers were appointed by David to serve in the sanctuary?",
+      "o": [
+        "120",
+        "288",
+        "4,000",
+        "10,000"
+      ],
+      "a": 1,
+      "e": "1 Chronicles 25:7 — Along with their relatives—all of them trained and skilled in music for the Lord—they numbered 288.",
+      "d": "hard"
+    },
+    {
+      "q": "How many gatekeepers were appointed for the temple?",
+      "o": [
+        "120",
+        "288",
+        "4,000",
+        "10,000"
+      ],
+      "a": 2,
+      "e": "1 Chronicles 23:5 — '...and 4,000 are to be gatekeepers.'",
+      "d": "hard"
+    },
+    {
+      "q": "How many days did the wedding feast in Cana last (typically)?",
+      "o": [
+        "1",
+        "3",
+        "7",
+        "14"
+      ],
+      "a": 2,
+      "e": "Tradition and other biblical feasts suggest 7 days.",
+      "d": "hard"
+    },
+    {
+      "q": "How many times was Paul whipped with 39 lashes?",
+      "o": [
+        "1",
+        "3",
+        "5",
+        "7"
+      ],
+      "a": 2,
+      "e": "2 Corinthians 11:24 — Five times I received from the Jews the forty lashes minus one.",
+      "d": "hard"
+    },
+    {
+      "q": "How many times was Paul shipwrecked?",
+      "o": [
+        "1",
+        "2",
+        "3",
+        "4"
+      ],
+      "a": 2,
+      "e": "2 Corinthians 11:25 — ...three times I was shipwrecked.",
+      "d": "hard"
+    },
+    {
+      "q": "How many pearls are the gates of the New Jerusalem made of?",
+      "o": [
+        "1 each",
+        "12 each",
+        "7 each",
+        "Many"
+      ],
+      "a": 0,
+      "e": "Revelation 21:21 — The twelve gates were twelve pearls, each gate made of a single pearl.",
+      "d": "medium"
+    },
+    {
+      "q": "How many stones were in the High Priest's breastplate?",
+      "o": [
+        "7",
+        "10",
+        "12",
+        "24"
+      ],
+      "a": 2,
+      "e": "Exodus 28:21 — There were twelve stones, one for each of the names of the sons of Israel.",
+      "d": "medium"
+    },
+    {
+      "q": "How many years did the prophetess Anna live as a widow?",
+      "o": [
+        "7",
+        "40",
+        "84",
+        "100"
+      ],
+      "a": 2,
+      "e": "Luke 2:37 — ...and then was a widow until she was eighty-four.",
+      "d": "hard"
+    },
+    {
+      "q": "How many days did Esther and the Jews fast before she went to the king?",
+      "o": [
+        "1",
+        "3",
+        "7",
+        "40"
+      ],
+      "a": 1,
+      "e": "Esther 4:16 — 'Do not eat or drink for three days, night or day.'",
+      "d": "medium"
+    },
+    {
+      "q": "How many provinces were in King Xerxes' empire?",
+      "o": [
+        "12",
+        "70",
+        "120",
+        "127"
+      ],
+      "a": 3,
+      "e": "Esther 1:1 — ...reigning over 127 provinces from India to Cush.",
+      "d": "hard"
+    },
+    {
+      "q": "How many of Job's friends came to comfort him initially?",
+      "o": [
+        "2",
+        "3",
+        "4",
+        "7"
+      ],
+      "a": 1,
+      "e": "Job 2:11 — When Job’s three friends... heard about all the troubles that had come upon him, they set out from their homes.",
+      "d": "easy"
+    },
+    {
+      "q": "How many days did Job's friends sit in silence with him?",
+      "o": [
+        "1",
+        "3",
+        "7",
+        "12"
+      ],
+      "a": 2,
+      "e": "Job 2:13 — Then they sat on the ground with him for seven days and seven nights.",
+      "d": "medium"
+    },
+    {
+      "q": "How many thousand talents of silver did Haman offer to pay to destroy the Jews?",
+      "o": [
+        "1",
+        "5",
+        "10",
+        "100"
+      ],
+      "a": 2,
+      "e": "Esther 3:9 — 'I will give ten thousand talents of silver to the king’s administrators...'",
+      "d": "hard"
+    },
+    {
+      "q": "How many times was the furnace heated for Shadrach, Meshach, and Abednego?",
+      "o": [
+        "2 times",
+        "7 times",
+        "10 times",
+        "As hot as possible"
+      ],
+      "a": 1,
+      "e": "Daniel 3:19 — ...ordered the furnace heated seven times hotter than usual.",
+      "d": "medium"
+    }
+  ],
+  "Old Testament Law": [
+    {
+      "q": "What is the first of the Ten Commandments?",
+      "o": [
+        "Do not murder",
+        "You shall have no other gods before me",
+        "Honor your father and mother",
+        "Do not steal"
+      ],
+      "a": 1,
+      "e": "Exodus 20:3 — 'You shall have no other gods before me.'",
+      "d": "easy"
+    },
+    {
+      "q": "Which commandment forbids taking the Lord's name in vain?",
+      "o": [
+        "Second",
+        "Third",
+        "Fourth",
+        "Fifth"
+      ],
+      "a": 1,
+      "e": "Exodus 20:7 — 'You shall not misuse the name of the Lord your God.'",
+      "d": "easy"
+    },
+    {
+      "q": "What day of the week is the Sabbath in the Old Testament Law?",
+      "o": [
+        "First day",
+        "Third day",
+        "Sixth day",
+        "Seventh day"
+      ],
+      "a": 3,
+      "e": "Exodus 20:10 — '...but the seventh day is a sabbath to the Lord your God.'",
+      "d": "easy"
+    },
+    {
+      "q": "Which commandment comes with a promise of long life?",
+      "o": [
+        "Do not murder",
+        "Honor your father and mother",
+        "Do not covet",
+        "Remember the Sabbath"
+      ],
+      "a": 1,
+      "e": "Exodus 20:12 — 'Honor your father and your mother, so that you may live long in the land.'",
+      "d": "easy"
+    },
+    {
+      "q": "What is the penalty for kidnapping according to the Law of Moses?",
+      "o": [
+        "Fine",
+        "Slavery",
+        "Death",
+        "Exile"
+      ],
+      "a": 2,
+      "e": "Exodus 21:16 — 'Anyone who kidnaps someone is to be put to death.'",
+      "d": "medium"
+    },
+    {
+      "q": "What must a person do if their ox gores a person to death (and it was known to be dangerous)?",
+      "o": [
+        "Pay a fine",
+        "Kill the ox",
+        "The owner must be put to death",
+        "Both the ox must be killed and the owner put to death"
+      ],
+      "a": 3,
+      "e": "Exodus 21:29 — '...the ox shall be stoned and its owner also shall be put to death.'",
+      "d": "hard"
+    },
+    {
+      "q": "How many times must a thief restore a stolen ox if they have slaughtered or sold it?",
+      "o": [
+        "Twofold",
+        "Fourfold",
+        "Fivefold",
+        "Sevenfold"
+      ],
+      "a": 2,
+      "e": "Exodus 22:1 — '...he must pay back five head of cattle for the ox.'",
+      "d": "hard"
+    },
+    {
+      "q": "What should be done with a field during the seventh year?",
+      "o": [
+        "Planted with wheat",
+        "Used for grazing only",
+        "Left uncultivated and unharvested",
+        "Sold to a neighbor"
+      ],
+      "a": 2,
+      "e": "Exodus 23:11 — '...but during the seventh year let it lie unplowed and unused.'",
+      "d": "medium"
+    },
+    {
+      "q": "How many times a year were all Israelite men required to appear before the Lord?",
+      "o": [
+        "Once",
+        "Three times",
+        "Seven times",
+        "Twelve times"
+      ],
+      "a": 1,
+      "e": "Exodus 23:17 — 'Three times a year all the men are to appear before the Sovereign Lord.'",
+      "d": "medium"
+    },
+    {
+      "q": "Which book of the Bible contains the most detail about the sacrificial system?",
+      "o": [
+        "Exodus",
+        "Leviticus",
+        "Numbers",
+        "Deuteronomy"
+      ],
+      "a": 1,
+      "e": "Leviticus is primarily concerned with laws for priests and sacrifices.",
+      "d": "easy"
+    },
+    {
+      "q": "What kind of animal was used for the 'burnt offering' if it was from the herd?",
+      "o": [
+        "A female without defect",
+        "A male without defect",
+        "Any animal",
+        "A newborn"
+      ],
+      "a": 1,
+      "e": "Leviticus 1:3 — '...he is to offer a male without defect.'",
+      "d": "medium"
+    },
+    {
+      "q": "What must NOT be included in a grain offering?",
+      "o": [
+        "Oil",
+        "Incense",
+        "Salt",
+        "Leaven or honey"
+      ],
+      "a": 3,
+      "e": "Leviticus 2:11 — '...you are not to burn any yeast or honey in a food offering.'",
+      "d": "hard"
+    },
+    {
+      "q": "What seasoning must be present in every grain offering?",
+      "o": [
+        "Pepper",
+        "Salt",
+        "Cumin",
+        "Coriander"
+      ],
+      "a": 1,
+      "e": "Leviticus 2:13 — 'Season all your grain offerings with salt.'",
+      "d": "hard"
+    },
+    {
+      "q": "Which part of the animal fat were the Israelites forbidden to eat?",
+      "o": [
+        "None",
+        "The fat around the kidneys",
+        "All fat of animals offered as food",
+        "The tail fat"
+      ],
+      "a": 2,
+      "e": "Leviticus 3:17 — 'You must not eat any fat or any blood.'",
+      "d": "medium"
+    },
+    {
+      "q": "What happened to a priest who offered 'strange fire' before the Lord?",
+      "o": [
+        "They were removed from office",
+        "They were fined",
+        "Fire came out from the Lord and consumed them",
+        "They were leprosy-stricken"
+      ],
+      "a": 2,
+      "e": "Leviticus 10:1-2 — Nadab and Abihu... offered unauthorized fire... so fire came out from the presence of the Lord and consumed them.",
+      "d": "medium"
+    },
+    {
+      "q": "According to the Law, which of these water creatures is 'clean' to eat?",
+      "o": [
+        "Shrimp",
+        "Crab",
+        "Fish with fins and scales",
+        "Shark"
+      ],
+      "a": 2,
+      "e": "Leviticus 11:9 — 'Of all the creatures living in the water... you may eat anything that has fins and scales.'",
+      "d": "easy"
+    },
+    {
+      "q": "Which of these birds is specifically listed as 'unclean' and not to be eaten?",
+      "o": [
+        "Chicken",
+        "Pigeon",
+        "Eagle",
+        "Quail"
+      ],
+      "a": 2,
+      "e": "Leviticus 11:13 — 'These are the birds you are to regard as unclean... the eagle...'",
+      "d": "medium"
+    },
+    {
+      "q": "How long is a woman considered 'unclean' after giving birth to a son?",
+      "o": [
+        "7 days",
+        "14 days",
+        "40 days",
+        "80 days"
+      ],
+      "a": 0,
+      "e": "Leviticus 12:2 — '...she will be ceremonially unclean for seven days.'",
+      "d": "hard"
+    },
+    {
+      "q": "How long is a woman considered 'unclean' after giving birth to a daughter?",
+      "o": [
+        "7 days",
+        "14 days",
+        "40 days",
+        "80 days"
+      ],
+      "a": 1,
+      "e": "Leviticus 12:5 — 'If she gives birth to a daughter, for two weeks the woman will be unclean.'",
+      "d": "hard"
+    },
+    {
+      "q": "Which skin disease required a person to cry 'Unclean! Unclean!'?",
+      "o": [
+        "Scurvy",
+        "Leprosy (Tzaraat)",
+        "Hives",
+        "Psoriasis"
+      ],
+      "a": 1,
+      "e": "Leviticus 13:45 — '...as he goes, he shall shout, \"Unclean! Unclean!\"'",
+      "d": "medium"
+    },
+    {
+      "q": "What was the purpose of the 'Scapegoat' on the Day of Atonement?",
+      "o": [
+        "To be sacrificed to God",
+        "To carry the sins of the people into the wilderness",
+        "To provide food for the priests",
+        "To be sold for silver"
+      ],
+      "a": 1,
+      "e": "Leviticus 16:21-22 — 'The goat will carry on itself all their sins to a remote place.'",
+      "d": "medium"
+    },
+    {
+      "q": "On which day of the seventh month was the Day of Atonement (Yom Kippur)?",
+      "o": [
+        "First",
+        "Seventh",
+        "Tenth",
+        "Fourteenth"
+      ],
+      "a": 2,
+      "e": "Leviticus 16:29 — 'On the tenth day of the seventh month you must deny yourselves and not do any work.'",
+      "d": "medium"
+    },
+    {
+      "q": "What is the central theme of Leviticus 19, beginning with 'Be holy because I, the Lord your God, am holy'?",
+      "o": [
+        "Warfare",
+        "Sacrifice",
+        "Holiness in daily life",
+        "Building the temple"
+      ],
+      "a": 2,
+      "e": "Leviticus 19 covers various moral and ritual laws to maintain holiness.",
+      "d": "easy"
+    },
+    {
+      "q": "What must a farmer do when harvesting his field according to the Law?",
+      "o": [
+        "Harvest every bit of it",
+        "Leave the corners and the gleanings for the poor",
+        "Burn the leftovers",
+        "Give it all to the priests"
+      ],
+      "a": 1,
+      "e": "Leviticus 19:9 — 'Do not reap to the very edges of your field or gather the gleanings of your harvest.'",
+      "d": "medium"
+    },
+    {
+      "q": "What is the famous command found in Leviticus 19:18?",
+      "o": [
+        "Do not kill",
+        "Love your neighbor as yourself",
+        "Honor the aged",
+        "Do not steal"
+      ],
+      "a": 1,
+      "e": "Leviticus 19:18 — '...but love your neighbor as yourself.'",
+      "d": "easy"
+    },
+    {
+      "q": "What kind of clothing material was forbidden to be mixed?",
+      "o": [
+        "Cotton and Silk",
+        "Linen and Wool",
+        "Leather and Cloth",
+        "Goat hair and Camel hair"
+      ],
+      "a": 1,
+      "e": "Leviticus 19:19 — 'Do not wear clothing woven of two kinds of material.' (Deut 22:11 specifies wool and linen).",
+      "d": "hard"
+    },
+    {
+      "q": "What was the punishment for cursing one's father or mother?",
+      "o": [
+        "Fine",
+        "Exile",
+        "Death",
+        "Public shaming"
+      ],
+      "a": 2,
+      "e": "Leviticus 20:9 — 'Anyone who curses their father or mother is to be put to death.'",
+      "d": "medium"
+    },
+    {
+      "q": "What were the priests forbidden to do to their hair or beards as a sign of mourning?",
+      "o": [
+        "Shave the edges or make bald spots",
+        "Grow them long",
+        "Color them",
+        "Wash them"
+      ],
+      "a": 0,
+      "e": "Leviticus 21:5 — 'Priests must not shave their heads or shave off the edges of their beards.'",
+      "d": "hard"
+    },
+    {
+      "q": "Which feast commemorated the Israelites living in temporary shelters in the wilderness?",
+      "o": [
+        "Passover",
+        "Pentecost",
+        "Tabernacles (Sukkot)",
+        "Purim"
+      ],
+      "a": 2,
+      "e": "Leviticus 23:42-43 — 'Live in temporary shelters for seven days... so your descendants will know that I had the Israelites live in temporary shelters when I brought them out of Egypt.'",
+      "d": "medium"
+    },
+    {
+      "q": "How many lamps were on the gold lampstand in the Tabernacle?",
+      "o": [
+        "3",
+        "5",
+        "7",
+        "12"
+      ],
+      "a": 2,
+      "e": "Exodus 25:37 — 'Then make its seven lamps...'",
+      "d": "medium"
+    },
+    {
+      "q": "What was the punishment for a person who blasphemed the Name of the Lord?",
+      "o": [
+        "Flogging",
+        "Stoning to death",
+        "Exile",
+        "A sin offering"
+      ],
+      "a": 1,
+      "e": "Leviticus 24:16 — 'Anyone who blasphemes the name of the Lord is to be put to death. The entire assembly must stone them.'",
+      "d": "medium"
+    },
+    {
+      "q": "Every how many years was the Year of Jubilee?",
+      "o": [
+        "7",
+        "40",
+        "50",
+        "70"
+      ],
+      "a": 2,
+      "e": "Leviticus 25:10 — 'Consecrate the fiftieth year and proclaim liberty throughout the land.'",
+      "d": "medium"
+    },
+    {
+      "q": "What happened to debts and land during the Year of Jubilee?",
+      "o": [
+        "They were increased",
+        "They stayed the same",
+        "Debts were canceled and land returned to original owners",
+        "Land was sold to the highest bidder"
+      ],
+      "a": 2,
+      "e": "Leviticus 25:10-13 — 'It shall be a jubilee for you; each of you is to return to your family property and to your own clan.'",
+      "d": "medium"
+    },
+    {
+      "q": "What was the minimum age for a man to be counted in the census for the army of Israel?",
+      "o": [
+        "12",
+        "18",
+        "20",
+        "30"
+      ],
+      "a": 2,
+      "e": "Numbers 1:3 — '...all the men in Israel twenty years old or more who are able to serve in the army.'",
+      "d": "medium"
+    },
+    {
+      "q": "Which tribe was NOT counted among the fighting men of Israel but was set apart for the Tabernacle?",
+      "o": [
+        "Judah",
+        "Levi",
+        "Benjamin",
+        "Joseph"
+      ],
+      "a": 1,
+      "e": "Numbers 1:47 — 'The ancestral tribe of the Levites, however, was not counted along with the others.'",
+      "d": "medium"
+    },
+    {
+      "q": "What were the three requirements for a Nazirite vow?",
+      "o": [
+        "No wine, no cutting hair, no touching dead bodies",
+        "No meat, no wine, no prayer",
+        "No marriage, no money, no home",
+        "Fast for 40 days, wear sackcloth, ashes"
+      ],
+      "a": 0,
+      "e": "Numbers 6:1-6 — Describes the restrictions on wine, hair, and contact with the dead.",
+      "d": "medium"
+    },
+    {
+      "q": "What is the famous blessing found in Numbers 6 that begins with 'The Lord bless you and keep you'?",
+      "o": [
+        "The Mosaic Blessing",
+        "The Priestly Blessing (Aaronic)",
+        "The Davidic Blessing",
+        "The Beatitudes"
+      ],
+      "a": 1,
+      "e": "Numbers 6:24-26 — Known as the Aaronic or Priestly Blessing.",
+      "d": "easy"
+    },
+    {
+      "q": "How were the tribes arranged when they camped around the Tabernacle?",
+      "o": [
+        "In a circle",
+        "In rows",
+        "In four groups of three on each side (North, South, East, West)",
+        "Randomly"
+      ],
+      "a": 2,
+      "e": "Numbers 2 describes the specific camp locations for each tribe.",
+      "d": "hard"
+    },
+    {
+      "q": "What was the purpose of the silver trumpets in Numbers 10?",
+      "o": [
+        "For music in the temple",
+        "For signaling the camp to move and for battle",
+        "To be sold for the poor",
+        "To be melted down for the Ark"
+      ],
+      "a": 1,
+      "e": "Numbers 10:2 — '...use them for summoning the community and for having the camps set out.'",
+      "d": "medium"
+    },
+    {
+      "q": "Who were the only two adults from the original generation who were allowed to enter Canaan?",
+      "o": [
+        "Moses and Aaron",
+        "Caleb and Joshua",
+        "Eleazar and Ithamar",
+        "Eldad and Medad"
+      ],
+      "a": 1,
+      "e": "Numbers 14:30 — 'Not one of you will enter the land... except Caleb... and Joshua.'",
+      "d": "easy"
+    },
+    {
+      "q": "What was the penalty for a man gathering wood on the Sabbath?",
+      "o": [
+        "Flogging",
+        "A warning",
+        "Death by stoning",
+        "Fine of two oxen"
+      ],
+      "a": 2,
+      "e": "Numbers 15:32-36 — The man was found gathering wood and was stoned to death at the Lord's command.",
+      "d": "medium"
+    },
+    {
+      "q": "What was the sign that God had chosen Aaron and his family as priests?",
+      "o": [
+        "A pillar of fire",
+        "Aaron's staff budded and produced almonds",
+        "Aaron's face shone",
+        "A voice from heaven"
+      ],
+      "a": 1,
+      "e": "Numbers 17:8 — '...Aaron’s staff... had not only sprouted but had budded, blossomed and produced almonds.'",
+      "d": "medium"
+    },
+    {
+      "q": "What were the Levites given as their inheritance instead of land?",
+      "o": [
+        "Gold and silver",
+        "The tithes of the people",
+        "The cities of the Philistines",
+        "The king's palace"
+      ],
+      "a": 1,
+      "e": "Numbers 18:21 — 'I give to the Levites all the tithes in Israel as their inheritance.'",
+      "d": "medium"
+    },
+    {
+      "q": "What color was the heifer whose ashes were used for the water of cleansing?",
+      "o": [
+        "White",
+        "Black",
+        "Red",
+        "Spotted"
+      ],
+      "a": 2,
+      "e": "Numbers 19:2 — 'Tell the Israelites to bring you a red heifer without defect...'",
+      "d": "hard"
+    },
+    {
+      "q": "Why was Moses forbidden from entering the Promised Land?",
+      "o": [
+        "He killed an Egyptian",
+        "He broke the first tablets of the Law",
+        "He struck the rock twice instead of speaking to it",
+        "He was too old"
+      ],
+      "a": 2,
+      "e": "Numbers 20:11-12 — Because Moses did not trust God enough to honor him as holy by speaking to the rock.",
+      "d": "medium"
+    },
+    {
+      "q": "What did God use to heal the people who were bitten by poisonous snakes in the wilderness?",
+      "o": [
+        "A special herb",
+        "A bronze snake on a pole",
+        "Holy water",
+        "Manna"
+      ],
+      "a": 1,
+      "e": "Numbers 21:9 — 'So Moses made a bronze snake and put it up on a pole.'",
+      "d": "easy"
+    },
+    {
+      "q": "What did the Law require a man to do if he died without a son to inherit his property?",
+      "o": [
+        "The land went to the king",
+        "The land was sold",
+        "The land went to his daughters (Zelophehad's daughters' law)",
+        "The land was given to the priests"
+      ],
+      "a": 2,
+      "e": "Numbers 27:8 — 'If a man dies and leaves no son, give his inheritance to his daughter.'",
+      "d": "medium"
+    },
+    {
+      "q": "What does the word 'Deuteronomy' mean?",
+      "o": [
+        "First Law",
+        "Second Law",
+        "Holy Law",
+        "Law of Moses"
+      ],
+      "a": 1,
+      "e": "From the Greek 'deuteros' (second) and 'nomos' (law).",
+      "d": "medium"
+    },
+    {
+      "q": "The 'Shema' (Hear, O Israel) is found in which chapter of Deuteronomy?",
+      "o": [
+        "1",
+        "6",
+        "12",
+        "28"
+      ],
+      "a": 1,
+      "e": "Deuteronomy 6:4 — 'Hear, O Israel: The Lord our God, the Lord is one.'",
+      "d": "medium"
+    },
+    {
+      "q": "Where were the Israelites to write the commands of God according to Deuteronomy 6?",
+      "o": [
+        "On the walls of the temple",
+        "On their hearts and on the doorframes of their houses",
+        "In the sand",
+        "On the palms of their hands"
+      ],
+      "a": 1,
+      "e": "Deuteronomy 6:6-9 — 'Write them on the doorframes of your houses and on your gates.'",
+      "d": "medium"
+    },
+    {
+      "q": "When a king was chosen for Israel, what was he required to write for himself?",
+      "o": [
+        "A book of his victories",
+        "A copy of the Law on a scroll",
+        "A list of his wives",
+        "A new set of taxes"
+      ],
+      "a": 1,
+      "e": "Deuteronomy 17:18 — 'He is to write for himself on a scroll a copy of this law.'",
+      "d": "hard"
+    },
+    {
+      "q": "What were the three things a king of Israel was NOT supposed to multiply for himself?",
+      "o": [
+        "Gold, Wives, Horses",
+        "Silver, Sheep, Servants",
+        "Palaces, Idols, Temples",
+        "Children, Lands, Armies"
+      ],
+      "a": 0,
+      "e": "Deuteronomy 17:16-17 — He must not acquire great numbers of horses, many wives, or large amounts of silver and gold.",
+      "d": "medium"
+    },
+    {
+      "q": "How many witnesses were required to convict a person of a crime under the Law?",
+      "o": [
+        "One",
+        "Two or three",
+        "Seven",
+        "A whole village"
+      ],
+      "a": 1,
+      "e": "Deuteronomy 19:15 — 'A matter must be established by the testimony of two or three witnesses.'",
+      "d": "medium"
+    },
+    {
+      "q": "What was the principle of 'Lex Talionis' found in the Law?",
+      "o": [
+        "Forgive and forget",
+        "An eye for an eye, a tooth for a tooth",
+        "Pay a double fine",
+        "The king decides all punishments"
+      ],
+      "a": 1,
+      "e": "Deuteronomy 19:21 — '...show no pity: life for life, eye for eye, tooth for tooth, hand for hand, foot for foot.'",
+      "d": "easy"
+    },
+    {
+      "q": "If a man found a bird's nest, what was he allowed to take and what must he leave?",
+      "o": [
+        "Take the mother, leave the eggs",
+        "Take the eggs/young, leave the mother",
+        "Take both",
+        "Leave both"
+      ],
+      "a": 1,
+      "e": "Deuteronomy 22:6-7 — '...you may take the young, but be sure to let the mother go.'",
+      "d": "hard"
+    },
+    {
+      "q": "What was a man required to build around the roof of his house for safety?",
+      "o": [
+        "A fence",
+        "A parapet (low wall)",
+        "A railing",
+        "A garden"
+      ],
+      "a": 1,
+      "e": "Deuteronomy 22:8 — 'When you build a new house, make a parapet around your roof.'",
+      "d": "hard"
+    },
+    {
+      "q": "What was the law of 'Levirate Marriage'?",
+      "o": [
+        "A man must marry his cousin",
+        "A man must marry his deceased brother's widow to provide an heir",
+        "A man can have only one wife",
+        "A man must marry a woman from his own tribe"
+      ],
+      "a": 1,
+      "e": "Deuteronomy 25:5-6 — '...her husband’s brother shall take her and marry her... The first son she bears shall carry on the name of the dead brother.'",
+      "d": "medium"
+    },
+    {
+      "q": "What were the Israelites forbidden to do to an ox while it was treading out the grain?",
+      "o": [
+        "Beat it",
+        "Muzzle it",
+        "Ride it",
+        "Feed it"
+      ],
+      "a": 1,
+      "e": "Deuteronomy 25:4 — 'Do not muzzle an ox while it is treading out the grain.'",
+      "d": "medium"
+    },
+    {
+      "q": "On which two mountains were the blessings and curses of the Law pronounced?",
+      "o": [
+        "Sinai and Nebo",
+        "Gerizim and Ebal",
+        "Zion and Moriah",
+        "Carmel and Hermon"
+      ],
+      "a": 1,
+      "e": "Deuteronomy 27:12-13 — Gerizim for blessing and Ebal for cursing.",
+      "d": "hard"
+    },
+    {
+      "q": "What was the purpose of the 'Cities of Refuge'?",
+      "o": [
+        "For the priests to live in",
+        "For people who committed accidental manslaughter to flee to",
+        "For the poor to find food",
+        "For foreign travelers"
+      ],
+      "a": 1,
+      "e": "Numbers 35:11 — '...so that anyone who has killed someone accidentally may flee there.'",
+      "d": "medium"
+    },
+    {
+      "q": "What was the punishment for a rebellious son who would not obey his parents and was a glutton and a drunkard?",
+      "o": [
+        "Flogging",
+        "Exile",
+        "Death by stoning",
+        "Hard labor"
+      ],
+      "a": 2,
+      "e": "Deuteronomy 21:18-21 — 'Then all the men of his town are to stone him to death.'",
+      "d": "hard"
+    },
+    {
+      "q": "What should happen to a person who moved their neighbor's boundary stone?",
+      "o": [
+        "They were cursed",
+        "They were fined",
+        "They were imprisoned",
+        "They had to pay fourfold"
+      ],
+      "a": 0,
+      "e": "Deuteronomy 27:17 — 'Cursed is anyone who moves their neighbor’s boundary stone.'",
+      "d": "hard"
+    },
+    {
+      "q": "In the Law, what were the 'Urim and Thummim' used for?",
+      "o": [
+        "Decorating the altar",
+        "Lighting the lamps",
+        "Determining the will of God (casting lots)",
+        "Measuring grain"
+      ],
+      "a": 2,
+      "e": "Exodus 28:30 — '...they will be over Aaron’s heart whenever he enters the presence of the Lord.'",
+      "d": "hard"
+    },
+    {
+      "q": "What was the maximum number of lashes a person could receive as punishment?",
+      "o": [
+        "10",
+        "39",
+        "40",
+        "100"
+      ],
+      "a": 2,
+      "e": "Deuteronomy 25:3 — 'The judge may impose no more than forty lashes.' (Jews often did 39 to ensure they didn't break the law).",
+      "d": "medium"
+    },
+    {
+      "q": "What must a man do if he has just built a new house and not yet dedicated it, in terms of military service?",
+      "o": [
+        "He must serve twice as long",
+        "He is exempt from the army",
+        "He must pay a tax instead",
+        "He must lead the army"
+      ],
+      "a": 1,
+      "e": "Deuteronomy 20:5 — '...let him go home... or he may die in battle and someone else may dedicate it.'",
+      "d": "hard"
+    },
+    {
+      "q": "What was the Law regarding fruit trees in the first three years after planting?",
+      "o": [
+        "The fruit could be eaten",
+        "The fruit was considered 'forbidden' (uncircumcised)",
+        "The fruit must be given to the poor",
+        "The trees must be cut down"
+      ],
+      "a": 1,
+      "e": "Leviticus 19:23 — 'For three years you are to consider it forbidden; it must not be eaten.'",
+      "d": "hard"
+    },
+    {
+      "q": "What kind of offering was brought if someone accidentally sinned against one of the Lord's commands?",
+      "o": [
+        "Burnt offering",
+        "Grain offering",
+        "Sin offering",
+        "Peace offering"
+      ],
+      "a": 2,
+      "e": "Leviticus 4:2 — 'When anyone sins unintentionally... they are to bring a sin offering.'",
+      "d": "easy"
+    },
+    {
+      "q": "How often was the Law of Moses to be read publicly to the whole assembly?",
+      "o": [
+        "Every Sabbath",
+        "Once a year",
+        "Every seven years during the Feast of Tabernacles",
+        "Every 50 years"
+      ],
+      "a": 2,
+      "e": "Deuteronomy 31:10-11 — 'At the end of every seven years... read this law before them in their hearing.'",
+      "d": "hard"
+    },
+    {
+      "q": "Which tribe did Moses specifically bless with the task of teaching God's Law to Israel?",
+      "o": [
+        "Judah",
+        "Levi",
+        "Ephraim",
+        "Dan"
+      ],
+      "a": 1,
+      "e": "Deuteronomy 33:10 — 'He teaches your precepts to Jacob and your law to Israel.'",
+      "d": "medium"
+    },
+    {
+      "q": "What was the penalty for someone who practiced sorcery or was a medium?",
+      "o": [
+        "Exile",
+        "Death",
+        "Flogging",
+        "A sin offering"
+      ],
+      "a": 1,
+      "e": "Leviticus 20:27 — 'A man or woman who is a medium or spiritist among you must be put to death.'",
+      "d": "medium"
+    },
+    {
+      "q": "What happened to the house of a person if 'spreading mildew' (leprosy of the house) could not be cleaned?",
+      "o": [
+        "It was burned",
+        "It was sold",
+        "It was torn down and the stones and wood thrown into an unclean place",
+        "It was left empty"
+      ],
+      "a": 2,
+      "e": "Leviticus 14:45 — 'It must be torn down—its stones, timbers and all the plaster—and taken out of the town to an unclean place.'",
+      "d": "hard"
+    },
+    {
+      "q": "Which animal was NOT allowed as a sacrifice for a poor person who could not afford a lamb?",
+      "o": [
+        "Two doves",
+        "Two young pigeons",
+        "A tenth of an ephah of fine flour",
+        "A small goat"
+      ],
+      "a": 3,
+      "e": "Leviticus 5:7-11 — If they cannot afford a lamb, they may bring birds or flour.",
+      "d": "medium"
+    },
+    {
+      "q": "In the Law, what was a 'Wave Offering'?",
+      "o": [
+        "An offering thrown into the sea",
+        "An offering waved before the Lord by the priest",
+        "An offering of grain only",
+        "An offering given on the beach"
+      ],
+      "a": 1,
+      "e": "Leviticus 7:30 — 'The fat with the breast... is to be waved before the Lord as a wave offering.'",
+      "d": "medium"
+    },
+    {
+      "q": "What was the 'Tenth' given to God called?",
+      "o": [
+        "Offering",
+        "Tribute",
+        "Tithe",
+        "Alms"
+      ],
+      "a": 2,
+      "e": "Leviticus 27:30 — 'A tithe of everything from the land... belongs to the Lord.'",
+      "d": "easy"
+    },
+    {
+      "q": "What was the Law about charging interest to a fellow Israelite?",
+      "o": [
+        "Up to 10%",
+        "Forbidden to charge interest to a brother",
+        "Only on gold",
+        "Only if they were rich"
+      ],
+      "a": 1,
+      "e": "Exodus 22:25 — 'If you lend money to one of my people... do not charge him interest.'",
+      "d": "medium"
+    },
+    {
+      "q": "What happened to a Hebrew slave after six years of service?",
+      "o": [
+        "They were sold",
+        "They became a permanent slave",
+        "They were to be set free in the seventh year",
+        "They were given land"
+      ],
+      "a": 2,
+      "e": "Exodus 21:2 — 'If you buy a Hebrew servant, he is to serve you for six years. But in the seventh year, he shall go free.'",
+      "d": "medium"
+    },
+    {
+      "q": "If a Hebrew slave loved his master and did not want to go free, what was the sign of his permanent servitude?",
+      "o": [
+        "A tattoo",
+        "A brand on the forehead",
+        "An ear pierced with an awl against a door",
+        "A special ring"
+      ],
+      "a": 2,
+      "e": "Exodus 21:5-6 — '...his master shall take him to the door or the doorpost and pierce his ear with an awl. Then he will be his servant for life.'",
+      "d": "medium"
+    },
+    {
+      "q": "What was the punishment for a person who hit their father or mother?",
+      "o": [
+        "Flogging",
+        "A fine",
+        "Death",
+        "They had to serve them for life"
+      ],
+      "a": 2,
+      "e": "Exodus 21:15 — 'Anyone who attacks their father or mother is to be put to death.'",
+      "d": "medium"
+    },
+    {
+      "q": "In the Law, if a man dug a pit and didn't cover it, and someone's animal fell in, what was the penalty?",
+      "o": [
+        "The man was whipped",
+        "The man had to pay the owner the value of the animal",
+        "The animal was given to the man",
+        "Nothing, it was an accident"
+      ],
+      "a": 1,
+      "e": "Exodus 21:33-34 — 'The one who opened the pit must pay the owner for the loss.'",
+      "d": "medium"
+    },
+    {
+      "q": "What was the 'Law of the Firstborn' regarding animals?",
+      "o": [
+        "They were eaten by the family",
+        "They were given to the poor",
+        "The first male offspring belonged to the Lord",
+        "They were sold"
+      ],
+      "a": 2,
+      "e": "Exodus 13:2 — 'Consecrate to me every firstborn male. The first offspring of every womb among the Israelites belongs to me.'",
+      "d": "medium"
+    },
+    {
+      "q": "Which of these was NOT one of the three main annual feasts?",
+      "o": [
+        "Unleavened Bread (Passover)",
+        "Harvest (Pentecost)",
+        "Ingathering (Tabernacles)",
+        "Hanukkah"
+      ],
+      "a": 3,
+      "e": "Exodus 23:14-16 — Lists the three main pilgrim feasts. Hanukkah came much later.",
+      "d": "medium"
+    },
+    {
+      "q": "What was the penalty for a person who worked on the Sabbath?",
+      "o": [
+        "Fine",
+        "A day of fasting",
+        "Death",
+        "Public apology"
+      ],
+      "a": 2,
+      "e": "Exodus 31:14 — 'Anyone who works on the Sabbath day is to be put to death.'",
+      "d": "medium"
+    },
+    {
+      "q": "What was the Law about taking a mother bird and her young together?",
+      "o": [
+        "It was encouraged",
+        "It was forbidden (must let the mother go)",
+        "Only allowed on Sabbath",
+        "Only allowed for priests"
+      ],
+      "a": 1,
+      "e": "Deuteronomy 22:6-7 — '...you may take the young, but be sure to let the mother go.'",
+      "d": "hard"
+    },
+    {
+      "q": "What was the punishment for a false witness?",
+      "o": [
+        "A fine",
+        "Death",
+        "Whatever punishment was intended for the accused",
+        "Public shaming"
+      ],
+      "a": 2,
+      "e": "Deuteronomy 19:18-19 — '...do to the false witness as that witness intended to do to the other party.'",
+      "d": "medium"
+    },
+    {
+      "q": "What must an Israelite do if they found their enemy's ox wandering away?",
+      "o": [
+        "Keep it",
+        "Kill it",
+        "Be sure to return it to its owner",
+        "Ignore it"
+      ],
+      "a": 2,
+      "e": "Exodus 23:4 — 'If you come across your enemy’s ox or donkey wandering off, be sure to return it.'",
+      "d": "medium"
+    },
+    {
+      "q": "What was the Law regarding a newly married man and the army?",
+      "o": [
+        "He must lead the army",
+        "He must stay home for one year to bring happiness to his wife",
+        "He must go immediately",
+        "He must pay a double tax"
+      ],
+      "a": 1,
+      "e": "Deuteronomy 24:5 — 'If a man has recently married, he must not be sent to war... For one year he is to be free... to bring happiness to the wife he has married.'",
+      "d": "medium"
+    },
+    {
+      "q": "What was the penalty for a man who raped a girl who was not pledged to be married?",
+      "o": [
+        "Death",
+        "Fine of 50 shekels and he must marry her and never divorce her",
+        "Exile",
+        "Flogging"
+      ],
+      "a": 1,
+      "e": "Deuteronomy 22:28-29 — '...he must marry the young woman... He may never divorce her as long as he lives.'",
+      "d": "hard"
+    },
+    {
+      "q": "What was the Law regarding the return of a runaway slave to his master?",
+      "o": [
+        "He must be returned",
+        "He must not be handed over to his master; he may live among you",
+        "He must be killed",
+        "He must be sold"
+      ],
+      "a": 1,
+      "e": "Deuteronomy 23:15-16 — 'If a slave has taken refuge with you, do not hand them over to their master.'",
+      "d": "hard"
+    },
+    {
+      "q": "Which tribe was given the responsibility of carrying the Ark of the Covenant?",
+      "o": [
+        "Judah",
+        "Benjamin",
+        "Levi (specifically the Kohathites)",
+        "Ephraim"
+      ],
+      "a": 2,
+      "e": "Numbers 4 — The Kohathite branch of the Levites were the ones to carry the holy things.",
+      "d": "medium"
+    },
+    {
+      "q": "How many cities of the Levites were there in total?",
+      "o": [
+        "12",
+        "24",
+        "48",
+        "70"
+      ],
+      "a": 2,
+      "e": "Numbers 35:7 — '...you are to give the Levites forty-eight towns in all.'",
+      "d": "hard"
+    },
+    {
+      "q": "What was the Law about planting different kinds of seeds in the same vineyard?",
+      "o": [
+        "It was recommended",
+        "It was forbidden",
+        "Only allowed for the poor",
+        "Only allowed in the Jubilee"
+      ],
+      "a": 1,
+      "e": "Deuteronomy 22:9 — 'Do not plant two kinds of seed in your vineyard.'",
+      "d": "hard"
+    },
+    {
+      "q": "What was the Law about wearing the clothes of the opposite sex?",
+      "o": [
+        "It was allowed at festivals",
+        "It was an abomination to the Lord",
+        "It was a fine",
+        "It was recommended for spies"
+      ],
+      "a": 1,
+      "e": "Deuteronomy 22:5 — 'A woman must not wear men’s clothing, nor a man wear women’s clothing...'",
+      "d": "medium"
+    },
+    {
+      "q": "What happened to a person who did not deny themselves on the Day of Atonement?",
+      "o": [
+        "They had to pay a fine",
+        "They must be cut off from their people",
+        "They were flogged",
+        "They were forgiven"
+      ],
+      "a": 1,
+      "e": "Leviticus 23:29 — 'Those who do not humble themselves on that day must be cut off from their people.'",
+      "d": "hard"
+    },
+    {
+      "q": "What was the purpose of the 'Memorial Portions' in the grain offering?",
+      "o": [
+        "To remember the ancestors",
+        "As a reminder to God of his covenant (symbolically)",
+        "To feed the poor",
+        "To be kept in a jar"
+      ],
+      "a": 1,
+      "e": "Leviticus 2:2 — 'The priest shall take a handful... and burn it on the altar as a memorial portion.'",
+      "d": "hard"
+    },
+    {
+      "q": "Which part of the sacrifice was the priest's portion in a peace offering?",
+      "o": [
+        "The head",
+        "The whole animal",
+        "The breast and the right thigh",
+        "The tail"
+      ],
+      "a": 2,
+      "e": "Leviticus 7:31-34 — 'The breast belongs to Aaron and his sons... you are to give the right thigh to the priest.'",
+      "d": "hard"
+    },
+    {
+      "q": "What was the 'Law of Jealousy' (Numbers 5) used for?",
+      "o": [
+        "To test a man's loyalty",
+        "To test a wife suspected of unfaithfulness by her husband",
+        "To decide who gets the inheritance",
+        "To choose a new king"
+      ],
+      "a": 1,
+      "e": "Numbers 5:11-31 — Involves the 'water that brings a curse.'",
+      "d": "hard"
+    },
+    {
+      "q": "How were the Israelites to mark their clothing to remember the commands of the Lord?",
+      "o": [
+        "Tattoos",
+        "Tassels (Tzitzit) with a blue cord on the corners",
+        "Blue belts",
+        "White hats"
+      ],
+      "a": 1,
+      "e": "Numbers 15:38-39 — '...make tassels on the corners of your garments, with a blue cord on each tassel.'",
+      "d": "medium"
+    },
+    {
+      "q": "What did the Law say about a man who newly planted a vineyard?",
+      "o": [
+        "He must give the first harvest to the king",
+        "He was exempt from the army until he had enjoyed its fruit",
+        "He had to pay a vineyard tax",
+        "He had to share it with all his neighbors"
+      ],
+      "a": 1,
+      "e": "Deuteronomy 20:6 — 'Has anyone planted a vineyard and not begun to enjoy it? Let him go home...' (exempt from war).",
+      "d": "hard"
+    },
+    {
+      "q": "What was the punishment for a woman who grabbed the private parts of a man fighting her husband?",
+      "o": [
+        "A fine",
+        "She was flogged",
+        "Her hand was to be cut off",
+        "Exile"
+      ],
+      "a": 2,
+      "e": "Deuteronomy 25:11-12 — '...you shall cut off her hand. Show her no pity.'",
+      "d": "hard"
+    },
+    {
+      "q": "What did the Law say about weights and measures?",
+      "o": [
+        "They should be roughly accurate",
+        "They must be accurate and honest; no differing weights",
+        "The king sets them every year",
+        "It didn't matter"
+      ],
+      "a": 1,
+      "e": "Deuteronomy 25:13-15 — 'Do not have two differing weights in your bag... You must have accurate and honest weights and measures.'",
+      "d": "medium"
+    },
+    {
+      "q": "According to the Law, when was the Paschal lamb to be slaughtered?",
+      "o": [
+        "At dawn",
+        "At noon",
+        "At twilight",
+        "At midnight"
+      ],
+      "a": 2,
+      "e": "Exodus 12:6 — '...the whole assembly of the Israelite community must slaughter them at twilight.'",
+      "d": "medium"
+    },
+    {
+      "q": "What was the Law regarding the eating of blood?",
+      "o": [
+        "Allowed for soldiers",
+        "Strictly forbidden; the life is in the blood",
+        "Only allowed in the wilderness",
+        "Allowed for priests"
+      ],
+      "a": 1,
+      "e": "Leviticus 17:10 — 'I will set my face against any Israelite... who eats blood and I will cut them off.'",
+      "d": "easy"
+    },
+    {
+      "q": "In the Law, if someone's bull killed a slave, what was the compensation to the master?",
+      "o": [
+        "A new slave",
+        "10 shekels",
+        "30 shekels of silver",
+        "50 shekels"
+      ],
+      "a": 2,
+      "e": "Exodus 21:32 — 'If the bull gores a male or female slave, the owner must pay thirty shekels of silver to the master.'",
+      "d": "hard"
+    },
+    {
+      "q": "What was the Law about taking a neighbor's cloak as a pledge for a loan?",
+      "o": [
+        "Keep it until the loan is paid",
+        "Return it by sunset so they can sleep in it",
+        "Forbidden to take clothes",
+        "Only allowed for one day"
+      ],
+      "a": 1,
+      "e": "Exodus 22:26-27 — 'If you take your neighbor’s cloak as a pledge, return it by sunset... What else will they sleep in?'",
+      "d": "medium"
+    },
+    {
+      "q": "Which feast was the 'Feast of Weeks'?",
+      "o": [
+        "Passover",
+        "Pentecost (Shavuot)",
+        "Tabernacles",
+        "Trumpets"
+      ],
+      "a": 1,
+      "e": "Exodus 34:22 — 'Celebrate the Festival of Weeks with the firstfruits of the wheat harvest.'",
+      "d": "medium"
+    },
+    {
+      "q": "What was the Law regarding a person who accidentally killed someone?",
+      "o": [
+        "Death",
+        "A fine",
+        "They could flee to a City of Refuge",
+        "Exile to Egypt"
+      ],
+      "a": 2,
+      "e": "Numbers 35:11 — '...so that anyone who has killed someone accidentally may flee there.'",
+      "d": "easy"
+    },
+    {
+      "q": "What was the sign of the Covenant of the Law given to Abraham (later incorporated into the Law)?",
+      "o": [
+        "Sacrifice",
+        "Sabbath",
+        "Circumcision",
+        "The Ark"
+      ],
+      "a": 2,
+      "e": "Genesis 17 / Leviticus 12:3 — 'On the eighth day the boy is to be circumcised.'",
+      "d": "easy"
+    },
+    {
+      "q": "Which book of the Law contains the 'Second Census' of Israel?",
+      "o": [
+        "Genesis",
+        "Exodus",
+        "Leviticus",
+        "Numbers"
+      ],
+      "a": 3,
+      "e": "Numbers 26 records the second census before entering Canaan.",
+      "d": "medium"
+    },
+    {
+      "q": "In the Law, what were the Israelites to do with the firstfruits of their harvest?",
+      "o": [
+        "Eat them at home",
+        "Bring them to the house of the Lord as an offering",
+        "Give them to the poor",
+        "Burn them entirely"
+      ],
+      "a": 1,
+      "e": "Exodus 23:19 — 'Bring the best of the firstfruits of your soil to the house of the Lord your God.'",
+      "d": "medium"
+    },
+    {
+      "q": "What was the Law about eating an animal that died of natural causes?",
+      "o": [
+        "Allowed for everyone",
+        "Forbidden for Israelites but could be given to a foreigner or sold",
+        "Must be burned",
+        "Only for priests"
+      ],
+      "a": 1,
+      "e": "Deuteronomy 14:21 — 'Do not eat anything you find already dead. You may give it to the foreigner... or you may sell it to a foreigner.'",
+      "d": "hard"
+    }
+  ],
+  "Worship & Music": [
+    {
+      "q": "Which book of the Bible is a collection of 150 songs and prayers?",
+      "o": [
+        "Proverbs",
+        "Psalms",
+        "Ecclesiastes",
+        "Song of Solomon"
+      ],
+      "a": 1,
+      "e": "The Book of Psalms contains 150 individual psalms.",
+      "d": "easy"
+    },
+    {
+      "q": "Who is traditionally credited with writing many of the Psalms?",
+      "o": [
+        "Moses",
+        "David",
+        "Solomon",
+        "Asaph"
+      ],
+      "a": 1,
+      "e": "David is known as the 'Sweet Psalmist of Israel.'",
+      "d": "easy"
+    },
+    {
+      "q": "Which instrument did David play to soothe King Saul?",
+      "o": [
+        "Trumpet",
+        "Harp (Lyre)",
+        "Flute",
+        "Cymbals"
+      ],
+      "a": 1,
+      "e": "1 Samuel 16:23 — 'David would take his lyre and play. Then relief would come to Saul.'",
+      "d": "easy"
+    },
+    {
+      "q": "What was the name of the sister of Moses who led the women in music and dancing after crossing the Red Sea?",
+      "o": [
+        "Deborah",
+        "Miriam",
+        "Hannah",
+        "Ruth"
+      ],
+      "a": 1,
+      "e": "Exodus 15:20 — 'Then Miriam the prophetess... took a timbrel in her hand.'",
+      "d": "medium"
+    },
+    {
+      "q": "Which tribe was set apart by God for the service of the Tabernacle and leading worship?",
+      "o": [
+        "Judah",
+        "Levi",
+        "Benjamin",
+        "Joseph"
+      ],
+      "a": 1,
+      "e": "The Levites were responsible for the sanctuary and its music.",
+      "d": "easy"
+    },
+    {
+      "q": "In the New Testament, who sang hymns in prison at midnight?",
+      "o": [
+        "Peter and John",
+        "Paul and Silas",
+        "James and Jude",
+        "Stephen and Philip"
+      ],
+      "a": 1,
+      "e": "Acts 16:25 — 'About midnight Paul and Silas were praying and singing hymns to God.'",
+      "d": "easy"
+    },
+    {
+      "q": "What is the shortest Psalm in the Bible?",
+      "o": [
+        "Psalm 1",
+        "Psalm 23",
+        "Psalm 117",
+        "Psalm 150"
+      ],
+      "a": 2,
+      "e": "Psalm 117 has only two verses.",
+      "d": "medium"
+    },
+    {
+      "q": "What is the longest Psalm in the Bible?",
+      "o": [
+        "Psalm 22",
+        "Psalm 51",
+        "Psalm 119",
+        "Psalm 139"
+      ],
+      "a": 2,
+      "e": "Psalm 119 has 176 verses.",
+      "d": "easy"
+    },
+    {
+      "q": "What instrument did the Israelites use to signal the start of the Year of Jubilee?",
+      "o": [
+        "Ram's horn (Shofar)",
+        "Silver trumpet",
+        "Harp",
+        "Cymbals"
+      ],
+      "a": 0,
+      "e": "Leviticus 25:9 — 'Then have the trumpet sounded everywhere on the tenth day of the seventh month.'",
+      "d": "medium"
+    },
+    {
+      "q": "Which Psalm begins with 'The Lord is my shepherd; I shall not want'?",
+      "o": [
+        "Psalm 1",
+        "Psalm 23",
+        "Psalm 91",
+        "Psalm 100"
+      ],
+      "a": 1,
+      "e": "Psalm 23:1 is one of the most famous verses in the Bible.",
+      "d": "easy"
+    },
+    {
+      "q": "How many singers did David appoint to minister before the Ark?",
+      "o": [
+        "12",
+        "70",
+        "288",
+        "4,000"
+      ],
+      "a": 2,
+      "e": "1 Chronicles 25:7 — '...they numbered 288.'",
+      "d": "hard"
+    },
+    {
+      "q": "Which musical instrument was used by the walls of Jericho to cause them to fall?",
+      "o": [
+        "Harps",
+        "Flutes",
+        "Trumpets of rams' horns",
+        "Cymbals"
+      ],
+      "a": 2,
+      "e": "Joshua 6:20 — 'When the trumpets sounded, the army shouted, and at the sound of the trumpet... the wall collapsed.'",
+      "d": "easy"
+    },
+    {
+      "q": "What word is often found at the end of verses in Psalms, possibly meaning a musical pause or reflection?",
+      "o": [
+        "Amen",
+        "Hallelujah",
+        "Selah",
+        "Hosanna"
+      ],
+      "a": 2,
+      "e": "Selah appears 71 times in the Psalms.",
+      "d": "medium"
+    },
+    {
+      "q": "Who was the chief musician appointed by David, to whom many Psalms are addressed?",
+      "o": [
+        "Asaph",
+        "Jeduthun",
+        "Heman",
+        "All of the above"
+      ],
+      "a": 3,
+      "e": "1 Chronicles 25 lists Asaph, Heman, and Jeduthun as the primary worship leaders.",
+      "d": "medium"
+    },
+    {
+      "q": "What was the name of the song Moses sang after the crossing of the Red Sea?",
+      "o": [
+        "The Song of Deliverance",
+        "The Song of Moses",
+        "The Song of Israel",
+        "The Song of the Sea"
+      ],
+      "a": 1,
+      "e": "Exodus 15:1 — 'Then Moses and the Israelites sang this song to the Lord.'",
+      "d": "medium"
+    },
+    {
+      "q": "In Revelation, what do the four living creatures say day and night without ceasing?",
+      "o": [
+        "Hallelujah!",
+        "Holy, holy, holy is the Lord God Almighty",
+        "Worthy is the Lamb",
+        "Amen and Amen"
+      ],
+      "a": 1,
+      "e": "Revelation 4:8 — 'Day and night they never stop saying: \"Holy, holy, holy is the Lord God Almighty...\"'",
+      "d": "medium"
+    },
+    {
+      "q": "Which king of Judah appointed singers to walk ahead of the army, praising God, which led to a great victory?",
+      "o": [
+        "David",
+        "Solomon",
+        "Jehoshaphat",
+        "Hezekiah"
+      ],
+      "a": 2,
+      "e": "2 Chronicles 20:21 — 'Jehoshaphat appointed men to sing to the Lord... as they went out at the head of the army.'",
+      "d": "medium"
+    },
+    {
+      "q": "What did the Levites carry in front of the army in the story of Jehoshaphat?",
+      "o": [
+        "The Ark",
+        "Nothing, they just sang",
+        "The Law",
+        "Torches"
+      ],
+      "a": 1,
+      "e": "2 Chronicles 20:21-22 — They sang 'Give thanks to the Lord, for his love endures forever.'",
+      "d": "hard"
+    },
+    {
+      "q": "What is the meaning of the word 'Hallelujah'?",
+      "o": [
+        "God is great",
+        "Praise the Lord",
+        "Save us now",
+        "Peace be with you"
+      ],
+      "a": 1,
+      "e": "It is a Hebrew phrase: 'Hallelu' (praise) + 'Jah' (Yahweh).",
+      "d": "easy"
+    },
+    {
+      "q": "Which book contains the 'Song of Songs'?",
+      "o": [
+        "Psalms",
+        "Proverbs",
+        "Song of Solomon",
+        "Ecclesiastes"
+      ],
+      "a": 2,
+      "e": "Also known as the Song of Solomon.",
+      "d": "easy"
+    },
+    {
+      "q": "Which instrument is mentioned in Psalm 150 as being used to praise God with 'clashing'?",
+      "o": [
+        "Trumpets",
+        "Harps",
+        "Cymbals",
+        "Drums"
+      ],
+      "a": 2,
+      "e": "Psalm 150:5 — 'Praise him with clashing cymbals.'",
+      "d": "easy"
+    },
+    {
+      "q": "In the Old Testament, which object was the center of Israel's worship and housed in the Holy of Holies?",
+      "o": [
+        "The Altar",
+        "The Golden Calf",
+        "The Ark of the Covenant",
+        "The Table of Shewbread"
+      ],
+      "a": 2,
+      "e": "The Ark represented God's presence among His people.",
+      "d": "easy"
+    },
+    {
+      "q": "What did the Israelites build in the wilderness to be a place of worship?",
+      "o": [
+        "The Temple",
+        "The Tabernacle",
+        "The Synagogue",
+        "An Altar only"
+      ],
+      "a": 1,
+      "e": "The Tabernacle was a portable tent of meeting.",
+      "d": "easy"
+    },
+    {
+      "q": "How many times a day did the priests offer incense on the golden altar?",
+      "o": [
+        "Once",
+        "Twice (morning and evening)",
+        "Three times",
+        "Seven times"
+      ],
+      "a": 1,
+      "e": "Exodus 30:7-8 — 'Aaron must burn fragrant incense on the altar every morning... and when he lights the lamps at twilight.'",
+      "d": "hard"
+    },
+    {
+      "q": "What was the name of the song Mary sang after being told she would give birth to Jesus?",
+      "o": [
+        "The Magnificat",
+        "The Benedictus",
+        "The Nunc Dimittis",
+        "The Ave Maria"
+      ],
+      "a": 0,
+      "e": "Luke 1:46-55 — 'And Mary said: \"My soul glorifies the Lord...\"' (Latin: Magnificat).",
+      "d": "medium"
+    },
+    {
+      "q": "Who sang a song of praise (the Benedictus) after the birth of his son John the Baptist?",
+      "o": [
+        "Joseph",
+        "Zechariah",
+        "Simeon",
+        "Elkanah"
+      ],
+      "a": 1,
+      "e": "Luke 1:67-79 — 'His father Zechariah was filled with the Holy Spirit and prophesied.'",
+      "d": "medium"
+    },
+    {
+      "q": "Who was the first person mentioned in the Bible as a 'father of all who play stringed instruments and pipes'?",
+      "o": [
+        "David",
+        "Jubal",
+        "Cain",
+        "Lamech"
+      ],
+      "a": 1,
+      "e": "Genesis 4:21 — 'His brother’s name was Jubal; he was the father of all who play stringed instruments and pipes.'",
+      "d": "hard"
+    },
+    {
+      "q": "Which Psalm is a prayer of Moses?",
+      "o": [
+        "Psalm 23",
+        "Psalm 51",
+        "Psalm 90",
+        "Psalm 119"
+      ],
+      "a": 2,
+      "e": "Psalm 90 is titled 'A prayer of Moses the man of God.'",
+      "d": "hard"
+    },
+    {
+      "q": "What did the people of Israel do when the foundation of the second temple was laid in the days of Ezra?",
+      "o": [
+        "Cried",
+        "Shouted for joy",
+        "Both cried and shouted for joy",
+        "Fast"
+      ],
+      "a": 2,
+      "e": "Ezra 3:12-13 — 'Many... shouted for joy. But many... wept aloud... No one could distinguish the sounds of the shouts of joy from the sound of weeping.'",
+      "d": "hard"
+    },
+    {
+      "q": "In the vision of Isaiah 6, what do the Seraphim call out to one another?",
+      "o": [
+        "Hallelujah",
+        "Holy, holy, holy is the Lord Almighty",
+        "The Lord is one",
+        "Glory to God in the highest"
+      ],
+      "a": 1,
+      "e": "Isaiah 6:3 — 'And they were calling to one another: \"Holy, holy, holy is the Lord Almighty; the whole earth is full of his glory.\"'",
+      "d": "medium"
+    },
+    {
+      "q": "Which of these is NOT a musical instrument mentioned in the Bible?",
+      "o": [
+        "Lyre",
+        "Timbrel",
+        "Piano",
+        "Flute"
+      ],
+      "a": 2,
+      "e": "The piano was invented long after the Bible was written.",
+      "d": "easy"
+    },
+    {
+      "q": "What did Jesus and His disciples do at the end of the Last Supper before going to the Mount of Olives?",
+      "o": [
+        "Prayed in silence",
+        "Sang a hymn",
+        "Performed a dance",
+        "Played harps"
+      ],
+      "a": 1,
+      "e": "Matthew 26:30 — 'When they had sung a hymn, they went out to the Mount of Olives.'",
+      "d": "medium"
+    },
+    {
+      "q": "Which Psalm is known as the 'Psalm of Repentance', written by David after his sin with Bathsheba?",
+      "o": [
+        "Psalm 1",
+        "Psalm 23",
+        "Psalm 51",
+        "Psalm 103"
+      ],
+      "a": 2,
+      "e": "Psalm 51 — 'Have mercy on me, O God... blot out my transgressions.'",
+      "d": "medium"
+    },
+    {
+      "q": "What was the name of the valley where the Israelites blessed the Lord after Jehoshaphat's victory?",
+      "o": [
+        "Valley of Elah",
+        "Valley of Berakah (Blessing)",
+        "Valley of Jezreel",
+        "Valley of Hinnom"
+      ],
+      "a": 1,
+      "e": "2 Chronicles 20:26 — 'On the fourth day they assembled in the Valley of Berakah, where they praised the Lord.'",
+      "d": "hard"
+    },
+    {
+      "q": "Which musical instrument was made of silver and used to summon the assembly in the wilderness?",
+      "o": [
+        "Cymbals",
+        "Trumpets",
+        "Harps",
+        "Tambourines"
+      ],
+      "a": 1,
+      "e": "Numbers 10:2 — 'Make two trumpets of hammered silver, and use them for summoning the community.'",
+      "d": "medium"
+    },
+    {
+      "q": "How many times a year did the High Priest enter the Holy of Holies to worship?",
+      "o": [
+        "Every day",
+        "Every Sabbath",
+        "Once a year",
+        "Three times a year"
+      ],
+      "a": 2,
+      "e": "Hebrews 9:7 — 'But only the high priest entered the inner room, and that only once a year.' (Day of Atonement).",
+      "d": "medium"
+    },
+    {
+      "q": "Which instrument did Miriam use when leading the women in song?",
+      "o": [
+        "Harp",
+        "Timbrel (Tambourine)",
+        "Trumpet",
+        "Lyre"
+      ],
+      "a": 1,
+      "e": "Exodus 15:20 — 'Then Miriam... took a timbrel in her hand.'",
+      "d": "easy"
+    },
+    {
+      "q": "In the book of Daniel, what was the signal for everyone to fall down and worship the golden image of Nebuchadnezzar?",
+      "o": [
+        "A shout",
+        "The sound of musical instruments",
+        "A flag being raised",
+        "Sunset"
+      ],
+      "a": 1,
+      "e": "Daniel 3:5 — 'As soon as you hear the sound of the horn, flute, zither, lyre, harp, pipe and all kinds of music...'",
+      "d": "medium"
+    },
+    {
+      "q": "Which Psalm describes the 'heavens declaring the glory of God'?",
+      "o": [
+        "Psalm 1",
+        "Psalm 19",
+        "Psalm 23",
+        "Psalm 100"
+      ],
+      "a": 1,
+      "e": "Psalm 19:1 — 'The heavens declare the glory of God; the skies proclaim the work of his hands.'",
+      "d": "medium"
+    },
+    {
+      "q": "What is the meaning of the musical term 'Michtam' found in some Psalm titles?",
+      "o": [
+        "Golden Psalm / Epigram",
+        "Song of degrees",
+        "For the flute",
+        "A sad song"
+      ],
+      "a": 0,
+      "e": "Scholars believe it refers to a specific type of poem or inscription.",
+      "d": "hard"
+    },
+    {
+      "q": "Which group of people were the 'gatekeepers' and also involved in the music of the temple?",
+      "o": [
+        "The Kohathites",
+        "The Korahites",
+        "The Gershonites",
+        "The Merarites"
+      ],
+      "a": 1,
+      "e": "The 'Sons of Korah' are mentioned in the titles of many Psalms.",
+      "d": "hard"
+    },
+    {
+      "q": "Which Psalm is often called the 'Shepherd Psalm'?",
+      "o": [
+        "Psalm 22",
+        "Psalm 23",
+        "Psalm 24",
+        "Psalm 100"
+      ],
+      "a": 1,
+      "e": "Psalm 23 depicts the Lord as a shepherd.",
+      "d": "easy"
+    },
+    {
+      "q": "What was the name of the song sung by Deborah and Barak after defeating Sisera?",
+      "o": [
+        "The Song of Deborah",
+        "The Song of Victory",
+        "The Song of the Judges",
+        "The Song of Israel"
+      ],
+      "a": 0,
+      "e": "Judges 5:1 — 'On that day Deborah and Barak son of Abinoam sang this song.'",
+      "d": "medium"
+    },
+    {
+      "q": "What did the angels sing when Jesus was born?",
+      "o": [
+        "Hallelujah",
+        "Glory to God in the highest, and on earth peace",
+        "Holy, Holy, Holy",
+        "Jesus is Born"
+      ],
+      "a": 1,
+      "e": "Luke 2:14 — 'Glory to God in the highest heaven, and on earth peace to those on whom his favor rests.'",
+      "d": "easy"
+    },
+    {
+      "q": "Which book of the Bible ends with a call to 'Praise the Lord' using every kind of instrument?",
+      "o": [
+        "Psalms",
+        "Revelation",
+        "Habakkuk",
+        "Isaiah"
+      ],
+      "a": 0,
+      "e": "Psalm 150 is the final psalm and is a great call to praise.",
+      "d": "easy"
+    },
+    {
+      "q": "In what language was the word 'Hosanna' originally spoken?",
+      "o": [
+        "Greek",
+        "Latin",
+        "Hebrew/Aramaic",
+        "English"
+      ],
+      "a": 2,
+      "e": "Hosanna is a Hebrew word meaning 'Save us now.'",
+      "d": "medium"
+    },
+    {
+      "q": "Who wrote the song in Deuteronomy 32, just before his death?",
+      "o": [
+        "Joshua",
+        "Aaron",
+        "Moses",
+        "Caleb"
+      ],
+      "a": 2,
+      "e": "Deuteronomy 31:30 — 'And Moses recited the words of this song from beginning to end.'",
+      "d": "hard"
+    },
+    {
+      "q": "What kind of wood was used to make the harps and lyres for the temple in Solomon's time?",
+      "o": [
+        "Cedar",
+        "Acacia",
+        "Almug (Sandalwood)",
+        "Oak"
+      ],
+      "a": 2,
+      "e": "1 Kings 10:12 — 'The king used the almugwood to make... harps and lyres for the musicians.'",
+      "d": "hard"
+    },
+    {
+      "q": "Which Psalm is titled 'A Song of Ascents'?",
+      "o": [
+        "Psalm 1",
+        "Psalm 23",
+        "Psalm 120-134",
+        "Psalm 150"
+      ],
+      "a": 2,
+      "e": "Psalms 120 through 134 are all titled 'A Song of Ascents.'",
+      "d": "medium"
+    },
+    {
+      "q": "What did the people shout when Jesus entered Jerusalem on a donkey?",
+      "o": [
+        "Hallelujah!",
+        "Hosanna!",
+        "Glory!",
+        "Amen!"
+      ],
+      "a": 1,
+      "e": "Matthew 21:9 — 'The crowds... shouted, \"Hosanna to the Son of David!\"'",
+      "d": "easy"
+    },
+    {
+      "q": "In the Tabernacle, what stood directly in front of the veil to the Holy of Holies?",
+      "o": [
+        "The Ark",
+        "The Altar of Incense",
+        "The Lampstand",
+        "The Table of Shewbread"
+      ],
+      "a": 1,
+      "e": "Exodus 30:6 — 'Put the altar in front of the curtain that shields the ark of the covenant law.'",
+      "d": "hard"
+    },
+    {
+      "q": "Which Psalm contains the verse 'Thy word is a lamp unto my feet, and a light unto my path'?",
+      "o": [
+        "Psalm 1",
+        "Psalm 19",
+        "Psalm 119",
+        "Psalm 139"
+      ],
+      "a": 2,
+      "e": "Psalm 119:105.",
+      "d": "easy"
+    },
+    {
+      "q": "What did the Levites use to make 'a joyful noise' in 1 Chronicles 15 when bringing the Ark to Jerusalem?",
+      "o": [
+        "Harps, lyres and cymbals",
+        "Trumpets only",
+        "Voices only",
+        "Drums"
+      ],
+      "a": 0,
+      "e": "1 Chronicles 15:16 — 'David told the leaders of the Levites to appoint... singers to sing joyful songs, accompanied by musical instruments.'",
+      "d": "medium"
+    },
+    {
+      "q": "Which prophet was told to 'Take a harp, walk through the city' in a prophecy about Tyre?",
+      "o": [
+        "Isaiah",
+        "Jeremiah",
+        "Ezekiel",
+        "Hosea"
+      ],
+      "a": 0,
+      "e": "Isaiah 23:16 — 'Take up a harp, walk through the city, you forgotten prostitute.'",
+      "d": "hard"
+    },
+    {
+      "q": "What instrument did the prophetess Deborah use? (Trick question, it doesn't say she used one). What did she and Barak do after their victory?",
+      "o": [
+        "Played harps",
+        "Sang a song",
+        "Blew trumpets",
+        "Beat drums"
+      ],
+      "a": 1,
+      "e": "Judges 5:1 — 'On that day Deborah and Barak... sang this song.'",
+      "d": "medium"
+    },
+    {
+      "q": "In Psalm 137, where did the Israelites hang their harps while in exile in Babylon?",
+      "o": [
+        "On the walls",
+        "On the poplar (willow) trees",
+        "In the temple",
+        "On their belts"
+      ],
+      "a": 1,
+      "e": "Psalm 137:2 — 'There on the poplars we hung our harps.'",
+      "d": "medium"
+    },
+    {
+      "q": "What does the word 'Psalms' mean in Greek (Psalmoi)?",
+      "o": [
+        "Prayers",
+        "Sacred songs sung to musical instruments",
+        "Truths",
+        "Lessons"
+      ],
+      "a": 1,
+      "e": "The Greek word refers to songs accompanied by a stringed instrument.",
+      "d": "medium"
+    },
+    {
+      "q": "How many times did the Israelites march around Jericho with trumpets on the final day?",
+      "o": [
+        "1",
+        "3",
+        "7",
+        "12"
+      ],
+      "a": 2,
+      "e": "Joshua 6:4 — 'On the seventh day, march around the city seven times.'",
+      "d": "easy"
+    },
+    {
+      "q": "Which instrument is specifically associated with the return of the Lord in the New Testament?",
+      "o": [
+        "Harp",
+        "Trumpet",
+        "Flute",
+        "Cymbals"
+      ],
+      "a": 1,
+      "e": "1 Thessalonians 4:16 — '...with the trumpet call of God, and the dead in Christ will rise first.'",
+      "d": "medium"
+    },
+    {
+      "q": "What did the people of Israel do when the Ark of the Covenant was brought into the Temple of Solomon?",
+      "o": [
+        "Sang and played instruments",
+        "Fasted",
+        "Sacrificed so many sheep and cattle they could not be recorded",
+        "Both A and C"
+      ],
+      "a": 3,
+      "e": "1 Kings 8:5-62 / 2 Chronicles 5 — Describes the music and the massive sacrifices.",
+      "d": "hard"
+    },
+    {
+      "q": "Which Psalm is a call for all the earth to 'Make a joyful noise unto the Lord'?",
+      "o": [
+        "Psalm 23",
+        "Psalm 51",
+        "Psalm 100",
+        "Psalm 150"
+      ],
+      "a": 2,
+      "e": "Psalm 100:1 — 'Make a joyful noise unto the Lord, all ye lands.' (KJV).",
+      "d": "easy"
+    },
+    {
+      "q": "In the book of Revelation, what are the 24 elders holding as they fall down before the Lamb?",
+      "o": [
+        "Harps and golden bowls of incense",
+        "Trumpets and scrolls",
+        "Swords and shields",
+        "Palms and crowns"
+      ],
+      "a": 0,
+      "e": "Revelation 5:8 — 'Each one had a harp and they were holding golden bowls full of incense, which are the prayers of God’s people.'",
+      "d": "medium"
+    },
+    {
+      "q": "What did Solomon say about the number of songs he wrote?",
+      "o": [
+        "100",
+        "500",
+        "1,005",
+        "3,000"
+      ],
+      "a": 2,
+      "e": "1 Kings 4:32 — 'He spoke three thousand proverbs and his songs numbered a thousand and five.'",
+      "d": "hard"
+    },
+    {
+      "q": "What did David do 'with all his might' before the Lord when the Ark was brought to Jerusalem?",
+      "o": [
+        "Sang",
+        "Played the harp",
+        "Danced",
+        "Shouted"
+      ],
+      "a": 2,
+      "e": "2 Samuel 6:14 — 'Wearing a linen ephod, David was dancing before the Lord with all his might.'",
+      "d": "easy"
+    },
+    {
+      "q": "Which Psalm begins with 'My God, my God, why hast thou forsaken me?'",
+      "o": [
+        "Psalm 1",
+        "Psalm 22",
+        "Psalm 23",
+        "Psalm 69"
+      ],
+      "a": 1,
+      "e": "Psalm 22:1 — These words were also spoken by Jesus on the cross.",
+      "d": "medium"
+    },
+    {
+      "q": "What was the name of the son of Asaph who was a famous singer in the time of Ezra?",
+      "o": [
+        "Mattaniah",
+        "Bakbukiah",
+        "Abda",
+        "Uzzi"
+      ],
+      "a": 0,
+      "e": "Nehemiah 11:17 — 'Mattaniah... the director who led in thanksgiving and prayer.'",
+      "d": "hard"
+    },
+    {
+      "q": "Which instrument is mentioned in the Bible as having been used by Laban as a reason he wanted to throw a party for Jacob's departure?",
+      "o": [
+        "Trumpets",
+        "Harps and Timbrels",
+        "Flutes",
+        "Cymbals"
+      ],
+      "a": 1,
+      "e": "Genesis 31:27 — '...so I could send you away with joy and singing to the music of timbrels and harps?'",
+      "d": "hard"
+    },
+    {
+      "q": "What were the 'Songs of Ascents' used for?",
+      "o": [
+        "Funerals",
+        "Weddings",
+        "Pilgrims going up to Jerusalem for feasts",
+        "Battle songs"
+      ],
+      "a": 2,
+      "e": "These psalms were sung by worshippers on their way to the temple.",
+      "d": "medium"
+    },
+    {
+      "q": "Which prophet used a harpist (minstrel) to bring the hand of the Lord upon him so he could prophesy?",
+      "o": [
+        "Elijah",
+        "Elisha",
+        "Isaiah",
+        "Jeremiah"
+      ],
+      "a": 1,
+      "e": "2 Kings 3:15 — 'But now bring me a harpist. While the harpist was playing, the hand of the Lord came on Elisha.'",
+      "d": "hard"
+    },
+    {
+      "q": "What did the Levite singers wear when the Temple of Solomon was dedicated?",
+      "o": [
+        "Sackcloth",
+        "Purple robes",
+        "Fine linen",
+        "Sheepskins"
+      ],
+      "a": 2,
+      "e": "2 Chronicles 5:12 — 'All the Levites who were musicians... stood on the east side of the altar, dressed in fine linen.'",
+      "d": "hard"
+    },
+    {
+      "q": "How many trumpeters (priests) were at the dedication of Solomon's Temple?",
+      "o": [
+        "12",
+        "70",
+        "120",
+        "288"
+      ],
+      "a": 2,
+      "e": "2 Chronicles 5:12 — '...accompanied by 120 priests sounding trumpets.'",
+      "d": "hard"
+    },
+    {
+      "q": "What was the theme of the song the 144,000 sang in Revelation 14?",
+      "o": [
+        "A new song that no one else could learn",
+        "The Song of Moses",
+        "Hallelujah",
+        "The Song of the Lamb"
+      ],
+      "a": 0,
+      "e": "Revelation 14:3 — 'And they sang a new song... No one could learn the song except the 144,000.'",
+      "d": "medium"
+    },
+    {
+      "q": "Which Psalm is a meditation on the omnipresence and omniscience of God ('Where can I go from your Spirit?')?",
+      "o": [
+        "Psalm 23",
+        "Psalm 51",
+        "Psalm 91",
+        "Psalm 139"
+      ],
+      "a": 3,
+      "e": "Psalm 139:7 — 'Where can I go from your Spirit? Where can I flee from your presence?'",
+      "d": "medium"
+    },
+    {
+      "q": "What did the people of Israel do at the foot of Mount Sinai that involved music and dancing, but was not worship of God?",
+      "o": [
+        "Celebrating a wedding",
+        "Worshiping the golden calf",
+        "A harvest festival",
+        "A victory dance"
+      ],
+      "a": 1,
+      "e": "Exodus 32:18-19 — '...I hear the sound of singing... he saw the calf and the dancing.'",
+      "d": "easy"
+    },
+    {
+      "q": "Which Psalm contains the verse 'Be still, and know that I am God'?",
+      "o": [
+        "Psalm 23",
+        "Psalm 46",
+        "Psalm 91",
+        "Psalm 121"
+      ],
+      "a": 1,
+      "e": "Psalm 46:10.",
+      "d": "medium"
+    },
+    {
+      "q": "What was the name of the man who died because he touched the Ark of the Covenant when the oxen stumbled?",
+      "o": [
+        "Ahio",
+        "Uzzah",
+        "Obed-Edom",
+        "Abinadab"
+      ],
+      "a": 1,
+      "e": "2 Samuel 6:6-7 — 'Uzzah reached out and took hold of the ark of God... The Lord’s anger burned against Uzzah... and he died.'",
+      "d": "medium"
+    },
+    {
+      "q": "After Uzzah's death, in whose house did the Ark stay for three months, bringing blessing to his household?",
+      "o": [
+        "Abinadab",
+        "Obed-Edom",
+        "Jesse",
+        "Nathan"
+      ],
+      "a": 1,
+      "e": "2 Samuel 6:11 — 'The ark of the Lord remained in the house of Obed-Edom the Gittite for three months.'",
+      "d": "hard"
+    },
+    {
+      "q": "Which instrument did the 144,000 in Revelation 14 sound like?",
+      "o": [
+        "Trumpets",
+        "Harps",
+        "Cymbals",
+        "Flutes"
+      ],
+      "a": 1,
+      "e": "Revelation 14:2 — 'The sound I heard was like that of harpists playing their harps.'",
+      "d": "hard"
+    },
+    {
+      "q": "In the book of Amos, what does God say about the music of the people who are not living righteously?",
+      "o": [
+        "It is beautiful",
+        "He wants to hear more",
+        "'Away with the noise of your songs! I will not listen to the music of your harps.'",
+        "He will bless their instruments"
+      ],
+      "a": 2,
+      "e": "Amos 5:23.",
+      "d": "medium"
+    },
+    {
+      "q": "Which Psalm is often used in worship to call people to enter 'his gates with thanksgiving'?",
+      "o": [
+        "Psalm 23",
+        "Psalm 51",
+        "Psalm 100",
+        "Psalm 103"
+      ],
+      "a": 2,
+      "e": "Psalm 100:4 — 'Enter his gates with thanksgiving and his courts with praise.'",
+      "d": "easy"
+    },
+    {
+      "q": "What did the prophet Habakkuk say he would do even if the crops failed and the stalls were empty?",
+      "o": [
+        "Complain",
+        "Fast",
+        "'I will rejoice in the Lord, I will be joyful in God my Savior.'",
+        "Sacrifice"
+      ],
+      "a": 2,
+      "e": "Habakkuk 3:17-18.",
+      "d": "medium"
+    },
+    {
+      "q": "Who was the father of Heman, the musician?",
+      "o": [
+        "Joel",
+        "Samuel",
+        "David",
+        "Asaph"
+      ],
+      "a": 0,
+      "e": "1 Chronicles 6:33 — 'Heman the musician, the son of Joel, the son of Samuel.'",
+      "d": "hard"
+    },
+    {
+      "q": "Which of these instruments is a 'wind' instrument?",
+      "o": [
+        "Lyre",
+        "Zither",
+        "Pipe (Flute)",
+        "Timbrel"
+      ],
+      "a": 2,
+      "e": "Pipes or flutes are wind instruments.",
+      "d": "easy"
+    },
+    {
+      "q": "What was the title of Psalm 92?",
+      "o": [
+        "A Psalm for the Sabbath day",
+        "A Song of Ascents",
+        "A Prayer of David",
+        "A Michtam"
+      ],
+      "a": 0,
+      "e": "Psalm 92 is titled 'A psalm. A song. For the Sabbath day.'",
+      "d": "hard"
+    },
+    {
+      "q": "Which Psalm describes God as our 'refuge and strength, an ever-present help in trouble'?",
+      "o": [
+        "Psalm 23",
+        "Psalm 46",
+        "Psalm 91",
+        "Psalm 121"
+      ],
+      "a": 1,
+      "e": "Psalm 46:1.",
+      "d": "medium"
+    },
+    {
+      "q": "What did the Levites do to prepare for the service of music in the temple?",
+      "o": [
+        "Practiced their instruments",
+        "Purified themselves",
+        "Learned the songs by heart",
+        "All of the above"
+      ],
+      "a": 3,
+      "e": "1 Chronicles 15:12-14 — They had to consecrate themselves.",
+      "d": "medium"
+    },
+    {
+      "q": "In the book of Nehemiah, how many large choirs (thanksgiving companies) were appointed for the dedication of the wall?",
+      "o": [
+        "1",
+        "2",
+        "7",
+        "12"
+      ],
+      "a": 1,
+      "e": "Nehemiah 12:31 — 'I had the leaders of Judah go up on top of the wall. I also assigned two large choirs to give thanks.'",
+      "d": "hard"
+    },
+    {
+      "q": "Which instrument is mentioned as being used in the praise of God in the 'highest'?",
+      "o": [
+        "Harps",
+        "Trumpets",
+        "Loud clashing cymbals",
+        "Flutes"
+      ],
+      "a": 2,
+      "e": "Psalm 150:5 — 'Praise him with resounding cymbals.'",
+      "d": "medium"
+    },
+    {
+      "q": "Which king of Israel was known for his 'secular' songs as well as his wisdom?",
+      "o": [
+        "David",
+        "Solomon",
+        "Hezekiah",
+        "Josiah"
+      ],
+      "a": 1,
+      "e": "1 Kings 4:32 — '...his songs numbered a thousand and five.'",
+      "d": "medium"
+    },
+    {
+      "q": "What kind of offering was a 'Thanks Offering'?",
+      "o": [
+        "Sin offering",
+        "Peace offering (Fellowship offering)",
+        "Burnt offering",
+        "Grain offering"
+      ],
+      "a": 1,
+      "e": "Leviticus 7:11-12 — 'If they offer it as an expression of thankfulness...'",
+      "d": "hard"
+    },
+    {
+      "q": "What was the 'Song of the Lamb' in Revelation 15 paired with?",
+      "o": [
+        "The Song of David",
+        "The Song of Moses",
+        "The Song of the Angels",
+        "The Song of Solomon"
+      ],
+      "a": 1,
+      "e": "Revelation 15:3 — '...and sang the song of God’s servant Moses and of the Lamb.'",
+      "d": "hard"
+    },
+    {
+      "q": "Which Psalm contains the phrase 'Bless the Lord, O my soul'?",
+      "o": [
+        "Psalm 23",
+        "Psalm 51",
+        "Psalm 103",
+        "Psalm 150"
+      ],
+      "a": 2,
+      "e": "Psalm 103:1 — 'Bless the Lord, O my soul: and all that is within me, bless his holy name.'",
+      "d": "easy"
+    },
+    {
+      "q": "What does the word 'Amen' mean in the context of worship?",
+      "o": [
+        "Goodbye",
+        "So be it / Truly",
+        "Praise God",
+        "Save us"
+      ],
+      "a": 1,
+      "e": "It is a declaration of affirmation and truth.",
+      "d": "easy"
+    },
+    {
+      "q": "Which book of the Bible is primarily a lament or a series of funeral songs for Jerusalem?",
+      "o": [
+        "Jeremiah",
+        "Lamentations",
+        "Ezekiel",
+        "Job"
+      ],
+      "a": 1,
+      "e": "Lamentations contains five poems of mourning over the fall of Jerusalem.",
+      "d": "medium"
+    },
+    {
+      "q": "Which Psalm is a 'Song of Love'?",
+      "o": [
+        "Psalm 23",
+        "Psalm 45",
+        "Psalm 51",
+        "Psalm 100"
+      ],
+      "a": 1,
+      "e": "Psalm 45 is titled 'A wedding song' or 'A song of loves.'",
+      "d": "hard"
+    },
+    {
+      "q": "What did the people of Israel do when Solomon was anointed king?",
+      "o": [
+        "Played flutes and rejoiced",
+        "Blew trumpets",
+        "Shouted 'Long live King Solomon!'",
+        "All of the above"
+      ],
+      "a": 3,
+      "e": "1 Kings 1:39-40 — 'They sounded the trumpet... and all the people... playing flutes and rejoicing greatly.'",
+      "d": "medium"
+    },
+    {
+      "q": "Which instrument is described as being 'on the ten strings'?",
+      "o": [
+        "Harp",
+        "Lyre",
+        "Lute/Psaltery",
+        "Cymbals"
+      ],
+      "a": 2,
+      "e": "Psalm 33:2 / Psalm 92:3 — 'Praise the Lord with the harp; make music to him on the ten-stringed lyre.'",
+      "d": "medium"
+    },
+    {
+      "q": "In the Temple of Solomon, where were the singers and musicians positioned?",
+      "o": [
+        "In the Holy of Holies",
+        "Around the Altar",
+        "On the East side of the Altar",
+        "At the Gate"
+      ],
+      "a": 2,
+      "e": "2 Chronicles 5:12 — 'All the Levites who were musicians... stood on the east side of the altar.'",
+      "d": "hard"
+    },
+    {
+      "q": "Who was the 'Prophetess' who used a timbrel and led the women in song?",
+      "o": [
+        "Deborah",
+        "Miriam",
+        "Huldah",
+        "Anna"
+      ],
+      "a": 1,
+      "e": "Exodus 15:20 — 'Then Miriam the prophetess... took a timbrel in her hand.'",
+      "d": "easy"
+    },
+    {
+      "q": "What did David use to bring the Ark back to Jerusalem the second time (successfully)?",
+      "o": [
+        "A new cart",
+        "The shoulders of the Levites as the Law commanded",
+        "Horses",
+        "A boat"
+      ],
+      "a": 1,
+      "e": "1 Chronicles 15:15 — 'And the Levites carried the ark of God with the poles on their shoulders, as Moses had commanded.'",
+      "d": "medium"
+    },
+    {
+      "q": "Which Psalm describes God as a 'Shield' and 'The lifter of my head'?",
+      "o": [
+        "Psalm 1",
+        "Psalm 3",
+        "Psalm 23",
+        "Psalm 100"
+      ],
+      "a": 1,
+      "e": "Psalm 3:3 — 'But you, Lord, are a shield around me, my glory, the One who lifts my head high.'",
+      "d": "medium"
+    },
+    {
+      "q": "In what book do we find the command to 'Speak to one another with psalms, hymns and spiritual songs'?",
+      "o": [
+        "Romans",
+        "Ephesians",
+        "Hebrews",
+        "James"
+      ],
+      "a": 1,
+      "e": "Ephesians 5:19 / Colossians 3:16.",
+      "d": "medium"
+    },
+    {
+      "q": "Who was the musician Jeduthun's other name, possibly?",
+      "o": [
+        "Ethan",
+        "Asaph",
+        "Heman",
+        "Joel"
+      ],
+      "a": 0,
+      "e": "Many scholars identify Ethan the Ezrahite with Jeduthun.",
+      "d": "hard"
+    },
+    {
+      "q": "What was the name of the 'chief musician' in the time of David who was also a seer?",
+      "o": [
+        "Asaph",
+        "Heman",
+        "Jeduthun",
+        "All three were seers"
+      ],
+      "a": 3,
+      "e": "2 Chronicles 29:30 (Asaph), 1 Chronicles 25:5 (Heman), 2 Chronicles 35:15 (Jeduthun).",
+      "d": "hard"
+    },
+    {
+      "q": "What kind of song is a 'Threnody' or a 'Lament'?",
+      "o": [
+        "A song of joy",
+        "A song of mourning",
+        "A song of war",
+        "A song of praise"
+      ],
+      "a": 1,
+      "e": "Lamentations is a collection of these.",
+      "d": "medium"
+    },
+    {
+      "q": "Which instrument did the people of Israel play as they brought the Ark up from Kiriath Jearim on the 'new cart'?",
+      "o": [
+        "Harps and lyres",
+        "Timbrels and cymbals",
+        "Trumpets",
+        "All of the above"
+      ],
+      "a": 3,
+      "e": "2 Samuel 6:5 — '...celebrating with all their might... with castanets, harps, lyres, timbrels, sistrums and cymbals.'",
+      "d": "medium"
+    },
+    {
+      "q": "What was the name of the man who led the choir in the time of Nehemiah when the wall was dedicated?",
+      "o": [
+        "Jezrahiah",
+        "Ezra",
+        "Nehemiah",
+        "Eliashib"
+      ],
+      "a": 0,
+      "e": "Nehemiah 12:42 — 'The choirs sang under the direction of Jezrahiah.'",
+      "d": "hard"
+    },
+    {
+      "q": "In which book of the Bible does the prophet say, 'The Lord your God is with you... He will rejoice over you with singing'?",
+      "o": [
+        "Isaiah",
+        "Jeremiah",
+        "Zephaniah",
+        "Malachi"
+      ],
+      "a": 2,
+      "e": "Zephaniah 3:17.",
+      "d": "hard"
+    },
+    {
+      "q": "Which Psalm is titled 'A Song for the Dedication of the House of David'?",
+      "o": [
+        "Psalm 23",
+        "Psalm 30",
+        "Psalm 51",
+        "Psalm 100"
+      ],
+      "a": 1,
+      "e": "Psalm 30 title.",
+      "d": "hard"
+    },
+    {
+      "q": "What did the priests blow when the Israelites were in the wilderness to signal the tribes to set out?",
+      "o": [
+        "Ram's horn",
+        "Silver trumpets",
+        "Flutes",
+        "Shofar"
+      ],
+      "a": 1,
+      "e": "Numbers 10:2.",
+      "d": "medium"
+    }
+  ],
+  "Who Am I?": [
+      {"q": "I was the first man created by God. Who am I?", "o": ["Adam", "Noah", "Abraham", "Moses"], "a": 0, "e": "Genesis 2:7 records God forming man from the dust of the ground.", "d": "easy"},
+      {"q": "I built an ark to save my family and animals from a great flood. Who am I?", "o": ["Noah", "Enoch", "Methuselah", "Lamech"], "a": 0, "e": "Genesis 6-9 tells the story of Noah and the ark.", "d": "easy"},
+      {"q": "I was known as the 'Father of Many Nations' and my wife was Sarah. Who am I?", "o": ["Abraham", "Isaac", "Jacob", "Lot"], "a": 0, "e": "Genesis 17:5 says God changed his name from Abram to Abraham because he would be the father of many nations.", "d": "easy"},
+      {"q": "I was sold into slavery by my brothers and later became a ruler in Egypt. Who am I?", "o": ["Joseph", "Benjamin", "Reuben", "Judah"], "a": 0, "e": "Genesis 37-50 records the life of Joseph.", "d": "easy"},
+      {"q": "I led the Israelites out of Egypt and received the Ten Commandments. Who am I?", "o": ["Moses", "Aaron", "Joshua", "Caleb"], "a": 0, "e": "Exodus describes Moses' leadership and the law given at Sinai.", "d": "easy"},
+      {"q": "I defeated the giant Goliath with a sling and a stone. Who am I?", "o": ["David", "Saul", "Solomon", "Jonathan"], "a": 0, "e": "1 Samuel 17 tells of David's victory over Goliath.", "d": "easy"},
+      {"q": "I was the wisest king of Israel and built the first Temple. Who am I?", "o": ["Solomon", "David", "Rehoboam", "Hezekiah"], "a": 0, "e": "1 Kings 3-6 records Solomon's wisdom and temple construction.", "d": "easy"},
+      {"q": "I was swallowed by a great fish after trying to run away from God. Who am I?", "o": ["Jonah", "Amos", "Hosea", "Micah"], "a": 0, "e": "The book of Jonah describes his flight to Tarshish and the great fish.", "d": "easy"},
+      {"q": "I was the mother of Jesus. Who am I?", "o": ["Mary", "Elizabeth", "Martha", "Salome"], "a": 0, "e": "Matthew 1 and Luke 1-2 record Mary as the mother of Jesus.", "d": "easy"},
+      {"q": "I was a tax collector who climbed a sycamore tree to see Jesus. Who am I?", "o": ["Zacchaeus", "Matthew", "Simon", "Andrew"], "a": 0, "e": "Luke 19:1-10 tells the story of Zacchaeus.", "d": "easy"},
+      {"q": "I denied Jesus three times before the rooster crowed. Who am I?", "o": ["Peter", "John", "Judas", "Thomas"], "a": 0, "e": "Matthew 26:69-75 records Peter's denials.", "d": "easy"},
+      {"q": "I betrayed Jesus for thirty pieces of silver. Who am I?", "o": ["Judas Iscariot", "Judas son of James", "Simon the Zealot", "Philip"], "a": 0, "e": "Matthew 26:14-16 records the betrayal.", "d": "easy"},
+      {"q": "I was the first martyr of the early church, stoned for my faith. Who am I?", "o": ["Stephen", "James", "Philip", "Paul"], "a": 0, "e": "Acts 7 records Stephen's speech and martyrdom.", "d": "medium"},
+      {"q": "I was a Pharisee who persecuted Christians but became the 'Apostle to the Gentiles'. Who am I?", "o": ["Paul", "Barnabas", "Silas", "Timothy"], "a": 0, "e": "Acts 9 records Saul's conversion and subsequent ministry as Paul.", "d": "easy"},
+      {"q": "I was the longest-living man in the Bible, reaching 969 years. Who am I?", "o": ["Methuselah", "Enoch", "Jared", "Noah"], "a": 0, "e": "Genesis 5:27 says Methuselah lived 969 years.", "d": "medium"},
+      {"q": "I walked with God and then was no more, because God took me. Who am I?", "o": ["Enoch", "Noah", "Abraham", "Moses"], "a": 0, "e": "Genesis 5:24 says Enoch walked with God and was taken by Him.", "d": "medium"},
+      {"q": "I was the wife of Isaac and mother of Jacob and Esau. Who am I?", "o": ["Rebekah", "Rachel", "Leah", "Sarah"], "a": 0, "e": "Genesis 24-25 records the story of Rebekah.", "d": "medium"},
+      {"q": "I wrestled with God and my name was changed to Israel. Who am I?", "o": ["Jacob", "Esau", "Isaac", "Joseph"], "a": 0, "e": "Genesis 32:28 records Jacob's name change after wrestling with God.", "d": "easy"},
+      {"q": "I was a judge known for my great strength which came from my hair. Who am I?", "o": ["Samson", "Gideon", "Barak", "Jephthah"], "a": 0, "e": "Judges 13-16 tells the story of Samson.", "d": "easy"},
+      {"q": "I was the first high priest of Israel and the brother of Moses. Who am I?", "o": ["Aaron", "Hur", "Eleazar", "Phinehas"], "a": 0, "e": "Exodus 28 records Aaron's appointment as priest.", "d": "medium"},
+      {"q": "I was the sister of Moses and Aaron who led the women in song. Who am I?", "o": ["Miriam", "Deborah", "Ruth", "Esther"], "a": 0, "e": "Exodus 15:20-21 records Miriam's song of praise.", "d": "medium"},
+      {"q": "I was a Moabite woman who remained loyal to my mother-in-law Naomi. Who am I?", "o": ["Ruth", "Orpah", "Rahab", "Delilah"], "a": 0, "e": "The book of Ruth tells of her loyalty and faith.", "d": "easy"},
+      {"q": "I was a queen of Persia who saved my people from destruction. Who am I?", "o": ["Esther", "Vashti", "Jezebel", "Athaliah"], "a": 0, "e": "The book of Esther describes how she saved the Jews.", "d": "easy"},
+      {"q": "I was the cousin of Jesus and prepared the way for His ministry. Who am I?", "o": ["John the Baptist", "John the Apostle", "James", "Andrew"], "a": 0, "e": "Matthew 3 and Luke 1-3 describe John's role.", "d": "easy"},
+      {"q": "I was the Roman governor who sentenced Jesus to be crucified. Who am I?", "o": ["Pontius Pilate", "Herod Antipas", "Felix", "Festus"], "a": 0, "e": "The Gospels record Pilate's role in Jesus' trial.", "d": "easy"},
+      {"q": "I was a Pharisee who came to Jesus by night to ask about being born again. Who am I?", "o": ["Nicodemus", "Gamaliel", "Joseph of Arimathea", "Simon the Pharisee"], "a": 0, "e": "John 3 records the conversation between Jesus and Nicodemus.", "d": "medium"},
+      {"q": "I provided my own tomb for Jesus' burial. Who am I?", "o": ["Joseph of Arimathea", "Nicodemus", "Lazarus", "Simon of Cyrene"], "a": 0, "e": "Matthew 27:57-60 records this act of Joseph.", "d": "medium"},
+      {"q": "I was the first person to see the risen Lord. Who am I?", "o": ["Mary Magdalene", "Peter", "John", "James"], "a": 0, "e": "John 20:11-18 records Jesus' appearance to Mary.", "d": "medium"},
+      {"q": "I was known as the 'Doubting Apostle' until I saw Jesus' wounds. Who am I?", "o": ["Thomas", "Philip", "Bartholomew", "Matthew"], "a": 0, "e": "John 20:24-29 records Thomas' doubt and subsequent belief.", "d": "easy"},
+      {"q": "I was a doctor and the author of the third Gospel and the book of Acts. Who am I?", "o": ["Luke", "Mark", "John", "Timothy"], "a": 0, "e": "Colossians 4:14 refers to Luke as the 'beloved physician'.", "d": "medium"},
+      {"q": "I was the wife of Abraham and mother of Isaac in her old age. Who am I?", "o": ["Sarah", "Hagar", "Keturah", "Milcah"], "a": 0, "e": "Genesis 21:1-7 records the birth of Isaac to Sarah.", "d": "easy"},
+      {"q": "I was the son of Abraham and Hagar. Who am I?", "o": ["Ishmael", "Isaac", "Midian", "Lot"], "a": 0, "e": "Genesis 16 records the birth of Ishmael.", "d": "medium"},
+      {"q": "I was the first king of Israel. Who am I?", "o": ["Saul", "David", "Solomon", "Samuel"], "a": 0, "e": "1 Samuel 9-10 records the anointing of Saul as king.", "d": "easy"},
+      {"q": "I was the prophet who anointed both Saul and David. Who am I?", "o": ["Samuel", "Nathan", "Gad", "Eli"], "a": 0, "e": "1 Samuel records Samuel's ministry as prophet and judge.", "d": "medium"},
+      {"q": "I was a prophetess and the only female judge of Israel. Who am I?", "o": ["Deborah", "Jael", "Miriam", "Huldah"], "a": 0, "e": "Judges 4-5 tells the story of Deborah.", "d": "medium"},
+      {"q": "I killed the commander Sisera by driving a tent peg through his temple. Who am I?", "o": ["Jael", "Deborah", "Rahab", "Michal"], "a": 0, "e": "Judges 4:17-22 records Jael's action.", "d": "hard"},
+      {"q": "I was a shepherd from Tekoa and a prophet who spoke against social injustice. Who am I?", "o": ["Amos", "Hosea", "Joel", "Obadiah"], "a": 0, "e": "The book of Amos begins by identifying him as a shepherd.", "d": "hard"},
+      {"q": "I was the successor to the prophet Elijah. Who am I?", "o": ["Elisha", "Jeremiah", "Isaiah", "Ezekiel"], "a": 0, "e": "2 Kings 2 records Elisha receiving Elijah's mantle.", "d": "medium"},
+      {"q": "I was the 'Weeping Prophet' who warned Judah of the Babylonian exile. Who am I?", "o": ["Jeremiah", "Isaiah", "Ezekiel", "Daniel"], "a": 0, "e": "The book of Jeremiah and Lamentations express his sorrow.", "d": "medium"},
+      {"q": "I was an exile in Babylon who interpreted dreams and survived the lion's den. Who am I?", "o": ["Daniel", "Ezekiel", "Ezra", "Nehemiah"], "a": 0, "e": "The book of Daniel records his visions and experiences.", "d": "easy"},
+      {"q": "I was the first son of Adam and Eve, and I killed my brother. Who am I?", "o": ["Cain", "Abel", "Seth", "Enosh"], "a": 0, "e": "Genesis 4 records the first murder.", "d": "easy"},
+      {"q": "I was the brother of Cain who was killed because my sacrifice was accepted. Who am I?", "o": ["Abel", "Seth", "Cain", "Jared"], "a": 0, "e": "Genesis 4:3-8.", "d": "easy"},
+      {"q": "I was the mother of all living. Who am I?", "o": ["Eve", "Sarah", "Mary", "Rebekah"], "a": 0, "e": "Genesis 3:20 says Adam named his wife Eve because she would be the mother of all living.", "d": "easy"},
+      {"q": "I was a prostitute in Jericho who hid the Israelite spies. Who am I?", "o": ["Rahab", "Delilah", "Gomer", "Tamar"], "a": 0, "e": "Joshua 2 and 6 tell the story of Rahab.", "d": "easy"},
+      {"q": "I was the son of David who rebelled against him and died when my hair caught in a tree. Who am I?", "o": ["Absalom", "Adonijah", "Amnon", "Solomon"], "a": 0, "e": "2 Samuel 15-18 records Absalom's rebellion and death.", "d": "medium"},
+      {"q": "I was a faithful friend to David and the son of King Saul. Who am I?", "o": ["Jonathan", "Abner", "Joab", "Ish-bosheth"], "a": 0, "e": "1 Samuel 18-20 describes the friendship of David and Jonathan.", "d": "medium"},
+      {"q": "I was a cupbearer to the king and led the rebuilding of the walls of Jerusalem. Who am I?", "o": ["Nehemiah", "Ezra", "Zerubbabel", "Mordecai"], "a": 0, "e": "The book of Nehemiah records the wall reconstruction.", "d": "medium"},
+      {"q": "I was a priest and scribe who led the return of the exiles and the teaching of the Law. Who am I?", "o": ["Ezra", "Nehemiah", "Haggai", "Zechariah"], "a": 0, "e": "The book of Ezra records his leadership.", "d": "medium"},
+      {"q": "I was a judge who asked for a sign with a fleece. Who am I?", "o": ["Gideon", "Samson", "Ehud", "Othniel"], "a": 0, "e": "Judges 6 records the sign of the fleece.", "d": "easy"},
+      {"q": "I was the left-handed judge who killed King Eglon of Moab. Who am I?", "o": ["Ehud", "Shamgar", "Tola", "Jair"], "a": 0, "e": "Judges 3:12-30 records Ehud's exploit.", "d": "hard"},
+      {"q": "I was a woman from Joppa known for my good works and was raised from the dead by Peter. Who am I?", "o": ["Tabitha (Dorcas)", "Lydia", "Rhoda", "Priscilla"], "a": 0, "e": "Acts 9:36-42.", "d": "medium"},
+      {"q": "I was a seller of purple cloth and the first convert in Philippi. Who am I?", "o": ["Lydia", "Damaris", "Chloe", "Phoebe"], "a": 0, "e": "Acts 16:14-15 records Lydia's conversion.", "d": "medium"},
+      {"q": "I was a tentmaker who, with my husband Aquila, taught Apollos. Who am I?", "o": ["Priscilla", "Junia", "Tryphena", "Tryphosa"], "a": 0, "e": "Acts 18:1-3, 26 mentions Priscilla and Aquila.", "d": "medium"},
+      {"q": "I was a deaconess of the church in Cenchreae and mentioned by Paul in Romans 16. Who am I?", "o": ["Phoebe", "Persis", "Julia", "Olympas"], "a": 0, "e": "Romans 16:1-2 commends Phoebe.", "d": "hard"},
+      {"q": "I was a prophet who confronted King David about his sin with Bathsheba. Who am I?", "o": ["Nathan", "Gad", "Shemaiah", "Ahijah"], "a": 0, "e": "2 Samuel 12 records Nathan's parable and confrontation.", "d": "medium"},
+      {"q": "I was the wife of Uriah whom David took for himself. Who am I?", "o": ["Bathsheba", "Michal", "Abigail", "Maakah"], "a": 0, "e": "2 Samuel 11 records the story of David and Bathsheba.", "d": "easy"},
+      {"q": "I was the mother of Samuel who prayed for a child at the Tabernacle. Who am I?", "o": ["Hannah", "Peninnah", "Eli", "Abigail"], "a": 0, "e": "1 Samuel 1 records Hannah's prayer.", "d": "easy"},
+      {"q": "I was the high priest who thought Hannah was drunk when she was praying. Who am I?", "o": ["Eli", "Hophni", "Phinehas", "Zadok"], "a": 0, "e": "1 Samuel 1:12-14.", "d": "medium"},
+      {"q": "I was a wealthy man from Uz who suffered great loss but remained faithful to God. Who am I?", "o": ["Job", "Eliphaz", "Bildad", "Zophar"], "a": 0, "e": "The book of Job tells the story of his suffering and restoration.", "d": "easy"},
+      {"q": "I was the grandmother of Timothy, known for my sincere faith. Who am I?", "o": ["Lois", "Eunice", "Anna", "Elisabeth"], "a": 0, "e": "2 Timothy 1:5 mentions Lois and Eunice.", "d": "hard"},
+      {"q": "I was the mother of Timothy. Who am I?", "o": ["Eunice", "Lois", "Lydia", "Mary"], "a": 0, "e": "2 Timothy 1:5.", "d": "hard"},
+      {"q": "I was a youth who accompanied Paul on his missionary journeys and received two letters from him. Who am I?", "o": ["Timothy", "Titus", "Mark", "Silas"], "a": 0, "e": "Timothy was Paul's 'son in the faith' (1 & 2 Timothy).", "d": "easy"},
+      {"q": "I was a companion of Paul and a Greek convert who helped organize the collection for Jerusalem. Who am I?", "o": ["Titus", "Luke", "Barnabas", "Artemas"], "a": 0, "e": "The book of Titus is addressed to him.", "d": "medium"},
+      {"q": "I was called the 'Son of Encouragement' and traveled with Paul. Who am I?", "o": ["Barnabas", "Silas", "John Mark", "Agabus"], "a": 0, "e": "Acts 4:36 defines the meaning of Barnabas.", "d": "medium"},
+      {"q": "I left Paul during the first missionary journey but later wrote a Gospel. Who am I?", "o": ["John Mark", "Luke", "Matthew", "Philip"], "a": 0, "e": "Acts 13:13 and 15:37-39 record Mark's departure and the later disagreement.", "d": "medium"},
+      {"q": "I was a centurion who was the first Gentile convert to Christianity. Who am I?", "o": ["Cornelius", "Julius", "Longinus", "Theophilus"], "a": 0, "e": "Acts 10 tells the story of Cornelius and Peter.", "d": "medium"},
+      {"q": "I was a queen who visited Solomon to test him with hard questions. Who am I?", "o": ["The Queen of Sheba", "Queen Esther", "Queen Jezebel", "Queen Vashti"], "a": 0, "e": "1 Kings 10 and 2 Chronicles 9 record her visit.", "d": "easy"},
+      {"q": "I was a king of Babylon who was humbled by God and lived like an animal for seven years. Who am I?", "o": ["Nebuchadnezzar", "Belshazzar", "Evil-Merodach", "Nabonidus"], "a": 0, "e": "Daniel 4 records this event.", "d": "medium"},
+      {"q": "I saw a vision of a wheel within a wheel and the glory of God. Who am I?", "o": ["Ezekiel", "Isaiah", "Daniel", "Habakkuk"], "a": 0, "e": "Ezekiel 1 and 10 describe his visions.", "d": "medium"},
+      {"q": "I was a prophet who was told to marry a promiscuous woman as a sign to Israel. Who am I?", "o": ["Hosea", "Joel", "Micah", "Zephaniah"], "a": 0, "e": "Hosea 1:2.", "d": "medium"},
+      {"q": "I was the woman Hosea married. Who am I?", "o": ["Gomer", "Lo-Ruhamah", "Lo-Ammi", "Keturah"], "a": 0, "e": "Hosea 1:3.", "d": "hard"},
+      {"q": "I was the wife of Jacob whom he loved and worked 14 years to marry. Who am I?", "o": ["Rachel", "Leah", "Bilhah", "Zilpah"], "a": 0, "e": "Genesis 29 records Jacob's love for Rachel.", "d": "easy"},
+      {"q": "I was the older sister of Rachel and the first wife of Jacob. Who am I?", "o": ["Leah", "Rachel", "Dinah", "Zipporah"], "a": 0, "e": "Genesis 29:21-25.", "d": "medium"},
+      {"q": "I was the only daughter of Jacob. Who am I?", "o": ["Dinah", "Tamar", "Asenath", "Serah"], "a": 0, "e": "Genesis 30:21 and 34 record Dinah.", "d": "hard"},
+      {"q": "I was the favorite son of Jacob, given a coat of many colors. Who am I?", "o": ["Joseph", "Benjamin", "Judah", "Levi"], "a": 0, "e": "Genesis 37:3.", "d": "easy"},
+      {"q": "I was the youngest son of Jacob. Who am I?", "o": ["Benjamin", "Joseph", "Gad", "Asher"], "a": 0, "e": "Genesis 35:16-18.", "d": "easy"},
+      {"q": "I was the sister of Mary and Lazarus, often busy with chores. Who am I?", "o": ["Martha", "Mary", "Elizabeth", "Salome"], "a": 0, "e": "Luke 10:38-42 and John 11 record Martha's personality.", "d": "easy"},
+      {"q": "I was the friend of Jesus whom He raised from the dead. Who am I?", "o": ["Lazarus", "Simon", "Nicodemus", "Zacchaeus"], "a": 0, "e": "John 11.", "d": "easy"},
+      {"q": "I was the brother of Peter and one of the first disciples called by Jesus. Who am I?", "o": ["Andrew", "James", "John", "Philip"], "a": 0, "e": "John 1:40-42.", "d": "medium"},
+      {"q": "I was the 'Beloved Disciple' and wrote the fourth Gospel. Who am I?", "o": ["John", "Peter", "James", "Andrew"], "a": 0, "e": "John 21:20-24 refers to him this way.", "d": "easy"},
+      {"q": "I was a prophet who told King Hezekiah he would die, but then God added 15 years to his life. Who am I?", "o": ["Isaiah", "Jeremiah", "Micah", "Nahum"], "a": 0, "e": "2 Kings 20 and Isaiah 38.", "d": "medium"},
+      {"q": "I was a king of Judah who destroyed idols and found the Book of the Law. Who am I?", "o": ["Josiah", "Hezekiah", "Asa", "Jehoshaphat"], "a": 0, "e": "2 Kings 22-23.", "d": "medium"},
+      {"q": "I was the wicked wife of King Ahab who persecuted the prophets of God. Who am I?", "o": ["Jezebel", "Athaliah", "Maakah", "Vashti"], "a": 0, "e": "1 Kings 18-21 and 2 Kings 9.", "d": "easy"},
+      {"q": "I was the king who wanted Naboth's vineyard. Who am I?", "o": ["Ahab", "Jeroboam", "Jehu", "Omri"], "a": 0, "e": "1 Kings 21.", "d": "medium"},
+      {"q": "I was a commander of the army of Israel who drove my chariot like a madman and killed Jezebel. Who am I?", "o": ["Jehu", "Joab", "Abner", "Benaiah"], "a": 0, "e": "2 Kings 9:20 and 30-37.", "d": "hard"},
+      {"q": "I was the mother of Solomon. Who am I?", "o": ["Bathsheba", "Abigail", "Michal", "Haggith"], "a": 0, "e": "2 Samuel 12:24.", "d": "medium"},
+      {"q": "I was a king of Judah who was struck with leprosy for trying to burn incense in the Temple. Who am I?", "o": ["Uzziah (Azariah)", "Jotham", "Ahaz", "Manasseh"], "a": 0, "e": "2 Chronicles 26:16-21.", "d": "hard"},
+      {"q": "I was the uncle of Esther who refused to bow to Haman. Who am I?", "o": ["Mordecai", "Hegai", "Memucan", "Harbona"], "a": 0, "e": "Esther 3:2.", "d": "easy"},
+      {"q": "I was the villain in the book of Esther who plotted to kill all the Jews. Who am I?", "o": ["Haman", "Zeresh", "Bigthan", "Teresh"], "a": 0, "e": "Esther 3:5-6.", "d": "easy"},
+      {"q": "I was a man from Cyrene who was forced to carry the cross of Jesus. Who am I?", "o": ["Simon", "Alexander", "Rufus", "Lucius"], "a": 0, "e": "Matthew 27:32, Mark 15:21, Luke 23:26.", "d": "medium"},
+      {"q": "I was the high priest during the trial of Jesus. Who am I?", "o": ["Caiaphas", "Annas", "Jonathan", "Ananias"], "a": 0, "e": "Matthew 26:57.", "d": "medium"},
+      {"q": "I was the father-in-law of Caiaphas and also a high priest. Who am I?", "o": ["Annas", "Zadok", "Abiathar", "Hiliah"], "a": 0, "e": "John 18:13.", "d": "hard"},
+      {"q": "I was a sorcerer in Samaria who tried to buy the gift of the Holy Spirit. Who am I?", "o": ["Simon Magus", "Elymas", "Hermogenes", "Philetus"], "a": 0, "e": "Acts 8:9-24.", "d": "medium"},
+      {"q": "I was a sorcerer on the island of Cyprus who was blinded by Paul. Who am I?", "o": ["Elymas (Bar-Jesus)", "Simon", "Alexander", "Demetrius"], "a": 0, "e": "Acts 13:6-11.", "d": "hard"},
+      {"q": "I was a silversmith in Ephesus who started a riot against Paul. Who am I?", "o": ["Demetrius", "Alexander", "Gaius", "Aristarchus"], "a": 0, "e": "Acts 19:23-41.", "d": "hard"},
+      {"q": "I was a woman from Bethany who anointed Jesus' feet with expensive perfume. Who am I?", "o": ["Mary", "Martha", "Mary Magdalene", "Joanna"], "a": 0, "e": "John 12:1-8.", "d": "medium"},
+      {"q": "I was the mother of John the Baptist. Who am I?", "o": ["Elizabeth", "Mary", "Anna", "Salome"], "a": 0, "e": "Luke 1:13.", "d": "easy"},
+      {"q": "I was a priest and the father of John the Baptist, who was struck mute for a time. Who am I?", "o": ["Zechariah", "Abijah", "Simeon", "Malachi"], "a": 0, "e": "Luke 1:5-20.", "d": "medium"},
+      {"q": "I was an old man in the temple who was promised I wouldn't die until I saw the Messiah. Who am I?", "o": ["Simeon", "Anna", "Zechariah", "Gamaliel"], "a": 0, "e": "Luke 2:25-35.", "d": "medium"},
+      {"q": "I was a prophetess in the temple who saw the infant Jesus and gave thanks to God. Who am I?", "o": ["Anna", "Huldah", "Deborah", "Miriam"], "a": 0, "e": "Luke 2:36-38.", "d": "medium"},
+      {"q": "I was a man from Ethiopia who was baptized by Philip the evangelist. Who am I?", "o": ["The Ethiopian Eunuch", "Ebed-Melech", "Candace", "Zerah"], "a": 0, "e": "Acts 8:26-39.", "d": "medium"},
+      {"q": "I was the queen of the Ethiopians mentioned in Acts 8. Who am I?", "o": ["Candace", "Sheba", "Esther", "Vashti"], "a": 0, "e": "Acts 8:27.", "d": "hard"},
+      {"q": "I was the father of the twelve tribes of Israel. Who am I?", "o": ["Jacob", "Abraham", "Isaac", "Joseph"], "a": 0, "e": "Genesis 35:22-26 lists his twelve sons.", "d": "easy"},
+      {"q": "I was the first person to die in the Bible. Who am I?", "o": ["Abel", "Adam", "Eve", "Cain"], "a": 0, "e": "Genesis 4:8.", "d": "easy"},
+      {"q": "I was the wife of Moses. Who am I?", "o": ["Zipporah", "Miriam", "Elisheba", "Cozbi"], "a": 0, "e": "Exodus 2:21.", "d": "medium"},
+      {"q": "I was the father-in-law of Moses and a priest of Midian. Who am I?", "o": ["Jethro (Reuel)", "Hobab", "Putiel", "Balaam"], "a": 0, "e": "Exodus 3:1.", "d": "medium"},
+      {"q": "I was the first woman. Who am I?", "o": ["Eve", "Lilith", "Sarah", "Adah"], "a": 0, "e": "Genesis 2.", "d": "easy"},
+      {"q": "I was a son of David who was born to Bathsheba and became king. Who am I?", "o": ["Solomon", "Nathan", "Shimea", "Shobab"], "a": 0, "e": "2 Samuel 12:24.", "d": "easy"},
+      {"q": "I was the husband of Mary and the earthly father figure of Jesus. Who am I?", "o": ["Joseph", "Joachim", "Cleopas", "Zebedee"], "a": 0, "e": "Matthew 1:16.", "d": "easy"}
+  ]
+};
+
