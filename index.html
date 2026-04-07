@@ -3421,6 +3421,17 @@ html.feat-gameHeader .g-nm { font-weight: 800 !important; max-width: 100px; over
       <div class="verse-card-ref" id="dv-ref"></div>
     </div>
 
+    <!-- Challenge a Friend — featured card -->
+    <div class="card" style="margin-bottom:16px;padding:16px;display:flex;align-items:center;gap:15px;cursor:pointer;background:linear-gradient(135deg,rgba(224,168,96,.13) 0%,transparent 100%);border:1.5px solid rgba(224,168,96,.35);" onclick="go('friends');switchSocialTab('friends');setTimeout(()=>document.getElementById('friends-screen-code-inp')&&document.getElementById('friends-screen-code-inp').focus(),200)">
+      <div style="font-size:32px;">⚡</div>
+      <div style="flex:1;">
+        <div class="eyebrow" style="color:var(--gold1);">Multiplayer</div>
+        <div style="font-family:'Playfair Display',serif;font-size:16px;color:var(--ink);">Challenge a Friend</div>
+        <div style="font-size:11px;color:var(--ink3);margin-top:2px;">Send a Bible trivia duel</div>
+      </div>
+      <div class="btn btn-gold btn-sm" style="width:auto;padding:8px 16px;">Invite</div>
+    </div>
+
     <!-- Daily Challenge -->
     <div class="card" style="margin-bottom:16px;padding:16px;display:flex;align-items:center;gap:15px;cursor:pointer;" onclick="startDailyChallenge()">
         <div style="font-size:32px;">🔥</div>
@@ -3467,8 +3478,6 @@ html.feat-gameHeader .g-nm { font-weight: 800 !important; max-width: 100px; over
     <button class="btn btn-gold" onclick="onPlay()" style="margin-bottom:8px;">
       ▶ Play
     </button>
-    <button class="btn btn-ghost btn-sm" onclick="go('friends');switchSocialTab('friends');setTimeout(()=>document.getElementById('friends-screen-code-inp')&&document.getElementById('friends-screen-code-inp').focus(),200)" style="margin-bottom:8px;background:rgba(201,145,13,.08);border:1.5px solid rgba(201,145,13,.3);color:var(--gold1);font-size:13px;">⚡ Challenge a Friend</button>
-    <button class="btn btn-ghost btn-sm" onclick="go('donation')" style="font-size:12px;">❤️ Support This Ministry</button>
     <div style="text-align:center;padding:10px 0 4px;font-size:11px;color:var(--ink3);">
       <a href="/privacy.html" style="color:var(--ink3);text-decoration:underline;">Privacy Policy</a>
       &nbsp;·&nbsp;
