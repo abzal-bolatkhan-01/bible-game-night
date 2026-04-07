@@ -3675,13 +3675,6 @@ html.feat-gameHeader .g-nm { font-weight: 800 !important; max-width: 100px; over
       </div>
       <button class="btn btn-ghost btn-sm" style="margin-top:8px;width:100%;" onclick="leaveCurrentRoom()">🚪 Leave Room</button>
     </div>
-    <div class="divider"><span>or</span></div>
-    <div style="text-align:center;padding:18px 0;">
-      <div class="nearby-ring">📡</div>
-      <div class="eyebrow" style="margin-bottom:6px;">Same WiFi Play</div>
-      <p style="font-size:13px;color:var(--ink3);line-height:1.6;margin-bottom:14px;">Best for players on the same WiFi or hotspot. Share code or QR to join instantly.</p>
-      <button class="btn btn-green btn-sm" style="max-width:200px;margin:0 auto;" onclick="go('setup');buildModeSetup('nearby')"><span class="btn-icon">📡</span>Start Nearby</button>
-    </div>
     <div class="pb"></div>
   </div>
 </div>
@@ -7718,7 +7711,7 @@ function enterRoomAsJoiner(d,code,ref){
   G.sub=normalizeOnlineSub((d&&(d.qtype||d.sub))||G.sub);
   if(d.difficulty){ G.diff=d.difficulty; G.TIM=G.diff==='easy'?25:G.diff==='hard'?12:20; }
   if(d.cfg){ const rcfg={...d.cfg}; delete rcfg.sound; G.cfg={...G.cfg,...rcfg,winScore:clampRounds(d.cfg.winScore),timer:true}; }
-  ref.child('players/'+G.uid).set({name:G.profile.name,avatar:G.profile.avatar,photo:G.profile.photo||'',ready:false,score:0,hearts:3,diff:d.difficulty||G.diff,connected:true});
+  ref.child('players/'+G.uid).set({name:G.profile.name,avatar:G.profile.avatar,photo:G.profile.photo||'',ready:true,score:0,hearts:3,diff:d.difficulty||G.diff,connected:true});
   document.getElementById('rc-disp').textContent=code;
   document.getElementById('lobby-panel').style.display='block';
   updateLobbyModeNote(d);
@@ -7730,8 +7723,8 @@ function enterRoomAsJoiner(d,code,ref){
 function joinRoomByCode(code){
   if(!G.fbOk){ toast('Configure Firebase first.'); return; }
   sfx.tap();
-  G.meReady=false;
-  document.getElementById('ready-btn').textContent='✓ Mark Ready';
+  G.meReady=true;
+  document.getElementById('ready-btn').textContent='✓ Ready (click to undo)';
   const ref=G.db.ref('rooms/'+code); G.roomRef=ref; G.roomId=code; G.isHost=false;
   ref.once('value').then(sn=>{
     const d=sn.val();
@@ -11440,15 +11433,15 @@ function acceptChallenge(){
 function joinChallengeRoom(code,chMeta){
   if(!G.fbOk){ toast('Online features not available'); return; }
   sfx.tap();
-  G.meReady=false;
-  document.getElementById('ready-btn').textContent='✓ Mark Ready';
+  G.meReady=true;
+  document.getElementById('ready-btn').textContent='✓ Ready (click to undo)';
   const ref=G.db.ref('rooms/'+code); G.roomRef=ref; G.roomId=code; G.isHost=false;
   ref.once('value').then(sn=>{
     const d=sn.val();
     if(!d){ toast('Room not found or expired'); return; }
     if(d.status==='playing'){ toast('Game already in progress'); return; }
     // Add player entry when they actually join (not pre-populated)
-    ref.child('players/'+G.uid).set({name:G.profile.name,avatar:G.profile.avatar,photo:G.profile.photo||'',ready:false,score:0,hearts:3,diff:G.diff,connected:true});
+    ref.child('players/'+G.uid).set({name:G.profile.name,avatar:G.profile.avatar,photo:G.profile.photo||'',ready:true,score:0,hearts:3,diff:G.diff,connected:true});
     document.getElementById('rc-disp').textContent=code;
     document.getElementById('lobby-panel').style.display='block';
     updateLobbyModeNote({qtype:(chMeta&&chMeta.qtype)||d.qtype||d.sub,difficulty:(chMeta&&chMeta.difficulty)||d.difficulty,cfg:(chMeta&&chMeta.cfg)||d.cfg||{hearts:!!G.cfg.hearts,winScore:clampRounds(G.cfg.winScore)}});
