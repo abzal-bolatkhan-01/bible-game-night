@@ -225,13 +225,11 @@ body::after {
 @keyframes crownIn  { 0%{transform:translateY(-40px) rotate(-12deg) scale(.5);opacity:0} 65%{transform:translateY(5px) scale(1.08);opacity:1} 100%{transform:none;opacity:1} }
 @keyframes confettiFall { 0%{transform:translateY(-8px) rotate(0);opacity:1} 100%{transform:translateY(105vh) rotate(640deg);opacity:0} }
 @keyframes streakPop { 0%{transform:scale(.3) rotate(-5deg);opacity:0} 55%{transform:scale(1.18);opacity:1} 100%{transform:none;opacity:1} }
-@keyframes hrtBreak { 0%{transform:scale(1)} 30%{transform:scale(1.5)} 100%{transform:scale(1);filter:grayscale(1) brightness(.2)} }
 @keyframes pulse-badge { 0%,100%{transform:scale(1);box-shadow:0 0 0 0 rgba(231,76,60,.7)} 50%{transform:scale(1.15);box-shadow:0 0 0 4px rgba(231,76,60,0)} }
 @keyframes elimFade { 0%{opacity:0;transform:scale(1.1)} 15%{opacity:1;transform:none} 80%{opacity:1} 100%{opacity:0} }
 @keyframes xpIn     { from{width:0} to{width:var(--pct)} }
 @keyframes blink    { 0%,100%{opacity:1} 50%{opacity:.28} }
 @keyframes spin     { from{transform:rotate(0)} to{transform:rotate(360deg)} }
-@keyframes nearbyPulse { 0%,100%{box-shadow:0 0 0 0 rgba(34,176,90,.3)} 50%{box-shadow:0 0 0 14px rgba(34,176,90,0)} }
 @keyframes verseSlide { from{opacity:0;transform:translateY(5px)} to{opacity:1;transform:none} }
 
 @keyframes streakPulse { 0% { transform: scale(1); box-shadow: 0 0 0 0 rgba(196,136,10,0.4); } 70% { transform: scale(1.05); box-shadow: 0 0 0 10px rgba(196,136,10,0); } 100% { transform: scale(1); box-shadow: 0 0 0 0 rgba(196,136,10,0); } }
@@ -522,10 +520,6 @@ body::after {
 .g-mid  { text-align: center; font-family: 'Nunito', sans-serif; font-size: 11px; font-weight: 600; color: var(--ink3); flex-shrink: 0; -webkit-user-select: none; user-select: none; }
 .g-right { display: flex; align-items: center; gap: 7px; flex-shrink: 0; }
 .score-num { font-family: 'Cormorant Garamond', serif; font-weight: 700; font-size: 22px; color: var(--gold1); }
-.hearts  { display: flex; gap: 2px; }
-.heart   { font-size: 14px; display: inline-block; transition: filter .25s; }
-.heart.dead { filter: grayscale(1) brightness(.2); }
-.heart.crack { animation: hrtBreak .45s ease forwards; }
 
 /* ─── TIMER ──────────────────────────────────────── */
 .timer-row {
@@ -1349,14 +1343,6 @@ input:-webkit-autofill:focus {
   }
 }
 
-/* ─── NEARBY RING ────────────────────────────────── */
-.nearby-ring {
-  width: 72px; height: 72px; border-radius: 50%;
-  border: 2px solid rgba(34,176,90,.35);
-  display: flex; align-items: center; justify-content: center;
-  font-size: 30px; margin: 0 auto 12px;
-  animation: nearbyPulse 2s ease-in-out infinite;
-}
 
 /* ─── LOADING ────────────────────────────────────── */
 .loading {
@@ -2137,9 +2123,6 @@ body { background: var(--bg); color: var(--ink); }
 .dot.green { background: var(--green1); box-shadow: 0 0 5px rgba(88,204,2,.5); }
 .dot.red   { background: var(--red); box-shadow: 0 0 5px rgba(255,75,75,.5); }
 
-/* ── Nearby Ring ────────────────────────── */
-.nearby-ring { border-color: rgba(88,204,2,.35); }
-@keyframes nearbyPulse { 0%,100%{box-shadow:0 0 0 0 rgba(88,204,2,.3)} 50%{box-shadow:0 0 0 14px rgba(88,204,2,0)} }
 
 /* ── Empty State ────────────────────────── */
 .empty { color: var(--ink3); font-style: normal; font-family: 'Nunito', sans-serif; }
@@ -3414,70 +3397,72 @@ html.feat-gameHeader .g-nm { font-weight: 800 !important; max-width: 100px; over
     <div id="home-profile-bar" style="display:none;"></div>
     <div id="home-last-played" style="display:none;" class="lp-card" onclick="resumeLastPlayed()"></div>
 
-    <!-- Daily Verse -->
-    <div class="verse-card" id="daily-verse-card">
-      <div class="verse-card-label">Light for Today</div>
-      <div class="verse-card-text" id="dv-text"></div>
-      <div class="verse-card-ref" id="dv-ref"></div>
+    <!-- HERO: Play Online Now -->
+    <div class="card" style="margin-bottom:16px;padding:20px 16px;text-align:center;background:linear-gradient(135deg,rgba(224,168,96,.18) 0%,rgba(196,132,42,.06) 100%);border:2px solid rgba(224,168,96,.55);cursor:pointer;" onclick="playOnlineNow()">
+      <div style="font-size:38px;margin-bottom:6px;">⚡</div>
+      <div style="font-family:'Playfair Display',serif;font-size:21px;font-weight:700;color:var(--gold1);margin-bottom:4px;">Play Online Now</div>
+      <div style="font-size:12px;color:var(--ink3);margin-bottom:14px;">Challenge believers worldwide · Instant match</div>
+      <div class="btn btn-gold" style="display:inline-block;width:auto;padding:10px 36px;font-size:15px;">▶ Start</div>
     </div>
 
-    <!-- Challenge a Friend — featured card -->
-    <div class="card" style="margin-bottom:16px;padding:16px;display:flex;align-items:center;gap:15px;cursor:pointer;background:linear-gradient(135deg,rgba(224,168,96,.13) 0%,transparent 100%);border:1.5px solid rgba(224,168,96,.35);" onclick="go('friends');switchSocialTab('friends');setTimeout(()=>document.getElementById('friends-screen-code-inp')&&document.getElementById('friends-screen-code-inp').focus(),200)">
-      <div style="font-size:32px;">⚡</div>
+    <!-- Pending friend challenges (shown when active) -->
+    <div id="home-challenges-section" style="display:none;margin-bottom:16px;">
+      <div style="font-family:'Cinzel',serif;font-size:10px;letter-spacing:.1em;color:var(--gold1);text-transform:uppercase;margin-bottom:8px;">⚔️ Waiting for your answer</div>
+      <div id="home-challenges-list"></div>
+    </div>
+
+    <!-- Challenge a Friend -->
+    <div class="card" style="margin-bottom:16px;padding:14px 16px;display:flex;align-items:center;gap:14px;cursor:pointer;" onclick="go('friends');switchSocialTab('friends');setTimeout(()=>document.getElementById('friends-screen-code-inp')&&document.getElementById('friends-screen-code-inp').focus(),200)">
+      <div style="font-size:26px;">💬</div>
       <div style="flex:1;">
-        <div class="eyebrow" style="color:var(--gold1);">Multiplayer</div>
-        <div style="font-family:'Playfair Display',serif;font-size:16px;color:var(--ink);">Challenge a Friend</div>
-        <div style="font-size:11px;color:var(--ink3);margin-top:2px;">Send a Bible trivia duel</div>
+        <div style="font-family:'Playfair Display',serif;font-size:15px;font-weight:700;color:var(--ink);">Challenge a Friend</div>
+        <div style="font-size:11px;color:var(--ink3);margin-top:2px;">Send a duel — they answer when ready</div>
       </div>
-      <div class="btn btn-gold btn-sm" style="width:auto;padding:8px 16px;">Invite</div>
+      <div class="btn btn-ghost btn-sm" style="width:auto;padding:6px 14px;">Invite →</div>
     </div>
 
-    <!-- Daily Challenge -->
-    <div class="card" style="margin-bottom:16px;padding:16px;display:flex;align-items:center;gap:15px;cursor:pointer;" onclick="startDailyChallenge()">
-        <div style="font-size:32px;">🔥</div>
-      <div style="flex:1;">
-        <div class="eyebrow" style="color:var(--gold1);">Daily Challenge</div>
-        <div style="font-family:'Playfair Display',serif;font-size:16px;color:var(--ink);">10 Trials</div>
-        <div id="daily-streak-info" style="font-size:11px;color:var(--ink3);margin-top:2px;">Streak: 0 days</div>
+    <!-- Daily Quiz + mini verse side by side -->
+    <div style="display:grid;grid-template-columns:1fr 1fr;gap:10px;margin-bottom:16px;">
+      <div class="card" style="padding:14px;cursor:pointer;" onclick="startDailyChallenge()">
+        <div style="font-size:24px;margin-bottom:4px;">🔥</div>
+        <div style="font-family:'Playfair Display',serif;font-size:13px;font-weight:700;color:var(--ink);">Daily Quiz</div>
+        <div id="daily-streak-info" style="font-size:10px;color:var(--ink3);margin-top:2px;">Streak: 0 days</div>
         <div id="daily-topic-info"></div>
+        <div class="btn btn-gold btn-sm" style="margin-top:10px;padding:6px 0;font-size:11px;">Go →</div>
       </div>
-      <div class="btn btn-gold btn-sm" style="width:auto;padding:8px 16px;">Start</div>
+      <div style="background:var(--card);border-radius:var(--r2);padding:14px;display:flex;flex-direction:column;justify-content:center;">
+        <div style="font-family:'Cinzel',serif;font-size:9px;letter-spacing:.1em;color:var(--gold1);text-transform:uppercase;margin-bottom:6px;">Light for Today</div>
+        <div style="font-size:11px;color:var(--ink);line-height:1.55;font-style:italic;" id="dv-text-mini"></div>
+        <div style="font-size:9px;color:var(--ink3);margin-top:6px;" id="dv-ref-mini"></div>
+      </div>
     </div>
 
-
-    <!-- Seasonal Event Banner -->
-    <div id="seasonal-banner" class="card" style="margin-bottom:16px;padding:12px 16px;background:linear-gradient(135deg, rgba(56,189,248,0.1) 0%, transparent 100%);border:1px solid rgba(56,189,248,0.3);display:none;" onclick="startSeasonalEvent()">
+    <!-- Seasonal / Tournament banners (hidden until active) -->
+    <div id="seasonal-banner" class="card" style="margin-bottom:16px;padding:12px 16px;background:linear-gradient(135deg,rgba(56,189,248,.1) 0%,transparent 100%);border:1px solid rgba(56,189,248,.3);display:none;" onclick="startSeasonalEvent()">
       <div style="display:flex;align-items:center;gap:12px;">
         <div style="font-size:24px;" id="seasonal-icon">🌟</div>
         <div style="flex:1;">
-          <div style="font-family:'Cinzel',serif;font-size:12px;color:var(--blue);letter-spacing:0.1em;" id="seasonal-name">Seasonal Event</div>
+          <div style="font-family:'Cinzel',serif;font-size:12px;color:var(--blue);letter-spacing:.1em;" id="seasonal-name">Seasonal Event</div>
           <div style="font-size:11px;color:var(--ink3);">Limited time special rewards!</div>
         </div>
         <div class="btn btn-blue btn-sm" style="width:auto;padding:5px 12px;">Join</div>
       </div>
     </div>
-
-    <!-- Weekly Tournament Banner -->
     <div id="weekly-tournament-banner" style="display:none;margin-bottom:16px;"></div>
-
-    <!-- Sunday Bible Bowl Banner -->
     <div id="sunday-bowl-banner" style="display:none;margin-bottom:16px;"></div>
 
-    <!-- Play Style -->
-    <div class="chips-wrap">
-      <div class="label" style="margin-bottom:10px;">Play Style</div>
+    <!-- More ways to play -->
+    <div class="chips-wrap" style="margin-bottom:12px;">
+      <div class="label" style="margin-bottom:8px;">More Ways to Play</div>
       <div class="ps-v3-wrap">
-        <button class="ps-mode-btn ps-v3-seg sel" data-mode="online" onclick="pickMode(this,'online')"><span style="font-size:25px;line-height:1;">🌐</span><br><span style="display:inline-block;margin-top:5px;">Online</span></button>
-        <button class="ps-mode-btn ps-v3-seg" data-mode="nearby" onclick="pickMode(this,'nearby')"><span style="font-size:25px;line-height:1;">📡</span><br><span style="display:inline-block;margin-top:5px;">Nearby</span></button>
-        <button class="ps-mode-btn ps-v3-seg" data-mode="local" onclick="pickMode(this,'local')"><span style="font-size:25px;line-height:1;">👥</span><br><span style="display:inline-block;margin-top:5px;">Pass & Play</span></button>
-        <button class="ps-mode-btn ps-v3-seg" data-mode="practice" onclick="pickMode(this,'practice')"><span style="font-size:25px;line-height:1;">🎓</span><br><span style="display:inline-block;margin-top:5px;">Practice</span></button>
+        <button class="ps-mode-btn ps-v3-seg sel" data-mode="online" onclick="pickMode(this,'online')"><span style="font-size:22px;line-height:1;">🌐</span><br><span style="display:inline-block;margin-top:4px;">Online</span></button>
+        <button class="ps-mode-btn ps-v3-seg" data-mode="local" onclick="pickMode(this,'local')"><span style="font-size:22px;line-height:1;">👥</span><br><span style="display:inline-block;margin-top:4px;">Pass & Play</span></button>
+        <button class="ps-mode-btn ps-v3-seg" data-mode="practice" onclick="pickMode(this,'practice')"><span style="font-size:22px;line-height:1;">🎓</span><br><span style="display:inline-block;margin-top:4px;">Practice</span></button>
       </div>
       <div class="ps-mode-desc" style="font-size:11px;color:var(--ink3);text-align:center;margin-top:8px;">✦ &nbsp;Compete with believers worldwide</div>
     </div>
+    <button class="btn btn-gold" onclick="onPlay()" style="margin-bottom:8px;">▶ Play</button>
 
-    <button class="btn btn-gold" onclick="onPlay()" style="margin-bottom:8px;">
-      ▶ Play
-    </button>
     <div style="text-align:center;padding:10px 0 4px;font-size:11px;color:var(--ink3);">
       <a href="/privacy.html" style="color:var(--ink3);text-decoration:underline;">Privacy Policy</a>
       &nbsp;·&nbsp;
@@ -3633,9 +3618,9 @@ html.feat-gameHeader .g-nm { font-weight: 800 !important; max-width: 100px; over
       <div>
         <div class="label" style="margin-bottom:7px;">Difficulty</div>
         <div class="ps-v3-wrap" id="setup-room-diff-chips" style="margin-bottom:0;">
-          <button class="diff-chip ps-v3-seg sel" data-diff="easy" onclick="pickSetupDiff(this,'easy')">🌿 Easy</button>
-          <button class="diff-chip ps-v3-seg" data-diff="medium" onclick="pickSetupDiff(this,'medium')">📖 Medium</button>
-          <button class="diff-chip ps-v3-seg" data-diff="hard" onclick="pickSetupDiff(this,'hard')">⚔️ Hard</button>
+          <button class="diff-chip ps-v3-seg sel" data-diff="easy" onclick="pickSetupDiff(this,'easy')">🌿 Disciple</button>
+          <button class="diff-chip ps-v3-seg" data-diff="medium" onclick="pickSetupDiff(this,'medium')">📖 Apostle</button>
+          <button class="diff-chip ps-v3-seg" data-diff="hard" onclick="pickSetupDiff(this,'hard')">⚔️ Scholar</button>
         </div>
       </div>
     </div>
@@ -3702,7 +3687,6 @@ html.feat-gameHeader .g-nm { font-weight: 800 !important; max-width: 100px; over
         <div class="team-score-box"><span class="team-lbl">T1</span><span id="g-t1-score">0</span></div>
         <div class="team-score-box"><span class="team-lbl">T2</span><span id="g-t2-score">0</span></div>
       </div>
-      <div class="hearts" id="g-hearts"></div>
       <div class="score-num" id="g-score">0</div>
     </div>
   </div>
@@ -3738,7 +3722,6 @@ html.feat-gameHeader .g-nm { font-weight: 800 !important; max-width: 100px; over
     </div>
     <div class="g-mid" id="l-round" style="display:none;"></div>
     <div class="g-right">
-      <div class="hearts" id="l-hearts"></div>
       <div class="score-num" id="l-score">0</div>
     </div>
   </div>
@@ -3766,7 +3749,6 @@ html.feat-gameHeader .g-nm { font-weight: 800 !important; max-width: 100px; over
     </div>
     <div class="g-mid" id="tf-round" style="text-align:center;">Round 1</div>
     <div class="g-right">
-      <div class="hearts" id="tf-hearts"></div>
       <div class="score-num" id="tf-score">0</div>
     </div>
   </div>
@@ -4369,9 +4351,9 @@ html.feat-gameHeader .g-nm { font-weight: 800 !important; max-width: 100px; over
     <div class="mhandle"></div>
     <div style="display:flex;align-items:center;justify-content:space-between;margin-bottom:4px;">
       <div class="mtitle" style="margin:0;">Settings</div>
-      <button class="btn btn-ghost btn-sm" style="padding:4px 14px;" onclick="closeOv('ov-settings')">Done</button>
+      <button style="background:none;border:none;cursor:pointer;font-size:12px;color:var(--ink3);padding:4px 8px;" onclick="closeOv('ov-settings')">✕ Close</button>
     </div>
-    <div id="settings-list" style="display:flex;flex-direction:column;gap:7px;margin-top:12px;"></div>
+    <div id="settings-list" style="display:flex;flex-direction:column;gap:0;margin-top:12px;"></div>
   </div>
 </div>
 
@@ -4430,19 +4412,15 @@ html.feat-gameHeader .g-nm { font-weight: 800 !important; max-width: 100px; over
     <div style="margin-bottom:14px;">
       <div class="label" style="margin-bottom:7px;">Difficulty</div>
       <div class="ps-v3-wrap diff-row" style="margin-bottom:0;">
-        <button class="diff-chip ps-v3-seg sel" onclick="pickChDiff(this,'easy')" id="ch-diff-easy">🌿 Easy</button>
-        <button class="diff-chip ps-v3-seg" onclick="pickChDiff(this,'medium')" id="ch-diff-medium">📖 Medium</button>
-        <button class="diff-chip ps-v3-seg" onclick="pickChDiff(this,'hard')" id="ch-diff-hard">⚔️ Hard</button>
+        <button class="diff-chip ps-v3-seg sel" onclick="pickChDiff(this,'easy')" id="ch-diff-easy">🌿 Disciple</button>
+        <button class="diff-chip ps-v3-seg" onclick="pickChDiff(this,'medium')" id="ch-diff-medium">📖 Apostle</button>
+        <button class="diff-chip ps-v3-seg" onclick="pickChDiff(this,'hard')" id="ch-diff-hard">⚔️ Scholar</button>
       </div>
     </div>
 
     <div id="ch-mode-desc-settings" style="font-size:12px;color:var(--ink3);margin-bottom:8px;line-height:1.5;">Pick the right answer from 4 options.</div>
     <div class="eyebrow" style="margin-bottom:9px;">Options</div>
     <div id="ch-live-options" style="margin-bottom:16px;">
-    <div class="toggle-row" style="margin-bottom:10px;">
-      <span class="toggle-lbl">❤️ Hearts</span>
-      <button class="toggle-btn on" id="ch-tog-hearts" onclick="togChHearts()">ON</button>
-    </div>
     <div class="toggle-row" id="ch-rounds-row" style="margin-bottom:0;">
       <span class="toggle-lbl">🏁 Rounds</span>
       <div class="stepper">
@@ -4500,7 +4478,75 @@ const FB_CFG={
 ══════════════════════════════════════════════════ */
 const AVATARS=['😊','🧑','👦','👧','👨','👩','🧔','👴','👵','🤴','👸','🙏','✝️','📖','🕊️','🌟','🔥','👑','🦁','🐑','🎺','⚔️','🏆','🌿','🕯️','🌈','🐟','🍞','🎵','✨'];
 const CLAN_ICONS=['⛪','🕍','🔔','✝️','🌿','🕊️','🏛️','📖','🙏','🌟','🔥','👑','🦁','🌈','⚔️','🎺'];
-const LEVELS=['Seeker','Believer','Disciple','Apostle','Elder','Deacon','Prophet','Bishop','Patriarch','Sage of Faith'];
+const LEVELS=[
+'Wanderer','Seeker','Pilgrim','Curious Soul','First Light',
+'New Believer','Young Lamb','Novice','Learner','Inquirer',
+'Catechumen','Babe in Christ','Born Again','Redeemed','Justified',
+'Awakened','Called','Welcomed','Baptized','Confessing',
+'Worshipper','Sunday Attendee','Committed Member','Prayer Beginner','Peacemaker',
+'Tithes Giver','Cheerful Giver','Faithful Attendee','Steward','Witness',
+'Disciple','Follower','Servant','Helper','Volunteer',
+'Bible Reader','Verse Learner','Scripture Student','Morning Reader','Daily Devotional',
+'Prayer Partner','Cell Group Member','Small Group Member','Soul Winner','Testifier',
+'Confessor','Messenger','Encourager','Exhorter','Intercessor',
+'Watchman','Gatekeeper','Doorkeeper','Usher','Greeter',
+'Faithful Servant','Fisherman','Harvester','Sower of Seeds','Reaper',
+'Bible Student','Word Seeker','Scribe','Verse Memorizer','Psalm Singer',
+'Hymn Singer','Worship Leader','Sunday School Teacher','Youth Worker','Outreach Worker',
+'Street Evangelist','Home Group Leader','Community Builder','Laborer in the Field','Planter',
+'Lay Leader','Ministry Team Member','Deaconess','Deacon','Elder',
+'Lay Minister','Licensed Preacher','Evangelist','Revivalist','Church Planter',
+'Pioneer','Home Missionary','Foreign Missionary','Prayer Society Member','Circuit Rider',
+'Camp Meeting Preacher','Holiness Preacher','Signs and Wonders Minister','Ordained Minister','Pastor',
+'Shepherd','Teaching Pastor','Senior Pastor','Youth Pastor','Worship Pastor',
+'Church Planter Leader','Preacher','Chaplain','Hospital Chaplain','Military Chaplain',
+'Rector','Vicar','Minister of the Word','Expositor','Herald of Truth',
+'Voice in the Wilderness','Proclaimer','Theologian','Bible Scholar','Bible Teacher',
+'Doctrinal Teacher','Catechist','Apologist','Defender of the Faith','Contender for the Faith',
+'Reasoner','Christian Philosopher','Church Historian','Reformation Historian','Baptist Historian',
+'Methodist Historian','Presbyterian Scholar','Anglican Scholar','Reformed Scholar','Calvinist',
+'Wesleyan Scholar','Arminian Thinker','Exegete','Hermeneuticist','Biblical Linguist',
+'Hebrew Scholar','Greek Scholar','Textual Critic','Biblical Archaeologist','Dead Sea Scholar',
+'New Testament Scholar','Old Testament Scholar','Systematic Theologian','Biblical Theologian','Historical Theologian',
+'Pastoral Theologian','Missional Theologian','Eschatologist','Pneumatologist','Ecclesiologist',
+'Doctor of Ministry','Doctor of Theology','Doctor of Divinity','Seminary Professor','Bible College Professor',
+'Theological Educator','Commentator','Commentary Writer','Bible Translator','Missionary Translator',
+'Scripture Distributor','Colporteur','Bible Society Founder','Tract Writer','Reformer',
+'Protestant Reformer','Lutheran','Calvinist Pioneer','Anabaptist','Waldensian',
+'Huguenot','Puritan','Separatist','Nonconformist','Dissenter',
+'Covenanter','Westminster Confessor','Confessing Churchman','Reformed Churchman','Augsburg Confessor',
+'Heidelberg Confessor','Dordrecht Defender','Geneva Bible Scholar','Wycliffite','Tyndale\'s Heir',
+'KJV Scholar','Scripture Protector','Great Awakening Preacher','Second Awakening Leader','Prayer Revival Leader',
+'Camp Meeting Founder','Holiness Movement Leader','Keswick Speaker','Missionary Pioneer','China Inland Pioneer',
+'Africa Inland Pioneer','Bible Champion','Martyr','Confessor of the Faith','Blessed One',
+'Saint','Holy One','Set Apart','Sanctified','Consecrated',
+'Wholly Yielded','Fully Surrendered','Bond-Servant','Slave of Christ','Prisoner of the Lord',
+'Apostolic Leader','Sent One','Commissioned One','Ambassador for Christ','Kingdom Messenger',
+'Overcomer','More Than a Conqueror','Joint Heir','Child of the King','Crown Wearer',
+'Gold Tried in Fire','Tried and True','Faithful Unto Death','Prophet','Prophet of the Lord',
+'Burning One','Flame of the Spirit','River of Life','City on a Hill','Light of the World',
+'Watchman on the Wall','Voice of the Prophet','Elijah\'s Mantle','Double Portion Seeker','Fire of God',
+'Hammer of Truth','Sword of the Spirit','Standard Bearer','Trumpet Voice','Mighty Warrior',
+'Warrior of Faith','Champion of Grace','Vessel of Honor','Pure Gold','Patriarchal Elder',
+'Patriarch of Faith','Father in the Faith','Pillar of the Church','Foundation Stone','Chief Elder',
+'Berean','Noble Berean','Daily Examiner','Truth Tester','Word Weigher',
+'Iron Sharpener','Accountability Partner','Covenant Brother','Covenant Sister','Covenant Keeper',
+'Promise Claimer','Blessing Receiver','Anointed One','Spirit-Filled','Tongues Speaker',
+'Dream Receiver','Vision Carrier','Night Watcher','Midnight Prayer Warrior','Fasting Intercessor',
+'Daniel Fast Keeper','Prayer Chain Leader','War Room Builder','Breakthrough Believer','Kingdom Builder',
+'City Taker','Nation Shaker','Throne Room Worshipper','Prophetic Worshipper','Davidic Worshipper',
+'Harp and Bowl Keeper','Tabernacle of David Builder','Prayer House Leader','House of Prayer Founder','Healing Room Leader',
+'Deliverance Minister','Deliverance Worker','Inner Healing Minister','Sozo Minister','Restoration Worker',
+'Pastoral Counselor','Biblical Counselor','Nouthetic Counselor','Chaplaincy Leader','Hospital Ministry Leader',
+'Prison Ministry Leader','Street Ministry Leader','Skid Row Preacher','Urban Missionary','Rural Missionary',
+'Tribal Missionary','Unreached People Reach','10/40 Window Pioneer','Frontier Missionary Leader','Gospel to All Nations',
+'Epistles Scholar','Romans Expert','Corinthians Teacher','Galatians Defender','Ephesians Mystic',
+'Philippians Rejoicer','Colossians Deepener','Hebrews Expander','Revelation Keeper','Apocalyptic Seer',
+'Seven Seal Opener','Golden Bowl Holder','New Jerusalem Citizen','Tree of Life Bearer',
+'River of Living Water','Throne of Grace Seeker','White Stone Receiver','New Name Bearer',
+'Morning Star Holder','Crown of Life Wearer','Overcomer of Babylon','Eternal Overcomer',
+'Sage of the Ages','Ancient of Light','Lamp of the Lord','Eternal Flame','Word Made Manifest','Faithful and True'
+];
 const XP_PER_LEVEL=120;
 const XP_RESET_VERSION=1;
 const REMATCH_RESPONSE_MS=20000;
@@ -5276,7 +5322,7 @@ function renderDailyMeta(){
 /* Last played helpers */
 function saveLastPlayed(){
   if(!FEATURES.lastPlayed) return;
-  const ML={online:'Online',nearby:'Nearby',local:'Pass & Play',practice:'Practice'};
+  const ML={online:'Online',local:'Pass & Play',practice:'Practice'};
   const SL={mix:'Multi-verse',classic:'Classic',truefalse:'True / False',verse:'Complete the Verse',lightning:'Lightning'};
   try{ localStorage.setItem('bgn3_lp',JSON.stringify({mode:G.mode,sub:G.sub,ml:ML[G.mode]||G.mode,sl:SL[G.sub]||G.sub})); }catch(e){}
 }
@@ -5348,7 +5394,7 @@ const G={
   _incomingRequests:{}, _frReqRef:null, _friendsRef:null,
   _rematchPruneTimer:null,
   // cfg
-  cfg:{sound:true,timer:true,hearts:true,winScore:ROUND_LIMIT},
+  cfg:{sound:localStorage.getItem('lamp_sound')!=='0',timer:true,hearts:false,winScore:ROUND_LIMIT},
   donAmt:'$10',
   _xpAtGameStart:0,
   _correctAtGameStart:0,
@@ -5951,7 +5997,7 @@ function go(id){
   const sc=el&&el.querySelector('.scroller');
   if(sc) sc.scrollTop=0;
   // hooks
-  if(id==='home'){ initGreeting(); renderDailyMeta(); renderLastPlayed(); renderWeeklyTournament(); renderSeasonalBanner(); }
+  if(id==='home'){ initGreeting(); renderDailyMeta(); renderLastPlayed(); renderWeeklyTournament(); renderSeasonalBanner(); renderHomeChallenges(); }
   if(id==='community') communityTab('rankings');
   if(id==='profile') renderProfile();
   if(id==='lobby') renderLobby();
@@ -6020,10 +6066,6 @@ function quitGame(){
   closeOv('ov-quit');
   stopTimers();
   clearAutoAdvance();
-  if(G.mode==='daily' && G._dailyPrevHearts!==null){
-    G.cfg.hearts=!!G._dailyPrevHearts;
-    G._dailyPrevHearts=null;
-  }
   clearTimeout(G._rematchPruneTimer); G._rematchPruneTimer=null;
   if(G._votesRef){G._votesRef.off();G._votesRef=null;}
   if(G._resultTimeout){clearTimeout(G._resultTimeout);G._resultTimeout=null;}
@@ -6071,7 +6113,6 @@ function applyModeSubAvailability(){
 }
 const MODE_STYLE_DESCS={
   online:'Compete with believers worldwide',
-  nearby:'Same WiFi, same spirit',
   local:'One device, take turns together',
   practice:'Sharpen your faith, go at your own pace'
 };
@@ -6090,7 +6131,7 @@ function pickSub(el,s){
   }
   if(s==='team') s='classic';
   G.sub=s; G.seen.clear();
-  if(s==='lightning') G.cfg.hearts=false;
+  G.cfg.hearts=false;
   document.querySelectorAll('#sub-chips .chip').forEach(c=>c.classList.remove('sel'));
   el.classList.add('sel');
   renderOpts();
@@ -6099,7 +6140,6 @@ function onPlay(){
   sfx.tap(); saveLastPlayed();
   if(!G.profile){ go('auth'); buildAvGrid(); return; }
   if(G.mode==='online'){ go('setup'); buildModeSetup('online'); return; }
-  if(G.mode==='nearby'){ go('setup'); buildModeSetup('nearby'); return; }
   if(G.mode==='practice'){ go('setup'); buildModeSetup('practice'); return; }
   go('setup'); buildSetup();
 }
@@ -6152,11 +6192,6 @@ function buildModeSetup(kind,fromHomeSelection){
     document.getElementById('setup-title').innerHTML='Game <em>Settings</em>';
     document.getElementById('setup-subtitle').textContent='Host picks rules; joiners receive them automatically.';
     document.getElementById('setup-go-btn').innerHTML='<span class="btn-icon">🌐</span> Host Room';
-  } else if(kind==='nearby'){
-    document.getElementById('setup-eyebrow').textContent='Same WiFi';
-    document.getElementById('setup-title').innerHTML='Game <em>Settings</em>';
-    document.getElementById('setup-subtitle').textContent='Apply rules before creating your nearby room.';
-    document.getElementById('setup-go-btn').innerHTML='<span class="btn-icon">📡</span> Start Nearby';
   } else {
     document.getElementById('setup-eyebrow').textContent='Practice';
     document.getElementById('setup-title').innerHTML='Practice <em>Settings</em>';
@@ -6187,7 +6222,7 @@ function pickSetupSub(el,s){
   if(G.mode==='local'&&s==='lightning'){ toast('Lightning is not available in Pass & Play.'); return; }
   if(s==='team'&&G.mode!=='local'){ toast('Team mode is for group play only (Pass & Play).'); return; }
   G.sub=s; G.seen.clear();
-  if(s==='lightning') G.cfg.hearts=false;
+  G.cfg.hearts=false;
   if(s==='team') setupPs.forEach((p,i)=>{ p.team=(i%2===0)?'Team A':'Team B'; });
   document.querySelectorAll('#setup-room-sub-chips .chip').forEach(c=>c.classList.remove('sel'));
   el.classList.add('sel');
@@ -6293,12 +6328,7 @@ function renderOpts(){
   // Mode description above Options
   const modeDescEl=document.getElementById('mode-desc');
   if(modeDescEl) modeDescEl.textContent=MODE_DESCS[G.sub]||MODE_DESCS.classic;
-  // Hearts toggle
-  const heartsRow=document.createElement('div'); heartsRow.className='toggle-row';
-  G.cfg.hearts=!isLightning;
-  heartsRow.innerHTML=`<span class="toggle-lbl">❤️ Lives / Hearts</span>
-    <button class="toggle-btn ${G.cfg.hearts?'on':'off'}" id="tog-hearts" onclick="togCfg('hearts')">${G.cfg.hearts?'ON':'OFF'}</button>`;
-  el.appendChild(heartsRow);
+  G.cfg.hearts=false;
   // Rounds (hidden for lightning)
   if(!isLightning){
     const wr=document.createElement('div'); wr.className='toggle-row';
@@ -6317,13 +6347,6 @@ function beginFromSetup(){
     const nbJoin=document.getElementById('nb-join');
     if(nbJoin) setNb(nbJoin);
     setTimeout(()=>createRoom(),0);
-    return;
-  }
-  if(_setupAction==='nearby'){
-    go('lobby');
-    const nbJoin=document.getElementById('nb-join');
-    if(nbJoin) setNb(nbJoin);
-    setTimeout(()=>startNearby(),0);
     return;
   }
   if(_setupAction==='practice'){
@@ -7409,10 +7432,6 @@ function endGame(){
     }
     const playAgainBtn=document.getElementById('w-play-again');
     if(playAgainBtn) playAgainBtn.style.display=(G.mode==='daily'||wasSeasonal)?'none':'';
-    if(G.mode==='daily' && G._dailyPrevHearts!==null){
-      G.cfg.hearts=!!G._dailyPrevHearts;
-      G._dailyPrevHearts=null;
-    }
     if(G.mode==='async_challenge'){ finishGhostRace(); return; }
     go('winner'); sfx.win(); haptic('win'); confetti(); checkAchs();
   } catch(e) {
@@ -7446,7 +7465,7 @@ function playAgain(){
     go('home');
     return;
   }
-  if((G.mode==='online'||G.mode==='nearby'||G.onlineGame) && G.roomId && G.fbOk && G.db){
+  if((G.mode==='online'||G.onlineGame) && G.roomId && G.fbOk && G.db){
     clearTimeout(G._rematchPruneTimer); G._rematchPruneTimer=null;
     const savedRoomId=G.roomId;
     const wasHost=!!G.isHost;
@@ -7591,21 +7610,21 @@ function shareStreakText(){
   else{ navigator.clipboard.writeText(text).then(()=>toast('Copied to clipboard! Share with friends 📋')).catch(()=>{}); }
 }
 function postMatchShareResult(){
-  if((G.mode==='online'||G.mode==='nearby'||G.onlineGame) && G.roomRef && G.roomId){
+  if((G.mode==='online'||G.onlineGame) && G.roomRef && G.roomId){
     leaveCurrentRoom({goHome:false,quiet:true,after:()=>shareResult()});
     return;
   }
   shareResult();
 }
 function postMatchGoHome(){
-  if((G.mode==='online'||G.mode==='nearby'||G.onlineGame) && G.roomRef && G.roomId){
+  if((G.mode==='online'||G.onlineGame) && G.roomRef && G.roomId){
     leaveCurrentRoom({goHome:true,quiet:true});
     return;
   }
   go('home');
 }
 function postMatchGoDonation(){
-  if((G.mode==='online'||G.mode==='nearby'||G.onlineGame) && G.roomRef && G.roomId){
+  if((G.mode==='online'||G.onlineGame) && G.roomRef && G.roomId){
     leaveCurrentRoom({goHome:false,quiet:true,after:()=>go('donation')});
     return;
   }
@@ -7848,13 +7867,12 @@ function chQTypeLabel(qtype){
   return qtLabels[normalizeOnlineSub(qtype)]||'🎯 Classic';
 }
 function chDiffLabel(diff){
-  return diff==='easy'?'Easy':diff==='medium'?'Medium':'Hard';
+  return diff==='easy'?'Disciple':diff==='medium'?'Apostle':'Scholar';
 }
 function roomSettingsLine(d){
   const cfg=(d&&d.cfg)||{};
   const rounds=clampRounds(cfg.winScore||DEFAULT_ROUNDS);
-  const hearts=cfg.hearts===false?'Hearts Off':'Hearts On';
-  return `${hearts} · ${rounds} rounds`;
+  return `${rounds} rounds`;
 }
 function updateLobbyModeNote(d){
   const note=document.getElementById('lobby-mode-note');
@@ -8265,28 +8283,35 @@ function copyCode(){
   if(navigator.clipboard) navigator.clipboard.writeText(code).then(()=>toast('Code copied! ✦'));
   else{ const t=document.createElement('textarea'); t.value=code; document.body.appendChild(t); t.select(); document.execCommand('copy'); t.remove(); toast('Code copied! ✦'); }
 }
-function startNearby(){
-  if(!G.profile){ go('auth'); return; }
-  if(!G.fbOk){ toast('Configure Firebase to use Same WiFi Play.'); return; }
-  sfx.tap();
-  G.meReady=false;
-  document.getElementById('ready-btn').textContent='✓ Mark Ready';
-  const code=mkCode(); G.roomId=code; G.isHost=true;
-  const ref=G.db.ref('rooms/'+code); G.roomRef=ref;
-  ref.set({
-    code, host:G.uid, status:'waiting', sub:G.sub, difficulty:G.diff, createdAt:Date.now(),
-    cfg:{hearts:!!G.cfg.hearts,winScore:clampRounds(G.cfg.winScore)},
-    nearby:true,
-    players:{[G.uid]:{name:G.profile.name,avatar:G.profile.avatar,photo:G.profile.photo||'',ready:false,score:0,hearts:3,diff:G.diff,connected:true}}
-  }).then(()=>{
-    document.getElementById('rc-disp').textContent=code;
-    document.getElementById('lobby-panel').style.display='block';
-    updateLobbyModeNote({sub:G.sub,difficulty:G.diff,cfg:{hearts:!!G.cfg.hearts,winScore:clampRounds(G.cfg.winScore)}});
-    document.getElementById('start-btn').disabled=false;
-    renderQRCode(code);
-    ref.on('value',sn=>{ const d=sn.val(); if(!d)return; updateLobbyUI(d); if(d.status==='playing'){ ref.off(); joinFromRoom(d); } });
-    toast('Same WiFi room '+code+' created! Share code or QR.');
-  }).catch(e=>toast('Error: '+e.message));
+function playOnlineNow(){
+  if(!G.profile){ go('auth'); buildAvGrid(); return; }
+  sfx.tap(); haptic('tap');
+  G.mode='online'; G.sub='mix'; G.diff='easy';
+  G.cfg.winScore=G.cfg.winScore||15; G.cfg.hearts=false;
+  go('lobby');
+  setTimeout(()=>createRoom(),0);
+}
+function renderHomeChallenges(){
+  const sec=document.getElementById('home-challenges-section');
+  const list=document.getElementById('home-challenges-list');
+  if(!sec||!list) return;
+  const all=G._pendingAsyncChallenges||{};
+  const now=Date.now();
+  const pending=Object.entries(all).filter(([,c])=>c&&c.status==='pending'&&c.expiresAt>now);
+  if(!pending.length){ sec.style.display='none'; return; }
+  sec.style.display='';
+  list.innerHTML=pending.slice(0,3).map(([id,c])=>{
+    const modeLabel=c.mode==='classic'?(c.category&&c.category!=='all'?c.category:'Scripture'):c.mode==='truefalse'?'True or False':'Complete the Verse';
+    const timeLeft=Math.max(0,Math.floor((c.expiresAt-now)/3600000));
+    return `<div class="card" style="padding:12px 14px;margin-bottom:8px;display:flex;align-items:center;gap:12px;">
+      <div>${avatarMarkup(c.fromAvatar||'😊',c.fromPhoto||'','sm')}</div>
+      <div style="flex:1;min-width:0;">
+        <div style="font-family:'Cinzel',serif;font-size:12px;font-weight:700;color:var(--ink);white-space:nowrap;overflow:hidden;text-overflow:ellipsis;">${escHtml(c.fromName||'Challenger')}</div>
+        <div style="font-size:10px;color:var(--ink3);">${escHtml(modeLabel)} · Scored ${c.fromScore}/${c.fromTotal} · ${timeLeft}h left</div>
+      </div>
+      <button class="btn btn-gold btn-sm" style="width:auto;padding:6px 14px;font-size:12px;flex-shrink:0;" onclick="acceptGhostChallenge('${id}')">Answer →</button>
+    </div>`;
+  }).join('');
 }
 function startDailyChallenge(){
   if(!G.profile){ go('auth'); return; }
@@ -8414,7 +8439,6 @@ function startDailyChallenge(){
   G.hearts = {[G.profile.name]: 3};
   G.streaks = {[G.profile.name]: 0};
   G.cfg.winScore = ROUND_LIMIT;
-  G._dailyPrevHearts=(G.cfg&&typeof G.cfg.hearts==='boolean')?G.cfg.hearts:true;
   G.cfg.hearts = false;
   G.cfg.timer = true;
   G.TIM = dailyDiff==='hard'?12:dailyDiff==='medium'?16:20;
@@ -8705,7 +8729,7 @@ function sendGhostChallenge(){
   G.hearts={[G.profile.name||'Player']:_chCfg.hearts?3:Infinity};
   G.streaks={[G.profile.name||'Player']:0};
   G.cfg.winScore=count;
-  G.cfg.hearts=!!_chCfg.hearts;
+  G.cfg.hearts=false;
   if(G.profile){ G.profile.sentGhostChallenge=true; saveProfile(); }
   closeOv('ov-challenge');
   if(mode==='lightning'){
@@ -8805,6 +8829,9 @@ function listenAsyncChallenges(){
     if(document.getElementById('s-friends')?.classList.contains('active')){
       renderAsyncChallenges();
     }
+    if(document.getElementById('s-home')?.classList.contains('active')){
+      renderHomeChallenges();
+    }
   });
 }
 function renderAsyncChallenges(){
@@ -8823,7 +8850,7 @@ function renderAsyncChallenges(){
   list.innerHTML=pending.map(([id,c])=>{
     const catLabel=c.category&&c.category!=='all'?c.category:'All Scripture';
     const modeLabel=c.mode==='classic'?catLabel:c.mode==='truefalse'?'True or False':'Complete the Verse';
-    const diffLabel=c.difficulty?(' · '+c.difficulty.charAt(0).toUpperCase()+c.difficulty.slice(1)):'';
+    const diffLabel=c.difficulty?(' · '+chDiffLabel(c.difficulty)):'';
     const timeLeft=Math.max(0,Math.floor((c.expiresAt-now)/3600000));
     return `<div class="friend-row" style="margin-bottom:10px;border:2px solid rgba(201,145,13,.35);border-radius:14px;padding:12px 14px;background:linear-gradient(135deg,rgba(201,145,13,.1) 0%,rgba(201,145,13,.03) 100%);">
       <div class="friend-av">${avatarMarkup(c.fromAvatar||'😊',c.fromPhoto||'','md')}</div>
@@ -9548,38 +9575,63 @@ function requestNotificationPermission(){
 function buildSettingsList(){
   const el=document.getElementById('settings-list'); if(!el)return; el.innerHTML='';
 
-  // Toggles
-  [{k:'sound',l:'🔔 Sound Effects'}].forEach(o=>{
-    const row=document.createElement('div'); row.className='toggle-row';
-    row.innerHTML=`<span class="toggle-lbl">${o.l}</span><button class="toggle-btn ${G.cfg[o.k]?'on':'off'}" id="stog-${o.k}" onclick="togGlobal('${o.k}')">${G.cfg[o.k]?'ON':'OFF'}</button>`;
-    el.appendChild(row);
-  });
+  // Section label helper
+  const sec=(label)=>{
+    const d=document.createElement('div');
+    d.style.cssText='font-family:"Cinzel",serif;font-size:9px;letter-spacing:.12em;text-transform:uppercase;color:var(--ink3);padding:14px 0 6px;border-top:1px solid rgba(255,255,255,.06);';
+    d.textContent=label;
+    el.appendChild(d);
+  };
 
-  // Notification Toggle
-  const nRow=document.createElement('div'); nRow.className='toggle-row';
-  const nEnabled=G.profile&&G.profile.notifications&&Notification.permission==='granted';
-  nRow.innerHTML=`<span class="toggle-lbl">📲 Push Notifications</span>
-    <button class="toggle-btn ${nEnabled?'on':'off'}" onclick="requestNotificationPermission()">${nEnabled?'ON':'OFF'}</button>`;
-  el.appendChild(nRow);
+  // Row helper
+  const row=(label,rightHtml)=>{
+    const d=document.createElement('div');
+    d.style.cssText='display:flex;align-items:center;justify-content:space-between;padding:10px 0;border-bottom:1px solid rgba(255,255,255,.05);';
+    d.innerHTML=`<span style="font-size:14px;color:var(--ink);">${label}</span>${rightHtml}`;
+    el.appendChild(d);
+  };
 
-  // Theme picker
-  const curTheme=(G.profile&&G.profile.theme)||'light';
+  // ── Sound ──
+  sec('Audio');
+  const soundOn=G.cfg.sound!==false;
+  row('🔔 Sound Effects',`<button class="toggle-btn ${soundOn?'on':'off'}" id="stog-sound" onclick="togSound()">${soundOn?'ON':'OFF'}</button>`);
+
+  // ── Notifications ──
+  sec('Notifications');
+  const nEnabled=!!(G.profile&&G.profile.notifications&&Notification.permission==='granted');
+  row('📲 Push Notifications',`<button class="toggle-btn ${nEnabled?'on':'off'}" id="stog-notif" onclick="togNotif()">${nEnabled?'ON':'OFF'}</button>`);
+
+  // ── Theme ──
+  sec('App Theme');
+  const curTheme=(G.profile&&G.profile.theme)||'dark';
   const thDiv=document.createElement('div');
-  thDiv.innerHTML=`<div class="settings-section-title">App Theme</div>
-  <div class="theme-grid">
-    ${[{t:'light',l:'☀️ Light'},{t:'dark',l:'🌙 Dark'},{t:'green',l:'🌿 Green'},{t:'warmth',l:'🏺 Warmth'}].map(th=>`
+  thDiv.innerHTML=`<div class="theme-grid" style="margin-bottom:4px;">
+    ${[{t:'dark',l:'🌙 Dark'},{t:'light',l:'☀️ Light'},{t:'green',l:'🌿 Green'},{t:'warmth',l:'🏺 Warmth'}].map(th=>`
     <div class="theme-swatch ${curTheme===th.t?'active':''}" data-t="${th.t}" onclick="applyTheme('${th.t}')">${th.l}</div>`).join('')}
   </div>`;
   el.appendChild(thDiv);
 
-  // Translation picker removed - no translations implemented
-
-  // Delete Profile
-  const delDiv=document.createElement('div');
-  delDiv.innerHTML=`<div class="settings-section-title" style="color:var(--red1);margin-top:16px;">Danger Zone</div>
-  <p style="font-size:11px;color:var(--ink3);margin-bottom:8px;">This will permanently delete your local progress, history, and achievements. This cannot be undone.</p>
-  <button class="btn btn-ruby btn-sm" style="width:100%;" onclick="confirmDeleteProfile()">Delete My Profile</button>`;
-  el.appendChild(delDiv);
+  // ── Account (subtle delete link) ──
+  const accDiv=document.createElement('div');
+  accDiv.style.cssText='margin-top:22px;text-align:center;';
+  accDiv.innerHTML=`<span style="font-size:11px;color:var(--ink3);cursor:pointer;text-decoration:underline;opacity:.5;" onclick="confirmDeleteProfile()">Remove account data</span>`;
+  el.appendChild(accDiv);
+}
+function togSound(){
+  G.cfg.sound=G.cfg.sound===false?true:false;
+  try{ localStorage.setItem('lamp_sound', G.cfg.sound?'1':'0'); }catch(e){}
+  const b=document.getElementById('stog-sound');
+  if(b){ b.textContent=G.cfg.sound?'ON':'OFF'; b.className='toggle-btn '+(G.cfg.sound?'on':'off'); }
+}
+function togNotif(){
+  if(G.profile&&G.profile.notifications&&Notification.permission==='granted'){
+    G.profile.notifications=false; saveProfile();
+    const b=document.getElementById('stog-notif');
+    if(b){ b.textContent='OFF'; b.className='toggle-btn off'; }
+    toast('Notifications disabled');
+  } else {
+    requestNotificationPermission();
+  }
 }
 
 function confirmDeleteProfile(){
@@ -10077,6 +10129,9 @@ function initDailyVerse(){
   const el=document.getElementById('dv-text'), el2=document.getElementById('dv-ref');
   if(el) el.textContent='\u201c'+v.t+'\u201d';
   if(el2) el2.textContent='\u2014 '+v.r;
+  const em=document.getElementById('dv-text-mini'), em2=document.getElementById('dv-ref-mini');
+  if(em) em.textContent='\u201c'+v.t+'\u201d';
+  if(em2) em2.textContent='\u2014 '+v.r;
 }
 
 /* ══════════════════════════════════════════════════
@@ -11294,7 +11349,7 @@ function sendChallenge(){
   G.diff=_chDiff;
   G.TIM=_chDiff==='easy'?25:_chDiff==='hard'?12:20;
   G.sub=challengeSub;
-  G.cfg.hearts=!!_chCfg.hearts;
+  G.cfg.hearts=false;
   G.cfg.winScore=clampRounds(_chCfg.winScore);
 
   // Get target friend data for adding to room
