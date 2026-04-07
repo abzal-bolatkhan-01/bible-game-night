@@ -3963,7 +3963,7 @@ const QB={
         "Samuel"
       ],
       "a": 1,
-      "e": "1 Samuel 10:1",
+      "e": "1 Samuel 10:1 — Saul was anointed by Samuel as the first king over Israel.",
       "d": "easy"
     },
     {
@@ -3975,7 +3975,7 @@ const QB={
         "Joash"
       ],
       "a": 1,
-      "e": "1 Samuel 17",
+      "e": "1 Samuel 17:50 — David defeated the giant Goliath with a sling and a stone.",
       "d": "easy"
     },
     {
@@ -3987,7 +3987,7 @@ const QB={
         "Josiah"
       ],
       "a": 2,
-      "e": "1 Kings 3",
+      "e": "1 Kings 3:12 — Solomon asked God for wisdom to judge the people of Israel.",
       "d": "easy"
     },
     {
@@ -3999,7 +3999,7 @@ const QB={
         "Josiah"
       ],
       "a": 1,
-      "e": "1 Kings 6",
+      "e": "1 Kings 6:1 — Solomon began building the Temple in the fourth year of his reign.",
       "d": "easy"
     },
     {
@@ -4011,7 +4011,7 @@ const QB={
         "Boaz"
       ],
       "a": 0,
-      "e": "1 Samuel 16:1",
+      "e": "1 Samuel 16:1 — Jesse was the father of David and lived in Bethlehem with his sons.",
       "d": "easy"
     },
     {
@@ -4023,7 +4023,7 @@ const QB={
         "Josiah"
       ],
       "a": 2,
-      "e": "1 Samuel 16",
+      "e": "1 Samuel 16:11 — David was tending sheep when Samuel came to anoint him as king.",
       "d": "easy"
     },
     {
@@ -4035,7 +4035,7 @@ const QB={
         "Mephibosheth"
       ],
       "a": 0,
-      "e": "1 Samuel 18:1",
+      "e": "1 Samuel 18:1 — Jonathan, Saul's son, loved David as his own soul and became his friend.",
       "d": "easy"
     },
     {
@@ -4047,7 +4047,7 @@ const QB={
         "Joram"
       ],
       "a": 1,
-      "e": "1 Kings 16:31",
+      "e": "1 Kings 16:31 — Ahab, king of Israel, married Jezebel, the daughter of the king of Sidon.",
       "d": "easy"
     },
     {
@@ -4059,7 +4059,7 @@ const QB={
         "Cyrus"
       ],
       "a": 1,
-      "e": "Daniel 5",
+      "e": "Daniel 5:5 — Belshazzar saw the fingers of a human hand writing on the palace wall.",
       "d": "medium"
     },
     {
@@ -4071,7 +4071,7 @@ const QB={
         "Asa"
       ],
       "a": 1,
-      "e": "2 Kings 20:6",
+      "e": "2 Kings 20:6 — God told Hezekiah He would add fifteen years to his life after he prayed.",
       "d": "medium"
     },
     {
@@ -4083,7 +4083,7 @@ const QB={
         "Asa"
       ],
       "a": 1,
-      "e": "2 Kings 22:8",
+      "e": "2 Kings 22:8 — Hilkiah the high priest found the Book of the Law in the Temple.",
       "d": "easy"
     },
     {
@@ -4095,7 +4095,7 @@ const QB={
         "Hezekiah"
       ],
       "a": 1,
-      "e": "2 Kings 22:1",
+      "e": "2 Kings 22:1 — Josiah was eight years old when he became king of Judah.",
       "d": "easy"
     },
     {
@@ -4107,7 +4107,7 @@ const QB={
         "Jehu"
       ],
       "a": 0,
-      "e": "1 Kings 12:28",
+      "e": "1 Kings 12:28 — Jeroboam made two golden calves for Israel to worship in Bethel and Dan.",
       "d": "medium"
     },
     {
@@ -4119,7 +4119,7 @@ const QB={
         "Jehu's father"
       ],
       "a": 1,
-      "e": "2 Kings 9:20",
+      "e": "2 Kings 9:20 — Jehu was recognized by his furious chariot driving as he approached Jezreel.",
       "d": "medium"
     },
     {
@@ -4131,7 +4131,7 @@ const QB={
         "Josiah"
       ],
       "a": 2,
-      "e": "2 Kings 24:18",
+      "e": "2 Kings 24:18 — Zedekiah was the final king of Judah before the Babylonian captivity.",
       "d": "medium"
     },
     {
@@ -4143,7 +4143,7 @@ const QB={
         "Darius"
       ],
       "a": 1,
-      "e": "2 Kings 25",
+      "e": "2 Kings 25:1 — Nebuchadnezzar, king of Babylon, destroyed Jerusalem and the Temple.",
       "d": "easy"
     },
     {
@@ -4155,7 +4155,7 @@ const QB={
         "Xerxes"
       ],
       "a": 0,
-      "e": "Ezra 1:1",
+      "e": "Ezra 1:1 — King Cyrus of Persia issued the decree allowing the Jews to return home.",
       "d": "medium"
     },
     {
@@ -4167,7 +4167,7 @@ const QB={
         "Hezekiah"
       ],
       "a": 0,
-      "e": "2 Chronicles 26:19",
+      "e": "2 Chronicles 26:19 — Uzziah was struck with leprosy for trying to burn incense in the Temple.",
       "d": "medium"
     },
     {
@@ -4179,7 +4179,7 @@ const QB={
         "Shallum"
       ],
       "a": 0,
-      "e": "1 Kings 16:18",
+      "e": "1 Kings 16:18 — Zimri set the palace on fire around himself when he saw the city was taken.",
       "d": "hard"
     },
     {
@@ -4191,7 +4191,7 @@ const QB={
         "Sihon"
       ],
       "a": 0,
-      "e": "1 Kings 5:1",
+      "e": "1 Kings 5:1 — Hiram, king of Tyre, sent cedar and fir trees to Solomon for the Temple.",
       "d": "medium"
     },
     {
@@ -4203,7 +4203,7 @@ const QB={
         "Sheba"
       ],
       "a": 1,
-      "e": "2 Kings 11:1",
+      "e": "2 Kings 11:1 — Athaliah tried to kill all the royal heirs, but Joash was hidden and saved.",
       "d": "medium"
     },
     {
@@ -4215,7 +4215,7 @@ const QB={
         "Jeroboam"
       ],
       "a": 0,
-      "e": "1 Kings 16:24",
+      "e": "1 Kings 16:24 — Omri bought the hill of Samaria and built the city as Israel's capital.",
       "d": "hard"
     },
     {
@@ -4227,7 +4227,7 @@ const QB={
         "Nadab"
       ],
       "a": 0,
-      "e": "1 Kings 16:15",
+      "e": "1 Kings 16:15 — Zimri reigned as king in Tirzah for only seven days.",
       "d": "hard"
     },
     {
@@ -4239,7 +4239,7 @@ const QB={
         "Rehoboam"
       ],
       "a": 1,
-      "e": "1 Kings 11:3",
+      "e": "1 Kings 11:3 — Solomon had seven hundred wives and three hundred concubines.",
       "d": "easy"
     },
     {
@@ -4251,7 +4251,7 @@ const QB={
         "Ahaz"
       ],
       "a": 0,
-      "e": "2 Kings 21:1",
+      "e": "2 Kings 21:1 — Manasseh, Hezekiah's son, reigned fifty-five years and was very wicked.",
       "d": "medium"
     },
     {
@@ -4263,7 +4263,7 @@ const QB={
         "Jehoahaz"
       ],
       "a": 0,
-      "e": "2 Kings 23:29",
+      "e": "2 Kings 23:29 — Josiah was killed by Pharaoh Necho at the battle of Megiddo.",
       "d": "medium"
     },
     {
@@ -4275,7 +4275,7 @@ const QB={
         "Jehoahaz"
       ],
       "a": 0,
-      "e": "2 Kings 1:2",
+      "e": "2 Kings 1:2 — Ahaziah fell through the lattice of his upper chamber in Samaria.",
       "d": "hard"
     },
     {
@@ -4287,7 +4287,7 @@ const QB={
         "Abijah"
       ],
       "a": 0,
-      "e": "1 Kings 12",
+      "e": "1 Kings 12:1 — Rehoboam, Solomon's son, saw the kingdom split into Israel and Judah.",
       "d": "easy"
     },
     {
@@ -4299,7 +4299,7 @@ const QB={
         "Manasseh"
       ],
       "a": 0,
-      "e": "2 Kings 25:7",
+      "e": "2 Kings 25:7 — Nebuchadnezzar killed Zedekiah's sons and then blinded the king.",
       "d": "medium"
     },
     {
@@ -4311,7 +4311,7 @@ const QB={
         "Nabonidus"
       ],
       "a": 0,
-      "e": "Daniel 4:33",
+      "e": "Daniel 4:33 — Nebuchadnezzar was driven from men and ate grass like an ox for seven years.",
       "d": "medium"
     },
     {
@@ -4323,7 +4323,7 @@ const QB={
         "Artaxerxes"
       ],
       "a": 0,
-      "e": "Esther 1-2",
+      "e": "Esther 2:17 — King Ahasuerus (Xerxes) loved Esther and made her his queen.",
       "d": "easy"
     },
     {
@@ -4335,7 +4335,7 @@ const QB={
         "Menahem"
       ],
       "a": 0,
-      "e": "2 Kings 9-10",
+      "e": "2 Kings 9-10 — Jehu was anointed to destroy the house of Ahab for their wickedness.",
       "d": "medium"
     },
     {
@@ -4347,7 +4347,7 @@ const QB={
         "Ahaz"
       ],
       "a": 0,
-      "e": "2 Kings 21:26",
+      "e": "2 Kings 21:26 — Amon was the father of Josiah and was assassinated by his servants.",
       "d": "hard"
     },
     {
@@ -4359,7 +4359,7 @@ const QB={
         "Tirhakah"
       ],
       "a": 0,
-      "e": "1 Kings 14:25",
+      "e": "1 Kings 14:25 — Shishak, king of Egypt, attacked Jerusalem and took its treasures.",
       "d": "hard"
     },
     {
@@ -4371,7 +4371,7 @@ const QB={
         "Hadadezer"
       ],
       "a": 0,
-      "e": "2 Kings 3:27",
+      "e": "2 Kings 3:27 — The king of Moab sacrificed his oldest son as a burnt offering on the wall.",
       "d": "hard"
     },
     {
@@ -4383,7 +4383,7 @@ const QB={
         "Jeroboam II"
       ],
       "a": 0,
-      "e": "1 Kings 22:39",
+      "e": "1 Kings 22:39 — Ahab built an ivory house and many cities during his reign.",
       "d": "hard"
     },
     {
@@ -4395,7 +4395,7 @@ const QB={
         "Pekahiah"
       ],
       "a": 0,
-      "e": "2 Kings 15:13",
+      "e": "2 Kings 15:13 — Shallum reigned for one full month in Samaria before being killed.",
       "d": "hard"
     },
     {
@@ -4407,7 +4407,7 @@ const QB={
         "Uzziah"
       ],
       "a": 0,
-      "e": "2 Kings 11",
+      "e": "2 Kings 11:2 — Joash was hidden in the Temple for six years to escape Athaliah.",
       "d": "medium"
     },
     {
@@ -4419,7 +4419,7 @@ const QB={
         "Asa"
       ],
       "a": 0,
-      "e": "2 Kings 20",
+      "e": "2 Kings 20:5 — God healed Hezekiah and added fifteen years to his life.",
       "d": "easy"
     },
     {
@@ -4431,7 +4431,7 @@ const QB={
         "Jehu"
       ],
       "a": 0,
-      "e": "1 Kings 11:26",
+      "e": "1 Kings 11:26 — Jeroboam, the son of Nebat, rebelled against King Solomon.",
       "d": "medium"
     },
     {
@@ -4443,7 +4443,7 @@ const QB={
         "Asa"
       ],
       "a": 0,
-      "e": "1 Kings 11:43",
+      "e": "1 Kings 11:43 — Rehoboam succeeded his father Solomon as king of Israel.",
       "d": "easy"
     },
     {
@@ -4455,7 +4455,7 @@ const QB={
         "Hoshea"
       ],
       "a": 0,
-      "e": "1 Kings 18",
+      "e": "1 Kings 18:17 — Elijah confronted Ahab, calling him the troubler of Israel.",
       "d": "easy"
     },
     {
@@ -4467,7 +4467,7 @@ const QB={
         "Amnon"
       ],
       "a": 0,
-      "e": "2 Samuel 15",
+      "e": "2 Samuel 15:10 — Absalom led a rebellion against his father, King David.",
       "d": "easy"
     },
     {
@@ -4479,7 +4479,7 @@ const QB={
         "Eliab"
       ],
       "a": 0,
-      "e": "1 Samuel 14:1",
+      "e": "1 Samuel 14:1 — Jonathan was the son of Saul, the first king of Israel.",
       "d": "easy"
     },
     {
@@ -4491,7 +4491,7 @@ const QB={
         "Zechariah"
       ],
       "a": 0,
-      "e": "2 Kings 13:1",
+      "e": "2 Kings 13:1 — Jehoahaz, the son of Jehu, reigned over Israel for seventeen years.",
       "d": "hard"
     },
     {
@@ -4503,7 +4503,7 @@ const QB={
         "Ahaz"
       ],
       "a": 0,
-      "e": "2 Kings 20:21",
+      "e": "2 Kings 20:21 — Manasseh succeeded his father Hezekiah as king of Judah.",
       "d": "medium"
     },
     {
@@ -4515,7 +4515,7 @@ const QB={
         "Tiglath-Pileser"
       ],
       "a": 0,
-      "e": "2 Kings 18:13",
+      "e": "2 Kings 18:13 — Sennacherib, king of Assyria, attacked the fortified cities of Judah.",
       "d": "medium"
     },
     {
@@ -4527,7 +4527,7 @@ const QB={
         "Zechariah"
       ],
       "a": 0,
-      "e": "2 Kings 17:1",
+      "e": "2 Kings 17:1 — Hoshea was the last king of Israel before the Assyrian captivity.",
       "d": "hard"
     },
     {
@@ -4539,7 +4539,7 @@ const QB={
         "Manasseh"
       ],
       "a": 0,
-      "e": "2 Kings 16:20",
+      "e": "2 Kings 16:20 — Ahaz was the father of Hezekiah and a wicked king of Judah.",
       "d": "hard"
     },
     {
@@ -4551,7 +4551,7 @@ const QB={
         "Cyrus"
       ],
       "a": 0,
-      "e": "2 Kings 25:27",
+      "e": "2 Kings 25:27 — Evil-merodach, king of Babylon, released Jehoiachin from prison.",
       "d": "hard"
     },
     {
@@ -4563,7 +4563,7 @@ const QB={
         "Jehoram"
       ],
       "a": 0,
-      "e": "1 Kings 14:31",
+      "e": "1 Kings 14:31 — Abijam (Abijah) succeeded his father Rehoboam as king of Judah.",
       "d": "hard"
     },
     {
@@ -4575,7 +4575,7 @@ const QB={
         "Jehu"
       ],
       "a": 0,
-      "e": "1 Kings 16:28",
+      "e": "1 Kings 16:28 — Ahab, the son of Omri, became king and did evil in God's sight.",
       "d": "easy"
     },
     {
@@ -4587,7 +4587,7 @@ const QB={
         "Amaziah"
       ],
       "a": 0,
-      "e": "1 Kings 22:50",
+      "e": "1 Kings 22:50 — Jehoram succeeded his father Jehoshaphat as king of Judah.",
       "d": "hard"
     },
     {
@@ -4599,7 +4599,7 @@ const QB={
         "Jehoahaz"
       ],
       "a": 0,
-      "e": "1 Kings 22:40",
+      "e": "1 Kings 22:40 — Ahaziah succeeded his father Ahab as king of Israel.",
       "d": "medium"
     },
     {
@@ -4611,7 +4611,7 @@ const QB={
         "Uzziah"
       ],
       "a": 0,
-      "e": "2 Kings 8:24",
+      "e": "2 Kings 8:24 — Ahaziah succeeded his father Jehoram as king of Judah.",
       "d": "hard"
     },
     {
@@ -4623,7 +4623,7 @@ const QB={
         "Shallum"
       ],
       "a": 0,
-      "e": "2 Kings 15:22",
+      "e": "2 Kings 15:22 — Pekahiah succeeded his father Menahem as king of Israel.",
       "d": "hard"
     },
     {
@@ -4635,7 +4635,7 @@ const QB={
         "Hezekiah"
       ],
       "a": 0,
-      "e": "2 Kings 14:21",
+      "e": "2 Kings 14:21 — Azariah (Uzziah) became king of Judah after his father Amaziah.",
       "d": "hard"
     },
     {
@@ -4647,7 +4647,7 @@ const QB={
         "Menahem"
       ],
       "a": 0,
-      "e": "2 Kings 14:16",
+      "e": "2 Kings 14:16 — Jeroboam II succeeded his father Jehoash as king of Israel.",
       "d": "hard"
     },
     {
@@ -4659,7 +4659,7 @@ const QB={
         "Manasseh"
       ],
       "a": 0,
-      "e": "2 Kings 15:7",
+      "e": "2 Kings 15:7 — Jotham succeeded his father Uzziah as king of Judah.",
       "d": "hard"
     },
     {
@@ -4671,7 +4671,7 @@ const QB={
         "Omri"
       ],
       "a": 0,
-      "e": "1 Kings 14:20",
+      "e": "1 Kings 14:20 — Nadab succeeded his father Jeroboam as king of Israel.",
       "d": "hard"
     },
     {
@@ -4683,7 +4683,7 @@ const QB={
         "Joash"
       ],
       "a": 0,
-      "e": "1 Kings 15:24",
+      "e": "1 Kings 15:24 — Jehoshaphat succeeded his father Asa as king of Judah.",
       "d": "hard"
     },
     {
@@ -4695,7 +4695,7 @@ const QB={
         "Jehoahaz"
       ],
       "a": 0,
-      "e": "2 Kings 3:1",
+      "e": "2 Kings 3:1 — Joram (Jehoram), another son of Ahab, became king after Ahaziah.",
       "d": "hard"
     },
     {
@@ -4707,7 +4707,7 @@ const QB={
         "Jotham"
       ],
       "a": 0,
-      "e": "2 Kings 11:2",
+      "e": "2 Kings 11:2 — Joash, son of Ahaziah, was saved and later crowned king of Judah.",
       "d": "hard"
     },
     {
@@ -4719,7 +4719,7 @@ const QB={
         "Shallum"
       ],
       "a": 0,
-      "e": "2 Kings 13:9",
+      "e": "2 Kings 13:9 — Jehoash (Joash) succeeded his father Jehoahaz as king of Israel.",
       "d": "hard"
     },
     {
@@ -4731,7 +4731,7 @@ const QB={
         "Amon"
       ],
       "a": 0,
-      "e": "2 Kings 15:38",
+      "e": "2 Kings 15:38 — Ahaz succeeded his father Jotham as king of Judah.",
       "d": "hard"
     },
     {
@@ -4743,7 +4743,7 @@ const QB={
         "Tibni"
       ],
       "a": 0,
-      "e": "1 Kings 16:6",
+      "e": "1 Kings 16:6 — Elah succeeded his father Baasha as king of Israel.",
       "d": "hard"
     },
     {
@@ -4755,7 +4755,7 @@ const QB={
         "Ahaz"
       ],
       "a": 0,
-      "e": "2 Kings 21:18",
+      "e": "2 Kings 21:18 — Manasseh was the father of Amon, who became king of Judah.",
       "d": "hard"
     },
     {
@@ -4767,7 +4767,7 @@ const QB={
         "Pekah"
       ],
       "a": 0,
-      "e": "2 Kings 15:8",
+      "e": "2 Kings 15:8 — Zechariah succeeded his father Jeroboam II as king of Israel.",
       "d": "hard"
     },
     {
@@ -4779,7 +4779,7 @@ const QB={
         "Amon"
       ],
       "a": 0,
-      "e": "2 Kings 24:17",
+      "e": "2 Kings 24:17 — Josiah was the father of Zedekiah, the last king of Judah.",
       "d": "hard"
     },
     {
@@ -4791,7 +4791,7 @@ const QB={
         "Shallum"
       ],
       "a": 0,
-      "e": "2 Kings 15:23",
+      "e": "2 Kings 15:23 — Pekahiah, son of Menahem, reigned for two years in Samaria.",
       "d": "hard"
     },
     {
@@ -4803,7 +4803,7 @@ const QB={
         "Ahaziah"
       ],
       "a": 0,
-      "e": "1 Kings 15:8",
+      "e": "1 Kings 15:8 — Asa succeeded his father Abijam as king of Judah.",
       "d": "hard"
     },
     {
@@ -4815,7 +4815,7 @@ const QB={
         "Omri"
       ],
       "a": 0,
-      "e": "1 Kings 15:25",
+      "e": "1 Kings 15:25 — Nadab, son of Jeroboam, reigned over Israel for two years.",
       "d": "hard"
     },
     {
@@ -4827,7 +4827,7 @@ const QB={
         "Hezekiah"
       ],
       "a": 0,
-      "e": "2 Kings 15:2",
+      "e": "2 Kings 15:2 — Uzziah (Azariah) reigned as king of Judah for fifty-two years.",
       "d": "hard"
     },
     {
@@ -4839,7 +4839,7 @@ const QB={
         "Menahem"
       ],
       "a": 0,
-      "e": "2 Kings 14:23",
+      "e": "2 Kings 14:23 — Jeroboam II, son of Jehoash, reigned in Samaria for forty-one years.",
       "d": "hard"
     },
     {
@@ -4851,7 +4851,7 @@ const QB={
         "Amaziah"
       ],
       "a": 0,
-      "e": "2 Kings 8:17",
+      "e": "2 Kings 8:17 — Jehoram, son of Jehoshaphat, reigned over Judah for eight years.",
       "d": "hard"
     },
     {
@@ -4863,7 +4863,7 @@ const QB={
         "Jehu"
       ],
       "a": 0,
-      "e": "1 Kings 16:29",
+      "e": "1 Kings 16:29 — Ahab, the son of Omri, reigned over Israel for twenty-two years.",
       "d": "hard"
     },
     {
@@ -4875,7 +4875,7 @@ const QB={
         "Jehoram"
       ],
       "a": 0,
-      "e": "1 Kings 15:2",
+      "e": "1 Kings 15:2 — Abijam (Abijah) reigned over Judah for three years in Jerusalem.",
       "d": "hard"
     },
     {
@@ -4887,7 +4887,7 @@ const QB={
         "Tibni"
       ],
       "a": 0,
-      "e": "1 Kings 16:8",
+      "e": "1 Kings 16:8 — Elah, the son of Baasha, reigned over Israel for two years.",
       "d": "hard"
     },
     {
@@ -4899,7 +4899,7 @@ const QB={
         "Zedekiah"
       ],
       "a": 0,
-      "e": "2 Kings 23:36",
+      "e": "2 Kings 23:36 — Jehoiakim, son of Josiah, reigned in Jerusalem for eleven years.",
       "d": "hard"
     },
     {
@@ -4911,7 +4911,7 @@ const QB={
         "Elah"
       ],
       "a": 0,
-      "e": "1 Kings 14:20",
+      "e": "1 Kings 14:20 — Jeroboam reigned over the northern kingdom of Israel for twenty-two years.",
       "d": "hard"
     },
     {
@@ -4923,7 +4923,7 @@ const QB={
         "Ahaz"
       ],
       "a": 0,
-      "e": "2 Kings 14:2",
+      "e": "2 Kings 14:2 — Amaziah, son of Joash, reigned over Judah for twenty-nine years.",
       "d": "hard"
     },
     {
@@ -4935,7 +4935,7 @@ const QB={
         "Jehoahaz"
       ],
       "a": 0,
-      "e": "2 Kings 3:1",
+      "e": "2 Kings 3:1 — Joram, son of Ahab, reigned over Israel for twelve years.",
       "d": "hard"
     },
     {
@@ -4947,7 +4947,7 @@ const QB={
         "Amon"
       ],
       "a": 0,
-      "e": "2 Kings 16:2",
+      "e": "2 Kings 16:2 — Ahaz, son of Jotham, reigned over Judah for sixteen years.",
       "d": "hard"
     },
     {
@@ -4959,7 +4959,7 @@ const QB={
         "Shallum"
       ],
       "a": 0,
-      "e": "2 Kings 13:10",
+      "e": "2 Kings 13:10 — Jehoash, son of Jehoahaz, reigned over Israel for sixteen years.",
       "d": "hard"
     },
     {
@@ -4971,7 +4971,7 @@ const QB={
         "Ahaz"
       ],
       "a": 0,
-      "e": "2 Kings 21:1",
+      "e": "2 Kings 21:1 — Manasseh reigned as king of Judah for fifty-five years.",
       "d": "hard"
     },
     {
@@ -4983,7 +4983,7 @@ const QB={
         "Pekah"
       ],
       "a": 0,
-      "e": "2 Kings 15:8",
+      "e": "2 Kings 15:8 — Zechariah, son of Jeroboam II, reigned over Israel for six months.",
       "d": "hard"
     },
     {
@@ -4995,7 +4995,7 @@ const QB={
         "Zedekiah"
       ],
       "a": 0,
-      "e": "2 Kings 22:1",
+      "e": "2 Kings 22:1 — Josiah reigned as king of Judah for thirty-one years.",
       "d": "hard"
     },
     {
@@ -5007,7 +5007,7 @@ const QB={
         "Joram"
       ],
       "a": 0,
-      "e": "1 Kings 16:23",
+      "e": "1 Kings 16:23 — Omri reigned as king over Israel for twelve years total.",
       "d": "hard"
     },
     {
@@ -5019,7 +5019,7 @@ const QB={
         "Manasseh"
       ],
       "a": 0,
-      "e": "2 Kings 15:33",
+      "e": "2 Kings 15:33 — Jotham, son of Uzziah, reigned over Judah for sixteen years.",
       "d": "hard"
     },
     {
@@ -5031,7 +5031,7 @@ const QB={
         "Jehoahaz"
       ],
       "a": 0,
-      "e": "1 Kings 22:51",
+      "e": "1 Kings 22:51 — Ahaziah, son of Ahab, reigned over Israel for two years.",
       "d": "hard"
     },
     {
@@ -5043,7 +5043,7 @@ const QB={
         "Uzziah"
       ],
       "a": 0,
-      "e": "2 Kings 8:26",
+      "e": "2 Kings 8:26 — Ahaziah, son of Jehoram, reigned over Judah for one year.",
       "d": "hard"
     },
     {
@@ -5055,7 +5055,7 @@ const QB={
         "Zechariah"
       ],
       "a": 0,
-      "e": "2 Kings 13:1",
+      "e": "2 Kings 13:1 — Jehoahaz, son of Jehu, reigned over Israel for seventeen years.",
       "d": "hard"
     },
     {
@@ -5067,7 +5067,7 @@ const QB={
         "Joash"
       ],
       "a": 0,
-      "e": "1 Kings 22:42",
+      "e": "1 Kings 22:42 — Jehoshaphat, son of Asa, reigned over Judah for twenty-five years.",
       "d": "hard"
     },
     {
@@ -5079,7 +5079,7 @@ const QB={
         "Ahaziah"
       ],
       "a": 0,
-      "e": "1 Kings 15:10",
+      "e": "1 Kings 15:10 — Asa reigned as king of Judah for forty-one years in Jerusalem.",
       "d": "hard"
     },
     {
@@ -5091,7 +5091,7 @@ const QB={
         "Omri"
       ],
       "a": 0,
-      "e": "1 Kings 15:33",
+      "e": "1 Kings 15:33 — Baasha, son of Ahijah, reigned over Israel for twenty-four years.",
       "d": "hard"
     },
     {
@@ -5103,7 +5103,7 @@ const QB={
         "Zedekiah"
       ],
       "a": 0,
-      "e": "2 Kings 23:31",
+      "e": "2 Kings 23:31 — Jehoahaz, son of Josiah, reigned for only three months in Jerusalem.",
       "d": "hard"
     },
     {
@@ -5115,7 +5115,7 @@ const QB={
         "Josiah"
       ],
       "a": 0,
-      "e": "2 Kings 24:8",
+      "e": "2 Kings 24:8 — Jehoiachin reigned for three months and ten days in Jerusalem.",
       "d": "hard"
     },
     {
@@ -5127,7 +5127,7 @@ const QB={
         "Shallum"
       ],
       "a": 0,
-      "e": "2 Kings 15:27",
+      "e": "2 Kings 15:27 — Pekah, son of Remaliah, killed Pekahiah and reigned over Israel for twenty years.",
       "d": "hard"
     },
     {
@@ -5405,7 +5405,7 @@ const QB={
         "Psalm 150"
       ],
       "a": 1,
-      "e": "Psalm 119 has 176 verses.",
+      "e": "Psalm 119:1 — Psalm 119 is the longest chapter, with 176 verses honoring God's word.",
       "d": "easy"
     },
     {
@@ -5417,7 +5417,7 @@ const QB={
         "Psalm 150"
       ],
       "a": 1,
-      "e": "Psalm 117 has only two verses.",
+      "e": "Psalm 117:1 — Psalm 117 is the shortest chapter, containing only two verses.",
       "d": "easy"
     },
     {
@@ -5465,7 +5465,7 @@ const QB={
         "Psalm 27"
       ],
       "a": 2,
-      "e": "Psalm 119:105.",
+      "e": "Psalm 119:105 — This verse uses the metaphor of a lamp and light to show how God's word guides a person's life.",
       "d": "easy"
     },
     {
@@ -5477,7 +5477,7 @@ const QB={
         "Psalm 145"
       ],
       "a": 1,
-      "e": "Psalm 103:1.",
+      "e": "Psalm 103:1 — David begins this psalm by calling upon his entire being to praise and bless the holy name of the Lord.",
       "d": "medium"
     },
     {
@@ -5489,7 +5489,7 @@ const QB={
         "Psalm 29"
       ],
       "a": 1,
-      "e": "Psalm 19:1.",
+      "e": "Psalm 19:1 — This opening verse highlights how the physical creation serves as a continuous testimony to God's glory.",
       "d": "medium"
     },
     {
@@ -5501,7 +5501,7 @@ const QB={
         "Psalm 150"
       ],
       "a": 1,
-      "e": "Psalm 100:1.",
+      "e": "Psalm 100:1 — This psalm of praise exhorts all the earth to worship the Lord with gladness and singing.",
       "d": "easy"
     },
     {
@@ -5513,7 +5513,7 @@ const QB={
         "Psalm 143"
       ],
       "a": 0,
-      "e": "Psalm 42:1.",
+      "e": "Psalm 42:1 — The psalmist uses the image of a thirsty deer to describe a deep, spiritual longing for God's presence.",
       "d": "medium"
     },
     {
@@ -5525,7 +5525,7 @@ const QB={
         "Psalm 110"
       ],
       "a": 2,
-      "e": "Psalm 22:1.",
+      "e": "Psalm 22:1 — Jesus quoted this opening cry of anguish while on the cross, identifying with the suffering described.",
       "d": "medium"
     },
     {
@@ -5537,7 +5537,7 @@ const QB={
         "Psalm 121"
       ],
       "a": 2,
-      "e": "Psalm 91:1.",
+      "e": "Psalm 91:1 — This verse promises divine protection and rest for those who remain close to God and trust in His care.",
       "d": "medium"
     },
     {
@@ -5549,7 +5549,7 @@ const QB={
         "Psalm 125"
       ],
       "a": 1,
-      "e": "Psalm 121:1.",
+      "e": "Psalm 121:1 — This psalm of ascent begins with the traveler looking to God as the ultimate source of help and safety.",
       "d": "medium"
     },
     {
@@ -5561,7 +5561,7 @@ const QB={
         "Psalm 148"
       ],
       "a": 0,
-      "e": "Psalm 118:24.",
+      "e": "Psalm 118:24 — This verse encourages believers to find joy in every day as a gift and creation of the Lord.",
       "d": "medium"
     },
     {
@@ -5573,7 +5573,7 @@ const QB={
         "Psalm 139"
       ],
       "a": 0,
-      "e": "Psalm 127:3.",
+      "e": "Psalm 127:3 — The Bible describes children as a blessing and a gift given by God to be cherished and raised in faith.",
       "d": "medium"
     },
     {
@@ -5585,7 +5585,7 @@ const QB={
         "Psalm 136"
       ],
       "a": 1,
-      "e": "Psalm 133:1.",
+      "e": "Psalm 133:1 — This short psalm celebrates the beauty and blessing of brothers dwelling together in peace and harmony.",
       "d": "medium"
     },
     {
@@ -5597,7 +5597,7 @@ const QB={
         "Psalm 144"
       ],
       "a": 2,
-      "e": "Psalm 139:13.",
+      "e": "Psalm 139:13 — This verse acknowledges God's intimate involvement and design in the creation of every human being.",
       "d": "medium"
     },
     {
@@ -5609,7 +5609,7 @@ const QB={
         "Let everything that has breath praise the LORD"
       ],
       "a": 3,
-      "e": "Psalm 150:6.",
+      "e": "Psalm 150:6 — The book of Psalms concludes with a universal call for everything that has breath to praise the Lord.",
       "d": "easy"
     },
     {
@@ -5633,7 +5633,7 @@ const QB={
         "Songs of the Temple"
       ],
       "a": 2,
-      "e": "They are also called Pilgrim Songs.",
+      "e": "Psalms 120-134 — Known as the Songs of Ascents, these were sung by Israelites traveling up to Jerusalem for feasts.",
       "d": "medium"
     },
     {
@@ -5645,7 +5645,7 @@ const QB={
         "Ethan"
       ],
       "a": 0,
-      "e": "Asaph was a leader of choral worship.",
+      "e": "1 Chronicles 16:7 — David appointed Asaph as a chief musician, and twelve psalms are specifically linked to his name.",
       "d": "medium"
     },
     {
@@ -5657,7 +5657,7 @@ const QB={
         "Psalm 119"
       ],
       "a": 1,
-      "e": "Psalm 14:1 (and Psalm 53:1).",
+      "e": "Psalm 14:1 — This verse describes the rejection of God's existence as a mark of spiritual and moral foolishness.",
       "d": "medium"
     },
     {
@@ -5669,7 +5669,7 @@ const QB={
         "Psalm 91"
       ],
       "a": 1,
-      "e": "Psalm 46:1.",
+      "e": "Psalm 46:1 — The psalmist declares that God is a reliable source of security and aid during difficult and trying times.",
       "d": "medium"
     },
     {
@@ -5681,7 +5681,7 @@ const QB={
         "Psalm 62"
       ],
       "a": 2,
-      "e": "Psalm 46:10.",
+      "e": "Psalm 46:10 — God commands His people to cease striving and recognize His ultimate sovereignty over all the earth.",
       "d": "medium"
     },
     {
@@ -5693,7 +5693,7 @@ const QB={
         "Psalm 84"
       ],
       "a": 1,
-      "e": "Psalm 34:8.",
+      "e": "Psalm 34:8 — Believers are invited to personally experience God's goodness and find safety in His protection.",
       "d": "medium"
     },
     {
@@ -5705,7 +5705,7 @@ const QB={
         "Psalm 147"
       ],
       "a": 0,
-      "e": "Psalm 34:18.",
+      "e": "Psalm 34:18 — This verse offers comfort by stating that God is especially near to those experiencing deep emotional pain.",
       "d": "medium"
     },
     {
@@ -5717,7 +5717,7 @@ const QB={
         "Psalm 148"
       ],
       "a": 0,
-      "e": "Psalm 8:1.",
+      "e": "Psalm 8:1 — David begins and ends this psalm by marveling at the splendor of God's name throughout the entire world.",
       "d": "medium"
     },
     {
@@ -5729,7 +5729,7 @@ const QB={
         "Psalm 119"
       ],
       "a": 2,
-      "e": "Psalm 51:10.",
+      "e": "Psalm 51:10 — Written after David's sin, this prayer asks for internal spiritual cleansing and a renewed commitment.",
       "d": "medium"
     },
     {
@@ -5741,7 +5741,7 @@ const QB={
         "Psalm 137"
       ],
       "a": 3,
-      "e": "Psalm 137:1.",
+      "e": "Psalm 137:1 — This psalm records the sorrow and longing of the Israelites during their period of exile in Babylon.",
       "d": "medium"
     },
     {
@@ -5765,7 +5765,7 @@ const QB={
         "Psalm 145"
       ],
       "a": 2,
-      "e": "Psalm 139:14.",
+      "e": "Psalm 139:14 — This verse expresses awe at the complexity and deliberate craftsmanship of God's creation of the human body.",
       "d": "easy"
     },
     {
@@ -5777,7 +5777,7 @@ const QB={
         "Psalm 131"
       ],
       "a": 1,
-      "e": "Psalm 127:1.",
+      "e": "Psalm 127:1 — This passage teaches that human effort is ultimately futile without God's blessing and guidance.",
       "d": "medium"
     },
     {
@@ -5789,7 +5789,7 @@ const QB={
         "Psalm 100"
       ],
       "a": 2,
-      "e": "Psalm 84:10.",
+      "e": "Psalm 84:10 — The psalmist expresses that even a brief time in God's presence is far superior to a long life without Him.",
       "d": "medium"
     },
     {
@@ -5801,7 +5801,7 @@ const QB={
         "Psalm 104"
       ],
       "a": 1,
-      "e": "Psalm 24:1.",
+      "e": "Psalm 24:1 — This declaration affirms God's absolute ownership and authority over the entire world and its inhabitants.",
       "d": "medium"
     },
     {
@@ -5813,7 +5813,7 @@ const QB={
         "Psalm 142"
       ],
       "a": 2,
-      "e": "Psalm 130:1 (De Profundis).",
+      "e": "Psalm 130:1 — Known as the De Profundis, this prayer expresses a soul calling out to God from a place of deep distress.",
       "d": "medium"
     },
     {
@@ -5825,7 +5825,7 @@ const QB={
         "Psalm 145"
       ],
       "a": 2,
-      "e": "Psalm 147:3.",
+      "e": "Psalm 147:3 — This verse depicts God's tender care in restoring those who have suffered emotional and spiritual trauma.",
       "d": "medium"
     },
     {
@@ -5837,7 +5837,7 @@ const QB={
         "Psalm 91"
       ],
       "a": 1,
-      "e": "Psalm 27:1.",
+      "e": "Psalm 27:1 — Confidence in God's protection allows the believer to face any threat or enemy without being afraid.",
       "d": "medium"
     },
     {
@@ -5849,7 +5849,7 @@ const QB={
         "Psalm 119"
       ],
       "a": 0,
-      "e": "Psalm 1:1.",
+      "e": "Psalm 1:1 — The first psalm begins by describing the happiness and prosperity of those who avoid the counsel of the ungodly.",
       "d": "easy"
     },
     {
@@ -5861,7 +5861,7 @@ const QB={
         "Psalm 147"
       ],
       "a": 0,
-      "e": "Psalm 126:5.",
+      "e": "Psalm 126:5 — This verse promises that seasons of sorrow and hard work will eventually lead to a harvest of great joy.",
       "d": "medium"
     },
     {
@@ -5873,7 +5873,7 @@ const QB={
         "Psalm 27"
       ],
       "a": 0,
-      "e": "Psalm 23:4.",
+      "e": "Psalm 23:4 — The shepherd's tools represent God's guidance and protection, providing comfort even in the darkest valleys.",
       "d": "easy"
     },
     {
@@ -5885,7 +5885,7 @@ const QB={
         "Psalm 121"
       ],
       "a": 1,
-      "e": "Psalm 24:3.",
+      "e": "Psalm 24:3 — This question introduces the requirements of holiness and integrity for those who wish to worship the Lord.",
       "d": "medium"
     },
     {
@@ -5897,7 +5897,7 @@ const QB={
         "Psalm 40"
       ],
       "a": 0,
-      "e": "Psalm 27:14.",
+      "e": "Psalm 27:14 — Believers are encouraged to remain patient and courageous while trusting in God's perfect timing and help.",
       "d": "medium"
     },
     {
@@ -5909,7 +5909,7 @@ const QB={
         "Psalm 107"
       ],
       "a": 1,
-      "e": "Psalm 42:7.",
+      "e": "Psalm 42:7 — This poetic verse describes the overwhelming nature of God's presence and the deep spiritual need of the soul.",
       "d": "hard"
     },
     {
@@ -5921,7 +5921,7 @@ const QB={
         "Psalm 143"
       ],
       "a": 2,
-      "e": "Psalm 139:23.",
+      "e": "Psalm 139:23 — This prayer invites God's scrutiny to reveal and correct any hidden sin or anxiety within the believer's heart.",
       "d": "medium"
     },
     {
@@ -5933,7 +5933,7 @@ const QB={
         "Psalm 40"
       ],
       "a": 2,
-      "e": "Psalm 37:5.",
+      "e": "Psalm 37:5 — Entrusting our plans and life to God ensures that He will act on our behalf according to His will.",
       "d": "medium"
     },
     {
@@ -5945,7 +5945,7 @@ const QB={
         "Psalm 103"
       ],
       "a": 0,
-      "e": "Psalm 8:4.",
+      "e": "Psalm 8:4 — David expresses amazement that the Creator of the universe would take such personal interest in humanity.",
       "d": "medium"
     },
     {
@@ -5957,7 +5957,7 @@ const QB={
         "Psalm 126"
       ],
       "a": 2,
-      "e": "Psalm 122:1.",
+      "e": "Psalm 122:1 — This psalm of ascent captures the joy of the pilgrim arriving at Jerusalem to worship at the Temple.",
       "d": "medium"
     },
     {
@@ -5969,7 +5969,7 @@ const QB={
         "Psalm 91"
       ],
       "a": 1,
-      "e": "Psalm 116:15.",
+      "e": "Psalm 116:15 — This verse teaches that God deeply values and honors the lives and passing of those who are faithful to Him.",
       "d": "medium"
     },
     {
@@ -5981,7 +5981,7 @@ const QB={
         "Psalm 36"
       ],
       "a": 2,
-      "e": "Psalm 91:4.",
+      "e": "Psalm 91:4 — This verse uses the metaphor of a mother bird protecting her young to show God's secure and loving care.",
       "d": "medium"
     },
     {
@@ -5993,7 +5993,7 @@ const QB={
         "Psalm 144"
       ],
       "a": 0,
-      "e": "Psalm 18:2.",
+      "e": "Psalm 18:2 — David uses several metaphors of strength and safety to describe how God saved him from all his enemies.",
       "d": "medium"
     },
     {
@@ -6005,7 +6005,7 @@ const QB={
         "Psalm 63"
       ],
       "a": 0,
-      "e": "Psalm 17:8.",
+      "e": "Psalm 17:8 — This prayer asks for God's special protection, likening it to the care given to the most sensitive part of the eye.",
       "d": "medium"
     },
     {
@@ -6017,7 +6017,7 @@ const QB={
         "Psalm 119"
       ],
       "a": 1,
-      "e": "Psalm 19:14.",
+      "e": "Psalm 19:14 — This closing prayer asks that both outward speech and inward thoughts be acceptable to God as our Redeemer.",
       "d": "medium"
     },
     {
@@ -6029,7 +6029,7 @@ const QB={
         "Psalm 121"
       ],
       "a": 0,
-      "e": "Psalm 16:11.",
+      "e": "Psalm 16:11 — The psalmist expresses confidence that true satisfaction and eternal life are found only in God's presence.",
       "d": "medium"
     },
     {
@@ -6041,7 +6041,7 @@ const QB={
         "Psalm 104"
       ],
       "a": 0,
-      "e": "Psalm 23:2-3.",
+      "e": "Psalm 23:2-3 — As a Good Shepherd, God provides the peace and restoration needed to sustain the souls of His people.",
       "d": "easy"
     },
     {
@@ -6053,7 +6053,7 @@ const QB={
         "Psalm 121"
       ],
       "a": 0,
-      "e": "Psalm 23:4.",
+      "e": "Psalm 23:4 — God's constant presence removes fear, even when facing the most dangerous and difficult circumstances of life.",
       "d": "easy"
     },
     {
@@ -6065,7 +6065,7 @@ const QB={
         "Psalm 121"
       ],
       "a": 1,
-      "e": "Psalm 90:1.",
+      "e": "Psalm 90:1 — This psalm, attributed to Moses, acknowledges God as the eternal home and security for His people.",
       "d": "medium"
     },
     {
@@ -6077,7 +6077,7 @@ const QB={
         "Psalm 119"
       ],
       "a": 1,
-      "e": "Psalm 90:12.",
+      "e": "Psalm 90:12 — Recognizing the brevity of life helps us to prioritize eternal things and live with God-given wisdom.",
       "d": "medium"
     },
     {
@@ -6089,7 +6089,7 @@ const QB={
         "Psalm 143"
       ],
       "a": 2,
-      "e": "Psalm 90:14.",
+      "e": "Psalm 90:14 — This request asks for God's mercy to be our primary source of joy and contentment every single day.",
       "d": "medium"
     },
     {
@@ -6101,7 +6101,7 @@ const QB={
         "Psalm 148"
       ],
       "a": 1,
-      "e": "Psalm 91:11.",
+      "e": "Psalm 91:11 — This verse promises that God uses heavenly messengers to watch over and protect those who trust in Him.",
       "d": "medium"
     },
     {
@@ -6113,7 +6113,7 @@ const QB={
         "Psalm 104"
       ],
       "a": 2,
-      "e": "Psalm 92:12.",
+      "e": "Psalm 92:12 — The palm tree represents the enduring strength and vitality of those who live according to God's ways.",
       "d": "medium"
     },
     {
@@ -6125,7 +6125,7 @@ const QB={
         "Psalm 99"
       ],
       "a": 0,
-      "e": "Psalm 93:1.",
+      "e": "Psalm 93:1 — This psalm celebrates the supreme kingship of God, who is dressed in splendor and rules with great power.",
       "d": "medium"
     },
     {
@@ -6137,7 +6137,7 @@ const QB={
         "Psalm 100"
       ],
       "a": 0,
-      "e": "Psalm 95:6.",
+      "e": "Psalm 95:6 — Worshippers are called to show humility and reverence before God, acknowledging Him as their Creator.",
       "d": "medium"
     },
     {
@@ -6149,7 +6149,7 @@ const QB={
         "Psalm 149"
       ],
       "a": 1,
-      "e": "Psalm 96:1.",
+      "e": "Psalm 96:1 — This verse invites a fresh and global expression of praise to the Lord for His marvelous deeds.",
       "d": "medium"
     },
     {
@@ -6161,7 +6161,7 @@ const QB={
         "Psalm 114"
       ],
       "a": 1,
-      "e": "Psalm 96:9.",
+      "e": "Psalm 96:9 — True worship involves recognizing and honoring God's absolute moral purity and glorious character.",
       "d": "medium"
     },
     {
@@ -6173,7 +6173,7 @@ const QB={
         "Psalm 112"
       ],
       "a": 2,
-      "e": "Psalm 97:11.",
+      "e": "Psalm 97:11 — God's favor brings spiritual clarity and gladness to those who seek to live with integrity.",
       "d": "medium"
     },
     {
@@ -6185,7 +6185,7 @@ const QB={
         "Psalm 115"
       ],
       "a": 2,
-      "e": "Psalm 100:3.",
+      "e": "Psalm 100:3 — This verse reminds us of our identity as God's creatures and His special people, like sheep in His pasture.",
       "d": "easy"
     },
     {
@@ -6197,7 +6197,7 @@ const QB={
         "Psalm 122"
       ],
       "a": 1,
-      "e": "Psalm 100:4.",
+      "e": "Psalm 100:4 — Believers are encouraged to approach God with a heart full of gratitude and vocal expressions of praise.",
       "d": "easy"
     },
     {
@@ -6209,7 +6209,7 @@ const QB={
         "Psalm 118"
       ],
       "a": 2,
-      "e": "Psalm 116:13.",
+      "e": "Psalm 116:13 — The psalmist vows to publicly celebrate and acknowledge God's deliverance and saving grace.",
       "d": "hard"
     },
     {
@@ -6221,7 +6221,7 @@ const QB={
         "Psalm 118"
       ],
       "a": 3,
-      "e": "Psalm 118:22.",
+      "e": "Psalm 118:22 — This prophecy, quoted by Jesus, describes how what was dismissed by men became the foundation of God's work.",
       "d": "medium"
     },
     {
@@ -6233,7 +6233,7 @@ const QB={
         "Psalm 25"
       ],
       "a": 2,
-      "e": "Psalm 119:18.",
+      "e": "Psalm 119:18 — This prayer asks for spiritual insight to understand and appreciate the depth of God's written word.",
       "d": "medium"
     },
     {
@@ -6245,7 +6245,7 @@ const QB={
         "Psalm 40"
       ],
       "a": 1,
-      "e": "Psalm 119:11.",
+      "e": "Psalm 119:11 — Internalizing Scripture is presented as a powerful defense against temptation and personal sin.",
       "d": "easy"
     },
     {
@@ -6257,7 +6257,7 @@ const QB={
         "Psalm 89"
       ],
       "a": 0,
-      "e": "Psalm 119:89.",
+      "e": "Psalm 119:89 — This declaration affirms the eternal and unchanging nature of God's promises and truth.",
       "d": "medium"
     },
     {
@@ -6269,7 +6269,7 @@ const QB={
         "Psalm 150"
       ],
       "a": 0,
-      "e": "Psalm 119:164.",
+      "e": "Psalm 119:164 — The psalmist's commitment to frequent praise shows a life deeply focused on God's perfect standards.",
       "d": "hard"
     },
     {
@@ -6281,7 +6281,7 @@ const QB={
         "Psalm 112"
       ],
       "a": 1,
-      "e": "Psalm 119:165.",
+      "e": "Psalm 119:165 — Loving and obeying God's word provides a stable foundation that prevents spiritual failure.",
       "d": "medium"
     },
     {
@@ -6293,7 +6293,7 @@ const QB={
         "Psalm 121"
       ],
       "a": 0,
-      "e": "Psalm 121:2.",
+      "e": "Psalm 121:2 — The creator of the entire universe is the personal protector and helper of the individual believer.",
       "d": "easy"
     },
     {
@@ -6305,7 +6305,7 @@ const QB={
         "Psalm 139"
       ],
       "a": 2,
-      "e": "Psalm 121:8.",
+      "e": "Psalm 121:8 — This promise ensures God's constant protection over every activity and journey of His people's lives.",
       "d": "medium"
     },
     {
@@ -6317,7 +6317,7 @@ const QB={
         "Psalm 137"
       ],
       "a": 0,
-      "e": "Psalm 122:6.",
+      "e": "Psalm 122:6 — Pilgrims were commanded to seek the welfare and security of the city where God's presence dwelt.",
       "d": "medium"
     },
     {
@@ -6329,7 +6329,7 @@ const QB={
         "Psalm 133"
       ],
       "a": 1,
-      "e": "Psalm 125:2.",
+      "e": "Psalm 125:2 — The geography of Jerusalem serves as a picture of the secure and encompassing protection of the Lord.",
       "d": "medium"
     },
     {
@@ -6341,7 +6341,7 @@ const QB={
         "Psalm 129"
       ],
       "a": 0,
-      "e": "Psalm 126:6.",
+      "e": "Psalm 126:6 — This verse encourages those in difficult times by promising a future harvest of joy and celebration.",
       "d": "medium"
     },
     {
@@ -6353,7 +6353,7 @@ const QB={
         "Psalm 133"
       ],
       "a": 1,
-      "e": "Psalm 128:3.",
+      "e": "Psalm 128:3 — This psalm describes the domestic blessings and family prosperity that come to those who fear the Lord.",
       "d": "hard"
     },
     {
@@ -6365,7 +6365,7 @@ const QB={
         "Psalm 143"
       ],
       "a": 2,
-      "e": "Psalm 130:3.",
+      "e": "Psalm 130:3 — This verse acknowledges that no one is perfect and everyone depends entirely on God's mercy and grace.",
       "d": "medium"
     },
     {
@@ -6377,7 +6377,7 @@ const QB={
         "Psalm 86"
       ],
       "a": 1,
-      "e": "Psalm 130:4.",
+      "e": "Psalm 130:4 — God's willingness to forgive is intended to inspire a deep, respectful awe and a desire to serve Him.",
       "d": "medium"
     },
     {
@@ -6389,7 +6389,7 @@ const QB={
         "Psalm 23"
       ],
       "a": 0,
-      "e": "Psalm 131:2.",
+      "e": "Psalm 131:2 — The psalmist describes a state of humble contentment and trust, free from pride and restless ambition.",
       "d": "hard"
     },
     {
@@ -6401,7 +6401,7 @@ const QB={
         "Psalm 145"
       ],
       "a": 2,
-      "e": "Psalm 135:1.",
+      "e": "Psalm 135:1 — This call to worship is directed at those who serve in God's house, urging them to exalt His holy name.",
       "d": "medium"
     },
     {
@@ -6425,7 +6425,7 @@ const QB={
         "Psalm 102"
       ],
       "a": 2,
-      "e": "Psalm 137:5.",
+      "e": "Psalm 137:5 — The exiles in Babylon expressed their intense devotion to their homeland and its spiritual significance.",
       "d": "medium"
     },
     {
@@ -6437,7 +6437,7 @@ const QB={
         "Psalm 143"
       ],
       "a": 1,
-      "e": "Psalm 138:7.",
+      "e": "Psalm 138:7 — David expresses confidence that God will protect and sustain him even when surrounded by great difficulties.",
       "d": "hard"
     },
     {
@@ -6449,7 +6449,7 @@ const QB={
         "Psalm 143"
       ],
       "a": 2,
-      "e": "Psalm 139:7.",
+      "e": "Psalm 139:7 — This verse highlights God's omnipresence, emphasizing that no place is hidden from His sight and Spirit.",
       "d": "medium"
     },
     {
@@ -6461,7 +6461,7 @@ const QB={
         "Psalm 147"
       ],
       "a": 0,
-      "e": "Psalm 139:9-10.",
+      "e": "Psalm 139:9-10 — God's reach and care extend to the furthest reaches of the earth, providing guidance to His people.",
       "d": "medium"
     },
     {
@@ -6473,7 +6473,7 @@ const QB={
         "Psalm 104"
       ],
       "a": 0,
-      "e": "Psalm 139:16.",
+      "e": "Psalm 139:16 — God possesses complete knowledge of our lives before we are born, having planned every day of our existence.",
       "d": "medium"
     },
     {
@@ -6485,7 +6485,7 @@ const QB={
         "Psalm 39"
       ],
       "a": 2,
-      "e": "Psalm 141:3.",
+      "e": "Psalm 141:3 — This prayer asks for God's help in controlling one's speech to avoid saying harmful or sinful things.",
       "d": "hard"
     },
     {
@@ -6497,7 +6497,7 @@ const QB={
         "Psalm 102"
       ],
       "a": 0,
-      "e": "Psalm 142:1.",
+      "e": "Psalm 142:1 — Written while in a cave, this psalm shows David turning to God as his only refuge in a time of desperation.",
       "d": "hard"
     },
     {
@@ -6509,7 +6509,7 @@ const QB={
         "Psalm 147"
       ],
       "a": 2,
-      "e": "Psalm 143:8.",
+      "e": "Psalm 143:8 — The psalmist begins his day by seeking God's guidance and reassurance of His constant, faithful love.",
       "d": "medium"
     },
     {
@@ -6521,7 +6521,7 @@ const QB={
         "Psalm 86"
       ],
       "a": 2,
-      "e": "Psalm 143:10.",
+      "e": "Psalm 143:10 — This request for divine instruction shows a desire to live in obedience and be led by the Holy Spirit.",
       "d": "medium"
     },
     {
@@ -6533,7 +6533,7 @@ const QB={
         "Psalm 111"
       ],
       "a": 1,
-      "e": "Psalm 145:8 (also Psalm 103:8).",
+      "e": "Psalm 145:8 — This verse echoes God's self-revelation to Moses, highlighting His merciful and loving character.",
       "d": "medium"
     },
     {
@@ -6545,7 +6545,7 @@ const QB={
         "Psalm 107"
       ],
       "a": 0,
-      "e": "Psalm 145:9.",
+      "e": "Psalm 145:9 — God's benevolence is universal, extending kindness and care to every part of His vast creation.",
       "d": "medium"
     },
     {
@@ -6557,7 +6557,7 @@ const QB={
         "Psalm 27"
       ],
       "a": 1,
-      "e": "Psalm 145:18.",
+      "e": "Psalm 145:18 — God promises His presence and attention to everyone who approaches Him with sincerity and honesty.",
       "d": "medium"
     },
     {
@@ -6569,7 +6569,7 @@ const QB={
         "Psalm 121"
       ],
       "a": 1,
-      "e": "Psalm 146:3.",
+      "e": "Psalm 146:3 — This warning reminds us that human leaders are limited and mortal, and true salvation comes only from God.",
       "d": "hard"
     },
     {
@@ -6581,7 +6581,7 @@ const QB={
         "Psalm 147"
       ],
       "a": 0,
-      "e": "Psalm 146:7-8.",
+      "e": "Psalm 146:7-8 — These verses describe God's active work in bringing justice, healing, and freedom to the oppressed.",
       "d": "hard"
     },
     {
@@ -6593,7 +6593,7 @@ const QB={
         "Psalm 104"
       ],
       "a": 2,
-      "e": "Psalm 147:4.",
+      "e": "Psalm 147:4 — God's infinite power and knowledge are shown in His detailed care for the vastness of the cosmos.",
       "d": "medium"
     },
     {
@@ -6605,7 +6605,7 @@ const QB={
         "Psalm 103"
       ],
       "a": 0,
-      "e": "Psalm 148:1.",
+      "e": "Psalm 148:1 — This psalm begins a series of calls for all creation, from the heavens to the earth, to praise the Lord.",
       "d": "medium"
     },
     {
@@ -6617,7 +6617,7 @@ const QB={
         "Psalm 150"
       ],
       "a": 2,
-      "e": "Psalm 149:1.",
+      "e": "Psalm 149:1 — The congregation of believers is urged to celebrate God's goodness with fresh expressions of worship.",
       "d": "medium"
     },
     {
@@ -6641,7 +6641,7 @@ const QB={
         "Psalm 136"
       ],
       "a": 0,
-      "e": "Psalm 100 is uniquely titled this way.",
+      "e": "Psalm 100 Title — This is the only psalm in the entire collection that bears this specific title of thanksgiving.",
       "d": "hard"
     },
     {
@@ -6665,7 +6665,7 @@ const QB={
         "Psalm 147"
       ],
       "a": 0,
-      "e": "Psalm 126:6.",
+      "e": "Psalm 126:6 — This verse uses farming imagery to promise that faithful labor in hard times will lead to a joyful result.",
       "d": "medium"
     },
     {
@@ -7183,7 +7183,7 @@ const QB={
         "Daniel"
       ],
       "a": 1,
-      "e": "Isaiah 6:1",
+      "e": "Isaiah 6:1 — Isaiah’s vision of God’s holiness and majesty in the Temple marked the beginning of his prophetic ministry.",
       "d": "easy"
     },
     {
@@ -7195,7 +7195,7 @@ const QB={
         "Hosea"
       ],
       "a": 1,
-      "e": "Jeremiah 18:1-2",
+      "e": "Jeremiah 18:1-2 — God used the potter molding clay to illustrate His sovereign right to shape and reform the nation of Israel.",
       "d": "medium"
     },
     {
@@ -7207,7 +7207,7 @@ const QB={
         "Zechariah"
       ],
       "a": 1,
-      "e": "Ezekiel 1:1",
+      "e": "Ezekiel 1:1 — While living as a captive in Babylon, Ezekiel received spectacular visions of God's glory and chariot.",
       "d": "medium"
     },
     {
@@ -7219,7 +7219,7 @@ const QB={
         "Joel"
       ],
       "a": 2,
-      "e": "Ezekiel 37:3",
+      "e": "Ezekiel 37:3 — In a vision of a valley of dry bones, God tested Ezekiel’s faith regarding the restoration of Israel.",
       "d": "easy"
     },
     {
@@ -7231,7 +7231,7 @@ const QB={
         "Abednego"
       ],
       "a": 0,
-      "e": "Daniel 1:7",
+      "e": "Daniel 1:7 — Daniel was given the name Belteshazzar; Mishael was given the name Meshach.",
       "d": "easy"
     },
     {
@@ -7243,7 +7243,7 @@ const QB={
         "Joel"
       ],
       "a": 0,
-      "e": "Hosea 1:2-3",
+      "e": "Hosea 1:2-3 — God commanded Hosea to marry Gomer as a symbol of Israel's unfaithfulness to Him.",
       "d": "easy"
     },
     {
@@ -7255,7 +7255,7 @@ const QB={
         "Zechariah"
       ],
       "a": 0,
-      "e": "Joel 2:28 / Acts 2:17",
+      "e": "Joel 2:28 — Joel prophesied that God would pour out His Spirit on all people, as quoted by Peter.",
       "d": "medium"
     },
     {
@@ -7267,7 +7267,7 @@ const QB={
         "Haggai"
       ],
       "a": 0,
-      "e": "Amos 1:1",
+      "e": "Amos 1:1 — Amos was a shepherd from the town of Tekoa when the Lord called him to prophesy to Israel.",
       "d": "medium"
     },
     {
@@ -7279,7 +7279,7 @@ const QB={
         "Zephaniah"
       ],
       "a": 0,
-      "e": "Obadiah 1:1",
+      "e": "Obadiah 1:1 — Obadiah is the shortest book in the OT, focusing on judgment against the nation of Edom.",
       "d": "medium"
     },
     {
@@ -7291,7 +7291,7 @@ const QB={
         "Nahum"
       ],
       "a": 0,
-      "e": "Jonah 1:3",
+      "e": "Jonah 1:3 — Jonah boarded a ship for Tarshish to flee from the Lord instead of going to preach in Nineveh.",
       "d": "easy"
     },
     {
@@ -7303,7 +7303,7 @@ const QB={
         "Malachi"
       ],
       "a": 2,
-      "e": "Micah 5:2",
+      "e": "Micah 5:2 — The prophet Micah, not Isaiah, predicted that the Messiah would be born in Bethlehem.",
       "d": "easy"
     },
     {
@@ -7315,7 +7315,7 @@ const QB={
         "Habakkuk"
       ],
       "a": 0,
-      "e": "Nahum 1:1",
+      "e": "Nahum 1:1 — Nahum wrote a prophecy concerning the destruction and fall of the city of Nineveh.",
       "d": "hard"
     },
     {
@@ -7327,7 +7327,7 @@ const QB={
         "Job"
       ],
       "a": 0,
-      "e": "Habakkuk 2:4",
+      "e": "Habakkuk 2:4 — God told Habakkuk that despite the success of the wicked, the righteous will live by faith.",
       "d": "medium"
     },
     {
@@ -7339,7 +7339,7 @@ const QB={
         "Micah"
       ],
       "a": 0,
-      "e": "Malachi means 'my messenger'.",
+      "e": "Malachi 1:1 — Malachi, whose name means 'my messenger,' wrote the final book of the Old Testament.",
       "d": "medium"
     },
     {
@@ -7351,7 +7351,7 @@ const QB={
         "Malachi"
       ],
       "a": 2,
-      "e": "Haggai 1:1 and Zechariah 1:1",
+      "e": "Haggai 1:1 — Haggai challenged the returned exiles to finish rebuilding the Temple of the Lord.",
       "d": "hard"
     },
     {
@@ -7363,7 +7363,7 @@ const QB={
         "Isaiah"
       ],
       "a": 0,
-      "e": "Zechariah 5:1",
+      "e": "Zechariah 5:1 — Zechariah saw a vision of a flying scroll, which represented a curse over the whole land.",
       "d": "hard"
     },
     {
@@ -7375,7 +7375,7 @@ const QB={
         "Hosea"
       ],
       "a": 0,
-      "e": "Malachi 4:2",
+      "e": "Malachi 4:2 — Malachi predicted that the sun of righteousness would rise with healing in its rays.",
       "d": "hard"
     },
     {
@@ -7387,7 +7387,7 @@ const QB={
         "Daniel"
       ],
       "a": 1,
-      "e": "Jeremiah 31:31-33",
+      "e": "Jeremiah 31:33 — Jeremiah prophesied a New Covenant where God's law would be written on people's hearts.",
       "d": "medium"
     },
     {
@@ -7399,7 +7399,7 @@ const QB={
         "Hosea"
       ],
       "a": 0,
-      "e": "Ezekiel 1:3",
+      "e": "Ezekiel 1:3 — The prophet Ezekiel is identified as the son of Buzi and was a priest among the exiles.",
       "d": "hard"
     },
     {
@@ -7411,7 +7411,7 @@ const QB={
         "Ezekiel"
       ],
       "a": 0,
-      "e": "Daniel 9:27, 11:31, 12:11",
+      "e": "Daniel 9:27 — Daniel used this phrase to describe a future desecration of the holy place in the Temple.",
       "d": "medium"
     },
     {
@@ -7423,7 +7423,7 @@ const QB={
         "Hosea"
       ],
       "a": 0,
-      "e": "Amos 8:1",
+      "e": "Amos 8:1-2 — The Lord showed Amos a basket of ripe fruit to symbolize that the time was ripe for Israel's end.",
       "d": "hard"
     },
     {
@@ -7435,7 +7435,7 @@ const QB={
         "Jeremiah"
       ],
       "a": 2,
-      "e": "Ezekiel 26 and Isaiah 23",
+      "e": "Ezekiel 26:3 — Ezekiel prophesied that many nations would come against Tyre like the waves of the sea.",
       "d": "hard"
     },
     {
@@ -7447,7 +7447,7 @@ const QB={
         "Micah"
       ],
       "a": 0,
-      "e": "Amos 7:7",
+      "e": "Amos 7:7-8 — Amos saw a vision of the Lord standing by a wall with a plumb line to measure Israel.",
       "d": "hard"
     },
     {
@@ -7459,7 +7459,7 @@ const QB={
         "Micah"
       ],
       "a": 0,
-      "e": "Zechariah 9:9",
+      "e": "Zechariah 9:9 — Zechariah predicted the Messiah's triumphal entry into Jerusalem riding on a donkey.",
       "d": "medium"
     },
     {
@@ -7471,7 +7471,7 @@ const QB={
         "Daniel"
       ],
       "a": 0,
-      "e": "Isaiah 1:1, 37:2",
+      "e": "Isaiah 1:1 — Isaiah prophesied during the reigns of several kings of Judah, including King Hezekiah.",
       "d": "medium"
     },
     {
@@ -7483,7 +7483,7 @@ const QB={
         "Joel"
       ],
       "a": 0,
-      "e": "Zechariah 6:1",
+      "e": "Zechariah 6:1 — Zechariah saw four chariots coming out from between two mountains of bronze.",
       "d": "hard"
     },
     {
@@ -7495,7 +7495,7 @@ const QB={
         "Isaiah"
       ],
       "a": 0,
-      "e": "Zephaniah 1:14-18",
+      "e": "Zephaniah 1:14 — Zephaniah focused heavily on the coming 'Day of the LORD' as a time of judgment.",
       "d": "hard"
     },
     {
@@ -7507,7 +7507,7 @@ const QB={
         "Isaiah"
       ],
       "a": 0,
-      "e": "Jeremiah 38:6",
+      "e": "Jeremiah 38:6 — Jeremiah was lowered into a muddy cistern by officials who wanted to silence his message.",
       "d": "easy"
     },
     {
@@ -7519,7 +7519,7 @@ const QB={
         "Amos"
       ],
       "a": 0,
-      "e": "Zechariah 2:1",
+      "e": "Zechariah 2:1-2 — Zechariah saw a man with a measuring line to measure the width and length of Jerusalem.",
       "d": "hard"
     },
     {
@@ -7531,7 +7531,7 @@ const QB={
         "Hilkiyahu"
       ],
       "a": 0,
-      "e": "Isaiah 1:1",
+      "e": "Isaiah 1:1 — The book of Isaiah identifies the prophet as the son of Amoz.",
       "d": "hard"
     },
     {
@@ -7543,7 +7543,7 @@ const QB={
         "Hosea"
       ],
       "a": 0,
-      "e": "Amos 5:24",
+      "e": "Amos 5:24 — Amos called for justice and righteousness to flow like an ever-failing stream in Israel.",
       "d": "medium"
     },
     {
@@ -7555,7 +7555,7 @@ const QB={
         "Zechariah"
       ],
       "a": 0,
-      "e": "Joel 2:31",
+      "e": "Joel 2:31 — Joel predicted cosmic signs, including the moon turning to blood, before the Day of the Lord.",
       "d": "medium"
     },
     {
@@ -7567,7 +7567,7 @@ const QB={
         "Lamentations"
       ],
       "a": 0,
-      "e": "Isaiah 40:1",
+      "e": "Isaiah 40:1 — Isaiah began a new section of his book with God's message of comfort to His people.",
       "d": "easy"
     },
     {
@@ -7579,7 +7579,7 @@ const QB={
         "Daniel"
       ],
       "a": 0,
-      "e": "Ezekiel 10",
+      "e": "Ezekiel 10:18 — Ezekiel witnessed the glory of the Lord departing from the threshold of the Temple.",
       "d": "hard"
     },
     {
@@ -7591,7 +7591,7 @@ const QB={
         "Malachi"
       ],
       "a": 0,
-      "e": "Ezekiel 14:14",
+      "e": "Ezekiel 14:14 — Ezekiel named these three men as examples of righteousness who could only save themselves.",
       "d": "hard"
     },
     {
@@ -7603,7 +7603,7 @@ const QB={
         "Daniel"
       ],
       "a": 0,
-      "e": "Jeremiah 25:11, 29:10",
+      "e": "Jeremiah 25:11 — Jeremiah accurately predicted that the Babylonian captivity would last for seventy years.",
       "d": "medium"
     },
     {
@@ -7627,7 +7627,7 @@ const QB={
         "Ezekiel"
       ],
       "a": 0,
-      "e": "Jeremiah 17:9",
+      "e": "Jeremiah 17:9 — Jeremiah, not Solomon, wrote that the heart is deceitful above all things and beyond cure.",
       "d": "easy"
     },
     {
@@ -7651,7 +7651,7 @@ const QB={
         "Ezekiel"
       ],
       "a": 0,
-      "e": "Zechariah 3:1",
+      "e": "Zechariah 3:1 — Zechariah saw Joshua the high priest standing before the angel of the Lord in a vision.",
       "d": "hard"
     },
     {
@@ -7663,7 +7663,7 @@ const QB={
         "Joel"
       ],
       "a": 0,
-      "e": "Malachi 4:5",
+      "e": "Malachi 4:5 — The book of Malachi concludes with the promise that God would send the prophet Elijah.",
       "d": "medium"
     },
     {
@@ -7675,7 +7675,7 @@ const QB={
         "Jonah"
       ],
       "a": 0,
-      "e": "Joel 1:1",
+      "e": "Joel 1:1 — The word of the Lord came to Joel, who is identified as the son of Pethuel.",
       "d": "hard"
     },
     {
@@ -7687,7 +7687,7 @@ const QB={
         "Malachi"
       ],
       "a": 0,
-      "e": "Jeremiah 1:1",
+      "e": "Jeremiah 1:1 — Jeremiah was a priest from the town of Anathoth in the territory of Benjamin.",
       "d": "hard"
     },
     {
@@ -7699,7 +7699,7 @@ const QB={
         "Zephaniah"
       ],
       "a": 0,
-      "e": "Amos 9:1",
+      "e": "Amos 9:1 — Amos saw the Lord standing by the altar, commanding that the capitals of the pillars be struck.",
       "d": "hard"
     },
     {
@@ -7723,7 +7723,7 @@ const QB={
         "Amos"
       ],
       "a": 0,
-      "e": "Joel 3:14",
+      "e": "Joel 3:14 — Joel spoke of multitudes in the 'valley of decision' as the Day of the Lord drew near.",
       "d": "hard"
     },
     {
@@ -7735,7 +7735,7 @@ const QB={
         "Ezekiel"
       ],
       "a": 2,
-      "e": "Zechariah 4:2-3 and Revelation 11:4",
+      "e": "Zechariah 4:2-3 — Zechariah saw a gold lampstand with seven lamps and two olive trees beside it.",
       "d": "hard"
     },
     {
@@ -7747,7 +7747,7 @@ const QB={
         "Ezekiel"
       ],
       "a": 0,
-      "e": "Daniel 9:26",
+      "e": "Daniel 9:26 — Daniel predicted that the Anointed One would be cut off after sixty-two sevens.",
       "d": "hard"
     },
     {
@@ -7759,7 +7759,7 @@ const QB={
         "Joel"
       ],
       "a": 0,
-      "e": "Zechariah 4:6",
+      "e": "Zechariah 4:6 — This word was given to Zerubbabel, emphasizing that God's work is done by His Spirit.",
       "d": "medium"
     },
     {
@@ -7771,7 +7771,7 @@ const QB={
         "Daniel"
       ],
       "a": 0,
-      "e": "Ezekiel 43:1-4",
+      "e": "Ezekiel 43:4 — Ezekiel saw the glory of the Lord entering the new Temple through the East Gate.",
       "d": "hard"
     },
     {
@@ -7783,7 +7783,7 @@ const QB={
         "Amos"
       ],
       "a": 2,
-      "e": "Jonah 1:17.",
+      "e": "Jonah 1:17 — Jonah was the prophet swallowed by a great fish after fleeing from God's call to Nineveh.",
       "d": "easy"
     },
     {
@@ -7795,7 +7795,7 @@ const QB={
         "Isaiah"
       ],
       "a": 2,
-      "e": "Daniel 6.",
+      "e": "Daniel 6:16 — Daniel was thrown into a lions' den for continuing to pray to God despite the king's decree.",
       "d": "easy"
     },
     {
@@ -7819,7 +7819,7 @@ const QB={
         "Enoch"
       ],
       "a": 1,
-      "e": "2 Kings 2:11.",
+      "e": "2 Kings 2:11 — Elijah was taken up to heaven in a whirlwind as a chariot and horses of fire appeared.",
       "d": "easy"
     },
     {
@@ -7831,7 +7831,7 @@ const QB={
         "Isaiah"
       ],
       "a": 0,
-      "e": "2 Kings 2-5.",
+      "e": "2 Kings 2:15 — Elisha succeeded Elijah and performed many miracles, including healing Naaman the Syrian.",
       "d": "easy"
     },
     {
@@ -7843,7 +7843,7 @@ const QB={
         "Elijah"
       ],
       "a": 1,
-      "e": "2 Samuel 12.",
+      "e": "2 Samuel 12:7 — The prophet Nathan, not Samuel, confronted King David for his sin involving Bathsheba.",
       "d": "easy"
     },
     {
@@ -7855,7 +7855,7 @@ const QB={
         "Joel"
       ],
       "a": 2,
-      "e": "Ezekiel 37.",
+      "e": "Ezekiel 37:1 — Ezekiel saw a vision of a valley full of dry bones that came to life by God's Spirit.",
       "d": "medium"
     },
     {
@@ -7867,7 +7867,7 @@ const QB={
         "Daniel"
       ],
       "a": 0,
-      "e": "1 Samuel 3.",
+      "e": "1 Samuel 3:4 — Samuel was still a young boy serving in the Temple when the Lord first called his name.",
       "d": "easy"
     },
     {
@@ -7879,7 +7879,7 @@ const QB={
         "Joel"
       ],
       "a": 0,
-      "e": "Amos 7:14.",
+      "e": "Amos 7:14 — Amos told Amaziah that he was not a prophet by trade, but a shepherd and a fig tree dresser.",
       "d": "hard"
     },
     {
@@ -7891,7 +7891,7 @@ const QB={
         "Malachi"
       ],
       "a": 0,
-      "e": "Isaiah 7:14.",
+      "e": "Isaiah 7:14 — Isaiah prophesied that a virgin would conceive and bear a son named Immanuel.",
       "d": "medium"
     },
     {
@@ -7903,7 +7903,7 @@ const QB={
         "Hosea"
       ],
       "a": 1,
-      "e": "Jeremiah 13.",
+      "e": "Jeremiah 13:1 — Jeremiah was told by God to buy a linen belt and later hide it in a crevice of a rock.",
       "d": "hard"
     },
     {
@@ -7915,7 +7915,7 @@ const QB={
         "Zechariah"
       ],
       "a": 1,
-      "e": "Ezekiel 1:16.",
+      "e": "Ezekiel 1:16 — Ezekiel's vision of the four living creatures included a wheel within a wheel.",
       "d": "hard"
     },
     {
@@ -7927,7 +7927,7 @@ const QB={
         "Obadiah"
       ],
       "a": 0,
-      "e": "1 Kings 17:4-6.",
+      "e": "1 Kings 17:6 — During a drought, God sent ravens to bring bread and meat to Elijah at the Kerith Ravine.",
       "d": "easy"
     },
     {
@@ -7939,7 +7939,7 @@ const QB={
         "Isaiah"
       ],
       "a": 1,
-      "e": "2 Kings 4:1-7.",
+      "e": "2 Kings 4:1-7 — Elisha, not Elijah, multiplied a widow's small amount of oil to pay off her debts.",
       "d": "medium"
     },
     {
@@ -7951,7 +7951,7 @@ const QB={
         "Jeremiah"
       ],
       "a": 1,
-      "e": "2 Kings 2:23-24.",
+      "e": "2 Kings 2:23-24 — Two bears came out of the woods and mauled youths who were mocking Elisha for his baldness.",
       "d": "medium"
     },
     {
@@ -7963,7 +7963,7 @@ const QB={
         "Isaiah"
       ],
       "a": 2,
-      "e": "Jeremiah is the traditional author.",
+      "e": "Lamentations 1:1 — While the book is anonymous, Jeremiah is traditionally credited as the author.",
       "d": "medium"
     },
     {
@@ -7975,7 +7975,7 @@ const QB={
         "Haggai"
       ],
       "a": 1,
-      "e": "Micah 5:2.",
+      "e": "Micah 5:2 — Micah predicted the Messiah's birthplace as Bethlehem, the smallest among the clans of Judah.",
       "d": "easy"
     },
     {
@@ -7987,7 +7987,7 @@ const QB={
         "Zechariah"
       ],
       "a": 0,
-      "e": "Amos 7:7-8.",
+      "e": "Amos 7:7 — The Lord showed Amos a vision of a plumb line to show how Israel did not measure up to His law.",
       "d": "hard"
     },
     {
@@ -7999,7 +7999,7 @@ const QB={
         "Hosea"
       ],
       "a": 0,
-      "e": "Amos 5:24.",
+      "e": "Amos 5:24 — Amos proclaimed that God desires justice to roll on like a river rather than empty rituals.",
       "d": "medium"
     },
     {
@@ -8011,7 +8011,7 @@ const QB={
         "Habakkuk"
       ],
       "a": 1,
-      "e": "Obadiah has only 21 verses.",
+      "e": "Obadiah 1:1 — With only twenty-one verses, Obadiah is the shortest book in the entire Old Testament.",
       "d": "medium"
     },
     {
@@ -8023,7 +8023,7 @@ const QB={
         "Joel"
       ],
       "a": 1,
-      "e": "Jeremiah 31:31-33.",
+      "e": "Jeremiah 31:31 — Jeremiah spoke of a coming day when God would make a New Covenant with Israel and Judah.",
       "d": "medium"
     },
     {
@@ -8035,7 +8035,7 @@ const QB={
         "Daniel"
       ],
       "a": 0,
-      "e": "Zechariah 5:5-11.",
+      "e": "Zechariah 5:7 — Zechariah saw a vision of a woman sitting inside an ephah basket, representing wickedness.",
       "d": "hard"
     },
     {
@@ -8047,7 +8047,7 @@ const QB={
         "Joel"
       ],
       "a": 0,
-      "e": "Hosea 1.",
+      "e": "Hosea 1:6-9 — Hosea's children's names symbolized God's withdrawal of mercy and rejection of Israel.",
       "d": "hard"
     },
     {
@@ -8059,7 +8059,7 @@ const QB={
         "Haggai"
       ],
       "a": 0,
-      "e": "Amos 9:11.",
+      "e": "Amos 9:11 — Amos prophesied that God would one day restore the tabernacle of David that had fallen.",
       "d": "hard"
     },
     {
@@ -8071,7 +8071,7 @@ const QB={
         "Malachi"
       ],
       "a": 0,
-      "e": "Zechariah 4.",
+      "e": "Zechariah 4:2-3 — The two olive trees in Zechariah's vision represented the two anointed ones serving God.",
       "d": "hard"
     },
     {
@@ -8083,7 +8083,7 @@ const QB={
         "Ezra"
       ],
       "a": 0,
-      "e": "Haggai 1:4.",
+      "e": "Haggai 1:4 — Haggai rebuked the people for living in luxury while the Temple of God remained in ruins.",
       "d": "medium"
     },
     {
@@ -8095,7 +8095,7 @@ const QB={
         "Ezekiel"
       ],
       "a": 0,
-      "e": "Zechariah 3.",
+      "e": "Zechariah 3:3-4 — In this vision, Joshua's filthy clothes were removed and replaced with rich garments.",
       "d": "hard"
     },
     {
@@ -8119,7 +8119,7 @@ const QB={
         "Jeremiah"
       ],
       "a": 0,
-      "e": "Habakkuk 1:2.",
+      "e": "Habakkuk 1:2 — Habakkuk's book begins with his honest struggle and questions to God about injustice.",
       "d": "medium"
     },
     {
@@ -8131,7 +8131,7 @@ const QB={
         "Amos"
       ],
       "a": 0,
-      "e": "Ezekiel 5.",
+      "e": "Ezekiel 5:1-2 — Ezekiel acted out the fate of Jerusalem's inhabitants using his hair and a sword.",
       "d": "hard"
     },
     {
@@ -8143,7 +8143,7 @@ const QB={
         "Malachi"
       ],
       "a": 2,
-      "e": "Zechariah 1.",
+      "e": "Zechariah 1:8 — Zechariah saw a man riding a red horse standing among the myrtle trees followed by others.",
       "d": "hard"
     },
     {
@@ -8155,7 +8155,7 @@ const QB={
         "Isaiah"
       ],
       "a": 1,
-      "e": "2 Kings 4-5.",
+      "e": "2 Kings 4:12 — Gehazi was the personal servant of Elisha who later became leprous due to his greed.",
       "d": "medium"
     },
     {
@@ -8167,7 +8167,7 @@ const QB={
         "Jeremiah"
       ],
       "a": 1,
-      "e": "2 Kings 5.",
+      "e": "2 Kings 5:10 — Elisha told Naaman to wash seven times in the Jordan River to be cured of his leprosy.",
       "d": "easy"
     },
     {
@@ -8179,7 +8179,7 @@ const QB={
         "Nathan"
       ],
       "a": 0,
-      "e": "Isaiah 38.",
+      "e": "Isaiah 38:8 — As a sign to King Hezekiah, Isaiah predicted that the shadow on the stairway would go back.",
       "d": "medium"
     },
     {
@@ -8191,7 +8191,7 @@ const QB={
         "Haggai"
       ],
       "a": 1,
-      "e": "Zechariah 2.",
+      "e": "Zechariah 2:1 — Zechariah saw a vision of a man with a measuring line, signifying the growth of Jerusalem.",
       "d": "hard"
     },
     {
@@ -8203,7 +8203,7 @@ const QB={
         "Hosea"
       ],
       "a": 0,
-      "e": "Micah 6:8.",
+      "e": "Micah 6:8 — Micah summarized God's requirements: to act justly, love mercy, and walk humbly with God.",
       "d": "medium"
     },
     {
@@ -8215,7 +8215,7 @@ const QB={
         "Daniel"
       ],
       "a": 2,
-      "e": "Ezekiel 3:3.",
+      "e": "Ezekiel 3:3 — Ezekiel was commanded to eat the scroll of God's word, and it tasted as sweet as honey.",
       "d": "hard"
     },
     {
@@ -8227,7 +8227,7 @@ const QB={
         "Jeremiah"
       ],
       "a": 0,
-      "e": "Isaiah 6.",
+      "e": "Isaiah 6:1-3 — Isaiah saw the Lord seated on a high throne with seraphim calling out 'Holy, holy, holy'.",
       "d": "medium"
     },
     {
@@ -8239,7 +8239,7 @@ const QB={
         "Amos"
       ],
       "a": 0,
-      "e": "Malachi 4:5.",
+      "e": "Malachi 4:5 — Malachi predicted that Elijah would return to turn the hearts of fathers to their children.",
       "d": "medium"
     },
     {
@@ -8251,7 +8251,7 @@ const QB={
         "Samuel"
       ],
       "a": 1,
-      "e": "Jeremiah 1:5.",
+      "e": "Jeremiah 1:5 — God spoke these words to Jeremiah when calling him to be a prophet to the nations.",
       "d": "medium"
     },
     {
@@ -8263,7 +8263,7 @@ const QB={
         "Joel"
       ],
       "a": 0,
-      "e": "Amos 8.",
+      "e": "Amos 8:1 — The basket of summer fruit in Amos's vision symbolized that Israel's judgment was imminent.",
       "d": "hard"
     },
     {
@@ -8275,7 +8275,7 @@ const QB={
         "Obadiah"
       ],
       "a": 0,
-      "e": "Malachi means messenger.",
+      "e": "Malachi 1:1 — The name Malachi is derived from the Hebrew word for 'my messenger' or 'my angel'.",
       "d": "medium"
     },
     {
@@ -8287,7 +8287,7 @@ const QB={
         "Hosea"
       ],
       "a": 0,
-      "e": "Micah 5:2.",
+      "e": "Micah 5:2 — This famous prophecy specifies the exact town where the future Ruler of Israel would be born.",
       "d": "easy"
     },
     {
@@ -8299,7 +8299,7 @@ const QB={
         "Isaiah"
       ],
       "a": 0,
-      "e": "Ezekiel 1:1.",
+      "e": "Ezekiel 1:1 — Ezekiel received his visions while living among the Jewish exiles by the Kebar River.",
       "d": "hard"
     },
     {
@@ -8311,7 +8311,7 @@ const QB={
         "Zechariah"
       ],
       "a": 1,
-      "e": "Ezekiel 1.",
+      "e": "Ezekiel 1:5-6 — Ezekiel saw four living creatures, each with the faces of a man, lion, ox, and eagle.",
       "d": "hard"
     },
     {
@@ -8323,7 +8323,7 @@ const QB={
         "Isaiah"
       ],
       "a": 1,
-      "e": "Daniel 5.",
+      "e": "Daniel 5:25-28 — Daniel interpreted the words 'Mene, Mene, Tekel, Parsin' for the terrified King Belshazzar.",
       "d": "medium"
     },
     {
@@ -8335,7 +8335,7 @@ const QB={
         "Joel"
       ],
       "a": 2,
-      "e": "Ezekiel 37.",
+      "e": "Ezekiel 37:4-5 — In Ezekiel's vision, God's breath entered the dry bones and they stood up as a vast army.",
       "d": "easy"
     },
     {
@@ -8347,7 +8347,7 @@ const QB={
         "Daniel"
       ],
       "a": 2,
-      "e": "Isaiah 53.",
+      "e": "Isaiah 53:5 — This prophecy describes the suffering of the Messiah who was pierced for our sins.",
       "d": "easy"
     },
     {
@@ -8359,7 +8359,7 @@ const QB={
         "Joel"
       ],
       "a": 0,
-      "e": "Hosea 1.",
+      "e": "Hosea 1:2 — Hosea was commanded to marry Gomer to illustrate Israel's spiritual adultery against God.",
       "d": "medium"
     },
     {
@@ -8371,7 +8371,7 @@ const QB={
         "Zephaniah"
       ],
       "a": 0,
-      "e": "Amos 9:1.",
+      "e": "Amos 9:1 — This vision of Amos signaled the destruction of the sanctuary and the judgment of the people.",
       "d": "hard"
     },
     {
@@ -8383,7 +8383,7 @@ const QB={
         "Malachi"
       ],
       "a": 0,
-      "e": "Zechariah 9:9.",
+      "e": "Zechariah 9:9 — Zechariah's prophecy was fulfilled when Jesus entered Jerusalem on Palm Sunday.",
       "d": "medium"
     },
     {
@@ -8395,7 +8395,7 @@ const QB={
         "Isaiah"
       ],
       "a": 0,
-      "e": "Zephaniah 1.",
+      "e": "Zephaniah 1:14-15 — Zephaniah's message is a stark warning about the near and bitter Day of the Lord.",
       "d": "hard"
     },
     {
@@ -8407,7 +8407,7 @@ const QB={
         "Abednego"
       ],
       "a": 0,
-      "e": "Daniel 1:7.",
+      "e": "Daniel 1:7 — Daniel was given the name Belteshazzar by the chief official to honor their Babylonian gods.",
       "d": "easy"
     },
     {
@@ -8419,7 +8419,7 @@ const QB={
         "Daniel"
       ],
       "a": 0,
-      "e": "Jeremiah 25.",
+      "e": "Jeremiah 25:11 — Jeremiah's prophecy of the 70-year exile gave hope to the people for their eventual return.",
       "d": "medium"
     },
     {
@@ -8431,7 +8431,7 @@ const QB={
         "Malachi"
       ],
       "a": 0,
-      "e": "Ezekiel 14:14.",
+      "e": "Ezekiel 14:14 — These three men were noted for their righteousness during times of great trial and judgment.",
       "d": "hard"
     },
     {
@@ -9739,7 +9739,7 @@ const QB={
         "Psalm 150"
       ],
       "a": 2,
-      "e": "Psalm 119 has 176 verses.",
+      "e": "Psalm 119:1 — Psalm 119 is the longest chapter in the Bible, containing 176 verses about God's word.",
       "d": "easy"
     },
     {
@@ -9751,7 +9751,7 @@ const QB={
         "Psalm 100"
       ],
       "a": 1,
-      "e": "Psalm 117 has only 2 verses.",
+      "e": "Psalm 117:1 — With only two verses, Psalm 117 is the shortest chapter in the entire Bible.",
       "d": "easy"
     },
     {
@@ -12055,7 +12055,7 @@ const QB={
         "Salome"
       ],
       "a": 0,
-      "e": "Matthew 27:56 — Among them were Mary Magdalene, Mary the mother of James and Joseph.",
+      "e": "Matthew 27:56; John 19:25 — Mary the mother of James and Joseph is identified as Mary wife of Clopas (John 19:25), distinct from Mary Magdalene who is listed separately.",
       "d": "medium"
     },
     {
@@ -14791,7 +14791,7 @@ const QB={
         "12"
       ],
       "a": 2,
-      "e": "Exodus 7-12 describes the ten plagues.",
+      "e": "Exodus 12:12 — God sent ten distinct plagues upon Egypt to demonstrate His power and free the Israelites.",
       "d": "easy"
     },
     {
@@ -15007,7 +15007,7 @@ const QB={
         "66"
       ],
       "a": 1,
-      "e": "The New Testament contains 27 books.",
+      "e": "The New Testament consists of 27 books, starting with the four Gospels and ending with Revelation.",
       "d": "easy"
     },
     {
@@ -17373,7 +17373,7 @@ const QB={
         "Caiaphas"
       ],
       "a": 0,
-      "e": "John 3:3 - Jesus speaks to Nicodemus.",
+      "e": "John 3:3-7 — Jesus tells Nicodemus he must be born of water and Spirit to enter God's kingdom.",
       "d": "easy"
     },
     {
@@ -17385,7 +17385,7 @@ const QB={
         "Jericho"
       ],
       "a": 0,
-      "e": "Matthew 26:36 mentions Gethsemane.",
+      "e": "Matthew 26:36 — Jesus went with his disciples to a place called Gethsemane to pray before His arrest.",
       "d": "easy"
     },
     {
@@ -17445,7 +17445,7 @@ const QB={
         "12"
       ],
       "a": 0,
-      "e": "Matthew 4:2 - Jesus fasted 40 days.",
+      "e": "Matthew 4:2 — After fasting forty days and forty nights in the wilderness, Jesus was hungry.",
       "d": "easy"
     },
     {
@@ -17457,7 +17457,7 @@ const QB={
         "Nicodemus"
       ],
       "a": 0,
-      "e": "Luke 19:1-4 tells of Zacchaeus.",
+      "e": "Luke 19:4 — Zacchaeus climbed a sycamore-fig tree to see Jesus because he was a short man.",
       "d": "easy"
     },
     {
@@ -17481,7 +17481,7 @@ const QB={
         "Luke"
       ],
       "a": 0,
-      "e": "John 1:1.",
+      "e": "John 1:1 — The Gospel of John begins by identifying Jesus as the Word who was with God.",
       "d": "easy"
     },
     {
@@ -17493,7 +17493,7 @@ const QB={
         "40"
       ],
       "a": 0,
-      "e": "Matthew 14:20.",
+      "e": "Matthew 14:20 — The disciples picked up twelve basketfuls of broken pieces that were left over.",
       "d": "easy"
     },
     {
@@ -17505,7 +17505,7 @@ const QB={
         "Levi"
       ],
       "a": 0,
-      "e": "Luke 1:5-13.",
+      "e": "Luke 1:13 — The angel Gabriel told Zechariah that his wife Elizabeth would bear a son named John.",
       "d": "medium"
     },
     {
@@ -17517,7 +17517,7 @@ const QB={
         "Uriel"
       ],
       "a": 0,
-      "e": "Luke 1:26.",
+      "e": "Luke 1:26-27 — God sent the angel Gabriel to Nazareth to a virgin pledged to be married to Joseph.",
       "d": "easy"
     },
     {
@@ -17529,7 +17529,7 @@ const QB={
         "Moab"
       ],
       "a": 0,
-      "e": "Matthew 2:13-14.",
+      "e": "Matthew 2:13-14 — Joseph took the child and Mary to Egypt to escape King Herod’s plan to kill Him.",
       "d": "easy"
     },
     {
@@ -17541,7 +17541,7 @@ const QB={
         "10"
       ],
       "a": 0,
-      "e": "Luke 2:42.",
+      "e": "Luke 2:42 — When Jesus was twelve years old, He stayed behind in the temple courts in Jerusalem.",
       "d": "easy"
     },
     {
@@ -17553,7 +17553,7 @@ const QB={
         "Philip"
       ],
       "a": 0,
-      "e": "John 11:16.",
+      "e": "John 11:16 — Thomas, also called Didymus or the Twin, spoke to his fellow disciples.",
       "d": "medium"
     },
     {
@@ -17565,7 +17565,7 @@ const QB={
         "Festus"
       ],
       "a": 0,
-      "e": "Matthew 27:2.",
+      "e": "Matthew 27:2 — The Jewish leaders bound Jesus and handed Him over to Pilate, the Roman governor.",
       "d": "easy"
     },
     {
@@ -17577,7 +17577,7 @@ const QB={
         "Simon"
       ],
       "a": 0,
-      "e": "Matthew 27:16.",
+      "e": "Matthew 27:21 — The crowd chose to have Barabbas released instead of Jesus during the Passover.",
       "d": "easy"
     },
     {
@@ -17589,7 +17589,7 @@ const QB={
         "John"
       ],
       "a": 0,
-      "e": "Luke 23:26.",
+      "e": "Luke 23:26 — The soldiers seized Simon from Cyrene and put the cross on him to carry behind Jesus.",
       "d": "medium"
     },
     {
@@ -17601,7 +17601,7 @@ const QB={
         "50"
       ],
       "a": 0,
-      "e": "John 21:11.",
+      "e": "John 21:11 — Simon Peter climbed aboard and dragged the net ashore, full of 153 large fish.",
       "d": "hard"
     },
     {
@@ -17613,7 +17613,7 @@ const QB={
         "Andrew"
       ],
       "a": 0,
-      "e": "John 1:29.",
+      "e": "John 1:29 — John the Baptist saw Jesus coming toward him and identified Him as the Lamb of God.",
       "d": "easy"
     },
     {
@@ -17625,7 +17625,7 @@ const QB={
         "Monday"
       ],
       "a": 0,
-      "e": "Matthew 28:1.",
+      "e": "Matthew 28:1 — After the Sabbath, at dawn on the first day of the week, the women went to the tomb.",
       "d": "easy"
     },
     {
@@ -17637,7 +17637,7 @@ const QB={
         "Philip"
       ],
       "a": 0,
-      "e": "John 1:40.",
+      "e": "John 1:40 — Andrew, Simon Peter’s brother, was one of the two who heard what John had said.",
       "d": "easy"
     },
     {
@@ -17649,7 +17649,7 @@ const QB={
         "Jerusalem"
       ],
       "a": 0,
-      "e": "John 11:1.",
+      "e": "John 11:1 — Lazarus was from Bethany, the village where his sisters Mary and Martha lived.",
       "d": "medium"
     },
     {
@@ -17661,7 +17661,7 @@ const QB={
         "Zadok"
       ],
       "a": 0,
-      "e": "Matthew 26:57.",
+      "e": "Matthew 26:57 — Those who arrested Jesus took Him to Caiaphas the high priest for questioning.",
       "d": "medium"
     },
     {
@@ -17673,7 +17673,7 @@ const QB={
         "Salome"
       ],
       "a": 0,
-      "e": "Luke 1:13.",
+      "e": "Luke 1:13 — The angel told Zechariah that his wife Elizabeth would bear him a son named John.",
       "d": "easy"
     },
     {
@@ -17697,7 +17697,7 @@ const QB={
         "2 loaves, 5 fish"
       ],
       "a": 0,
-      "e": "Matthew 14:17.",
+      "e": "Matthew 14:17 — The disciples told Jesus they only had five loaves of bread and two fish.",
       "d": "easy"
     },
     {
@@ -17709,7 +17709,7 @@ const QB={
         "Threw oil"
       ],
       "a": 0,
-      "e": "Mark 4:39.",
+      "e": "Mark 4:39 — Jesus got up, rebuked the wind and said to the waves, 'Quiet! Be still!'",
       "d": "easy"
     },
     {
@@ -17721,7 +17721,7 @@ const QB={
         "Mother Mary"
       ],
       "a": 0,
-      "e": "John 20:14.",
+      "e": "John 20:14-16 — Mary Magdalene was the first to see the risen Jesus near the empty tomb.",
       "d": "medium"
     },
     {
@@ -17733,7 +17733,7 @@ const QB={
         "Paul"
       ],
       "a": 0,
-      "e": "Matthew 4:18.",
+      "e": "Matthew 4:18 — Jesus saw Simon Peter and Andrew casting a net into the lake, for they were fishermen.",
       "d": "easy"
     },
     {
@@ -17757,7 +17757,7 @@ const QB={
         "Dead Sea"
       ],
       "a": 0,
-      "e": "Matthew 3:13.",
+      "e": "Matthew 3:13 — Jesus came from Galilee to the Jordan River to be baptized by John the Baptist.",
       "d": "easy"
     },
     {
@@ -17769,7 +17769,7 @@ const QB={
         "40"
       ],
       "a": 0,
-      "e": "Matthew 10:1.",
+      "e": "Matthew 10:1-4 — Jesus called his twelve disciples and gave them authority to heal and drive out spirits.",
       "d": "easy"
     },
     {
@@ -17781,7 +17781,7 @@ const QB={
         "Jonas"
       ],
       "a": 0,
-      "e": "Matthew 4:21.",
+      "e": "Matthew 4:21 — James and John were in a boat with their father Zebedee, preparing their nets.",
       "d": "easy"
     },
     {
@@ -17793,7 +17793,7 @@ const QB={
         "Moses"
       ],
       "a": 0,
-      "e": "Matthew 3:3.",
+      "e": "Matthew 3:3 — This is he who was spoken of through Isaiah: 'A voice of one calling in the wilderness.'",
       "d": "easy"
     },
     {
@@ -17805,7 +17805,7 @@ const QB={
         "Peace be with you"
       ],
       "a": 0,
-      "e": "Luke 2:49.",
+      "e": "Luke 2:49 — Jesus asked His parents, 'Why were you searching for me? Didn’t you know I had to be in my Father’s house?'",
       "d": "hard"
     },
     {
@@ -17817,7 +17817,7 @@ const QB={
         "Joanna"
       ],
       "a": 0,
-      "e": "Luke 10:38-39.",
+      "e": "Luke 10:38-39 — A woman named Martha opened her home to Jesus, while her sister Mary sat at His feet.",
       "d": "easy"
     },
     {
@@ -17829,7 +17829,7 @@ const QB={
         "Eutychus"
       ],
       "a": 0,
-      "e": "John 11.",
+      "e": "John 11:43-44 — Jesus called in a loud voice, 'Lazarus, come out!' and the dead man came out.",
       "d": "easy"
     },
     {
@@ -17841,7 +17841,7 @@ const QB={
         "John"
       ],
       "a": 0,
-      "e": "Mark is the shortest Gospel.",
+      "e": "Mark 1:1 — Mark is widely recognized as the shortest of the four Gospels.",
       "d": "medium"
     },
     {
@@ -17865,7 +17865,7 @@ const QB={
         "Julius"
       ],
       "a": 0,
-      "e": "Matthew 27:54.",
+      "e": "Matthew 27:54 — The centurion and those with him were terrified and exclaimed, 'Surely he was the Son of God!'",
       "d": "medium"
     },
     {
@@ -17901,7 +17901,7 @@ const QB={
         "Nazareth"
       ],
       "a": 0,
-      "e": "Matthew 21:1-11.",
+      "e": "Matthew 21:1-9 — Jesus entered Jerusalem riding on a donkey, fulfilling the prophecy of Zechariah.",
       "d": "easy"
     },
     {
@@ -17913,7 +17913,7 @@ const QB={
         "Cloaks"
       ],
       "a": 0,
-      "e": "John 12:13.",
+      "e": "John 12:13 — They took palm branches and went out to meet him, shouting, 'Hosanna!'",
       "d": "easy"
     },
     {
@@ -17925,7 +17925,7 @@ const QB={
         "John"
       ],
       "a": 0,
-      "e": "Matthew 5-7.",
+      "e": "Matthew 5:1 — When Jesus saw the crowds, He went up on a mountainside and began to teach them.",
       "d": "easy"
     },
     {
@@ -17937,7 +17937,7 @@ const QB={
         "John"
       ],
       "a": 0,
-      "e": "Luke 6:17-49.",
+      "e": "Luke 6:17 — Jesus went down with them and stood on a level place, where He preached to a large crowd.",
       "d": "medium"
     },
     {
@@ -17949,7 +17949,7 @@ const QB={
         "Lysanias"
       ],
       "a": 0,
-      "e": "Luke 3:1.",
+      "e": "Luke 3:1 — Herod Antipas was the tetrarch of Galilee during the time of John the Baptist's ministry.",
       "d": "medium"
     },
     {
@@ -17961,7 +17961,7 @@ const QB={
         "Andrew"
       ],
       "a": 0,
-      "e": "Luke 6:15.",
+      "e": "Luke 6:15 — Among the apostles chosen by Jesus was Simon, who was called the Zealot.",
       "d": "medium"
     },
     {
@@ -17973,7 +17973,7 @@ const QB={
         "Lazarus"
       ],
       "a": 0,
-      "e": "John 13:23.",
+      "e": "John 13:23 — One of them, the disciple whom Jesus loved, was reclining next to Him at the meal.",
       "d": "easy"
     },
     {
@@ -17985,7 +17985,7 @@ const QB={
         "A word only"
       ],
       "a": 0,
-      "e": "John 9:6.",
+      "e": "John 9:6 — Jesus spit on the ground, made some mud with the saliva, and put it on the man’s eyes.",
       "d": "easy"
     },
     {
@@ -17997,7 +17997,7 @@ const QB={
         "10,000"
       ],
       "a": 0,
-      "e": "Matthew 15:38.",
+      "e": "Matthew 15:38 — The number of those who ate was four thousand men, besides women and children.",
       "d": "medium"
     },
     {
@@ -18009,7 +18009,7 @@ const QB={
         "John"
       ],
       "a": 0,
-      "e": "Luke 1:3.",
+      "e": "Luke 1:3 — Luke wrote an orderly account for Theophilus so he might know the certainty of what he was taught.",
       "d": "easy"
     },
     {
@@ -18021,7 +18021,7 @@ const QB={
         "Gihon"
       ],
       "a": 0,
-      "e": "John 5:2.",
+      "e": "John 5:2 — In Jerusalem near the Sheep Gate is a pool called Bethesda, surrounded by five colonnades.",
       "d": "medium"
     },
     {
@@ -18033,7 +18033,7 @@ const QB={
         "1"
       ],
       "a": 0,
-      "e": "John 11:39.",
+      "e": "John 11:39 — Martha told Jesus that Lazarus had been in the tomb for four days and there would be a bad odor.",
       "d": "easy"
     },
     {
@@ -18045,7 +18045,7 @@ const QB={
         "John"
       ],
       "a": 0,
-      "e": "John 14:8.",
+      "e": "John 14:8 — Philip said to Jesus, 'Lord, show us the Father and that will be enough for us.'",
       "d": "hard"
     },
     {
@@ -18057,7 +18057,7 @@ const QB={
         "Jacob"
       ],
       "a": 0,
-      "e": "Luke 15:11 (Parable, but in Luke).",
+      "e": "Luke 15:11 — Jesus began the parable by saying, 'There was a man who had two sons.'",
       "d": "easy"
     },
     {
@@ -18069,7 +18069,7 @@ const QB={
         "Do not steal"
       ],
       "a": 0,
-      "e": "Matthew 22:37-38.",
+      "e": "Matthew 22:37 — Jesus replied, 'Love the Lord your God with all your heart and with all your soul.'",
       "d": "easy"
     },
     {
@@ -18093,7 +18093,7 @@ const QB={
         "Turned red"
       ],
       "a": 0,
-      "e": "Matthew 27:51.",
+      "e": "Matthew 27:51 — At the moment Jesus died, the curtain of the temple was torn in two from top to bottom.",
       "d": "easy"
     },
     {
@@ -18105,7 +18105,7 @@ const QB={
         "The Samaritan woman"
       ],
       "a": 0,
-      "e": "Mark 5:25-29.",
+      "e": "Mark 5:27-29 — The woman touched Jesus' cloak, believing it would heal her, and her bleeding stopped.",
       "d": "easy"
     },
     {
@@ -18117,7 +18117,7 @@ const QB={
         "Malchus"
       ],
       "a": 0,
-      "e": "Mark 10:46.",
+      "e": "Mark 10:46 — A blind man, Bartimaeus, was sitting by the roadside begging when Jesus passed by.",
       "d": "medium"
     },
     {
@@ -18129,7 +18129,7 @@ const QB={
         "Longinus"
       ],
       "a": 0,
-      "e": "John 18:10.",
+      "e": "John 18:10 — Simon Peter, who had a sword, drew it and struck the high priest’s servant, Malchus.",
       "d": "medium"
     },
     {
@@ -18141,7 +18141,7 @@ const QB={
         "Walking on water"
       ],
       "a": 0,
-      "e": "John 2:11.",
+      "e": "John 2:11 — What Jesus did here in Cana was the first of the signs through which He revealed His glory.",
       "d": "easy"
     },
     {
@@ -18153,7 +18153,7 @@ const QB={
         "John"
       ],
       "a": 0,
-      "e": "Luke uses 'Son of Man' frequently.",
+      "e": "Luke 19:10 — The title 'Son of Man' is used frequently in Luke to highlight Jesus' mission to save the lost.",
       "d": "hard"
     },
     {
@@ -18165,7 +18165,7 @@ const QB={
         "Egypt"
       ],
       "a": 0,
-      "e": "Luke 2:51-52.",
+      "e": "Luke 2:51 — Jesus went down to Nazareth with His parents and was obedient to them.",
       "d": "easy"
     },
     {
@@ -18177,7 +18177,7 @@ const QB={
         "Elkanah and Hannah"
       ],
       "a": 0,
-      "e": "Luke 1.",
+      "e": "Luke 1:13 — The angel told Zechariah that Elizabeth would bear a son and they were to call him John.",
       "d": "easy"
     },
     {
@@ -18189,7 +18189,7 @@ const QB={
         "21"
       ],
       "a": 0,
-      "e": "Matthew has 28 chapters.",
+      "e": "Matthew 28:20 — The Gospel of Matthew concludes with chapter 28, ending with the Great Commission.",
       "d": "medium"
     },
     {
@@ -18201,7 +18201,7 @@ const QB={
         "21"
       ],
       "a": 0,
-      "e": "Mark has 16 chapters.",
+      "e": "Mark 16:20 — The Gospel of Mark concludes with chapter 16, describing the ascension of Jesus.",
       "d": "medium"
     },
     {
@@ -18213,7 +18213,7 @@ const QB={
         "21"
       ],
       "a": 0,
-      "e": "Luke has 24 chapters.",
+      "e": "Luke 24:53 — The Gospel of Luke concludes with chapter 24, as the disciples stayed at the temple praising God.",
       "d": "medium"
     },
     {
@@ -18225,7 +18225,7 @@ const QB={
         "24"
       ],
       "a": 0,
-      "e": "John has 21 chapters.",
+      "e": "John 21:25 — The Gospel of John concludes with chapter 21, noting many other things Jesus did.",
       "d": "medium"
     },
     {
@@ -18237,7 +18237,7 @@ const QB={
         "Farmers"
       ],
       "a": 0,
-      "e": "Matthew 4:18-22.",
+      "e": "Matthew 4:18-22 — Jesus called Peter, Andrew, James, and John while they were fishing or mending nets.",
       "d": "easy"
     },
     {
@@ -18249,7 +18249,7 @@ const QB={
         "Philip"
       ],
       "a": 0,
-      "e": "Often identified together.",
+      "e": "John 1:45 — Philip found Nathanael, who is traditionally identified with the apostle Bartholomew.",
       "d": "hard"
     },
     {
@@ -18261,7 +18261,7 @@ const QB={
         "Caiaphas"
       ],
       "a": 0,
-      "e": "John 3:1.",
+      "e": "John 3:1 — Nicodemus was a member of the Jewish ruling council who came to Jesus at night.",
       "d": "easy"
     },
     {
@@ -18273,7 +18273,7 @@ const QB={
         "Jerusalem temple"
       ],
       "a": 0,
-      "e": "John 4:6.",
+      "e": "John 4:6 — Jesus, tired from the journey, sat down by Jacob’s well in the town of Sychar.",
       "d": "easy"
     },
     {
@@ -18285,7 +18285,7 @@ const QB={
         "Both A and C"
       ],
       "a": 3,
-      "e": "John 8:10-11.",
+      "e": "John 8:11 — Jesus told the woman, 'Then neither do I condemn you. Go now and leave your life of sin.'",
       "d": "medium"
     },
     {
@@ -18297,7 +18297,7 @@ const QB={
         "Peter"
       ],
       "a": 0,
-      "e": "John 10:11.",
+      "e": "John 10:11 — Jesus declared, 'I am the good shepherd. The good shepherd lays down his life for the sheep.'",
       "d": "easy"
     },
     {
@@ -18309,7 +18309,7 @@ const QB={
         "Washed the dishes"
       ],
       "a": 0,
-      "e": "John 13:5.",
+      "e": "John 13:5 — Jesus poured water into a basin and began to wash His disciples' feet, drying them with a towel.",
       "d": "easy"
     },
     {
@@ -18321,7 +18321,7 @@ const QB={
         "Mary Magdalene"
       ],
       "a": 0,
-      "e": "John 20:4.",
+      "e": "John 20:4 — Both were running, but the other disciple outran Peter and reached the tomb first.",
       "d": "medium"
     },
     {
@@ -18333,7 +18333,7 @@ const QB={
         "Bethany"
       ],
       "a": 0,
-      "e": "Acts 1:19 / Matthew 27:8.",
+      "e": "Acts 1:19 — Everyone in Jerusalem heard about this, so they called that field Akeldama, or Field of Blood.",
       "d": "hard"
     },
     {
@@ -18345,7 +18345,7 @@ const QB={
         "John"
       ],
       "a": 0,
-      "e": "Matthew 2.",
+      "e": "Matthew 2:1 — After Jesus was born in Bethlehem, Magi from the east came to Jerusalem asking for the King.",
       "d": "easy"
     },
     {
@@ -18357,7 +18357,7 @@ const QB={
         "John"
       ],
       "a": 0,
-      "e": "Luke 2.",
+      "e": "Luke 2:8-9 — There were shepherds living out in the fields, and an angel of the Lord appeared to them.",
       "d": "easy"
     },
     {
@@ -18369,7 +18369,7 @@ const QB={
         "0"
       ],
       "a": 0,
-      "e": "Luke 23:32-33.",
+      "e": "Luke 23:32-33 — Two other men, both criminals, were also led out with Jesus to be executed.",
       "d": "easy"
     },
     {
@@ -18381,7 +18381,7 @@ const QB={
         "Believe in me"
       ],
       "a": 0,
-      "e": "Luke 23:43.",
+      "e": "Luke 23:43 — Jesus answered the criminal, 'Truly I tell you, today you will be with me in paradise.'",
       "d": "easy"
     },
     {
@@ -18393,7 +18393,7 @@ const QB={
         "Zechariah"
       ],
       "a": 0,
-      "e": "Matthew 4:21.",
+      "e": "Matthew 4:21 — Jesus saw James son of Zebedee and his brother John in a boat with their father.",
       "d": "easy"
     },
     {
@@ -18405,7 +18405,7 @@ const QB={
         "Peter"
       ],
       "a": 0,
-      "e": "Luke 6:15-16.",
+      "e": "Luke 6:16 — Among the apostles was Judas son of James, often identified as Jude or Thaddaeus.",
       "d": "hard"
     },
     {
@@ -18417,7 +18417,7 @@ const QB={
         "Simon"
       ],
       "a": 0,
-      "e": "Matthew 10:3.",
+      "e": "Matthew 10:3 — The list of twelve apostles includes James son of Alphaeus and Thaddaeus.",
       "d": "medium"
     },
     {
@@ -18429,7 +18429,7 @@ const QB={
         "Thomas"
       ],
       "a": 0,
-      "e": "John 1:46.",
+      "e": "John 1:46 — Nathanael asked Philip if anything good could come from Nazareth before meeting Jesus.",
       "d": "medium"
     },
     {
@@ -18441,7 +18441,7 @@ const QB={
         "Mount Carmel"
       ],
       "a": 0,
-      "e": "Matthew 17:1.",
+      "e": "Matthew 17:1 — Jesus took Peter, James, and John up onto a high mountain where He was transfigured.",
       "d": "medium"
     },
     {
@@ -18453,7 +18453,7 @@ const QB={
         "Peter and John"
       ],
       "a": 0,
-      "e": "Matthew 17:3.",
+      "e": "Matthew 17:3 — Just then there appeared before them Moses and Elijah, talking with Jesus.",
       "d": "easy"
     },
     {
@@ -18465,7 +18465,7 @@ const QB={
         "Once"
       ],
       "a": 0,
-      "e": "Matthew 18:22.",
+      "e": "Matthew 18:22 — Jesus answered Peter that he should forgive not seven times, but seventy-seven times.",
       "d": "easy"
     },
     {
@@ -18477,7 +18477,7 @@ const QB={
         "Alpheus"
       ],
       "a": 0,
-      "e": "John 21:15 (Simon son of John).",
+      "e": "John 21:15 — Jesus asked Simon Peter, 'Simon son of John, do you love me more than these?'",
       "d": "medium"
     },
     {
@@ -18489,7 +18489,7 @@ const QB={
         "Andrew"
       ],
       "a": 1,
-      "e": "Acts 7.",
+      "e": "Acts 7:59-60 — Stephen was the first martyr, stoned to death while praying for his accusers.",
       "d": "medium"
     },
     {
@@ -18501,7 +18501,7 @@ const QB={
         "Simon"
       ],
       "a": 0,
-      "e": "Matthew 27:57.",
+      "e": "Matthew 27:57-60 — Joseph of Arimathea, a rich disciple, took Jesus' body and placed it in his own new tomb.",
       "d": "easy"
     },
     {
@@ -18513,7 +18513,7 @@ const QB={
         "John"
       ],
       "a": 0,
-      "e": "Luke is often noted for this.",
+      "e": "Luke 2:7 — Luke emphasizes Jesus' humanity by detailing His humble birth and placement in a manger.",
       "d": "hard"
     },
     {
@@ -18525,7 +18525,7 @@ const QB={
         "Luke"
       ],
       "a": 0,
-      "e": "John's prologue and 'I AM' statements.",
+      "e": "John 1:1-14 — John highlights Jesus' divinity, identifying Him as the Word who was God and became flesh.",
       "d": "medium"
     },
     {
@@ -18537,7 +18537,7 @@ const QB={
         "Antipas"
       ],
       "a": 0,
-      "e": "Luke 3:1.",
+      "e": "Luke 3:1 — Philip, the brother of Herod, was the tetrarch of the region of Ituraea and Traconitis.",
       "d": "hard"
     },
     {
@@ -18549,7 +18549,7 @@ const QB={
         "Bethlehem"
       ],
       "a": 0,
-      "e": "Luke 4:16-30.",
+      "e": "Luke 4:28-30 — The people in the synagogue at Nazareth were furious and tried to throw Jesus off a cliff.",
       "d": "easy"
     },
     {
@@ -18561,7 +18561,7 @@ const QB={
         "The Temple"
       ],
       "a": 0,
-      "e": "John 6:35.",
+      "e": "John 6:35 — Jesus declared, 'I am the bread of life. Whoever comes to me will never go hungry.'",
       "d": "easy"
     },
     {
@@ -18573,7 +18573,7 @@ const QB={
         "1"
       ],
       "a": 0,
-      "e": "Luke 24:13.",
+      "e": "Luke 24:13 — That same day two of them were going to a village called Emmaus, about seven miles from Jerusalem.",
       "d": "medium"
     },
     {
@@ -18585,7 +18585,7 @@ const QB={
         "A Roman"
       ],
       "a": 0,
-      "e": "Luke 24:18.",
+      "e": "Luke 24:18 — One of the two, named Cleopas, asked Jesus if He was the only visitor who didn't know what happened.",
       "d": "medium"
     },
     {
@@ -18597,7 +18597,7 @@ const QB={
         "Jerusalem"
       ],
       "a": 0,
-      "e": "Luke 24:50-51.",
+      "e": "Luke 24:50 — When Jesus had led them out to the vicinity of Bethany, He lifted up His hands and blessed them.",
       "d": "medium"
     },
     {
@@ -18609,7 +18609,7 @@ const QB={
         "A new temple"
       ],
       "a": 0,
-      "e": "John 14:16-17.",
+      "e": "John 14:16-17 — Jesus promised to ask the Father to give the disciples another Advocate, the Spirit of truth.",
       "d": "easy"
     },
     {
@@ -18621,7 +18621,7 @@ const QB={
         "John of Patmos"
       ],
       "a": 0,
-      "e": "Traditional attribution.",
+      "e": "John 21:24 — This is the disciple who testifies to these things and who wrote them down.",
       "d": "easy"
     },
     {
@@ -19259,7 +19259,7 @@ const QB={
         "Grew quickly"
       ],
       "a": 0,
-      "e": "Matthew 13:4.",
+      "e": "Matthew 13:4 — As he was scattering the seed, some fell along the path, and the birds came and ate it up.",
       "d": "easy"
     },
     {
@@ -19271,7 +19271,7 @@ const QB={
         "A job"
       ],
       "a": 0,
-      "e": "Luke 15:12.",
+      "e": "Luke 15:12 — The younger son told his father, 'Give me my share of the estate.'",
       "d": "easy"
     },
     {
@@ -19283,7 +19283,7 @@ const QB={
         "Fishing"
       ],
       "a": 0,
-      "e": "Luke 15:15.",
+      "e": "Luke 15:15 — He went and hired himself out to a citizen, who sent him to his fields to feed pigs.",
       "d": "easy"
     },
     {
@@ -19295,7 +19295,7 @@ const QB={
         "A soldier"
       ],
       "a": 0,
-      "e": "Luke 10:31.",
+      "e": "Luke 10:31 — A priest happened to be going down the same road, but when he saw the man, he passed by.",
       "d": "medium"
     },
     {
@@ -19307,7 +19307,7 @@ const QB={
         "A merchant"
       ],
       "a": 0,
-      "e": "Luke 10:32.",
+      "e": "Luke 10:32 — A Levite, when he came to the place and saw him, passed by on the other side.",
       "d": "medium"
     },
     {
@@ -19319,7 +19319,7 @@ const QB={
         "To the temple"
       ],
       "a": 0,
-      "e": "Luke 10:34.",
+      "e": "Luke 10:34 — The Samaritan bandaged the man's wounds and put him on his own donkey to take him to an inn.",
       "d": "easy"
     },
     {
@@ -19331,7 +19331,7 @@ const QB={
         "Their shoes"
       ],
       "a": 0,
-      "e": "Matthew 25:3.",
+      "e": "Matthew 25:3 — The foolish virgins took their lamps but failed to bring extra oil for the bridegroom's delay.",
       "d": "easy"
     },
     {
@@ -19343,7 +19343,7 @@ const QB={
         "Dawn"
       ],
       "a": 0,
-      "e": "Matthew 25:6.",
+      "e": "Matthew 25:6 — Midnight was the unexpected hour when the cry announced the bridegroom’s arrival to the virgins.",
       "d": "medium"
     },
     {
@@ -19355,7 +19355,7 @@ const QB={
         "10"
       ],
       "a": 0,
-      "e": "Matthew 25:15.",
+      "e": "Matthew 25:15 — The master distributed talents based on ability, giving five to the servant he trusted most.",
       "d": "easy"
     },
     {
@@ -19367,7 +19367,7 @@ const QB={
         "Gave it away"
       ],
       "a": 0,
-      "e": "Matthew 25:25.",
+      "e": "Matthew 25:25 — Driven by fear and a wrong view of his master, the servant hid the talent in the earth.",
       "d": "easy"
     },
     {
@@ -19379,7 +19379,7 @@ const QB={
         "12"
       ],
       "a": 0,
-      "e": "Luke 15:4.",
+      "e": "Luke 15:4 — The shepherd’s love drives him to leave the ninety-nine in the wilderness to find the one lost sheep.",
       "d": "easy"
     },
     {
@@ -19391,7 +19391,7 @@ const QB={
         "Buys bread"
       ],
       "a": 0,
-      "e": "Luke 15:9.",
+      "e": "Luke 15:9 — Finding the lost coin brings such joy that the woman must share the celebration with her friends.",
       "d": "easy"
     },
     {
@@ -19403,7 +19403,7 @@ const QB={
         "A vineyard"
       ],
       "a": 0,
-      "e": "Matthew 13:32.",
+      "e": "Matthew 13:32 — The mustard seed grows from the smallest size to a large tree, symbolizing the Kingdom's growth.",
       "d": "easy"
     },
     {
@@ -19427,7 +19427,7 @@ const QB={
         "Ignores it"
       ],
       "a": 0,
-      "e": "Matthew 13:46.",
+      "e": "Matthew 13:46 — Finding a pearl of immense value, the merchant sold all his possessions to make it his own.",
       "d": "easy"
     },
     {
@@ -19439,7 +19439,7 @@ const QB={
         "They were both burned"
       ],
       "a": 0,
-      "e": "Matthew 13:30.",
+      "e": "Matthew 13:30 — The owner allowed wheat and tares to grow together to prevent damaging the wheat during removal.",
       "d": "medium"
     },
     {
@@ -19451,7 +19451,7 @@ const QB={
         "1,000 gold pieces"
       ],
       "a": 0,
-      "e": "Matthew 18:24.",
+      "e": "Matthew 18:24 — Ten thousand talents was an astronomical debt that the servant could never hope to repay on his own.",
       "d": "hard"
     },
     {
@@ -19463,7 +19463,7 @@ const QB={
         "50 denarii"
       ],
       "a": 0,
-      "e": "Matthew 18:28.",
+      "e": "Matthew 18:28 — A hundred denarii was a small fraction of what was forgiven him, making his lack of mercy striking.",
       "d": "medium"
     },
     {
@@ -19475,7 +19475,7 @@ const QB={
         "A wall"
       ],
       "a": 0,
-      "e": "Luke 12:18.",
+      "e": "Luke 12:18 — The rich man’s greed led him to build larger barns to store his excess instead of helping others.",
       "d": "easy"
     },
     {
@@ -19487,7 +19487,7 @@ const QB={
         "You servant"
       ],
       "a": 0,
-      "e": "Luke 12:20.",
+      "e": "Luke 12:20 — God called him a fool because he focused on earthly wealth while his soul was required that very night.",
       "d": "easy"
     },
     {
@@ -19499,7 +19499,7 @@ const QB={
         "The creditor himself"
       ],
       "a": 0,
-      "e": "Luke 7:42-43.",
+      "e": "Luke 7:42-43 — Jesus taught that the person who is forgiven a greater debt will naturally respond with more love.",
       "d": "easy"
     },
     {
@@ -19511,7 +19511,7 @@ const QB={
         "Nothing"
       ],
       "a": 0,
-      "e": "Matthew 20:9-10.",
+      "e": "Matthew 20:9-10 — The master paid every worker a full denarius, demonstrating his grace regardless of hours worked.",
       "d": "medium"
     },
     {
@@ -19523,7 +19523,7 @@ const QB={
         "They were already there"
       ],
       "a": 0,
-      "e": "Luke 14:18.",
+      "e": "Luke 14:18 — The first guests prioritized their land and business over the honor of the king’s banquet invitation.",
       "d": "easy"
     },
     {
@@ -19535,7 +19535,7 @@ const QB={
         "The Romans"
       ],
       "a": 0,
-      "e": "Luke 14:21.",
+      "e": "Luke 14:21 — After the invited guests refused, the master opened his banquet to the needy and marginalized.",
       "d": "easy"
     },
     {
@@ -19547,7 +19547,7 @@ const QB={
         "Neither"
       ],
       "a": 0,
-      "e": "Luke 18:14.",
+      "e": "Luke 18:14 — The tax collector was justified because he humbled himself and sincerely pleaded for God's mercy.",
       "d": "easy"
     },
     {
@@ -19559,7 +19559,7 @@ const QB={
         "The temple"
       ],
       "a": 0,
-      "e": "Luke 18:11-12.",
+      "e": "Luke 18:11-12 — The Pharisee’s prayer was a self-congratulatory list of his own deeds rather than a plea to God.",
       "d": "easy"
     },
     {
@@ -19571,7 +19571,7 @@ const QB={
         "Because she paid him"
       ],
       "a": 0,
-      "e": "Luke 18:4-5.",
+      "e": "Luke 18:4-5 — The judge finally granted justice only because the widow’s persistence was becoming a burden to him.",
       "d": "medium"
     },
     {
@@ -19583,7 +19583,7 @@ const QB={
         "Neither"
       ],
       "a": 0,
-      "e": "Matthew 21:28-31.",
+      "e": "Matthew 21:28-31 — The first son showed true obedience by eventually changing his mind and going to work as asked.",
       "d": "medium"
     },
     {
@@ -19595,7 +19595,7 @@ const QB={
         "The soldiers"
       ],
       "a": 0,
-      "e": "Matthew 21:35-36.",
+      "e": "Matthew 21:35-36 — The tenants rebelled against the landowner by beating and killing the servants he sent to them.",
       "d": "medium"
     },
     {
@@ -19607,7 +19607,7 @@ const QB={
         "A prophet"
       ],
       "a": 0,
-      "e": "Matthew 21:37.",
+      "e": "Matthew 21:37 — The owner sent his son, expecting that the tenants would show him the respect due to his heir.",
       "d": "easy"
     },
     {
@@ -19619,7 +19619,7 @@ const QB={
         "He was made a guest of honor"
       ],
       "a": 0,
-      "e": "Matthew 22:11-13.",
+      "e": "Matthew 22:11-13 — Entering without wedding clothes showed a rejection of the king’s provision and was punished.",
       "d": "medium"
     },
     {
@@ -19631,7 +19631,7 @@ const QB={
         "To build quickly"
       ],
       "a": 0,
-      "e": "Matthew 7:24-27.",
+      "e": "Matthew 7:24-27 — This parable teaches that security comes from building one's life on the foundation of Christ's words.",
       "d": "easy"
     },
     {
@@ -19643,7 +19643,7 @@ const QB={
         "Money"
       ],
       "a": 0,
-      "e": "Matthew 7:24.",
+      "e": "Matthew 7:24 — The rock is a metaphor for the stability found in hearing and actively obeying Jesus' commands.",
       "d": "easy"
     },
     {
@@ -19655,7 +19655,7 @@ const QB={
         "Traveling"
       ],
       "a": 0,
-      "e": "Matthew 24:46.",
+      "e": "Matthew 24:46 — The faithful servant is one found doing his assigned work when his master returns unexpectedly.",
       "d": "medium"
     },
     {
@@ -19667,7 +19667,7 @@ const QB={
         "Ignored him"
       ],
       "a": 0,
-      "e": "Matthew 24:51.",
+      "e": "Matthew 24:51 — Severe punishment awaited the unfaithful servant for his hypocrisy and mistreatment of others.",
       "d": "hard"
     },
     {
@@ -19679,7 +19679,7 @@ const QB={
         "Eaten"
       ],
       "a": 0,
-      "e": "Matthew 13:48.",
+      "e": "Matthew 13:48 — Once the net was full, the fishermen sorted the fish, keeping the good and discarding the bad.",
       "d": "easy"
     },
     {
@@ -19691,7 +19691,7 @@ const QB={
         "Growth of evil"
       ],
       "a": 0,
-      "e": "Matthew 13:33.",
+      "e": "Matthew 13:33 — Yeast illustrates the hidden yet transformative power of God’s Kingdom within the world.",
       "d": "medium"
     },
     {
@@ -19703,7 +19703,7 @@ const QB={
         "Autumn"
       ],
       "a": 0,
-      "e": "Matthew 24:32.",
+      "e": "Matthew 24:32 — The budding of the fig tree's leaves is a natural sign that the season of summer is approaching.",
       "d": "medium"
     },
     {
@@ -19715,7 +19715,7 @@ const QB={
         "The rich"
       ],
       "a": 0,
-      "e": "Matthew 25:34-40.",
+      "e": "Matthew 25:34-40 — The sheep represent the righteous who demonstrated their faith through acts of mercy to others.",
       "d": "easy"
     },
     {
@@ -19727,7 +19727,7 @@ const QB={
         "Outside"
       ],
       "a": 0,
-      "e": "Matthew 25:33.",
+      "e": "Matthew 25:33 — During the final judgment, the King places the goats on his left to signify their separation.",
       "d": "easy"
     },
     {
@@ -19739,7 +19739,7 @@ const QB={
         "Earth"
       ],
       "a": 0,
-      "e": "Luke 16:22.",
+      "e": "Luke 16:22 — After a life of suffering, Lazarus was comforted in the presence of Abraham in the afterlife.",
       "d": "easy"
     },
     {
@@ -19751,7 +19751,7 @@ const QB={
         "To be resurrected"
       ],
       "a": 0,
-      "e": "Luke 16:24.",
+      "e": "Luke 16:24 — In the torment of Hades, the rich man begged for even a tiny drop of water to cool his tongue.",
       "d": "easy"
     },
     {
@@ -19763,7 +19763,7 @@ const QB={
         "His friends"
       ],
       "a": 0,
-      "e": "Luke 16:28.",
+      "e": "Luke 16:28 — He hoped a warning from the dead would lead his five brothers to repent and avoid his fate.",
       "d": "medium"
     },
     {
@@ -19775,7 +19775,7 @@ const QB={
         "10 years"
       ],
       "a": 0,
-      "e": "Luke 13:7.",
+      "e": "Luke 13:7 — The owner’s patience had limits, as he had checked the tree for three years without finding fruit.",
       "d": "hard"
     },
     {
@@ -19787,7 +19787,7 @@ const QB={
         "Water it more"
       ],
       "a": 0,
-      "e": "Luke 13:8-9.",
+      "e": "Luke 13:8-9 — The gardener’s plea for one more year of care shows God’s desire to give us every chance to repent.",
       "d": "medium"
     },
     {
@@ -19799,7 +19799,7 @@ const QB={
         "Wine"
       ],
       "a": 0,
-      "e": "Luke 11:5.",
+      "e": "Luke 11:5 — The friend asked for three loaves at midnight to provide hospitality for a traveler who had arrived.",
       "d": "medium"
     },
     {
@@ -19811,7 +19811,7 @@ const QB={
         "Bread is important"
       ],
       "a": 0,
-      "e": "Luke 11:8-9.",
+      "e": "Luke 11:8-9 — The lesson is that we should be persistent and bold in our prayers, trusting God will answer.",
       "d": "easy"
     },
     {
@@ -19823,7 +19823,7 @@ const QB={
         "Asked for a raise"
       ],
       "a": 0,
-      "e": "Luke 16:5-7.",
+      "e": "Luke 16:5-7 — The steward reduced debts to make friends who would care for him after he lost his position.",
       "d": "hard"
     },
     {
@@ -19835,7 +19835,7 @@ const QB={
         "12"
       ],
       "a": 0,
-      "e": "Luke 19:13.",
+      "e": "Luke 19:13 — The nobleman gave each servant a mina to test their faithfulness and stewardship while he was gone.",
       "d": "medium"
     },
     {
@@ -19847,7 +19847,7 @@ const QB={
         "He was promoted"
       ],
       "a": 0,
-      "e": "Luke 19:24.",
+      "e": "Luke 19:24 — The lazy servant lost his mina to the one who had ten because he failed to use what he was given.",
       "d": "medium"
     },
     {
@@ -19859,7 +19859,7 @@ const QB={
         "By the man's effort"
       ],
       "a": 0,
-      "e": "Mark 4:27.",
+      "e": "Mark 4:27 — This parable shows that spiritual growth is a divine process that happens beyond human control.",
       "d": "hard"
     },
     {
@@ -19871,7 +19871,7 @@ const QB={
         "Buying good lamps"
       ],
       "a": 0,
-      "e": "Matthew 5:15.",
+      "e": "Matthew 5:15 — Just as a lamp is meant to be seen, believers should not hide their faith from the world.",
       "d": "easy"
     },
     {
@@ -19883,7 +19883,7 @@ const QB={
         "It shrinks"
       ],
       "a": 0,
-      "e": "Matthew 9:16.",
+      "e": "Matthew 9:16 — Putting new cloth on an old garment causes a worse tear because the new fabric will shrink.",
       "d": "medium"
     },
     {
@@ -19895,7 +19895,7 @@ const QB={
         "Nothing"
       ],
       "a": 0,
-      "e": "Matthew 9:17.",
+      "e": "Matthew 9:17 — New wine requires the flexibility of new wineskins to expand during the fermentation process.",
       "d": "medium"
     },
     {
@@ -19907,7 +19907,7 @@ const QB={
         "Children's behavior"
       ],
       "a": 0,
-      "e": "Matthew 11:16-19.",
+      "e": "Matthew 11:16-19 — Jesus used this to show that the people were stubborn and rejected God’s messengers regardless of style.",
       "d": "hard"
     },
     {
@@ -19919,7 +19919,7 @@ const QB={
         "Wait for him to leave"
       ],
       "a": 0,
-      "e": "Matthew 12:29.",
+      "e": "Matthew 12:29 — One must first bind the strong man, Satan, before his kingdom can be plundered and people freed.",
       "d": "medium"
     },
     {
@@ -19931,7 +19931,7 @@ const QB={
         "1"
       ],
       "a": 0,
-      "e": "Matthew 12:45.",
+      "e": "Matthew 12:45 — An empty heart without God invites even worse influences, making the person's state more dire.",
       "d": "hard"
     },
     {
@@ -19943,7 +19943,7 @@ const QB={
         "Old clothes"
       ],
       "a": 0,
-      "e": "Matthew 13:52.",
+      "e": "Matthew 13:52 — A scribe trained for the Kingdom understands how to use both old traditions and new revelations.",
       "d": "hard"
     },
     {
@@ -19955,7 +19955,7 @@ const QB={
         "The number 100"
       ],
       "a": 0,
-      "e": "Matthew 18:14.",
+      "e": "Matthew 18:14 — This emphasizes God’s shepherd-like heart, seeking to save every single person from perishing.",
       "d": "medium"
     },
     {
@@ -19967,7 +19967,7 @@ const QB={
         "The Net"
       ],
       "a": 0,
-      "e": "Luke 14:28.",
+      "e": "Luke 14:28 — The tower builder reminds us to consider the full commitment required to follow Jesus to the end.",
       "d": "medium"
     },
     {
@@ -19979,7 +19979,7 @@ const QB={
         "The route"
       ],
       "a": 0,
-      "e": "Luke 14:31.",
+      "e": "Luke 14:31 — A king must assess his strength to see if he can realistically face a much larger opposing force.",
       "d": "medium"
     },
     {
@@ -19991,7 +19991,7 @@ const QB={
         "Work is optional"
       ],
       "a": 0,
-      "e": "Luke 17:10.",
+      "e": "Luke 17:10 — We should remain humble, recognizing that serving God is our duty and not a cause for boasting.",
       "d": "hard"
     },
     {
@@ -20003,7 +20003,7 @@ const QB={
         "Outside"
       ],
       "a": 0,
-      "e": "Luke 14:10.",
+      "e": "Luke 14:10 — Taking the lowest seat allows for the possibility of being honored and moved up by the host.",
       "d": "easy"
     },
     {
@@ -20015,7 +20015,7 @@ const QB={
         "Luke"
       ],
       "a": 0,
-      "e": "John 10.",
+      "e": "John 10 — This entire chapter portrays Jesus as the Good Shepherd who provides and protects His flock.",
       "d": "easy"
     },
     {
@@ -20027,7 +20027,7 @@ const QB={
         "Feeds them once a week"
       ],
       "a": 0,
-      "e": "John 10:11.",
+      "e": "John 10:11 — The Good Shepherd is distinct because He is willing to sacrifice His own life for the sheep.",
       "d": "easy"
     },
     {
@@ -20039,7 +20039,7 @@ const QB={
         "The Holy Spirit"
       ],
       "a": 0,
-      "e": "John 15:1.",
+      "e": "John 15:1 — Jesus is the source of life, while the Father acts as the vine-dresser who tends to the branches.",
       "d": "medium"
     },
     {
@@ -20051,7 +20051,7 @@ const QB={
         "Watered more"
       ],
       "a": 0,
-      "e": "John 15:2, 6.",
+      "e": "John 15:2, 6 — Branches that do not stay connected to Jesus cannot live and are eventually removed and burned.",
       "d": "medium"
     },
     {
@@ -20063,7 +20063,7 @@ const QB={
         "Lack of understanding"
       ],
       "a": 0,
-      "e": "Matthew 13:22.",
+      "e": "Matthew 13:22 — The thorns represent how life's anxieties and the pursuit of wealth can stifle spiritual growth.",
       "d": "medium"
     },
     {
@@ -20075,7 +20075,7 @@ const QB={
         "Rich people"
       ],
       "a": 0,
-      "e": "Matthew 13:20-21.",
+      "e": "Matthew 13:20-21 — Rocky ground describes those who have a shallow faith that fails when trials and pressure arrive.",
       "d": "medium"
     },
     {
@@ -20087,7 +20087,7 @@ const QB={
         "Infinite"
       ],
       "a": 0,
-      "e": "Matthew 13:23.",
+      "e": "Matthew 13:23 — Good soil represents a heart that understands the Word and produces an abundant spiritual harvest.",
       "d": "medium"
     },
     {
@@ -20099,7 +20099,7 @@ const QB={
         "The danger of weeds"
       ],
       "a": 0,
-      "e": "Matthew 13:37-43.",
+      "e": "Matthew 13:37-43 — This parable warns that while good and evil coexist now, God will separate them in the final harvest.",
       "d": "medium"
     },
     {
@@ -20111,7 +20111,7 @@ const QB={
         "Preservation"
       ],
       "a": 0,
-      "e": "Matthew 5:13.",
+      "e": "Matthew 5:13 — Salt that loses its flavor is useless and represents a believer who no longer influences the world.",
       "d": "medium"
     },
     {
@@ -20123,7 +20123,7 @@ const QB={
         "Bread of Life Discourse"
       ],
       "a": 0,
-      "e": "Matthew 7:24-27.",
+      "e": "Matthew 7:24-27 — This conclusion to the Sermon on the Mount stresses the importance of acting on Jesus' words.",
       "d": "medium"
     },
     {
@@ -20135,7 +20135,7 @@ const QB={
         "They ate the food"
       ],
       "a": 0,
-      "e": "Matthew 22:6.",
+      "e": "Matthew 22:6 — The king’s servants were mistreated by those who were ungrateful for the banquet invitation.",
       "d": "hard"
     },
     {
@@ -20147,7 +20147,7 @@ const QB={
         "Visited it"
       ],
       "a": 0,
-      "e": "Matthew 22:7.",
+      "e": "Matthew 22:7 — The king’s severe judgment on the city reflects the consequences of rejecting God’s invitation.",
       "d": "hard"
     },
     {
@@ -20159,7 +20159,7 @@ const QB={
         "Perfume"
       ],
       "a": 0,
-      "e": "Matthew 25:4.",
+      "e": "Matthew 25:4 — The wise virgins were prepared for a long wait by carrying extra oil for their lamps.",
       "d": "easy"
     },
     {
@@ -20171,7 +20171,7 @@ const QB={
         "Both A and C"
       ],
       "a": 3,
-      "e": "Matthew 25:9.",
+      "e": "Matthew 25:9 — The wise virgins couldn't share their oil because there wouldn't be enough to keep any lamps lit.",
       "d": "medium"
     },
     {
@@ -20183,7 +20183,7 @@ const QB={
         "The end of the week"
       ],
       "a": 0,
-      "e": "Matthew 25:13.",
+      "e": "Matthew 25:13 — Constant watchfulness is required because the exact timing of Christ's return remains a mystery.",
       "d": "easy"
     },
     {
@@ -20195,7 +20195,7 @@ const QB={
         "Freedom"
       ],
       "a": 0,
-      "e": "Matthew 25:21.",
+      "e": "Matthew 25:21 — Faithfulness in small tasks leads to being entrusted with much greater authority and joy.",
       "d": "medium"
     },
     {
@@ -20207,7 +20207,7 @@ const QB={
         "The wilderness"
       ],
       "a": 0,
-      "e": "Matthew 25:30.",
+      "e": "Matthew 25:30 — Outer darkness represents the sorrow of being cast out from the presence and light of God.",
       "d": "medium"
     },
     {
@@ -20219,7 +20219,7 @@ const QB={
         "Financial status"
       ],
       "a": 0,
-      "e": "Matthew 25:35-40.",
+      "e": "Matthew 25:35-40 — Jesus teaches that serving the needy is the primary way we show our love and service to Him.",
       "d": "easy"
     },
     {
@@ -20231,7 +20231,7 @@ const QB={
         "Everyone living nearby"
       ],
       "a": 0,
-      "e": "Luke 10:36-37.",
+      "e": "Luke 10:36-37 — The Samaritan proved to be a neighbor by showing active mercy to someone in desperate need.",
       "d": "easy"
     },
     {
@@ -20243,7 +20243,7 @@ const QB={
         "Bread is a gift"
       ],
       "a": 0,
-      "e": "Luke 11:9-10.",
+      "e": "Luke 11:9-10 — Jesus encourages us to be bold in prayer, promising that God hears and responds to those who seek.",
       "d": "medium"
     },
     {
@@ -20255,7 +20255,7 @@ const QB={
         "The disciples"
       ],
       "a": 0,
-      "e": "Luke 12:16.",
+      "e": "Luke 12:16 — The rich man’s success was evident in his harvest, but he failed to be rich toward God.",
       "d": "easy"
     },
     {
@@ -20267,7 +20267,7 @@ const QB={
         "Inviting neighbors"
       ],
       "a": 0,
-      "e": "Luke 12:37-38.",
+      "e": "Luke 12:37-38 — The master’s return will bring blessing to those found vigilant and prepared at any hour.",
       "d": "medium"
     },
     {
@@ -20279,7 +20279,7 @@ const QB={
         "Forgot, lost way, no clothes"
       ],
       "a": 0,
-      "e": "Luke 14:18-20.",
+      "e": "Luke 14:18-20 — The guests made excuses based on property, work, and marriage to avoid the master's banquet.",
       "d": "hard"
     },
     {
@@ -20291,7 +20291,7 @@ const QB={
         "1"
       ],
       "a": 0,
-      "e": "Luke 15:8.",
+      "e": "Luke 15:8 — The woman’s diligent search for one coin shows God’s intense desire to find and save the lost.",
       "d": "medium"
     },
     {
@@ -20303,7 +20303,7 @@ const QB={
         "Hello father"
       ],
       "a": 0,
-      "e": "Luke 15:21.",
+      "e": "Luke 15:21 — The son’s confession showed his repentance and his realization that he had no claim on his father.",
       "d": "easy"
     },
     {
@@ -20315,7 +20315,7 @@ const QB={
         "Asked for the money back"
       ],
       "a": 0,
-      "e": "Luke 15:20.",
+      "e": "Luke 15:20 — The father’s act of running to his son was a radical display of love and immediate forgiveness.",
       "d": "easy"
     },
     {
@@ -20327,7 +20327,7 @@ const QB={
         "Hugged his brother"
       ],
       "a": 0,
-      "e": "Luke 15:28.",
+      "e": "Luke 15:28 — The older brother’s anger revealed his own self-righteousness and lack of love for his sibling.",
       "d": "medium"
     },
     {
@@ -20339,7 +20339,7 @@ const QB={
         "Being too kind"
       ],
       "a": 0,
-      "e": "Luke 16:1.",
+      "e": "Luke 16:1 — The steward was accused of wasting assets, leading to the master's decision to remove him from office.",
       "d": "hard"
     },
     {
@@ -20351,7 +20351,7 @@ const QB={
         "Silk"
       ],
       "a": 0,
-      "e": "Luke 16:19.",
+      "e": "Luke 16:19 — The rich man lived in luxury and ignored the suffering right at his doorstep every single day.",
       "d": "hard"
     },
     {
@@ -20363,7 +20363,7 @@ const QB={
         "A wall"
       ],
       "a": 0,
-      "e": "Luke 16:20.",
+      "e": "Luke 16:20 — Lazarus was a beggar who suffered in poverty and sickness while the rich man lived in splendor.",
       "d": "easy"
     },
     {
@@ -20375,7 +20375,7 @@ const QB={
         "Chased him"
       ],
       "a": 0,
-      "e": "Luke 16:21.",
+      "e": "Luke 16:21 — The mention of dogs licking his sores highlights Lazarus’s extreme vulnerability and low state.",
       "d": "medium"
     },
     {
@@ -20387,7 +20387,7 @@ const QB={
         "A wall"
       ],
       "a": 0,
-      "e": "Luke 16:26.",
+      "e": "Luke 16:26 — The chasm symbolizes the finality of one’s state after death, which cannot be changed or crossed.",
       "d": "medium"
     },
     {
@@ -20399,7 +20399,7 @@ const QB={
         "A Roman"
       ],
       "a": 0,
-      "e": "Luke 18:2.",
+      "e": "Luke 18:2 — The widow sought justice against an adversary, showing persistence in the face of an uncaring judge.",
       "d": "easy"
     },
     {
@@ -20411,7 +20411,7 @@ const QB={
         "In a cave"
       ],
       "a": 0,
-      "e": "Luke 18:10.",
+      "e": "Luke 18:10 — Jesus used these two different men to contrast prideful legalism with humble, repentant faith.",
       "d": "easy"
     },
     {
@@ -20423,7 +20423,7 @@ const QB={
         "Gave money"
       ],
       "a": 0,
-      "e": "Luke 18:13.",
+      "e": "Luke 18:13 — His humble prayer and posture showed he recognized his own sinfulness and need for God's grace.",
       "d": "medium"
     },
     {
@@ -20435,7 +20435,7 @@ const QB={
         "12"
       ],
       "a": 0,
-      "e": "Luke 19:13.",
+      "e": "Luke 19:13 — Ten servants were given minas to manage, representing the responsibility to serve during the King’s absence.",
       "d": "medium"
     },
     {
@@ -20447,7 +20447,7 @@ const QB={
         "He was a Roman"
       ],
       "a": 0,
-      "e": "Luke 19:14.",
+      "e": "Luke 19:14 — The hatred of the citizens for the nobleman represents the world's rejection of Christ's kingship.",
       "d": "hard"
     },
     {
@@ -20459,7 +20459,7 @@ const QB={
         "Paid him"
       ],
       "a": 0,
-      "e": "Matthew 21:39.",
+      "e": "Matthew 21:39 — By killing the son, the tenants foolishly thought they could seize the inheritance for themselves.",
       "d": "medium"
     },
     {
@@ -20471,7 +20471,7 @@ const QB={
         "The Sower"
       ],
       "a": 0,
-      "e": "Luke 14:7-11.",
+      "e": "Luke 14:7-11 — Jesus advised humility at feasts, noting that those who exalt themselves will be humbled by God.",
       "d": "medium"
     },
     {
@@ -20483,7 +20483,7 @@ const QB={
         "The ground"
       ],
       "a": 0,
-      "e": "Matthew 5:13.",
+      "e": "Matthew 5:13 — As the salt of the earth, believers are called to be a preserving and seasoning force in society.",
       "d": "easy"
     },
     {
@@ -20495,7 +20495,7 @@ const QB={
         "Gardening"
       ],
       "a": 0,
-      "e": "Matthew 24:32-33.",
+      "e": "Matthew 24:32-33 — Jesus told us to learn from the fig tree so we can recognize the signs of the end times.",
       "d": "medium"
     },
     {
@@ -20519,7 +20519,7 @@ const QB={
         "Heaven"
       ],
       "a": 0,
-      "e": "Traditional interpretation.",
+      "e": "Traditional interpretation — The sea represents the world from which all kinds of people are gathered for judgment.",
       "d": "hard"
     },
     {
@@ -20531,7 +20531,7 @@ const QB={
         "David"
       ],
       "a": 0,
-      "e": "Matthew 12:29.",
+      "e": "Matthew 12:29 — Binding the strong man refers to Christ's power to overcome Satan and reclaim those he held.",
       "d": "medium"
     },
     {
@@ -20543,7 +20543,7 @@ const QB={
         "A disciple"
       ],
       "a": 0,
-      "e": "Matthew 13:45.",
+      "e": "Matthew 13:45 — The merchant’s search for fine pearls illustrates a person seeking truth and finding it in the Kingdom.",
       "d": "easy"
     },
     {
@@ -20555,7 +20555,7 @@ const QB={
         "A child"
       ],
       "a": 0,
-      "e": "Matthew 13:44.",
+      "e": "Matthew 13:44 — Jesus describes the kingdom of heaven as a treasure hidden in a field, found by a man.",
       "d": "easy"
     },
     {
@@ -20953,7 +20953,7 @@ const QB={
         "The Thessalonians"
       ],
       "a": 0,
-      "e": "Acts 1:1.",
+      "e": "Acts 1:1 — Luke addresses his second account to Theophilus, continuing the narrative of Jesus' work.",
       "d": "easy"
     },
     {
@@ -20965,7 +20965,7 @@ const QB={
         "7"
       ],
       "a": 0,
-      "e": "Acts 1:3.",
+      "e": "Acts 1:3 — After His suffering, Jesus presented Himself to the apostles over a period of forty days.",
       "d": "easy"
     },
     {
@@ -20989,7 +20989,7 @@ const QB={
         "Paul"
       ],
       "a": 0,
-      "e": "Acts 1:26.",
+      "e": "Acts 1:26 — The apostles cast lots to choose between two men, and the lot fell on Matthias to join them.",
       "d": "easy"
     },
     {
@@ -21001,7 +21001,7 @@ const QB={
         "Luke"
       ],
       "a": 0,
-      "e": "Acts 1:23.",
+      "e": "Acts 1:23 — Joseph, also known as Barsabbas, was given the surname Justus when proposed as an apostle.",
       "d": "hard"
     },
     {
@@ -21013,7 +21013,7 @@ const QB={
         "Day of Atonement"
       ],
       "a": 0,
-      "e": "Acts 2:1.",
+      "e": "Acts 2:1 — The Holy Spirit came as promised when the day of Pentecost had fully arrived for the believers.",
       "d": "easy"
     },
     {
@@ -21025,7 +21025,7 @@ const QB={
         "A bright star"
       ],
       "a": 0,
-      "e": "Acts 2:2-3.",
+      "e": "Acts 2:2-3 — A sound like a rushing wind filled the house and tongues of fire rested on each of them.",
       "d": "easy"
     },
     {
@@ -21037,7 +21037,7 @@ const QB={
         "Malachi"
       ],
       "a": 0,
-      "e": "Acts 2:16-21.",
+      "e": "Acts 2:16 — Peter explained the miraculous events by quoting the prophet Joel regarding God's Spirit.",
       "d": "medium"
     },
     {
@@ -21049,7 +21049,7 @@ const QB={
         "5,000"
       ],
       "a": 0,
-      "e": "Acts 2:41.",
+      "e": "Acts 2:41 — Those who accepted Peter's message were baptized, and about three thousand were added that day.",
       "d": "easy"
     },
     {
@@ -21061,7 +21061,7 @@ const QB={
         "In a house"
       ],
       "a": 0,
-      "e": "Acts 3:2.",
+      "e": "Acts 3:2 — A man lame from birth was placed daily at the temple gate called Beautiful to ask for alms.",
       "d": "easy"
     },
     {
@@ -21073,7 +21073,7 @@ const QB={
         "I have no money"
       ],
       "a": 0,
-      "e": "Acts 3:6.",
+      "e": "Acts 3:6 — Peter had no money but gave the man healing in the name of Jesus Christ of Nazareth.",
       "d": "easy"
     },
     {
@@ -21085,7 +21085,7 @@ const QB={
         "Agrippa and Bernice"
       ],
       "a": 0,
-      "e": "Acts 5:1-11.",
+      "e": "Acts 5:1-11 — Ananias and his wife Sapphira died after lying to the Holy Spirit about their land's price.",
       "d": "easy"
     },
     {
@@ -21097,7 +21097,7 @@ const QB={
         "Caiaphas"
       ],
       "a": 0,
-      "e": "Acts 5:34-39.",
+      "e": "Acts 5:34-39 — Gamaliel, a respected teacher of the law, cautioned the council against fighting God.",
       "d": "medium"
     },
     {
@@ -21109,7 +21109,7 @@ const QB={
         "10"
       ],
       "a": 0,
-      "e": "Acts 6:3.",
+      "e": "Acts 6:3 — The apostles instructed the believers to choose seven men of good repute to handle the food.",
       "d": "medium"
     },
     {
@@ -21121,7 +21121,7 @@ const QB={
         "Paul"
       ],
       "a": 0,
-      "e": "Acts 7.",
+      "e": "Acts 7:59-60 — Stephen became the first martyr as he was stoned while calling on the Lord to receive him.",
       "d": "easy"
     },
     {
@@ -21133,7 +21133,7 @@ const QB={
         "The empty tomb"
       ],
       "a": 0,
-      "e": "Acts 7:55-56.",
+      "e": "Acts 7:55-56 — Stephen looked up and saw the glory of God and Jesus standing at the Father's right hand.",
       "d": "medium"
     },
     {
@@ -21145,7 +21145,7 @@ const QB={
         "Pilate"
       ],
       "a": 0,
-      "e": "Acts 7:58; 8:1.",
+      "e": "Acts 8:1 — Saul was there, giving full approval to the stoning of Stephen by the witnesses.",
       "d": "easy"
     },
     {
@@ -21157,7 +21157,7 @@ const QB={
         "Antioch"
       ],
       "a": 0,
-      "e": "Acts 9:1-3.",
+      "e": "Acts 9:3 — As Saul neared Damascus to arrest Christians, a light from heaven suddenly flashed around him.",
       "d": "easy"
     },
     {
@@ -21169,7 +21169,7 @@ const QB={
         "1"
       ],
       "a": 0,
-      "e": "Acts 9:9.",
+      "e": "Acts 9:9 — For three days Saul was unable to see anything and did not eat or drink any water or food.",
       "d": "easy"
     },
     {
@@ -21181,7 +21181,7 @@ const QB={
         "John"
       ],
       "a": 0,
-      "e": "Acts 9:10-17.",
+      "e": "Acts 9:17 — The Lord sent Ananias to lay hands on Saul so that he might regain his sight and be filled.",
       "d": "medium"
     },
     {
@@ -21193,7 +21193,7 @@ const QB={
         "A boat"
       ],
       "a": 0,
-      "e": "Acts 9:25.",
+      "e": "Acts 9:25 — Saul's followers took him by night and lowered him in a basket through an opening in the wall.",
       "d": "medium"
     },
     {
@@ -21205,7 +21205,7 @@ const QB={
         "Priscilla"
       ],
       "a": 0,
-      "e": "Acts 9:36-41.",
+      "e": "Acts 9:40 — Peter knelt down, prayed, and told Tabitha to get up, and she opened her eyes and sat up.",
       "d": "medium"
     },
     {
@@ -21217,7 +21217,7 @@ const QB={
         "Marcus"
       ],
       "a": 0,
-      "e": "Acts 10:1.",
+      "e": "Acts 10:1 — Cornelius was a centurion in the Italian Regiment who was devout and feared God.",
       "d": "easy"
     },
     {
@@ -21229,7 +21229,7 @@ const QB={
         "The Temple destroyed"
       ],
       "a": 0,
-      "e": "Acts 10:11-12.",
+      "e": "Acts 10:11-12 — Peter saw heaven open and a large sheet descending with all kinds of animals and birds.",
       "d": "easy"
     },
     {
@@ -21241,7 +21241,7 @@ const QB={
         "A warning of hunger"
       ],
       "a": 0,
-      "e": "Acts 10:15, 28.",
+      "e": "Acts 10:28 — Through the vision, God showed Peter that he should not call any person common or unclean.",
       "d": "medium"
     },
     {
@@ -21253,7 +21253,7 @@ const QB={
         "Damascus"
       ],
       "a": 0,
-      "e": "Acts 11:26.",
+      "e": "Acts 11:26 — Barnabas and Saul taught many people in Antioch, where the name Christians was first used.",
       "d": "easy"
     },
     {
@@ -21265,7 +21265,7 @@ const QB={
         "Thomas"
       ],
       "a": 0,
-      "e": "Acts 12:2.",
+      "e": "Acts 12:2 — King Herod ordered that James, the brother of John, be put to death with the sword.",
       "d": "medium"
     },
     {
@@ -21277,7 +21277,7 @@ const QB={
         "The doors were left open"
       ],
       "a": 0,
-      "e": "Acts 12:7-10.",
+      "e": "Acts 12:7-10 — An angel of the Lord appeared, struck off Peter's chains, and led him past the guards.",
       "d": "easy"
     },
     {
@@ -21289,7 +21289,7 @@ const QB={
         "Mary"
       ],
       "a": 0,
-      "e": "Acts 12:13-14.",
+      "e": "Acts 12:14 — Rhoda recognized Peter's voice and was so overjoyed she ran inside without opening the gate.",
       "d": "medium"
     },
     {
@@ -21301,7 +21301,7 @@ const QB={
         "Luke"
       ],
       "a": 0,
-      "e": "Acts 13:2-4.",
+      "e": "Acts 13:2 — The Holy Spirit set apart Barnabas and Saul for the work to which He had called them.",
       "d": "easy"
     },
     {
@@ -21313,7 +21313,7 @@ const QB={
         "Athens"
       ],
       "a": 0,
-      "e": "Acts 13:1-3.",
+      "e": "Acts 13:3 — After fasting and praying, the church in Antioch placed their hands on them and sent them off.",
       "d": "medium"
     },
     {
@@ -21325,7 +21325,7 @@ const QB={
         "Philetus"
       ],
       "a": 0,
-      "e": "Acts 13:8-11.",
+      "e": "Acts 13:8-11 — Paul blinded Elymas the sorcerer for trying to turn the proconsul away from the faith.",
       "d": "hard"
     },
     {
@@ -21337,7 +21337,7 @@ const QB={
         "Timothy"
       ],
       "a": 0,
-      "e": "Acts 13:13.",
+      "e": "Acts 13:13 — When Paul and his companions set sail from Paphos, John Mark left them to return home.",
       "d": "medium"
     },
     {
@@ -21349,7 +21349,7 @@ const QB={
         "Kings"
       ],
       "a": 0,
-      "e": "Acts 14:11-12.",
+      "e": "Acts 14:12 — The people called Barnabas Zeus and Paul Hermes because he was the chief speaker.",
       "d": "medium"
     },
     {
@@ -21361,7 +21361,7 @@ const QB={
         "The divinity of Christ"
       ],
       "a": 0,
-      "e": "Acts 15:1-5.",
+      "e": "Acts 15:5 — Certain believers argued that Gentile converts must be circumcised and follow the Law.",
       "d": "medium"
     },
     {
@@ -21373,7 +21373,7 @@ const QB={
         "Peter"
       ],
       "a": 0,
-      "e": "Acts 15:40.",
+      "e": "Acts 15:40 — Paul chose Silas and left, commended by the believers to the grace of the Lord.",
       "d": "medium"
     },
     {
@@ -21385,7 +21385,7 @@ const QB={
         "God told them to"
       ],
       "a": 0,
-      "e": "Acts 15:37-39.",
+      "e": "Acts 15:39 — They had such a sharp disagreement about taking John Mark that they parted company.",
       "d": "medium"
     },
     {
@@ -21397,7 +21397,7 @@ const QB={
         "Tarsus"
       ],
       "a": 0,
-      "e": "Acts 16:1.",
+      "e": "Acts 16:1 — Paul came to Derbe and then to Lystra, where a disciple named Timothy lived.",
       "d": "hard"
     },
     {
@@ -21409,7 +21409,7 @@ const QB={
         "Samaritan"
       ],
       "a": 0,
-      "e": "Acts 16:1.",
+      "e": "Acts 16:1 — Timothy's mother was a Jewess and a believer, while his father was a Greek.",
       "d": "medium"
     },
     {
@@ -21421,7 +21421,7 @@ const QB={
         "He heard there were many Jews there"
       ],
       "a": 0,
-      "e": "Acts 16:9-10.",
+      "e": "Acts 16:9 — Paul had a vision of a man from Macedonia standing and begging him to come over and help.",
       "d": "easy"
     },
     {
@@ -21433,7 +21433,7 @@ const QB={
         "Chloe"
       ],
       "a": 0,
-      "e": "Acts 16:14-15.",
+      "e": "Acts 16:14 — Lydia, a dealer in purple cloth, opened her heart to Paul's message and was baptized.",
       "d": "medium"
     },
     {
@@ -21445,7 +21445,7 @@ const QB={
         "An angel appeared"
       ],
       "a": 0,
-      "e": "Acts 16:25-26.",
+      "e": "Acts 16:26 — A violent earthquake shook the prison foundations, and immediately all the doors flew open.",
       "d": "easy"
     },
     {
@@ -21457,7 +21457,7 @@ const QB={
         "Why are you singing?"
       ],
       "a": 0,
-      "e": "Acts 16:30.",
+      "e": "Acts 16:30 — The jailer fell trembling before them and asked what he must do to be saved.",
       "d": "easy"
     },
     {
@@ -21469,7 +21469,7 @@ const QB={
         "The Corinthians"
       ],
       "a": 0,
-      "e": "Acts 17:11.",
+      "e": "Acts 17:11 — The Bereans were of more noble character because they examined the Scriptures every day.",
       "d": "medium"
     },
     {
@@ -21481,7 +21481,7 @@ const QB={
         "The Agora in Corinth"
       ],
       "a": 0,
-      "e": "Acts 17:22-23.",
+      "e": "Acts 17:23 — Paul noticed an altar to an unknown god and used it to introduce the true God to Athens.",
       "d": "medium"
     },
     {
@@ -21493,7 +21493,7 @@ const QB={
         "Physicians"
       ],
       "a": 0,
-      "e": "Acts 18:2-3.",
+      "e": "Acts 18:3 — Because Paul was a tentmaker as they were, he stayed and worked with Aquila and Priscilla.",
       "d": "easy"
     },
     {
@@ -21505,7 +21505,7 @@ const QB={
         "2 years"
       ],
       "a": 0,
-      "e": "Acts 18:11.",
+      "e": "Acts 18:11 — Paul stayed in Corinth for a year and a half, teaching the word of God among them.",
       "d": "hard"
     },
     {
@@ -21517,7 +21517,7 @@ const QB={
         "Titus"
       ],
       "a": 0,
-      "e": "Acts 18:24-25.",
+      "e": "Acts 18:24-25 — Apollos was an eloquent man with a thorough knowledge of the Scriptures who spoke boldly.",
       "d": "medium"
     },
     {
@@ -21529,7 +21529,7 @@ const QB={
         "6 months"
       ],
       "a": 0,
-      "e": "Acts 19:8-10; 20:31.",
+      "e": "Acts 19:10 — Paul had discussions daily in the lecture hall of Tyrannus for two years.",
       "d": "hard"
     },
     {
@@ -21541,7 +21541,7 @@ const QB={
         "Gallio"
       ],
       "a": 0,
-      "e": "Acts 19:24-27.",
+      "e": "Acts 19:24-27 — Demetrius feared Paul's preaching would destroy the business of making silver shrines.",
       "d": "medium"
     },
     {
@@ -21553,7 +21553,7 @@ const QB={
         "Mark"
       ],
       "a": 0,
-      "e": "Acts 20:9.",
+      "e": "Acts 20:9 — Eutychus fell into a deep sleep while Paul spoke and fell to the ground from the third story.",
       "d": "easy"
     },
     {
@@ -21565,7 +21565,7 @@ const QB={
         "He was unhurt"
       ],
       "a": 0,
-      "e": "Acts 20:9-12.",
+      "e": "Acts 20:10-12 — Paul threw himself on the young man and he was found to be alive, bringing great comfort.",
       "d": "easy"
     },
     {
@@ -21577,7 +21577,7 @@ const QB={
         "Peter"
       ],
       "a": 0,
-      "e": "Acts 21:10-11.",
+      "e": "Acts 21:11 — Agabus took Paul's belt, bound his own hands and feet, and prophesied Paul's arrest.",
       "d": "medium"
     },
     {
@@ -21589,7 +21589,7 @@ const QB={
         "He was stealing"
       ],
       "a": 0,
-      "e": "Acts 21:27-29.",
+      "e": "Acts 21:28 — They shouted that Paul had brought Greeks into the temple and defiled the holy place.",
       "d": "medium"
     },
     {
@@ -21601,7 +21601,7 @@ const QB={
         "His friendship with the governor"
       ],
       "a": 0,
-      "e": "Acts 22:25-29.",
+      "e": "Acts 22:25 — Paul asked if it was legal to flog a Roman citizen who hadn't even been found guilty.",
       "d": "medium"
     },
     {
@@ -21613,7 +21613,7 @@ const QB={
         "Agrippa"
       ],
       "a": 0,
-      "e": "Acts 23:23-24; 24:1.",
+      "e": "Acts 24:1 — Five days later, the high priest went down to Caesarea to state their case against Paul.",
       "d": "medium"
     },
     {
@@ -21625,7 +21625,7 @@ const QB={
         "Felix"
       ],
       "a": 0,
-      "e": "Acts 24:27; 25:1.",
+      "e": "Acts 24:27 — Felix was succeeded by Porcius Festus, but left Paul in prison as a favor to the Jews.",
       "d": "hard"
     },
     {
@@ -21637,7 +21637,7 @@ const QB={
         "The High Priest"
       ],
       "a": 0,
-      "e": "Acts 25:11.",
+      "e": "Acts 25:11 — Paul exercised his right as a Roman citizen and appealed to have his case heard by Caesar.",
       "d": "easy"
     },
     {
@@ -21649,7 +21649,7 @@ const QB={
         "Caesar"
       ],
       "a": 0,
-      "e": "Acts 26:28.",
+      "e": "Acts 26:28 — King Agrippa asked Paul if he thought he could persuade him to be a Christian so quickly.",
       "d": "medium"
     },
     {
@@ -21661,7 +21661,7 @@ const QB={
         "Ephesus"
       ],
       "a": 0,
-      "e": "Acts 27:1.",
+      "e": "Acts 27:1 — When it was decided they would sail for Italy, Paul and other prisoners were handed over.",
       "d": "easy"
     },
     {
@@ -21673,7 +21673,7 @@ const QB={
         "Sicily"
       ],
       "a": 0,
-      "e": "Acts 28:1.",
+      "e": "Acts 28:1 — Once safely on shore, the survivors learned that the island was called Malta.",
       "d": "medium"
     },
     {
@@ -21685,7 +21685,7 @@ const QB={
         "He got lost"
       ],
       "a": 0,
-      "e": "Acts 28:3-5.",
+      "e": "Acts 28:3-5 — A viper fastened itself on Paul's hand, but he shook it off and suffered no ill effects.",
       "d": "easy"
     },
     {
@@ -21697,7 +21697,7 @@ const QB={
         "The second coming"
       ],
       "a": 0,
-      "e": "Acts 28:30-31.",
+      "e": "Acts 28:30-31 — Paul stayed in his own rented house for two years, preaching about the kingdom of God.",
       "d": "medium"
     },
     {
@@ -21709,7 +21709,7 @@ const QB={
         "5"
       ],
       "a": 0,
-      "e": "Acts 13-21 record three main journeys.",
+      "e": "Acts 13-21 — The Book of Acts details three primary journeys Paul took to spread the Gospel.",
       "d": "medium"
     },
     {
@@ -21721,7 +21721,7 @@ const QB={
         "Barnabas"
       ],
       "a": 0,
-      "e": "Acts 21:8-9.",
+      "e": "Acts 21:8-9 — Philip the evangelist, one of the Seven, had four unmarried daughters who prophesied.",
       "d": "hard"
     },
     {
@@ -21733,7 +21733,7 @@ const QB={
         "Jonathan"
       ],
       "a": 0,
-      "e": "Acts 23:2.",
+      "e": "Acts 23:2 — The high priest Ananias ordered those standing near Paul to strike him on the mouth.",
       "d": "hard"
     },
     {
@@ -21745,7 +21745,7 @@ const QB={
         "Antioch"
       ],
       "a": 0,
-      "e": "Acts 22:3.",
+      "e": "Acts 22:3 — Paul stated that he was a Jew, born in Tarsus of Cilicia, but brought up in Jerusalem.",
       "d": "easy"
     },
     {
@@ -21757,7 +21757,7 @@ const QB={
         "Hera"
       ],
       "a": 0,
-      "e": "Acts 19:27.",
+      "e": "Acts 19:27 — Demetrius worried the temple of the great goddess Artemis would be discredited.",
       "d": "medium"
     },
     {
@@ -21769,7 +21769,7 @@ const QB={
         "Sons of Eli"
       ],
       "a": 0,
-      "e": "Acts 19:14.",
+      "e": "Acts 19:14 — Seven sons of Sceva, a Jewish chief priest, were trying to drive out evil spirits.",
       "d": "hard"
     },
     {
@@ -21781,7 +21781,7 @@ const QB={
         "A prophet"
       ],
       "a": 0,
-      "e": "Acts 28:4.",
+      "e": "Acts 28:4 — Seeing the snake on Paul's hand, the islanders thought he must be a murderer.",
       "d": "medium"
     },
     {
@@ -21793,7 +21793,7 @@ const QB={
         "A ghost"
       ],
       "a": 0,
-      "e": "Acts 28:6.",
+      "e": "Acts 28:6 — After waiting a long time and seeing nothing happen to him, they said he was a god.",
       "d": "medium"
     },
     {
@@ -21805,7 +21805,7 @@ const QB={
         "Gallio"
       ],
       "a": 0,
-      "e": "Acts 27:1.",
+      "e": "Acts 27:1 — Paul and some other prisoners were delivered to a centurion named Julius.",
       "d": "hard"
     },
     {
@@ -21817,7 +21817,7 @@ const QB={
         "Felix"
       ],
       "a": 0,
-      "e": "Acts 28:7-8.",
+      "e": "Acts 28:7-8 — The father of Publius, the chief official of the island, was healed by Paul's prayers.",
       "d": "hard"
     },
     {
@@ -21829,7 +21829,7 @@ const QB={
         "Three years"
       ],
       "a": 0,
-      "e": "Acts 28:30.",
+      "e": "Acts 28:30 — For two whole years Paul stayed there in his own rented house and welcomed all.",
       "d": "medium"
     },
     {
@@ -21841,7 +21841,7 @@ const QB={
         "Stephen"
       ],
       "a": 0,
-      "e": "Acts 4:36.",
+      "e": "Acts 4:36 — Joseph, a Levite from Cyprus, was called Barnabas by the apostles, meaning Son of Encouragement.",
       "d": "easy"
     },
     {
@@ -21853,7 +21853,7 @@ const QB={
         "A shop"
       ],
       "a": 0,
-      "e": "Acts 4:37.",
+      "e": "Acts 4:37 — Barnabas sold a field he owned and brought the money and put it at the apostles' feet.",
       "d": "medium"
     },
     {
@@ -21865,7 +21865,7 @@ const QB={
         "Elijah"
       ],
       "a": 0,
-      "e": "Acts 8:30.",
+      "e": "Acts 8:30 — Philip ran up to the chariot and heard the man reading Isaiah the prophet.",
       "d": "easy"
     },
     {
@@ -21877,7 +21877,7 @@ const QB={
         "1"
       ],
       "a": 0,
-      "e": "Acts 8:32-33 quotes Isaiah 53.",
+      "e": "Acts 8:32-33 — The passage of Scripture the eunuch was reading was from Isaiah chapter 53.",
       "d": "hard"
     },
     {
@@ -21889,7 +21889,7 @@ const QB={
         "Antioch"
       ],
       "a": 0,
-      "e": "Acts 8:40.",
+      "e": "Acts 8:40 — Philip appeared at Azotus and traveled about, preaching the gospel in all the towns.",
       "d": "hard"
     },
     {
@@ -21901,7 +21901,7 @@ const QB={
         "High Street"
       ],
       "a": 0,
-      "e": "Acts 9:11.",
+      "e": "Acts 9:11 — The Lord told Ananias to go to the house of Judas on Straight Street to find Saul.",
       "d": "medium"
     },
     {
@@ -21925,7 +21925,7 @@ const QB={
         "Tabitha"
       ],
       "a": 0,
-      "e": "Acts 16:16.",
+      "e": "Acts 16:16 — A female slave who had a spirit by which she predicted the future met Paul and Silas.",
       "d": "medium"
     },
     {
@@ -21937,7 +21937,7 @@ const QB={
         "Cried"
       ],
       "a": 0,
-      "e": "Acts 16:25.",
+      "e": "Acts 16:25 — About midnight Paul and Silas were praying and singing hymns to God in the jail.",
       "d": "easy"
     },
     {
@@ -21949,7 +21949,7 @@ const QB={
         "Ephesus"
       ],
       "a": 0,
-      "e": "Acts 17:23.",
+      "e": "Acts 17:23 — While walking through Athens, Paul saw an altar with the inscription TO AN UNKNOWN GOD.",
       "d": "easy"
     },
     {
@@ -21961,7 +21961,7 @@ const QB={
         "Gallio"
       ],
       "a": 0,
-      "e": "Acts 18:8.",
+      "e": "Acts 18:8 — Crispus, the synagogue leader, and his entire household believed in the Lord.",
       "d": "hard"
     },
     {
@@ -21973,7 +21973,7 @@ const QB={
         "Pilate"
       ],
       "a": 0,
-      "e": "Acts 18:12-16.",
+      "e": "Acts 18:12-16 — Gallio told the Jews he would not be a judge of such matters and ejected them.",
       "d": "hard"
     },
     {
@@ -21985,7 +21985,7 @@ const QB={
         "Gave them to Paul"
       ],
       "a": 0,
-      "e": "Acts 19:19.",
+      "e": "Acts 19:19 — Those who had practiced sorcery brought their scrolls together and burned them publicly.",
       "d": "medium"
     },
     {
@@ -21997,7 +21997,7 @@ const QB={
         "500 gold coins"
       ],
       "a": 0,
-      "e": "Acts 19:19.",
+      "e": "Acts 19:19 — When they calculated the value of the scrolls, the total came to fifty thousand drachmas.",
       "d": "hard"
     },
     {
@@ -22009,7 +22009,7 @@ const QB={
         "Tyre"
       ],
       "a": 0,
-      "e": "Acts 20:17.",
+      "e": "Acts 20:17 — From Miletus, Paul sent to Ephesus for the elders of the church to come to him.",
       "d": "hard"
     },
     {
@@ -22021,7 +22021,7 @@ const QB={
         "3"
       ],
       "a": 0,
-      "e": "Acts 21:23.",
+      "e": "Acts 21:23 — There were four men with Paul who had made a vow and needed to be purified.",
       "d": "hard"
     },
     {
@@ -22033,7 +22033,7 @@ const QB={
         "Nothing"
       ],
       "a": 0,
-      "e": "Acts 23:3.",
+      "e": "Acts 23:3 — Paul called Ananias a whitewashed wall for breaking the law while judging him.",
       "d": "hard"
     },
     {
@@ -22057,7 +22057,7 @@ const QB={
         "Sceva"
       ],
       "a": 0,
-      "e": "Acts 24:1.",
+      "e": "Acts 24:1 — The high priest brought a lawyer named Tertullus to bring charges against Paul.",
       "d": "hard"
     },
     {
@@ -22069,7 +22069,7 @@ const QB={
         "10"
       ],
       "a": 0,
-      "e": "Acts 24:1.",
+      "e": "Acts 24:1 — Five days after Paul arrived in Caesarea, the high priest came to present his case.",
       "d": "hard"
     },
     {
@@ -22081,7 +22081,7 @@ const QB={
         "Lydia"
       ],
       "a": 0,
-      "e": "Acts 24:24.",
+      "e": "Acts 24:24 — Several days later Felix came with his wife Drusilla, who was Jewish.",
       "d": "hard"
     },
     {
@@ -22093,7 +22093,7 @@ const QB={
         "Mary"
       ],
       "a": 0,
-      "e": "Acts 25:13.",
+      "e": "Acts 25:13 — A few days later King Agrippa and Bernice arrived at Caesarea to pay their respects.",
       "d": "hard"
     },
     {
@@ -22105,7 +22105,7 @@ const QB={
         "Zephyr"
       ],
       "a": 0,
-      "e": "Acts 27:14.",
+      "e": "Acts 27:14 — A wind of hurricane force, called the Northeaster, swept down from the island.",
       "d": "hard"
     },
     {
@@ -22117,7 +22117,7 @@ const QB={
         "150"
       ],
       "a": 0,
-      "e": "Acts 27:37.",
+      "e": "Acts 27:37 — There were altogether two hundred seventy-six people on board the ship with Paul.",
       "d": "hard"
     },
     {
@@ -22129,7 +22129,7 @@ const QB={
         "Syracuse"
       ],
       "a": 0,
-      "e": "Acts 28:13.",
+      "e": "Acts 28:13 — From Rhegium they set sail and on the second day reached the port of Puteoli.",
       "d": "hard"
     },
     {
@@ -22141,7 +22141,7 @@ const QB={
         "Festus"
       ],
       "a": 0,
-      "e": "Acts 23:26.",
+      "e": "Acts 23:26 — Claudius Lysias wrote a letter to Governor Felix explaining why he sent Paul to him.",
       "d": "hard"
     },
     {
@@ -22153,7 +22153,7 @@ const QB={
         "Cyprus"
       ],
       "a": 0,
-      "e": "Acts 16:6-7.",
+      "e": "Acts 16:6-7 — The Holy Spirit kept them from preaching in Asia and would not allow them into Bithynia.",
       "d": "hard"
     },
     {
@@ -22177,7 +22177,7 @@ const QB={
         "Rhodes"
       ],
       "a": 0,
-      "e": "Acts 28:1.",
+      "e": "Acts 28:1 — Once safely on shore, the survivors learned that the island was called Malta.",
       "d": "easy"
     },
     {
@@ -22189,7 +22189,7 @@ const QB={
         "Derbe"
       ],
       "a": 0,
-      "e": "Acts 14:19-20.",
+      "e": "Acts 14:19-20 — In Lystra, Paul was stoned and left for dead, but he rose up and entered the city again.",
       "d": "medium"
     },
     {
@@ -22201,7 +22201,7 @@ const QB={
         "Silas"
       ],
       "a": 0,
-      "e": "Acts 16:3.",
+      "e": "Acts 16:3 — Paul circumcised Timothy because of the Jews in the area, as his father was Greek.",
       "d": "medium"
     },
     {
@@ -22213,7 +22213,7 @@ const QB={
         "Ananias"
       ],
       "a": 0,
-      "e": "Acts 10:9-11.",
+      "e": "Acts 10:9-11 — While praying on a rooftop, Peter saw a vision of a sheet containing all kinds of animals.",
       "d": "easy"
     },
     {
@@ -22225,7 +22225,7 @@ const QB={
         "Ephesus"
       ],
       "a": 0,
-      "e": "Acts 11:26.",
+      "e": "Acts 11:26 — Barnabas and Saul taught in Antioch for a year, where disciples were first called Christians.",
       "d": "easy"
     },
     {
@@ -22237,7 +22237,7 @@ const QB={
         "Jesus"
       ],
       "a": 0,
-      "e": "Acts 7:56.",
+      "e": "Acts 7:56 — As he was being stoned, Stephen looked up and saw Jesus standing at the right hand of God.",
       "d": "easy"
     },
     {
@@ -22249,7 +22249,7 @@ const QB={
         "Silas"
       ],
       "a": 0,
-      "e": "Acts 9:10-18.",
+      "e": "Acts 9:10-18 — Ananias was sent by God to restore Saul’s sight and baptize him after his encounter on the road.",
       "d": "easy"
     }
   ],
@@ -22263,7 +22263,7 @@ const QB={
         "Colossians"
       ],
       "a": 1,
-      "e": "Romans 1:16-17",
+      "e": "Acts 20:24 — Paul mentions the gospel of the grace of God as the ministry he received from the Lord Jesus.",
       "d": "easy"
     },
     {
@@ -22275,7 +22275,7 @@ const QB={
         "Wisdom"
       ],
       "a": 2,
-      "e": "1 Corinthians 13:13",
+      "e": "1 Corinthians 13:13 — Paul identifies love as the greatest, though faith and hope are also essential and enduring.",
       "d": "easy"
     },
     {
@@ -22287,7 +22287,7 @@ const QB={
         "Ephesians"
       ],
       "a": 0,
-      "e": "1 Corinthians 1:10",
+      "e": "1 Corinthians 1:10 — Paul wrote to the Corinthians to appeal for unity and to address the divisions among them.",
       "d": "medium"
     },
     {
@@ -22299,7 +22299,7 @@ const QB={
         "Colossae"
       ],
       "a": 2,
-      "e": "Galatians 5:22-23",
+      "e": "Galatians 5:22-23 — The list of the Fruit of the Spirit is found in Paul’s letter to the churches in Galatia.",
       "d": "easy"
     },
     {
@@ -22311,7 +22311,7 @@ const QB={
         "Thessalonians"
       ],
       "a": 2,
-      "e": "Ephesians 6:10-18",
+      "e": "Ephesians 6:10-18 — Paul uses the metaphor of armor to describe the spiritual protection provided by God to believers.",
       "d": "easy"
     },
     {
@@ -22323,7 +22323,7 @@ const QB={
         "Correction"
       ],
       "a": 0,
-      "e": "Philippians frequent use of 'joy'",
+      "e": "Philippians 4:4 — This epistle emphasizes joy in Christ, mentioning it frequently despite Paul being in prison.",
       "d": "medium"
     },
     {
@@ -22335,7 +22335,7 @@ const QB={
         "Hebrews"
       ],
       "a": 1,
-      "e": "Colossians 1:15-20",
+      "e": "Colossians 1:15-20 — Paul emphasizes that Christ is the image of the invisible God and the head of all creation.",
       "d": "medium"
     },
     {
@@ -22347,7 +22347,7 @@ const QB={
         "2 John"
       ],
       "a": 1,
-      "e": "Philemon 1:10",
+      "e": "Philemon 1:10 — Paul wrote this personal letter to Philemon, asking him to receive his runaway slave, Onesimus.",
       "d": "medium"
     },
     {
@@ -22359,7 +22359,7 @@ const QB={
         "James"
       ],
       "a": 0,
-      "e": "Hebrews 1:1-4",
+      "e": "Hebrews 1:1-4 — The book of Hebrews describes how Jesus is superior to angels, prophets, and the Old Covenant.",
       "d": "easy"
     },
     {
@@ -22371,7 +22371,7 @@ const QB={
         "John"
       ],
       "a": 2,
-      "e": "James 2:17",
+      "e": "James 2:17 — James argues that faith is not merely intellectual but must be demonstrated through active works.",
       "d": "easy"
     },
     {
@@ -22383,7 +22383,7 @@ const QB={
         "Foundations"
       ],
       "a": 0,
-      "e": "1 Peter 2:5",
+      "e": "1 Peter 2:5 — Peter describes believers as living stones being built into a spiritual house to offer sacrifices.",
       "d": "medium"
     },
     {
@@ -22395,7 +22395,7 @@ const QB={
         "Titus"
       ],
       "a": 0,
-      "e": "Jude 1:1",
+      "e": "Jude 1:1 — The author Jude identifies himself as a servant of Jesus Christ and the brother of James.",
       "d": "medium"
     },
     {
@@ -22407,7 +22407,7 @@ const QB={
         "Luke"
       ],
       "a": 1,
-      "e": "1 Timothy 4:12",
+      "e": "1 Timothy 4:12 — Paul encouraged Timothy not to let others look down on him because he was a young leader.",
       "d": "easy"
     },
     {
@@ -22419,7 +22419,7 @@ const QB={
         "3 John"
       ],
       "a": 3,
-      "e": "3 John 1",
+      "e": "3 John 1 — With only 219 words in the original Greek, 3 John is the shortest book in the entire Bible.",
       "d": "hard"
     },
     {
@@ -22431,7 +22431,7 @@ const QB={
         "The future"
       ],
       "a": 2,
-      "e": "Romans 8:38-39",
+      "e": "Romans 8:38-39 — Paul lists many things, including the future, that cannot separate us from God's love in Christ.",
       "d": "easy"
     },
     {
@@ -22443,7 +22443,7 @@ const QB={
         "1 Timothy"
       ],
       "a": 1,
-      "e": "2 Thessalonians 2:3",
+      "e": "2 Thessalonians 2:3 — Paul warns that the day of the Lord will not come until the man of lawlessness is revealed.",
       "d": "hard"
     },
     {
@@ -22455,7 +22455,7 @@ const QB={
         "James"
       ],
       "a": 2,
-      "e": "Titus 1:1",
+      "e": "Titus 1:1 — Paul wrote this letter to Titus to provide instructions for appointing elders and leaders in Crete.",
       "d": "easy"
     },
     {
@@ -22467,7 +22467,7 @@ const QB={
         "James"
       ],
       "a": 1,
-      "e": "Hebrews 11",
+      "e": "Hebrews 11 — Known as the Hall of Faith, this chapter lists heroes of the Old Testament who lived by faith.",
       "d": "easy"
     },
     {
@@ -22479,7 +22479,7 @@ const QB={
         "Exiled"
       ],
       "a": 2,
-      "e": "Galatians 1:8-9",
+      "e": "Galatians 1:8-9 — Paul warns that anyone preaching a gospel contrary to the one he delivered should be accursed.",
       "d": "medium"
     },
     {
@@ -22491,7 +22491,7 @@ const QB={
         "Ephesians"
       ],
       "a": 0,
-      "e": "1 John 4:8",
+      "e": "1 John 4:8 — John simply and profoundly states that God is love, and those without love do not know Him.",
       "d": "easy"
     },
     {
@@ -22503,7 +22503,7 @@ const QB={
         "Thessalonica"
       ],
       "a": 1,
-      "e": "2 Corinthians 12:2",
+      "e": "2 Corinthians 12:2 — Paul speaks of a man, likely himself, who was caught up to the third heaven fourteen years prior.",
       "d": "hard"
     },
     {
@@ -22515,7 +22515,7 @@ const QB={
         "1 Peter"
       ],
       "a": 1,
-      "e": "2 Timothy 3:16",
+      "e": "2 Timothy 3:16 — Paul affirms that all Scripture is breathed out by God and is useful for teaching and training.",
       "d": "easy"
     },
     {
@@ -22527,7 +22527,7 @@ const QB={
         "Preach to kings"
       ],
       "a": 0,
-      "e": "Philippians 4:13",
+      "e": "Philippians 4:13 — Paul explains he can endure any circumstance through the strength Christ provides to him.",
       "d": "easy"
     },
     {
@@ -22539,7 +22539,7 @@ const QB={
         "Hebrews"
       ],
       "a": 2,
-      "e": "Jude 1:9",
+      "e": "Jude 1:9 — Jude mentions Michael the archangel disputing with the devil over the body of the prophet Moses.",
       "d": "hard"
     },
     {
@@ -22551,7 +22551,7 @@ const QB={
         "Romans"
       ],
       "a": 0,
-      "e": "James 1:2",
+      "e": "James 1:2 — James instructs believers to find joy in trials, knowing that they produce perseverance and maturity.",
       "d": "easy"
     },
     {
@@ -22563,7 +22563,7 @@ const QB={
         "Titus"
       ],
       "a": 0,
-      "e": "James 3:5",
+      "e": "James 3:5 — James compares the tongue to a small spark that can set a whole forest on fire with its words.",
       "d": "medium"
     },
     {
@@ -22575,7 +22575,7 @@ const QB={
         "The World"
       ],
       "a": 1,
-      "e": "1 Peter 5:8",
+      "e": "1 Peter 5:8 — Peter warns believers to be alert because the devil prowls like a lion looking for someone to devour.",
       "d": "easy"
     },
     {
@@ -22587,7 +22587,7 @@ const QB={
         "Matthew"
       ],
       "a": 0,
-      "e": "Hebrews 13:8",
+      "e": "Hebrews 13:8 — This verse provides comfort by stating that the nature and character of Jesus never change.",
       "d": "easy"
     },
     {
@@ -22599,7 +22599,7 @@ const QB={
         "Colossians"
       ],
       "a": 0,
-      "e": "1 Thessalonians 5:17",
+      "e": "1 Thessalonians 5:17 — Paul gives this short, powerful command to maintain a constant spirit of prayer and communion.",
       "d": "easy"
     },
     {
@@ -22611,7 +22611,7 @@ const QB={
         "A clean vessel"
       ],
       "a": 1,
-      "e": "Romans 12:1",
+      "e": "Romans 12:1 — Paul urges believers to offer their bodies as living sacrifices, holy and pleasing to God.",
       "d": "medium"
     },
     {
@@ -22623,7 +22623,7 @@ const QB={
         "Colossians"
       ],
       "a": 1,
-      "e": "Hebrews 7",
+      "e": "Hebrews 7 — The author explains how Christ’s priesthood is like Melchizedek’s, being eternal and superior.",
       "d": "hard"
     },
     {
@@ -22635,7 +22635,7 @@ const QB={
         "Silas"
       ],
       "a": 1,
-      "e": "1 Timothy 1:2",
+      "e": "1 Timothy 1:2 — Paul expresses a deep spiritual bond with Timothy, calling him his true son in the faith.",
       "d": "medium"
     },
     {
@@ -22647,7 +22647,7 @@ const QB={
         "James"
       ],
       "a": 2,
-      "e": "1 Timothy 6:10",
+      "e": "1 Timothy 6:10 — Paul warns that craving money leads to all kinds of grief and wandering from the faith.",
       "d": "easy"
     },
     {
@@ -22659,7 +22659,7 @@ const QB={
         "Money, Power, Fame"
       ],
       "a": 1,
-      "e": "1 John 2:16",
+      "e": "1 John 2:16 — John identifies the lust of the flesh, lust of the eyes, and pride of life as worldly things.",
       "d": "medium"
     },
     {
@@ -22671,7 +22671,7 @@ const QB={
         "1 Peter"
       ],
       "a": 0,
-      "e": "1 Timothy 3:2",
+      "e": "1 Timothy 3:2 — Paul lists being the husband of one wife as a requirement for those serving as church overseers.",
       "d": "medium"
     },
     {
@@ -22683,7 +22683,7 @@ const QB={
         "Baptism"
       ],
       "a": 1,
-      "e": "Ephesians 2:8",
+      "e": "Ephesians 2:8 — Paul clarifies that salvation is a gift of God's grace received through faith, not by works.",
       "d": "easy"
     },
     {
@@ -22695,7 +22695,7 @@ const QB={
         "Psalm 73"
       ],
       "a": 0,
-      "e": "James 4:8",
+      "e": "James 4:8 — James promises that God will draw near to those who take the initiative to draw near to Him.",
       "d": "medium"
     },
     {
@@ -22707,7 +22707,7 @@ const QB={
         "Hebrews"
       ],
       "a": 1,
-      "e": "1 John 1:9",
+      "e": "1 John 1:9 — John assures us that confessing our sins leads to God's faithful forgiveness and cleansing.",
       "d": "easy"
     },
     {
@@ -22719,7 +22719,7 @@ const QB={
         "Saint"
       ],
       "a": 1,
-      "e": "2 Corinthians 5:17",
+      "e": "2 Corinthians 5:17 — Paul teaches that anyone who is in Christ has become a completely new person or creation.",
       "d": "easy"
     },
     {
@@ -22731,7 +22731,7 @@ const QB={
         "Romans"
       ],
       "a": 1,
-      "e": "2 Corinthians 12:7",
+      "e": "2 Corinthians 12:7 — To keep him from becoming conceited, Paul was given a thorn in the flesh, a messenger of Satan.",
       "d": "medium"
     },
     {
@@ -22743,7 +22743,7 @@ const QB={
         "Galatians"
       ],
       "a": 1,
-      "e": "Colossians 1:27",
+      "e": "Colossians 1:27 — Paul reveals the mystery that Christ lives within believers, providing the hope of glory.",
       "d": "medium"
     },
     {
@@ -22755,7 +22755,7 @@ const QB={
         "The Ascension"
       ],
       "a": 2,
-      "e": "1 Corinthians 15",
+      "e": "1 Corinthians 15 — This entire chapter is dedicated to the reality and significance of the resurrection of Jesus.",
       "d": "easy"
     },
     {
@@ -22767,7 +22767,7 @@ const QB={
         "Romans"
       ],
       "a": 1,
-      "e": "Ephesians 4:5",
+      "e": "Ephesians 4:5 — Paul emphasizes Christian unity by noting there is one Lord, one faith, and one baptism.",
       "d": "medium"
     },
     {
@@ -22779,7 +22779,7 @@ const QB={
         "Jude"
       ],
       "a": 1,
-      "e": "2 John 1:1",
+      "e": "2 John 1:1 — John addresses his second letter to the chosen lady and her children, whom he loves in the truth.",
       "d": "hard"
     },
     {
@@ -22791,7 +22791,7 @@ const QB={
         "Jude, son of James"
       ],
       "a": 1,
-      "e": "Jude 1:1, Matt 13:55",
+      "e": "Jude 1:1 — The author Jude was the brother of James and likely a half-brother of Jesus Himself.",
       "d": "hard"
     },
     {
@@ -22803,7 +22803,7 @@ const QB={
         "The Father"
       ],
       "a": 2,
-      "e": "Hebrews 12:2",
+      "e": "Hebrews 12:2 — Believers are told to run the race with endurance by fixing their eyes on Jesus, our pioneer.",
       "d": "easy"
     },
     {
@@ -22815,7 +22815,7 @@ const QB={
         "Revelation"
       ],
       "a": 1,
-      "e": "1 John 1:5",
+      "e": "1 John 1:5 — John declares that God is light and in Him there is no darkness at all, calling us to walk in light.",
       "d": "medium"
     },
     {
@@ -22827,7 +22827,7 @@ const QB={
         "Virgin Mary"
       ],
       "a": 2,
-      "e": "1 Timothy 2:5",
+      "e": "1 Timothy 2:5 — Paul teaches that there is only one mediator between God and men, the man Christ Jesus.",
       "d": "easy"
     },
     {
@@ -22839,7 +22839,7 @@ const QB={
         "Amos"
       ],
       "a": 1,
-      "e": "James 5:1",
+      "e": "James 5:1 — James warns the wealthy that misery is coming upon them for their oppression of the poor.",
       "d": "medium"
     },
     {
@@ -22851,7 +22851,7 @@ const QB={
         "Hebrews"
       ],
       "a": 0,
-      "e": "James 1:3",
+      "e": "James 1:3 — James explains that the testing of faith is beneficial because it produces patient endurance.",
       "d": "medium"
     },
     {
@@ -22863,7 +22863,7 @@ const QB={
         "Heaven"
       ],
       "a": 2,
-      "e": "Galatians 3:28",
+      "e": "Galatians 3:28 — Paul states that in Christ, social, racial, and gender distinctions do not affect our standing.",
       "d": "easy"
     },
     {
@@ -22875,7 +22875,7 @@ const QB={
         "Titus"
       ],
       "a": 1,
-      "e": "2 Corinthians 6:14",
+      "e": "2 Corinthians 6:14 — Paul warns against being unequally yoked with unbelievers to maintain spiritual purity.",
       "d": "medium"
     },
     {
@@ -22887,7 +22887,7 @@ const QB={
         "Glory"
       ],
       "a": 2,
-      "e": "Philippians 1:21",
+      "e": "Philippians 1:21 — Paul expresses his total devotion to Christ, seeing death as a gain because he will be with Him.",
       "d": "easy"
     },
     {
@@ -22899,7 +22899,7 @@ const QB={
         "Philemon"
       ],
       "a": 1,
-      "e": "3 John 1:9",
+      "e": "3 John 1:9 — John rebukes Diotrephes for his pride and for refusing to acknowledge the apostles' authority.",
       "d": "hard"
     },
     {
@@ -22911,7 +22911,7 @@ const QB={
         "Ephesians"
       ],
       "a": 0,
-      "e": "Hebrews 4:14",
+      "e": "Hebrews 4:14 — The author encourages believers to hold firmly to their faith because Jesus is our Great High Priest.",
       "d": "medium"
     },
     {
@@ -22923,7 +22923,7 @@ const QB={
         "Resist"
       ],
       "a": 1,
-      "e": "1 Corinthians 10:13",
+      "e": "1 Corinthians 10:13 — God is faithful and will provide a way of escape so that you can endure any temptation.",
       "d": "easy"
     },
     {
@@ -22935,7 +22935,7 @@ const QB={
         "1 Peter"
       ],
       "a": 0,
-      "e": "James 5:16",
+      "e": "James 5:16 — James highlights that the earnest prayer of a righteous person has great power and results.",
       "d": "easy"
     },
     {
@@ -22947,7 +22947,7 @@ const QB={
         "Colossians"
       ],
       "a": 0,
-      "e": "James 4:7",
+      "e": "James 4:7 — Believers are told to submit to God and resist the devil, who will then flee from them.",
       "d": "medium"
     },
     {
@@ -22959,7 +22959,7 @@ const QB={
         "Pentecost"
       ],
       "a": 2,
-      "e": "1 Thess 4:16",
+      "e": "1 Thessalonians 4:16 — Paul describes the Lord descending from heaven with a shout and the voice of the archangel.",
       "d": "medium"
     },
     {
@@ -22971,7 +22971,7 @@ const QB={
         "Romans"
       ],
       "a": 0,
-      "e": "1 Thess 5:19",
+      "e": "1 Thessalonians 5:19 — Paul warns believers not to stifle or quench the work and influence of the Holy Spirit.",
       "d": "medium"
     },
     {
@@ -22983,7 +22983,7 @@ const QB={
         "Bishops"
       ],
       "a": 0,
-      "e": "Ephesians 4:11",
+      "e": "Ephesians 4:11 — Paul lists teachers among the gifts Christ gave to the church to equip saints for ministry.",
       "d": "medium"
     },
     {
@@ -22995,7 +22995,7 @@ const QB={
         "Philemon"
       ],
       "a": 1,
-      "e": "2 Timothy 4:13",
+      "e": "2 Timothy 4:13 — In his final letter, Paul asks Timothy to bring his cloak and especially his parchment scrolls.",
       "d": "hard"
     },
     {
@@ -23007,7 +23007,7 @@ const QB={
         "Eternal"
       ],
       "a": 1,
-      "e": "Colossians 3:2",
+      "e": "Colossians 3:2 — Paul instructs believers to focus their thoughts on heavenly things rather than earthly ones.",
       "d": "easy"
     },
     {
@@ -23019,7 +23019,7 @@ const QB={
         "Psalm 119"
       ],
       "a": 0,
-      "e": "Hebrews 4:12",
+      "e": "Hebrews 4:12 — The word of God is described as living, active, and sharper than any double-edged sword.",
       "d": "medium"
     },
     {
@@ -23031,7 +23031,7 @@ const QB={
         "Tithing"
       ],
       "a": 1,
-      "e": "1 Corinthians 11:23-26",
+      "e": "1 Corinthians 11:23-26 — Paul provides instructions on the Lord's Supper, which he received directly from the Lord.",
       "d": "medium"
     },
     {
@@ -23043,7 +23043,7 @@ const QB={
         "Titus"
       ],
       "a": 1,
-      "e": "Ephesians 5:25",
+      "e": "Ephesians 5:25 — Paul instructs husbands to love their wives with the same sacrificial love Christ has for the church.",
       "d": "easy"
     },
     {
@@ -23055,7 +23055,7 @@ const QB={
         "The Word"
       ],
       "a": 1,
-      "e": "1 John 5:4",
+      "e": "1 John 5:4 — John teaches that everyone born of God overcomes the world through the power of their faith.",
       "d": "medium"
     },
     {
@@ -23079,7 +23079,7 @@ const QB={
         "The Law"
       ],
       "a": 1,
-      "e": "Titus 2:12",
+      "e": "Titus 2:12 — God’s grace trains us to renounce ungodliness and worldly passions and live self-controlled lives.",
       "d": "medium"
     },
     {
@@ -23091,7 +23091,7 @@ const QB={
         "Hebrews"
       ],
       "a": 0,
-      "e": "James 1:17",
+      "e": "James 1:17 — James reminds us that every good and perfect gift comes from God, the Father of heavenly lights.",
       "d": "easy"
     },
     {
@@ -23103,7 +23103,7 @@ const QB={
         "Silence"
       ],
       "a": 0,
-      "e": "1 Corinthians 15:54",
+      "e": "1 Corinthians 15:54 — When the mortal puts on immortality, the prophecy that death is swallowed up in victory is fulfilled.",
       "d": "easy"
     },
     {
@@ -23115,7 +23115,7 @@ const QB={
         "Romans"
       ],
       "a": 1,
-      "e": "1 John 4:19",
+      "e": "1 John 4:19 — Our ability to love God and others is a direct response to the fact that He first loved us.",
       "d": "easy"
     },
     {
@@ -23139,7 +23139,7 @@ const QB={
         "James"
       ],
       "a": 1,
-      "e": "2 Peter 3:9",
+      "e": "2 Peter 3:9 — Peter explains that God is patient, wanting everyone to reach repentance rather than perish.",
       "d": "medium"
     },
     {
@@ -23151,7 +23151,7 @@ const QB={
         "The Law"
       ],
       "a": 1,
-      "e": "Romans 1:16",
+      "e": "Romans 1:16 — Paul declares he is not ashamed of the gospel, for it is the power of God for everyone's salvation.",
       "d": "easy"
     },
     {
@@ -23163,7 +23163,7 @@ const QB={
         "Romans"
       ],
       "a": 0,
-      "e": "1 Corinthians 6:19",
+      "e": "1 Corinthians 6:19 — Paul reminds believers that their bodies are temples of the Holy Spirit who lives within them.",
       "d": "easy"
     },
     {
@@ -23175,7 +23175,7 @@ const QB={
         "Desires"
       ],
       "a": 1,
-      "e": "Galatians 6:7",
+      "e": "Galatians 6:7 — Paul warns that God cannot be mocked and that a person will inevitably reap what they sow.",
       "d": "easy"
     },
     {
@@ -23187,7 +23187,7 @@ const QB={
         "Philemon"
       ],
       "a": 1,
-      "e": "2 Timothy 4:14",
+      "e": "2 Timothy 4:14 — Paul mentions that Alexander the metalworker did him much harm and warns Timothy about him.",
       "d": "hard"
     },
     {
@@ -23199,7 +23199,7 @@ const QB={
         "King"
       ],
       "a": 1,
-      "e": "Philippians 2:7",
+      "e": "Philippians 2:7 — Jesus emptied Himself by taking the form of a servant and being born in the likeness of men.",
       "d": "medium"
     },
     {
@@ -23211,7 +23211,7 @@ const QB={
         "Galatians"
       ],
       "a": 1,
-      "e": "Ephesians 4:32",
+      "e": "Ephesians 4:32 — Paul commands believers to be kind, tenderhearted, and forgiving as God in Christ forgave them.",
       "d": "easy"
     },
     {
@@ -23223,7 +23223,7 @@ const QB={
         "Friends"
       ],
       "a": 2,
-      "e": "1 John 3:1",
+      "e": "1 John 3:1 — John marvels at the Father's love which allows us to be called the children of God.",
       "d": "easy"
     },
     {
@@ -23235,7 +23235,7 @@ const QB={
         "Jude"
       ],
       "a": 1,
-      "e": "1 Peter 4:7",
+      "e": "1 Peter 4:7 — Since the end of all things is near, Peter urges believers to be self-controlled and prayerful.",
       "d": "medium"
     },
     {
@@ -23247,7 +23247,7 @@ const QB={
         "Faith"
       ],
       "a": 1,
-      "e": "2 Corinthians 12:9",
+      "e": "2 Corinthians 12:9 — God told Paul that His grace is sufficient and His power is made perfect in human weakness.",
       "d": "easy"
     },
     {
@@ -23259,7 +23259,7 @@ const QB={
         "Hebrews"
       ],
       "a": 2,
-      "e": "James 1:25",
+      "e": "James 1:25 — James promises a blessing to the one who looks into and obeys the perfect law of liberty.",
       "d": "hard"
     },
     {
@@ -23271,7 +23271,7 @@ const QB={
         "Love"
       ],
       "a": 1,
-      "e": "Hebrews 1:3",
+      "e": "Hebrews 1:3 — The Son is the radiance of God's glory and the exact representation of His being or nature.",
       "d": "hard"
     },
     {
@@ -23283,7 +23283,7 @@ const QB={
         "Revelation"
       ],
       "a": 0,
-      "e": "1 John 5:21",
+      "e": "1 John 5:21 — John concludes his first letter with a simple warning for the children to keep away from idols.",
       "d": "hard"
     },
     {
@@ -23295,7 +23295,7 @@ const QB={
         "Joy"
       ],
       "a": 1,
-      "e": "Romans 5:1",
+      "e": "Romans 5:1 — Paul explains that since we are justified by faith, we now have peace with God through Jesus.",
       "d": "medium"
     },
     {
@@ -23307,7 +23307,7 @@ const QB={
         "James"
       ],
       "a": 1,
-      "e": "1 Corinthians 15:33",
+      "e": "1 Corinthians 15:33 — Paul warns the Corinthians that keeping bad company will eventually ruin their good character.",
       "d": "medium"
     },
     {
@@ -23319,7 +23319,7 @@ const QB={
         "Command"
       ],
       "a": 1,
-      "e": "2 Timothy 4:7",
+      "e": "2 Timothy 4:7 — At the end of his life, Paul could confidently say he had finished the race and kept the faith.",
       "d": "easy"
     },
     {
@@ -23331,7 +23331,7 @@ const QB={
         "1 Tim"
       ],
       "a": 1,
-      "e": "James 5:14",
+      "e": "James 5:14 — James instructs the sick to call for the elders of the church to pray and anoint them with oil.",
       "d": "medium"
     },
     {
@@ -23343,7 +23343,7 @@ const QB={
         "Sin"
       ],
       "a": 1,
-      "e": "Ephesians 6:12",
+      "e": "Ephesians 6:12 — Paul explains that our true battle is not against people but against spiritual forces of evil.",
       "d": "easy"
     },
     {
@@ -23355,7 +23355,7 @@ const QB={
         "3 John"
       ],
       "a": 3,
-      "e": "3 John 1:1",
+      "e": "3 John 1:1 — The elder John wrote his third epistle to his dear friend Gaius, whom he loved in the truth.",
       "d": "hard"
     },
     {
@@ -23367,7 +23367,7 @@ const QB={
         "Honor"
       ],
       "a": 1,
-      "e": "1 Thess 5:18",
+      "e": "1 Thessalonians 5:18 — Paul teaches that giving thanks in all circumstances is God's specific will for believers.",
       "d": "easy"
     },
     {
@@ -23379,7 +23379,7 @@ const QB={
         "Ephesians"
       ],
       "a": 2,
-      "e": "1 Corinthians 14:34",
+      "e": "1 Corinthians 14:34 — Paul gives instructions regarding order in the church, mentioning that women should remain silent.",
       "d": "hard"
     },
     {
@@ -23391,7 +23391,7 @@ const QB={
         "Heaven"
       ],
       "a": 0,
-      "e": "Romans 6:23",
+      "e": "Romans 6:23 — Paul contrasts the wages of sin, which is death, with God’s free gift of eternal life in Christ.",
       "d": "easy"
     },
     {
@@ -23403,7 +23403,7 @@ const QB={
         "Colossians"
       ],
       "a": 1,
-      "e": "2 Timothy 4:10",
+      "e": "2 Timothy 4:10 — Paul sadly reports that Demas deserted him because he fell in love with the present world.",
       "d": "hard"
     },
     {
@@ -23415,7 +23415,7 @@ const QB={
         "Offering"
       ],
       "a": 1,
-      "e": "1 Peter 3:15",
+      "e": "1 Peter 3:15 — Believers are told to be ready to give a reason or answer for the hope they have in Christ.",
       "d": "medium"
     },
     {
@@ -23427,7 +23427,7 @@ const QB={
         "Ephesians"
       ],
       "a": 0,
-      "e": "Hebrews 10:25",
+      "e": "Hebrews 10:25 — This verse encourages believers to not neglect gathering together for mutual encouragement.",
       "d": "medium"
     },
     {
@@ -23439,7 +23439,7 @@ const QB={
         "Love"
       ],
       "a": 1,
-      "e": "Galatians 5:1",
+      "e": "Galatians 5:1 — Paul declares that Christ liberated believers specifically so they could live in freedom.",
       "d": "medium"
     },
     {
@@ -23451,7 +23451,7 @@ const QB={
         "Matthew"
       ],
       "a": 0,
-      "e": "James 1:27",
+      "e": "James 1:27 — Pure religion is defined here as caring for orphans and widows in their distress and staying pure.",
       "d": "medium"
     },
     {
@@ -23463,7 +23463,7 @@ const QB={
         "Unkind"
       ],
       "a": 0,
-      "e": "1 Corinthians 13:4",
+      "e": "1 Corinthians 13:4 — Paul lists pride as a trait that true love does not possess, along with envy and boasting.",
       "d": "easy"
     },
     {
@@ -23475,7 +23475,7 @@ const QB={
         "Revelation"
       ],
       "a": 2,
-      "e": "Jude 1:25",
+      "e": "Jude 1:25 — This doxology concludes the short book of Jude, attributing all glory and power to God the Savior.",
       "d": "hard"
     },
     {
@@ -23487,7 +23487,7 @@ const QB={
         "Eternal Life"
       ],
       "a": 0,
-      "e": "Ephesians 1:13",
+      "e": "Ephesians 1:13 — Believers are marked as belonging to God by being sealed with the promised Holy Spirit.",
       "d": "medium"
     },
     {
@@ -23499,7 +23499,7 @@ const QB={
         "Psalm 12"
       ],
       "a": 1,
-      "e": "James 3:6",
+      "e": "James 3:6 — James uses the metaphor of fire to describe the destructive potential of human speech and the tongue.",
       "d": "medium"
     },
     {
@@ -23511,7 +23511,7 @@ const QB={
         "Teach"
       ],
       "a": 2,
-      "e": "1 Corinthians 9:22",
+      "e": "1 Corinthians 9:22 — Paul adapted his approach to different people in order to save as many as possible for Christ.",
       "d": "medium"
     },
     {
@@ -23523,7 +23523,7 @@ const QB={
         "Philippians"
       ],
       "a": 0,
-      "e": "1 John 4:18",
+      "e": "1 John 4:18 — This verse explains that God's perfect love removes fear because fear involves expectation of punishment.",
       "d": "easy"
     },
     {
@@ -23535,7 +23535,7 @@ const QB={
         "Preaching"
       ],
       "a": 1,
-      "e": "Romans 10:17",
+      "e": "Romans 10:17 — Paul explains that faith is generated through hearing the Word of God proclaimed to the listener.",
       "d": "medium"
     },
     {
@@ -23547,7 +23547,7 @@ const QB={
         "Romans"
       ],
       "a": 1,
-      "e": "Philippians 4:13",
+      "e": "Philippians 4:13 — Paul expresses that his strength to endure all circumstances comes directly through Christ.",
       "d": "easy"
     },
     {
@@ -23559,7 +23559,7 @@ const QB={
         "Willing"
       ],
       "a": 1,
-      "e": "2 Corinthians 9:7",
+      "e": "2 Corinthians 9:7 — God values the attitude of the giver, specifically one who gives joyfully rather than under compulsion.",
       "d": "easy"
     },
     {
@@ -23957,7 +23957,7 @@ const QB={
         "James"
       ],
       "a": 1,
-      "e": "Revelation 1:1, 4, 9",
+      "e": "Revelation 1:1 — The author identifies himself as John, traditionally believed to be the Apostle John.",
       "d": "easy"
     },
     {
@@ -23969,7 +23969,7 @@ const QB={
         "Malta"
       ],
       "a": 2,
-      "e": "Revelation 1:9",
+      "e": "Revelation 1:9 — John was exiled on the island of Patmos because of his testimony and the word of God.",
       "d": "easy"
     },
     {
@@ -23981,7 +23981,7 @@ const QB={
         "10"
       ],
       "a": 1,
-      "e": "Revelation 1:4",
+      "e": "Revelation 1:4 — The letter is specifically addressed to seven churches in the province of Asia.",
       "d": "easy"
     },
     {
@@ -23993,7 +23993,7 @@ const QB={
         "A golden chain"
       ],
       "a": 1,
-      "e": "Revelation 1:16",
+      "e": "Revelation 1:16 — The sword represents the powerful, judgmental Word of God proceeding from the mouth of Christ.",
       "d": "medium"
     },
     {
@@ -24005,7 +24005,7 @@ const QB={
         "Philadelphia"
       ],
       "a": 2,
-      "e": "Revelation 3:16",
+      "e": "Revelation 3:16 — The church at Laodicea is rebuked for being lukewarm, neither hot nor cold in their faith.",
       "d": "medium"
     },
     {
@@ -24017,7 +24017,7 @@ const QB={
         "White"
       ],
       "a": 3,
-      "e": "Revelation 6:2",
+      "e": "Revelation 6:2 — The first horseman of the Apocalypse rides a white horse, often symbolizing conquest or Christ.",
       "d": "medium"
     },
     {
@@ -24029,7 +24029,7 @@ const QB={
         "Faith"
       ],
       "a": 1,
-      "e": "Revelation 6:4",
+      "e": "Revelation 6:4 — The rider on the red horse is granted the power to remove peace from the earth to cause war.",
       "d": "medium"
     },
     {
@@ -24041,7 +24041,7 @@ const QB={
         "A scythe"
       ],
       "a": 2,
-      "e": "Revelation 6:5",
+      "e": "Revelation 6:5 — The rider of the black horse holds a pair of scales, symbolizing famine and economic hardship.",
       "d": "hard"
     },
     {
@@ -24053,7 +24053,7 @@ const QB={
         "War"
       ],
       "a": 2,
-      "e": "Revelation 6:8",
+      "e": "Revelation 6:8 — Death is the named rider of the pale horse, followed closely by Hades as they bring destruction.",
       "d": "medium"
     },
     {
@@ -24065,7 +24065,7 @@ const QB={
         "1,000,000"
       ],
       "a": 1,
-      "e": "Revelation 7:4",
+      "e": "Revelation 7:4 — A total of 144,000 people from all the tribes of Israel are sealed on their foreheads.",
       "d": "easy"
     },
     {
@@ -24077,7 +24077,7 @@ const QB={
         "A great shout"
       ],
       "a": 2,
-      "e": "Revelation 8:1",
+      "e": "Revelation 8:1 — When the seventh seal is opened, there is a profound silence in heaven for about half an hour.",
       "d": "hard"
     },
     {
@@ -24089,7 +24089,7 @@ const QB={
         "Lucifer"
       ],
       "a": 1,
-      "e": "Revelation 8:11",
+      "e": "Revelation 8:11 — The star is named Wormwood, representing bitterness, as it turns a third of the waters bitter.",
       "d": "hard"
     },
     {
@@ -24101,7 +24101,7 @@ const QB={
         "Serpents"
       ],
       "a": 1,
-      "e": "Revelation 9:3",
+      "e": "Revelation 9:3 — These locusts are given the power to inflict pain like the sting of a scorpion upon the inhabitants.",
       "d": "medium"
     },
     {
@@ -24113,7 +24113,7 @@ const QB={
         "Belial"
       ],
       "a": 1,
-      "e": "Revelation 9:11",
+      "e": "Revelation 9:11 — The king of the abyss and the locusts is named Abaddon in Hebrew and Apollyon in Greek.",
       "d": "hard"
     },
     {
@@ -24125,7 +24125,7 @@ const QB={
         "Read it aloud"
       ],
       "a": 2,
-      "e": "Revelation 10:10",
+      "e": "Revelation 10:10 — John obeyed the angel's command to eat the little scroll, which tasted sweet then bitter.",
       "d": "medium"
     },
     {
@@ -24137,7 +24137,7 @@ const QB={
         "3 days"
       ],
       "a": 2,
-      "e": "Revelation 11:3",
+      "e": "Revelation 11:3 — The two witnesses are empowered to prophesy for 1,260 days while clothed in sackcloth.",
       "d": "hard"
     },
     {
@@ -24149,7 +24149,7 @@ const QB={
         "Clouds"
       ],
       "a": 0,
-      "e": "Revelation 12:1",
+      "e": "Revelation 12:1 — John sees a woman clothed with the sun, with the moon under her feet and a crown of stars.",
       "d": "medium"
     },
     {
@@ -24161,7 +24161,7 @@ const QB={
         "12"
       ],
       "a": 1,
-      "e": "Revelation 12:3",
+      "e": "Revelation 12:3 — The dragon is described as having seven heads, ten horns, and seven crowns upon its heads.",
       "d": "medium"
     },
     {
@@ -24173,7 +24173,7 @@ const QB={
         "John"
       ],
       "a": 1,
-      "e": "Revelation 12:7",
+      "e": "Revelation 12:7 — Michael the archangel leads the heavenly host in a cosmic battle to expel the dragon from heaven.",
       "d": "easy"
     },
     {
@@ -24185,7 +24185,7 @@ const QB={
         "12"
       ],
       "a": 1,
-      "e": "Revelation 13:1",
+      "e": "Revelation 13:1 — This beast rises from the sea with seven heads and ten horns, having blasphemous names on its heads.",
       "d": "medium"
     },
     {
@@ -24197,7 +24197,7 @@ const QB={
         "999"
       ],
       "a": 2,
-      "e": "Revelation 13:18",
+      "e": "Revelation 13:18 — The number associated with the beast is six hundred and sixty-six, requiring wisdom to calculate.",
       "d": "easy"
     },
     {
@@ -24209,7 +24209,7 @@ const QB={
         "Moriah"
       ],
       "a": 1,
-      "e": "Revelation 14:1",
+      "e": "Revelation 14:1 — John sees the Lamb standing on Mount Zion accompanied by the 144,000 who have His name.",
       "d": "medium"
     },
     {
@@ -24221,7 +24221,7 @@ const QB={
         "10"
       ],
       "a": 1,
-      "e": "Revelation 15:7",
+      "e": "Revelation 15:7 — Seven angels are given seven golden bowls filled with the final wrath of God to pour on the earth.",
       "d": "easy"
     },
     {
@@ -24233,7 +24233,7 @@ const QB={
         "Rome"
       ],
       "a": 2,
-      "e": "Revelation 16:16",
+      "e": "Revelation 16:16 — The spirits gather the kings of the earth for the final battle at the place called Armageddon.",
       "d": "easy"
     },
     {
@@ -24245,7 +24245,7 @@ const QB={
         "12"
       ],
       "a": 0,
-      "e": "Revelation 17:3",
+      "e": "Revelation 17:3 — The scarlet beast upon which the woman sits is described as having seven heads and ten horns.",
       "d": "medium"
     },
     {
@@ -24257,7 +24257,7 @@ const QB={
         "Desolation"
       ],
       "a": 1,
-      "e": "Revelation 17:5",
+      "e": "Revelation 17:5 — The woman's forehead bears the title 'Mystery, Babylon the Great, Mother of Prostitutes'.",
       "d": "hard"
     },
     {
@@ -24269,7 +24269,7 @@ const QB={
         "All of the above"
       ],
       "a": 3,
-      "e": "Revelation 19:11, 13, 16",
+      "e": "Revelation 19:13 — The rider on the white horse is explicitly identified as the Word of God, King of kings.",
       "d": "medium"
     },
     {
@@ -24281,7 +24281,7 @@ const QB={
         "A scepter"
       ],
       "a": 1,
-      "e": "Revelation 19:15",
+      "e": "Revelation 19:15 — A sharp sword proceeds from His mouth to strike down the nations during His second coming.",
       "d": "medium"
     },
     {
@@ -24293,7 +24293,7 @@ const QB={
         "40"
       ],
       "a": 2,
-      "e": "Revelation 20:2",
+      "e": "Revelation 20:2 — An angel seizes the dragon and binds him in the abyss for a period of one thousand years.",
       "d": "easy"
     },
     {
@@ -24305,7 +24305,7 @@ const QB={
         "The Grave"
       ],
       "a": 2,
-      "e": "Revelation 20:15",
+      "e": "Revelation 20:15 — Final judgment results in anyone not recorded in the Book of Life being cast into the lake of fire.",
       "d": "easy"
     },
     {
@@ -24317,7 +24317,7 @@ const QB={
         "4"
       ],
       "a": 2,
-      "e": "Revelation 21:12",
+      "e": "Revelation 21:12 — The holy city has a wall with twelve gates, each named after one of the tribes of Israel.",
       "d": "medium"
     },
     {
@@ -24329,7 +24329,7 @@ const QB={
         "Emerald"
       ],
       "a": 2,
-      "e": "Revelation 21:21",
+      "e": "Revelation 21:21 — Each of the twelve individual gates of the city is constructed from a single, massive pearl.",
       "d": "easy"
     },
     {
@@ -24341,7 +24341,7 @@ const QB={
         "White stone"
       ],
       "a": 0,
-      "e": "Revelation 21:21",
+      "e": "Revelation 21:21 — The main street of the New Jerusalem is described as being made of pure gold, like transparent glass.",
       "d": "easy"
     },
     {
@@ -24353,7 +24353,7 @@ const QB={
         "It is invisible"
       ],
       "a": 0,
-      "e": "Revelation 21:22",
+      "e": "Revelation 21:22 — A physical temple is unnecessary because the Lord God Almighty and the Lamb are its temple.",
       "d": "medium"
     },
     {
@@ -24365,7 +24365,7 @@ const QB={
         "Oil"
       ],
       "a": 1,
-      "e": "Revelation 22:1",
+      "e": "Revelation 22:1 — The angel showed John the river of the water of life, clear as crystal, flowing from God's throne.",
       "d": "easy"
     },
     {
@@ -24377,7 +24377,7 @@ const QB={
         "12"
       ],
       "a": 3,
-      "e": "Revelation 22:2",
+      "e": "Revelation 22:2 — The tree of life produces twelve crops of fruit, yielding its specific fruit every month.",
       "d": "hard"
     },
     {
@@ -24389,7 +24389,7 @@ const QB={
         "Shadow"
       ],
       "a": 1,
-      "e": "Revelation 22:2",
+      "e": "Revelation 22:2 — The leaves of the tree of life provide healing for the nations in the eternal kingdom.",
       "d": "medium"
     },
     {
@@ -24401,7 +24401,7 @@ const QB={
         "Final"
       ],
       "a": 2,
-      "e": "Revelation 22:13",
+      "e": "Revelation 22:13 — Jesus identifies Himself as the Alpha and the Omega, the first and last letters of the alphabet.",
       "d": "easy"
     },
     {
@@ -24413,7 +24413,7 @@ const QB={
         "Secretly"
       ],
       "a": 0,
-      "e": "Revelation 22:7, 12, 20",
+      "e": "Revelation 22:7 — Jesus repeatedly promises His imminent return, saying 'Look, I am coming soon!'.",
       "d": "easy"
     },
     {
@@ -24425,7 +24425,7 @@ const QB={
         "Jesus"
       ],
       "a": 0,
-      "e": "Revelation 22:21",
+      "e": "Revelation 22:21 — The entire Bible concludes with the word 'Amen', signifying agreement and finality to God's word.",
       "d": "easy"
     },
     {
@@ -24449,7 +24449,7 @@ const QB={
         "Laodicea"
       ],
       "a": 0,
-      "e": "Revelation 3:8",
+      "e": "Revelation 3:8 — Jesus commends the church in Philadelphia for their strength and sets an open door before them.",
       "d": "hard"
     },
     {
@@ -24461,7 +24461,7 @@ const QB={
         "A rainbow"
       ],
       "a": 1,
-      "e": "Revelation 4:2",
+      "e": "Revelation 4:2 — Immediately after being in the Spirit, John sees a throne standing in heaven with someone on it.",
       "d": "medium"
     },
     {
@@ -24473,7 +24473,7 @@ const QB={
         "24"
       ],
       "a": 0,
-      "e": "Revelation 4:6",
+      "e": "Revelation 4:6 — John describes four living creatures, covered with eyes, encircling the throne of God.",
       "d": "medium"
     },
     {
@@ -24485,7 +24485,7 @@ const QB={
         "144"
       ],
       "a": 2,
-      "e": "Revelation 4:4",
+      "e": "Revelation 4:4 — Surrounding the central throne are twenty-four smaller thrones where twenty-four elders sit.",
       "d": "medium"
     },
     {
@@ -24497,7 +24497,7 @@ const QB={
         "Eagle"
       ],
       "a": 0,
-      "e": "Revelation 4:7",
+      "e": "Revelation 4:7 — The first of the four living creatures is described as having the appearance of a lion.",
       "d": "medium"
     },
     {
@@ -24509,7 +24509,7 @@ const QB={
         "An archangel"
       ],
       "a": 2,
-      "e": "Revelation 5:5-6",
+      "e": "Revelation 5:5-6 — Only the Lamb, the Lion of Judah, is found worthy to open the scroll and its seven seals.",
       "d": "easy"
     },
     {
@@ -24521,7 +24521,7 @@ const QB={
         "Crowns"
       ],
       "a": 0,
-      "e": "Revelation 5:6",
+      "e": "Revelation 5:6 — The Lamb is depicted with seven horns and seven eyes, representing the seven spirits of God.",
       "d": "hard"
     },
     {
@@ -24533,7 +24533,7 @@ const QB={
         "Vanished"
       ],
       "a": 0,
-      "e": "Revelation 6:12",
+      "e": "Revelation 6:12 — Upon the opening of the sixth seal, the sun becomes black like sackcloth made of goat hair.",
       "d": "medium"
     },
     {
@@ -24545,7 +24545,7 @@ const QB={
         "Shone brighter"
       ],
       "a": 1,
-      "e": "Revelation 6:12",
+      "e": "Revelation 6:12 — John records that the entire moon turned blood red as part of the cosmic signs of the sixth seal.",
       "d": "medium"
     },
     {
@@ -24557,7 +24557,7 @@ const QB={
         "Darkness"
       ],
       "a": 1,
-      "e": "Revelation 8:7",
+      "e": "Revelation 8:7 — The sounding of the first trumpet results in hail and fire mixed with blood being cast down to earth.",
       "d": "hard"
     },
     {
@@ -24569,7 +24569,7 @@ const QB={
         "City"
       ],
       "a": 0,
-      "e": "Revelation 8:8",
+      "e": "Revelation 8:8 — A huge mountain, all ablaze, is thrown into the sea, turning a third of the sea into blood.",
       "d": "hard"
     },
     {
@@ -24581,7 +24581,7 @@ const QB={
         "1/10"
       ],
       "a": 2,
-      "e": "Revelation 8:7-12",
+      "e": "Revelation 8:7-12 — Each trumpet judgment affects exactly a third of the earth, sea, trees, and celestial bodies.",
       "d": "medium"
     },
     {
@@ -24593,7 +24593,7 @@ const QB={
         "Hades"
       ],
       "a": 1,
-      "e": "Revelation 9:11",
+      "e": "Revelation 9:11 — The king of the abyss is named Apollyon in Greek, which literally means 'The Destroyer'.",
       "d": "hard"
     },
     {
@@ -24605,7 +24605,7 @@ const QB={
         "7"
       ],
       "a": 2,
-      "e": "Revelation 11:2",
+      "e": "Revelation 11:2 — The outer court of the temple is given to the Gentiles to trample the city for forty-two months.",
       "d": "hard"
     },
     {
@@ -24617,7 +24617,7 @@ const QB={
         "10"
       ],
       "a": 1,
-      "e": "Revelation 11:9",
+      "e": "Revelation 11:9 — People from every nation gaze at the bodies of the two witnesses for three and a half days.",
       "d": "hard"
     },
     {
@@ -24629,7 +24629,7 @@ const QB={
         "A dragon"
       ],
       "a": 1,
-      "e": "Revelation 12:1",
+      "e": "Revelation 12:1 — The celestial woman is seen standing on the moon, symbolizing her status and God's glory.",
       "d": "hard"
     },
     {
@@ -24641,7 +24641,7 @@ const QB={
         "A cave"
       ],
       "a": 1,
-      "e": "Revelation 12:6",
+      "e": "Revelation 12:6 — The woman flees into the wilderness to a place prepared by God to be nourished for 1,260 days.",
       "d": "medium"
     },
     {
@@ -24653,7 +24653,7 @@ const QB={
         "Dragon"
       ],
       "a": 0,
-      "e": "Revelation 13:11",
+      "e": "Revelation 13:11 — The second beast rises from the earth with two horns like a lamb but speaks like a dragon.",
       "d": "hard"
     },
     {
@@ -24665,7 +24665,7 @@ const QB={
         "The air"
       ],
       "a": 1,
-      "e": "Revelation 16:2",
+      "e": "Revelation 16:2 — The first angel pours his bowl on the land, causing ugly, painful sores on people with the mark.",
       "d": "hard"
     },
     {
@@ -24677,7 +24677,7 @@ const QB={
         "Explode"
       ],
       "a": 1,
-      "e": "Revelation 16:8",
+      "e": "Revelation 16:8 — The fourth bowl empowers the sun to scorch people with fire, yet they refuse to repent.",
       "d": "hard"
     },
     {
@@ -24689,7 +24689,7 @@ const QB={
         "Tigris"
       ],
       "a": 2,
-      "e": "Revelation 16:12",
+      "e": "Revelation 16:12 — The sixth bowl dries up the great river Euphrates to prepare the way for the kings from the East.",
       "d": "medium"
     },
     {
@@ -24701,7 +24701,7 @@ const QB={
         "Both Hills and Kings"
       ],
       "a": 3,
-      "e": "Revelation 17:9-10",
+      "e": "Revelation 17:9-10 — The heads represent seven hills where the woman sits and also represent seven kings.",
       "d": "hard"
     },
     {
@@ -24713,7 +24713,7 @@ const QB={
         "Demons"
       ],
       "a": 0,
-      "e": "Revelation 17:12",
+      "e": "Revelation 17:12 — The ten horns are ten kings who have not yet received a kingdom but gain authority for an hour.",
       "d": "medium"
     },
     {
@@ -24725,7 +24725,7 @@ const QB={
         "Became a paradise"
       ],
       "a": 0,
-      "e": "Revelation 18:10, 17, 19",
+      "e": "Revelation 18:10 — The judgment and total destruction of the great city Babylon are completed in a single hour.",
       "d": "medium"
     },
     {
@@ -24737,7 +24737,7 @@ const QB={
         "Gabriel"
       ],
       "a": 2,
-      "e": "Revelation 22:16",
+      "e": "Revelation 22:16 — Jesus identifies Himself as the Root and Offspring of David, and the bright Morning Star.",
       "d": "medium"
     },
     {
@@ -24749,7 +24749,7 @@ const QB={
         "The sun"
       ],
       "a": 2,
-      "e": "Revelation 21:2",
+      "e": "Revelation 21:2 — John sees the Holy City, the New Jerusalem, descending from heaven from God, prepared as a bride.",
       "d": "easy"
     },
     {
@@ -24761,7 +24761,7 @@ const QB={
         "1,000 miles"
       ],
       "a": 0,
-      "e": "Revelation 21:16",
+      "e": "Revelation 21:16 — The angel measures the city and finds it is a perfect cube, 12,000 stadia in every dimension.",
       "d": "hard"
     },
     {
@@ -24773,7 +24773,7 @@ const QB={
         "100"
       ],
       "a": 2,
-      "e": "Revelation 21:17",
+      "e": "Revelation 21:17 — The thickness of the city wall is measured by the angel as one hundred and forty-four cubits.",
       "d": "hard"
     },
     {
@@ -24785,7 +24785,7 @@ const QB={
         "Thyatira"
       ],
       "a": 0,
-      "e": "Revelation 2:4",
+      "e": "Revelation 2:4 — Jesus rebukes the church at Ephesus for abandoning the fervent love they had at the beginning.",
       "d": "medium"
     },
     {
@@ -24797,7 +24797,7 @@ const QB={
         "Ephesus"
       ],
       "a": 0,
-      "e": "Revelation 2:10",
+      "e": "Revelation 2:10 — The church at Smyrna is encouraged to remain faithful through coming persecution and even death.",
       "d": "hard"
     },
     {
@@ -24809,7 +24809,7 @@ const QB={
         "Smyrna"
       ],
       "a": 1,
-      "e": "Revelation 2:20",
+      "e": "Revelation 2:20 — Jesus warns the church in Thyatira for tolerating a false prophetess who misleads His servants.",
       "d": "hard"
     },
     {
@@ -24821,7 +24821,7 @@ const QB={
         "Thyatira"
       ],
       "a": 0,
-      "e": "Revelation 3:1",
+      "e": "Revelation 3:1 — The church in Sardis is told they have a reputation for being alive, but are actually spiritually dead.",
       "d": "medium"
     },
     {
@@ -24833,7 +24833,7 @@ const QB={
         "The 144,000"
       ],
       "a": 1,
-      "e": "Revelation 4:8",
+      "e": "Revelation 4:8 — Day and night, the four living creatures never stop saying 'Holy, holy, holy is the Lord God Almighty'.",
       "d": "medium"
     },
     {
@@ -24845,7 +24845,7 @@ const QB={
         "The Lamb"
       ],
       "a": 2,
-      "e": "Revelation 8:4",
+      "e": "Revelation 8:4 — The smoke of the incense, together with the prayers of the saints, rose up before God from the angel.",
       "d": "medium"
     },
     {
@@ -24857,7 +24857,7 @@ const QB={
         "Fish"
       ],
       "a": 0,
-      "e": "Revelation 8:12",
+      "e": "Revelation 8:12 — The fourth trumpet strike affects a third of the sun, moon, and stars, causing darkness.",
       "d": "medium"
     },
     {
@@ -24869,7 +24869,7 @@ const QB={
         "The gates"
       ],
       "a": 1,
-      "e": "Revelation 22:10",
+      "e": "Revelation 22:10 — John is told not to seal up the prophecy of the book because the time of fulfillment is near.",
       "d": "hard"
     },
     {
@@ -24893,7 +24893,7 @@ const QB={
         "John"
       ],
       "a": 0,
-      "e": "Revelation 16:17 and 21:6",
+      "e": "Revelation 21:6 — From the throne, God proclaims 'It is done!', identifying Himself as the Alpha and the Omega.",
       "d": "medium"
     },
     {
@@ -24905,7 +24905,7 @@ const QB={
         "Kings of Earth"
       ],
       "a": 1,
-      "e": "Revelation 19:20",
+      "e": "Revelation 19:20 — The beast is captured alongside the false prophet who performed miraculous signs on his behalf.",
       "d": "medium"
     },
     {
@@ -24917,7 +24917,7 @@ const QB={
         "7 months"
       ],
       "a": 0,
-      "e": "Revelation 9:5",
+      "e": "Revelation 9:5 — The locusts are given power to torture people for five months, but not to kill them.",
       "d": "hard"
     },
     {
@@ -24929,7 +24929,7 @@ const QB={
         "Gold"
       ],
       "a": 0,
-      "e": "Revelation 21:11",
+      "e": "Revelation 21:11 — The city's brilliance is described as like jasper, clear as crystal, reflecting the glory of God.",
       "d": "hard"
     },
     {
@@ -24941,7 +24941,7 @@ const QB={
         "Prophets"
       ],
       "a": 1,
-      "e": "Revelation 21:14",
+      "e": "Revelation 21:14 — The twelve foundations of the city wall bear the names of the twelve apostles of the Lamb.",
       "d": "medium"
     },
     {
@@ -24953,7 +24953,7 @@ const QB={
         "Tribes"
       ],
       "a": 0,
-      "e": "Revelation 21:21",
+      "e": "Revelation 21:21 — Each of the twelve gates is a single pearl, and at the gates are twelve angels.",
       "d": "medium"
     },
     {
@@ -24977,7 +24977,7 @@ const QB={
         "The angels"
       ],
       "a": 1,
-      "e": "Revelation 22:14",
+      "e": "Revelation 22:14 — Blessing is pronounced on those who wash their robes, granting them access to the tree of life.",
       "d": "medium"
     },
     {
@@ -24989,7 +24989,7 @@ const QB={
         "They lose their life"
       ],
       "a": 1,
-      "e": "Revelation 22:18",
+      "e": "Revelation 22:18 — A severe warning is given that God will add the plagues of the book to anyone who adds to its words.",
       "d": "medium"
     },
     {
@@ -25001,7 +25001,7 @@ const QB={
         "Nothing"
       ],
       "a": 0,
-      "e": "Revelation 22:19",
+      "e": "Revelation 22:19 — God will remove the share in the tree of life from anyone who takes words away from the book.",
       "d": "medium"
     },
     {
@@ -25013,7 +25013,7 @@ const QB={
         "8"
       ],
       "a": 2,
-      "e": "Revelation 4:8",
+      "e": "Revelation 4:8 — Each of the four living creatures is described as having six wings and being covered with eyes.",
       "d": "hard"
     },
     {
@@ -25025,7 +25025,7 @@ const QB={
         "Gave them to John"
       ],
       "a": 2,
-      "e": "Revelation 4:10",
+      "e": "Revelation 4:10 — The twenty-four elders fall down before the throne and lay their crowns in worship of the Eternal One.",
       "d": "medium"
     },
     {
@@ -25049,7 +25049,7 @@ const QB={
         "God"
       ],
       "a": 2,
-      "e": "Revelation 11:15",
+      "e": "Rev 11:15 — The seventh trumpet declares that the world's kingdom has become the kingdom of our Lord and His Christ.",
       "d": "medium"
     },
     {
@@ -25061,7 +25061,7 @@ const QB={
         "A certificate"
       ],
       "a": 1,
-      "e": "Revelation 13:17",
+      "e": "Rev 13:17 — No one could buy or sell unless they had the mark, which was the name of the beast or its number.",
       "d": "easy"
     },
     {
@@ -25073,7 +25073,7 @@ const QB={
         "Hands"
       ],
       "a": 0,
-      "e": "Revelation 14:14",
+      "e": "Rev 14:14 — One like a son of man sat on a white cloud with a sharp sickle in his hand to reap the earth's harvest.",
       "d": "medium"
     },
     {
@@ -25085,7 +25085,7 @@ const QB={
         "Ox"
       ],
       "a": 1,
-      "e": "Revelation 14:20",
+      "e": "Rev 14:20 — Blood from the winepress flowed outside the city as high as a horse's bridle for 1,600 stadia.",
       "d": "medium"
     },
     {
@@ -25097,7 +25097,7 @@ const QB={
         "Victory"
       ],
       "a": 0,
-      "e": "Revelation 15:3",
+      "e": "Rev 15:3 — Those who conquered the beast sang the song of Moses and the song of the Lamb to praise God's deeds.",
       "d": "medium"
     },
     {
@@ -25109,7 +25109,7 @@ const QB={
         "John"
       ],
       "a": 1,
-      "e": "Revelation 16:10",
+      "e": "Rev 16:10 — The fifth angel poured out his bowl on the throne of the beast, plunging its kingdom into darkness.",
       "d": "hard"
     },
     {
@@ -25121,7 +25121,7 @@ const QB={
         "Smoke"
       ],
       "a": 1,
-      "e": "Revelation 16:13",
+      "e": "Rev 16:13 — Three unclean spirits like frogs came from the mouths of the dragon, the beast, and the false prophet.",
       "d": "hard"
     },
     {
@@ -25133,7 +25133,7 @@ const QB={
         "Nineveh"
       ],
       "a": 1,
-      "e": "Revelation 17:18",
+      "e": "Rev 17:18 — The woman John saw represents the great city that has dominion over the kings of the earth.",
       "d": "medium"
     },
     {
@@ -25145,7 +25145,7 @@ const QB={
         "The Angels"
       ],
       "a": 0,
-      "e": "Revelation 21:2, 9",
+      "e": "Rev 21:2, 9 — The Bride of the Lamb is the Holy City, New Jerusalem, prepared as a bride adorned for her husband.",
       "d": "medium"
     },
     {
@@ -25157,7 +25157,7 @@ const QB={
         "The Great Feast"
       ],
       "a": 0,
-      "e": "Revelation 19:7",
+      "e": "Rev 19:7 — The marriage of the Lamb has come, and his Bride has made herself ready for the great celebration.",
       "d": "easy"
     },
     {
@@ -25169,7 +25169,7 @@ const QB={
         "Repented"
       ],
       "a": 1,
-      "e": "Revelation 19:20",
+      "e": "Rev 19:20 — The beast and the false prophet were captured and thrown alive into the fiery lake of burning sulfur.",
       "d": "medium"
     },
     {
@@ -25181,7 +25181,7 @@ const QB={
         "24"
       ],
       "a": 0,
-      "e": "Revelation 21:12",
+      "e": "Rev 21:12 — The great, high wall of the New Jerusalem had twelve gates, and at the gates were twelve angels.",
       "d": "medium"
     },
     {
@@ -25193,7 +25193,7 @@ const QB={
         "Fabric"
       ],
       "a": 1,
-      "e": "Revelation 21:19",
+      "e": "Rev 21:19 — The foundations of the city wall were adorned with every kind of precious stone, such as jasper.",
       "d": "medium"
     },
     {
@@ -25205,7 +25205,7 @@ const QB={
         "Wood"
       ],
       "a": 0,
-      "e": "Revelation 21:15",
+      "e": "Rev 21:15 — The angel talking with John had a measuring rod of gold to measure the city, its gates, and its wall.",
       "d": "hard"
     },
     {
@@ -25217,7 +25217,7 @@ const QB={
         "The Beast"
       ],
       "a": 1,
-      "e": "Revelation 19:10 and 22:8-9",
+      "e": "Rev 19:10, 22:8-9 — An angel told John not to worship him but to worship God, as the angel was a fellow servant.",
       "d": "medium"
     },
     {
@@ -25229,7 +25229,7 @@ const QB={
         "Sardis"
       ],
       "a": 0,
-      "e": "Revelation 2:13",
+      "e": "Rev 2:13 — Jesus told the church in Pergamum that he knew they lived where Satan has his throne.",
       "d": "hard"
     },
     {
@@ -25241,7 +25241,7 @@ const QB={
         "The priests"
       ],
       "a": 0,
-      "e": "Revelation 2:17",
+      "e": "Rev 2:17 — To the one who overcomes, Jesus promised to give hidden manna and a white stone with a new name.",
       "d": "hard"
     },
     {
@@ -25253,7 +25253,7 @@ const QB={
         "Sardis"
       ],
       "a": 0,
-      "e": "Revelation 3:8",
+      "e": "Rev 3:8 — The church in Philadelphia was praised for keeping God's word and not denying His name with little strength.",
       "d": "hard"
     },
     {
@@ -25265,7 +25265,7 @@ const QB={
         "Opal"
       ],
       "a": 0,
-      "e": "Revelation 4:3",
+      "e": "Rev 4:3 — Around the throne in heaven, John saw a rainbow that had the appearance of an emerald.",
       "d": "hard"
     }
   ],
@@ -26167,7 +26167,7 @@ const QB={
         "Found her a job"
       ],
       "a": "Multiplied her oil",
-      "e": "2 Kings 4:1-7 records this miracle.",
+      "e": "2 Kings 4:1-7 — Elisha multiplied a widow's small jar of oil to fill many vessels so she could pay her debts.",
       "d": "easy"
     },
     {
@@ -26191,7 +26191,7 @@ const QB={
         "Jesus multiplied loaves"
       ],
       "a": "God provided edible flakes on the ground every morning",
-      "e": "Exodus 16 describes the manna.",
+      "e": "Exod 16 — Manna was the bread from heaven that God provided daily to feed the Israelites in the wilderness.",
       "d": "easy"
     },
     {
@@ -26335,7 +26335,7 @@ const QB={
         "She vanished"
       ],
       "a": "She became a pillar of salt",
-      "e": "Genesis 19:26 records her fate.",
+      "e": "Gen 19:26 — Lot's wife looked back at Sodom during its destruction and was turned into a pillar of salt.",
       "d": "easy"
     },
     {
@@ -26515,7 +26515,7 @@ const QB={
         "They disappeared"
       ],
       "a": "They stood still",
-      "e": "Joshua 10:12-14.",
+      "e": "Josh 10:12-14 — The sun stood still and the moon stopped until the Israelites defeated their Amorite enemies.",
       "d": "easy"
     },
     {
@@ -26527,7 +26527,7 @@ const QB={
         "Lazarus"
       ],
       "a": "A paralytic man",
-      "e": "Mark 2:1-12 records this event.",
+      "e": "Mark 2:1-12 — Friends lowered a paralyzed man through a roof, and Jesus healed him after seeing their faith.",
       "d": "easy"
     },
     {
@@ -26563,7 +26563,7 @@ const QB={
         "7"
       ],
       "a": "10",
-      "e": "Luke 17:11-19.",
+      "e": "Luke 17:11-19 — Jesus healed ten lepers as they went to the priests, but only one returned to give God thanks.",
       "d": "easy"
     },
     {
@@ -26903,15 +26903,15 @@ const QB={
       "d": "hard"
     },
     {
-      "q": "In Exodus 7-12, which plague was the only one to affect Israelites in Goshen?",
+      "q": "Starting with which plague did God begin to spare the Israelites in Goshen?",
       "o": [
-        "Flies",
-        "Frogs",
-        "Darkness",
-        "None — all plagues were limited to the Egyptians only"
+        "First plague (blood)",
+        "Second plague (frogs)",
+        "Third plague (gnats)",
+        "Fourth plague (flies)"
       ],
       "a": 3,
-      "e": "Exodus 8:22 — But on that day I will deal differently with the land of Goshen, where my people live — the plagues from the fourth (flies) onward spared Goshen. The first three plagues (blood, frogs, gnats) affected all of Egypt.",
+      "e": "Exodus 8:22 — From the fourth plague (flies) onward, God spared the land of Goshen. The first three plagues affected all of Egypt including Goshen.",
       "d": "hard"
     },
     {
@@ -27213,7 +27213,7 @@ const QB={
         "Maakah"
       ],
       "a": "Athaliah",
-      "e": "2 Kings 11 records Athaliah's reign.",
+      "e": "2 Kings 11 — Queen Athaliah seized the throne of Judah and ruled for six years after killing the royal family.",
       "d": "hard"
     },
     {
@@ -27333,7 +27333,7 @@ const QB={
         "Dorcas"
       ],
       "a": "Eunice",
-      "e": "2 Timothy 1:5 mentions Eunice's faith.",
+      "e": "2 Tim 1:5 — Eunice was Timothy's mother, who passed on her sincere faith to him from a young age.",
       "d": "hard"
     },
     {
@@ -27345,7 +27345,7 @@ const QB={
         "Elizabeth"
       ],
       "a": "Lois",
-      "e": "2 Timothy 1:5 mentions Lois.",
+      "e": "2 Tim 1:5 — Lois was Timothy's grandmother, noted for the sincere faith that also lived in his mother and him.",
       "d": "hard"
     },
     {
@@ -27381,7 +27381,7 @@ const QB={
         "Miriam"
       ],
       "a": "Jochebed",
-      "e": "Exodus 6:20 and Numbers 26:59.",
+      "e": "Exod 6:20 — Jochebed was the mother of Aaron and Moses, and she hid Moses for three months to save his life.",
       "d": "hard"
     },
     {
@@ -27393,7 +27393,7 @@ const QB={
         "Anna"
       ],
       "a": "Sarah",
-      "e": "Genesis 18:12 records Sarah's laughter.",
+      "e": "Gen 18:12 — Sarah laughed to herself when she heard she would have a child because she and Abraham were very old.",
       "d": "easy"
     },
     {
@@ -27501,7 +27501,7 @@ const QB={
         "Anna"
       ],
       "a": "Hannah",
-      "e": "1 Samuel 1:1-20.",
+      "e": "1 Sam 1:1-20 — Hannah prayed for a son at the tabernacle, and God answered her by giving her Samuel.",
       "d": "easy"
     },
     {
@@ -27513,7 +27513,7 @@ const QB={
         "Leah"
       ],
       "a": "Peninnah",
-      "e": "1 Samuel 1:2-7.",
+      "e": "1 Sam 1:2-7 — Peninnah was Elkanah's other wife who provoked Hannah because the Lord had closed Hannah's womb.",
       "d": "medium"
     },
     {
@@ -27525,7 +27525,7 @@ const QB={
         "Bilhah"
       ],
       "a": "Hagar",
-      "e": "Genesis 16.",
+      "e": "Gen 16 — Hagar was Sarah's Egyptian servant who bore Ishmael to Abraham when Sarah remained childless.",
       "d": "easy"
     },
     {
@@ -27717,7 +27717,7 @@ const QB={
         "Drusilla"
       ],
       "a": "Herodias",
-      "e": "Matthew 14:3 and Mark 6:17-18.",
+      "e": "Matt 14:3 — Herodias was the wife of Philip whom Herod Antipas married illegally, leading to John's protest.",
       "d": "medium"
     },
     {
@@ -27729,7 +27729,7 @@ const QB={
         "The Samaritan woman"
       ],
       "a": "She is unnamed",
-      "e": "The woman is not named in the passage.",
+      "e": "John 8 — The woman caught in adultery is not named in the biblical text, though Jesus forgave her sins.",
       "d": "easy"
     },
     {
@@ -27753,7 +27753,7 @@ const QB={
         "Salome"
       ],
       "a": "Elizabeth",
-      "e": "Luke 1:5.",
+      "e": "Luke 1:5 — Elizabeth, a descendant of Aaron, was the wife of the priest Zechariah and mother of John the Baptist.",
       "d": "easy"
     },
     {
@@ -27765,7 +27765,7 @@ const QB={
         "Mary"
       ],
       "a": "The poor widow",
-      "e": "Mark 12:41-44 and Luke 21:1-4.",
+      "e": "Mark 12:41-44 — A poor widow gave two small copper coins, which Jesus said was more than all the others gave.",
       "d": "easy"
     },
     {
@@ -27777,7 +27777,7 @@ const QB={
         "Elisheba"
       ],
       "a": "Jochebed",
-      "e": "Exodus 6:20.",
+      "e": "Exod 6:20 — Jochebed is recorded as the wife of Amram and the mother of both Aaron and Moses.",
       "d": "medium"
     },
     {
@@ -27801,7 +27801,7 @@ const QB={
         "Miriam"
       ],
       "a": "Elisheba",
-      "e": "Exodus 6:23.",
+      "e": "Exod 6:23 — Elisheba was the daughter of Amminadab and the wife of Aaron, the first high priest of Israel.",
       "d": "hard"
     },
     {
@@ -27813,7 +27813,7 @@ const QB={
         "Elisheba"
       ],
       "a": "Zipporah",
-      "e": "Exodus 18:2-4.",
+      "e": "Exod 18:2-4 — Zipporah, the wife of Moses, was the mother of his two sons, Gershom and Eliezer.",
       "d": "hard"
     },
     {
@@ -27825,7 +27825,7 @@ const QB={
         "Dinah"
       ],
       "a": "The daughter of Shua",
-      "e": "Genesis 38:2-12.",
+      "e": "Gen 38:2-12 — The daughter of Shua, a Canaanite woman, was the wife of Judah and mother of Er, Onan, and Shelah.",
       "d": "hard"
     },
     {
@@ -27837,7 +27837,7 @@ const QB={
         "Delilah"
       ],
       "a": "Jezebel",
-      "e": "1 Kings 16:31.",
+      "e": "1 Kings 16:31 — Jezebel, daughter of Ethbaal king of the Sidonians, was the wife of King Ahab of Israel.",
       "d": "medium"
     },
     {
@@ -27873,7 +27873,7 @@ const QB={
         "Eglah"
       ],
       "a": "Haggith",
-      "e": "2 Samuel 3:4.",
+      "e": "2 Sam 3:4 — Haggith was one of David's wives and the mother of Adonijah, who later tried to become king.",
       "d": "hard"
     },
     {
@@ -27885,7 +27885,7 @@ const QB={
         "Haggith"
       ],
       "a": "Ahinoam",
-      "e": "2 Samuel 3:2.",
+      "e": "2 Sam 3:2 — Ahinoam of Jezreel was David's wife and the mother of his firstborn son, Amnon.",
       "d": "hard"
     },
     {
@@ -27897,7 +27897,7 @@ const QB={
         "Haggith"
       ],
       "a": "Abigail",
-      "e": "2 Samuel 3:3.",
+      "e": "2 Sam 3:3 — Abigail, the widow of Nabal the Carmelite, was David's wife and the mother of his son Chileab.",
       "d": "hard"
     },
     {
@@ -27909,7 +27909,7 @@ const QB={
         "Zebidah"
       ],
       "a": "Jedidah",
-      "e": "2 Kings 22:1.",
+      "e": "2 Kings 22:1 — Jedidah, daughter of Adaiah of Bozkath, was the mother of the righteous King Josiah.",
       "d": "hard"
     },
     {
@@ -27933,7 +27933,7 @@ const QB={
         "Zilpah"
       ],
       "a": "Rachel",
-      "e": "Genesis 31:19 and 34.",
+      "e": "Gen 31:19 — Rachel stole her father Laban's household gods when Jacob fled from him to return to Canaan.",
       "d": "medium"
     },
     {
@@ -27957,7 +27957,7 @@ const QB={
         "Tamar"
       ],
       "a": "Asenath",
-      "e": "Genesis 41:50-52.",
+      "e": "Gen 41:50-52 — Asenath, daughter of Potiphera priest of On, was the mother of Joseph's sons Manasseh and Ephraim.",
       "d": "hard"
     },
     {
@@ -27969,7 +27969,7 @@ const QB={
         "Peninnah"
       ],
       "a": "The wife of Phinehas",
-      "e": "1 Samuel 4:19-22.",
+      "e": "1 Sam 4:19-22 — Eli's daughter-in-law named her son Ichabod, meaning 'the glory has departed from Israel'.",
       "d": "hard"
     },
     {
@@ -27981,7 +27981,7 @@ const QB={
         "Maakah"
       ],
       "a": "Athaliah",
-      "e": "2 Kings 8:26 and 11:1.",
+      "e": "2 Kings 8:26 — Athaliah was the daughter of King Ahab and the mother of King Ahaziah of Judah.",
       "d": "hard"
     },
     {
@@ -27993,7 +27993,7 @@ const QB={
         "Bathsheba"
       ],
       "a": "Maakah",
-      "e": "1 Kings 15:2 and 2 Chronicles 11:20.",
+      "e": "2 Chron 11:20 — Maakah, the daughter of Absalom, was the favorite wife of Rehoboam and mother of Abijah.",
       "d": "hard"
     },
     {
@@ -28005,7 +28005,7 @@ const QB={
         "Martha"
       ],
       "a": "Salome",
-      "e": "Mark 15:40 and 16:1.",
+      "e": "Mark 15:40 — Salome is mentioned as one of the women who followed Jesus and was the mother of James and John.",
       "d": "hard"
     },
     {
@@ -28029,7 +28029,7 @@ const QB={
         "Joanna"
       ],
       "a": "Salome",
-      "e": "Matthew 20:20 and 27:56.",
+      "e": "Matt 20:20 — The mother of Zebedee's sons asked Jesus to let her sons sit at his right and left in his kingdom.",
       "d": "hard"
     },
     {
@@ -28053,7 +28053,7 @@ const QB={
         "Junia"
       ],
       "a": "Priscilla",
-      "e": "Acts 18:2.",
+      "e": "Acts 18:2 — Priscilla was the wife of Aquila; they were tentmakers who worked and traveled with the apostle Paul.",
       "d": "easy"
     },
     {
@@ -28089,7 +28089,7 @@ const QB={
         "Haggith"
       ],
       "a": "Bathsheba",
-      "e": "2 Samuel 12:24.",
+      "e": "2 Sam 12:24 — Bathsheba was the mother of Solomon, whom David comforted after the death of their first child.",
       "d": "easy"
     },
     {
@@ -28101,7 +28101,7 @@ const QB={
         "Anna"
       ],
       "a": "Miriam",
-      "e": "Exodus 15:20.",
+      "e": "Exod 15:20 — Miriam, the sister of Aaron, took a tambourine and led the women in song as a prophetess.",
       "d": "medium"
     },
     {
@@ -28125,7 +28125,7 @@ const QB={
         "Rebekah"
       ],
       "a": "Milcah",
-      "e": "Genesis 11:29.",
+      "e": "Gen 11:29 — Milkah was the daughter of Haran and the wife of Nahor, who was Abraham's brother.",
       "d": "hard"
     },
     {
@@ -28137,7 +28137,7 @@ const QB={
         "Hagar"
       ],
       "a": "Lot's daughters",
-      "e": "Genesis 19:30-38.",
+      "e": "Gen 19:30-38 — Lot's two daughters became the mothers of the Moabites and Ammonites through their father.",
       "d": "medium"
     },
     {
@@ -28161,7 +28161,7 @@ const QB={
         "Athaliah"
       ],
       "a": "Hephzibah",
-      "e": "2 Kings 21:1.",
+      "e": "2 Kings 21:1 — Hephzibah was the wife of King Hezekiah and the mother of King Manasseh of Judah.",
       "d": "hard"
     },
     {
@@ -28185,7 +28185,7 @@ const QB={
         "Jedidah"
       ],
       "a": "Nehushta",
-      "e": "2 Kings 24:8.",
+      "e": "2 Kings 24:8 — Nehushta, daughter of Elnathan of Jerusalem, was the mother of King Jehoiachin.",
       "d": "hard"
     },
     {
@@ -28197,7 +28197,7 @@ const QB={
         "Nehushta"
       ],
       "a": "Hamutal",
-      "e": "2 Kings 23:31.",
+      "e": "2 Kings 23:31 — Hamutal, daughter of Jeremiah of Libnah, was the mother of King Jehoahaz of Judah.",
       "d": "hard"
     },
     {
@@ -28209,7 +28209,7 @@ const QB={
         "Nehushta"
       ],
       "a": "Zebidah",
-      "e": "2 Kings 23:36.",
+      "e": "2 Kings 23:36 — Zebidah, daughter of Pedaiah of Rumah, was the mother of King Jehoiakim of Judah.",
       "d": "hard"
     },
     {
@@ -28221,7 +28221,7 @@ const QB={
         "Rizpah"
       ],
       "a": "Ahinoam",
-      "e": "1 Samuel 14:50.",
+      "e": "1 Sam 14:50 — Ahinoam, daughter of Ahimaaz, was the wife of King Saul, the first king of Israel.",
       "d": "hard"
     },
     {
@@ -28233,7 +28233,7 @@ const QB={
         "Merab"
       ],
       "a": "Rizpah",
-      "e": "2 Samuel 21:8-11.",
+      "e": "2 Sam 21:8-11 — Rizpah was a concubine of Saul who protected the bodies of her executed sons from scavengers.",
       "d": "hard"
     },
     {
@@ -28245,7 +28245,7 @@ const QB={
         "Rizpah"
       ],
       "a": "Merab",
-      "e": "1 Samuel 18:17-19.",
+      "e": "1 Sam 18:17-19 — Merab was Saul's oldest daughter who was promised to David but given to Adriel the Meholathite.",
       "d": "hard"
     },
     {
@@ -28257,7 +28257,7 @@ const QB={
         "Lydia"
       ],
       "a": "Both A and B",
-      "e": "2 Timothy 1:5 mentions both women.",
+      "e": "2 Tim 1:5 — Paul notes that the same sincere faith lived in Timothy, his mother Eunice, and grandmother Lois.",
       "d": "medium"
     },
     {
@@ -28269,7 +28269,7 @@ const QB={
         "Bathsheba"
       ],
       "a": "Tamar",
-      "e": "Matthew 1:3.",
+      "e": "Matt 1:3 — Tamar is the first of four women mentioned in the genealogy of Jesus in the Gospel of Matthew.",
       "d": "hard"
     }
   ],
@@ -28583,7 +28583,7 @@ const QB={
         "Hyena"
       ],
       "a": "Serpent",
-      "e": "Genesis 3:1.",
+      "e": "Gen 3:1 — The serpent was more crafty than any other beast of the field that the Lord God had made.",
       "d": "easy"
     },
     {
@@ -28595,7 +28595,7 @@ const QB={
         "Hippo"
       ],
       "a": "Behemoth",
-      "e": "Job 40:15-24 describes Behemoth.",
+      "e": "Job 40:15-18 — Behemoth's strength is in its loins, and its power is in the muscles of its belly.",
       "d": "medium"
     },
     {
@@ -28799,7 +28799,7 @@ const QB={
         "Window"
       ],
       "a": "Needle",
-      "e": "Matthew 19:24 and Mark 10:25.",
+      "e": "Matt 19:24 — Jesus said it is easier for a camel to go through the eye of a needle than for a rich man to enter heaven.",
       "d": "easy"
     },
     {
@@ -28811,7 +28811,7 @@ const QB={
         "Stone Eagle"
       ],
       "a": "Golden Calf",
-      "e": "Exodus 32.",
+      "e": "Exod 32 — While Moses was on Sinai, the Israelites made and worshiped a golden calf as their god.",
       "d": "easy"
     },
     {
@@ -28907,7 +28907,7 @@ const QB={
         "Deer"
       ],
       "a": "Ram",
-      "e": "Genesis 22:13.",
+      "e": "Gen 22:13 — Abraham saw a ram caught in a thicket by its horns and sacrificed it instead of his son Isaac.",
       "d": "easy"
     },
     {
@@ -28931,7 +28931,7 @@ const QB={
         "Wolves"
       ],
       "a": "Snakes",
-      "e": "Numbers 21:6.",
+      "e": "Num 21:6 — Because the people spoke against God and Moses, the Lord sent fiery serpents among them.",
       "d": "easy"
     },
     {
@@ -29099,7 +29099,7 @@ const QB={
         "Badger"
       ],
       "a": "Fox",
-      "e": "Song of Solomon 2:15.",
+      "e": "Song 2:15 — The speaker asks to catch the little foxes that spoil the vines while the vineyards are in blossom.",
       "d": "medium"
     },
     {
@@ -29123,7 +29123,7 @@ const QB={
         "All livestock"
       ],
       "a": "All livestock",
-      "e": "Exodus 20:10 says 'nor your animals'.",
+      "e": "Exod 20:10 — The Fourth Commandment states that on the Sabbath, no work shall be done by people or their animals.",
       "d": "medium"
     },
     {
@@ -29147,7 +29147,7 @@ const QB={
         "Ravenous wolf"
       ],
       "a": "Rawboned donkey",
-      "e": "Genesis 49:14.",
+      "e": "Gen 49:14 — In his blessing, Jacob describes Issachar as a strong donkey crouching between two saddlebags.",
       "d": "hard"
     },
     {
@@ -29159,7 +29159,7 @@ const QB={
         "Living man"
       ],
       "a": "Living dog",
-      "e": "Ecclesiastes 9:4.",
+      "e": "Eccl 9:4 — The Preacher says that a living dog is better than a dead lion because there is still hope for the living.",
       "d": "medium"
     },
     {
@@ -29231,7 +29231,7 @@ const QB={
         "Fish"
       ],
       "a": "Birds",
-      "e": "Leviticus 12:8 and Luke 2:24.",
+      "e": "Luke 2:24 — Mary and Joseph offered a sacrifice of two turtledoves, as required for those who could not afford a lamb.",
       "d": "easy"
     },
     {
@@ -29315,7 +29315,7 @@ const QB={
         "Sheep"
       ],
       "a": "Pig",
-      "e": "2 Peter 2:22.",
+      "e": "2 Pet 2:22 — False teachers are compared to a sow that is washed only to return to wallowing in the mud.",
       "d": "medium"
     },
     {
@@ -29339,7 +29339,7 @@ const QB={
         "Fish"
       ],
       "a": "Birds",
-      "e": "Isaiah 34:11 and Zephaniah 2:14 (KJV).",
+      "e": "Isa 34:11 — The desert owl and the screech owl (or bittern) would possess the ruins of the judged nations.",
       "d": "hard"
     },
     {
@@ -29351,7 +29351,7 @@ const QB={
         "None of the above"
       ],
       "a": "Man, Lion, Ox, Eagle",
-      "e": "Ezekiel 1:10.",
+      "e": "Ezek 1:10 — The four living creatures each had the faces of a man, a lion, an ox, and an eagle.",
       "d": "hard"
     },
     {
@@ -29375,7 +29375,7 @@ const QB={
         "Man"
       ],
       "a": "Horse",
-      "e": "Psalm 147:10.",
+      "e": "Ps 147:10 — God's pleasure is not in the strength of the horse, nor does He delight in the legs of a man.",
       "d": "hard"
     },
     {
@@ -29399,7 +29399,7 @@ const QB={
         "One bull"
       ],
       "a": "Two pigeons or two turtledoves",
-      "e": "Leviticus 5:7.",
+      "e": "Lev 5:7 — A poor person could bring two turtledoves or two young pigeons as a sin offering to the Lord.",
       "d": "medium"
     },
     {
@@ -29423,7 +29423,7 @@ const QB={
         "Donkey"
       ],
       "a": "Sheep (two leg bones or a piece of an ear)",
-      "e": "Amos 3:12.",
+      "e": "Amos 3:12 — Amos compares Israel's rescue to a shepherd saving two leg bones or a piece of an ear from a lion.",
       "d": "hard"
     },
     {
@@ -29447,7 +29447,7 @@ const QB={
         "Snake, Scorpion, Spider"
       ],
       "a": "Lion, Leopard, Bear",
-      "e": "Hosea 13:7-8.",
+      "e": "Hos 13:7-8 — God warned that He would be like a lion, a leopard, or a bear to the rebellious people of Israel.",
       "d": "hard"
     },
     {
@@ -29495,7 +29495,7 @@ const QB={
         "Hills"
       ],
       "a": "Lebanon and Sirion",
-      "e": "Psalm 29:6.",
+      "e": "Ps 29:6 — The voice of the Lord makes Lebanon skip like a calf and Mount Hermon like a young wild ox.",
       "d": "hard"
     },
     {
@@ -29507,7 +29507,7 @@ const QB={
         "Scorpions"
       ],
       "a": "Snakes",
-      "e": "Psalm 91:13.",
+      "e": "Ps 91:13 — The Lord promises that the faithful will tread on the lion and the cobra, trampling the great lion and serpent.",
       "d": "medium"
     },
     {
@@ -29555,7 +29555,7 @@ const QB={
         "Jacob"
       ],
       "a": "Jesus",
-      "e": "Revelation 5:5.",
+      "e": "Rev 5:5 — One of the elders told John that the Lion of the tribe of Judah has triumphed and can open the scroll.",
       "d": "easy"
     },
     {
@@ -29567,7 +29567,7 @@ const QB={
         "Birds in the sky"
       ],
       "a": "Calves released from the stall",
-      "e": "Malachi 4:2.",
+      "e": "Mal 4:2 — For those who revere God's name, the sun of righteousness will rise with healing in its rays.",
       "d": "hard"
     },
     {
@@ -29579,7 +29579,7 @@ const QB={
         "The Jews"
       ],
       "a": "The wicked",
-      "e": "Matthew 25:31-46.",
+      "e": "Matt 25:31-46 — In the final judgment, the goats represent those who failed to care for the 'least of these'.",
       "d": "easy"
     },
     {
@@ -29591,7 +29591,7 @@ const QB={
         "Man"
       ],
       "a": "Serpent",
-      "e": "Proverbs 30:19.",
+      "e": "Prov 30:19 — Agur lists the way of a serpent on a rock as one of the four things too amazing for him to understand.",
       "d": "medium"
     }
   ],
@@ -31107,7 +31107,7 @@ const QB={
         "70"
       ],
       "a": 1,
-      "e": "39 (OT) + 27 (NT) = 66 books.",
+      "e": "2 Tim 3:16 — The Protestant Bible contains 66 books, consisting of 39 in the Old Testament and 27 in the New.",
       "d": "easy"
     },
     {
@@ -31455,7 +31455,7 @@ const QB={
         "4"
       ],
       "a": 1,
-      "e": "Ruth and Esther.",
+      "e": "Ruth 1:1 — Ruth and Esther are the only two books in the entire Bible named after women.",
       "d": "easy"
     },
     {
@@ -33631,7 +33631,7 @@ const QB={
         "Psalm 150"
       ],
       "a": 2,
-      "e": "Psalm 117 has only two verses.",
+      "e": "Ps 117 — With only two verses, Psalm 117 is the shortest chapter in the Bible and the shortest Psalm.",
       "d": "medium"
     },
     {
@@ -33643,7 +33643,7 @@ const QB={
         "Psalm 139"
       ],
       "a": 2,
-      "e": "Psalm 119 has 176 verses.",
+      "e": "Ps 119 — Psalm 119 is the longest chapter in the Bible, containing 176 verses divided into 22 stanzas.",
       "d": "easy"
     },
     {
@@ -33703,7 +33703,7 @@ const QB={
         "Hosanna"
       ],
       "a": 2,
-      "e": "Selah appears 71 times in the Psalms.",
+      "e": "Ps 3:2 — Selah is a Hebrew word used frequently in the Psalms, likely indicating a musical or liturgical pause.",
       "d": "medium"
     },
     {
@@ -33787,7 +33787,7 @@ const QB={
         "Ecclesiastes"
       ],
       "a": 2,
-      "e": "Also known as the Song of Solomon.",
+      "e": "Song 1:1 — The Song of Solomon, also called the Song of Songs, is a poetic book about love and marriage.",
       "d": "easy"
     },
     {
@@ -34171,7 +34171,7 @@ const QB={
         "Psalm 139"
       ],
       "a": 2,
-      "e": "Psalm 119:105.",
+      "e": "Ps 119:105 — The psalmist declares that God's word is a lamp to his feet and a light to his path.",
       "d": "easy"
     },
     {
@@ -34447,7 +34447,7 @@ const QB={
         "Psalm 121"
       ],
       "a": 1,
-      "e": "Psalm 46:10.",
+      "e": "Ps 46:10 — God commands His people to be still and know that He is God, exalted among the nations.",
       "d": "medium"
     },
     {
@@ -34495,7 +34495,7 @@ const QB={
         "He will bless their instruments"
       ],
       "a": 2,
-      "e": "Amos 5:23.",
+      "e": "Amos 5:23 — God rejected the music of the unrighteous, telling them to take away the noise of their songs.",
       "d": "medium"
     },
     {
@@ -34519,7 +34519,7 @@ const QB={
         "Sacrifice"
       ],
       "a": 2,
-      "e": "Habakkuk 3:17-18.",
+      "e": "Habakkuk 3:17-18 — Habakkuk declared his joy in the Lord despite the total failure of crops and livestock.",
       "d": "medium"
     },
     {
@@ -34543,7 +34543,7 @@ const QB={
         "Timbrel"
       ],
       "a": 2,
-      "e": "Pipes or flutes are wind instruments.",
+      "e": "Psalm 150:3-4 — The lyre is a string instrument, while pipes and trumpets are examples of wind instruments.",
       "d": "easy"
     },
     {
@@ -34567,7 +34567,7 @@ const QB={
         "Psalm 121"
       ],
       "a": 1,
-      "e": "Psalm 46:1.",
+      "e": "Psalm 46:1 — This verse explicitly describes God as our refuge, strength, and an ever-present help in trouble.",
       "d": "medium"
     },
     {
@@ -34711,7 +34711,7 @@ const QB={
         "Cymbals"
       ],
       "a": 2,
-      "e": "Psalm 33:2 / Psalm 92:3 — 'Praise the Lord with the harp; make music to him on the ten-stringed lyre.'",
+      "e": "Psalm 33:2 / Psalm 92:3 — The Hebrew 'nevel' (psaltery/lute) was a ten-stringed instrument. KJV translates it as psaltery; some versions say lute or harp.",
       "d": "medium"
     },
     {
@@ -34771,7 +34771,7 @@ const QB={
         "James"
       ],
       "a": 1,
-      "e": "Ephesians 5:19 / Colossians 3:16.",
+      "e": "Ephesians 5:19 — Paul instructs believers to encourage one another through psalms, hymns, and spiritual songs.",
       "d": "medium"
     },
     {
@@ -34807,7 +34807,7 @@ const QB={
         "A song of praise"
       ],
       "a": 1,
-      "e": "Lamentations is a collection of these.",
+      "e": "Lamentations 1:1 — A lament or threnody is a song of mourning or sorrow, as seen in the Book of Lamentations.",
       "d": "medium"
     },
     {
@@ -34843,7 +34843,7 @@ const QB={
         "Malachi"
       ],
       "a": 2,
-      "e": "Zephaniah 3:17.",
+      "e": "Zephaniah 3:17 — The prophet Zephaniah records that God is with His people and rejoices over them with singing.",
       "d": "hard"
     },
     {
@@ -34855,7 +34855,7 @@ const QB={
         "Psalm 100"
       ],
       "a": 1,
-      "e": "Psalm 30 title.",
+      "e": "Psalm 30:1 — The superscription of Psalm 30 identifies it as a song for the dedication of the house of David.",
       "d": "hard"
     },
     {
@@ -34867,120 +34867,1318 @@ const QB={
         "Shofar"
       ],
       "a": 1,
-      "e": "Numbers 10:2.",
+      "e": "Numbers 10:2 — God commanded Moses to make two silver trumpets for summoning the assembly and signaling camp moves.",
       "d": "medium"
     }
   ],
   "Who Am I?": [
-      {"q": "I was the first man created by God. Who am I?", "o": ["Adam", "Noah", "Abraham", "Moses"], "a": 0, "e": "Genesis 2:7 records God forming man from the dust of the ground.", "d": "easy"},
-      {"q": "I built an ark to save my family and animals from a great flood. Who am I?", "o": ["Noah", "Enoch", "Methuselah", "Lamech"], "a": 0, "e": "Genesis 6-9 tells the story of Noah and the ark.", "d": "easy"},
-      {"q": "I was known as the 'Father of Many Nations' and my wife was Sarah. Who am I?", "o": ["Abraham", "Isaac", "Jacob", "Lot"], "a": 0, "e": "Genesis 17:5 says God changed his name from Abram to Abraham because he would be the father of many nations.", "d": "easy"},
-      {"q": "I was sold into slavery by my brothers and later became a ruler in Egypt. Who am I?", "o": ["Joseph", "Benjamin", "Reuben", "Judah"], "a": 0, "e": "Genesis 37-50 records the life of Joseph.", "d": "easy"},
-      {"q": "I led the Israelites out of Egypt and received the Ten Commandments. Who am I?", "o": ["Moses", "Aaron", "Joshua", "Caleb"], "a": 0, "e": "Exodus describes Moses' leadership and the law given at Sinai.", "d": "easy"},
-      {"q": "I defeated the giant Goliath with a sling and a stone. Who am I?", "o": ["David", "Saul", "Solomon", "Jonathan"], "a": 0, "e": "1 Samuel 17 tells of David's victory over Goliath.", "d": "easy"},
-      {"q": "I was the wisest king of Israel and built the first Temple. Who am I?", "o": ["Solomon", "David", "Rehoboam", "Hezekiah"], "a": 0, "e": "1 Kings 3-6 records Solomon's wisdom and temple construction.", "d": "easy"},
-      {"q": "I was swallowed by a great fish after trying to run away from God. Who am I?", "o": ["Jonah", "Amos", "Hosea", "Micah"], "a": 0, "e": "The book of Jonah describes his flight to Tarshish and the great fish.", "d": "easy"},
-      {"q": "I was the mother of Jesus. Who am I?", "o": ["Mary", "Elizabeth", "Martha", "Salome"], "a": 0, "e": "Matthew 1 and Luke 1-2 record Mary as the mother of Jesus.", "d": "easy"},
-      {"q": "I was a tax collector who climbed a sycamore tree to see Jesus. Who am I?", "o": ["Zacchaeus", "Matthew", "Simon", "Andrew"], "a": 0, "e": "Luke 19:1-10 tells the story of Zacchaeus.", "d": "easy"},
-      {"q": "I denied Jesus three times before the rooster crowed. Who am I?", "o": ["Peter", "John", "Judas", "Thomas"], "a": 0, "e": "Matthew 26:69-75 records Peter's denials.", "d": "easy"},
-      {"q": "I betrayed Jesus for thirty pieces of silver. Who am I?", "o": ["Judas Iscariot", "Judas son of James", "Simon the Zealot", "Philip"], "a": 0, "e": "Matthew 26:14-16 records the betrayal.", "d": "easy"},
-      {"q": "I was the first martyr of the early church, stoned for my faith. Who am I?", "o": ["Stephen", "James", "Philip", "Paul"], "a": 0, "e": "Acts 7 records Stephen's speech and martyrdom.", "d": "medium"},
-      {"q": "I was a Pharisee who persecuted Christians but became the 'Apostle to the Gentiles'. Who am I?", "o": ["Paul", "Barnabas", "Silas", "Timothy"], "a": 0, "e": "Acts 9 records Saul's conversion and subsequent ministry as Paul.", "d": "easy"},
-      {"q": "I was the longest-living man in the Bible, reaching 969 years. Who am I?", "o": ["Methuselah", "Enoch", "Jared", "Noah"], "a": 0, "e": "Genesis 5:27 says Methuselah lived 969 years.", "d": "medium"},
-      {"q": "I walked with God and then was no more, because God took me. Who am I?", "o": ["Enoch", "Noah", "Abraham", "Moses"], "a": 0, "e": "Genesis 5:24 says Enoch walked with God and was taken by Him.", "d": "medium"},
-      {"q": "I was the wife of Isaac and mother of Jacob and Esau. Who am I?", "o": ["Rebekah", "Rachel", "Leah", "Sarah"], "a": 0, "e": "Genesis 24-25 records the story of Rebekah.", "d": "medium"},
-      {"q": "I wrestled with God and my name was changed to Israel. Who am I?", "o": ["Jacob", "Esau", "Isaac", "Joseph"], "a": 0, "e": "Genesis 32:28 records Jacob's name change after wrestling with God.", "d": "easy"},
-      {"q": "I was a judge known for my great strength which came from my hair. Who am I?", "o": ["Samson", "Gideon", "Barak", "Jephthah"], "a": 0, "e": "Judges 13-16 tells the story of Samson.", "d": "easy"},
-      {"q": "I was the first high priest of Israel and the brother of Moses. Who am I?", "o": ["Aaron", "Hur", "Eleazar", "Phinehas"], "a": 0, "e": "Exodus 28 records Aaron's appointment as priest.", "d": "medium"},
-      {"q": "I was the sister of Moses and Aaron who led the women in song. Who am I?", "o": ["Miriam", "Deborah", "Ruth", "Esther"], "a": 0, "e": "Exodus 15:20-21 records Miriam's song of praise.", "d": "medium"},
-      {"q": "I was a Moabite woman who remained loyal to my mother-in-law Naomi. Who am I?", "o": ["Ruth", "Orpah", "Rahab", "Delilah"], "a": 0, "e": "The book of Ruth tells of her loyalty and faith.", "d": "easy"},
-      {"q": "I was a queen of Persia who saved my people from destruction. Who am I?", "o": ["Esther", "Vashti", "Jezebel", "Athaliah"], "a": 0, "e": "The book of Esther describes how she saved the Jews.", "d": "easy"},
-      {"q": "I was the cousin of Jesus and prepared the way for His ministry. Who am I?", "o": ["John the Baptist", "John the Apostle", "James", "Andrew"], "a": 0, "e": "Matthew 3 and Luke 1-3 describe John's role.", "d": "easy"},
-      {"q": "I was the Roman governor who sentenced Jesus to be crucified. Who am I?", "o": ["Pontius Pilate", "Herod Antipas", "Felix", "Festus"], "a": 0, "e": "The Gospels record Pilate's role in Jesus' trial.", "d": "easy"},
-      {"q": "I was a Pharisee who came to Jesus by night to ask about being born again. Who am I?", "o": ["Nicodemus", "Gamaliel", "Joseph of Arimathea", "Simon the Pharisee"], "a": 0, "e": "John 3 records the conversation between Jesus and Nicodemus.", "d": "medium"},
-      {"q": "I provided my own tomb for Jesus' burial. Who am I?", "o": ["Joseph of Arimathea", "Nicodemus", "Lazarus", "Simon of Cyrene"], "a": 0, "e": "Matthew 27:57-60 records this act of Joseph.", "d": "medium"},
-      {"q": "I was the first person to see the risen Lord. Who am I?", "o": ["Mary Magdalene", "Peter", "John", "James"], "a": 0, "e": "John 20:11-18 records Jesus' appearance to Mary.", "d": "medium"},
-      {"q": "I was known as the 'Doubting Apostle' until I saw Jesus' wounds. Who am I?", "o": ["Thomas", "Philip", "Bartholomew", "Matthew"], "a": 0, "e": "John 20:24-29 records Thomas' doubt and subsequent belief.", "d": "easy"},
-      {"q": "I was a doctor and the author of the third Gospel and the book of Acts. Who am I?", "o": ["Luke", "Mark", "John", "Timothy"], "a": 0, "e": "Colossians 4:14 refers to Luke as the 'beloved physician'.", "d": "medium"},
-      {"q": "I was the wife of Abraham and mother of Isaac in her old age. Who am I?", "o": ["Sarah", "Hagar", "Keturah", "Milcah"], "a": 0, "e": "Genesis 21:1-7 records the birth of Isaac to Sarah.", "d": "easy"},
-      {"q": "I was the son of Abraham and Hagar. Who am I?", "o": ["Ishmael", "Isaac", "Midian", "Lot"], "a": 0, "e": "Genesis 16 records the birth of Ishmael.", "d": "medium"},
-      {"q": "I was the first king of Israel. Who am I?", "o": ["Saul", "David", "Solomon", "Samuel"], "a": 0, "e": "1 Samuel 9-10 records the anointing of Saul as king.", "d": "easy"},
-      {"q": "I was the prophet who anointed both Saul and David. Who am I?", "o": ["Samuel", "Nathan", "Gad", "Eli"], "a": 0, "e": "1 Samuel records Samuel's ministry as prophet and judge.", "d": "medium"},
-      {"q": "I was a prophetess and the only female judge of Israel. Who am I?", "o": ["Deborah", "Jael", "Miriam", "Huldah"], "a": 0, "e": "Judges 4-5 tells the story of Deborah.", "d": "medium"},
-      {"q": "I killed the commander Sisera by driving a tent peg through his temple. Who am I?", "o": ["Jael", "Deborah", "Rahab", "Michal"], "a": 0, "e": "Judges 4:17-22 records Jael's action.", "d": "hard"},
-      {"q": "I was a shepherd from Tekoa and a prophet who spoke against social injustice. Who am I?", "o": ["Amos", "Hosea", "Joel", "Obadiah"], "a": 0, "e": "The book of Amos begins by identifying him as a shepherd.", "d": "hard"},
-      {"q": "I was the successor to the prophet Elijah. Who am I?", "o": ["Elisha", "Jeremiah", "Isaiah", "Ezekiel"], "a": 0, "e": "2 Kings 2 records Elisha receiving Elijah's mantle.", "d": "medium"},
-      {"q": "I was the 'Weeping Prophet' who warned Judah of the Babylonian exile. Who am I?", "o": ["Jeremiah", "Isaiah", "Ezekiel", "Daniel"], "a": 0, "e": "The book of Jeremiah and Lamentations express his sorrow.", "d": "medium"},
-      {"q": "I was an exile in Babylon who interpreted dreams and survived the lion's den. Who am I?", "o": ["Daniel", "Ezekiel", "Ezra", "Nehemiah"], "a": 0, "e": "The book of Daniel records his visions and experiences.", "d": "easy"},
-      {"q": "I was the first son of Adam and Eve, and I killed my brother. Who am I?", "o": ["Cain", "Abel", "Seth", "Enosh"], "a": 0, "e": "Genesis 4 records the first murder.", "d": "easy"},
-      {"q": "I was the brother of Cain who was killed because my sacrifice was accepted. Who am I?", "o": ["Abel", "Seth", "Cain", "Jared"], "a": 0, "e": "Genesis 4:3-8.", "d": "easy"},
-      {"q": "I was the mother of all living. Who am I?", "o": ["Eve", "Sarah", "Mary", "Rebekah"], "a": 0, "e": "Genesis 3:20 says Adam named his wife Eve because she would be the mother of all living.", "d": "easy"},
-      {"q": "I was a prostitute in Jericho who hid the Israelite spies. Who am I?", "o": ["Rahab", "Delilah", "Gomer", "Tamar"], "a": 0, "e": "Joshua 2 and 6 tell the story of Rahab.", "d": "easy"},
-      {"q": "I was the son of David who rebelled against him and died when my hair caught in a tree. Who am I?", "o": ["Absalom", "Adonijah", "Amnon", "Solomon"], "a": 0, "e": "2 Samuel 15-18 records Absalom's rebellion and death.", "d": "medium"},
-      {"q": "I was a faithful friend to David and the son of King Saul. Who am I?", "o": ["Jonathan", "Abner", "Joab", "Ish-bosheth"], "a": 0, "e": "1 Samuel 18-20 describes the friendship of David and Jonathan.", "d": "medium"},
-      {"q": "I was a cupbearer to the king and led the rebuilding of the walls of Jerusalem. Who am I?", "o": ["Nehemiah", "Ezra", "Zerubbabel", "Mordecai"], "a": 0, "e": "The book of Nehemiah records the wall reconstruction.", "d": "medium"},
-      {"q": "I was a priest and scribe who led the return of the exiles and the teaching of the Law. Who am I?", "o": ["Ezra", "Nehemiah", "Haggai", "Zechariah"], "a": 0, "e": "The book of Ezra records his leadership.", "d": "medium"},
-      {"q": "I was a judge who asked for a sign with a fleece. Who am I?", "o": ["Gideon", "Samson", "Ehud", "Othniel"], "a": 0, "e": "Judges 6 records the sign of the fleece.", "d": "easy"},
-      {"q": "I was the left-handed judge who killed King Eglon of Moab. Who am I?", "o": ["Ehud", "Shamgar", "Tola", "Jair"], "a": 0, "e": "Judges 3:12-30 records Ehud's exploit.", "d": "hard"},
-      {"q": "I was a woman from Joppa known for my good works and was raised from the dead by Peter. Who am I?", "o": ["Tabitha (Dorcas)", "Lydia", "Rhoda", "Priscilla"], "a": 0, "e": "Acts 9:36-42.", "d": "medium"},
-      {"q": "I was a seller of purple cloth and the first convert in Philippi. Who am I?", "o": ["Lydia", "Damaris", "Chloe", "Phoebe"], "a": 0, "e": "Acts 16:14-15 records Lydia's conversion.", "d": "medium"},
-      {"q": "I was a tentmaker who, with my husband Aquila, taught Apollos. Who am I?", "o": ["Priscilla", "Junia", "Tryphena", "Tryphosa"], "a": 0, "e": "Acts 18:1-3, 26 mentions Priscilla and Aquila.", "d": "medium"},
-      {"q": "I was a deaconess of the church in Cenchreae and mentioned by Paul in Romans 16. Who am I?", "o": ["Phoebe", "Persis", "Julia", "Olympas"], "a": 0, "e": "Romans 16:1-2 commends Phoebe.", "d": "hard"},
-      {"q": "I was a prophet who confronted King David about his sin with Bathsheba. Who am I?", "o": ["Nathan", "Gad", "Shemaiah", "Ahijah"], "a": 0, "e": "2 Samuel 12 records Nathan's parable and confrontation.", "d": "medium"},
-      {"q": "I was the wife of Uriah whom David took for himself. Who am I?", "o": ["Bathsheba", "Michal", "Abigail", "Maakah"], "a": 0, "e": "2 Samuel 11 records the story of David and Bathsheba.", "d": "easy"},
-      {"q": "I was the mother of Samuel who prayed for a child at the Tabernacle. Who am I?", "o": ["Hannah", "Peninnah", "Eli", "Abigail"], "a": 0, "e": "1 Samuel 1 records Hannah's prayer.", "d": "easy"},
-      {"q": "I was the high priest who thought Hannah was drunk when she was praying. Who am I?", "o": ["Eli", "Hophni", "Phinehas", "Zadok"], "a": 0, "e": "1 Samuel 1:12-14.", "d": "medium"},
-      {"q": "I was a wealthy man from Uz who suffered great loss but remained faithful to God. Who am I?", "o": ["Job", "Eliphaz", "Bildad", "Zophar"], "a": 0, "e": "The book of Job tells the story of his suffering and restoration.", "d": "easy"},
-      {"q": "I was the grandmother of Timothy, known for my sincere faith. Who am I?", "o": ["Lois", "Eunice", "Anna", "Elisabeth"], "a": 0, "e": "2 Timothy 1:5 mentions Lois and Eunice.", "d": "hard"},
-      {"q": "I was the mother of Timothy. Who am I?", "o": ["Eunice", "Lois", "Lydia", "Mary"], "a": 0, "e": "2 Timothy 1:5.", "d": "hard"},
-      {"q": "I was a youth who accompanied Paul on his missionary journeys and received two letters from him. Who am I?", "o": ["Timothy", "Titus", "Mark", "Silas"], "a": 0, "e": "Timothy was Paul's 'son in the faith' (1 & 2 Timothy).", "d": "easy"},
-      {"q": "I was a companion of Paul and a Greek convert who helped organize the collection for Jerusalem. Who am I?", "o": ["Titus", "Luke", "Barnabas", "Artemas"], "a": 0, "e": "The book of Titus is addressed to him.", "d": "medium"},
-      {"q": "I was called the 'Son of Encouragement' and traveled with Paul. Who am I?", "o": ["Barnabas", "Silas", "John Mark", "Agabus"], "a": 0, "e": "Acts 4:36 defines the meaning of Barnabas.", "d": "medium"},
-      {"q": "I left Paul during the first missionary journey but later wrote a Gospel. Who am I?", "o": ["John Mark", "Luke", "Matthew", "Philip"], "a": 0, "e": "Acts 13:13 and 15:37-39 record Mark's departure and the later disagreement.", "d": "medium"},
-      {"q": "I was a centurion who was the first Gentile convert to Christianity. Who am I?", "o": ["Cornelius", "Julius", "Longinus", "Theophilus"], "a": 0, "e": "Acts 10 tells the story of Cornelius and Peter.", "d": "medium"},
-      {"q": "I was a queen who visited Solomon to test him with hard questions. Who am I?", "o": ["The Queen of Sheba", "Queen Esther", "Queen Jezebel", "Queen Vashti"], "a": 0, "e": "1 Kings 10 and 2 Chronicles 9 record her visit.", "d": "easy"},
-      {"q": "I was a king of Babylon who was humbled by God and lived like an animal for seven years. Who am I?", "o": ["Nebuchadnezzar", "Belshazzar", "Evil-Merodach", "Nabonidus"], "a": 0, "e": "Daniel 4 records this event.", "d": "medium"},
-      {"q": "I saw a vision of a wheel within a wheel and the glory of God. Who am I?", "o": ["Ezekiel", "Isaiah", "Daniel", "Habakkuk"], "a": 0, "e": "Ezekiel 1 and 10 describe his visions.", "d": "medium"},
-      {"q": "I was a prophet who was told to marry a promiscuous woman as a sign to Israel. Who am I?", "o": ["Hosea", "Joel", "Micah", "Zephaniah"], "a": 0, "e": "Hosea 1:2.", "d": "medium"},
-      {"q": "I was the woman Hosea married. Who am I?", "o": ["Gomer", "Lo-Ruhamah", "Lo-Ammi", "Keturah"], "a": 0, "e": "Hosea 1:3.", "d": "hard"},
-      {"q": "I was the wife of Jacob whom he loved and worked 14 years to marry. Who am I?", "o": ["Rachel", "Leah", "Bilhah", "Zilpah"], "a": 0, "e": "Genesis 29 records Jacob's love for Rachel.", "d": "easy"},
-      {"q": "I was the older sister of Rachel and the first wife of Jacob. Who am I?", "o": ["Leah", "Rachel", "Dinah", "Zipporah"], "a": 0, "e": "Genesis 29:21-25.", "d": "medium"},
-      {"q": "I was the only daughter of Jacob. Who am I?", "o": ["Dinah", "Tamar", "Asenath", "Serah"], "a": 0, "e": "Genesis 30:21 and 34 record Dinah.", "d": "hard"},
-      {"q": "I was the favorite son of Jacob, given a coat of many colors. Who am I?", "o": ["Joseph", "Benjamin", "Judah", "Levi"], "a": 0, "e": "Genesis 37:3.", "d": "easy"},
-      {"q": "I was the youngest son of Jacob. Who am I?", "o": ["Benjamin", "Joseph", "Gad", "Asher"], "a": 0, "e": "Genesis 35:16-18.", "d": "easy"},
-      {"q": "I was the sister of Mary and Lazarus, often busy with chores. Who am I?", "o": ["Martha", "Mary", "Elizabeth", "Salome"], "a": 0, "e": "Luke 10:38-42 and John 11 record Martha's personality.", "d": "easy"},
-      {"q": "I was the friend of Jesus whom He raised from the dead. Who am I?", "o": ["Lazarus", "Simon", "Nicodemus", "Zacchaeus"], "a": 0, "e": "John 11.", "d": "easy"},
-      {"q": "I was the brother of Peter and one of the first disciples called by Jesus. Who am I?", "o": ["Andrew", "James", "John", "Philip"], "a": 0, "e": "John 1:40-42.", "d": "medium"},
-      {"q": "I was the 'Beloved Disciple' and wrote the fourth Gospel. Who am I?", "o": ["John", "Peter", "James", "Andrew"], "a": 0, "e": "John 21:20-24 refers to him this way.", "d": "easy"},
-      {"q": "I was a prophet who told King Hezekiah he would die, but then God added 15 years to his life. Who am I?", "o": ["Isaiah", "Jeremiah", "Micah", "Nahum"], "a": 0, "e": "2 Kings 20 and Isaiah 38.", "d": "medium"},
-      {"q": "I was a king of Judah who destroyed idols and found the Book of the Law. Who am I?", "o": ["Josiah", "Hezekiah", "Asa", "Jehoshaphat"], "a": 0, "e": "2 Kings 22-23.", "d": "medium"},
-      {"q": "I was the wicked wife of King Ahab who persecuted the prophets of God. Who am I?", "o": ["Jezebel", "Athaliah", "Maakah", "Vashti"], "a": 0, "e": "1 Kings 18-21 and 2 Kings 9.", "d": "easy"},
-      {"q": "I was the king who wanted Naboth's vineyard. Who am I?", "o": ["Ahab", "Jeroboam", "Jehu", "Omri"], "a": 0, "e": "1 Kings 21.", "d": "medium"},
-      {"q": "I was a commander of the army of Israel who drove my chariot like a madman and killed Jezebel. Who am I?", "o": ["Jehu", "Joab", "Abner", "Benaiah"], "a": 0, "e": "2 Kings 9:20 and 30-37.", "d": "hard"},
-      {"q": "I was the mother of Solomon. Who am I?", "o": ["Bathsheba", "Abigail", "Michal", "Haggith"], "a": 0, "e": "2 Samuel 12:24.", "d": "medium"},
-      {"q": "I was a king of Judah who was struck with leprosy for trying to burn incense in the Temple. Who am I?", "o": ["Uzziah (Azariah)", "Jotham", "Ahaz", "Manasseh"], "a": 0, "e": "2 Chronicles 26:16-21.", "d": "hard"},
-      {"q": "I was the uncle of Esther who refused to bow to Haman. Who am I?", "o": ["Mordecai", "Hegai", "Memucan", "Harbona"], "a": 0, "e": "Esther 3:2.", "d": "easy"},
-      {"q": "I was the villain in the book of Esther who plotted to kill all the Jews. Who am I?", "o": ["Haman", "Zeresh", "Bigthan", "Teresh"], "a": 0, "e": "Esther 3:5-6.", "d": "easy"},
-      {"q": "I was a man from Cyrene who was forced to carry the cross of Jesus. Who am I?", "o": ["Simon", "Alexander", "Rufus", "Lucius"], "a": 0, "e": "Matthew 27:32, Mark 15:21, Luke 23:26.", "d": "medium"},
-      {"q": "I was the high priest during the trial of Jesus. Who am I?", "o": ["Caiaphas", "Annas", "Jonathan", "Ananias"], "a": 0, "e": "Matthew 26:57.", "d": "medium"},
-      {"q": "I was the father-in-law of Caiaphas and also a high priest. Who am I?", "o": ["Annas", "Zadok", "Abiathar", "Hiliah"], "a": 0, "e": "John 18:13.", "d": "hard"},
-      {"q": "I was a sorcerer in Samaria who tried to buy the gift of the Holy Spirit. Who am I?", "o": ["Simon Magus", "Elymas", "Hermogenes", "Philetus"], "a": 0, "e": "Acts 8:9-24.", "d": "medium"},
-      {"q": "I was a sorcerer on the island of Cyprus who was blinded by Paul. Who am I?", "o": ["Elymas (Bar-Jesus)", "Simon", "Alexander", "Demetrius"], "a": 0, "e": "Acts 13:6-11.", "d": "hard"},
-      {"q": "I was a silversmith in Ephesus who started a riot against Paul. Who am I?", "o": ["Demetrius", "Alexander", "Gaius", "Aristarchus"], "a": 0, "e": "Acts 19:23-41.", "d": "hard"},
-      {"q": "I was a woman from Bethany who anointed Jesus' feet with expensive perfume. Who am I?", "o": ["Mary", "Martha", "Mary Magdalene", "Joanna"], "a": 0, "e": "John 12:1-8.", "d": "medium"},
-      {"q": "I was the mother of John the Baptist. Who am I?", "o": ["Elizabeth", "Mary", "Anna", "Salome"], "a": 0, "e": "Luke 1:13.", "d": "easy"},
-      {"q": "I was a priest and the father of John the Baptist, who was struck mute for a time. Who am I?", "o": ["Zechariah", "Abijah", "Simeon", "Malachi"], "a": 0, "e": "Luke 1:5-20.", "d": "medium"},
-      {"q": "I was an old man in the temple who was promised I wouldn't die until I saw the Messiah. Who am I?", "o": ["Simeon", "Anna", "Zechariah", "Gamaliel"], "a": 0, "e": "Luke 2:25-35.", "d": "medium"},
-      {"q": "I was a prophetess in the temple who saw the infant Jesus and gave thanks to God. Who am I?", "o": ["Anna", "Huldah", "Deborah", "Miriam"], "a": 0, "e": "Luke 2:36-38.", "d": "medium"},
-      {"q": "I was a man from Ethiopia who was baptized by Philip the evangelist. Who am I?", "o": ["The Ethiopian Eunuch", "Ebed-Melech", "Candace", "Zerah"], "a": 0, "e": "Acts 8:26-39.", "d": "medium"},
-      {"q": "I was the queen of the Ethiopians mentioned in Acts 8. Who am I?", "o": ["Candace", "Sheba", "Esther", "Vashti"], "a": 0, "e": "Acts 8:27.", "d": "hard"},
-      {"q": "I was the father of the twelve tribes of Israel. Who am I?", "o": ["Jacob", "Abraham", "Isaac", "Joseph"], "a": 0, "e": "Genesis 35:22-26 lists his twelve sons.", "d": "easy"},
-      {"q": "I was the first person to die in the Bible. Who am I?", "o": ["Abel", "Adam", "Eve", "Cain"], "a": 0, "e": "Genesis 4:8.", "d": "easy"},
-      {"q": "I was the wife of Moses. Who am I?", "o": ["Zipporah", "Miriam", "Elisheba", "Cozbi"], "a": 0, "e": "Exodus 2:21.", "d": "medium"},
-      {"q": "I was the father-in-law of Moses and a priest of Midian. Who am I?", "o": ["Jethro (Reuel)", "Hobab", "Putiel", "Balaam"], "a": 0, "e": "Exodus 3:1.", "d": "medium"},
-      {"q": "I was the first woman. Who am I?", "o": ["Eve", "Lilith", "Sarah", "Adah"], "a": 0, "e": "Genesis 2.", "d": "easy"},
-      {"q": "I was a son of David who was born to Bathsheba and became king. Who am I?", "o": ["Solomon", "Nathan", "Shimea", "Shobab"], "a": 0, "e": "2 Samuel 12:24.", "d": "easy"},
-      {"q": "I was the husband of Mary and the earthly father figure of Jesus. Who am I?", "o": ["Joseph", "Joachim", "Cleopas", "Zebedee"], "a": 0, "e": "Matthew 1:16.", "d": "easy"}
+    {
+      "q": "I was the first man created by God. Who am I?",
+      "o": [
+        "Adam",
+        "Noah",
+        "Abraham",
+        "Moses"
+      ],
+      "a": 0,
+      "e": "Genesis 2:7 records God forming man from the dust of the ground.",
+      "d": "easy"
+    },
+    {
+      "q": "I built an ark to save my family and animals from a great flood. Who am I?",
+      "o": [
+        "Noah",
+        "Enoch",
+        "Methuselah",
+        "Lamech"
+      ],
+      "a": 0,
+      "e": "Genesis 6-9 tells the story of Noah and the ark.",
+      "d": "easy"
+    },
+    {
+      "q": "I was known as the 'Father of Many Nations' and my wife was Sarah. Who am I?",
+      "o": [
+        "Abraham",
+        "Isaac",
+        "Jacob",
+        "Lot"
+      ],
+      "a": 0,
+      "e": "Genesis 17:5 says God changed his name from Abram to Abraham because he would be the father of many nations.",
+      "d": "easy"
+    },
+    {
+      "q": "I was sold into slavery by my brothers and later became a ruler in Egypt. Who am I?",
+      "o": [
+        "Joseph",
+        "Benjamin",
+        "Reuben",
+        "Judah"
+      ],
+      "a": 0,
+      "e": "Genesis 37-50 records the life of Joseph.",
+      "d": "easy"
+    },
+    {
+      "q": "I led the Israelites out of Egypt and received the Ten Commandments. Who am I?",
+      "o": [
+        "Moses",
+        "Aaron",
+        "Joshua",
+        "Caleb"
+      ],
+      "a": 0,
+      "e": "Exodus describes Moses' leadership and the law given at Sinai.",
+      "d": "easy"
+    },
+    {
+      "q": "I defeated the giant Goliath with a sling and a stone. Who am I?",
+      "o": [
+        "David",
+        "Saul",
+        "Solomon",
+        "Jonathan"
+      ],
+      "a": 0,
+      "e": "1 Samuel 17 tells of David's victory over Goliath.",
+      "d": "easy"
+    },
+    {
+      "q": "I was the wisest king of Israel and built the first Temple. Who am I?",
+      "o": [
+        "Solomon",
+        "David",
+        "Rehoboam",
+        "Hezekiah"
+      ],
+      "a": 0,
+      "e": "1 Kings 3-6 records Solomon's wisdom and temple construction.",
+      "d": "easy"
+    },
+    {
+      "q": "I was swallowed by a great fish after trying to run away from God. Who am I?",
+      "o": [
+        "Jonah",
+        "Amos",
+        "Hosea",
+        "Micah"
+      ],
+      "a": 0,
+      "e": "The book of Jonah describes his flight to Tarshish and the great fish.",
+      "d": "easy"
+    },
+    {
+      "q": "I was the mother of Jesus. Who am I?",
+      "o": [
+        "Mary",
+        "Elizabeth",
+        "Martha",
+        "Salome"
+      ],
+      "a": 0,
+      "e": "Matthew 1 and Luke 1-2 record Mary as the mother of Jesus.",
+      "d": "easy"
+    },
+    {
+      "q": "I was a tax collector who climbed a sycamore tree to see Jesus. Who am I?",
+      "o": [
+        "Zacchaeus",
+        "Matthew",
+        "Simon",
+        "Andrew"
+      ],
+      "a": 0,
+      "e": "Luke 19:1-10 tells the story of Zacchaeus.",
+      "d": "easy"
+    },
+    {
+      "q": "I denied Jesus three times before the rooster crowed. Who am I?",
+      "o": [
+        "Peter",
+        "John",
+        "Judas",
+        "Thomas"
+      ],
+      "a": 0,
+      "e": "Matthew 26:69-75 records Peter's denials.",
+      "d": "easy"
+    },
+    {
+      "q": "I betrayed Jesus for thirty pieces of silver. Who am I?",
+      "o": [
+        "Judas Iscariot",
+        "Judas son of James",
+        "Simon the Zealot",
+        "Philip"
+      ],
+      "a": 0,
+      "e": "Matthew 26:14-16 — Judas Iscariot agreed to deliver Jesus to the chief priests in exchange for thirty silver coins.",
+      "d": "easy"
+    },
+    {
+      "q": "I was the first martyr of the early church, stoned for my faith. Who am I?",
+      "o": [
+        "Stephen",
+        "James",
+        "Philip",
+        "Paul"
+      ],
+      "a": 0,
+      "e": "Acts 7 records Stephen's speech and martyrdom.",
+      "d": "medium"
+    },
+    {
+      "q": "I was a Pharisee who persecuted Christians but became the 'Apostle to the Gentiles'. Who am I?",
+      "o": [
+        "Paul",
+        "Barnabas",
+        "Silas",
+        "Timothy"
+      ],
+      "a": 0,
+      "e": "Acts 9 records Saul's conversion and subsequent ministry as Paul.",
+      "d": "easy"
+    },
+    {
+      "q": "I was the longest-living man in the Bible, reaching 969 years. Who am I?",
+      "o": [
+        "Methuselah",
+        "Enoch",
+        "Jared",
+        "Noah"
+      ],
+      "a": 0,
+      "e": "Genesis 5:27 says Methuselah lived 969 years.",
+      "d": "medium"
+    },
+    {
+      "q": "I walked with God and then was no more, because God took me. Who am I?",
+      "o": [
+        "Enoch",
+        "Noah",
+        "Abraham",
+        "Moses"
+      ],
+      "a": 0,
+      "e": "Genesis 5:24 says Enoch walked with God and was taken by Him.",
+      "d": "medium"
+    },
+    {
+      "q": "I was the wife of Isaac and mother of Jacob and Esau. Who am I?",
+      "o": [
+        "Rebekah",
+        "Rachel",
+        "Leah",
+        "Sarah"
+      ],
+      "a": 0,
+      "e": "Genesis 24-25 records the story of Rebekah.",
+      "d": "medium"
+    },
+    {
+      "q": "I wrestled with God and my name was changed to Israel. Who am I?",
+      "o": [
+        "Jacob",
+        "Esau",
+        "Isaac",
+        "Joseph"
+      ],
+      "a": 0,
+      "e": "Genesis 32:28 records Jacob's name change after wrestling with God.",
+      "d": "easy"
+    },
+    {
+      "q": "I was a judge known for my great strength which came from my hair. Who am I?",
+      "o": [
+        "Samson",
+        "Gideon",
+        "Barak",
+        "Jephthah"
+      ],
+      "a": 0,
+      "e": "Judges 16:17 — Samson's great strength was tied to his Nazirite vow, symbolized by his seven braids of hair.",
+      "d": "easy"
+    },
+    {
+      "q": "I was the first high priest of Israel and the brother of Moses. Who am I?",
+      "o": [
+        "Aaron",
+        "Hur",
+        "Eleazar",
+        "Phinehas"
+      ],
+      "a": 0,
+      "e": "Exodus 28 records Aaron's appointment as priest.",
+      "d": "medium"
+    },
+    {
+      "q": "I was the sister of Moses and Aaron who led the women in song. Who am I?",
+      "o": [
+        "Miriam",
+        "Deborah",
+        "Ruth",
+        "Esther"
+      ],
+      "a": 0,
+      "e": "Exodus 15:20-21 records Miriam's song of praise.",
+      "d": "medium"
+    },
+    {
+      "q": "I was a Moabite woman who remained loyal to my mother-in-law Naomi. Who am I?",
+      "o": [
+        "Ruth",
+        "Orpah",
+        "Rahab",
+        "Delilah"
+      ],
+      "a": 0,
+      "e": "The book of Ruth tells of her loyalty and faith.",
+      "d": "easy"
+    },
+    {
+      "q": "I was a queen of Persia who saved my people from destruction. Who am I?",
+      "o": [
+        "Esther",
+        "Vashti",
+        "Jezebel",
+        "Athaliah"
+      ],
+      "a": 0,
+      "e": "The book of Esther describes how she saved the Jews.",
+      "d": "easy"
+    },
+    {
+      "q": "I was the cousin of Jesus and prepared the way for His ministry. Who am I?",
+      "o": [
+        "John the Baptist",
+        "John the Apostle",
+        "James",
+        "Andrew"
+      ],
+      "a": 0,
+      "e": "Matthew 3 and Luke 1-3 describe John's role.",
+      "d": "easy"
+    },
+    {
+      "q": "I was the Roman governor who sentenced Jesus to be crucified. Who am I?",
+      "o": [
+        "Pontius Pilate",
+        "Herod Antipas",
+        "Felix",
+        "Festus"
+      ],
+      "a": 0,
+      "e": "The Gospels record Pilate's role in Jesus' trial.",
+      "d": "easy"
+    },
+    {
+      "q": "I was a Pharisee who came to Jesus by night to ask about being born again. Who am I?",
+      "o": [
+        "Nicodemus",
+        "Gamaliel",
+        "Joseph of Arimathea",
+        "Simon the Pharisee"
+      ],
+      "a": 0,
+      "e": "John 3 records the conversation between Jesus and Nicodemus.",
+      "d": "medium"
+    },
+    {
+      "q": "I provided my own tomb for Jesus' burial. Who am I?",
+      "o": [
+        "Joseph of Arimathea",
+        "Nicodemus",
+        "Lazarus",
+        "Simon of Cyrene"
+      ],
+      "a": 0,
+      "e": "Matthew 27:57-60 records this act of Joseph.",
+      "d": "medium"
+    },
+    {
+      "q": "I was the first person to see the risen Lord. Who am I?",
+      "o": [
+        "Mary Magdalene",
+        "Peter",
+        "John",
+        "James"
+      ],
+      "a": 0,
+      "e": "John 20:11-18 records Jesus' appearance to Mary.",
+      "d": "medium"
+    },
+    {
+      "q": "I was known as the 'Doubting Apostle' until I saw Jesus' wounds. Who am I?",
+      "o": [
+        "Thomas",
+        "Philip",
+        "Bartholomew",
+        "Matthew"
+      ],
+      "a": 0,
+      "e": "John 20:24-29 records Thomas' doubt and subsequent belief.",
+      "d": "easy"
+    },
+    {
+      "q": "I was a doctor and the author of the third Gospel and the book of Acts. Who am I?",
+      "o": [
+        "Luke",
+        "Mark",
+        "John",
+        "Timothy"
+      ],
+      "a": 0,
+      "e": "Colossians 4:14 refers to Luke as the 'beloved physician'.",
+      "d": "medium"
+    },
+    {
+      "q": "I was the wife of Abraham and mother of Isaac in her old age. Who am I?",
+      "o": [
+        "Sarah",
+        "Hagar",
+        "Keturah",
+        "Milcah"
+      ],
+      "a": 0,
+      "e": "Genesis 21:1-7 records the birth of Isaac to Sarah.",
+      "d": "easy"
+    },
+    {
+      "q": "I was the son of Abraham and Hagar. Who am I?",
+      "o": [
+        "Ishmael",
+        "Isaac",
+        "Midian",
+        "Lot"
+      ],
+      "a": 0,
+      "e": "Genesis 16 records the birth of Ishmael.",
+      "d": "medium"
+    },
+    {
+      "q": "I was the first king of Israel. Who am I?",
+      "o": [
+        "Saul",
+        "David",
+        "Solomon",
+        "Samuel"
+      ],
+      "a": 0,
+      "e": "1 Samuel 9-10 records the anointing of Saul as king.",
+      "d": "easy"
+    },
+    {
+      "q": "I was the prophet who anointed both Saul and David. Who am I?",
+      "o": [
+        "Samuel",
+        "Nathan",
+        "Gad",
+        "Eli"
+      ],
+      "a": 0,
+      "e": "1 Samuel records Samuel's ministry as prophet and judge.",
+      "d": "medium"
+    },
+    {
+      "q": "I was a prophetess and the only female judge of Israel. Who am I?",
+      "o": [
+        "Deborah",
+        "Jael",
+        "Miriam",
+        "Huldah"
+      ],
+      "a": 0,
+      "e": "Judges 4:4 — Deborah was a prophetess who led Israel as a judge, holding court under the Palm of Deborah.",
+      "d": "medium"
+    },
+    {
+      "q": "I killed the commander Sisera by driving a tent peg through his temple. Who am I?",
+      "o": [
+        "Jael",
+        "Deborah",
+        "Rahab",
+        "Michal"
+      ],
+      "a": 0,
+      "e": "Judges 4:21 — Jael killed the Canaanite commander Sisera by driving a tent peg through his temple while he slept.",
+      "d": "hard"
+    },
+    {
+      "q": "I was a shepherd from Tekoa and a prophet who spoke against social injustice. Who am I?",
+      "o": [
+        "Amos",
+        "Hosea",
+        "Joel",
+        "Obadiah"
+      ],
+      "a": 0,
+      "e": "The book of Amos begins by identifying him as a shepherd.",
+      "d": "hard"
+    },
+    {
+      "q": "I was the successor to the prophet Elijah. Who am I?",
+      "o": [
+        "Elisha",
+        "Jeremiah",
+        "Isaiah",
+        "Ezekiel"
+      ],
+      "a": 0,
+      "e": "2 Kings 2 records Elisha receiving Elijah's mantle.",
+      "d": "medium"
+    },
+    {
+      "q": "I was the 'Weeping Prophet' who warned Judah of the Babylonian exile. Who am I?",
+      "o": [
+        "Jeremiah",
+        "Isaiah",
+        "Ezekiel",
+        "Daniel"
+      ],
+      "a": 0,
+      "e": "The book of Jeremiah and Lamentations express his sorrow.",
+      "d": "medium"
+    },
+    {
+      "q": "I was an exile in Babylon who interpreted dreams and survived the lion's den. Who am I?",
+      "o": [
+        "Daniel",
+        "Ezekiel",
+        "Ezra",
+        "Nehemiah"
+      ],
+      "a": 0,
+      "e": "The book of Daniel records his visions and experiences.",
+      "d": "easy"
+    },
+    {
+      "q": "I was the first son of Adam and Eve, and I killed my brother. Who am I?",
+      "o": [
+        "Cain",
+        "Abel",
+        "Seth",
+        "Enosh"
+      ],
+      "a": 0,
+      "e": "Genesis 4:1-8 — Cain, the firstborn of Adam and Eve, murdered his brother Abel out of jealousy over their offerings.",
+      "d": "easy"
+    },
+    {
+      "q": "I was the brother of Cain who was killed because my sacrifice was accepted. Who am I?",
+      "o": [
+        "Abel",
+        "Seth",
+        "Cain",
+        "Jared"
+      ],
+      "a": 0,
+      "e": "Genesis 4:4-8 — Abel's animal sacrifice was accepted by God, which led to his murder by his brother, Cain.",
+      "d": "easy"
+    },
+    {
+      "q": "I was the mother of all living. Who am I?",
+      "o": [
+        "Eve",
+        "Sarah",
+        "Mary",
+        "Rebekah"
+      ],
+      "a": 0,
+      "e": "Genesis 3:20 says Adam named his wife Eve because she would be the mother of all living.",
+      "d": "easy"
+    },
+    {
+      "q": "I was a prostitute in Jericho who hid the Israelite spies. Who am I?",
+      "o": [
+        "Rahab",
+        "Delilah",
+        "Gomer",
+        "Tamar"
+      ],
+      "a": 0,
+      "e": "Joshua 2:1-6 — Rahab hid the two Israelite spies in her house in Jericho and helped them escape safely.",
+      "d": "easy"
+    },
+    {
+      "q": "I was the son of David who rebelled against him and died when my hair caught in a tree. Who am I?",
+      "o": [
+        "Absalom",
+        "Adonijah",
+        "Amnon",
+        "Solomon"
+      ],
+      "a": 0,
+      "e": "2 Samuel 15-18 records Absalom's rebellion and death.",
+      "d": "medium"
+    },
+    {
+      "q": "I was a faithful friend to David and the son of King Saul. Who am I?",
+      "o": [
+        "Jonathan",
+        "Abner",
+        "Joab",
+        "Ish-bosheth"
+      ],
+      "a": 0,
+      "e": "1 Samuel 18-20 describes the friendship of David and Jonathan.",
+      "d": "medium"
+    },
+    {
+      "q": "I was a cupbearer to the king and led the rebuilding of the walls of Jerusalem. Who am I?",
+      "o": [
+        "Nehemiah",
+        "Ezra",
+        "Zerubbabel",
+        "Mordecai"
+      ],
+      "a": 0,
+      "e": "The book of Nehemiah records the wall reconstruction.",
+      "d": "medium"
+    },
+    {
+      "q": "I was a priest and scribe who led the return of the exiles and the teaching of the Law. Who am I?",
+      "o": [
+        "Ezra",
+        "Nehemiah",
+        "Haggai",
+        "Zechariah"
+      ],
+      "a": 0,
+      "e": "The book of Ezra records his leadership.",
+      "d": "medium"
+    },
+    {
+      "q": "I was a judge who asked for a sign with a fleece. Who am I?",
+      "o": [
+        "Gideon",
+        "Samson",
+        "Ehud",
+        "Othniel"
+      ],
+      "a": 0,
+      "e": "Judges 6 records the sign of the fleece.",
+      "d": "easy"
+    },
+    {
+      "q": "I was the left-handed judge who killed King Eglon of Moab. Who am I?",
+      "o": [
+        "Ehud",
+        "Shamgar",
+        "Tola",
+        "Jair"
+      ],
+      "a": 0,
+      "e": "Judges 3:15-21 — Ehud used his left-handedness to conceal a double-edged sword and assassinate King Eglon.",
+      "d": "hard"
+    },
+    {
+      "q": "I was a woman from Joppa known for my good works and was raised from the dead by Peter. Who am I?",
+      "o": [
+        "Tabitha (Dorcas)",
+        "Lydia",
+        "Rhoda",
+        "Priscilla"
+      ],
+      "a": 0,
+      "e": "Acts 9:36-40 — Tabitha, also called Dorcas, was a disciple in Joppa known for her charity whom Peter raised to life.",
+      "d": "medium"
+    },
+    {
+      "q": "I was a seller of purple cloth and the first convert in Philippi. Who am I?",
+      "o": [
+        "Lydia",
+        "Damaris",
+        "Chloe",
+        "Phoebe"
+      ],
+      "a": 0,
+      "e": "Acts 16:14-15 records Lydia's conversion.",
+      "d": "medium"
+    },
+    {
+      "q": "I was a tentmaker who, with my husband Aquila, taught Apollos. Who am I?",
+      "o": [
+        "Priscilla",
+        "Junia",
+        "Tryphena",
+        "Tryphosa"
+      ],
+      "a": 0,
+      "e": "Acts 18:1-3, 26 mentions Priscilla and Aquila.",
+      "d": "medium"
+    },
+    {
+      "q": "I was a deaconess of the church in Cenchreae and mentioned by Paul in Romans 16. Who am I?",
+      "o": [
+        "Phoebe",
+        "Persis",
+        "Julia",
+        "Olympas"
+      ],
+      "a": 0,
+      "e": "Romans 16:1-2 — Paul commends Phoebe as a deacon of the church in Cenchreae who had been a benefactor to many.",
+      "d": "hard"
+    },
+    {
+      "q": "I was a prophet who confronted King David about his sin with Bathsheba. Who am I?",
+      "o": [
+        "Nathan",
+        "Gad",
+        "Shemaiah",
+        "Ahijah"
+      ],
+      "a": 0,
+      "e": "2 Samuel 12 records Nathan's parable and confrontation.",
+      "d": "medium"
+    },
+    {
+      "q": "I was the wife of Uriah whom David took for himself. Who am I?",
+      "o": [
+        "Bathsheba",
+        "Michal",
+        "Abigail",
+        "Maakah"
+      ],
+      "a": 0,
+      "e": "2 Samuel 11 records the story of David and Bathsheba.",
+      "d": "easy"
+    },
+    {
+      "q": "I was the mother of Samuel who prayed for a child at the Tabernacle. Who am I?",
+      "o": [
+        "Hannah",
+        "Peninnah",
+        "Eli",
+        "Abigail"
+      ],
+      "a": 0,
+      "e": "1 Samuel 1:10-20 — After praying fervently at the Tabernacle, Hannah gave birth to Samuel and dedicated him to God.",
+      "d": "easy"
+    },
+    {
+      "q": "I was the high priest who thought Hannah was drunk when she was praying. Who am I?",
+      "o": [
+        "Eli",
+        "Hophni",
+        "Phinehas",
+        "Zadok"
+      ],
+      "a": 0,
+      "e": "1 Samuel 1:13-14 — Eli the priest observed Hannah praying silently and mistakenly accused her of being intoxicated.",
+      "d": "medium"
+    },
+    {
+      "q": "I was a wealthy man from Uz who suffered great loss but remained faithful to God. Who am I?",
+      "o": [
+        "Job",
+        "Eliphaz",
+        "Bildad",
+        "Zophar"
+      ],
+      "a": 0,
+      "e": "The book of Job tells the story of his suffering and restoration.",
+      "d": "easy"
+    },
+    {
+      "q": "I was the grandmother of Timothy, known for my sincere faith. Who am I?",
+      "o": [
+        "Lois",
+        "Eunice",
+        "Anna",
+        "Elisabeth"
+      ],
+      "a": 0,
+      "e": "2 Timothy 1:5 — Paul notes that Timothy's sincere faith first lived in his grandmother Lois and his mother Eunice.",
+      "d": "hard"
+    },
+    {
+      "q": "I was the mother of Timothy. Who am I?",
+      "o": [
+        "Eunice",
+        "Lois",
+        "Lydia",
+        "Mary"
+      ],
+      "a": 0,
+      "e": "2 Timothy 1:5 — Eunice was Timothy's mother, whom Paul credited for passing down a sincere faith to her son.",
+      "d": "hard"
+    },
+    {
+      "q": "I was a youth who accompanied Paul on his missionary journeys and received two letters from him. Who am I?",
+      "o": [
+        "Timothy",
+        "Titus",
+        "Mark",
+        "Silas"
+      ],
+      "a": 0,
+      "e": "Timothy was Paul's 'son in the faith' (1 & 2 Timothy).",
+      "d": "easy"
+    },
+    {
+      "q": "I was a companion of Paul and a Greek convert who helped organize the collection for Jerusalem. Who am I?",
+      "o": [
+        "Titus",
+        "Luke",
+        "Barnabas",
+        "Artemas"
+      ],
+      "a": 0,
+      "e": "Titus 1:4 — Titus was a trusted companion and Greek convert whom Paul mentored and left in Crete to organize the church.",
+      "d": "medium"
+    },
+    {
+      "q": "I was called the 'Son of Encouragement' and traveled with Paul. Who am I?",
+      "o": [
+        "Barnabas",
+        "Silas",
+        "John Mark",
+        "Agabus"
+      ],
+      "a": 0,
+      "e": "Acts 4:36 defines the meaning of Barnabas.",
+      "d": "medium"
+    },
+    {
+      "q": "I left Paul during the first missionary journey but later wrote a Gospel. Who am I?",
+      "o": [
+        "John Mark",
+        "Luke",
+        "Matthew",
+        "Philip"
+      ],
+      "a": 0,
+      "e": "Acts 13:13 and 15:37-39 record Mark's departure and the later disagreement.",
+      "d": "medium"
+    },
+    {
+      "q": "I was a centurion who was the first Gentile convert to Christianity. Who am I?",
+      "o": [
+        "Cornelius",
+        "Julius",
+        "Longinus",
+        "Theophilus"
+      ],
+      "a": 0,
+      "e": "Acts 10 tells the story of Cornelius and Peter.",
+      "d": "medium"
+    },
+    {
+      "q": "I was a queen who visited Solomon to test him with hard questions. Who am I?",
+      "o": [
+        "The Queen of Sheba",
+        "Queen Esther",
+        "Queen Jezebel",
+        "Queen Vashti"
+      ],
+      "a": 0,
+      "e": "1 Kings 10 and 2 Chronicles 9 record her visit.",
+      "d": "easy"
+    },
+    {
+      "q": "I was a king of Babylon who was humbled by God and lived like an animal for seven years. Who am I?",
+      "o": [
+        "Nebuchadnezzar",
+        "Belshazzar",
+        "Evil-Merodach",
+        "Nabonidus"
+      ],
+      "a": 0,
+      "e": "Daniel 4:32-34 — King Nebuchadnezzar was driven away from people to live like an animal until he acknowledged God.",
+      "d": "medium"
+    },
+    {
+      "q": "I saw a vision of a wheel within a wheel and the glory of God. Who am I?",
+      "o": [
+        "Ezekiel",
+        "Isaiah",
+        "Daniel",
+        "Habakkuk"
+      ],
+      "a": 0,
+      "e": "Ezekiel 1:15-21 — Ezekiel saw a vision of the glory of God accompanied by mysterious wheels within wheels.",
+      "d": "medium"
+    },
+    {
+      "q": "I was a prophet who was told to marry a promiscuous woman as a sign to Israel. Who am I?",
+      "o": [
+        "Hosea",
+        "Joel",
+        "Micah",
+        "Zephaniah"
+      ],
+      "a": 0,
+      "e": "Hosea 1:2 — God commanded Hosea to marry a promiscuous woman to illustrate Israel's unfaithfulness to the Lord.",
+      "d": "medium"
+    },
+    {
+      "q": "I was the woman Hosea married. Who am I?",
+      "o": [
+        "Gomer",
+        "Lo-Ruhamah",
+        "Lo-Ammi",
+        "Keturah"
+      ],
+      "a": 0,
+      "e": "Hosea 1:3 — Gomer was the woman Hosea married, representing Israel's spiritual adultery in their relationship.",
+      "d": "hard"
+    },
+    {
+      "q": "I was the wife of Jacob whom he loved and worked 14 years to marry. Who am I?",
+      "o": [
+        "Rachel",
+        "Leah",
+        "Bilhah",
+        "Zilpah"
+      ],
+      "a": 0,
+      "e": "Genesis 29 records Jacob's love for Rachel.",
+      "d": "easy"
+    },
+    {
+      "q": "I was the older sister of Rachel and the first wife of Jacob. Who am I?",
+      "o": [
+        "Leah",
+        "Rachel",
+        "Dinah",
+        "Zipporah"
+      ],
+      "a": 0,
+      "e": "Genesis 29:23-25 — Laban deceived Jacob into marrying Leah, his older daughter, before he could marry Rachel.",
+      "d": "medium"
+    },
+    {
+      "q": "I was the only daughter of Jacob. Who am I?",
+      "o": [
+        "Dinah",
+        "Tamar",
+        "Asenath",
+        "Serah"
+      ],
+      "a": 0,
+      "e": "Genesis 30:21 — Dinah was the daughter of Jacob and Leah, mentioned alongside her twelve brothers.",
+      "d": "hard"
+    },
+    {
+      "q": "I was the favorite son of Jacob, given a coat of many colors. Who am I?",
+      "o": [
+        "Joseph",
+        "Benjamin",
+        "Judah",
+        "Levi"
+      ],
+      "a": 0,
+      "e": "Genesis 37:3 — Jacob loved Joseph more than his other sons and gave him a richly ornamented robe as a token of favor.",
+      "d": "easy"
+    },
+    {
+      "q": "I was the youngest son of Jacob. Who am I?",
+      "o": [
+        "Benjamin",
+        "Joseph",
+        "Gad",
+        "Asher"
+      ],
+      "a": 0,
+      "e": "Genesis 35:18 — Benjamin was the youngest of Jacob's twelve sons, born to Rachel as she passed away.",
+      "d": "easy"
+    },
+    {
+      "q": "I was the sister of Mary and Lazarus, often busy with chores. Who am I?",
+      "o": [
+        "Martha",
+        "Mary",
+        "Elizabeth",
+        "Salome"
+      ],
+      "a": 0,
+      "e": "Luke 10:38-42 and John 11 record Martha's personality.",
+      "d": "easy"
+    },
+    {
+      "q": "I was the friend of Jesus whom He raised from the dead. Who am I?",
+      "o": [
+        "Lazarus",
+        "Simon",
+        "Nicodemus",
+        "Zacchaeus"
+      ],
+      "a": 0,
+      "e": "John 11:43-44 — Jesus performed a great miracle in Bethany by calling Lazarus out of the tomb four days after his death.",
+      "d": "easy"
+    },
+    {
+      "q": "I was the brother of Peter and one of the first disciples called by Jesus. Who am I?",
+      "o": [
+        "Andrew",
+        "James",
+        "John",
+        "Philip"
+      ],
+      "a": 0,
+      "e": "John 1:40-41 — Andrew was the first to tell his brother Simon Peter that they had found the Messiah.",
+      "d": "medium"
+    },
+    {
+      "q": "I was the 'Beloved Disciple' and wrote the fourth Gospel. Who am I?",
+      "o": [
+        "John",
+        "Peter",
+        "James",
+        "Andrew"
+      ],
+      "a": 0,
+      "e": "John 21:20-24 — The author of the fourth Gospel identifies himself as the disciple whom Jesus loved.",
+      "d": "easy"
+    },
+    {
+      "q": "I was a prophet who told King Hezekiah he would die, but then God added 15 years to his life. Who am I?",
+      "o": [
+        "Isaiah",
+        "Jeremiah",
+        "Micah",
+        "Nahum"
+      ],
+      "a": 0,
+      "e": "Isaiah 38:1-5 — Isaiah delivered the message that God had heard Hezekiah's prayer and would extend his life.",
+      "d": "medium"
+    },
+    {
+      "q": "I was a king of Judah who destroyed idols and found the Book of the Law. Who am I?",
+      "o": [
+        "Josiah",
+        "Hezekiah",
+        "Asa",
+        "Jehoshaphat"
+      ],
+      "a": 0,
+      "e": "2 Kings 22:8-11 — During Josiah's reign, the Book of the Law was found in the temple, sparking a national reformation.",
+      "d": "medium"
+    },
+    {
+      "q": "I was the wicked wife of King Ahab who persecuted the prophets of God. Who am I?",
+      "o": [
+        "Jezebel",
+        "Athaliah",
+        "Maakah",
+        "Vashti"
+      ],
+      "a": 0,
+      "e": "1 Kings 18:4 — Jezebel was a Phoenician princess who promoted Baal worship and tried to kill all of God's prophets.",
+      "d": "easy"
+    },
+    {
+      "q": "I was the king who wanted Naboth's vineyard. Who am I?",
+      "o": [
+        "Ahab",
+        "Jeroboam",
+        "Jehu",
+        "Omri"
+      ],
+      "a": 0,
+      "e": "1 Kings 21:1-4 — King Ahab coveted Naboth's vineyard and became sullen when Naboth refused to sell his inheritance.",
+      "d": "medium"
+    },
+    {
+      "q": "I was a commander of the army of Israel who drove my chariot like a madman and killed Jezebel. Who am I?",
+      "o": [
+        "Jehu",
+        "Joab",
+        "Abner",
+        "Benaiah"
+      ],
+      "a": 0,
+      "e": "2 Kings 9:20 — Jehu was known for his furious chariot driving as he fulfilled the prophecy against Ahab's house.",
+      "d": "hard"
+    },
+    {
+      "q": "I was the mother of Solomon. Who am I?",
+      "o": [
+        "Bathsheba",
+        "Abigail",
+        "Michal",
+        "Haggith"
+      ],
+      "a": 0,
+      "e": "2 Samuel 12:24 — After the loss of their first child, Bathsheba gave birth to Solomon, whom the Lord loved.",
+      "d": "medium"
+    },
+    {
+      "q": "I was a king of Judah who was struck with leprosy for trying to burn incense in the Temple. Who am I?",
+      "o": [
+        "Uzziah (Azariah)",
+        "Jotham",
+        "Ahaz",
+        "Manasseh"
+      ],
+      "a": 0,
+      "e": "2 Chronicles 26:19 — King Uzziah was afflicted with leprosy after arrogantly entering the temple to burn incense.",
+      "d": "hard"
+    },
+    {
+      "q": "I was the uncle of Esther who refused to bow to Haman. Who am I?",
+      "o": [
+        "Mordecai",
+        "Hegai",
+        "Memucan",
+        "Harbona"
+      ],
+      "a": 0,
+      "e": "Esther 3:2 — Mordecai refused to bow down to Haman because his devotion was to God alone, causing Haman's rage.",
+      "d": "easy"
+    },
+    {
+      "q": "I was the villain in the book of Esther who plotted to kill all the Jews. Who am I?",
+      "o": [
+        "Haman",
+        "Zeresh",
+        "Bigthan",
+        "Teresh"
+      ],
+      "a": 0,
+      "e": "Esther 3:6 — Haman plotted the destruction of all Jews throughout the empire to get revenge on Mordecai.",
+      "d": "easy"
+    },
+    {
+      "q": "I was a man from Cyrene who was forced to carry the cross of Jesus. Who am I?",
+      "o": [
+        "Simon",
+        "Alexander",
+        "Rufus",
+        "Lucius"
+      ],
+      "a": 0,
+      "e": "Mark 15:21 — Simon of Cyrene was passing by when Roman soldiers compelled him to carry Jesus' cross to Golgotha.",
+      "d": "medium"
+    },
+    {
+      "q": "I was the high priest during the trial of Jesus. Who am I?",
+      "o": [
+        "Caiaphas",
+        "Annas",
+        "Jonathan",
+        "Ananias"
+      ],
+      "a": 0,
+      "e": "Matthew 26:57 — Jesus was taken to the palace of Caiaphas, the high priest, where the Sanhedrin had assembled.",
+      "d": "medium"
+    },
+    {
+      "q": "I was the father-in-law of Caiaphas and also a high priest. Who am I?",
+      "o": [
+        "Annas",
+        "Zadok",
+        "Abiathar",
+        "Hiliah"
+      ],
+      "a": 0,
+      "e": "John 18:13 — After His arrest, Jesus was first led to Annas, who was the father-in-law of the high priest Caiaphas.",
+      "d": "hard"
+    },
+    {
+      "q": "I was a sorcerer in Samaria who tried to buy the gift of the Holy Spirit. Who am I?",
+      "o": [
+        "Simon Magus",
+        "Elymas",
+        "Hermogenes",
+        "Philetus"
+      ],
+      "a": 0,
+      "e": "Acts 8:18-19 — Simon the sorcerer offered the apostles money to receive the power to bestow the Holy Spirit.",
+      "d": "medium"
+    },
+    {
+      "q": "I was a sorcerer on the island of Cyprus who was blinded by Paul. Who am I?",
+      "o": [
+        "Elymas (Bar-Jesus)",
+        "Simon",
+        "Alexander",
+        "Demetrius"
+      ],
+      "a": 0,
+      "e": "Acts 13:8-11 — Paul rebuked Elymas for opposing the gospel and called down blindness upon him as a judgment.",
+      "d": "hard"
+    },
+    {
+      "q": "I was a silversmith in Ephesus who started a riot against Paul. Who am I?",
+      "o": [
+        "Demetrius",
+        "Alexander",
+        "Gaius",
+        "Aristarchus"
+      ],
+      "a": 0,
+      "e": "Acts 19:24-27 — Demetrius feared Paul's preaching would ruin the trade of making silver shrines for Artemis.",
+      "d": "hard"
+    },
+    {
+      "q": "I was a woman from Bethany who anointed Jesus' feet with expensive perfume. Who am I?",
+      "o": [
+        "Mary",
+        "Martha",
+        "Mary Magdalene",
+        "Joanna"
+      ],
+      "a": 0,
+      "e": "John 12:3 — Mary, sister of Lazarus, anointed Jesus' feet with costly nard and wiped them with her hair.",
+      "d": "medium"
+    },
+    {
+      "q": "I was the mother of John the Baptist. Who am I?",
+      "o": [
+        "Elizabeth",
+        "Mary",
+        "Anna",
+        "Salome"
+      ],
+      "a": 0,
+      "e": "Luke 1:13 — The angel Gabriel told Zechariah that his wife Elizabeth would bear a son named John.",
+      "d": "easy"
+    },
+    {
+      "q": "I was a priest and the father of John the Baptist, who was struck mute for a time. Who am I?",
+      "o": [
+        "Zechariah",
+        "Abijah",
+        "Simeon",
+        "Malachi"
+      ],
+      "a": 0,
+      "e": "Luke 1:20 — Zechariah was silenced by an angel until John's birth because he did not believe the prophecy.",
+      "d": "medium"
+    },
+    {
+      "q": "I was an old man in the temple who was promised I wouldn't die until I saw the Messiah. Who am I?",
+      "o": [
+        "Simeon",
+        "Anna",
+        "Zechariah",
+        "Gamaliel"
+      ],
+      "a": 0,
+      "e": "Luke 2:25-30 — Simeon was a righteous man who finally saw God's salvation when he held the infant Jesus.",
+      "d": "medium"
+    },
+    {
+      "q": "I was a prophetess in the temple who saw the infant Jesus and gave thanks to God. Who am I?",
+      "o": [
+        "Anna",
+        "Huldah",
+        "Deborah",
+        "Miriam"
+      ],
+      "a": 0,
+      "e": "Luke 2:37-38 — Anna was an elderly prophetess who lived in the temple and spoke of Jesus to all seeking redemption.",
+      "d": "medium"
+    },
+    {
+      "q": "I was a man from Ethiopia who was baptized by Philip the evangelist. Who am I?",
+      "o": [
+        "The Ethiopian Eunuch",
+        "Ebed-Melech",
+        "Candace",
+        "Zerah"
+      ],
+      "a": 0,
+      "e": "Acts 8:36-38 — After hearing Philip explain the scriptures about Jesus, the Ethiopian official requested baptism.",
+      "d": "medium"
+    },
+    {
+      "q": "I was the queen of the Ethiopians mentioned in Acts 8. Who am I?",
+      "o": [
+        "Candace",
+        "Sheba",
+        "Esther",
+        "Vashti"
+      ],
+      "a": 0,
+      "e": "Acts 8:27 — Candace was the title of the queen of Ethiopia, whose high official was baptized by Philip.",
+      "d": "hard"
+    },
+    {
+      "q": "I was the father of the twelve tribes of Israel. Who am I?",
+      "o": [
+        "Jacob",
+        "Abraham",
+        "Isaac",
+        "Joseph"
+      ],
+      "a": 0,
+      "e": "Genesis 35:23-26 — Jacob's twelve sons became the patriarchs of the tribes that formed the nation of Israel.",
+      "d": "easy"
+    },
+    {
+      "q": "I was the first person to die in the Bible. Who am I?",
+      "o": [
+        "Abel",
+        "Adam",
+        "Eve",
+        "Cain"
+      ],
+      "a": 0,
+      "e": "Genesis 4:8 — The first death recorded in human history was the murder of Abel by his brother Cain.",
+      "d": "easy"
+    },
+    {
+      "q": "I was the wife of Moses. Who am I?",
+      "o": [
+        "Zipporah",
+        "Miriam",
+        "Elisheba",
+        "Cozbi"
+      ],
+      "a": 0,
+      "e": "Exodus 2:21 — Zipporah was the daughter of Jethro, a Midianite priest, whom Moses married while in exile.",
+      "d": "medium"
+    },
+    {
+      "q": "I was the father-in-law of Moses and a priest of Midian. Who am I?",
+      "o": [
+        "Jethro (Reuel)",
+        "Hobab",
+        "Putiel",
+        "Balaam"
+      ],
+      "a": 0,
+      "e": "Exodus 18:1-12 — Jethro was the priest of Midian who gave Moses wise counsel on leading and judging Israel.",
+      "d": "medium"
+    },
+    {
+      "q": "I was the first woman. Who am I?",
+      "o": [
+        "Eve",
+        "Lilith",
+        "Sarah",
+        "Adah"
+      ],
+      "a": 0,
+      "e": "Genesis 3:20 — Adam named his wife Eve because she would become the mother of all the living.",
+      "d": "easy"
+    },
+    {
+      "q": "I was a son of David who was born to Bathsheba and became king. Who am I?",
+      "o": [
+        "Solomon",
+        "Nathan",
+        "Shimea",
+        "Shobab"
+      ],
+      "a": 0,
+      "e": "1 Kings 1:39 — Solomon was anointed as king to succeed his father David, as promised to his mother Bathsheba.",
+      "d": "easy"
+    },
+    {
+      "q": "I was the husband of Mary and the earthly father figure of Jesus. Who am I?",
+      "o": [
+        "Joseph",
+        "Joachim",
+        "Cleopas",
+        "Zebedee"
+      ],
+      "a": 0,
+      "e": "Matthew 1:19 — Joseph was a righteous man who obeyed God by taking Mary as his wife and naming her son Jesus.",
+      "d": "easy"
+    }
   ]
 };
-
