@@ -6022,7 +6022,7 @@ function go(id){
   const sc=el&&el.querySelector('.scroller');
   if(sc) sc.scrollTop=0;
   // hooks
-  if(id==='home'){ initGreeting(); renderDailyMeta(); renderLastPlayed(); renderWeeklyTournament(); renderSeasonalBanner(); renderHomeChallenges(); updateChallengesCardSub(); }
+  if(id==='home'){ initGreeting(); renderDailyMeta(); renderLastPlayed(); renderHomeChallenges(); updateChallengesCardSub(); }
   if(id==='community') communityTab('rankings');
   if(id==='profile') renderProfile();
   if(id==='lobby') renderLobby();
@@ -10710,8 +10710,6 @@ function initGreeting(){
   el.textContent=name?greet+', '+name+'!':greet+'!';
   updateDailyStreak();
   checkSeasonalEvents();
-  renderSeasonalBanner();
-  renderSundayBowl();
 }
 function updateDailyStreak(){
   const el=document.getElementById('daily-streak-info');
