@@ -992,7 +992,7 @@ const TF_Q=[
 {q:"Samson's strength came from a golden ring he always wore.",a:false,e:"Judges 16:17 — Samson's strength was in his uncut hair, not a ring.",d:"medium"},
 {q:"The Beatitudes are found in the book of Romans.",a:false,e:"Matthew 5:3-12 — The Beatitudes are found in the Gospel of Matthew, in the Sermon on the Mount.",d:"medium"},
 {q:"Moses saw the face of God on Mount Sinai.",a:false,e:"Exodus 33:20,23 — God told Moses he could not see his face and live; Moses saw only God's back.",d:"medium"},
-{q:"Mary Magdalene was the first person to see the risen Jesus according to John.",a:false,e:"John 20:14-16 — Actually, John does say Mary Magdalene was the first, so this requires nuance — this is true in John.",d:"medium"},
+{q:"Mary Magdalene was the first person to see the risen Jesus according to John.",a:true,e:"John 20:14-16 — Mary Magdalene was the first to see the risen Jesus. He called her by name and she recognized him.",d:"medium"},
 {q:"The first miracle Jesus performed was turning water into wine at a wedding in Jerusalem.",a:false,e:"John 2:1-11 — Jesus performed this miracle at a wedding in Cana of Galilee, not Jerusalem.",d:"medium"},
 {q:"God commanded Abraham to sacrifice his son Isaac on Mount Hermon.",a:false,e:"Genesis 22:2 — God told Abraham to sacrifice Isaac on Mount Moriah, not Hermon.",d:"medium"},
 {q:"Joseph's coat of many colors was given to him by his grandfather Abraham.",a:false,e:"Genesis 37:3 — Joseph's coat was given to him by his father Jacob, not his grandfather.",d:"medium"},
