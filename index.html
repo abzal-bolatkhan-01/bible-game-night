@@ -7969,7 +7969,7 @@ function joinFromRoom(d){
       if(G.isHost&&votedCount>=total){
         if(G._resultTimeout){clearTimeout(G._resultTimeout);G._resultTimeout=null;}
         stopTimers();
-        const q=G.roomPool[G.qi];
+        const q=G.roomPool[gs.qi];
         hostCommitOnlineResult(votes,q);
         return;
       }
@@ -8085,6 +8085,7 @@ function renderOnlineQ(){
   }
   // Watch votes in real time
   G._votesRef=G.roomRef.child('gameState/votes');
+  const _capturedQi=G.qi; // capture qi at render time to guard stale callbacks
   const onVoteUpdate=sn=>{
     const votes=sn.val()||{};
     const votedCount=Object.keys(votes).length;
@@ -8097,6 +8098,8 @@ function renderOnlineQ(){
     }
     // Host tallies when everyone has voted
     if(G.isHost&&votedCount>=total){
+      // Guard: ignore stale callbacks from a previous question's listener
+      if(G.qi!==_capturedQi)return;
       if(G._votesRef){G._votesRef.off();G._votesRef=null;}
       if(G._resultTimeout){clearTimeout(G._resultTimeout);G._resultTimeout=null;}
       stopTimers();
@@ -8244,13 +8247,13 @@ function showOnlineResult(gs){
   fb.style.display='block';fb.style.background='';fb.style.color='';
   fb.className='fb ok';fb.innerHTML=html;
   if(!G.isHost)return;
-  if(gs.gameOver){setTimeout(()=>{if(G.roomRef){G.roomRef.child('gameState').update({phase:'ended'});}endGame();},2500);return;}
+  if(gs.gameOver){setTimeout(()=>{if(G.roomRef){G.roomRef.child('gameState').update({phase:'ended'});}},2500);return;}
   setTimeout(()=>{
     if(!G.roomRef)return;
     let nqi=gs.nextQi!=null?gs.nextQi:G.qi+1;
     const maxQ=G.roomPool?G.roomPool.length:currentRounds();
-    if(nqi>=maxQ){G.roomRef.child('gameState').update({phase:'ended'});endGame();return;}
-    G.roomRef.child('gameState').update({phase:'question',qi:nqi,pi:0,votes:{},t:Date.now()});
+    if(nqi>=maxQ){G.roomRef.child('gameState').update({phase:'ended'});return;}
+    G.roomRef.child('gameState').update({phase:'question',qi:nqi,pi:0,votes:null,t:Date.now()});
   },2500);
 }
 function copyCode(){
