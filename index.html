@@ -166,6 +166,19 @@ body::after {
 }
 #ai-bg.loaded { opacity: 1; }
 
+/* ─── HOME SCREEN — parchment texture layer ─────── */
+#s-home::after {
+  content: '';
+  position: absolute;
+  inset: 0;
+  z-index: 0;
+  pointer-events: none;
+  background-image: url('/assets/img/home-bg-texture.png');
+  background-size: 320px 320px;
+  background-repeat: repeat;
+  opacity: 0.025;
+}
+
 /* ─── GRAIN TEXTURE ──────────────────────────────── */
 #app::before {
   content:'';
@@ -234,6 +247,98 @@ body::after {
 
 @keyframes streakPulse { 0% { transform: scale(1); box-shadow: 0 0 0 0 rgba(196,136,10,0.4); } 70% { transform: scale(1.05); box-shadow: 0 0 0 10px rgba(196,136,10,0); } 100% { transform: scale(1); box-shadow: 0 0 0 0 rgba(196,136,10,0); } }
 .streak-pulse { animation: streakPulse 1s infinite; }
+
+/* ─── THEMED VISUALS ─────────────────────────────── */
+@keyframes goldGlow    { 0%,100%{box-shadow:0 0 0 0 rgba(200,148,88,0)} 50%{box-shadow:0 0 22px 4px rgba(200,148,88,.14)} }
+@keyframes lampFlicker { 0%,100%{opacity:1} 40%{opacity:.82} 60%{opacity:.93} }
+@keyframes startPulse  { 0%,100%{box-shadow:0 0 0 0 rgba(224,168,96,.5)} 50%{box-shadow:0 0 0 8px rgba(224,168,96,0)} }
+@keyframes particleUp  { 0%{transform:translateY(0) translateX(var(--px,0px)) scale(0);opacity:0} 12%{opacity:.8} 88%{opacity:.3} 100%{transform:translateY(-200px) translateX(calc(var(--px,0px) * 2)) scale(0);opacity:0} }
+@keyframes cardLift    { from{transform:translateY(0)} to{transform:translateY(-2px)} }
+@keyframes borderTrace { 0%{background-position:0% 0%} 100%{background-position:200% 0%} }
+
+/* verse card — gentle gold pulse */
+.verse-card { animation: goldGlow 6s ease-in-out infinite; }
+
+/* card interactive lift */
+.card { transition: transform .15s ease, box-shadow .15s ease; cursor: default; }
+.card[onclick] { cursor: pointer; }
+.card[onclick]:active { transform: scale(.985); box-shadow: 0 2px 12px rgba(0,0,0,.4); }
+
+/* Friend card — social blue theme */
+#home-friend-card {
+  background: linear-gradient(135deg, #0b1629 0%, #101f42 60%, #0d1a35 100%);
+  border: 1.5px solid rgba(74,144,216,.3);
+  position: relative;
+  overflow: hidden;
+}
+#home-friend-card::before {
+  content: '';
+  position: absolute;
+  inset: 0;
+  background: radial-gradient(ellipse 60% 70% at 80% 50%, rgba(74,144,216,.1) 0, transparent 70%);
+  pointer-events: none;
+}
+#home-friend-card .card-sub-label { color: rgba(160,190,240,.7); }
+
+/* Challenges card — gold achievement theme */
+#home-challenges-card {
+  background: linear-gradient(135deg, #150e00 0%, #221600 60%, #1a1102 100%);
+  border: 1.5px solid rgba(200,148,88,.35);
+  position: relative;
+  overflow: hidden;
+}
+#home-challenges-card::before {
+  content: '';
+  position: absolute;
+  inset: 0;
+  background: radial-gradient(ellipse 55% 65% at 15% 50%, rgba(200,148,88,.1) 0, transparent 70%);
+  pointer-events: none;
+}
+
+/* Play Online ▶ START button pulse */
+#home-play-online-card .start-btn-inner {
+  animation: startPulse 2.4s ease-in-out infinite;
+}
+
+/* Particle container on home screen */
+#home-particles {
+  position: absolute;
+  inset: 0;
+  pointer-events: none;
+  overflow: hidden;
+}
+.home-particle {
+  position: absolute;
+  bottom: 0;
+  width: 3px;
+  height: 3px;
+  border-radius: 50%;
+  background: rgba(200,148,88,.7);
+  animation: particleUp var(--dur, 4s) ease-in var(--delay, 0s) infinite;
+}
+
+/* Online settings overlay chips */
+#ov-online-settings .diff-chip.sel,
+#ov-online-settings .chip.sel {
+  background: rgba(196,136,10,.14);
+  border-color: rgba(196,136,10,.5);
+  color: var(--gold1);
+}
+
+/* Question card visual depth */
+.q-card {
+  background: linear-gradient(160deg, var(--bg2) 0%, var(--bg3) 100%);
+  border: 1px solid rgba(200,148,88,.12);
+  box-shadow: 0 4px 24px rgba(0,0,0,.4), inset 0 1px 0 rgba(255,255,255,.03);
+}
+
+/* Consistent inp styling already exists — add smooth transition */
+.inp { transition: border-color .18s, box-shadow .18s; }
+
+/* btn hover depth */
+.btn:not(:disabled):hover { box-shadow: 0 6px 20px rgba(0,0,0,.35); }
+.btn-gold:not(:disabled):hover { box-shadow: 0 6px 20px rgba(196,136,10,.3); }
+.btn-blue:not(:disabled):hover { box-shadow: 0 6px 20px rgba(74,144,216,.25); }
 
 /* ─── TYPOGRAPHY ─────────────────────────────────── */
 .eyebrow {
@@ -3341,7 +3446,7 @@ html.feat-gameHeader .g-nm { font-weight: 800 !important; max-width: 100px; over
 <div id="app">
 
 <!-- ████████  HOME  ████████ -->
-<div class="screen active" id="s-home">
+<div class="screen active" id="s-home" style="position:relative;">
   <div style="padding:14px 0 10px;flex-shrink:0;display:flex;align-items:center;gap:10px;">
     <div style="flex:1;">
       <div class="home-greeting" id="home-greeting"></div>
@@ -3393,7 +3498,10 @@ html.feat-gameHeader .g-nm { font-weight: 800 !important; max-width: 100px; over
       </svg>
     </div>
   </div>
-  <div class="scroller">
+  <!-- Ambient floating particles (behind scroller) -->
+  <div id="home-particles" style="position:absolute;inset:0;pointer-events:none;overflow:hidden;z-index:0;"></div>
+
+  <div class="scroller" style="position:relative;z-index:1;">
     <div id="home-profile-bar" style="display:none;"></div>
     <div id="home-last-played" style="display:none;" class="lp-card" onclick="resumeLastPlayed()"></div>
 
@@ -3405,7 +3513,8 @@ html.feat-gameHeader .g-nm { font-weight: 800 !important; max-width: 100px; over
     </div>
 
     <!-- HERO: Play Online Now — rich visual -->
-    <div id="home-play-online-card" style="position:relative;margin-bottom:16px;border-radius:18px;overflow:hidden;cursor:pointer;border:1.5px solid rgba(224,168,96,.6);min-height:156px;display:flex;flex-direction:column;align-items:center;justify-content:center;padding:24px 20px;text-align:center;background:linear-gradient(160deg,#0f0a03 0%,#1e1004 35%,#120c04 70%,#0a0603 100%);" onclick="playOnlineNow()">
+    <div id="home-play-online-card" style="position:relative;margin-bottom:16px;border-radius:18px;overflow:hidden;cursor:pointer;border:1.5px solid rgba(224,168,96,.6);min-height:156px;display:flex;flex-direction:column;align-items:center;justify-content:center;padding:24px 20px;text-align:center;background:linear-gradient(160deg,#0f0a03 0%,#1e1004 35%,#120c04 70%,#0a0603 100%);background-image:url('/assets/img/lamp-hero.png');background-size:cover;background-position:center;" onclick="playOnlineNow()">
+      <div style="position:absolute;inset:0;background:linear-gradient(160deg,rgba(10,6,3,.82) 0%,rgba(15,8,2,.7) 50%,rgba(10,6,3,.88) 100%);"></div>
       <!-- Light rays SVG background -->
       <svg style="position:absolute;inset:0;width:100%;height:100%;pointer-events:none;" viewBox="0 0 360 160" preserveAspectRatio="xMidYMid slice">
         <defs>
@@ -3429,7 +3538,7 @@ html.feat-gameHeader .g-nm { font-weight: 800 !important; max-width: 100px; over
         <div style="font-size:13px;font-family:'Cinzel',serif;letter-spacing:.18em;color:rgba(224,168,96,.7);text-transform:uppercase;margin-bottom:8px;">Multiplayer</div>
         <div style="font-family:'Playfair Display',serif;font-size:26px;font-weight:700;color:#F5D98A;line-height:1.1;margin-bottom:6px;">Play Online Now</div>
         <div style="font-size:11px;color:rgba(224,168,96,.55);margin-bottom:18px;letter-spacing:.03em;">Challenge believers worldwide · Instant match</div>
-        <div style="display:inline-block;background:linear-gradient(135deg,#C4842A,#E0A860);color:#0f0a03;font-family:'Cinzel',serif;font-size:13px;font-weight:700;letter-spacing:.12em;padding:10px 32px;border-radius:50px;">▶ START</div>
+        <div class="start-btn-inner" style="display:inline-block;background:linear-gradient(135deg,#C4842A,#E0A860);color:#0f0a03;font-family:'Cinzel',serif;font-size:13px;font-weight:700;letter-spacing:.12em;padding:10px 32px;border-radius:50px;">⚙ Set Up &amp; Play</div>
       </div>
     </div>
 
@@ -3439,24 +3548,26 @@ html.feat-gameHeader .g-nm { font-weight: 800 !important; max-width: 100px; over
       <div id="home-challenges-list"></div>
     </div>
 
-    <!-- Challenge a Friend -->
-    <div class="card" style="margin-bottom:16px;padding:14px 16px;display:flex;align-items:center;gap:14px;cursor:pointer;" onclick="go('friends');switchSocialTab('friends');setTimeout(()=>document.getElementById('friends-screen-code-inp')&&document.getElementById('friends-screen-code-inp').focus(),200)">
-      <div style="font-size:26px;">💬</div>
-      <div style="flex:1;">
-        <div style="font-family:'Playfair Display',serif;font-size:15px;font-weight:700;color:var(--ink);">Challenge a Friend</div>
-        <div style="font-size:11px;color:var(--ink3);margin-top:2px;">Send a duel — they answer when ready</div>
+    <!-- Challenge a Friend — social/blue themed -->
+    <div id="home-friend-card" class="card" style="margin-bottom:16px;padding:14px 16px;display:flex;align-items:center;gap:14px;" onclick="go('friends');switchSocialTab('friends');setTimeout(()=>document.getElementById('friends-screen-code-inp')&&document.getElementById('friends-screen-code-inp').focus(),200)">
+      <div style="width:42px;height:42px;border-radius:50%;background:rgba(74,144,216,.18);border:1.5px solid rgba(74,144,216,.35);display:flex;align-items:center;justify-content:center;font-size:22px;flex-shrink:0;">⚔️</div>
+      <div style="flex:1;position:relative;z-index:1;">
+        <div style="font-family:'Cinzel',serif;font-size:10px;letter-spacing:.12em;text-transform:uppercase;color:rgba(160,190,240,.65);margin-bottom:2px;">1 vs 1 Duel</div>
+        <div style="font-family:'Playfair Display',serif;font-size:15px;font-weight:700;color:#c8d8f8;">Challenge a Friend</div>
+        <div class="card-sub-label" style="font-size:11px;margin-top:2px;">Pick a friend — they answer when ready</div>
       </div>
-      <div class="btn btn-ghost btn-sm" style="width:auto;padding:6px 14px;">Invite →</div>
+      <div style="background:rgba(74,144,216,.18);border:1px solid rgba(74,144,216,.4);color:#8ab4f8;font-family:'Cinzel',serif;font-size:10px;font-weight:700;letter-spacing:.08em;padding:6px 12px;border-radius:50px;flex-shrink:0;position:relative;z-index:1;">Send →</div>
     </div>
 
-    <!-- Combined Challenges card -->
-    <div class="card" style="margin-bottom:16px;padding:14px 16px;display:flex;align-items:center;gap:14px;cursor:pointer;" onclick="openChallengesMenu()">
-      <div style="font-size:26px;">🏆</div>
-      <div style="flex:1;">
-        <div style="font-family:'Playfair Display',serif;font-size:15px;font-weight:700;color:var(--ink);">Challenges</div>
-        <div id="challenges-card-sub" style="font-size:11px;color:var(--ink3);margin-top:2px;">Daily · Weekly · Seasonal</div>
+    <!-- Combined Challenges card — gold achievement themed -->
+    <div id="home-challenges-card" class="card" style="margin-bottom:16px;padding:14px 16px;display:flex;align-items:center;gap:14px;" onclick="openChallengesMenu()">
+      <div style="width:42px;height:42px;border-radius:50%;background:rgba(200,148,88,.15);border:1.5px solid rgba(200,148,88,.35);display:flex;align-items:center;justify-content:center;font-size:22px;flex-shrink:0;animation:lampFlicker 4s ease-in-out infinite;">🏆</div>
+      <div style="flex:1;position:relative;z-index:1;">
+        <div style="font-family:'Cinzel',serif;font-size:10px;letter-spacing:.12em;text-transform:uppercase;color:rgba(200,148,88,.65);margin-bottom:2px;">Daily · Weekly · Seasonal</div>
+        <div style="font-family:'Playfair Display',serif;font-size:15px;font-weight:700;color:var(--gold1);">Challenges</div>
+        <div id="challenges-card-sub" style="font-size:11px;color:var(--ink3);margin-top:2px;">Earn XP · Climb the ranks</div>
       </div>
-      <div class="btn btn-ghost btn-sm" style="width:auto;padding:6px 14px;">View →</div>
+      <div style="background:rgba(200,148,88,.15);border:1px solid rgba(200,148,88,.4);color:var(--gold1);font-family:'Cinzel',serif;font-size:10px;font-weight:700;letter-spacing:.08em;padding:6px 12px;border-radius:50px;flex-shrink:0;position:relative;z-index:1;">Play →</div>
     </div>
 
     <!-- Hidden banner containers (still used by render functions) -->
@@ -3468,11 +3579,10 @@ html.feat-gameHeader .g-nm { font-weight: 800 !important; max-width: 100px; over
     <div class="chips-wrap" style="margin-bottom:12px;">
       <div class="label" style="margin-bottom:8px;">More Ways to Play</div>
       <div class="ps-v3-wrap">
-        <button class="ps-mode-btn ps-v3-seg sel" data-mode="online" onclick="pickMode(this,'online')"><span style="font-size:22px;line-height:1;">🌐</span><br><span style="display:inline-block;margin-top:4px;">Online</span></button>
-        <button class="ps-mode-btn ps-v3-seg" data-mode="local" onclick="pickMode(this,'local')"><span style="font-size:22px;line-height:1;">👥</span><br><span style="display:inline-block;margin-top:4px;">Pass & Play</span></button>
+        <button class="ps-mode-btn ps-v3-seg sel" data-mode="local" onclick="pickMode(this,'local')"><span style="font-size:22px;line-height:1;">👥</span><br><span style="display:inline-block;margin-top:4px;">Pass &amp; Play</span></button>
         <button class="ps-mode-btn ps-v3-seg" data-mode="practice" onclick="pickMode(this,'practice')"><span style="font-size:22px;line-height:1;">🎓</span><br><span style="display:inline-block;margin-top:4px;">Practice</span></button>
       </div>
-      <div class="ps-mode-desc" style="font-size:11px;color:var(--ink3);text-align:center;margin-top:8px;">✦ &nbsp;Compete with believers worldwide</div>
+      <div class="ps-mode-desc" style="font-size:11px;color:var(--ink3);text-align:center;margin-top:8px;">✦ &nbsp;Play solo or pass to a friend nearby</div>
     </div>
     <button class="btn btn-gold" onclick="onPlay()" style="margin-bottom:8px;">▶ Play</button>
 
@@ -4247,6 +4357,36 @@ html.feat-gameHeader .g-nm { font-weight: 800 !important; max-width: 100px; over
 <div class="elim-ov" id="elim-ov">
   <span class="elim-em">💔</span>
   <div class="elim-txt" id="elim-nm"></div>
+</div>
+
+<!-- ── MODAL: Online Match Settings ── -->
+<div class="ov" id="ov-online-settings" onclick="bgClose(event,'ov-online-settings')">
+  <div class="mbox">
+    <div class="mhandle"></div>
+    <div style="font-family:'Cinzel',serif;font-size:10px;letter-spacing:.18em;text-transform:uppercase;color:var(--gold1);text-align:center;margin-bottom:5px;">Multiplayer</div>
+    <div style="font-family:'Playfair Display',serif;font-size:22px;font-weight:700;color:var(--ink);text-align:center;margin-bottom:18px;">Quick Match</div>
+    <div class="label" style="margin-bottom:8px;">Difficulty</div>
+    <div class="ps-v3-wrap" style="margin-bottom:16px;">
+      <button class="diff-chip ps-v3-seg sel" id="os-diff-easy" onclick="osPickDiff('easy')">🌿 Disciple</button>
+      <button class="diff-chip ps-v3-seg" id="os-diff-medium" onclick="osPickDiff('medium')">📖 Apostle</button>
+      <button class="diff-chip ps-v3-seg" id="os-diff-hard" onclick="osPickDiff('hard')">⚔️ Scholar</button>
+    </div>
+    <div class="label" style="margin-bottom:8px;">Question Type</div>
+    <div class="chips" style="margin-bottom:16px;">
+      <button class="chip sel" id="os-sub-mix" onclick="osPickSub('mix')">🔀 Mixed</button>
+      <button class="chip" id="os-sub-classic" onclick="osPickSub('classic')">🎯 Scripture</button>
+      <button class="chip" id="os-sub-truefalse" onclick="osPickSub('truefalse')">✅ True/False</button>
+      <button class="chip" id="os-sub-verse" onclick="osPickSub('verse')">📖 Fill-in-Verse</button>
+    </div>
+    <div class="label" style="margin-bottom:8px;">First to</div>
+    <div class="ps-v3-wrap" style="margin-bottom:20px;">
+      <button class="diff-chip ps-v3-seg" id="os-pts-10" onclick="osPickPts(10)">10 pts</button>
+      <button class="diff-chip ps-v3-seg sel" id="os-pts-15" onclick="osPickPts(15)">15 pts</button>
+      <button class="diff-chip ps-v3-seg" id="os-pts-20" onclick="osPickPts(20)">20 pts</button>
+    </div>
+    <button class="btn btn-gold" onclick="startOnlineMatch()" style="margin-bottom:8px;">▶ Find Match</button>
+    <button class="btn btn-ghost btn-sm" onclick="closeOv('ov-online-settings')" style="width:100%;">Cancel</button>
+  </div>
 </div>
 
 <!-- ── MODAL: Avatars ── -->
@@ -5398,7 +5538,7 @@ function mkEmpty(icon,title,sub){
    STATE
 ══════════════════════════════════════════════════ */
 const G={
-  mode:'online', sub:'mix',
+  mode:'local', sub:'mix',
   profile:null, uid:null,
   players:[], pool:[], qi:0, pi:0,
   seen:new Set(), // Tracks IDs or questions to prevent repeats
@@ -6022,7 +6162,7 @@ function go(id){
   const sc=el&&el.querySelector('.scroller');
   if(sc) sc.scrollTop=0;
   // hooks
-  if(id==='home'){ initGreeting(); renderDailyMeta(); renderLastPlayed(); renderHomeChallenges(); updateChallengesCardSub(); }
+  if(id==='home'){ initGreeting(); renderDailyMeta(); renderLastPlayed(); renderHomeChallenges(); updateChallengesCardSub(); spawnHomeParticles(); }
   if(id==='community') communityTab('rankings');
   if(id==='profile') renderProfile();
   if(id==='lobby') renderLobby();
@@ -8354,13 +8494,53 @@ function openChallengesMenu(){
     </div>`).join('');
   openOv('ov-challenges');
 }
+function osPickDiff(d){
+  ['easy','medium','hard'].forEach(v=>{
+    const el=document.getElementById('os-diff-'+v);
+    if(el) el.classList.toggle('sel', v===d);
+  });
+  G.diff=d;
+}
+function osPickSub(s){
+  ['mix','classic','truefalse','verse'].forEach(v=>{
+    const el=document.getElementById('os-sub-'+v);
+    if(el) el.classList.toggle('sel', v===s);
+  });
+  G.sub=s;
+}
+function osPickPts(n){
+  [10,15,20].forEach(v=>{
+    const el=document.getElementById('os-pts-'+v);
+    if(el) el.classList.toggle('sel', v===n);
+  });
+  G.cfg.winScore=n;
+}
+function startOnlineMatch(){
+  G.mode='online'; G.cfg.hearts=false;
+  sfx.tap(); haptic('tap');
+  closeOv('ov-online-settings');
+  go('lobby');
+  setTimeout(()=>createRoom(),0);
+}
+function spawnHomeParticles(){
+  const c=document.getElementById('home-particles');
+  if(!c) return;
+  c.innerHTML='';
+  for(let i=0;i<14;i++){
+    const p=document.createElement('div');
+    p.className='home-particle';
+    p.style.cssText=`left:${5+Math.random()*90}%;--px:${(Math.random()-.5)*40}px;--dur:${3.5+Math.random()*4}s;--delay:${-(Math.random()*6)}s;`;
+    c.appendChild(p);
+  }
+}
 function playOnlineNow(){
   if(!G.profile){ go('auth'); buildAvGrid(); return; }
   sfx.tap(); haptic('tap');
-  G.mode='online'; G.sub='mix'; G.diff='easy';
-  G.cfg.winScore=G.cfg.winScore||15; G.cfg.hearts=false;
-  go('lobby');
-  setTimeout(()=>createRoom(),0);
+  if(!G.diff) G.diff='easy';
+  if(!G.sub) G.sub='mix';
+  if(!G.cfg.winScore) G.cfg.winScore=15;
+  osPickDiff(G.diff); osPickSub(G.sub); osPickPts(G.cfg.winScore);
+  openOv('ov-online-settings');
 }
 function renderHomeChallenges(){
   const sec=document.getElementById('home-challenges-section');
@@ -11290,23 +11470,24 @@ function addFriendFromFriends(){
   if(code===G.profile.friendCode){ toast("This is your own code."); return; }
   // Search leaderboard (same as original addFriend)
   G.db.ref('leaderboard').orderByChild('friendCode').equalTo(code).once('value').then(snap=>{
-    if(!snap.exists()){ toast('Player not found'); return; }
+    if(!snap.exists()){ toast('Player not found — check the code'); return; }
     let uid=null, targetData=null; snap.forEach(c=>{ uid=c.key; targetData=c.val()||{}; });
-    if(uid===G.uid){ toast("This is your own code."); return; }
-    // Cache friend data for display
+    if(!uid){ toast('Player not found'); return; }
+    if(uid===G.uid){ toast("That's your own code."); return; }
     if(!G._friendCache) G._friendCache={};
     G._friendCache[uid]={name:targetData.name||'Friend',avatar:targetData.avatar||'😊',photo:targetData.photo||'',xp:targetData.xp||0};
     sendFriendRequestToUid(uid,{name:targetData.name,avatar:targetData.avatar}).then(()=>{
       document.getElementById('friends-screen-code-inp').value='';
-      toast('Friend request sent ✦');
+      toast('Friend request sent to '+escHtml(targetData.name||'player')+' ✦');
       renderFriends();
     }).catch(err=>{
-      if(err&&err.message==='already') toast('Already your friend!');
+      if(err&&err.message==='already') toast('Already friends!');
       else if(err&&err.message==='already-sent') toast('Request already sent');
-      else if(err&&err.message==='self') toast("This is your own code.");
-      else toast('Could not send request');
+      else if(err&&err.message==='self') toast("That's your own code.");
+      else toast('Could not send — try again');
+      console.warn('friendReq error',err);
     });
-  });
+  }).catch(()=>toast('Connection error — check your internet'));
 }
 /* ══════════════════════════════════════════════════
    CHALLENGE SYSTEM
