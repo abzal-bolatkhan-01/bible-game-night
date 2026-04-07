@@ -3397,12 +3397,40 @@ html.feat-gameHeader .g-nm { font-weight: 800 !important; max-width: 100px; over
     <div id="home-profile-bar" style="display:none;"></div>
     <div id="home-last-played" style="display:none;" class="lp-card" onclick="resumeLastPlayed()"></div>
 
-    <!-- HERO: Play Online Now -->
-    <div class="card" style="margin-bottom:16px;padding:20px 16px;text-align:center;background:linear-gradient(135deg,rgba(224,168,96,.18) 0%,rgba(196,132,42,.06) 100%);border:2px solid rgba(224,168,96,.55);cursor:pointer;" onclick="playOnlineNow()">
-      <div style="font-size:38px;margin-bottom:6px;">⚡</div>
-      <div style="font-family:'Playfair Display',serif;font-size:21px;font-weight:700;color:var(--gold1);margin-bottom:4px;">Play Online Now</div>
-      <div style="font-size:12px;color:var(--ink3);margin-bottom:14px;">Challenge believers worldwide · Instant match</div>
-      <div class="btn btn-gold" style="display:inline-block;width:auto;padding:10px 36px;font-size:15px;">▶ Start</div>
+    <!-- Daily Verse — restored original design -->
+    <div class="verse-card" id="daily-verse-card">
+      <div class="verse-card-label">Light for Today</div>
+      <div class="verse-card-text" id="dv-text"></div>
+      <div class="verse-card-ref" id="dv-ref"></div>
+    </div>
+
+    <!-- HERO: Play Online Now — rich visual -->
+    <div id="home-play-online-card" style="position:relative;margin-bottom:16px;border-radius:18px;overflow:hidden;cursor:pointer;border:1.5px solid rgba(224,168,96,.6);min-height:156px;display:flex;flex-direction:column;align-items:center;justify-content:center;padding:24px 20px;text-align:center;background:linear-gradient(160deg,#0f0a03 0%,#1e1004 35%,#120c04 70%,#0a0603 100%);" onclick="playOnlineNow()">
+      <!-- Light rays SVG background -->
+      <svg style="position:absolute;inset:0;width:100%;height:100%;pointer-events:none;" viewBox="0 0 360 160" preserveAspectRatio="xMidYMid slice">
+        <defs>
+          <radialGradient id="glow-rg" cx="50%" cy="50%" r="55%">
+            <stop offset="0%" stop-color="#E0A860" stop-opacity="0.22"/>
+            <stop offset="100%" stop-color="#E0A860" stop-opacity="0"/>
+          </radialGradient>
+        </defs>
+        <rect width="360" height="160" fill="url(#glow-rg)"/>
+        <line x1="180" y1="80" x2="0" y2="0"   stroke="#E0A860" stroke-width="28" stroke-opacity=".06"/>
+        <line x1="180" y1="80" x2="120" y2="0"  stroke="#E0A860" stroke-width="22" stroke-opacity=".05"/>
+        <line x1="180" y1="80" x2="240" y2="0"  stroke="#E0A860" stroke-width="22" stroke-opacity=".05"/>
+        <line x1="180" y1="80" x2="360" y2="0"  stroke="#E0A860" stroke-width="28" stroke-opacity=".06"/>
+        <line x1="180" y1="80" x2="0" y2="160"  stroke="#E0A860" stroke-width="24" stroke-opacity=".04"/>
+        <line x1="180" y1="80" x2="360" y2="160" stroke="#E0A860" stroke-width="24" stroke-opacity=".04"/>
+        <line x1="180" y1="80" x2="180" y2="0"  stroke="#E0A860" stroke-width="20" stroke-opacity=".07"/>
+        <circle cx="180" cy="80" r="32" fill="none" stroke="#E0A860" stroke-opacity=".1" stroke-width="1"/>
+        <circle cx="180" cy="80" r="55" fill="none" stroke="#E0A860" stroke-opacity=".06" stroke-width="1"/>
+      </svg>
+      <div style="position:relative;z-index:1;">
+        <div style="font-size:13px;font-family:'Cinzel',serif;letter-spacing:.18em;color:rgba(224,168,96,.7);text-transform:uppercase;margin-bottom:8px;">Multiplayer</div>
+        <div style="font-family:'Playfair Display',serif;font-size:26px;font-weight:700;color:#F5D98A;line-height:1.1;margin-bottom:6px;">Play Online Now</div>
+        <div style="font-size:11px;color:rgba(224,168,96,.55);margin-bottom:18px;letter-spacing:.03em;">Challenge believers worldwide · Instant match</div>
+        <div style="display:inline-block;background:linear-gradient(135deg,#C4842A,#E0A860);color:#0f0a03;font-family:'Cinzel',serif;font-size:13px;font-weight:700;letter-spacing:.12em;padding:10px 32px;border-radius:50px;">▶ START</div>
+      </div>
     </div>
 
     <!-- Pending friend challenges (shown when active) -->
@@ -3421,35 +3449,20 @@ html.feat-gameHeader .g-nm { font-weight: 800 !important; max-width: 100px; over
       <div class="btn btn-ghost btn-sm" style="width:auto;padding:6px 14px;">Invite →</div>
     </div>
 
-    <!-- Daily Quiz + mini verse side by side -->
-    <div style="display:grid;grid-template-columns:1fr 1fr;gap:10px;margin-bottom:16px;">
-      <div class="card" style="padding:14px;cursor:pointer;" onclick="startDailyChallenge()">
-        <div style="font-size:24px;margin-bottom:4px;">🔥</div>
-        <div style="font-family:'Playfair Display',serif;font-size:13px;font-weight:700;color:var(--ink);">Daily Quiz</div>
-        <div id="daily-streak-info" style="font-size:10px;color:var(--ink3);margin-top:2px;">Streak: 0 days</div>
-        <div id="daily-topic-info"></div>
-        <div class="btn btn-gold btn-sm" style="margin-top:10px;padding:6px 0;font-size:11px;">Go →</div>
+    <!-- Combined Challenges card -->
+    <div class="card" style="margin-bottom:16px;padding:14px 16px;display:flex;align-items:center;gap:14px;cursor:pointer;" onclick="openChallengesMenu()">
+      <div style="font-size:26px;">🏆</div>
+      <div style="flex:1;">
+        <div style="font-family:'Playfair Display',serif;font-size:15px;font-weight:700;color:var(--ink);">Challenges</div>
+        <div id="challenges-card-sub" style="font-size:11px;color:var(--ink3);margin-top:2px;">Daily · Weekly · Seasonal</div>
       </div>
-      <div style="background:var(--card);border-radius:var(--r2);padding:14px;display:flex;flex-direction:column;justify-content:center;">
-        <div style="font-family:'Cinzel',serif;font-size:9px;letter-spacing:.1em;color:var(--gold1);text-transform:uppercase;margin-bottom:6px;">Light for Today</div>
-        <div style="font-size:11px;color:var(--ink);line-height:1.55;font-style:italic;" id="dv-text-mini"></div>
-        <div style="font-size:9px;color:var(--ink3);margin-top:6px;" id="dv-ref-mini"></div>
-      </div>
+      <div class="btn btn-ghost btn-sm" style="width:auto;padding:6px 14px;">View →</div>
     </div>
 
-    <!-- Seasonal / Tournament banners (hidden until active) -->
-    <div id="seasonal-banner" class="card" style="margin-bottom:16px;padding:12px 16px;background:linear-gradient(135deg,rgba(56,189,248,.1) 0%,transparent 100%);border:1px solid rgba(56,189,248,.3);display:none;" onclick="startSeasonalEvent()">
-      <div style="display:flex;align-items:center;gap:12px;">
-        <div style="font-size:24px;" id="seasonal-icon">🌟</div>
-        <div style="flex:1;">
-          <div style="font-family:'Cinzel',serif;font-size:12px;color:var(--blue);letter-spacing:.1em;" id="seasonal-name">Seasonal Event</div>
-          <div style="font-size:11px;color:var(--ink3);">Limited time special rewards!</div>
-        </div>
-        <div class="btn btn-blue btn-sm" style="width:auto;padding:5px 12px;">Join</div>
-      </div>
-    </div>
-    <div id="weekly-tournament-banner" style="display:none;margin-bottom:16px;"></div>
-    <div id="sunday-bowl-banner" style="display:none;margin-bottom:16px;"></div>
+    <!-- Hidden banner containers (still used by render functions) -->
+    <div id="seasonal-banner" style="display:none;"></div>
+    <div id="weekly-tournament-banner" style="display:none;"></div>
+    <div id="sunday-bowl-banner" style="display:none;"></div>
 
     <!-- More ways to play -->
     <div class="chips-wrap" style="margin-bottom:12px;">
@@ -4342,6 +4355,18 @@ html.feat-gameHeader .g-nm { font-weight: 800 !important; max-width: 100px; over
       <button class="btn btn-ghost btn-sm" style="flex:1;" onclick="closeOv('ov-cong-remove')">Cancel</button>
       <button class="btn btn-ruby btn-sm cong-remove-confirm" style="flex:1;" onclick="removeCongregationConfirmed()">Remove</button>
     </div>
+  </div>
+</div>
+
+<!-- ── MODAL: Challenges ── -->
+<div class="ov" id="ov-challenges" onclick="bgClose(event,'ov-challenges')">
+  <div class="mbox">
+    <div class="mhandle"></div>
+    <div style="display:flex;align-items:center;justify-content:space-between;margin-bottom:4px;">
+      <div class="mtitle" style="margin:0;">Challenges</div>
+      <button style="background:none;border:none;cursor:pointer;font-size:12px;color:var(--ink3);padding:4px 8px;" onclick="closeOv('ov-challenges')">✕ Close</button>
+    </div>
+    <div id="challenges-menu-list" style="display:flex;flex-direction:column;gap:10px;margin-top:14px;"></div>
   </div>
 </div>
 
@@ -5997,7 +6022,7 @@ function go(id){
   const sc=el&&el.querySelector('.scroller');
   if(sc) sc.scrollTop=0;
   // hooks
-  if(id==='home'){ initGreeting(); renderDailyMeta(); renderLastPlayed(); renderWeeklyTournament(); renderSeasonalBanner(); renderHomeChallenges(); }
+  if(id==='home'){ initGreeting(); renderDailyMeta(); renderLastPlayed(); renderWeeklyTournament(); renderSeasonalBanner(); renderHomeChallenges(); updateChallengesCardSub(); }
   if(id==='community') communityTab('rankings');
   if(id==='profile') renderProfile();
   if(id==='lobby') renderLobby();
@@ -8283,6 +8308,52 @@ function copyCode(){
   if(navigator.clipboard) navigator.clipboard.writeText(code).then(()=>toast('Code copied! ✦'));
   else{ const t=document.createElement('textarea'); t.value=code; document.body.appendChild(t); t.select(); document.execCommand('copy'); t.remove(); toast('Code copied! ✦'); }
 }
+function updateChallengesCardSub(){
+  const sub=document.getElementById('challenges-card-sub');
+  if(!sub) return;
+  const today=new Date().toISOString().split('T')[0];
+  const dailyDone=G.profile&&G.profile.lastDaily===today;
+  const weeklyDone=G.profile&&G.profile.lastWeeklyDate===today;
+  const season=typeof getCurrentSeason==='function'?getCurrentSeason():null;
+  const parts=[];
+  if(!dailyDone) parts.push('🔥 Daily');
+  if(!weeklyDone) parts.push('🏟️ Weekly');
+  if(season&&!(G.profile&&G.profile.lastSeasonalDate===today)) parts.push('🌟 Seasonal');
+  sub.textContent=parts.length?parts.join(' · ')+' available':'All caught up · Check back tomorrow';
+}
+function openChallengesMenu(){
+  sfx.tap();
+  const list=document.getElementById('challenges-menu-list');
+  if(!list) return;
+  const today=new Date().toISOString().split('T')[0];
+  const dailyDone=G.profile&&G.profile.lastDaily===today;
+  const season=typeof getCurrentSeason==='function'?getCurrentSeason():null;
+  const seasonDone=G.profile&&G.profile.lastSeasonalDate===today;
+  const weeklyDone=G.profile&&G.profile.lastWeeklyDate===today;
+  const isBowl=typeof isSundayBowlActive==='function'&&isSundayBowlActive();
+  const bowlWeek=typeof getISOWeek==='function'?getISOWeek(new Date()):0;
+  const bowlDone=G.profile&&G.profile.bowlWeek===bowlWeek;
+  const diffLabel=(G.profile&&G.profile.xp||0)>=2000?'Scholar':(G.profile&&G.profile.xp||0)>=700?'Apostle':'Disciple';
+  const streak=G.profile&&G.profile.streak>0?`🔥 ${G.profile.streak}-day streak · `:'';
+  const seasonNames={christmas:'Christmas Season',easter:'Easter Season',pentecost:'Pentecost',reformation:'Reformation Week',thanksgiving:'Thanksgiving'};
+  const seasonIcons={christmas:'⭐',easter:'✝️',pentecost:'🔥',reformation:'📚',thanksgiving:'🙏'};
+  const items=[
+    {icon:'🔥',label:'Daily Challenge',sub:dailyDone?'Completed today — come back tomorrow':`${streak}10 questions · ${diffLabel} level`,done:dailyDone,color:'#C4842A',action:dailyDone?null:"startDailyChallenge()"},
+    {icon:'🏟️',label:'Weekly Tournament',sub:weeklyDone?'Completed this week':'Fresh every Sunday · Compete globally',done:weeklyDone,color:'#1565C0',action:weeklyDone?null:"startWeeklyTournament()"},
+    season?{icon:seasonIcons[season]||'🌟',label:seasonNames[season]||'Seasonal Event',sub:seasonDone?'Completed — see you next season':'Special questions · Limited time',done:seasonDone,color:'#6A1B9A',action:seasonDone?null:`playSeasonalQuestions('${season}')`}:null,
+    isBowl?{icon:'🏛️',label:'Sunday Bible Bowl',sub:bowlDone?`Your score: ${G.profile&&G.profile.bowlScore||0}/15`:'15 questions · Weekly leaderboard',done:bowlDone,color:'#1a237e',action:bowlDone?'loadSundayBowlLeaderboard()':'startSundayBowl()'}:null
+  ].filter(Boolean);
+  list.innerHTML=items.map(item=>`
+    <div style="display:flex;align-items:center;gap:14px;padding:14px;border-radius:14px;background:var(--card);border:1.5px solid rgba(255,255,255,${item.done?.05:.12});opacity:${item.done?.6:1};cursor:${item.action?'pointer':'default'};" ${item.action?`onclick="closeOv('ov-challenges');${item.action}"`:''}}>
+      <div style="font-size:28px;flex-shrink:0;">${item.icon}</div>
+      <div style="flex:1;min-width:0;">
+        <div style="font-family:'Playfair Display',serif;font-size:14px;font-weight:700;color:var(--ink);">${item.label}</div>
+        <div style="font-size:11px;color:var(--ink3);margin-top:2px;">${item.sub}</div>
+      </div>
+      ${item.done?'<div style="font-size:18px;color:var(--ink3);">✓</div>':`<div style="background:${item.color};color:#fff;font-family:'Cinzel',serif;font-size:10px;font-weight:700;letter-spacing:.08em;padding:6px 14px;border-radius:50px;">Play</div>`}
+    </div>`).join('');
+  openOv('ov-challenges');
+}
 function playOnlineNow(){
   if(!G.profile){ go('auth'); buildAvGrid(); return; }
   sfx.tap(); haptic('tap');
@@ -8668,13 +8739,6 @@ function chModeSubmit(){
 }
 // Override pickChQType to also update category visibility
 const _origPickChQType=typeof pickChQType==='function'?pickChQType:null;
-function pickChQType(el,qtype){
-  sfx.tap();
-  if(qtype==='team') qtype='classic';
-  _chQType=qtype;
-  document.querySelectorAll('#ch-qtype-chips .chip').forEach(c=>c.classList.remove('sel'));
-  el.classList.add('sel');
-}
 function seededShuffle(arr,seed){
   let s=seed>>>0;
   const rand=()=>{ s=(Math.imul(s,1664525)+1013904223)>>>0; return s/0x100000000; };
@@ -10129,9 +10193,6 @@ function initDailyVerse(){
   const el=document.getElementById('dv-text'), el2=document.getElementById('dv-ref');
   if(el) el.textContent='\u201c'+v.t+'\u201d';
   if(el2) el2.textContent='\u2014 '+v.r;
-  const em=document.getElementById('dv-text-mini'), em2=document.getElementById('dv-ref-mini');
-  if(em) em.textContent='\u201c'+v.t+'\u201d';
-  if(em2) em2.textContent='\u2014 '+v.r;
 }
 
 /* ══════════════════════════════════════════════════
