@@ -4358,9 +4358,11 @@ html.feat-gameHeader .g-nm { font-weight: 800 !important; max-width: 100px; over
 <div class="ov" id="ov-settings" onclick="bgClose(event,'ov-settings')">
   <div class="mbox">
     <div class="mhandle"></div>
-    <div class="mtitle">Settings</div>
-    <div id="settings-list" style="display:flex;flex-direction:column;gap:7px;margin-bottom:16px;"></div>
-    <button class="btn btn-ghost btn-sm" onclick="closeOv('ov-settings')">Done</button>
+    <div style="display:flex;align-items:center;justify-content:space-between;margin-bottom:4px;">
+      <div class="mtitle" style="margin:0;">Settings</div>
+      <button class="btn btn-ghost btn-sm" style="padding:4px 14px;" onclick="closeOv('ov-settings')">Done</button>
+    </div>
+    <div id="settings-list" style="display:flex;flex-direction:column;gap:7px;margin-top:12px;"></div>
   </div>
 </div>
 
