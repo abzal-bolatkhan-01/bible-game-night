@@ -2286,7 +2286,7 @@ html[data-theme="dark"] .conv-row { background: var(--card-bg); color: var(--ink
 html[data-theme="dark"] .btn-gold { background: #E0A860; color: #1A1A20; border: 2px solid #D4984A; border-bottom: 5px solid #A0773A; }
 html[data-theme="dark"] .btn-ruby { background: #C84040; color: #fff; border: 2px solid #B83030; border-bottom: 5px solid #881010; }
 html[data-theme="dark"] .btn-blue { background: #4A90D8; color: #fff; border: 2px solid #3A80C8; border-bottom: 5px solid #1A4A98; }
-html[data-theme="dark"] .btn-ghost { background: var(--bg3); border: 1px solid var(--inp-border); color: var(--ink); }
+html[data-theme="dark"] .btn-ghost { background: var(--bg3); border: 1px solid var(--inp-border); color: var(--ink2); }
 html[data-theme="dark"] .btn-ghost:active:not(:disabled) { background: var(--bg2); }
 html[data-theme="dark"] .card { background: #242430; border: 1px solid rgba(255,255,255,.05); }
 html[data-theme="dark"] .btn-ghost.active { background: rgba(224,168,96,.12); color: #E0A860; border-color: rgba(224,168,96,.35); }
@@ -2758,6 +2758,64 @@ html[data-theme="warmth"] .setup-av-btn { background: #FDF9F4; border-color: #D8
   html[data-theme="warmth"] .ps-v3-seg:hover:not(.sel):not(.active) { background: rgba(176,120,80,.12); color: var(--ink); }
   html[data-theme="warmth"] .ps-v3-seg.sel:hover, html[data-theme="warmth"] .ps-v3-seg.active:hover { filter: brightness(.95); }
 }
+
+/* ─── Home Card Theming (theme-aware) ───────────── */
+
+/* Hero: Host a Room — base (light/default) */
+.home-mp-hero {
+  background: linear-gradient(160deg,#fff8f0 0%,#fff3e0 60%,#fff8f0 100%);
+  border: 1.5px solid rgba(196,136,10,.35);
+}
+.home-mp-overlay { background: linear-gradient(160deg,rgba(255,240,200,.2) 0%,rgba(255,228,170,.1) 100%); }
+.mp-eyebrow { color: rgba(160,100,0,.7); }
+.mp-title { font-size: 26px; font-weight: 800; color: #7A5200; margin-bottom: 6px; }
+.mp-sub { color: rgba(140,90,0,.6); margin-bottom: 18px; font-size: 12px; }
+
+html[data-theme="dark"] .home-mp-hero {
+  background: linear-gradient(160deg,#0f0a03 0%,#1e1004 35%,#120c04 70%,#0a0603 100%);
+  border: 1.5px solid rgba(224,168,96,.6);
+}
+html[data-theme="dark"] .home-mp-overlay { background: linear-gradient(160deg,rgba(10,6,3,.82) 0%,rgba(15,8,2,.7) 50%,rgba(10,6,3,.88) 100%); }
+html[data-theme="dark"] .mp-eyebrow { color: rgba(224,168,96,.7); }
+html[data-theme="dark"] .mp-title { color: #F5D98A; }
+html[data-theme="dark"] .mp-sub { color: rgba(224,168,96,.55); }
+
+html[data-theme="green"] .home-mp-hero {
+  background: linear-gradient(160deg,#f0f8ee 0%,#e4f4de 60%,#f0f8ee 100%);
+  border: 1.5px solid rgba(78,122,78,.4);
+}
+html[data-theme="green"] .home-mp-overlay { background: linear-gradient(160deg,rgba(200,230,196,.2) 0%,rgba(180,220,172,.1) 100%); }
+html[data-theme="green"] .mp-eyebrow { color: rgba(60,110,60,.7); }
+html[data-theme="green"] .mp-title { color: #2A5A2A; }
+html[data-theme="green"] .mp-sub { color: rgba(60,110,60,.55); }
+
+html[data-theme="warmth"] .home-mp-hero {
+  background: linear-gradient(160deg,#fdf4ec 0%,#f8ecd8 60%,#fdf4ec 100%);
+  border: 1.5px solid rgba(176,120,80,.4);
+}
+html[data-theme="warmth"] .home-mp-overlay { background: linear-gradient(160deg,rgba(248,228,196,.2) 0%,rgba(240,210,170,.1) 100%); }
+html[data-theme="warmth"] .mp-eyebrow { color: rgba(140,80,30,.7); }
+html[data-theme="warmth"] .mp-title { color: #6A3810; }
+html[data-theme="warmth"] .mp-sub { color: rgba(140,80,30,.55); }
+
+/* Duel a Friend icon + text */
+.home-duel-icon { width:42px;height:42px;border-radius:50%;background:rgba(74,144,216,.14);border:1.5px solid rgba(74,144,216,.28);display:flex;align-items:center;justify-content:center;font-size:22px;flex-shrink:0; }
+.home-duel-eyebrow { color: rgba(40,100,200,.65); }
+.home-duel-title { font-weight: 700; color: #2a5fa0; }
+html[data-theme="dark"] .home-duel-icon { background: rgba(74,144,216,.2); border-color: rgba(74,144,216,.4); }
+html[data-theme="dark"] .home-duel-eyebrow { color: rgba(160,190,240,.65); }
+html[data-theme="dark"] .home-duel-title { color: #c8d8f8; }
+html[data-theme="warmth"] .home-duel-title { color: #1E4880; }
+
+/* Challenges icon + text */
+.home-chal-icon { width:42px;height:42px;border-radius:50%;background:rgba(200,148,88,.14);border:1.5px solid rgba(200,148,88,.3);display:flex;align-items:center;justify-content:center;font-size:22px;flex-shrink:0;animation:lampFlicker 4s ease-in-out infinite; }
+.home-chal-eyebrow { color: rgba(160,100,20,.65); }
+html[data-theme="dark"] .home-chal-icon { background: rgba(200,148,88,.18); border-color: rgba(200,148,88,.4); }
+html[data-theme="dark"] .home-chal-eyebrow { color: rgba(200,148,88,.65); }
+html[data-theme="green"] .home-chal-icon { background: rgba(94,138,94,.15); border-color: rgba(94,138,94,.35); }
+html[data-theme="green"] .home-chal-eyebrow { color: rgba(60,110,60,.7); }
+html[data-theme="warmth"] .home-chal-icon { background: rgba(176,120,80,.15); border-color: rgba(176,120,80,.35); }
+html[data-theme="warmth"] .home-chal-eyebrow { color: rgba(140,80,30,.65); }
 
 /* ── Light Theme Button Styling ── */
 html:not([data-theme="dark"]):not([data-theme="green"]):not([data-theme="warmth"]) .btn-gold {
@@ -3464,8 +3522,8 @@ html.feat-gameHeader .g-nm { font-weight: 800 !important; max-width: 100px; over
     </div>
 
     <!-- HERO: Host a Room — rich visual -->
-    <div id="home-play-online-card" class="card" style="position:relative;margin-bottom:16px;min-height:160px;align-items:center;justify-content:center;text-align:center;background:linear-gradient(160deg,#0f0a03 0%,#1e1004 35%,#120c04 70%,#0a0603 100%);background-image:url('/assets/img/lamp-hero.png');background-size:cover;background-position:center;border:1.5px solid rgba(224,168,96,.6);padding:24px 20px;" onclick="playOnlineNow()">
-      <div style="position:absolute;inset:0;background:linear-gradient(160deg,rgba(10,6,3,.82) 0%,rgba(15,8,2,.7) 50%,rgba(10,6,3,.88) 100%);"></div>
+    <div id="home-play-online-card" class="card home-mp-hero" style="position:relative;margin-bottom:16px;min-height:160px;align-items:center;justify-content:center;text-align:center;padding:24px 20px;" onclick="playOnlineNow()">
+      <div class="home-mp-overlay" style="position:absolute;inset:0;"></div>
       <!-- Light rays SVG background -->
       <svg style="position:absolute;inset:0;width:100%;height:100%;pointer-events:none;" viewBox="0 0 360 160" preserveAspectRatio="xMidYMid slice">
         <defs>
@@ -3486,10 +3544,10 @@ html.feat-gameHeader .g-nm { font-weight: 800 !important; max-width: 100px; over
         <circle cx="180" cy="80" r="55" fill="none" stroke="#E0A860" stroke-opacity=".06" stroke-width="1"/>
       </svg>
       <div style="position:relative;z-index:1;">
-        <div class="card-eyebrow" style="color:rgba(224,168,96,.7);">Multiplayer</div>
-        <div class="card-title" style="font-size:26px;color:#F5D98A;margin-bottom:6px;">Host a Room</div>
-        <div class="card-subtitle" style="color:rgba(224,168,96,.55);margin-bottom:18px;">Share code to invite friends</div>
-        <div class="btn btn-gold" style="display:inline-flex;width:auto;min-height:40px;padding:8px 32px;border-radius:18px;">Host</div>
+        <div class="card-eyebrow mp-eyebrow">Multiplayer</div>
+        <div class="mp-title card-title">Host a Room</div>
+        <div class="mp-sub card-subtitle">Share code to invite friends</div>
+        <div class="btn btn-gold btn-sm" style="display:inline-flex;width:auto;padding:8px 32px;">Host</div>
       </div>
     </div>
 
@@ -3501,10 +3559,10 @@ html.feat-gameHeader .g-nm { font-weight: 800 !important; max-width: 100px; over
 
     <!-- Challenge a Friend — social/blue themed -->
     <div id="home-friend-card" class="card" style="margin-bottom:16px;flex-direction:row;align-items:center;padding:14px 16px;" onclick="go('friends');switchSocialTab('friends');setTimeout(()=>document.getElementById('friends-screen-code-inp')&&document.getElementById('friends-screen-code-inp').focus(),200)">
-      <div style="width:42px;height:42px;border-radius:50%;background:rgba(74,144,216,.18);border:1.5px solid rgba(74,144,216,.35);display:flex;align-items:center;justify-content:center;font-size:22px;flex-shrink:0;">⚔️</div>
+      <div class="home-duel-icon">⚔️</div>
       <div style="flex:1;">
-        <div class="card-eyebrow" style="color:rgba(160,190,240,.65);">1 vs 1 Async</div>
-        <div class="card-title" style="color:#c8d8f8;">Duel a Friend</div>
+        <div class="card-eyebrow home-duel-eyebrow">1 vs 1 Async</div>
+        <div class="card-title home-duel-title">Duel a Friend</div>
         <div class="card-subtitle">They answer when ready</div>
       </div>
       <div class="btn btn-blue btn-sm" style="width:auto;min-height:32px;padding:6px 12px;border-radius:18px;margin:0;">Send →</div>
@@ -3512,9 +3570,9 @@ html.feat-gameHeader .g-nm { font-weight: 800 !important; max-width: 100px; over
 
     <!-- Combined Challenges card — gold achievement themed -->
     <div id="home-challenges-card" class="card" style="margin-bottom:16px;flex-direction:row;align-items:center;padding:14px 16px;" onclick="openChallengesMenu()">
-      <div style="width:42px;height:42px;border-radius:50%;background:rgba(200,148,88,.15);border:1.5px solid rgba(200,148,88,.35);display:flex;align-items:center;justify-content:center;font-size:22px;flex-shrink:0;animation:lampFlicker 4s ease-in-out infinite;">🏆</div>
+      <div class="home-chal-icon">🏆</div>
       <div style="flex:1;">
-        <div class="card-eyebrow" style="color:rgba(200,148,88,.65);">Daily · Weekly · Solo</div>
+        <div class="card-eyebrow home-chal-eyebrow">Daily · Weekly · Solo</div>
         <div class="card-title" style="color:var(--gold1);">Challenges</div>
         <div id="challenges-card-sub" class="card-subtitle">Earn XP · Climb the ranks</div>
       </div>
@@ -4481,6 +4539,19 @@ html.feat-gameHeader .g-nm { font-weight: 800 !important; max-width: 100px; over
     <div style="display:flex;gap:8px;">
       <button class="btn btn-ghost btn-sm" style="flex:1;" onclick="closeOv('ov-quit')">Cancel</button>
       <button class="btn btn-gold btn-sm" style="flex:1;" onclick="quitGame()">Quit</button>
+    </div>
+  </div>
+</div>
+
+<!-- ── MODAL: Remove Friend ── -->
+<div class="ov" id="ov-remove-friend" onclick="bgClose(event,'ov-remove-friend')">
+  <div class="mbox">
+    <div class="mhandle"></div>
+    <div class="mtitle">Remove Friend?</div>
+    <div style="font-size:13px;color:var(--ink2);line-height:1.6;margin-bottom:14px;">This will remove them from your friends list. You can re-add them later with their code.</div>
+    <div style="display:flex;gap:8px;">
+      <button class="btn btn-ghost btn-sm" style="flex:1;" onclick="closeOv('ov-remove-friend')">Cancel</button>
+      <button class="btn btn-ruby btn-sm" style="flex:1;" id="ov-remove-friend-confirm">Remove</button>
     </div>
   </div>
 </div>
@@ -11172,7 +11243,11 @@ function removeFriend(uid){
 }
 function removeFriendFromFriends(uid){
   if(!uid||!G.profile) return;
-  if(!confirm('Remove this friend?')) return;
+  const btn=document.getElementById('ov-remove-friend-confirm');
+  btn.onclick=()=>{ closeOv('ov-remove-friend'); _doRemoveFriend(uid); };
+  document.getElementById('ov-remove-friend').classList.add('open');
+}
+function _doRemoveFriend(uid){
   removeFriend(uid);
   if(G._friendCache&&G._friendCache[uid]) delete G._friendCache[uid];
   if(G._convPreviews&&G._convPreviews[uid]) delete G._convPreviews[uid];
