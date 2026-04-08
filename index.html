@@ -450,11 +450,11 @@ body::after {
 .btn-sm { padding: 9px 14px; font-size: 12px; min-height: 40px; }
 .btn-icon { font-size: 15px; line-height: 1; }
 
-.btn-gold { background: #f0c040; color: #1a0a00; }
-.btn-ruby { background: #e04040; color: #fff; }
-.btn-blue { background: #4a90d8; color: #fff; }
-.btn-ghost { background: #fff; border: 1.5px solid rgba(0,0,0,.1); color: var(--ink2); }
-.btn-ghost.active { background: rgba(196,136,10,.1); color: var(--gold1); border-color: rgba(196,136,10,.35); }
+.btn-gold { background: #f0c040; color: #1a0a00; border: 2px solid #E0B030; border-bottom: 5px solid #B08010; }
+.btn-ruby { background: #e04040; color: #fff; border: 2px solid #D03030; border-bottom: 5px solid #A02020; }
+.btn-blue { background: #4a90d8; color: #fff; border: 2px solid #3A80C8; border-bottom: 5px solid #1F4A8F; }
+.btn-ghost { background: #fff; border: 2px solid rgba(0,0,0,.15); border-bottom: 5px solid rgba(0,0,0,.25); color: var(--ink2); }
+.btn-ghost.active { background: rgba(196,136,10,.1); color: var(--gold1); border-color: rgba(196,136,10,.35); border-bottom: 5px solid rgba(156,96,10,.4); }
 
 /* ─── INPUTS ─────────────────────────────────────── */
 .inp {
@@ -1783,10 +1783,9 @@ body { background: var(--bg); color: var(--ink); }
 .btn-share {
   background: rgba(74,144,216,.1);
   border: 2px solid rgba(74,144,216,.3);
-  border-bottom: 4px solid rgba(26,56,112,.3);
+  border-bottom: 5px solid rgba(26,56,112,.4);
   color: #4a90d8;
   font-weight: 700;
-  box-shadow: none;
 }
 .btn-share:active:not(:disabled) { background: rgba(74,144,216,.2); }
 
