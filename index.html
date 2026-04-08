@@ -9731,19 +9731,25 @@ function renderProfile(){
     summary.textContent=`${wins} wins in ${played} games · ${correct} correct answers total`;
   }
   try { renderMatchHistory(); } catch(e) {}
-  // Load match history from Firebase (always reload on profile open)
+  // Merge Firebase match history with localStorage (prioritize Firebase)
   if (G.uid && G.db) {
     try {
       G.db.ref('players/' + G.uid + '/matchHistory').once('value', function(snap) {
-        const fbHistory = snap.exists() ? (snap.val() || []) : [];
-        localStorage.setItem('bgn_history', JSON.stringify(fbHistory.slice(0, 50)));
-        try { renderMatchHistory(false); } catch(e) {}
+        if (snap.exists()) {
+          const fbHistory = snap.val() || [];
+          // Use Firebase as source of truth, but keep local matches that aren't in Firebase
+          let local = JSON.parse(localStorage.getItem('bgn_history') || '[]');
+          const fbIds = new Set(fbHistory.map(m => m.id));
+          const newLocal = fbHistory.concat(local.filter(m => !fbIds.has(m.id)));
+          newLocal.sort((a, b) => b.id - a.id);
+          localStorage.setItem('bgn_history', JSON.stringify(newLocal.slice(0, 50)));
+          try { renderMatchHistory(false); } catch(e) {}
+        }
       });
     } catch(e) {}
-  } else {
-    // If no Firebase, load from localStorage
-    try { renderMatchHistory(false); } catch(e) {}
   }
+  // Always render immediately (show local while Firebase loads)
+  try { renderMatchHistory(false); } catch(e) {}
   const ci=document.getElementById('prof-clan');
   ci.innerHTML=p.clanName?`<div class="card-sm" style="display:flex;align-items:center;gap:10px;">
     <span style="font-size:22px;">${clanBadgeMarkup(p.clanIcon||'⛪',p.clanPhoto||'','md')}</span>
