@@ -2885,6 +2885,34 @@ html[data-theme="warmth"] .setup-av-btn { background: #FDF9F4; border-color: #D8
   html[data-theme="warmth"] .ps-v3-seg.sel:hover, html[data-theme="warmth"] .ps-v3-seg.active:hover { filter: brightness(.95); }
 }
 
+/* ── Light Theme Button Styling ── */
+html:not([data-theme="dark"]):not([data-theme="green"]):not([data-theme="warmth"]) .btn-gold {
+  background: #f0c040;
+  border-bottom-color: #a06808;
+  color: #1a0a00;
+}
+html:not([data-theme="dark"]):not([data-theme="green"]):not([data-theme="warmth"]) .btn-ruby {
+  background: #e04040;
+  border-bottom-color: #8a1818;
+  color: #fff;
+}
+html:not([data-theme="dark"]):not([data-theme="green"]):not([data-theme="warmth"]) .btn-blue {
+  background: #4a90d8;
+  border-bottom-color: #1a3870;
+  color: #fff;
+}
+html:not([data-theme="dark"]):not([data-theme="green"]):not([data-theme="warmth"]) .btn-green {
+  background: #28c868;
+  border-bottom-color: #106030;
+  color: #fff;
+}
+html:not([data-theme="dark"]):not([data-theme="green"]):not([data-theme="warmth"]) .btn-ghost {
+  background: #fff;
+  border: 2px solid rgba(0,0,0,.12);
+  border-bottom: 4px solid rgba(0,0,0,.15);
+  color: var(--ink2);
+}
+
 /* ── Theme / Translation Picker ── */
 .theme-grid, .trans-grid {
   display: grid; grid-template-columns: repeat(2,1fr); gap: 8px; margin-bottom: 14px;
@@ -11849,7 +11877,12 @@ function sendMessage(){
 function applyTheme(t){
   document.documentElement.setAttribute('data-theme',t==='light'?'':t);
   if(G.profile){ G.profile.theme=t; saveProfile(); }
-  // Update swatches active state
+  // Force repaint of themed elements
+  document.querySelectorAll('.btn, .card, .inp').forEach(el => {
+    el.style.opacity = '.99';
+    el.offsetHeight; // Trigger reflow
+    el.style.opacity = '';
+  });
   document.querySelectorAll('.theme-swatch').forEach(s=>s.classList.toggle('active',s.dataset.t===t));
 }
 function initTheme(){
