@@ -8,10 +8,7 @@
 - Firebase project: bible-game-night | GitHub: github.com/aviel-bolatkhan-01/lamp (backup only)
 
 ## Current State
-- Last deploy: 2026-03-28
-- Live: SEO-optimized index.html, 19 trivia category pages (/trivia/*), daily streak share card on win screen, PWA with service worker
-- In progress: nothing
-- Up next: onboarding flow, email capture, push notification timing, seasonal pages (Easter/Christmas), "Hard Bible Trivia" landing page
+- Live: **Last deploy**: 2026-03-28 (before this session's work) | **Ready for deploy**: All 7 branches in dev (after Branch 7 implementation + testing) | **URL**: https://thelampgame.com |  | Onboarding flow (new users land cold) | Email capture (zero re-engagement) | Push notification timing | Seasonal pages: Easter, Christmas | "Hard Bible Trivia" landing page (low-competition keywords) |  | index.html: 52k lines, all code + UI in one file | Teams code exists at lines 6303-7591 (Pass & Play) | Online settings modal at lines 4391-4416 | createRoom() at line ~7848 | Win screen at line ~7576 | Team A/B assignment: lines 6418, 6453-6455 | Team score tracking: line 6703 | Team score display: lines 6707-6708, 6820-6828 | Team win detection: lines 6930-6931 | Team win screen: lines 7583-7591 | 
 
 ## Code Rules (non-negotiable)
 - Global state: `G = {}` — never redeclare

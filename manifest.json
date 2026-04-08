@@ -2,7 +2,7 @@
   "name": "Lamp: Bible Trivia Game",
   "short_name": "Lamp",
   "description": "The ultimate Bible trivia game with 9,000+ questions. Play multiplayer scripture quizzes and join Houses of Faith.",
-  "start_url": "./index.html",
+  "start_url": "/",
   "display": "standalone",
   "background_color": "#0d0906",
   "theme_color": "#0d0906",
@@ -11,9 +11,21 @@
   "icons": [
     {
       "src": "icon.png",
+      "sizes": "192x192",
+      "type": "image/png",
+      "purpose": "any"
+    },
+    {
+      "src": "icon.png",
       "sizes": "512x512",
       "type": "image/png",
-      "purpose": "any maskable"
+      "purpose": "any"
+    },
+    {
+      "src": "icon.png",
+      "sizes": "512x512",
+      "type": "image/png",
+      "purpose": "maskable"
     }
   ]
 }
