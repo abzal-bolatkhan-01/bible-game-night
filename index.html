@@ -431,7 +431,7 @@ body::after {
   font-weight: 800;
   letter-spacing: .02em;
   border: none;
-  border-radius: 12px;
+  border-radius: 18px;
   cursor: pointer;
   transition: all .15s ease;
   min-height: 48px;
@@ -1379,6 +1379,7 @@ input:-webkit-autofill:focus {
   box-shadow: 0 4px 24px rgba(0,0,0,.4);
 }
 @media (max-width: 480px) {
+  .mbox { max-height: 95vh; }
   .toast {
     top: calc(var(--safe-t) + 8px);
     border-radius: 16px;
@@ -1740,7 +1741,7 @@ body { background: var(--bg); color: var(--ink); }
 
 /* ── 3D Duolingo-style Buttons (Standardized) ──────────── */
 .btn {
-  border-radius: 12px;
+  border-radius: 18px;
   font-family: 'Poppins', sans-serif;
   font-weight: 800;
   font-size: 14px;
@@ -3490,7 +3491,7 @@ html.feat-gameHeader .g-nm { font-weight: 800 !important; max-width: 100px; over
         <div class="card-eyebrow" style="color:rgba(224,168,96,.7);">Multiplayer</div>
         <div class="card-title" style="font-size:26px;color:#F5D98A;margin-bottom:6px;">Host a Room</div>
         <div class="card-subtitle" style="color:rgba(224,168,96,.55);margin-bottom:18px;">Share code to invite friends</div>
-        <div class="btn btn-gold" style="display:inline-flex;width:auto;min-height:40px;padding:8px 32px;border-radius:50px;">Host</div>
+        <div class="btn btn-gold" style="display:inline-flex;width:auto;min-height:40px;padding:8px 32px;border-radius:18px;">Host</div>
       </div>
     </div>
 
@@ -3508,7 +3509,7 @@ html.feat-gameHeader .g-nm { font-weight: 800 !important; max-width: 100px; over
         <div class="card-title" style="color:#c8d8f8;">Duel a Friend</div>
         <div class="card-subtitle">They answer when ready</div>
       </div>
-      <div class="btn btn-blue btn-sm" style="width:auto;min-height:32px;padding:6px 12px;border-radius:50px;margin:0;">Send →</div>
+      <div class="btn btn-blue btn-sm" style="width:auto;min-height:32px;padding:6px 12px;border-radius:18px;margin:0;">Send →</div>
     </div>
 
     <!-- Combined Challenges card — gold achievement themed -->
@@ -3519,7 +3520,7 @@ html.feat-gameHeader .g-nm { font-weight: 800 !important; max-width: 100px; over
         <div class="card-title" style="color:var(--gold1);">Challenges</div>
         <div id="challenges-card-sub" class="card-subtitle">Earn XP · Climb the ranks</div>
       </div>
-      <div class="btn btn-gold btn-sm" style="width:auto;min-height:32px;padding:6px 12px;border-radius:50px;margin:0;">Play →</div>
+      <div class="btn btn-gold btn-sm" style="width:auto;min-height:32px;padding:6px 12px;border-radius:18px;margin:0;">Play →</div>
     </div>
 
     <!-- Hidden banner containers (still used by render functions) -->
@@ -3883,7 +3884,7 @@ html.feat-gameHeader .g-nm { font-weight: 800 !important; max-width: 100px; over
     <div id="w-others" style="display:flex;gap:6px;flex-wrap:wrap;justify-content:center;margin-bottom:16px;"></div>
     <button class="btn btn-gold" id="w-play-again" onclick="playAgain()" style="margin-bottom:8px;">🔄 Play Again</button>
     <!-- Daily streak banner — only shown after daily challenge -->
-    <div id="w-daily-streak" style="display:none;background:linear-gradient(135deg,rgba(224,168,96,.12),rgba(196,132,42,.06));border:1px solid rgba(224,168,96,.35);border-radius:14px;padding:14px 16px;margin-bottom:10px;text-align:center;">
+    <div id="w-daily-streak" style="display:none;background:linear-gradient(135deg,rgba(224,168,96,.12),rgba(196,132,42,.06));border:1px solid rgba(224,168,96,.35);border-radius:18px;padding:14px 16px;margin-bottom:10px;text-align:center;">
       <div id="w-ds-emoji" style="font-size:32px;line-height:1;margin-bottom:4px;">🔥</div>
       <div style="font-family:'Cinzel',serif;font-size:10px;letter-spacing:.18em;color:var(--gold);text-transform:uppercase;margin-bottom:2px;">Daily Streak</div>
       <div id="w-ds-label" style="font-family:'Cormorant Garamond',serif;font-size:30px;font-weight:800;color:var(--gold1);line-height:1.1;margin-bottom:10px;">1 Day</div>
@@ -3981,7 +3982,7 @@ html.feat-gameHeader .g-nm { font-weight: 800 !important; max-width: 100px; over
         <button onclick="startEditName()" id="prof-name-edit-btn" style="background:none;border:none;cursor:pointer;padding:2px 4px;color:var(--gold);font-size:16px;line-height:1;" title="Edit name">✏️</button>
       </div>
       <!-- Inline name editor -->
-      <div id="prof-name-editor" style="display:none;margin:10px auto 0;max-width:260px;background:var(--card-bg,#fff);border:1px solid var(--gold);border-radius:14px;padding:14px 16px;box-shadow:0 4px 20px rgba(196,136,10,.15);">
+      <div id="prof-name-editor" style="display:none;margin:10px auto 0;max-width:260px;background:var(--card-bg,#fff);border:1px solid var(--gold);border-radius:18px;padding:14px 16px;box-shadow:0 4px 20px rgba(196,136,10,.15);">
         <div style="font-family:'Cinzel',serif;font-size:9px;letter-spacing:.15em;color:var(--gold);text-transform:uppercase;margin-bottom:8px;">Your Display Name</div>
         <input id="prof-name-input" class="inp" type="text" maxlength="20" autocomplete="off" autocorrect="off" spellcheck="false"
           style="width:100%;box-sizing:border-box;font-family:'Playfair Display',serif;font-size:15px;text-align:center;border-radius:10px;padding:9px 12px;margin-bottom:10px;"
@@ -4838,7 +4839,7 @@ function renderSeasonalBanner(){
   banner.style.display='block';
   const seasonQCount=SEASONAL_Q.filter(q=>q.season===season).length;
   const seasonQLabel=seasonQCount?('This season: <strong>'+info.label+'</strong> · 10 questions'):'Special questions unlocked →';
-  banner.innerHTML='<div style="background:'+info.color+';color:#fff;padding:14px 18px;border-radius:14px;margin:10px 0;display:flex;align-items:center;gap:12px;cursor:pointer" onclick="playSeasonalQuestions(\''+season+'\')"><span style="font-size:28px">'+info.icon+'</span><div style="flex:1"><div style="font-weight:800;font-size:15px">'+info.label+'</div><div style="font-size:12px;opacity:.85">'+seasonQLabel+'</div></div><div style="background:rgba(255,255,255,.2);border-radius:8px;padding:6px 14px;font-size:13px;font-weight:800;">Play</div></div>';
+  banner.innerHTML='<div style="background:'+info.color+';color:#fff;padding:14px 18px;border-radius:18px;margin:10px 0;display:flex;align-items:center;gap:12px;cursor:pointer" onclick="playSeasonalQuestions(\''+season+'\')"><span style="font-size:28px">'+info.icon+'</span><div style="flex:1"><div style="font-weight:800;font-size:15px">'+info.label+'</div><div style="font-size:12px;opacity:.85">'+seasonQLabel+'</div></div><div style="background:rgba(255,255,255,.2);border-radius:8px;padding:6px 14px;font-size:13px;font-weight:800;">Play</div></div>';
 }
 
 function playSeasonalQuestions(season){
@@ -4940,7 +4941,7 @@ function renderSundayBowl(){
   if(!isActive&&!completedThisWeek){ banner.style.display='none'; return; }
   banner.style.display='block';
   if(completedThisWeek){
-    banner.innerHTML=`<div style="background:linear-gradient(135deg,#1a237e,#283593);color:#fff;padding:14px 18px;border-radius:14px;display:flex;align-items:center;gap:12px;">
+    banner.innerHTML=`<div style="background:linear-gradient(135deg,#1a237e,#283593);color:#fff;padding:14px 18px;border-radius:18px;display:flex;align-items:center;gap:12px;">
       <span style="font-size:28px">🏆</span>
       <div style="flex:1;">
         <div style="font-weight:800;font-size:15px;">Sunday Bible Bowl</div>
@@ -4949,7 +4950,7 @@ function renderSundayBowl(){
       <button class="btn btn-ghost btn-sm" style="width:auto;padding:6px 14px;color:#fff;border-color:rgba(255,255,255,.4);" onclick="loadSundayBowlLeaderboard()">Leaderboard</button>
     </div>`;
   } else {
-    banner.innerHTML=`<div style="background:linear-gradient(135deg,#1a237e,#283593);color:#fff;padding:14px 18px;border-radius:14px;display:flex;align-items:center;gap:12px;cursor:pointer;" onclick="startSundayBowl()">
+    banner.innerHTML=`<div style="background:linear-gradient(135deg,#1a237e,#283593);color:#fff;padding:14px 18px;border-radius:18px;display:flex;align-items:center;gap:12px;cursor:pointer;" onclick="startSundayBowl()">
       <span style="font-size:28px">🏛️</span>
       <div style="flex:1;">
         <div style="font-weight:800;font-size:15px;">Sunday Bible Bowl</div>
@@ -5111,7 +5112,7 @@ function renderWeeklyTournament(){
   banner.style.display='block';
   if(done){
     const score=G.profile.tournamentScore||0;
-    banner.innerHTML=`<div style="background:linear-gradient(135deg,#0d3b0d,#1b5e20);color:#fff;padding:14px 18px;border-radius:14px;">
+    banner.innerHTML=`<div style="background:linear-gradient(135deg,#0d3b0d,#1b5e20);color:#fff;padding:14px 18px;border-radius:18px;">
       <div style="display:flex;align-items:center;gap:12px;margin-bottom:10px;">
         <span style="font-size:28px">${icon}</span>
         <div style="flex:1;">
@@ -5139,7 +5140,7 @@ function renderWeeklyTournament(){
       const el=document.getElementById('wt-lb-preview'); if(el) el.style.display='none';
     }
   } else {
-    banner.innerHTML=`<div style="background:linear-gradient(135deg,#0d3b0d,#1b5e20);color:#fff;padding:14px 18px;border-radius:14px;">
+    banner.innerHTML=`<div style="background:linear-gradient(135deg,#0d3b0d,#1b5e20);color:#fff;padding:14px 18px;border-radius:18px;">
       <div style="display:flex;align-items:center;gap:12px;cursor:pointer;" onclick="startWeeklyTournament()">
         <span style="font-size:28px">${icon}</span>
         <div style="flex:1;">
@@ -8435,13 +8436,13 @@ function openChallengesMenu(){
     isBowl?{icon:'🏛️',label:'Sunday Bible Bowl',sub:bowlDone?`Your score: ${G.profile&&G.profile.bowlScore||0}/15`:'15 questions · Weekly leaderboard',done:bowlDone,color:'#1a237e',action:bowlDone?'loadSundayBowlLeaderboard()':'startSundayBowl()'}:null
   ].filter(Boolean);
   list.innerHTML=items.map(item=>`
-    <div style="display:flex;align-items:center;gap:14px;padding:14px;border-radius:14px;background:var(--card);border:1.5px solid rgba(255,255,255,${item.done?.05:.12});opacity:${item.done?.6:1};cursor:${item.action?'pointer':'default'};" ${item.action?`onclick="closeOv('ov-challenges');${item.action}"`:''}}>
+    <div style="display:flex;align-items:center;gap:14px;padding:14px;border-radius:18px;background:var(--card);border:1.5px solid rgba(255,255,255,${item.done?.05:.12});opacity:${item.done?.6:1};cursor:${item.action?'pointer':'default'};" ${item.action?`onclick="closeOv('ov-challenges');${item.action}"`:''}}>
       <div style="font-size:28px;flex-shrink:0;">${item.icon}</div>
       <div style="flex:1;min-width:0;">
         <div style="font-family:'Playfair Display',serif;font-size:14px;font-weight:700;color:var(--ink);">${item.label}</div>
         <div style="font-size:11px;color:var(--ink3);margin-top:2px;">${item.sub}</div>
       </div>
-      ${item.done?'<div style="font-size:18px;color:var(--ink3);">✓</div>':`<div style="background:${item.color};color:#fff;font-family:'Cinzel',serif;font-size:10px;font-weight:700;letter-spacing:.08em;padding:6px 14px;border-radius:50px;">Play</div>`}
+      ${item.done?'<div style="font-size:18px;color:var(--ink3);">✓</div>':`<div style="background:${item.color};color:#fff;font-family:'Cinzel',serif;font-size:10px;font-weight:700;letter-spacing:.08em;padding:6px 14px;border-radius:18px;">Play</div>`}
     </div>`).join('');
   openOv('ov-challenges');
 }
@@ -9061,7 +9062,7 @@ function renderAsyncChallenges(){
     const modeLabel=c.mode==='classic'?catLabel:c.mode==='truefalse'?'True or False':'Complete the Verse';
     const diffLabel=c.difficulty?(' · '+chDiffLabel(c.difficulty)):'';
     const timeLeft=Math.max(0,Math.floor((c.expiresAt-now)/3600000));
-    return `<div class="friend-row" style="margin-bottom:10px;border:2px solid rgba(201,145,13,.35);border-radius:14px;padding:12px 14px;background:linear-gradient(135deg,rgba(201,145,13,.1) 0%,rgba(201,145,13,.03) 100%);">
+    return `<div class="friend-row" style="margin-bottom:10px;border:2px solid rgba(201,145,13,.35);border-radius:18px;padding:12px 14px;background:linear-gradient(135deg,rgba(201,145,13,.1) 0%,rgba(201,145,13,.03) 100%);">
       <div class="friend-av">${avatarMarkup(c.fromAvatar||'😊',c.fromPhoto||'','md')}</div>
       <div class="friend-info">
         <div class="friend-name" style="font-family:'Cinzel',serif;font-size:13px;">⚡ ${escHtml(c.fromName||'Challenger')}</div>
