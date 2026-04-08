@@ -3445,8 +3445,8 @@ html.feat-gameHeader .g-nm { font-weight: 800 !important; max-width: 100px; over
       <div class="verse-card-ref" id="dv-ref"></div>
     </div>
 
-    <!-- HERO: Play Online Now — rich visual -->
-    <div id="home-play-online-card" style="position:relative;margin-bottom:16px;border-radius:18px;overflow:hidden;cursor:pointer;border:1.5px solid rgba(224,168,96,.6);min-height:156px;display:flex;flex-direction:column;align-items:center;justify-content:center;padding:24px 20px;text-align:center;background:linear-gradient(160deg,#0f0a03 0%,#1e1004 35%,#120c04 70%,#0a0603 100%);background-image:url('/assets/img/lamp-hero.png');background-size:cover;background-position:center;" onclick="playOnlineNow()">
+    <!-- HERO: Host a Room — rich visual -->
+    <div id="home-play-online-card" class="card" style="position:relative;margin-bottom:16px;min-height:160px;align-items:center;justify-content:center;text-align:center;background:linear-gradient(160deg,#0f0a03 0%,#1e1004 35%,#120c04 70%,#0a0603 100%);background-image:url('/assets/img/lamp-hero.png');background-size:cover;background-position:center;border:1.5px solid rgba(224,168,96,.6);padding:24px 20px;" onclick="playOnlineNow()">
       <div style="position:absolute;inset:0;background:linear-gradient(160deg,rgba(10,6,3,.82) 0%,rgba(15,8,2,.7) 50%,rgba(10,6,3,.88) 100%);"></div>
       <!-- Light rays SVG background -->
       <svg style="position:absolute;inset:0;width:100%;height:100%;pointer-events:none;" viewBox="0 0 360 160" preserveAspectRatio="xMidYMid slice">
@@ -3468,39 +3468,39 @@ html.feat-gameHeader .g-nm { font-weight: 800 !important; max-width: 100px; over
         <circle cx="180" cy="80" r="55" fill="none" stroke="#E0A860" stroke-opacity=".06" stroke-width="1"/>
       </svg>
       <div style="position:relative;z-index:1;">
-        <div style="font-size:13px;font-family:'Cinzel',serif;letter-spacing:.18em;color:rgba(224,168,96,.7);text-transform:uppercase;margin-bottom:8px;">Multiplayer</div>
-        <div style="font-family:'Playfair Display',serif;font-size:26px;font-weight:700;color:#F5D98A;line-height:1.1;margin-bottom:6px;">Host a Room</div>
-        <div style="font-size:11px;color:rgba(224,168,96,.55);margin-bottom:18px;letter-spacing:.03em;">Share code to invite friends</div>
-        <div class="start-btn-inner" style="display:inline-block;background:linear-gradient(135deg,#C4842A,#E0A860);color:#0f0a03;font-family:'Cinzel',serif;font-size:13px;font-weight:700;letter-spacing:.12em;padding:10px 32px;border-radius:50px;">⚙ Play</div>
+        <div class="card-eyebrow" style="color:rgba(224,168,96,.7);">Multiplayer</div>
+        <div class="card-title" style="font-size:26px;color:#F5D98A;margin-bottom:6px;">Host a Room</div>
+        <div class="card-subtitle" style="color:rgba(224,168,96,.55);margin-bottom:18px;">Share code to invite friends</div>
+        <div class="btn btn-gold" style="display:inline-flex;width:auto;min-height:40px;padding:8px 32px;border-radius:50px;">Host</div>
       </div>
     </div>
 
     <!-- Pending friend challenges (shown when active) -->
     <div id="home-challenges-section" style="display:none;margin-bottom:16px;">
-      <div id="home-challenges-label" style="font-family:'Cinzel',serif;font-size:10px;letter-spacing:.1em;color:var(--gold1);text-transform:uppercase;margin-bottom:8px;">You have 0 pending challenges</div>
+      <div id="home-challenges-label" class="card-eyebrow" style="color:var(--gold1);margin-bottom:8px;">You have 0 pending challenges</div>
       <div id="home-challenges-list"></div>
     </div>
 
     <!-- Challenge a Friend — social/blue themed -->
-    <div id="home-friend-card" class="card" style="margin-bottom:16px;padding:14px 16px;display:flex;align-items:center;gap:14px;" onclick="go('friends');switchSocialTab('friends');setTimeout(()=>document.getElementById('friends-screen-code-inp')&&document.getElementById('friends-screen-code-inp').focus(),200)">
+    <div id="home-friend-card" class="card" style="margin-bottom:16px;flex-direction:row;align-items:center;padding:14px 16px;" onclick="go('friends');switchSocialTab('friends');setTimeout(()=>document.getElementById('friends-screen-code-inp')&&document.getElementById('friends-screen-code-inp').focus(),200)">
       <div style="width:42px;height:42px;border-radius:50%;background:rgba(74,144,216,.18);border:1.5px solid rgba(74,144,216,.35);display:flex;align-items:center;justify-content:center;font-size:22px;flex-shrink:0;">⚔️</div>
-      <div style="flex:1;position:relative;z-index:1;">
-        <div style="font-family:'Cinzel',serif;font-size:10px;letter-spacing:.12em;text-transform:uppercase;color:rgba(160,190,240,.65);margin-bottom:2px;">1 vs 1 Async</div>
-        <div style="font-family:'Playfair Display',serif;font-size:15px;font-weight:700;color:#c8d8f8;">Duel a Friend</div>
-        <div class="card-sub-label" style="font-size:11px;margin-top:2px;">They answer when ready</div>
+      <div style="flex:1;">
+        <div class="card-eyebrow" style="color:rgba(160,190,240,.65);">1 vs 1 Async</div>
+        <div class="card-title" style="color:#c8d8f8;">Duel a Friend</div>
+        <div class="card-subtitle">They answer when ready</div>
       </div>
-      <div style="background:rgba(74,144,216,.18);border:1px solid rgba(74,144,216,.4);color:#8ab4f8;font-family:'Cinzel',serif;font-size:10px;font-weight:700;letter-spacing:.08em;padding:6px 12px;border-radius:50px;flex-shrink:0;position:relative;z-index:1;">Send →</div>
+      <div class="btn btn-blue btn-sm" style="width:auto;min-height:32px;padding:6px 12px;border-radius:50px;margin:0;">Send →</div>
     </div>
 
     <!-- Combined Challenges card — gold achievement themed -->
-    <div id="home-challenges-card" class="card" style="margin-bottom:16px;padding:14px 16px;display:flex;align-items:center;gap:14px;" onclick="openChallengesMenu()">
+    <div id="home-challenges-card" class="card" style="margin-bottom:16px;flex-direction:row;align-items:center;padding:14px 16px;" onclick="openChallengesMenu()">
       <div style="width:42px;height:42px;border-radius:50%;background:rgba(200,148,88,.15);border:1.5px solid rgba(200,148,88,.35);display:flex;align-items:center;justify-content:center;font-size:22px;flex-shrink:0;animation:lampFlicker 4s ease-in-out infinite;">🏆</div>
-      <div style="flex:1;position:relative;z-index:1;">
-        <div style="font-family:'Cinzel',serif;font-size:10px;letter-spacing:.12em;text-transform:uppercase;color:rgba(200,148,88,.65);margin-bottom:2px;">Daily · Weekly · Solo</div>
-        <div style="font-family:'Playfair Display',serif;font-size:15px;font-weight:700;color:var(--gold1);">Challenges</div>
-        <div id="challenges-card-sub" style="font-size:11px;color:var(--ink3);margin-top:2px;">Earn XP · Climb the ranks</div>
+      <div style="flex:1;">
+        <div class="card-eyebrow" style="color:rgba(200,148,88,.65);">Daily · Weekly · Solo</div>
+        <div class="card-title" style="color:var(--gold1);">Challenges</div>
+        <div id="challenges-card-sub" class="card-subtitle">Earn XP · Climb the ranks</div>
       </div>
-      <div style="background:rgba(200,148,88,.15);border:1px solid rgba(200,148,88,.4);color:var(--gold1);font-family:'Cinzel',serif;font-size:10px;font-weight:700;letter-spacing:.08em;padding:6px 12px;border-radius:50px;flex-shrink:0;position:relative;z-index:1;">Play →</div>
+      <div class="btn btn-gold btn-sm" style="width:auto;min-height:32px;padding:6px 12px;border-radius:50px;margin:0;">Play →</div>
     </div>
 
     <!-- Hidden banner containers (still used by render functions) -->
