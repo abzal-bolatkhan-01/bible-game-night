@@ -1270,10 +1270,10 @@ input:-webkit-autofill:focus {
   background: var(--bg1);
   border: 1px solid rgba(200,158,72,.18);
   border-radius: 20px 20px 0 0;
-  padding: 18px 16px calc(var(--safe-b) + 18px);
+  padding: 18px 16px calc(var(--safe-b) + 12px);
   width: 100%;
   max-width: 480px;
-  max-height: 92vh;
+  max-height: calc(100vh - 60px);
   overflow-y: auto;
   animation: slideUp .3s cubic-bezier(.25,.8,.25,1);
   scrollbar-width: none;
@@ -1379,7 +1379,6 @@ input:-webkit-autofill:focus {
   box-shadow: 0 4px 24px rgba(0,0,0,.4);
 }
 @media (max-width: 480px) {
-  .mbox { max-height: 95vh; }
   .toast {
     top: calc(var(--safe-t) + 8px);
     border-radius: 16px;
@@ -3803,7 +3802,7 @@ html.feat-gameHeader .g-nm { font-weight: 800 !important; max-width: 100px; over
   </div>
   <div class="scroller">
     <div style="text-align:center;padding:14px 0 10px;">
-      <div style="font-family:'Playfair Display',serif;font-size:58px;font-weight:900;color:var(--gold1);line-height:.95;" id="l-clock">45</div>
+      <div style="font-family:'Poppins',sans-serif;font-size:58px;font-weight:900;color:var(--gold1);line-height:.95;" id="l-clock">45</div>
       <div style="font-family:'Cinzel',serif;font-size:9px;letter-spacing:.28em;color:var(--ink3);text-transform:uppercase;margin-top:14px;">seconds</div>
       <div style="font-family:'Cinzel',serif;font-size:12px;letter-spacing:.12em;color:var(--gold);margin-top:5px;" id="l-streak">0 correct</div>
     </div>
@@ -3985,7 +3984,7 @@ html.feat-gameHeader .g-nm { font-weight: 800 !important; max-width: 100px; over
       <div id="prof-name-editor" style="display:none;margin:10px auto 0;max-width:260px;background:var(--card-bg,#fff);border:1px solid var(--gold);border-radius:18px;padding:14px 16px;box-shadow:0 4px 20px rgba(196,136,10,.15);">
         <div style="font-family:'Cinzel',serif;font-size:9px;letter-spacing:.15em;color:var(--gold);text-transform:uppercase;margin-bottom:8px;">Your Display Name</div>
         <input id="prof-name-input" class="inp" type="text" maxlength="20" autocomplete="off" autocorrect="off" spellcheck="false"
-          style="width:100%;box-sizing:border-box;font-family:'Playfair Display',serif;font-size:15px;text-align:center;border-radius:10px;padding:9px 12px;margin-bottom:10px;"
+          style="width:100%;box-sizing:border-box;font-family:'Poppins',sans-serif;font-size:15px;text-align:center;border-radius:10px;padding:9px 12px;margin-bottom:10px;"
           onkeydown="if(event.key==='Enter')saveEditName();if(event.key==='Escape')cancelEditName();">
         <div style="display:flex;gap:8px;">
           <button onclick="cancelEditName()" class="btn btn-ghost" style="flex:1;padding:9px 0;font-size:13px;">Cancel</button>
@@ -4317,7 +4316,7 @@ html.feat-gameHeader .g-nm { font-weight: 800 !important; max-width: 100px; over
   <div class="mbox">
     <div class="mhandle"></div>
     <div style="font-family:'Cinzel',serif;font-size:10px;letter-spacing:.18em;text-transform:uppercase;color:var(--gold1);text-align:center;margin-bottom:5px;">Multiplayer</div>
-    <div style="font-family:'Playfair Display',serif;font-size:22px;font-weight:700;color:var(--ink);text-align:center;margin-bottom:18px;">Quick Match</div>
+    <div style="font-family:'Poppins',sans-serif;font-size:22px;font-weight:700;color:var(--ink);text-align:center;margin-bottom:18px;">Quick Match</div>
     <div class="label" style="margin-bottom:8px;">Difficulty</div>
     <div class="ps-v3-wrap" style="margin-bottom:16px;">
       <button class="diff-chip ps-v3-seg sel" id="os-diff-easy" onclick="osPickDiff('easy')">🌿 Disciple</button>
@@ -8031,7 +8030,7 @@ function updateLobbyUI(d){
   activeEntries.forEach(([uid,p])=>{
     const row=document.createElement('div'); row.className='lobby-row';
     const isHost=uid===hostUid, isMe=uid===G.uid;
-    row.innerHTML=`<span style="font-size:20px;display:flex;align-items:center;">${avatarMarkup(p.avatar,resolvePlayerPhoto(p),'sm')}</span><span style="font-family:'Playfair Display',serif;font-size:14px;flex:1;">${p.name}${isMe?' (You)':''}</span><span class="l-badge ${isHost?'host':p.ready?'ready':'wait'}">${isHost?'Host':p.ready?'Ready':'Waiting'}</span>`;
+    row.innerHTML=`<span style="font-size:20px;display:flex;align-items:center;">${avatarMarkup(p.avatar,resolvePlayerPhoto(p),'sm')}</span><span style="font-family:'Poppins',sans-serif;font-size:14px;flex:1;">${p.name}${isMe?' (You)':''}</span><span class="l-badge ${isHost?'host':p.ready?'ready':'wait'}">${isHost?'Host':p.ready?'Ready':'Waiting'}</span>`;
     list.appendChild(row);
   });
   const startBtn=document.getElementById('start-btn');
@@ -8439,7 +8438,7 @@ function openChallengesMenu(){
     <div style="display:flex;align-items:center;gap:14px;padding:14px;border-radius:18px;background:var(--card);border:1.5px solid rgba(255,255,255,${item.done?.05:.12});opacity:${item.done?.6:1};cursor:${item.action?'pointer':'default'};" ${item.action?`onclick="closeOv('ov-challenges');${item.action}"`:''}}>
       <div style="font-size:28px;flex-shrink:0;">${item.icon}</div>
       <div style="flex:1;min-width:0;">
-        <div style="font-family:'Playfair Display',serif;font-size:14px;font-weight:700;color:var(--ink);">${item.label}</div>
+        <div style="font-family:'Poppins',sans-serif;font-size:14px;font-weight:700;color:var(--ink);">${item.label}</div>
         <div style="font-size:11px;color:var(--ink3);margin-top:2px;">${item.sub}</div>
       </div>
       ${item.done?'<div style="font-size:18px;color:var(--ink3);">✓</div>':`<div style="background:${item.color};color:#fff;font-family:'Cinzel',serif;font-size:10px;font-weight:700;letter-spacing:.08em;padding:6px 14px;border-radius:18px;">Play</div>`}
@@ -9732,27 +9731,23 @@ function renderProfile(){
     summary.textContent=`${wins} wins in ${played} games · ${correct} correct answers total`;
   }
   try { renderMatchHistory(); } catch(e) {}
-  // Merge Firebase match history with localStorage
+  // Load match history from Firebase (always reload on profile open)
   if (G.uid && G.db) {
     try {
       G.db.ref('players/' + G.uid + '/matchHistory').once('value', function(snap) {
-        if (snap.exists()) {
-          const fbHistory = snap.val() || [];
-          let local = JSON.parse(localStorage.getItem('bgn_history') || '[]');
-          const ids = new Set(local.map(m => m.id));
-          fbHistory.forEach(m => { if (!ids.has(m.id)) local.push(m); });
-          local.sort((a, b) => b.id - a.id);
-          local = local.slice(0, 50);
-          localStorage.setItem('bgn_history', JSON.stringify(local));
-          try { renderMatchHistory(false); } catch(e) {}
-        }
+        const fbHistory = snap.exists() ? (snap.val() || []) : [];
+        localStorage.setItem('bgn_history', JSON.stringify(fbHistory.slice(0, 50)));
+        try { renderMatchHistory(false); } catch(e) {}
       });
     } catch(e) {}
+  } else {
+    // If no Firebase, load from localStorage
+    try { renderMatchHistory(false); } catch(e) {}
   }
   const ci=document.getElementById('prof-clan');
   ci.innerHTML=p.clanName?`<div class="card-sm" style="display:flex;align-items:center;gap:10px;">
     <span style="font-size:22px;">${clanBadgeMarkup(p.clanIcon||'⛪',p.clanPhoto||'','md')}</span>
-    <div><div style="font-family:'Playfair Display',serif;font-size:14px;font-weight:700;">${p.clanName}</div>
+    <div><div style="font-family:'Poppins',sans-serif;font-size:14px;font-weight:700;">${p.clanName}</div>
     <div style="font-family:'Cinzel',serif;font-size:9px;letter-spacing:.1em;color:var(--ink3);text-transform:uppercase;">Your Congregation · ${p.clanCode||''}</div></div></div>`:
     `<div class="empty" style="padding:8px 0;">Not in a congregation. <button onclick="go('community');communityTab('clans')" style="background:none;border:none;color:var(--gold);font-family:'Cinzel',serif;font-size:10px;letter-spacing:.08em;text-transform:uppercase;cursor:pointer;">Join one →</button></div>`;
   
