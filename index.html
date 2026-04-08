@@ -8499,10 +8499,10 @@ function openChallengesMenu(){
   const seasonNames={christmas:'Christmas Season',easter:'Easter Season',pentecost:'Pentecost',reformation:'Reformation Week',thanksgiving:'Thanksgiving'};
   const seasonIcons={christmas:'⭐',easter:'✝️',pentecost:'🔥',reformation:'📚',thanksgiving:'🙏'};
   const items=[
-    {icon:'🔥',label:'Daily Challenge',sub:dailyDone?'Completed today — come back tomorrow':`${streak}10 questions · ${diffLabel} level`,done:dailyDone,color:'#C4842A',action:dailyDone?null:"startDailyChallenge()"},
-    {icon:'🏟️',label:'Weekly Tournament',sub:weeklyDone?'Completed this week':'Fresh every Sunday · Compete globally',done:weeklyDone,color:'#1565C0',action:weeklyDone?null:"startWeeklyTournament()"},
-    season?{icon:seasonIcons[season]||'🌟',label:seasonNames[season]||'Seasonal Event',sub:seasonDone?'Completed — see you next season':'Special questions · Limited time',done:seasonDone,color:'#6A1B9A',action:seasonDone?null:`playSeasonalQuestions('${season}')`}:null,
-    isBowl?{icon:'🏛️',label:'Sunday Bible Bowl',sub:bowlDone?`Your score: ${G.profile&&G.profile.bowlScore||0}/15`:'15 questions · Weekly leaderboard',done:bowlDone,color:'#1a237e',action:bowlDone?'loadSundayBowlLeaderboard()':'startSundayBowl()'}:null
+    {icon:'🔥',label:'Daily Challenge',sub:dailyDone?'Completed today — come back tomorrow':`${streak}10 questions · ${diffLabel} level`,done:dailyDone,color:'#C4842A',border:'#A06A1A',shadow:'#7A4E10',action:dailyDone?null:"startDailyChallenge()"},
+    {icon:'🏟️',label:'Weekly Tournament',sub:weeklyDone?'Completed this week':'Fresh every Sunday · Compete globally',done:weeklyDone,color:'#1565C0',border:'#0D4FA0',shadow:'#083070',action:weeklyDone?null:"startWeeklyTournament()"},
+    season?{icon:seasonIcons[season]||'🌟',label:seasonNames[season]||'Seasonal Event',sub:seasonDone?'Completed — see you next season':'Special questions · Limited time',done:seasonDone,color:'#6A1B9A',border:'#4E1280',shadow:'#320A50',action:seasonDone?null:`playSeasonalQuestions('${season}')`}:null,
+    isBowl?{icon:'🏛️',label:'Sunday Bible Bowl',sub:bowlDone?`Your score: ${G.profile&&G.profile.bowlScore||0}/15`:'15 questions · Weekly leaderboard',done:bowlDone,color:'#1a237e',border:'#101860',shadow:'#080E3A',action:bowlDone?'loadSundayBowlLeaderboard()':'startSundayBowl()'}:null
   ].filter(Boolean);
   list.innerHTML=items.map(item=>`
     <div class="card" style="flex-direction:row;align-items:center;gap:14px;padding:14px;opacity:${item.done?.6:1};cursor:${item.action?'pointer':'default'};" ${item.action?`onclick="closeOv('ov-challenges');${item.action}"`:''}}>
@@ -8511,7 +8511,7 @@ function openChallengesMenu(){
         <div style="font-family:'Nunito',sans-serif;font-size:14px;font-weight:700;color:var(--ink);">${item.label}</div>
         <div style="font-size:11px;color:var(--ink3);margin-top:2px;">${item.sub}</div>
       </div>
-      ${item.done?'<div style="font-size:18px;color:var(--ink3);">✓</div>':`<button class="btn btn-sm" style="background:${item.color};color:#fff;width:auto;padding:6px 16px;flex-shrink:0;" onclick="event.stopPropagation();closeOv('ov-challenges');${item.action}">Play</button>`}
+      ${item.done?'<div style="font-size:18px;color:var(--ink3);">✓</div>':`<button class="btn btn-sm" style="background:${item.color};color:#fff;border:2px solid ${item.border};border-bottom:5px solid ${item.shadow};width:auto;padding:6px 16px;flex-shrink:0;" onclick="event.stopPropagation();closeOv('ov-challenges');${item.action}">Play</button>`}
     </div>`).join('');
   openOv('ov-challenges');
 }
