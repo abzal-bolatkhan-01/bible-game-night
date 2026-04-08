@@ -8,10 +8,7 @@
 - Firebase project: bible-game-night | GitHub: github.com/aviel-bolatkhan-01/lamp (backup only)
 
 ## Current State
-- Last deploy: 2026-03-28
-- Live: SEO-optimized index.html, 19 trivia category pages (/trivia/*), daily streak share card on win screen, PWA with service worker
-- In progress: nothing
-- Up next: onboarding flow, email capture, push notification timing, seasonal pages (Easter/Christmas), "Hard Bible Trivia" landing page
+- Up next: Onboarding flow (new users land cold, no explanation), Email capture (zero re-engagement currently), Push notification timing (prompt after first win)
 
 ## Code Rules (non-negotiable)
 - Global state: `G = {}` — never redeclare

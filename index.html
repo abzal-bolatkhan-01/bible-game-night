@@ -3022,7 +3022,7 @@ html:not([data-theme="dark"]):not([data-theme="green"]):not([data-theme="warmth"
 .conv-unread { position: absolute; top: -2px; right: -2px; background: #ff4b4b; color: #fff; border-radius: 50%; width: 16px; height: 16px; font-size: 10px; font-weight: 800; display: flex; align-items: center; justify-content: center; font-family: 'Nunito',sans-serif; }
 .conv-info { flex: 1; min-width: 0; }
 .conv-name { font-family: 'Nunito',sans-serif; font-weight: 800; font-size: 15px; color: var(--ink); }
-.conv-preview { font-size: 13px; color: var(--ink3); white-space: nowrap; overflow: hidden; text-overflow: ellipsis; margin-top: 2px; }
+.conv-preview { font-size: 13px; color: var(--ink3); white-space: nowrap; overflow: hidden; text-overflow: ellipsis; margin-top: 2px; max-width: 200px; }
 .conv-time { font-size: 11px; color: var(--ink3); flex-shrink: 0; }
 
 /* ── Chat screen ── */
@@ -3572,7 +3572,7 @@ html.feat-gameHeader .g-nm { font-weight: 800 !important; max-width: 100px; over
 
     <!-- Pending friend challenges (shown when active) -->
     <div id="home-challenges-section" style="display:none;margin-bottom:16px;">
-      <div style="font-family:'Cinzel',serif;font-size:10px;letter-spacing:.1em;color:var(--gold1);text-transform:uppercase;margin-bottom:8px;">⚔️ Waiting for your answer</div>
+      <div id="home-challenges-label" style="font-family:'Cinzel',serif;font-size:10px;letter-spacing:.1em;color:var(--gold1);text-transform:uppercase;margin-bottom:8px;">You have 0 pending challenges</div>
       <div id="home-challenges-list"></div>
     </div>
 
@@ -4406,13 +4406,12 @@ html.feat-gameHeader .g-nm { font-weight: 800 !important; max-width: 100px; over
       <button class="chip" id="os-sub-truefalse" onclick="osPickSub('truefalse')">✅ True/False</button>
       <button class="chip" id="os-sub-verse" onclick="osPickSub('verse')">📖 Fill-in-Verse</button>
     </div>
-    <div class="label" style="margin-bottom:8px;">First to</div>
-    <div class="ps-v3-wrap" style="margin-bottom:20px;">
-      <button class="diff-chip ps-v3-seg" id="os-pts-10" onclick="osPickPts(10)">10 pts</button>
-      <button class="diff-chip ps-v3-seg sel" id="os-pts-15" onclick="osPickPts(15)">15 pts</button>
-      <button class="diff-chip ps-v3-seg" id="os-pts-20" onclick="osPickPts(20)">20 pts</button>
+    <div class="label" style="margin-bottom:8px;">Number of Questions</div>
+    <div style="margin-bottom:20px;">
+      <input type="range" id="qs-slider" min="7" max="33" value="10" oninput="syncOnlineQuestions(this.value)" style="width:100%;">
+      <div id="qs-label" style="margin-top:8px;text-align:center;color:var(--ink2);font-size:13px;">Play 10 questions</div>
     </div>
-    <button class="btn btn-gold" onclick="startOnlineMatch()" style="margin-bottom:8px;">▶ Find Match</button>
+    <button class="btn btn-gold" onclick="startOnlineMatch()" style="margin-bottom:8px;">▶ Host Room</button>
     <button class="btn btn-ghost btn-sm" onclick="closeOv('ov-online-settings')" style="width:100%;">Cancel</button>
   </div>
 </div>
@@ -8536,14 +8535,17 @@ function osPickSub(s){
   });
   G.sub=s;
 }
-function osPickPts(n){
-  [10,15,20].forEach(v=>{
-    const el=document.getElementById('os-pts-'+v);
-    if(el) el.classList.toggle('sel', v===n);
-  });
-  G.cfg.winScore=n;
+function syncOnlineQuestions(n){
+  const count=clampRounds(parseInt(n,10)||10);
+  const slider=document.getElementById('qs-slider');
+  const label=document.getElementById('qs-label');
+  if(slider && String(slider.value)!==String(count)) slider.value=String(count);
+  if(label) label.textContent='Play '+count+' questions';
+  G.questions=count;
+  G.cfg.winScore=count;
 }
 function startOnlineMatch(){
+  syncOnlineQuestions(document.getElementById('qs-slider')?.value||G.questions||G.cfg.winScore||10);
   G.mode='online'; G.cfg.hearts=false;
   sfx.tap(); haptic('tap');
   closeOv('ov-online-settings');
@@ -8566,12 +8568,15 @@ function playOnlineNow(){
   sfx.tap(); haptic('tap');
   if(!G.diff) G.diff='easy';
   if(!G.sub) G.sub='mix';
-  if(!G.cfg.winScore) G.cfg.winScore=15;
-  osPickDiff(G.diff); osPickSub(G.sub); osPickPts(G.cfg.winScore);
+  const questionCount=clampRounds(parseInt(G.questions,10)||G.cfg.winScore||10);
+  G.questions=questionCount;
+  G.cfg.winScore=questionCount;
+  osPickDiff(G.diff); osPickSub(G.sub); syncOnlineQuestions(questionCount);
   openOv('ov-online-settings');
 }
 function renderHomeChallenges(){
   const sec=document.getElementById('home-challenges-section');
+  const label=document.getElementById('home-challenges-label');
   const list=document.getElementById('home-challenges-list');
   if(!sec||!list) return;
   const all=G._pendingAsyncChallenges||{};
@@ -8579,6 +8584,7 @@ function renderHomeChallenges(){
   const pending=Object.entries(all).filter(([,c])=>c&&c.status==='pending'&&c.expiresAt>now);
   if(!pending.length){ sec.style.display='none'; return; }
   sec.style.display='';
+  if(label) label.textContent=`You have ${pending.length} pending challenge${pending.length===1?'':'s'}`;
   list.innerHTML=pending.slice(0,3).map(([id,c])=>{
     const modeLabel=c.mode==='classic'?(c.category&&c.category!=='all'?c.category:'Scripture'):c.mode==='truefalse'?'True or False':'Complete the Verse';
     const timeLeft=Math.max(0,Math.floor((c.expiresAt-now)/3600000));
@@ -8588,9 +8594,11 @@ function renderHomeChallenges(){
         <div style="font-family:'Cinzel',serif;font-size:12px;font-weight:700;color:var(--ink);white-space:nowrap;overflow:hidden;text-overflow:ellipsis;">${escHtml(c.fromName||'Challenger')}</div>
         <div style="font-size:10px;color:var(--ink3);">${escHtml(modeLabel)} · Scored ${c.fromScore}/${c.fromTotal} · ${timeLeft}h left</div>
       </div>
-      <button class="btn btn-gold btn-sm" style="width:auto;padding:6px 14px;font-size:12px;flex-shrink:0;" onclick="acceptGhostChallenge('${id}')">Answer →</button>
+      <button class="btn btn-gold btn-sm" style="width:auto;padding:6px 14px;font-size:12px;flex-shrink:0;" onclick="acceptGhostChallenge('${id}')">Answer now →</button>
     </div>`;
   }).join('');
+  G._asyncChallengeMap=G._asyncChallengeMap||{};
+  pending.forEach(([id,c])=>G._asyncChallengeMap[id]=c);
 }
 function startDailyChallenge(){
   if(!G.profile){ go('auth'); return; }
@@ -9093,11 +9101,7 @@ function listenAsyncChallenges(){
   G._asyncChalRef=ref;
   ref.on('value',sn=>{
     G._pendingAsyncChallenges=sn.val()||{};
-    // Always update nav badge count
-    const now=Date.now();
-    const pendingCount=Object.values(G._pendingAsyncChallenges).filter(c=>c&&c.status==='pending'&&c.expiresAt>now).length;
-    const badge=document.getElementById('friends-challenge-badge');
-    if(badge){ badge.textContent=pendingCount||''; badge.style.display=pendingCount?'':'none'; }
+    updateFriendsChallengeBadge();
     if(document.getElementById('s-friends')?.classList.contains('active')){
       renderAsyncChallenges();
     }
@@ -9105,6 +9109,17 @@ function listenAsyncChallenges(){
       renderHomeChallenges();
     }
   });
+}
+function updateFriendsChallengeBadge(){
+  const all=G._pendingAsyncChallenges||{};
+  const now=Date.now();
+  const pendingCount=Object.values(all).filter(c=>c&&c.status==='pending'&&c.expiresAt>now).length;
+  const badge=document.getElementById('friends-challenge-badge');
+  if(badge){
+    badge.textContent=pendingCount||'';
+    badge.style.display=pendingCount?'':'none';
+  }
+  return pendingCount;
 }
 function renderAsyncChallenges(){
   const sec=document.getElementById('async-challenges-section');
@@ -9114,9 +9129,7 @@ function renderAsyncChallenges(){
   const now=Date.now();
   // Pending = sent to me, not yet played, not expired
   const pending=Object.entries(all).filter(([,c])=>c&&c.status==='pending'&&c.expiresAt>now);
-  // Update nav badge
-  const badge=document.getElementById('friends-challenge-badge');
-  if(badge){ badge.textContent=pending.length||''; badge.style.display=pending.length?'':'none'; }
+  updateFriendsChallengeBadge();
   if(!pending.length){ sec.style.display='none'; renderFriendsEmptyState(); return; }
   sec.style.display='';
   list.innerHTML=pending.map(([id,c])=>{
@@ -11459,15 +11472,39 @@ function renderConversations(){
   list.innerHTML=uids.map(uid=>{
     const f=getFriendData(uid);
     const preview=G._convPreviews&&G._convPreviews[uid];
+    const previewText=getConversationPreviewText(preview);
+    if(!previewText) ensureConversationPreview(uid);
     return `<div class="conv-row" onclick="openChatById('${uid}')">
       <div class="conv-av">${avatarMarkup(f.avatar||'😊',f.photo||'','md')}</div>
       <div class="conv-info">
         <div class="conv-name">${escHtml(f.name||'Friend')}</div>
-        <div class="conv-preview">${preview?escHtml(preview.text):'Tap to start chatting'}</div>
+        <div class="conv-preview">${previewText?escHtml(previewText):'Tap to start chatting'}</div>
       </div>
       ${preview?`<div class="conv-time">${fmtMsgTime(preview.ts)}</div>`:''}
     </div>`;
   }).join('');
+}
+function getConversationPreviewText(preview){
+  const text=preview&&typeof preview.text==='string'?preview.text.trim():'';
+  return text||'';
+}
+function ensureConversationPreview(uid){
+  if(!G.fbOk||!G.uid||!uid) return;
+  if(!G._convPreviewLoads) G._convPreviewLoads={};
+  if(G._convPreviewLoads[uid]) return;
+  G._convPreviewLoads[uid]=true;
+  const pair=[G.uid,uid].sort().join('_');
+  G.db.ref('chats/'+pair+'/messages').limitToLast(1).once('value').then(sn=>{
+    let last=null;
+    sn.forEach(child=>{ last=child.val(); });
+    if(last&&String(last.text||'').trim()){
+      if(!G._convPreviews) G._convPreviews={};
+      G._convPreviews[uid]={text:last.text,ts:last.ts||Date.now()};
+      if(document.getElementById('s-friends')?.classList.contains('active')) renderConversations();
+    }
+  }).catch(()=>{}).finally(()=>{
+    if(G._convPreviewLoads) delete G._convPreviewLoads[uid];
+  });
 }
 function openChatById(uid){
   const f=getFriendData(uid);
@@ -11830,6 +11867,10 @@ function openChat(uid,name,avatar,photo){
   go('chat');
   loadChat(uid);
 }
+function scrollChatToBottom(){
+  const msgs=document.getElementById('chat-msgs');
+  if(msgs) msgs.scrollTop=msgs.scrollHeight;
+}
 function loadChat(uid){
   cleanupChat();
   if(!G.fbOk||!G.uid) return;
@@ -11844,9 +11885,10 @@ function loadChat(uid){
     bubble.className='chat-bubble '+(m.from===G.uid?'me':'them');
     bubble.textContent=m.text;
     msgs.appendChild(bubble);
-    msgs.scrollTop=msgs.scrollHeight;
+    scrollChatToBottom();
     if(!G._convPreviews) G._convPreviews={};
     G._convPreviews[uid]={text:m.text,ts:m.ts||Date.now()};
+    renderConversations();
   });
 }
 function sendMessage(){
@@ -11859,7 +11901,7 @@ function sendMessage(){
     bubble.className='chat-bubble me';
     bubble.textContent=text;
     msgs.appendChild(bubble);
-    msgs.scrollTop=msgs.scrollHeight;
+    scrollChatToBottom();
     inp.value=''; return;
   }
   const pair=[G.uid,_chatUid].sort().join('_');
@@ -11868,6 +11910,8 @@ function sendMessage(){
   if(!G._convPreviews) G._convPreviews={};
   G._convPreviews[_chatUid]={text,ts};
   if(G.profile){ G.profile.chatsSent=(G.profile.chatsSent||0)+1; saveProfile(); }
+  renderConversations();
+  scrollChatToBottom();
   inp.value='';
 }
 
