@@ -7398,6 +7398,7 @@ function saveMatchResult(winner, players) {
       winner: { name: winner.name, avatar: winner.avatar, photo: resolvePlayerPhoto(winner) },
       scores: players.map(p => ({ name: p.name, score: G.scores[p.name] || 0, avatar: p.avatar, photo: resolvePlayerPhoto(p) })),
       mode: G.mode || 'classic',
+      sub: G.sub || null,
       difficulty: G.difficulty || 'medium',
       category: G.category || null,
       myName: G.profile ? G.profile.name : null,
@@ -7433,7 +7434,7 @@ function renderMatchHistory(expanded) {
     return;
   }
   const show = expanded ? history.length : Math.min(3, history.length);
-  const modeLabel = { mix: 'Multi-verse', classic: 'Classic MCQ', truefalse: 'True/False', fillinverse: 'Fill-in-Verse', lightning: 'Lightning', solo: 'Practice', practice: 'Practice', multiplayer: 'Multiplayer' };
+  const modeLabel = { mix: 'Multi-verse', classic: 'Classic', truefalse: 'True/False', fillinverse: 'Fill-in-Verse', verse: 'Complete the Verse', lightning: 'Lightning', solo: 'Practice', practice: 'Practice', multiplayer: 'Multiplayer', async_challenge: 'Ghost Race' };
   const esc = s => String(s||'').replace(/&/g,'&amp;').replace(/</g,'&lt;').replace(/>/g,'&gt;').replace(/"/g,'&quot;');
   let html = '';
   for (let i = 0; i < show; i++) {
@@ -7450,7 +7451,7 @@ function renderMatchHistory(expanded) {
     const winnerImg = m.winner && m.winner.photo
       ? '<img src="' + esc(m.winner.photo) + '" style="width:32px;height:32px;border-radius:50%;object-fit:cover;">'
       : '<span style="font-size:22px;">' + esc(m.winner ? m.winner.avatar || '🎮' : '🎮') + '</span>';
-    const mLabel = modeLabel[m.mode] || esc(m.mode) || 'Game';
+    const mLabel = (m.mode === 'async_challenge' && m.sub ? modeLabel[m.sub] || esc(m.sub) : modeLabel[m.mode]) || 'Ghost Race';
     const diff = m.difficulty ? m.difficulty.charAt(0).toUpperCase() + m.difficulty.slice(1) : '';
     const cat = m.category ? ' · ' + esc(m.category) : '';
     const subLabel = [mLabel, diff].filter(Boolean).join(' · ') + cat;
