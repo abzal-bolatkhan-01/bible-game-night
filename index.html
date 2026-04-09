@@ -7454,7 +7454,11 @@ function renderMatchHistory(expanded) {
     const mLabel = (m.mode === 'async_challenge' && m.sub ? modeLabel[m.sub] || esc(m.sub) : modeLabel[m.mode]) || 'Ghost Race';
     const diff = m.difficulty ? m.difficulty.charAt(0).toUpperCase() + m.difficulty.slice(1) : '';
     const cat = m.category ? ' · ' + esc(m.category) : '';
-    const subLabel = [mLabel, diff].filter(Boolean).join(' · ') + cat;
+    const opponent = m.mode === 'async_challenge' && m.scores
+      ? m.scores.find(s => s.name !== m.myName)
+      : null;
+    const vsStr = opponent ? ' vs ' + esc(opponent.name || '?') : '';
+    const subLabel = [mLabel, diff].filter(Boolean).join(' · ') + cat + vsStr;
     const scoreStr = m.scores ? m.scores.map(s => esc(s.name || '?') + ' ' + (s.score || 0)).join(' · ') : '';
     let expandedDetail = '';
     try {
