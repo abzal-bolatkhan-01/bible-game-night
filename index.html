@@ -4411,27 +4411,28 @@ html.feat-gameHeader .g-nm { font-weight: 800 !important; max-width: 100px; over
     <div style="font-family:'Cinzel',serif;font-size:10px;letter-spacing:.18em;text-transform:uppercase;color:var(--gold1);text-align:center;margin-bottom:5px;">Multiplayer</div>
     <div style="font-family:'Poppins',sans-serif;font-size:22px;font-weight:700;color:var(--ink);text-align:center;margin-bottom:18px;">Quick Match</div>
     <div class="label" style="margin-bottom:8px;">Game Mode</div>
-    <div class="chips" style="margin-bottom:16px;">
+    <div class="chips" style="margin-bottom:10px;">
       <button class="chip sel" id="os-sub-mix" onclick="osPickSub('mix')">🔀 Multi-verse</button>
       <button class="chip" id="os-sub-classic" onclick="osPickSub('classic')">🎯 Classic</button>
       <button class="chip" id="os-sub-truefalse" onclick="osPickSub('truefalse')">✅ True or False</button>
       <button class="chip" id="os-sub-verse" onclick="osPickSub('verse')">📖 Complete the Verse</button>
       <button class="chip" id="os-sub-lightning" onclick="osPickSub('lightning')">⚡ Lightning</button>
     </div>
+    <div id="os-mode-desc" style="font-size:12px;color:var(--ink3);margin-bottom:12px;line-height:1.5;">A variety of question types: Classic, True/False, and Verse completion.</div>
     <div class="label" style="margin-bottom:8px;">Difficulty</div>
     <div class="ps-v3-wrap" style="margin-bottom:16px;">
       <button class="diff-chip ps-v3-seg sel" id="os-diff-easy" onclick="osPickDiff('easy')">🌿 Disciple</button>
       <button class="diff-chip ps-v3-seg" id="os-diff-medium" onclick="osPickDiff('medium')">📖 Apostle</button>
       <button class="diff-chip ps-v3-seg" id="os-diff-hard" onclick="osPickDiff('hard')">⚔️ Scholar</button>
     </div>
-    <div class="label" style="margin-bottom:8px;">Questions</div>
-    <div style="display:flex;align-items:center;justify-content:center;gap:20px;margin-bottom:20px;">
-      <button class="btn btn-ghost btn-sm" onclick="adjustOnlineQ(-1)" style="width:44px;padding:6px 0;font-size:20px;">−</button>
-      <div style="text-align:center;">
-        <div id="qs-count" style="font-size:26px;font-weight:700;color:var(--ink);line-height:1;">10</div>
-        <div id="qs-label" style="font-size:11px;color:var(--ink3);margin-top:2px;">questions</div>
+    <div class="label" style="margin-bottom:8px;">Options</div>
+    <div class="toggle-row" style="margin-bottom:20px;">
+      <span class="toggle-lbl">🏁 Rounds</span>
+      <div class="stepper">
+        <button class="step-btn" onclick="adjustOnlineQ(-1)">−</button>
+        <span class="step-val" id="qs-count">10</span>
+        <button class="step-btn" onclick="adjustOnlineQ(1)">+</button>
       </div>
-      <button class="btn btn-ghost btn-sm" onclick="adjustOnlineQ(1)" style="width:44px;padding:6px 0;font-size:20px;">+</button>
     </div>
     <button class="btn btn-gold" onclick="startOnlineMatch()" style="margin-bottom:8px;">▶ Host Room</button>
     <button class="btn btn-ghost btn-sm" onclick="closeOv('ov-online-settings')" style="width:100%;">Cancel</button>
@@ -8583,6 +8584,8 @@ function osPickSub(s){
     if(el) el.classList.toggle('sel', v===s);
   });
   G.sub=s;
+  const desc=document.getElementById('os-mode-desc');
+  if(desc) desc.textContent=MODE_DESCS[s]||MODE_DESCS.classic;
 }
 function syncOnlineQuestions(n){
   const count=clampRounds(parseInt(n,10)||10);
