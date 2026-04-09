@@ -1,4 +1,4 @@
-const CACHE = 'lamp-v4';
+const CACHE = 'lamp-v5';
 const PRECACHE = ['/', '/index.html', '/icon.png', '/manifest.json', '/data/mcq.js', '/data/tf.js', '/data/verse.js'];
 
 self.addEventListener('install', event => {
