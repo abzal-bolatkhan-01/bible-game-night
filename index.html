@@ -9012,6 +9012,12 @@ function buildGhostPool(mode,category,difficulty,seed,count){
       src=(QB[cat]||[]).filter(q=>q&&(difficulty==='all'||!difficulty||q.d===difficulty)).map(q=>({...q,cat}));
       if(!src.length) src=(QB[cat]||[]).map(q=>({...q,cat}));
     }
+  } else if(mode==='mix'){
+    src=[
+      ...Object.entries(QB).flatMap(([cat,qs])=>qs.filter(q=>q&&(difficulty==='all'||!difficulty||q.d===difficulty)).map(q=>({...q,cat}))),
+      ...TF_Q.filter(q=>q&&(difficulty==='all'||!difficulty||q.d===difficulty)),
+      ...VERSE_Q.filter(q=>q&&(difficulty==='all'||!difficulty||q.d===difficulty))
+    ];
   } else if(mode==='truefalse'){
     src=TF_Q.filter(q=>q&&(difficulty==='all'||!difficulty||q.d===difficulty));
   } else if(mode==='verse'||mode==='fillin'){

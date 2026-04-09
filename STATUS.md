@@ -1,5 +1,14 @@
 # STATUS.md — Lamp: Bible Trivia Online
 
+## Session 2026-04-09: Ghost Mode + Match History Fixes ✅
+
+### Fix 2: Ghost Mode "Not enough questions" error
+- **Bug**: `buildGhostPool` had no `mix` mode case — `src` stayed empty → pool empty → error toast blocked play
+- **Fix**: Added `mix` branch that pulls from all three banks (QB + TF_Q + VERSE_Q) filtered by difficulty
+- **Status**: Fixed, JS validated, NOT yet deployed
+
+---
+
 ## Session 2026-04-09: Match History Bug Fix ✅
 
 ### Fix Applied
