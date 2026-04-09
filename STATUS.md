@@ -1,5 +1,15 @@
 # STATUS.md — Lamp: Bible Trivia Online
 
+## Session 2026-04-09: Match History Bug Fix ✅
+
+### Fix Applied
+- **Bug**: `saveMatchResult` read from localStorage only, then `.set()` overwrote Firebase. If localStorage cleared between sessions, Firebase got overwritten with empty/short list — losing all history.
+- **Fix**: Now reads Firebase first, merges with local (dedup by id, sort newest first, cap 50), writes merged back to both Firebase and localStorage.
+- **Data note**: Past match history was already lost (data gone from both stores). Stats (wins/played) intact — they're in profile object, separate path.
+- **Status**: Fix applied, JS validated, NOT yet deployed.
+
+---
+
 ## Session 2026-04-08: Multiplayer UI Overhaul — 6 of 7 COMPLETE ✅
 
 ### Branches Complete

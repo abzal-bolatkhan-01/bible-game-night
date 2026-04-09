@@ -297,16 +297,30 @@ body::after {
 }
 
 /* Light theme overrides */
-html:not([data-theme="dark"]) #home-friend-card {
+/* Light + Green: Duel card — light blue */
+html:not([data-theme="dark"]):not([data-theme="warmth"]) #home-friend-card {
   background: linear-gradient(135deg, #eaf1fb 0%, #ddeaf8 60%, #e8f0fa 100%);
   border: 1.5px solid rgba(74,144,216,.35);
 }
-html:not([data-theme="dark"]) #home-friend-card::before {
+html:not([data-theme="dark"]):not([data-theme="warmth"]) #home-friend-card::before {
   background: radial-gradient(ellipse 60% 70% at 80% 50%, rgba(74,144,216,.07) 0, transparent 70%);
 }
 html:not([data-theme="dark"]) .home-duel-eyebrow { color: rgba(30,90,180,.7); }
 html:not([data-theme="dark"]) .home-duel-title { color: #1a4f9a; }
 
+/* Warmth: Duel card — warm neutral */
+html[data-theme="warmth"] #home-friend-card {
+  background: linear-gradient(135deg, #fdf4ec 0%, #f5e8d8 60%, #fdf4ec 100%);
+  border: 1.5px solid rgba(74,144,216,.25);
+}
+html[data-theme="warmth"] #home-friend-card::before {
+  background: radial-gradient(ellipse 60% 70% at 80% 50%, rgba(176,120,80,.06) 0, transparent 70%);
+}
+html[data-theme="warmth"] .home-duel-eyebrow { color: rgba(100,60,20,.65); }
+html[data-theme="warmth"] .home-duel-title { color: #5a3010; }
+html[data-theme="warmth"] .home-duel-icon { background: rgba(74,144,216,.12); border-color: rgba(74,144,216,.28); }
+
+/* All non-dark: Challenges card */
 html:not([data-theme="dark"]) #home-challenges-card {
   background: linear-gradient(135deg, #fdf6ea 0%, #f8edd5 60%, #fdf3e3 100%);
   border: 1.5px solid rgba(190,130,40,.35);
@@ -7374,7 +7388,6 @@ function showScores(isFinal){
 
 function saveMatchResult(winner, players) {
   try {
-    let history = JSON.parse(localStorage.getItem('bgn_history') || '[]');
     const match = {
       date: new Date().toLocaleDateString(),
       winner: { name: winner.name, avatar: winner.avatar, photo: resolvePlayerPhoto(winner) },
@@ -7385,13 +7398,23 @@ function saveMatchResult(winner, players) {
       myName: G.profile ? G.profile.name : null,
       id: Date.now()
     };
+    let history = JSON.parse(localStorage.getItem('bgn_history') || '[]');
     history.unshift(match);
     localStorage.setItem('bgn_history', JSON.stringify(history.slice(0, 50)));
-    // Sync to Firebase if signed in
     if (G.uid && G.db) {
-      try {
-        G.db.ref('players/' + G.uid + '/matchHistory').set(history.slice(0, 50));
-      } catch(e) {}
+      G.db.ref('players/' + G.uid + '/matchHistory').once('value')
+        .then(snapshot => {
+          let fbHistory = snapshot.val() || [];
+          let merged = [...history, ...fbHistory];
+          merged = merged.filter((item, index, self) =>
+            index === self.findIndex(t => t.id === item.id)
+          );
+          merged.sort((a, b) => b.id - a.id);
+          merged = merged.slice(0, 50);
+          G.db.ref('players/' + G.uid + '/matchHistory').set(merged);
+          localStorage.setItem('bgn_history', JSON.stringify(merged));
+        })
+        .catch(e => {});
     }
   } catch(e) {}
 }
