@@ -6010,7 +6010,7 @@ function pushProfile(){
       clan:p.clanName||'', clanCode:p.clanCode||'', clanIcon:p.clanIcon||'⛪', clanPhoto:p.clanPhoto||'',
       friendCode:p.friendCode||'', ts:Date.now()
     };
-    G.db.ref('players/'+G.uid).set(full);
+    G.db.ref('players/'+G.uid).update(full);
     G.db.ref('leaderboard/'+G.uid).set(lb);
     G.db.ref('weekly/'+wk()+'/'+G.uid).set(lb);
     // Keep clan member XP in sync
