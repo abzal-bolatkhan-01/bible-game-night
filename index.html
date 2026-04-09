@@ -2804,8 +2804,8 @@ html[data-theme="warmth"] .setup-av-btn { background: #FDF9F4; border-color: #D8
 }
 .home-mp-overlay { background: linear-gradient(160deg,rgba(255,240,200,.2) 0%,rgba(255,228,170,.1) 100%); }
 .mp-eyebrow { color: rgba(160,100,0,.7); }
-.mp-title { font-size: 26px; font-weight: 800; color: #7A5200; margin-bottom: 6px; }
-.mp-sub { color: rgba(140,90,0,.6); margin-bottom: 18px; font-size: 12px; }
+.mp-title { font-size: 28px; font-weight: 800; color: #7A5200; margin-bottom: 6px; }
+.mp-sub { color: rgba(140,90,0,.6); margin-bottom: 18px; font-size: 14px; }
 
 html[data-theme="dark"] .home-mp-hero {
   background: linear-gradient(160deg,#0f0a03 0%,#1e1004 35%,#120c04 70%,#0a0603 100%);
@@ -11015,6 +11015,7 @@ function updateDailyStreak(){
    Three prompts tried in order; first success wins.
 ══════════════════════════════════════════════════ */
 function loadAIBackground(){
+  return; // bg image removed
   const el = document.getElementById('ai-bg');
   if(!el) return;
 
