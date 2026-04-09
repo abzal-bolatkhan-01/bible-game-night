@@ -23973,7 +23973,7 @@ const QB={
       "d": "easy"
     },
     {
-      "q": "To how many churches was the book specifically addressed?",
+      "q": "To how many churches was the book of Revelation specifically addressed?",
       "o": [
         "3",
         "7",
