@@ -485,7 +485,7 @@ html:not([data-theme="dark"]) #home-challenges-card .card-title { color: #8a5a00
 .btn-sm { padding: 9px 14px; font-size: 12px; min-height: 40px; }
 .btn-icon { font-size: 15px; line-height: 1; }
 
-.btn-gold { background: #f0c040; color: #1a0a00; border: 2px solid #E0B030; border-bottom: 5px solid #B08010; }
+.btn-gold { background: #f0c040; color: #fff; border: 2px solid #E0B030; border-bottom: 5px solid #B08010; }
 .btn-ruby { background: #e04040; color: #fff; border: 2px solid #D03030; border-bottom: 5px solid #A02020; }
 .btn-blue { background: #4a90d8; color: #fff; border: 2px solid #3A80C8; border-bottom: 5px solid #1F4A8F; }
 .btn-ghost { background: #fff; border: 2px solid rgba(0,0,0,.15); border-bottom: 5px solid rgba(0,0,0,.25); color: var(--ink2); }
@@ -738,8 +738,8 @@ html:not([data-theme="dark"]) #home-challenges-card .card-title { color: #8a5a00
 }
 .tf-t { background: rgba(22,105,58,.12); border-color: rgba(34,176,90,.22); color: #6de09a; }
 .tf-f { background: rgba(138,24,24,.12); border-color: rgba(196,40,40,.22); color: #e08080; }
-.tf-btn.correct { animation: pulse .3s; }
-.tf-btn.wrong   { animation: shake .35s; }
+.tf-btn.correct { animation: pulse .3s; background: rgba(22,105,58,.25) !important; border-color: rgba(34,176,90,.5) !important; color: #6de09a !important; }
+.tf-btn.wrong   { animation: shake .35s; background: rgba(138,24,24,.25) !important; border-color: rgba(196,40,40,.5) !important; color: #e08080 !important; }
 .tf-btn:active:not(:disabled) { transform: scale(.97); }
 .tf-btn:disabled { cursor: default; pointer-events: none; }
 
@@ -1792,7 +1792,7 @@ body { background: var(--bg); color: var(--ink); }
 }
 .btn-gold {
   background: #D4A017;
-  color: #1a0a00;
+  color: #fff;
   border: 2px solid #C49017;
   border-bottom: 5px solid #9A7010;
 }
@@ -2064,6 +2064,8 @@ body { background: var(--bg); color: var(--ink); }
   border: 1.5px solid rgba(0,0,0,.08);
   border-radius: 24px 24px 0 0;
   box-shadow: 0 -8px 32px rgba(0,0,0,.1);
+  max-height: 85vh;
+  overflow-y: auto;
 }
 .mhandle { background: var(--bg3); }
 .mtitle { font-family: 'Nunito', sans-serif; font-weight: 900; color: var(--ink); }
@@ -2319,7 +2321,7 @@ html[data-theme="dark"] .social-tab.active { background: var(--card-bg); color: 
 html[data-theme="dark"] .social-tab { color: var(--ink3); }
 html[data-theme="dark"] .conv-row { background: var(--card-bg); color: var(--ink); }
 /* Dark theme buttons */
-html[data-theme="dark"] .btn-gold { background: #E0A860; color: #1A1A20; border: 2px solid #D4984A; border-bottom: 5px solid #A0773A; }
+html[data-theme="dark"] .btn-gold { background: #E0A860; color: #fff; border: 2px solid #D4984A; border-bottom: 5px solid #A0773A; }
 html[data-theme="dark"] .btn-ruby { background: #C84040; color: #fff; border: 2px solid #B83030; border-bottom: 5px solid #881010; }
 html[data-theme="dark"] .btn-blue { background: #4A90D8; color: #fff; border: 2px solid #3A80C8; border-bottom: 5px solid #1A4A98; }
 html[data-theme="dark"] .btn-ghost { background: var(--bg3); border: 2px solid var(--inp-border); border-bottom: 5px solid #1A1A24; color: var(--ink2); }
@@ -3672,10 +3674,6 @@ html.feat-gameHeader .g-nm { font-weight: 800 !important; max-width: 100px; over
       <label class="label">Your Name</label>
       <input class="inp" id="auth-name" placeholder="Enter your name" maxlength="20" autocomplete="off">
     </div>
-    <div style="margin-bottom:16px;">
-      <label class="label">Church / Congregation <span style="font-style:italic;font-size:11px;">(optional)</span></label>
-      <input class="inp" id="auth-church" placeholder="e.g. Grace Church Youth" autocomplete="off">
-    </div>
     <button class="btn btn-gold" onclick="createProfile()">
       <span class="btn-icon">✦</span> Play as Guest
     </button>
@@ -3982,7 +3980,7 @@ html.feat-gameHeader .g-nm { font-weight: 800 !important; max-width: 100px; over
       <div id="w-ds-label" style="font-family:'Cormorant Garamond',serif;font-size:30px;font-weight:800;color:var(--gold1);line-height:1.1;margin-bottom:10px;">1 Day</div>
       <button class="btn btn-gold btn-sm" style="width:100%;" onclick="shareStreakText()">🔥 Share Your Streak</button>
     </div>
-    <button class="btn btn-share btn-sm" onclick="postMatchShareResult()" style="margin-bottom:8px;">↗ Share Result</button>
+    <button id="w-share-btn" class="btn btn-share btn-sm" onclick="postMatchShareResult()" style="margin-bottom:8px;">↗ Share Result</button>
     <button class="btn btn-ghost btn-sm" style="margin-bottom:8px;" onclick="postMatchGoHome()">Home</button>
     <button class="btn btn-ghost btn-sm" onclick="postMatchGoDonation()">❤️ Support This Ministry</button>
     <div class="pb"></div>
@@ -4521,14 +4519,15 @@ html.feat-gameHeader .g-nm { font-weight: 800 !important; max-width: 100px; over
     <div style="font-size:64px;margin-bottom:16px;animation:float 3s ease-in-out infinite;">🏺</div>
     <div class="h1">Welcome to <em>Lamp</em></div>
     <p style="font-size:15px;color:var(--ink2);line-height:1.6;margin:12px 0 24px;">
-      Illuminate your faith through 9,000+ Bible trivia questions. Play solo, challenge friends, or join a congregation.
+      The #1 Bible trivia game — challenge friends online with 9,000+ Scripture questions.
     </p>
     <div class="card-warm" style="margin-bottom:24px;text-align:left;">
       <div style="font-size:13px;color:var(--gold);font-weight:700;margin-bottom:8px;font-family:'Cinzel',serif;">How to Play</div>
       <ul style="margin:0;padding:0 0 0 18px;font-size:14px;color:var(--ink);line-height:1.8;">
-        <li>Choose a mode: Classic, True/False, or Verse</li>
-        <li>Earn XP to level up and unlock new avatars</li>
-        <li>Join a House of Faith to compete together</li>
+        <li>🌐 Host a room and challenge friends online</li>
+        <li>📖 9,000+ questions — Classic, True/False, Verse</li>
+        <li>🏆 Daily &amp; weekly challenges to climb the ranks</li>
+        <li>✦ Earn XP, level up, unlock new avatars</li>
       </ul>
     </div>
     <button class="btn btn-gold" onclick="closeOv('ov-welcome');G.onboardDone=false;">Let's Begin ✦</button>
@@ -5317,7 +5316,7 @@ function wtShare(){
 function startWeeklyTournament(){
   if(!G.profile){ go('auth'); buildAvGrid(); return; }
   const week=getWTWeekKey();
-  if(G.profile.lastWeeklyDate===new Date().toISOString().split('T')[0]){ toast('You already played today — come back tomorrow! 🏆'); return; }
+  if(G.profile.lastWeeklyDate&&getWTWeekKey(new Date(G.profile.lastWeeklyDate+'T12:00:00Z'))===getWTWeekKey()){ toast('You\'ve already played this week\'s tournament! Come back next Sunday. 🏆'); return; }
   sfx.tap();
   const pool=getWeeklyTournamentPool();
   if(!pool.length){ toast('No questions available for this category'); return; }
@@ -5640,8 +5639,13 @@ function getAuthRedirectPending(){
   try{ return sessionStorage.getItem('auth_redirect_pending')||''; }catch(e){ return ''; }
 }
 function _isMobile(){ return /Mobi|Android|iPhone|iPad|iPod/i.test(navigator.userAgent) || ('ontouchstart' in window); }
-const RESERVED_NAMES=['tester','test','guest','admin','moderator','mod','system','bot','lamp','anonymous','anon'];
-function isReservedName(name){ return RESERVED_NAMES.includes((name||'').trim().toLowerCase()); }
+const RESERVED_NAMES=['tester','test','guest','admin','moderator','mod','system','bot','lamp','anonymous','anon','meh'];
+const BLASPHEMY_PATTERNS=['devil','satan','lucifer','antichrist','666','jesusnot','godisfake','godisdead','hailsatan','demon666','hellboy'];
+function isBlasphemousName(name){
+  const n=(name||'').toLowerCase().replace(/[\s\-_\.]/g,'');
+  return BLASPHEMY_PATTERNS.some(p=>n.includes(p));
+}
+function isReservedName(name){ const n=(name||'').trim().toLowerCase(); return RESERVED_NAMES.includes(n)||isBlasphemousName(n); }
 
 function isNameTaken(name, excludeUid = null) {
   if (!G.fbOk || !G.db) return Promise.resolve(false);
@@ -6122,7 +6126,7 @@ async function createProfile(){
   const name=(document.getElementById('auth-name').value||'').trim();
   if(!name){ toast('Please enter your name'); return; }
   const av=document.getElementById('auth-av').textContent;
-  const church=(document.getElementById('auth-church').value||'').trim();
+  const church='';
 
   if (G.fbOk && G.db) {
     try {
@@ -6914,7 +6918,7 @@ function renderVerseQ(q){
 
   const { b, a } = cleanVerseParts(q);
   const wrap=document.getElementById('g-opts'); wrap.innerHTML='';
-  document.getElementById('g-txt').textContent='Complete the verse:';
+  document.getElementById('g-txt').textContent=q.r?`📖 ${q.r}`:'Complete the verse:';
   const vb=document.createElement('div'); vb.className='verse-cloze';
   vb.innerHTML=`${b} <span class="vblank">__________</span> ${a}`;
   wrap.appendChild(vb);
@@ -6996,7 +7000,12 @@ function answerQ(btn,isOk,q,order){
     }
     G.streaks[p.name]=0; G._wrongCount=(G._wrongCount||0)+1;
     resetComboUIForPlayer(p.name);
-    fb.className='fb no'; fb.innerHTML=`<strong>Not quite.</strong> ${q.e}`;
+    const _wrongRef=(FEATURES.verseRef&&q.r)?`<span class="fb-ref">— ${q.r}</span>`:'';
+    if(typeof q.a==='boolean'){
+      fb.className='fb no'; fb.innerHTML=`<strong>Not quite. The answer is ${q.a?'TRUE ✅':'FALSE ❌'}</strong> ${q.e||''}${_wrongRef}`;
+    }else{
+      fb.className='fb no'; fb.innerHTML=`<strong>Not quite.</strong> ${q.e||''}${_wrongRef}`;
+    }
     sfx.wrong(); haptic('wrong');
     if(G.cfg.hearts){
       G.hearts[p.name]=Math.max(0,(G.hearts[p.name]||0)-1);
@@ -7674,6 +7683,8 @@ function endGame(){
     }
     const playAgainBtn=document.getElementById('w-play-again');
     if(playAgainBtn) playAgainBtn.style.display=(G.mode==='daily'||wasSeasonal)?'none':'';
+    const shareBtn=document.getElementById('w-share-btn');
+    if(shareBtn) shareBtn.style.display=(G.mode==='practice'||G.players.length<=1)?'none':'';
     if(G.mode==='async_challenge'){ finishGhostRace(); return; }
     go('winner'); sfx.win(); haptic('win'); confetti(); checkAchs();
   } catch(e) {
@@ -8530,7 +8541,7 @@ function updateChallengesCardSub(){
   if(!sub) return;
   const today=new Date().toISOString().split('T')[0];
   const dailyDone=G.profile&&G.profile.lastDaily===today;
-  const weeklyDone=G.profile&&G.profile.lastWeeklyDate===today;
+  const weeklyDone=G.profile&&G.profile.lastWeeklyDate&&getWTWeekKey(new Date(G.profile.lastWeeklyDate+'T12:00:00Z'))===getWTWeekKey();
   const season=typeof getCurrentSeason==='function'?getCurrentSeason():null;
   const parts=[];
   if(!dailyDone) parts.push('🔥 Daily');
@@ -8546,7 +8557,7 @@ function openChallengesMenu(){
   const dailyDone=G.profile&&G.profile.lastDaily===today;
   const season=typeof getCurrentSeason==='function'?getCurrentSeason():null;
   const seasonDone=G.profile&&G.profile.lastSeasonalDate===today;
-  const weeklyDone=G.profile&&G.profile.lastWeeklyDate===today;
+  const weeklyDone=G.profile&&G.profile.lastWeeklyDate&&getWTWeekKey(new Date(G.profile.lastWeeklyDate+'T12:00:00Z'))===getWTWeekKey();
   const isBowl=typeof isSundayBowlActive==='function'&&isSundayBowlActive();
   const bowlWeek=typeof getISOWeek==='function'?getISOWeek(new Date()):0;
   const bowlDone=G.profile&&G.profile.bowlWeek===bowlWeek;
@@ -8556,8 +8567,8 @@ function openChallengesMenu(){
   const seasonIcons={christmas:'⭐',easter:'✝️',pentecost:'🔥',reformation:'📚',thanksgiving:'🙏'};
   const items=[
     {icon:'🔥',label:'Daily Challenge',sub:dailyDone?'Completed today — come back tomorrow':`${streak}10 questions · ${diffLabel} level`,done:dailyDone,color:'#C4842A',border:'#A06A1A',shadow:'#7A4E10',action:dailyDone?null:"startDailyChallenge()"},
-    {icon:'🏟️',label:'Weekly Tournament',sub:weeklyDone?'Completed this week':'Fresh every Sunday · Compete globally',done:weeklyDone,color:'#1565C0',border:'#0D4FA0',shadow:'#083070',action:weeklyDone?null:"startWeeklyTournament()"},
-    season?{icon:seasonIcons[season]||'🌟',label:seasonNames[season]||'Seasonal Event',sub:seasonDone?'Completed — see you next season':'Special questions · Limited time',done:seasonDone,color:'#6A1B9A',border:'#4E1280',shadow:'#320A50',action:seasonDone?null:`playSeasonalQuestions('${season}')`}:null,
+    {icon:'🏟️',label:'Weekly Tournament',sub:weeklyDone?'Completed this week · 20 questions':'20 questions · Fresh every Sunday',done:weeklyDone,color:'#1565C0',border:'#0D4FA0',shadow:'#083070',action:weeklyDone?null:"startWeeklyTournament()"},
+    season?{icon:seasonIcons[season]||'🌟',label:seasonNames[season]||'Seasonal Event',sub:seasonDone?'Completed — see you next season':'10 questions · Special · Limited time',done:seasonDone,color:'#6A1B9A',border:'#4E1280',shadow:'#320A50',action:seasonDone?null:`playSeasonalQuestions('${season}')`}:null,
     isBowl?{icon:'🏛️',label:'Sunday Bible Bowl',sub:bowlDone?`Your score: ${G.profile&&G.profile.bowlScore||0}/15`:'15 questions · Weekly leaderboard',done:bowlDone,color:'#1a237e',border:'#101860',shadow:'#080E3A',action:bowlDone?'loadSundayBowlLeaderboard()':'startSundayBowl()'}:null
   ].filter(Boolean);
   list.innerHTML=items.map(item=>`
@@ -10307,6 +10318,7 @@ const sfx = {
 
   /* ── Trombone wa-wa descending glissando ── */
   wrong: ()=>{
+    if(!G.cfg.sound) return;
     try {
       const ac = getAC(), now = ac.currentTime;
       // Waveshaper distortion for brass grit
@@ -10350,6 +10362,7 @@ const sfx = {
 
   /* ── Dramatic minor organ collapse ── */
   elim: ()=>{
+    if(!G.cfg.sound) return;
     try {
       const ac = getAC(), now = ac.currentTime;
       // A minor chord: A + C + E, each with sub-octave
@@ -10375,6 +10388,7 @@ const sfx = {
 
   /* ── Full trumpet fanfare + bell sustain ── */
   win: ()=>{
+    if(!G.cfg.sound) return;
     try {
       const ac = getAC();
       // Brass stabs: sawtooth + bandpass filter = trumpet character
