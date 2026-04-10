@@ -3,3 +3,8 @@
 *.backup
 *.bak
 /tmp/
+
+# Claude Code internals
+.claude/
+entities.json
+mempalace.yaml
