@@ -11531,7 +11531,18 @@ function renderFriends(){
     const promises=uids.map(uid=>G.db.ref('leaderboard/'+uid).once('value'));
     Promise.all(promises).then(snaps=>{
       if(!G._friendCache) G._friendCache={};
-      snaps.forEach(s=>{ if(s.exists()){ const v=s.val(); G._friendCache[s.key]={name:v.name||'Friend',avatar:v.avatar||'😊',photo:v.photo||'',xp:v.xp||0}; } });
+      snaps.forEach(s=>{
+        if(s.exists()){
+          const v=s.val();
+          // Filter out test/meh accounts silently
+          const n=(v.name||'').toLowerCase();
+          if(n.includes('test')||n==='meh'){ _doRemoveFriend(s.key); return; }
+          G._friendCache[s.key]={name:v.name||'Friend',avatar:v.avatar||'😊',photo:v.photo||'',xp:v.xp||0};
+        } else {
+          // Account deleted — auto-remove from friends list
+          _doRemoveFriend(s.key);
+        }
+      });
       renderRows(G._friendCache);
       renderFriendsEmptyState();
     });
