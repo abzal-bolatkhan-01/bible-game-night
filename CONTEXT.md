@@ -8,7 +8,7 @@
 - Firebase project: bible-game-night | GitHub: github.com/aviel-bolatkhan-01/lamp (backup only)
 
 ## Current State
-- Live: **Last deploy**: 2026-03-28 (before this session's work) | **Ready for deploy**: All 7 branches in dev (after Branch 7 implementation + testing) | **URL**: https://thelampgame.com |  | Onboarding flow (new users land cold) | Email capture (zero re-engagement) | Push notification timing | Seasonal pages: Easter, Christmas | "Hard Bible Trivia" landing page (low-competition keywords) |  | index.html: 52k lines, all code + UI in one file | Teams code exists at lines 6303-7591 (Pass & Play) | Online settings modal at lines 4391-4416 | createRoom() at line ~7848 | Win screen at line ~7576 | Team A/B assignment: lines 6418, 6453-6455 | Team score tracking: line 6703 | Team score display: lines 6707-6708, 6820-6828 | Team win detection: lines 6930-6931 | Team win screen: lines 7583-7591 | 
+- Live: **Last deploy**: 2026-04-09 (commit 223e9bc) — all fixes deployed | **What's live**: Match history fix, ghost mode fix, 120 verse question fix, MCQ book name fix, raised ghost buttons, Quick Match modal UI overhaul, all 7 multiplayer branches | **URL**: https://thelampgame.com |  |  | index.html: 52k lines, all code + UI in one file | Teams code exists at lines 6303-7591 (Pass & Play) | Online settings modal at lines 4391-4416 | createRoom() at line ~7848 | Win screen at line ~7576 | Team A/B assignment: lines 6418, 6453-6455 | Team score tracking: line 6703 | Team score display: lines 6707-6708, 6820-6828 | Team win detection: lines 6930-6931 | Team win screen: lines 7583-7591 | 
 
 ## Code Rules (non-negotiable)
 - Global state: `G = {}` — never redeclare

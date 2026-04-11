@@ -6157,8 +6157,6 @@ async function createProfile(){
   initTheme();
   go('home'); toast('Welcome, '+name+'! ✦');
   if(G.fbOk){ pushProfile(); listenFriendRequests(); listenFriendLinks(); listenAsyncChallenges(); }
-  const pendingRoom = sessionStorage.getItem('pending_room');
-  if(pendingRoom){ sessionStorage.removeItem('pending_room'); setTimeout(()=>joinRoomByCode(pendingRoom.toUpperCase()), 400); }
 }
 function logOut(){
   if(G._frReqRef){ G._frReqRef.off(); G._frReqRef=null; }
@@ -7533,6 +7531,7 @@ function endGame(){
     } else {
       const sorted=[...G.players].sort((a,b)=>G.scores[b.name]-G.scores[a.name]);
       win=sorted[0];
+      if(!win) win={name:G.profile?.name||'Player',avatar:G.profile?.avatar||'😊',photo:G.profile?.photo||''};
       const topScore=win?G.scores[win.name]:0;
       topWinners=sorted.filter(p=>(G.scores[p.name]||0)===(topScore||0));
       iWon=topWinners.some(p=>p.name===G.profile?.name);
@@ -8004,6 +8003,7 @@ function enterRoomAsJoiner(d,code,ref){
   go('lobby');
 }
 function joinRoomByCode(code){
+  if(!G.uid){ toast('Connecting — try again in a moment'); return; }
   if(!G.fbOk){ toast('Configure Firebase first.'); return; }
   sfx.tap();
   G.meReady=true;
@@ -11425,7 +11425,7 @@ function sendFriendRequestToUid(uid,targetData){
   normalizeSocialProfile();
   if(uid===G.uid) return Promise.reject(new Error('self'));
   if(hasFriend(uid)) return Promise.reject(new Error('already'));
-  return G.db.ref('friendRequests/'+uid+'/incoming/'+G.uid).once('value').then(ex=>{
+  return G.db.ref('friendRequests/'+G.uid+'/sent/'+uid).once('value').then(ex=>{
     if(ex.exists()&&ex.val()&&ex.val().status==='pending') throw new Error('already-sent');
     return G.db.ref('friendRequests/'+G.uid+'/incoming/'+uid).once('value');
   }).then(back=>{
