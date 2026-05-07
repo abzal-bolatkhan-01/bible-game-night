@@ -1,0 +1,92 @@
+[
+  {
+    "idx": 8,
+    "type": "verse_error",
+    "description": "The verse 'Fear not, for I am with you; be not dismayed, for I am your God' is not entirely accurate. The correct verse is 'Fear not, for I am with you; be not dismayed, for I am your God; I will strengthen you, I will help you, I will uphold you with my righteous right hand' and 'God' is at the end of the sentence, but the sentence is not complete.",
+    "fix": "Update the verse to 'Fear not, for I am with you; be not dismayed, for I am your ' and the answer to 'God'."
+  },
+  {
+    "idx": 10,
+    "type": "verse_error",
+    "description": "The verse 'Call to me and I will answer you and tell you great and unsearchable things' is accurate, but 'great' is not the only word that fits, the verse is 'Call to me and I will answer you and tell you great and unsearchable things you do not know.', 'great' is part of the correct answer but not the complete answer.",
+    "fix": "Update the verse to 'Call to me and I will answer you and tell you ' and the answer to 'great and unsearchable things'."
+  },
+  {
+    "idx": 15,
+    "type": "verse_error",
+    "description": "The correct verse is 'Glory to God in the highest heaven, and on earth peace to those on whom his favor rests.' The word 'peace' should be followed by 'to those on whom his favor rests.', not just 'to those on whom his favor rests.' as the answer choice suggests.",
+    "fix": "Glory to God in the highest heaven, and on earth peace to those on whom his favor rests. (Luke 2:14)"
+  },
+  {
+    "idx": 18,
+    "type": "verse_error",
+    "description": "The correct verse is 'I am the light of the world. Whoever follows me will never walk in darkness, but will have the light of life.' The word 'darkness' should be followed by ', but will have the light of life.', not just '.' as the answer choice suggests.",
+    "fix": "I am the light of the world. Whoever follows me will never walk in darkness, but will have the light of life. (John 8:12)"
+  },
+  {
+    "idx": 30,
+    "type": "verse_error",
+    "description": "The correct verse for 'I have been crucified with Christ and I no longer live, but Christ lives in me.' is Galatians 2:20, but the sentence is not entirely accurate. The correct sentence is 'I have been crucified with Christ and I no longer live, but Christ lives in me; and the life which I now live in the flesh I live by faith in the Son of God, who loved me and gave Himself up for me.'",
+    "fix": "I have been crucified with Christ and I no longer live, but Christ lives in me; and the life which I now live in the flesh I live by faith in the Son of God, who loved me and gave Himself up for me. Galatians 2:20"
+  },
+  {
+    "idx": 33,
+    "type": "verse_error",
+    "description": "The correct sentence for Ephesians 2:8 is 'For by grace you have been saved through faith, and that not of yourselves; it is the gift of God'",
+    "fix": "For by grace you have been saved through faith, and that not of yourselves; it is the gift of God. Ephesians 2:8"
+  },
+  {
+    "idx": 35,
+    "type": "verse_error",
+    "description": "The correct sentence for Ephesians 6:12 is 'For our struggle is not against flesh and blood, but against the rulers, against the authorities, against the powers of this dark world and against the spiritual forces of evil in the heavenly realms.'",
+    "fix": "For our struggle is not against flesh and blood, but against the rulers, against the authorities, against the powers of this dark world and against the spiritual forces of evil in the heavenly realms. Ephesians 6:12"
+  },
+  {
+    "idx": 37,
+    "type": "verse_error",
+    "description": "The correct sentence for Philippians 4:6 is 'Do not be anxious about anything, but in every situation, by prayer and petition, with thanksgiving, present your requests to God.'",
+    "fix": "Do not be anxious about anything, but in every situation, by prayer and petition, with thanksgiving, present your requests to God. Philippians 4:6"
+  },
+  {
+    "idx": 44,
+    "type": "verse_error",
+    "description": "The correct sentence for Psalm 34:18 is 'The Lord is near to the brokenhearted and saves the crushed in spirit.' is correct, but the reference should be Psalm 34:18",
+    "fix": "The Lord is near to the brokenhearted and saves the crushed in spirit. Psalm 34:18"
+  },
+  {
+    "idx": 45,
+    "type": "verse_error",
+    "description": "The correct reference for 'Honor your father and mother' is not Exodus 20:12, but rather Exodus 20:12 is 'Honor your father and your mother', the word 'your' is missing before 'mother'.",
+    "fix": "Honor your father and your mother, Exodus 20:12"
+  },
+  {
+    "idx": 48,
+    "type": "verse_error",
+    "description": "The correct reference for 'As the deer pants for streams of water, so my soul pants for you, my God' is not Psalm 42:1, but rather Psalm 42:1-2 says 'As the deer pants for streams of water, so my soul pants for you, my God. My soul thirsts for God, for the living God.', the word 'God' is correct but the reference should include the next verse for the full quote.",
+    "fix": "As the deer pants for streams of water, so my soul pants for you, my God. My soul thirsts for God, for the living God, Psalm 42:1-2"
+  },
+  {
+    "idx": 50,
+    "type": "verse_error",
+    "description": "The correct reference for 'Surely your goodness and love will follow me all the days of my life' is Psalm 23:6, but the quote is correct.",
+    "fix": "No fix needed, but the description is 'Surely your goodness and love will follow me all the days of my life' is a correct quote of Psalm 23:6"
+  },
+  {
+    "idx": 51,
+    "type": "verse_error",
+    "description": "The correct reference for 'The heavens declare the glory of God' is Psalm 19:1, but the quote is correct.",
+    "fix": "No fix needed, but the description is 'The heavens declare the glory of God' is a correct quote of Psalm 19:1"
+  },
+  {
+    "idx": 56,
+    "type": "verse_error",
+    "description": "The correct reference for 'The heart is deceitful above all things and beyond cure' is Jeremiah 17:9, but the quote is correct.",
+    "fix": "No fix needed, but the description is 'The heart is deceitful above all things and beyond cure' is a correct quote of Jeremiah 17:9"
+  },
+  {
+    "idx": 57,
+    "type": "verse_error",
+    "description": "The correct reference for 'I will give you a new heart and put a new spirit in you' is Ezekiel 36:26, but the quote is correct.",
+    "fix": "No fix needed, but the description is 'I will give you a new heart and put a new spirit in you' is a correct quote of Ezekiel 36:26"
+  }
+]

@@ -1,0 +1,84 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>LAMP YouTube Banner Mockup</title>
+  <style>
+    :root { --bg: #1A1A20; --gold: #E0A860; --gold-faint: rgba(224,168,96,0.08); --white: #ffffff; --muted: #A8A8A4; }
+    * { box-sizing: border-box; }
+    body { margin: 0; min-height: 100vh; display: grid; place-items: center; background: #ffffff; font-family: Georgia, "Times New Roman", serif; padding: 24px; }
+    .banner {
+      position: relative; width: 2560px; height: 1440px; overflow: hidden;
+      background:
+        radial-gradient(circle at 18% 48%, rgba(224,168,96,0.22), transparent 22%),
+        linear-gradient(90deg, transparent 0%, var(--gold-faint) 12%, transparent 24%, transparent 35%, rgba(224,168,96,0.12) 46%, transparent 58%, transparent 68%, rgba(224,168,96,0.08) 78%, transparent 100%),
+        repeating-linear-gradient(0deg, transparent 0px, transparent 110px, rgba(224,168,96,0.035) 111px, transparent 180px),
+        linear-gradient(180deg, #212129 0%, #17171d 55%, #131318 100%);
+      border-radius: 2px;
+    }
+    .banner::before { content: ""; position: absolute; inset: 0; background: linear-gradient(90deg, rgba(224,168,96,0.22) 0%, rgba(224,168,96,0.10) 20%, transparent 42%), repeating-linear-gradient(180deg, transparent 0px, transparent 96px, rgba(255,214,145,0.025) 97px, transparent 150px); opacity: 0.9; pointer-events: none; }
+    .banner::after { content: ""; position: absolute; inset: 0; background: radial-gradient(circle at 24% 46%, rgba(255,218,154,0.15), transparent 18%), radial-gradient(circle at 80% 20%, rgba(255,255,255,0.04), transparent 20%); mix-blend-mode: screen; pointer-events: none; }
+    .content { position: relative; z-index: 1; display: flex; width: 100%; height: 100%; }
+    .left, .right { height: 100%; display: flex; align-items: center; }
+    .left { width: 40%; justify-content: center; padding-left: 110px; padding-right: 40px; }
+    .right { width: 60%; padding: 0 160px 0 70px; }
+    .lamp-wrap { width: 760px; height: 760px; position: relative; filter: drop-shadow(0 0 22px rgba(224,168,96,0.45)) drop-shadow(0 0 70px rgba(224,168,96,0.18)); }
+    .text-block { max-width: 1200px; }
+    .title { margin: 0; font-size: 180px; line-height: 0.95; letter-spacing: 0.08em; font-weight: 700; color: var(--gold); text-transform: uppercase; text-shadow: 0 0 10px rgba(224,168,96,0.18), 0 0 30px rgba(224,168,96,0.10); }
+    .subtitle { margin: 34px 0 0; font-family: "Helvetica Neue", Arial, sans-serif; font-size: 60px; font-weight: 500; color: var(--white); letter-spacing: 0.02em; }
+    .tagline { margin: 34px 0 0; font-family: "Helvetica Neue", Arial, sans-serif; font-size: 40px; font-weight: 400; color: var(--muted); }
+    .domain { margin: 38px 0 0; font-family: "Helvetica Neue", Arial, sans-serif; font-size: 36px; font-weight: 600; color: var(--gold); letter-spacing: 0.08em; }
+    .safe-zone { position: absolute; left: 423px; top: 507px; width: 1694px; height: 338px; border: 2px dashed rgba(255,255,255,0.16); pointer-events: none; }
+    .safe-zone-label { position: absolute; top: -34px; right: 0; font: 500 20px/1 Arial, sans-serif; letter-spacing: 0.08em; color: rgba(255,255,255,0.3); text-transform: uppercase; }
+  </style>
+</head>
+<body>
+  <div class="banner">
+    <div class="content">
+      <section class="left">
+        <div class="lamp-wrap" aria-hidden="true">
+          <svg viewBox="0 0 700 700" width="100%" height="100%" xmlns="http://www.w3.org/2000/svg">
+            <defs>
+              <radialGradient id="flameGlowYT" cx="50%" cy="35%" r="55%">
+                <stop offset="0%" stop-color="#FFF3BF" stop-opacity="0.95" />
+                <stop offset="38%" stop-color="#F5C77A" stop-opacity="0.82" />
+                <stop offset="72%" stop-color="#E0A860" stop-opacity="0.28" />
+                <stop offset="100%" stop-color="#E0A860" stop-opacity="0" />
+              </radialGradient>
+              <linearGradient id="goldMetalYT" x1="0%" y1="0%" x2="100%" y2="100%">
+                <stop offset="0%" stop-color="#F3D08F" />
+                <stop offset="35%" stop-color="#E0A860" />
+                <stop offset="65%" stop-color="#B97E34" />
+                <stop offset="100%" stop-color="#F1C883" />
+              </linearGradient>
+              <radialGradient id="bowlShineYT" cx="35%" cy="25%" r="80%">
+                <stop offset="0%" stop-color="#FFDFA8" stop-opacity="0.85" />
+                <stop offset="30%" stop-color="#E0A860" stop-opacity="0.7" />
+                <stop offset="100%" stop-color="#7A4D1D" stop-opacity="1" />
+              </radialGradient>
+            </defs>
+            <ellipse cx="330" cy="225" rx="165" ry="140" fill="url(#flameGlowYT)" />
+            <path d="M336 144 C302 190, 296 222, 314 257 C325 279, 347 294, 368 289 C398 282, 417 255, 415 220 C413 188, 393 160, 336 144 Z" fill="#FFEAB5" opacity="0.95"/>
+            <path d="M345 170 C323 200, 323 227, 336 248 C345 262, 360 267, 372 261 C390 252, 398 231, 393 208 C388 188, 373 176, 345 170 Z" fill="#E0A860"/>
+            <path d="M158 404 C158 362, 198 333, 279 322 L434 301 C494 293, 548 320, 560 363 C572 406, 547 453, 490 475 L294 551 C233 574, 177 550, 164 506 C156 480, 162 451, 182 432 L245 434 C224 421, 175 425, 158 404 Z" fill="url(#bowlShineYT)" stroke="rgba(255,223,168,0.75)" stroke-width="6"/>
+            <ellipse cx="371" cy="585" rx="118" ry="24" fill="rgba(0,0,0,0.3)" />
+            <path d="M274 528 C276 560, 291 584, 319 600 C355 621, 406 621, 439 604 C463 592, 475 570, 477 543" fill="none" stroke="url(#goldMetalYT)" stroke-width="28" stroke-linecap="round"/>
+          </svg>
+        </div>
+      </section>
+      <section class="right">
+        <div class="text-block">
+          <h1 class="title">LAMP</h1>
+          <p class="subtitle">Bible Trivia Online</p>
+          <p class="tagline">Test Your Bible Knowledge &mdash; Light the Way!</p>
+          <p class="domain">thelampgame.com</p>
+        </div>
+      </section>
+    </div>
+    <div class="safe-zone" aria-hidden="true">
+      <div class="safe-zone-label">YouTube Safe Area</div>
+    </div>
+  </div>
+</body>
+</html>

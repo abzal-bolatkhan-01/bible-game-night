@@ -1,0 +1,128 @@
+{
+  "rules": {
+
+    "players": {
+      ".read": "auth != null",
+      "$uid": {
+        ".read": "$uid === auth.uid",
+        ".write": "auth != null && $uid === auth.uid",
+        ".validate": "newData.child('xp').isNumber() && newData.child('xp').val() >= 0 && (!data.child('xp').exists() || newData.child('xp').val() <= data.child('xp').val() + 1000)"
+      }
+    },
+
+    "leaderboard": {
+      ".read": "auth != null",
+      "$uid": {
+        ".write": "auth != null && $uid === auth.uid",
+        ".validate": "newData.child('xp').isNumber() && newData.child('xp').val() >= 0 && (!data.child('xp').exists() || newData.child('xp').val() <= data.child('xp').val() + 1000)"
+      }
+    },
+
+    "weekly": {
+      ".read": "auth != null",
+      "$week": {
+        "$uid": {
+          ".write": "auth != null && $uid === auth.uid"
+        }
+      }
+    },
+
+    "sundayBowl": {
+      ".read": "auth != null",
+      "$week": {
+        "$uid": {
+          ".write": "auth != null && $uid === auth.uid",
+          ".validate": "newData.child('score').isNumber() && newData.child('score').val() >= 0 && newData.child('score').val() <= 100"
+        }
+      }
+    },
+
+    "weeklyTournament": {
+      ".read": "auth != null",
+      "$week": {
+        "$uid": {
+          ".write": "auth != null && $uid === auth.uid",
+          ".validate": "newData.child('score').isNumber() && newData.child('score').val() >= 0 && newData.child('score').val() <= 100"
+        }
+      }
+    },
+
+    "clans": {
+      ".read": "auth != null",
+      "$code": {
+        ".write": "auth != null",
+        "members": {
+          "$uid": {
+            ".write": "auth != null && $uid === auth.uid"
+          }
+        }
+      }
+    },
+
+    "clanJoinRequests": {
+      "$code": {
+        ".read": "auth != null",
+        "$uid": {
+          ".write": "auth != null"
+        }
+      }
+    },
+
+    "clanJoinAccepted": {
+      "$uid": {
+        ".read": "auth != null && $uid === auth.uid",
+        ".write": "auth != null"
+      }
+    },
+
+    "clanInvites": {
+      "$uid": {
+        ".read": "auth != null && $uid === auth.uid",
+        ".write": "auth != null"
+      }
+    },
+
+    "rooms": {
+      "$roomId": {
+        ".read": "auth != null",
+        ".write": "auth != null"
+      }
+    },
+
+    "asyncChallenges": {
+      "$toUid": {
+        ".read": "auth != null && $toUid === auth.uid",
+        ".write": "auth != null"
+      }
+    },
+
+    "challenges": {
+      "$uid": {
+        ".read": "auth != null && $uid === auth.uid",
+        ".write": "auth != null"
+      }
+    },
+
+    "friendRequests": {
+      "$uid": {
+        ".read": "auth != null && $uid === auth.uid",
+        ".write": "auth != null"
+      }
+    },
+
+    "friends": {
+      "$uid": {
+        ".read": "auth != null",
+        ".write": "auth != null"
+      }
+    },
+
+    "chats": {
+      "$pair": {
+        ".read": "auth != null",
+        ".write": "auth != null"
+      }
+    }
+
+  }
+}

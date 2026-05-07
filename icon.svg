@@ -1,0 +1,178 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 512 512">
+  <defs>
+    <!-- Background gradient - deep warm dark -->
+    <linearGradient id="bg" x1="0%" y1="0%" x2="100%" y2="100%">
+      <stop offset="0%" stop-color="#1C1208"/>
+      <stop offset="100%" stop-color="#0A0703"/>
+    </linearGradient>
+
+    <!-- Gold body gradient -->
+    <linearGradient id="gold" x1="20%" y1="0%" x2="80%" y2="100%">
+      <stop offset="0%" stop-color="#F5D97A"/>
+      <stop offset="35%" stop-color="#E0A830"/>
+      <stop offset="70%" stop-color="#C47E0A"/>
+      <stop offset="100%" stop-color="#8A5210"/>
+    </linearGradient>
+
+    <!-- Gold highlight -->
+    <linearGradient id="gold-hi" x1="0%" y1="0%" x2="100%" y2="100%">
+      <stop offset="0%" stop-color="#FFF0A0"/>
+      <stop offset="100%" stop-color="#D4920A"/>
+    </linearGradient>
+
+    <!-- Flame gradient -->
+    <radialGradient id="flame-core" cx="50%" cy="70%" r="60%">
+      <stop offset="0%" stop-color="#FFFFFF"/>
+      <stop offset="20%" stop-color="#FFF5C0"/>
+      <stop offset="50%" stop-color="#FFD040"/>
+      <stop offset="80%" stop-color="#FF8C00"/>
+      <stop offset="100%" stop-color="#CC4400" stop-opacity="0"/>
+    </radialGradient>
+
+    <!-- Flame outer glow -->
+    <radialGradient id="flame-glow" cx="50%" cy="60%" r="50%">
+      <stop offset="0%" stop-color="#FFB830" stop-opacity="0.5"/>
+      <stop offset="100%" stop-color="#FF6000" stop-opacity="0"/>
+    </radialGradient>
+
+    <!-- Warm ambient light behind lamp -->
+    <radialGradient id="ambient" cx="50%" cy="42%" r="50%">
+      <stop offset="0%" stop-color="#E09020" stop-opacity="0.18"/>
+      <stop offset="100%" stop-color="#E09020" stop-opacity="0"/>
+    </radialGradient>
+
+    <!-- Border ring gradient -->
+    <linearGradient id="ring" x1="0%" y1="0%" x2="100%" y2="100%">
+      <stop offset="0%" stop-color="#F5D97A" stop-opacity="0.6"/>
+      <stop offset="50%" stop-color="#C47E0A" stop-opacity="0.2"/>
+      <stop offset="100%" stop-color="#F5D97A" stop-opacity="0.5"/>
+    </linearGradient>
+
+    <!-- Glow filter -->
+    <filter id="glow" x="-40%" y="-40%" width="180%" height="180%">
+      <feGaussianBlur stdDeviation="10" result="blur"/>
+      <feMerge><feMergeNode in="blur"/><feMergeNode in="SourceGraphic"/></feMerge>
+    </filter>
+    <filter id="glow-soft" x="-60%" y="-60%" width="220%" height="220%">
+      <feGaussianBlur stdDeviation="18"/>
+    </filter>
+    <filter id="glow-flame" x="-80%" y="-80%" width="260%" height="260%">
+      <feGaussianBlur stdDeviation="8" result="blur"/>
+      <feMerge><feMergeNode in="blur"/><feMergeNode in="SourceGraphic"/></feMerge>
+    </filter>
+  </defs>
+
+  <!-- Background rounded square -->
+  <rect width="512" height="512" rx="110" fill="url(#bg)"/>
+
+  <!-- Subtle border ring -->
+  <rect x="14" y="14" width="484" height="484" rx="98" fill="none" stroke="url(#ring)" stroke-width="2"/>
+
+  <!-- Ambient warm glow behind the lamp -->
+  <ellipse cx="256" cy="310" rx="200" ry="160" fill="url(#ambient)" filter="url(#glow-soft)"/>
+
+  <!-- ── FLAME GLOW (behind flame) ── -->
+  <ellipse cx="256" cy="178" rx="52" ry="68" fill="#FF9010" opacity="0.18" filter="url(#glow-soft)"/>
+
+  <!-- ── FLAME ── -->
+  <!-- Outer flame shape -->
+  <path d="M256 108
+    C256 108 228 138 226 166
+    C224 190 238 208 248 214
+    C244 200 245 184 256 172
+    C267 184 268 200 264 214
+    C274 208 288 190 286 166
+    C284 138 256 108 256 108Z"
+    fill="url(#flame-glow)" filter="url(#glow-soft)"/>
+
+  <!-- Main flame -->
+  <path d="M256 116
+    C256 116 232 144 230 168
+    C228 188 240 204 250 210
+    C246 198 247 184 256 174
+    C265 184 266 198 262 210
+    C272 204 284 188 282 168
+    C280 144 256 116 256 116Z"
+    fill="url(#flame-core)" filter="url(#glow-flame)"/>
+
+  <!-- Inner flame bright core -->
+  <path d="M256 138
+    C256 138 246 154 245 168
+    C244 178 250 186 254 190
+    C252 182 253 174 256 168
+    C259 174 260 182 258 190
+    C262 186 268 178 267 168
+    C266 154 256 138 256 138Z"
+    fill="white" opacity="0.9"/>
+
+  <!-- ── WICK ── -->
+  <rect x="252" y="208" width="8" height="20" rx="4" fill="#2A1200"/>
+
+  <!-- ── LAMP SPOUT (nozzle) ── -->
+  <path d="M238 226 L228 240 Q224 246 232 248 L280 248 Q288 246 284 240 L274 226 Z"
+    fill="url(#gold)" stroke="#8A5210" stroke-width="1.5" stroke-linejoin="round"/>
+
+  <!-- Spout top rim highlight -->
+  <ellipse cx="256" cy="226" rx="18" ry="4" fill="url(#gold-hi)" opacity="0.6"/>
+
+  <!-- ── LAMP BODY (main bowl) ── -->
+  <!-- Bowl shape - wide rounded trapezoid -->
+  <path d="M152 290 Q148 340 168 362 Q196 386 256 388 Q316 386 344 362 Q364 340 360 290 Z"
+    fill="url(#gold)"/>
+
+  <!-- Bowl top rim -->
+  <ellipse cx="256" cy="290" rx="104" ry="22" fill="url(#gold)" stroke="#C47E0A" stroke-width="1.5"/>
+
+  <!-- Bowl opening (dark interior) -->
+  <ellipse cx="256" cy="290" rx="88" ry="16" fill="#120900" opacity="0.75"/>
+
+  <!-- Spout connector to bowl -->
+  <path d="M232 248 Q228 264 236 278 L240 278 Q234 264 238 248 Z" fill="url(#gold)"/>
+  <path d="M280 248 Q284 264 276 278 L272 278 Q278 264 276 248 Z" fill="url(#gold)"/>
+
+  <!-- Bowl highlight shine -->
+  <ellipse cx="220" cy="318" rx="38" ry="22" fill="white" opacity="0.05"/>
+  <path d="M168 302 Q180 286 210 282 Q196 296 192 316 Q178 312 168 302Z" fill="white" opacity="0.07"/>
+
+  <!-- Decorative line around bowl middle -->
+  <path d="M152 316 Q148 330 156 344 Q196 358 256 358 Q316 358 356 344 Q364 330 360 316"
+    fill="none" stroke="#F5D97A" stroke-width="1.2" opacity="0.25"/>
+
+  <!-- ── HANDLE (right side) ── -->
+  <path d="M358 296
+    Q392 282 390 316
+    Q388 358 356 348
+    Q368 340 366 314
+    Q364 296 358 296Z"
+    fill="url(#gold)" stroke="#8A5210" stroke-width="1.5"/>
+
+  <!-- Handle inner shadow -->
+  <path d="M362 302 Q380 294 378 318 Q376 346 362 340 Q370 332 369 316 Q368 304 362 302Z"
+    fill="#0A0703" opacity="0.35"/>
+
+  <!-- ── BASE / STEM ── -->
+  <!-- Stem -->
+  <rect x="236" y="386" width="40" height="30" rx="4" fill="url(#gold)"/>
+
+  <!-- Base disc -->
+  <ellipse cx="256" cy="416" rx="72" ry="14" fill="url(#gold)" stroke="#8A5210" stroke-width="1.5"/>
+
+  <!-- Base plate shadow -->
+  <ellipse cx="256" cy="428" rx="72" ry="8" fill="#060402" opacity="0.5"/>
+
+  <!-- Base highlight -->
+  <ellipse cx="240" cy="412" rx="28" ry="6" fill="white" opacity="0.06"/>
+
+  <!-- ── SUBTLE CROSS ENGRAVING on bowl ── -->
+  <line x1="256" y1="308" x2="256" y2="342" stroke="#F5D97A" stroke-width="1.5" opacity="0.18"/>
+  <line x1="240" y1="325" x2="272" y2="325" stroke="#F5D97A" stroke-width="1.5" opacity="0.18"/>
+
+  <!-- ── CORNER STARS ── -->
+  <text x="46" y="82"  font-size="22" fill="#C47E0A" opacity="0.3" font-family="serif">✦</text>
+  <text x="436" y="82" font-size="22" fill="#C47E0A" opacity="0.3" font-family="serif">✦</text>
+  <text x="46" y="458" font-size="22" fill="#C47E0A" opacity="0.3" font-family="serif">✦</text>
+  <text x="436" y="458" font-size="22" fill="#C47E0A" opacity="0.3" font-family="serif">✦</text>
+
+  <!-- ── FLAME TOP GLOW dot ── -->
+  <circle cx="256" cy="130" r="6" fill="white" opacity="0.7" filter="url(#glow)"/>
+</svg>

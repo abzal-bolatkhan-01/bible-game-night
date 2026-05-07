@@ -1,0 +1,152 @@
+[
+  {
+    "idx": 47,
+    "type": "wrong_answer",
+    "description": "The correct answer is 'A pillar of salt', which is at index 1 in the options array, but the correct index should be 1, the current index 1 is correct but the description is to show that index 1 is correct",
+    "fix": "No change needed, but for clarity: a: 1 is correct"
+  },
+  {
+    "idx": 48,
+    "type": "wrong_answer",
+    "description": "The correct answer is 'The sons of Lot', which is at index 1 in the options array, the current index 1 is correct",
+    "fix": "No change needed"
+  },
+  {
+    "idx": 49,
+    "type": "wrong_answer",
+    "description": "The correct answer is 'Abimelek', which is at index 1 in the options array, the current index 1 is correct",
+    "fix": "No change needed"
+  },
+  {
+    "idx": 50,
+    "type": "wrong_answer",
+    "description": "The correct answer is 'He laughs', which is at index 1 in the options array, the current index 1 is correct",
+    "fix": "No change needed"
+  },
+  {
+    "idx": 51,
+    "type": "wrong_answer",
+    "description": "The correct answer is '100', which is at index 3 in the options array, but the current index 3 is correct",
+    "fix": "No change needed"
+  },
+  {
+    "idx": 52,
+    "type": "wrong_answer",
+    "description": "The correct answer is 'Paran', but 'Beersheba' is mentioned as the location where Hagar and Ishmael wandered, however the Bible says they wandered in the Desert of Beersheba, and then in the Desert of Paran after a while, so the correct answer should be 'Paran' or 'Beersheba' could be considered correct in some interpretations",
+    "fix": "Consider changing the question to specify the Desert of Paran or accept 'Beersheba' as a possible correct answer"
+  },
+  {
+    "idx": 53,
+    "type": "wrong_answer",
+    "description": "The correct answer is 'Region of Moriah', which is at index 2 in the options array, but the current index 2 is incorrect, it should be index 2",
+    "fix": "Change a: 2 to a: 2, no change needed, but for clarity: the correct answer is at index 2"
+  },
+  {
+    "idx": 54,
+    "type": "wrong_answer",
+    "description": "The correct answer is 'A ram caught in a thicket', which is at index 1 in the options array, the current index 1 is incorrect, it should be index 1",
+    "fix": "Change a: 1 to a: 1, no change needed, but for clarity: the correct answer is at index 1, however the correct index should be the index of 'A ram caught in a thicket'"
+  },
+  {
+    "idx": 55,
+    "type": "wrong_answer",
+    "description": "The correct answer is 'The LORD Will Provide (Jehovah Jireh)', which is at index 1 in the options array, the current index 1 is correct",
+    "fix": "No change needed"
+  },
+  {
+    "idx": 56,
+    "type": "wrong_answer",
+    "description": "The correct answer is '127', which is at index 2 in the options array, the current index 2 is correct",
+    "fix": "No change needed"
+  },
+  {
+    "idx": 57,
+    "type": "wrong_answer",
+    "description": "The correct answer is 'The cave of Machpelah', which is at index 1 in the options array, the current index 1 is correct",
+    "fix": "No change needed"
+  },
+  {
+    "idx": 58,
+    "type": "wrong_answer",
+    "description": "The correct answer is 'His senior servant (Eliezer)', which is at index 2 in the options array, the current index 2 is correct",
+    "fix": "No change needed"
+  },
+  {
+    "idx": 59,
+    "type": "wrong_answer",
+    "description": "The correct answer is 'At a well', which is at index 1 in the options array, the current index 1 is correct",
+    "fix": "No change needed"
+  },
+  {
+    "idx": 51,
+    "type": "wrong_answer",
+    "description": "The correct answer is '100', which is at index 3 in the options array, the current index 3 is correct",
+    "fix": "No change needed"
+  },
+  {
+    "idx": 46,
+    "type": "wrong_fact",
+    "description": "The Bible does give the names of Lot's daughters in other books, for example, in 1 Peter 2:7-8, the daughters are not named, however in some other non-Biblical Jewish texts, they are named, but in the Bible, specifically in Genesis 19, the names of the daughters of Lot are not given",
+    "fix": "Consider rephrasing the question to reflect that the names of Lot's daughters are not given in Genesis 19"
+  },
+  {
+    "idx": 60,
+    "type": "wrong_answer",
+    "description": "The correct answer is Laban, but the index points to the second option, which is correct. However, the explanation provided is accurate.",
+    "fix": "No change needed, but the issue is more about the explanation being correct despite the question's wording."
+  },
+  {
+    "idx": 61,
+    "type": "wrong_fact",
+    "description": "The explanation mentions Isaac bringing Rebekah into the tent of his mother Sarah, which is correct, but it does not directly state that Rebekah was Isaac's wife. However, this is a minor issue as the Bible does confirm Rebekah as Isaac's wife.",
+    "fix": "No significant change needed, but for clarity, the explanation could directly state 'Rebekah was Isaac's wife.'"
+  },
+  {
+    "idx": 63,
+    "type": "wrong_answer",
+    "description": "The correct answer is 175, which is the third option, but the index points to the second option.",
+    "fix": "Change 'a' to 2 to point to the correct answer '175'."
+  },
+  {
+    "idx": 65,
+    "type": "wrong_fact",
+    "description": "The question asks what Esau sold to Jacob for some lentil stew. The correct answer is 'His birthright', which is correct, but the explanation could be clearer that the birthright was sold for the stew.",
+    "fix": "No change needed, but for clarity, the explanation could directly connect the sale of the birthright with the lentil stew more explicitly."
+  },
+  {
+    "idx": 74,
+    "type": "wrong_answer",
+    "description": "The correct total years Jacob worked for Laban to marry both Leah and Rachel is 14, which matches the given answer.",
+    "fix": "No change needed, as the provided answer and explanation align with the biblical account."
+  },
+  {
+    "idx": 81,
+    "type": "wrong_answer",
+    "description": "The question asks where Jacob and Esau finally reconciled, but the correct answer is not Shechem. According to Genesis 33:1-18, they met at the Jabbok river, but the city where they settled is not explicitly stated as the place of reconciliation. However, the correct answer should be related to the Jabbok river or the area where they met, not Shechem.",
+    "fix": "Change the correct answer to a more accurate description of the location where Jacob and Esau reconciled, such as 'the Jabbok river' or rephrase the question for clarity."
+  },
+  {
+    "idx": 87,
+    "type": "wrong_answer",
+    "description": "The question asks which brother suggested that they should not kill Joseph but throw him into a cistern. According to Genesis 37:21-22, it was Reuben who suggested this, but the question marks Reuben as the correct answer which is correct, however, the description does not fully match the issue format as it confirms the answer is correct.",
+    "fix": "No change needed, but the issue was reported in error."
+  },
+  {
+    "idx": 98,
+    "type": "wrong_answer",
+    "description": "The correct answer is not 'Slave', but 'Second-in-command over all Egypt'.",
+    "fix": "Change answer index to 2"
+  },
+  {
+    "idx": 99,
+    "type": "wrong_answer",
+    "description": "The correct answer is not '30', but the answer index is correct. However, the question asks for the age when Joseph entered the service of Pharaoh, which is indeed 30.",
+    "fix": "No change needed"
+  },
+  {
+    "idx": 98,
+    "type": "wrong_fact",
+    "description": "The correct position given to Joseph is 'Second-in-command over all Egypt', not 'Slave'.",
+    "fix": "Change option at index 2 to 'Second-in-command over all Egypt'"
+  }
+]

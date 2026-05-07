@@ -1,0 +1,72 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Lamp Facebook Cover</title>
+  <style>
+    :root { --bg-top: #0D0D12; --bg-bottom: #1A1A20; --gold: #E0A860; --gold-soft: #F3D29B; --ink: rgba(255,255,255,0.96); }
+    * { box-sizing: border-box; }
+    html, body { margin: 0; min-height: 100%; background: #09090d; display: grid; place-items: center; }
+    body { font-family: Georgia, "Times New Roman", serif; padding: 24px; }
+    .cover {
+      position: relative; width: 820px; height: 312px; overflow: hidden;
+      background: radial-gradient(circle at 18% 42%, rgba(255,214,127,0.18) 0, rgba(255,214,127,0.09) 16%, rgba(255,214,127,0.02) 30%, rgba(255,214,127,0) 46%), linear-gradient(135deg, #121218 0%, #0d0d12 34%, #1a1a20 100%);
+      box-shadow: 0 24px 60px rgba(0,0,0,0.45); isolation: isolate;
+    }
+    .cover::before { content: ""; position: absolute; inset: 0; background: linear-gradient(90deg, rgba(224,168,96,0.08), rgba(224,168,96,0) 32%), radial-gradient(circle at 78% 58%, rgba(255,255,255,0.03), transparent 36%); z-index: 0; }
+    .left-glow { position: absolute; left: 24px; top: 14px; width: 320px; height: 320px; border-radius: 50%; background: radial-gradient(circle, rgba(255,223,155,0.22) 0, rgba(255,223,155,0.08) 34%, rgba(255,223,155,0) 70%); filter: blur(8px); z-index: 1; }
+    .ray { position: absolute; left: 160px; top: 6px; width: 8px; height: 180px; transform-origin: center top; border-radius: 999px; background: linear-gradient(180deg, rgba(255,225,162,0.52), rgba(255,225,162,0)); filter: blur(3px); z-index: 1; }
+    .ra { transform: rotate(-28deg); }
+    .rb { transform: rotate(-12deg); height: 204px; }
+    .rc { transform: rotate(12deg); height: 204px; }
+    .rd { transform: rotate(28deg); }
+    .lamp { position: absolute; left: 36px; top: 18px; width: 250px; z-index: 2; }
+    svg { display: block; width: 100%; height: auto; overflow: visible; }
+    .content { position: absolute; right: 42px; top: 42px; width: 450px; z-index: 3; text-align: left; color: var(--ink); }
+    .eyebrow { color: var(--gold); font-size: 15px; letter-spacing: 0.34em; text-transform: uppercase; margin-bottom: 14px; }
+    .title { font-size: 42px; line-height: 1.06; font-weight: 700; text-shadow: 0 3px 18px rgba(0,0,0,0.4); }
+    .title .gold { color: var(--gold); }
+    .tagline { margin-top: 16px; font-size: 24px; font-style: italic; color: rgba(255,255,255,0.92); }
+    .site { margin-top: 22px; font-size: 18px; letter-spacing: 0.18em; text-transform: lowercase; color: var(--gold-soft); }
+    .rule { width: 128px; height: 1px; margin-top: 18px; background: linear-gradient(90deg, rgba(224,168,96,0.95), rgba(224,168,96,0)); }
+  </style>
+</head>
+<body>
+  <div class="cover">
+    <div class="left-glow"></div>
+    <div class="ray ra"></div><div class="ray rb"></div><div class="ray rc"></div><div class="ray rd"></div>
+    <div class="lamp">
+      <svg viewBox="0 0 320 320" aria-hidden="true">
+        <defs>
+          <radialGradient id="flameGlowFB" cx="50%" cy="40%" r="54%">
+            <stop offset="0%" stop-color="#FFF8DB" stop-opacity="1"/><stop offset="26%" stop-color="#FFE39D" stop-opacity="0.98"/>
+            <stop offset="58%" stop-color="#F7B95E" stop-opacity="0.7"/><stop offset="100%" stop-color="#F7B95E" stop-opacity="0"/>
+          </radialGradient>
+          <linearGradient id="goldMetalFB" x1="0%" y1="0%" x2="100%" y2="100%">
+            <stop offset="0%" stop-color="#FFF0C7"/><stop offset="18%" stop-color="#F0C47E"/>
+            <stop offset="48%" stop-color="#C98A3D"/><stop offset="78%" stop-color="#8F5D22"/><stop offset="100%" stop-color="#E6B16A"/>
+          </linearGradient>
+          <linearGradient id="flameCoreFB" x1="50%" y1="0%" x2="50%" y2="100%">
+            <stop offset="0%" stop-color="#FFFCEB"/><stop offset="24%" stop-color="#FFF1B8"/>
+            <stop offset="58%" stop-color="#FFC867"/><stop offset="100%" stop-color="#FF8E2B"/>
+          </linearGradient>
+        </defs>
+        <ellipse cx="135" cy="252" rx="72" ry="14" fill="rgba(0,0,0,0.34)"/>
+        <ellipse cx="138" cy="112" rx="66" ry="76" fill="url(#flameGlowFB)"/>
+        <path d="M138 38C157 64 185 84 185 121C185 159 160 191 138 210C115 190 92 158 92 124C92 94 113 69 138 38Z" fill="url(#flameCoreFB)"/>
+        <path d="M84 186C84 165 101 148 122 148H202C231 148 258 162 272 184C286 205 286 237 269 257C253 276 224 289 196 289H110C77 289 49 262 46 229C43 204 57 188 84 186Z" fill="url(#goldMetalFB)"/>
+        <path d="M101 180C111 155 138 139 167 139C195 139 221 154 232 178L254 177C249 159 237 143 220 131C203 120 184 115 164 115C143 115 124 120 108 131C90 144 78 161 73 179L101 180Z" fill="url(#goldMetalFB)"/>
+        <path d="M107 207C139 200 174 200 206 207" stroke="#FFDCA6" stroke-width="8" stroke-linecap="round" opacity="0.78"/>
+      </svg>
+    </div>
+    <div class="content">
+      <div class="eyebrow">Bible Trivia Online</div>
+      <div class="title"><span class="gold">LAMP</span> — Bible Trivia Online</div>
+      <div class="tagline">Shine Light on Scripture</div>
+      <div class="rule"></div>
+      <div class="site">thelampgame.com</div>
+    </div>
+  </div>
+</body>
+</html>

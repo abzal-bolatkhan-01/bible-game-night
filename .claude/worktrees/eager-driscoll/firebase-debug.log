@@ -1,0 +1,39 @@
+[debug] [2026-03-27T03:11:54.591Z] ----------------------------------------------------------------------
+[debug] [2026-03-27T03:11:54.596Z] Command:       /opt/homebrew/Cellar/node/25.8.1/bin/node /opt/homebrew/bin/firebase serve --only hosting
+[debug] [2026-03-27T03:11:54.596Z] CLI Version:   15.11.0
+[debug] [2026-03-27T03:11:54.596Z] Platform:      darwin
+[debug] [2026-03-27T03:11:54.596Z] Node Version:  v25.8.1
+[debug] [2026-03-27T03:11:54.596Z] Time:          Fri Mar 27 2026 10:11:54 GMT+0700 (Indochina Time)
+[debug] [2026-03-27T03:11:54.596Z] ----------------------------------------------------------------------
+[debug] 
+[debug] [2026-03-27T03:11:55.336Z] > command requires scopes: ["email","openid","https://www.googleapis.com/auth/cloudplatformprojects.readonly","https://www.googleapis.com/auth/firebase","https://www.googleapis.com/auth/cloud-platform"]
+[debug] [2026-03-27T03:11:55.336Z] > authorizing via signed-in user (abzal.bolatkhan.01@gmail.com)
+[debug] [2026-03-27T03:11:55.336Z] [iam] checking project bible-game-night for permissions ["firebase.projects.get"]
+[debug] [2026-03-27T03:11:55.336Z] Checked if tokens are valid: true, expires at: 1774584579071
+[debug] [2026-03-27T03:11:55.337Z] Checked if tokens are valid: true, expires at: 1774584579071
+[debug] [2026-03-27T03:11:55.337Z] >>> [apiv2][query] POST https://cloudresourcemanager.googleapis.com/v1/projects/bible-game-night:testIamPermissions [none]
+[debug] [2026-03-27T03:11:55.337Z] >>> [apiv2][(partial)header] POST https://cloudresourcemanager.googleapis.com/v1/projects/bible-game-night:testIamPermissions  x-goog-user-project=bible-game-night
+[debug] [2026-03-27T03:11:55.337Z] >>> [apiv2][body] POST https://cloudresourcemanager.googleapis.com/v1/projects/bible-game-night:testIamPermissions {"permissions":["firebase.projects.get"]}
+[debug] [2026-03-27T03:11:56.333Z] <<< [apiv2][status] POST https://cloudresourcemanager.googleapis.com/v1/projects/bible-game-night:testIamPermissions 200
+[debug] [2026-03-27T03:11:56.334Z] <<< [apiv2][body] POST https://cloudresourcemanager.googleapis.com/v1/projects/bible-game-night:testIamPermissions {"permissions":["firebase.projects.get"]}
+[debug] [2026-03-27T03:11:56.334Z] Checked if tokens are valid: true, expires at: 1774584579071
+[debug] [2026-03-27T03:11:56.334Z] Checked if tokens are valid: true, expires at: 1774584579071
+[debug] [2026-03-27T03:11:56.334Z] >>> [apiv2][query] GET https://cloudresourcemanager.googleapis.com/v1/projects/bible-game-night [none]
+[debug] [2026-03-27T03:11:56.587Z] <<< [apiv2][status] GET https://cloudresourcemanager.googleapis.com/v1/projects/bible-game-night 200
+[debug] [2026-03-27T03:11:56.587Z] <<< [apiv2][body] GET https://cloudresourcemanager.googleapis.com/v1/projects/bible-game-night {"projectNumber":"475815072299","projectId":"bible-game-night","lifecycleState":"ACTIVE","name":"lamp","labels":{"firebase":"enabled","firebase-core":"disabled"},"createTime":"2026-03-14T16:33:04.386633Z"}
+[debug] [2026-03-27T03:11:56.589Z] Checked if tokens are valid: true, expires at: 1774584579071
+[debug] [2026-03-27T03:11:56.589Z] Checked if tokens are valid: true, expires at: 1774584579071
+[debug] [2026-03-27T03:11:56.590Z] >>> [apiv2][query] GET https://firebasehosting.googleapis.com/v1beta1/projects/bible-game-night/sites 
+[debug] [2026-03-27T03:11:57.408Z] <<< [apiv2][status] GET https://firebasehosting.googleapis.com/v1beta1/projects/bible-game-night/sites 200
+[debug] [2026-03-27T03:11:57.408Z] <<< [apiv2][body] GET https://firebasehosting.googleapis.com/v1beta1/projects/bible-game-night/sites {"sites":[{"name":"projects/bible-game-night/sites/bible-game-night","defaultUrl":"https://bible-game-night.web.app","type":"DEFAULT_SITE"}]}
+[debug] [2026-03-27T03:11:57.409Z] Checked if tokens are valid: true, expires at: 1774584579071
+[debug] [2026-03-27T03:11:57.409Z] Checked if tokens are valid: true, expires at: 1774584579071
+[debug] [2026-03-27T03:11:57.409Z] >>> [apiv2][query] GET https://firebase.googleapis.com/v1beta1/projects/bible-game-night/webApps/-/config [none]
+[debug] [2026-03-27T03:11:58.653Z] <<< [apiv2][status] GET https://firebase.googleapis.com/v1beta1/projects/bible-game-night/webApps/-/config 200
+[debug] [2026-03-27T03:11:58.653Z] <<< [apiv2][body] GET https://firebase.googleapis.com/v1beta1/projects/bible-game-night/webApps/-/config {"projectId":"bible-game-night","appId":"1:475815072299:web:ff27c8d61de00ab8fa906e","databaseURL":"https://bible-game-night-default-rtdb.firebaseio.com","storageBucket":"bible-game-night.firebasestorage.app","apiKey":"AIzaSyBrGI0SKrE_puVG-qlnGhEKmxA8N3p17PU","authDomain":"bible-game-night.firebaseapp.com","messagingSenderId":"475815072299","measurementId":"G-EYK2MQF4SE","projectNumber":"475815072299","version":"2"}
+[debug] [2026-03-27T03:11:58.673Z] Checked if tokens are valid: true, expires at: 1774584579071
+[debug] [2026-03-27T03:11:58.673Z] Checked if tokens are valid: true, expires at: 1774584579071
+[debug] [2026-03-27T03:11:58.674Z] >>> [apiv2][query] GET https://firebase.googleapis.com/v1beta1/projects/bible-game-night [none]
+[debug] [2026-03-27T03:11:58.975Z] <<< [apiv2][status] GET https://firebase.googleapis.com/v1beta1/projects/bible-game-night 200
+[debug] [2026-03-27T03:11:58.975Z] <<< [apiv2][body] GET https://firebase.googleapis.com/v1beta1/projects/bible-game-night {"projectId":"bible-game-night","projectNumber":"475815072299","displayName":"lamp","name":"projects/bible-game-night","resources":{"hostingSite":"bible-game-night","realtimeDatabaseInstance":"bible-game-night-default-rtdb"},"state":"ACTIVE","etag":"1_b0ff1ad4-0e2f-4e40-819c-fba6ef34985b"}
+[info] ✔  hosting[bible-game-night]: Local server: http://localhost:5003 {"metadata":{"emulator":{"name":"hosting"},"message":"Local server: \u001b[4m\u001b[1mhttp://localhost:5003\u001b[22m\u001b[24m"}}

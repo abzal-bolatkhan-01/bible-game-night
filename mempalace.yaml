@@ -1,0 +1,12 @@
+wing: lamp___bible_trivia_online
+rooms:
+- name: trivia
+  description: Files from trivia/
+- name: visuals
+  description: Files from visuals/
+- name: data
+  description: Files from data/
+- name: design
+  description: Files from assets/
+- name: general
+  description: Files that don't fit other rooms

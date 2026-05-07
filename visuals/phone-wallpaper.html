@@ -1,0 +1,77 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Lamp Phone Wallpaper</title>
+  <style>
+    :root { --bg-top: #0D0D12; --bg-bottom: #1A1A20; --gold: #E0A860; --gold-soft: #F3D29B; --white: rgba(255,255,255,0.96); }
+    * { box-sizing: border-box; }
+    html, body { margin: 0; min-height: 100%; background: #09090d; display: grid; place-items: center; }
+    body { font-family: Georgia, "Times New Roman", serif; padding: 24px; }
+    .wallpaper {
+      position: relative; width: 1170px; height: 2532px; overflow: hidden;
+      background: radial-gradient(circle at 50% 34%, rgba(255,214,127,0.18) 0, rgba(255,214,127,0.09) 13%, rgba(255,214,127,0.03) 24%, rgba(255,214,127,0) 42%), radial-gradient(circle at 50% 12%, rgba(255,196,98,0.08) 0, rgba(255,196,98,0) 32%), linear-gradient(180deg, var(--bg-top) 0%, #121219 45%, var(--bg-bottom) 100%);
+      box-shadow: 0 32px 90px rgba(0,0,0,0.5); isolation: isolate;
+    }
+    .wallpaper::before { content: ""; position: absolute; inset: 0; background: radial-gradient(circle at 50% 35%, rgba(255,215,130,0.09), transparent 34%), radial-gradient(circle at 50% 70%, rgba(0,0,0,0), rgba(0,0,0,0.28) 78%, rgba(0,0,0,0.52) 100%); z-index: 0; }
+    .ray { position: absolute; left: 50%; top: 260px; width: 14px; height: 930px; transform-origin: center top; border-radius: 999px; background: linear-gradient(180deg, rgba(255,225,162,0.56), rgba(255,225,162,0)); filter: blur(4px); opacity: 0.52; z-index: 1; }
+    .r1 { transform: translateX(-50%) rotate(-34deg); }
+    .r2 { transform: translateX(-50%) rotate(-20deg); height: 1020px; opacity: 0.45; }
+    .r3 { transform: translateX(-50%) rotate(-8deg); height: 1100px; opacity: 0.36; }
+    .r4 { transform: translateX(-50%) rotate(8deg); height: 1100px; opacity: 0.36; }
+    .r5 { transform: translateX(-50%) rotate(20deg); height: 1020px; opacity: 0.45; }
+    .r6 { transform: translateX(-50%) rotate(34deg); }
+    .halo { position: absolute; left: 50%; top: 300px; width: 760px; height: 760px; transform: translateX(-50%); border-radius: 50%; background: radial-gradient(circle, rgba(255,223,155,0.24) 0, rgba(255,223,155,0.1) 28%, rgba(255,223,155,0.04) 48%, rgba(255,223,155,0) 72%); filter: blur(10px); z-index: 1; }
+    .lamp-wrap { position: absolute; inset: 300px 0 auto; display: grid; place-items: center; z-index: 2; }
+    svg { display: block; width: 700px; height: auto; overflow: visible; }
+    .quote { position: absolute; left: 50%; bottom: 430px; width: 820px; transform: translateX(-50%); text-align: center; z-index: 3; color: var(--white); text-shadow: 0 3px 18px rgba(0,0,0,0.55); }
+    .quote .text { font-size: 64px; line-height: 1.34; font-style: italic; letter-spacing: 0.01em; }
+    .quote .ref { margin-top: 30px; font-size: 42px; color: var(--gold); letter-spacing: 0.08em; }
+    .wordmark { position: absolute; right: 86px; bottom: 78px; z-index: 3; color: var(--gold); font-size: 44px; letter-spacing: 0.18em; text-transform: lowercase; text-shadow: 0 2px 14px rgba(224,168,96,0.2); }
+  </style>
+</head>
+<body>
+  <div class="wallpaper">
+    <div class="halo"></div>
+    <div class="ray r1"></div><div class="ray r2"></div><div class="ray r3"></div>
+    <div class="ray r4"></div><div class="ray r5"></div><div class="ray r6"></div>
+    <div class="lamp-wrap">
+      <svg viewBox="0 0 760 820" aria-hidden="true">
+        <defs>
+          <radialGradient id="flameGlowW" cx="50%" cy="44%" r="56%">
+            <stop offset="0%" stop-color="#FFF8DB" stop-opacity="1"/><stop offset="22%" stop-color="#FFE39D" stop-opacity="0.98"/>
+            <stop offset="56%" stop-color="#F7B95E" stop-opacity="0.7"/><stop offset="100%" stop-color="#F7B95E" stop-opacity="0"/>
+          </radialGradient>
+          <linearGradient id="goldMetalW" x1="0%" y1="0%" x2="100%" y2="100%">
+            <stop offset="0%" stop-color="#FFF0C7"/><stop offset="18%" stop-color="#F0C47E"/>
+            <stop offset="48%" stop-color="#C98A3D"/><stop offset="78%" stop-color="#8F5D22"/><stop offset="100%" stop-color="#E6B16A"/>
+          </linearGradient>
+          <linearGradient id="flameCoreW" x1="50%" y1="0%" x2="50%" y2="100%">
+            <stop offset="0%" stop-color="#FFFCEB"/><stop offset="24%" stop-color="#FFF1B8"/>
+            <stop offset="58%" stop-color="#FFC867"/><stop offset="100%" stop-color="#FF8E2B"/>
+          </linearGradient>
+          <filter id="flameBloomW" x="-120%" y="-140%" width="340%" height="360%">
+            <feGaussianBlur stdDeviation="24" result="blur"/>
+            <feMerge><feMergeNode in="blur"/><feMergeNode in="SourceGraphic"/></feMerge>
+          </filter>
+        </defs>
+        <ellipse cx="380" cy="672" rx="180" ry="34" fill="rgba(0,0,0,0.36)"/>
+        <g filter="url(#flameBloomW)">
+          <ellipse cx="380" cy="248" rx="152" ry="180" fill="url(#flameGlowW)"/>
+          <path d="M380 102C418 155 476 193 476 280C476 370 425 444 380 484C333 443 284 369 284 286C284 215 327 162 380 102Z" fill="url(#flameCoreW)"/>
+          <path d="M380 118C399 150 406 182 395 213C386 239 365 255 350 278C339 247 343 214 353 186C361 164 369 144 380 118Z" fill="rgba(255,255,255,0.88)"/>
+        </g>
+        <path d="M246 510C246 468 280 434 322 434H486C541 434 593 461 621 506C648 549 650 611 618 651C588 690 534 714 481 714H298C233 714 177 662 171 598C166 547 193 514 246 510Z" fill="url(#goldMetalW)"/>
+        <path d="M271 458C291 409 343 378 399 378C453 378 503 408 524 454L566 453C556 417 534 385 500 361C468 339 431 328 393 328C355 328 319 337 288 359C254 382 231 416 221 455L271 458Z" fill="url(#goldMetalW)"/>
+        <path d="M301 544C362 531 430 531 491 544" stroke="#FFDCA6" stroke-width="15" stroke-linecap="round" opacity="0.78"/>
+      </svg>
+    </div>
+    <div class="quote">
+      <div class="text">"Thy word is a lamp unto my feet, and a light unto my path."</div>
+      <div class="ref">— Psalm 119:105</div>
+    </div>
+    <div class="wordmark">lamp</div>
+  </div>
+</body>
+</html>

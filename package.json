@@ -1,0 +1,25 @@
+{
+  "name": "lamp---bible-trivia-online",
+  "version": "1.0.0",
+  "description": "A feature-rich, visually appealing Bible quiz and game night application built with HTML, CSS, and JavaScript.",
+  "main": "gen-landing-page.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/aviel-bolatkhan-01/lamp.git"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "type": "module",
+  "bugs": {
+    "url": "https://github.com/aviel-bolatkhan-01/lamp/issues"
+  },
+  "homepage": "https://github.com/aviel-bolatkhan-01/lamp#readme",
+  "devDependencies": {
+    "eslint": "^10.2.0",
+    "eslint-plugin-html": "^8.1.4"
+  }
+}

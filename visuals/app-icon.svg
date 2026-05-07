@@ -1,0 +1,93 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="1024" height="1024" viewBox="0 0 1024 1024" fill="none">
+  <defs>
+    <linearGradient id="bgGlow" x1="512" y1="128" x2="512" y2="896" gradientUnits="userSpaceOnUse">
+      <stop offset="0" stop-color="#2A2432"/>
+      <stop offset="1" stop-color="#121217"/>
+    </linearGradient>
+    <linearGradient id="lampGold" x1="359" y1="392" x2="665" y2="696" gradientUnits="userSpaceOnUse">
+      <stop offset="0" stop-color="#C4842A"/>
+      <stop offset="0.5" stop-color="#F1C173"/>
+      <stop offset="1" stop-color="#E0A860"/>
+    </linearGradient>
+    <linearGradient id="lampHighlight" x1="428" y1="410" x2="626" y2="634" gradientUnits="userSpaceOnUse">
+      <stop offset="0" stop-color="#FFF1BF" stop-opacity="0.95"/>
+      <stop offset="1" stop-color="#F6CF78" stop-opacity="0"/>
+    </linearGradient>
+    <linearGradient id="flameCore" x1="512" y1="270" x2="512" y2="462" gradientUnits="userSpaceOnUse">
+      <stop offset="0" stop-color="#FFF7BF"/>
+      <stop offset="0.28" stop-color="#FFD700"/>
+      <stop offset="1" stop-color="#FF8C00"/>
+    </linearGradient>
+    <radialGradient id="innerAura" cx="0" cy="0" r="1" gradientUnits="userSpaceOnUse" gradientTransform="translate(512 350) rotate(90) scale(230)">
+      <stop offset="0" stop-color="#FFD86A" stop-opacity="0.95"/>
+      <stop offset="0.45" stop-color="#E4A12F" stop-opacity="0.3"/>
+      <stop offset="1" stop-color="#E4A12F" stop-opacity="0"/>
+    </radialGradient>
+    <filter id="shadow" x="224" y="213" width="576" height="572" color-interpolation-filters="sRGB" filterUnits="userSpaceOnUse">
+      <feOffset dy="18"/>
+      <feGaussianBlur stdDeviation="20"/>
+      <feColorMatrix type="matrix" values="0 0 0 0 0.227451 0 0 0 0 0.145098 0 0 0 0 0.0352941 0 0 0 0.45 0"/>
+      <feBlend in2="SourceGraphic" result="shape"/>
+    </filter>
+    <filter id="flameGlow" x="305" y="140" width="414" height="405" color-interpolation-filters="sRGB" filterUnits="userSpaceOnUse">
+      <feGaussianBlur stdDeviation="24" result="blur1"/>
+      <feColorMatrix in="blur1" type="matrix" values="0 0 0 0 1 0 0 0 0 0.792157 0 0 0 0 0.239216 0 0 0 0.75 0" result="goldGlow"/>
+      <feGaussianBlur in="SourceGraphic" stdDeviation="6" result="blur2"/>
+      <feColorMatrix in="blur2" type="matrix" values="0 0 0 0 1 0 0 0 0 0.54902 0 0 0 0 0 0 0 0 0.55 0" result="orangeGlow"/>
+      <feMerge>
+        <feMergeNode in="goldGlow"/>
+        <feMergeNode in="orangeGlow"/>
+        <feMergeNode in="SourceGraphic"/>
+      </feMerge>
+    </filter>
+    <filter id="rayGlow" x="176" y="126" width="672" height="430" color-interpolation-filters="sRGB" filterUnits="userSpaceOnUse">
+      <feGaussianBlur stdDeviation="8"/>
+    </filter>
+    <filter id="textGlow" x="276" y="721" width="472" height="124" color-interpolation-filters="sRGB" filterUnits="userSpaceOnUse">
+      <feGaussianBlur stdDeviation="8" result="blur"/>
+      <feColorMatrix in="blur" type="matrix" values="0 0 0 0 0.878431 0 0 0 0 0.658824 0 0 0 0 0.376471 0 0 0 0.45 0"/>
+      <feBlend in2="SourceGraphic" result="shape"/>
+    </filter>
+  </defs>
+
+  <circle cx="512" cy="512" r="456" fill="url(#bgGlow)"/>
+  <circle cx="512" cy="512" r="456" fill="#1A1A20"/>
+  <circle cx="512" cy="512" r="456" fill="url(#innerAura)" opacity="0.38"/>
+
+  <g filter="url(#rayGlow)" opacity="0.5">
+    <path d="M512 205L530 338H494L512 205Z" fill="#FFD86A"/>
+    <path d="M622 241L567 363L536 340L622 241Z" fill="#FFD86A"/>
+    <path d="M708 324L597 401L581 372L708 324Z" fill="#FFD86A"/>
+    <path d="M754 430L623 449V415L754 430Z" fill="#FFD86A"/>
+    <path d="M270 241L356 340L325 363L270 241Z" fill="#FFD86A"/>
+    <path d="M184 324L311 372L295 401L184 324Z" fill="#FFD86A"/>
+    <path d="M138 430L269 415V449L138 430Z" fill="#FFD86A"/>
+  </g>
+
+  <g filter="url(#shadow)">
+    <ellipse cx="512" cy="660" rx="150" ry="34" fill="#8B5A16" opacity="0.3"/>
+    <path d="M390 612C390 587.699 409.699 568 434 568H590C614.301 568 634 587.699 634 612C634 636.301 614.301 656 590 656H434C409.699 656 390 636.301 390 612Z" fill="url(#lampGold)"/>
+    <path d="M352 648C352 620.386 374.386 598 402 598H622C649.614 598 672 620.386 672 648C672 675.614 649.614 698 622 698H402C374.386 698 352 675.614 352 648Z" fill="url(#lampGold)"/>
+    <path d="M380 502C380 426.337 441.337 365 517 365C592.663 365 654 426.337 654 502V523C654 559.451 624.451 589 588 589H446C409.549 589 380 559.451 380 523V502Z" fill="url(#lampGold)"/>
+    <path d="M443 372C463 342 502 325 544 329C581 333 615 353 637 381C596 372 554 366 512 366C489 366 466 368 443 372Z" fill="#F2C97A" opacity="0.55"/>
+    <path d="M438 418C438 396.461 455.461 379 477 379H557C578.539 379 596 396.461 596 418V503C596 527.853 575.853 548 551 548H483C458.147 548 438 527.853 438 503V418Z" fill="#8D5B19" opacity="0.22"/>
+    <path d="M365 468C365 452.536 377.536 440 393 440H418C433.464 440 446 452.536 446 468V483C446 498.464 433.464 511 418 511H393C377.536 511 365 498.464 365 483V468Z" fill="url(#lampGold)"/>
+    <path d="M322 470C322 452.327 336.327 438 354 438H397C404.18 438 410 443.82 410 451V501C410 508.18 404.18 514 397 514H354C336.327 514 322 499.673 322 482V470Z" fill="url(#lampGold)"/>
+    <path d="M595 425C611.398 425 626.908 432.099 637.535 444.464L686.867 501.873C692.427 508.342 691.691 518.07 685.222 523.631C678.753 529.191 669.024 528.455 663.464 521.986L620.37 471.833C616.008 466.755 609.639 463.84 602.945 463.84H575C564.507 463.84 556 455.333 556 444.84C556 434.347 564.507 425.84 575 425.84L595 425Z" fill="url(#lampGold)"/>
+    <path d="M512 342C528.569 342 542 355.431 542 372V401H482V372C482 355.431 495.431 342 512 342Z" fill="url(#lampGold)"/>
+    <path d="M466 612H558C573 612 585.158 624.158 585.158 639.158C585.158 654.158 573 666.316 558 666.316H466C451 666.316 438.842 654.158 438.842 639.158C438.842 624.158 451 612 466 612Z" fill="#A46B1D" opacity="0.32"/>
+    <path d="M399 606C432 628 474 640 518 640C562 640 603 628 635 606" stroke="#FFF0B3" stroke-opacity="0.48" stroke-width="10" stroke-linecap="round"/>
+    <path d="M420 402C451 388 483 381 516 381C548 381 579 388 608 402" stroke="#FFF0B3" stroke-opacity="0.36" stroke-width="8" stroke-linecap="round"/>
+    <path d="M373 646C418 665 466 675 516 675C566 675 614 665 651 646" stroke="#8A5B19" stroke-opacity="0.35" stroke-width="12" stroke-linecap="round"/>
+    <path d="M406 389C441 375 477 368 514 368C552 368 587 375 619 388" fill="url(#lampHighlight)" opacity="0.9"/>
+  </g>
+
+  <g filter="url(#flameGlow)">
+    <path d="M512 275C533 309 566 329 566 382C566 438.333 530.333 470 512 470C493.667 470 458 438.333 458 382C458 329 491 309 512 275Z" fill="url(#flameCore)"/>
+    <path d="M512 315C524.981 337.562 543 350.472 543 384.126C543 419.619 521.347 443 512 443C502.653 443 481 419.619 481 384.126C481 350.472 499.019 337.562 512 315Z" fill="#FFF4B2"/>
+  </g>
+
+  <g filter="url(#textGlow)">
+    <text x="512" y="799" text-anchor="middle" fill="#E0A860" font-family="Arial, Helvetica, sans-serif" font-size="90" font-weight="700" letter-spacing="14">LAMP</text>
+  </g>
+</svg>
